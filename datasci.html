@@ -1,0 +1,640 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People Prime Worldwide: Top Data Science Recruitment Agency</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
+  <meta name="title" content="People Prime Worldwide: Top Data Science Recruitment Agency" />
+  <meta name="description"
+    content="People Prime Worldwide has expertise in recruiting top data science talent and empowering your organization with Data science recruitment and hiring solutions." />
+  <!--add content here -->
+  <meta name="keywords"
+    content="Data science jobs, data science job opportunities, data science careers, data science career opportunities, data science recruitment, data scientist recruiters, data science freelance jobs, data science recruiting firms, data scientist hiring, companies hiring data scientists, best data science companies, data scientist job openings" />
+  <meta name="author" content="www.people-prime.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/it-consulting.css" />
+
+  <style>
+    /* ===== Java Page Custom ===== */
+
+    .section {
+      padding: 100px 60px;
+      background: transparent;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    /* Grid */
+    .skills-grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    /* Modal */
+    .custom-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #021814;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 90%;
+      color: white;
+      border: 1px solid #00c896;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      font-size: 22px;
+      color: #00c896;
+    }
+
+    /* List spacing */
+    .modal-content ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .modal-content li {
+      margin-bottom: 8px;
+    }
+
+    .cards-1 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .cards-2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      gap: 30px;
+    }
+
+    .grid-1,
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    /* Hero Height Fix */
+    .hero,
+    .hero-content {
+      height: auto !important;
+      min-height: auto !important;
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+      background: transparent !important;
+    }
+
+    .hero-content {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: -webkit-flex !important;
+      display: flex !important;
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+      -webkit-flex-direction: row !important;
+      flex-direction: row !important;
+      -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+      -webkit-justify-content: center !important;
+      justify-content: center !important;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      max-width: 1200px;
+      margin: 0 auto !important;
+    }
+
+    .hero-content>div:not(.square-video) {
+      flex: 0 1 700px;
+      min-width: 300px;
+    }
+
+    .square-video {
+      width: 350px !important;
+      height: 350px !important;
+      flex: 0 0 350px !important;
+    }
+
+    .hero-content h2 {
+      text-align: center;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-content img {
+        margin-right: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      &#9776;
+    </button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Platform</span></a>
+        </li>
+        <li>
+          <a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a>
+        </li>
+        <li>
+          <a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="it-consulting.html">IT Consulting</a>
+            <a href="staff.html">Staff Augmentation (T&M)</a>
+            <a href="managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu skill-dropdown">
+            <a href="java.html">Java Technologies</a>
+            <a href="microsoft.html">Microsoft Technologies</a>
+            <a href="it-infra.html">IT Infrastructure</a>
+            <a href="sap.html">SAP</a>
+            <a href="datasci.html">Data Science</a>
+            <a href="servicenow.html">Service Now</a>
+            <a href="salesforce.html">Salesforce</a>
+            <a href="dw.html">Data Warehouse</a>
+            <a href="cloud.html">Cloud Technologies</a>
+            <a href="ai-ml.html">AI and ML</a>
+            <a href="iot.html">IOT</a>
+            <a href="database.html">Database management</a>
+            <a href="testing.html">Testing</a>
+            <a href="cybersecurity.html">Cyber Security</a>
+            <a href="oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Corporate Compliance<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="iso.html">ISO9001-27001</a>
+            <a href="cobe.html">Code of Business Ethics</a>
+            <a href="soc2type2.html">SOC2 Type 2</a>
+            <a href="statutory.html">Statutory Compliance</a>
+            <a href="env-sus.html">Environmental Sustainability</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">About Us<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="lt.html">Leadership Team</a>
+            <a href="it-security.html">IT Security Policies</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="activejobs.html" class="nav-btn">Active Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        &#10005;
+      </button>
+    </div>
+    <ul class="drawer-nav">
+      <li>
+        <a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span class="drawer-ptaas-subtext">Platform</span></a>
+      </li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">People Remotely</a></li>
+      <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Services <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="it-consulting.html">IT Consulting</a>
+          <a href="staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Skill Sets <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="java.html">Java Technologies</a>
+          <a href="microsoft.html">Microsoft Technologies</a>
+          <a href="it-infra.html">IT Infrastructure</a>
+          <a href="sap.html">SAP</a>
+          <a href="datasci.html">Data Science</a>
+          <a href="servicenow.html">Service Now</a>
+          <a href="salesforce.html">Salesforce</a>
+          <a href="dw.html">Data Warehouse</a>
+          <a href="cloud.html">Cloud Technologies</a>
+          <a href="ai-ml.html">AI and ML</a>
+          <a href="iot.html">IOT</a>
+          <a href="database.html">Database management</a>
+          <a href="testing.html">Testing</a>
+          <a href="cybersecurity.html">Cyber Security</a>
+          <a href="oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Corporate Compliance <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="iso.html">ISO9001-27001</a>
+          <a href="cobe.html">Code of Business Ethics</a>
+          <a href="soc2type2.html">SOC2 Type 2</a>
+          <a href="statutory.html">Statutory Compliance</a>
+          <a href="env-sus.html">Environmental Sustainability</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          About Us <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="lt.html">Leadership Team</a>
+          <a href="it-security.html">IT Security Policies</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li>
+        <a href="activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="it-header">
+    <h2>Skill Sets</h2>
+    <h1>Data Science</h1>
+  </div>
+
+  <!-- ✅ HERO (Java intro) -->
+  <div class="it-body-background">
+    <section class="hero">
+      <div class="hero-content" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap">
+        <div>
+          <h2>Data Science</h2>
+          <p class="description">
+            People Prime Worldwide is a leader in recruiting the most qualified
+            individuals that is competent in data science technologies. We unite
+            organizations and professionals who have a high degree of
+            acquaintance with Python, R, SQL, machine learning, deep learning,
+            and big data frameworks such as Hadoop and Spark along with data
+            visualization tools for example Tableau and Power BI. Our employees
+            know well how to apply these technologies to discover operable
+            information hidden inside the complicated database and in such a way
+            support reasonable decision-making and creativity for your company’s
+            growth.
+          </p>
+        </div>
+
+        <div class="square-video">
+          <video autoplay loop muted playsinline width="350" height="350">
+            <source src="assets/videos/ds01.webm" type="video/webm">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ SKILLS SECTION -->
+    <section class="section">
+      <h2><span class="highlight">Data Science</span> Skill Sets</h2>
+
+      <div class="skills-grid">
+        <!-- 4 cards plus an image are in cards-1 and cards-2 classes -->
+        <div class="cards-1">
+          <img src="assets/images/ds1.png" alt="" />
+          <div class="grid-1">
+            <div class="card" onclick="openModal('dsAnalysis')">
+              <div class="card-icon">
+                <img src="assets/images/mticon1.png" alt="Analysis Icon" />
+              </div>
+              <h3>Data Analysis & Visualization</h3>
+              <p>
+                Pandas, NumPy, Matplotlib, Seaborn, Plotly, ggplot2, dplyr,
+                tidyr...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('dsML')">
+              <div class="card-icon">
+                <img src="assets/images/mticon2.png" alt="ML Icon" />
+              </div>
+              <h3>Machine Learning</h3>
+              <p>
+                Scikit-learn, TensorFlow, Keras, PyTorch, XGBoost, caret,
+                randomForest, e1071...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('dsDeep')">
+              <div class="card-icon">
+                <img src="assets/images/mticon3.png" alt="Deep Learning Icon" />
+              </div>
+              <h3>Deep Learning</h3>
+              <p>
+                TensorFlow, Keras, PyTorch, Google AI Platform, Azure Machine
+                Learning...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('dsBigData')">
+              <div class="card-icon">
+                <img src="assets/images/mticon4.png" alt="Big Data Icon" />
+              </div>
+              <h3>Big Data Technologies</h3>
+              <p>
+                Apache Hadoop, Apache Spark, Apache Flink, HDFS, Amazon S3,
+                Google Cloud Storage...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-2">
+          <img src="assets/images/ds2.png" alt="" />
+          <div class="grid-2">
+            <div class="card" onclick="openModal('dsEng')">
+              <div class="card-icon">
+                <img src="assets/images/mticon5.png" alt="Engineering Icon" />
+              </div>
+              <h3>Data Engineering</h3>
+              <p>
+                Apache NiFi, Talend, Informatica, Airflow, Luigi, Prefect, SQL
+                (MySQL, PostgreSQL)...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('dsCloud')">
+              <div class="card-icon">
+                <img src="assets/images/mticon6.png" alt="Cloud Icon" />
+              </div>
+              <h3>Cloud Platforms</h3>
+              <p>
+                AWS (Amazon Web Services), Google Cloud Platform, Microsoft
+                Azure, AWS Redshift, Google BigQuery...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('dsAI')">
+              <div class="card-icon">
+                <img src="assets/images/mticon7.png" alt="AI Icon" />
+              </div>
+              <h3>AI and NLP</h3>
+              <p>
+                NLTK, spaCy, Hugging Face Transformers, Google Cloud Natural
+                Language, IBM Watson NLP...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('dsAcq')">
+              <div class="card-icon">
+                <img src="assets/images/mticon8.png" alt="Acquisition Icon" />
+              </div>
+              <h3>Data Acquisition</h3>
+              <p>
+                BeautifulSoup, Scrapy, APIs: RESTful APIs, SOAP, IoT Devices,
+                MySQL, PostgreSQL...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ✅ MODAL -->
+  <div id="modal" class="custom-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">✖</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <!-- ✅ wrap everything -->
+
+      <div class="footer-top">
+        <!-- Left Logo + Description -->
+        <div class="footer-about">
+          <img src="assets/logos/logo.png" alt="logo" class="footer-logo" />
+
+          <p>
+            We specialize in
+            <b>IT Consulting, Staff Augmentation, & Managed Services</b>,
+            delivering comprehensive workforce solutions that drive business
+            success. As a trusted technology partner, we bridge the talent gap
+            with tailored Staff strategies, ensuring seamless alignment with
+            organizational goals.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="activejobs.html">Active Jobs</a></li>
+              <li><a href="iso.html">Corporate Compliance</a></li>
+              <li><a href="it-security.html">IT Security Policies</a></li>
+              <li>
+                <a href="technology-hub/technology-hub.html">Technology Hub</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="it-consulting.html">IT Consulting & Implementation Services</a>
+              </li>
+              <li><a href="staff.html">Staff Augmentation</a></li>
+              <li>
+                <a href="managed-services.html">Managed Teams & Services</a>
+              </li>
+              <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Toll Free</h3>
+            <p class="phone">1800 572 1880</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect Us On</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank">F</a>
+              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>
+          Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="tagline">Better Careers Better Lives</span>
+      </div>
+    </div>
+    <!-- ✅ CLOSE footer-inner -->
+  </footer>
+  <script src="js/script.js"></script>
+
+  <!-- ✅ JS -->
+  <script>
+    function openModal(type) {
+      const modal = document.getElementById("modal");
+      const body = document.getElementById("modal-body");
+
+      const data = {
+        dsAnalysis: `
+      <h3>Data Analysis & Visualization</h3>
+      <p><strong>Python Libraries:</strong> Pandas, NumPy, Matplotlib, Seaborn, Plotly</p>
+
+        <p><strong>R Libraries:</strong> ggplot2, dplyr, tidyr, shiny,</p>
+
+        <p><strong>Data Visualization Tools:</strong> Tableau, Power BI, QlikView</p>`,
+
+        dsML: `
+      <h3>Machine Learning</h3>
+      <p><strong>Python Libraries:</strong> Scikit-learn, TensorFlow, Keras, PyTorch, XGBoost</p>
+      <p><strong>R Libraries:</strong> caret, randomForest, e1071, nnet</p>
+      <p><strong>AutoML Tools:</strong> H2O.ai, Google Cloud AutoML, DataRobot</p>`,
+
+        dsDeep: `
+      <h3>Deep Learning</h3>
+      <p><strong>Frameworks :</strong> TensorFlow, Keras, PyTorch</p>
+      <p><strong>Platforms :</strong> Google AI Platform, Azure Machine Learning, AWS Sage Maker</p>`,
+
+        dsBigData: `
+      <h3>Big Data Technologies</h3>
+      <p><strong>Data Processing:</strong> Apache Hadoop, Apache Spark, Apache Flink</p>
+      <p><strong>Data Storage:</strong> HDFS, Amazon S3, Google Cloud Storage</p>
+      <p><strong>Data Warehousing:</strong> Amazon Redshift, Google BigQuery, Snowflake</p>`,
+
+        dsEng: `
+      <h3>Data Engineering</h3>
+      <p><strong>ETL Tools:</strong> Apache NiFi, Talend, Informatica</p>
+      <p><strong>Data Pipelines:</strong> Airflow, Luigi, Prefect</p>
+      <p><strong>Databases:</strong> SQL (MySQL, PostgreSQL), NoSQL (MongoDB, Cassandra, Redis)</p>
+
+<p>Statistical Analysis</p>
+
+<p>Tools - SAS, SPSS, STATA</p>
+
+<p>Libraries - SciPy (Python), Statsmodels (Python), R’s built-in packages</p>
+
+<p>Advanced Analytics</P
+
+<p><strong>Predictive Analytics:</strong> Time Series Analysis, Forecasting Models</p>
+<p><strong>Prescriptive Analytics:</strong> Optimization, Simulation Modeling</p>
+<p><strong>Business Intelligence (BI):</strong> Tableau, Power BI, Looker, Domo, Crystal Reports, Jaspersoft</p>
+`,
+        dsCloud: `
+      <h3>Cloud Platforms</h3>
+      <p><strong>Cloud Providers:</strong> AWS (Amazon Web Services), Google Cloud Platform, Microsoft Azure</p>
+      <p><strong>Cloud Data Services:</strong> AWS Redshift, Google BigQuery, Azure Synapse Analytics</p>`,
+
+        dsAI: `
+      <h3>AI and NLP (Natural Language Processing)</h3>
+      <p><strong>Libraries and Frameworks:</strong> NLTK, spaCy, Hugging Face Transformers</p>
+      <p><strong>Platforms:</strong> Google Cloud Natural Language, IBM Watson NLP, Azure Text Analytics</p>`,
+
+        dsAcq: `
+      <h3>Data Acquisition </h3>
+      <p><strong>Data Collection Tools:</strong> Web Scraping: BeautifulSoup, Scrapy, APIs: RESTful APIs, SOAP, IoT Devices</p>
+      <p><strong>Data Storage:</strong> Relational Databases: MySQL, PostgreSQL, NoSQL Databases: MongoDB, Cassandra, Cloud Storage: AWS S3, Google Cloud Storage</p>`,
+      };
+
+      body.innerHTML = data[type];
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

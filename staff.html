@@ -1,0 +1,764 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People Prime Worldwide provides the Best Staffing, Placement and IT Job Consultancy in Hyderabad & Chennai
+  </title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
+  <meta name="title"
+    content="People Prime Worldwide provides the Best Staffing, Placement and IT Job Consultancy in Hyderabad & Chennai">
+  <meta name="description"
+    content="Find the best Recruitment company in Hyderabad & Chennai that helps in timely fulfilment of recruitment positions. Experience the best placement needs with our smooth process." />
+  <!--add content here -->
+  <meta name="keywords"
+    content=" job consultancy, staffing companies, it job consultancy, staffing recruiter, recruitment service, consultancies for jobs in hyderabad, chennai job consultancy, best consultancy for jobs in hyderabad, manpower agencies in chennai, consultancy for it jobs in hyderabad, consultancy in chennai for it jobs" />
+  <meta name="author" content="www.people-prime.com">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/it-consulting.css" />
+  <style>
+    /* Case Study 1 Interactive Section */
+    .cs1-section {
+      background: linear-gradient(160deg, #071525, #0b1e35, #091828);
+      border-radius: 20px;
+      padding: 60px 40px;
+      margin-top: 40px;
+      color: white;
+    }
+
+    .cs1-heading {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    .cs1-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 40px;
+    }
+
+    .cs1-tabs {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .cs1-tab {
+      padding: 15px 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-left: 4px solid transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: left;
+    }
+
+    .cs1-tab label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #00b4ff;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    .cs1-tab span {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.4;
+      display: block;
+    }
+
+    .cs1-tab i {
+      display: block;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+    .cs1-tab.active {
+      background: rgba(0, 180, 255, 0.1);
+      border-left-color: #00b4ff;
+    }
+
+    .cs1-panels {
+      position: relative;
+    }
+
+    .cs1-panel {
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .cs1-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Image Zone (Static) */
+    .cs1-banner-img-wrap {
+      width: 100%;
+      height: 240px;
+      background: rgba(0, 0, 0, 0.3);
+      border: 2px solid rgba(0, 180, 255, 0.1);
+      border-radius: 15px;
+      position: relative;
+      overflow: hidden;
+
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .cs1-banner-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      justify-content: center;
+      font-size: 24px;
+      color: #00b4ff;
+      margin-bottom: 15px;
+    }
+
+    .cs1-banner-img-wrap.has-image .cs1-upload-overlay {
+      opacity: 0;
+    }
+
+    .cs1-banner-img-wrap:hover .cs1-upload-overlay {
+      opacity: 1;
+    }
+
+    .cs1-panel-body h4 {
+      font-size: 22px;
+      color: #00b4ff;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .cs1-panel-body p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 991px) {
+      .cs1-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cs1-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        scrollbar-width: none;
+      }
+
+      .cs1-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .cs1-tab {
+        min-width: 200px;
+        flex-shrink: 0;
+      }
+
+      .cs1-section {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Platform</span></a>
+        </li>
+        <li><a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a></li>
+        <li><a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="it-consulting.html">IT Consulting</a>
+            <a href="staff.html">Staff Augmentation (T&M)</a>
+            <a href="managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu skill-dropdown">
+            <a href="java.html">Java Technologies</a>
+            <a href="microsoft.html">Microsoft Technologies</a>
+            <a href="it-infra.html">IT Infrastructure</a>
+            <a href="sap.html">SAP</a>
+            <a href="data-science.html">Data Science</a>
+            <a href="service-now.html">Service Now</a>
+            <a href="salesforce.html">Salesforce</a>
+            <a href="data-warehouse.html">Data Warehouse</a>
+            <a href="cloud-technologies.html">Cloud Technologies</a>
+            <a href="ai-ml.html">AI and ML</a>
+            <a href="iot.html">IOT</a>
+            <a href="database-management.html">Database management</a>
+            <a href="testing.html">Testing</a>
+            <a href="cyber-security.html">Cyber Security</a>
+            <a href="oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Corporate Compliance <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="iso.html">ISO9001-27001</a>
+            <a href="cobe.html">Code of Business Ethics</a>
+            <a href="soc2type2.html">SOC2 Type 2</a>
+            <a href="statutory.html">Statutory Compliance</a>
+            <a href="env-sus.html">Environmental Sustainability</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">About Us <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="lt.html">Leadership Team</a>
+            <a href="it-security.html">IT Security Policies</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="activejobs.html" class="nav-btn">Active Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">&#10005;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span class="drawer-ptaas-subtext">Platform</span></a></li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">People Remotely</a></li>
+      <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">Services <span class="drawer-arrow">&#9660;</span></button>
+        <div class="drawer-dropdown-menu">
+          <a href="it-consulting.html">IT Consulting</a>
+          <a href="staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">Skill Sets <span class="drawer-arrow">&#9660;</span></button>
+        <div class="drawer-dropdown-menu">
+          <a href="java.html">Java Technologies</a>
+          <a href="microsoft.html">Microsoft Technologies</a>
+          <a href="it-infra.html">IT Infrastructure</a>
+          <a href="sap.html">SAP</a>
+          <a href="datasci.html">Data Science</a>
+          <a href="servicenow.html">Service Now</a>
+          <a href="salesforce.html">Salesforce</a>
+          <a href="dw.html">Data Warehouse</a>
+          <a href="cloud.html">Cloud Technologies</a>
+          <a href="ai-ml.html">AI and ML</a>
+          <a href="iot.html">IOT</a>
+          <a href="database.html">Database management</a>
+          <a href="testing.html">Testing</a>
+          <a href="cybersecurity.html">Cyber Security</a>
+          <a href="oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">Corporate Compliance <span class="drawer-arrow">&#9660;</span></button>
+        <div class="drawer-dropdown-menu">
+          <a href="iso.html">ISO9001-27001</a>
+          <a href="cobe.html">Code of Business Ethics</a>
+          <a href="soc2type2.html">SOC2 Type 2</a>
+          <a href="statutory.html">Statutory Compliance</a>
+          <a href="env-sus.html">Environmental Sustainability</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">About Us <span class="drawer-arrow">&#9660;</span></button>
+        <div class="drawer-dropdown-menu">
+          <a href="lt.html">Leadership Team</a>
+          <a href="it-security.html">IT Security Policies</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li><a href="activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a></li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <section class="it-page">
+    <!-- HERO -->
+    <div class="it-header">
+      <h2>Services</h2>
+      <h1>Staff Augmentation Services (T&M)</h1>
+    </div>
+
+    <!-- INTRO -->
+    <div class="it-body-background">
+      <div class="it-section">
+        <div class="it-row">
+          <div class="square-video">
+            <video autoplay loop muted playsinline>
+              <source src="assets/videos/staff.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="it-text">
+            <h2>Staff Augmentation Services – People Prime Worldwide</h2>
+            <p>
+              At People Prime Worldwide, we help businesses stay competitive by providing the right talent at the right
+              time. Our staff augmentation services offer on-demand access to highly skilled professionals, enabling
+              organizations to scale their workforce seamlessly, staff augment overhead, and accelerate project
+              delivery.
+              Whether you require expertise in AI, IoT, Cybersecurity, Embedded Systems, or Data Science, our global
+              talent network ensures fast, flexible, and cost-effective staffing solutions.
+            </p>
+          </div>
+        </div>
+
+        <!-- PROCESS -->
+        <div class="it-section">
+          <div class="process-header">
+            <h2>Our Staff Augmentation Process</h2>
+          </div>
+
+          <div class="process-grid">
+            <!-- Item 1 -->
+            <div class="process-item">
+              <div class="icon-circle">
+                <img src="assets/images/stafficon1.png" alt="Process Icon">
+              </div>
+              <div class="item-content">
+                <h4>Requirement Analysis</h4>
+                <p>
+                  We assess client needs, technology stack, and project objectives to define precise talent
+                  requirements.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="process-item">
+              <div class="icon-circle">
+                <img src="assets/images/stafficon2.png" alt="Process Icon">
+              </div>
+              <div class="item-content">
+                <h4>Talent Sourcing</h4>
+                <p>
+                  Leveraging our extensive network of 50,000+ candidates and direct channels, we identify
+                  top-tier
+                  talent quickly and efficiently.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="process-item">
+              <div class="icon-circle">
+                <img src="assets/images/stafficon3.png" alt="Process Icon">
+              </div>
+              <div class="item-content">
+                <h4>Screening & Evaluation</h4>
+                <p>
+                  Comprehensive technical assessments, background verification, and cultural fit analysis ensure
+                  high-quality candidate selection.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="process-item">
+              <div class="icon-circle">
+                <img src="assets/images/stafficon4.png" alt="Process Icon">
+              </div>
+              <div class="item-content">
+                <h4>Client Collaboration</h4>
+                <p>
+                  We present pre-vetted candidates and work closely with clients to ensure alignment with business goals
+                  and expectations.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="process-item">
+              <div class="icon-circle">
+                <img src="assets/images/stafficon5.png" alt="Process Icon">
+              </div>
+              <div class="item-content">
+                <h4>Seamless Onboarding</h4>
+                <p>
+                  From offer negotiation to contracts and compliance, we manage the entire onboarding process for a
+                  smooth
+                  experience.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="process-item">
+              <div class="icon-circle">
+                <img src="assets/images/stafficon6.png" alt="Process Icon">
+              </div>
+              <div class="item-content">
+                <h4>Ongoing Support & Engagement</h4>
+                <p>
+                  Continuous support, performance tracking, and career development initiatives ensure long-term talent
+                  retention and success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE CASE STUDY 1 -->
+        <div class="cs1-section">
+          <h2 class="cs1-heading">Success Stories: "How we deliver excellence in staff augmentation"</h2>
+          <div class="cs1-grid">
+            <div class="cs1-tabs">
+              <div class="cs1-tab active" data-panel="cs1-panel1" onclick="cs1Switch(this)">
+                <label>Case Study 1</label>
+                <span>Engineering Services – IoT, Embedded Systems & Hardware</span>
+              </div>
+              <div class="cs1-tab" data-panel="cs1-panel2" onclick="cs1Switch(this)">
+                <label>Our Solution</label>
+                <i>"Engineered recruitment for speed, scale, and quality."</i>
+              </div>
+              <div class="cs1-tab" data-panel="cs1-panel3" onclick="cs1Switch(this)">
+                <label>Results Achieved</label>
+                <i>"150 hires. 3 months. Zero compromise on quality."</i>
+              </div>
+            </div>
+
+            <div class="cs1-panels">
+              <!-- Panel 1 -->
+              <div class="cs1-panel active" id="cs1-panel1">
+                <div class="cs1-banner-img-wrap" id="cs1-img-wrap-1">
+                  <img id="cs1-img-1" src="assets/images/p01.png" alt="Banner 1">
+                </div>
+                <div class="cs1-panel-body">
+                  <h4>Client Challenge</h4>
+                  <p>A multinational engineering services company required the rapid hiring of 200 skilled professionals
+                    in IoT, Embedded Systems, and Hardware Engineering within a tight 3-month timeline. Competing with
+                    leading global brands for niche talent made the recruitment process highly challenging.</p>
+                </div>
+              </div>
+
+              <!-- Panel 2 -->
+              <div class="cs1-panel" id="cs1-panel2">
+                <div class="cs1-banner-img-wrap" id="cs1-img-wrap-2">
+                  <img id="cs1-img-2" src="assets/images/p02.png" alt="Banner 2">
+                </div>
+                <div class="cs1-panel-body">
+                  <h4>Our Solution</h4>
+                  <p>We implemented a tailored RPO model to streamline hiring, led by a senior specialist with 10+ years
+                    of experience and supported by a dedicated sourcing team. By leveraging multiple channels like
+                    referrals, headhunting, social media, and internal databases, we ensured access to quality talent
+                    while optimizing the process through digital screening and targeted recruitment strategies.</p>
+                </div>
+              </div>
+
+              <!-- Panel 3 -->
+              <div class="cs1-panel" id="cs1-panel3">
+                <div class="cs1-banner-img-wrap" id="cs1-img-wrap-3">
+                  <img id="cs1-img-3" src="assets/images/p3.png" alt="Banner 3">
+                </div>
+                <div class="cs1-panel-body">
+                  <h4>Results Achieved</h4>
+                  <p>We successfully hired and onboarded 1,000 skilled professionals within six months, enabling the
+                    client to establish a strong operational presence in India and scale efficiently. The streamlined
+                    hiring approach improved talent quality while reducing overall recruitment complexity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- INTERACTIVE CASE STUDY 2 -->
+        <div id="cs2-block">
+          <div class="cs1-section">
+            <h2 class="cs1-heading">Success Stories: "Building a World-Class Tech Center"</h2>
+            <div class="cs1-grid">
+              <div class="cs1-tabs">
+                <div class="cs1-tab active" data-panel="cs2-panel-challenge" onclick="cs2Switch(this)">
+                  <label>Case Study 2</label>
+                  <span>Fintech MNC – AI/ML, Data Science, and Cybersecurity</span>
+                </div>
+                <div class="cs1-tab" data-panel="cs2-panel-solution" onclick="cs2Switch(this)">
+                  <label>Our Solution</label>
+                  <i>"Strategic hiring to build a world-class tech center."</i>
+                </div>
+                <div class="cs1-tab" data-panel="cs2-panel-results" onclick="cs2Switch(this)">
+                  <label>Results Achieved</label>
+                  <i>"1,000 hires. 6 months. Operational excellence delivered."</i>
+                </div>
+              </div>
+
+              <div class="cs1-panels">
+                <!-- Panel 1 -->
+                <div class="cs1-panel active" id="cs2-panel-challenge">
+                  <div class="cs1-banner-img-wrap" id="wrap2-challenge">
+                    <img id="img2-challenge" src="assets/images/p4.png" alt="Banner 2-1">
+                  </div>
+                  <div class="cs1-panel-body">
+                    <h4>Client Challenge</h4>
+                    <p>A leading Fintech multinational corporation aimed to establish a new technology center in India,
+                      requiring the rapid hiring of 1,000 skilled professionals across AI/ML, Data Science,
+                      Cybersecurity, and Fintech domains within a 6-month timeline.</p>
+                  </div>
+                </div>
+
+                <!-- Panel 2 -->
+                <div class="cs1-panel" id="cs2-panel-solution">
+                  <div class="cs1-banner-img-wrap" id="wrap2-solution">
+                    <img id="img2-solution" src="assets/images/p5.png" alt="Banner 2-2">
+                  </div>
+                  <div class="cs1-panel-body">
+                    <h4>Our Solution</h4>
+                    <p>We designed a customized talent acquisition strategy prioritizing executive and senior-level
+                      hiring to build a strong leadership foundation. Leveraging diverse sourcing channels including job
+                      portals, social media, professional networks, and direct outreach, we provided end-to-end support
+                      including salary negotiations, offer management, and onboarding assistance.</p>
+                  </div>
+                </div>
+
+                <!-- Panel 3 -->
+                <div class="cs1-panel" id="cs2-panel-results">
+                  <div class="cs1-banner-img-wrap" id="wrap2-results">
+                    <img id="img2-results" src="assets/images/p6.png" alt="Banner 2-3">
+                  </div>
+                  <div class="cs1-panel-body">
+                    <h4>Results Achieved</h4>
+                    <p>We successfully hired and onboarded 1,000 skilled professionals within 6 months, enabling the
+                      client to establish a strong operational presence in India and scale efficiently. Streamlined
+                      hiring processes reduced recruitment complexity and enhanced overall talent quality.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WHY CHOOSE -->
+        <div class="it-section">
+          <div class="process-header">
+            <h2>Why Choose People Prime Worldwide for Staff Augmentation?</h2>
+          </div>
+
+          <div class="process-grid">
+            <!-- Item 1 -->
+            <div class="process-item">
+              <div class="icon-circle">
+                <img src="assets/images/augicon1.png" alt="Why Choose Icon">
+              </div>
+              <div class="item-content">
+                <h4>Scalability & Flexibility</h4>
+                <p>
+                  Our staff augmentation services are designed to adapt to your needs—whether for short-term engagements
+                  or long-term projects—ensuring the right talent at the right time.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="process-item">
+              <div class="icon-circle">
+                <img src="assets/images/augicon2.png" alt="Why Choose Icon">
+              </div>
+              <div class="item-content">
+                <h4>Industry-Specific Expertise</h4>
+                <p>
+                  We provide highly skilled professionals across advanced domains, including AI/ML, IoT, Cloud, Embedded
+                  Systems, Cybersecurity, and Data Science.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="process-item">
+              <div class="icon-circle">
+                <img src="assets/images/augicon3.png" alt="Why Choose Icon">
+              </div>
+              <div class="item-content">
+                <h4>Faster Time-to-Hire</h4>
+                <p>
+                  Leveraging a robust talent pool and proven hiring methodologies, we deploy qualified professionals
+                  quickly to minimize project delays.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="process-item">
+              <div class="icon-circle">
+                <img src="assets/images/augicon4.png" alt="Why Choose Icon">
+              </div>
+              <div class="item-content">
+                <h4>Cost-Effective Solutions</h4>
+                <p>
+                  Optimize hiring costs by reducing long-term liabilities while gaining access to top-tier talent on
+                  demand.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="process-item item-full-center">
+              <div class="icon-circle">
+                <img src="assets/images/augicon5.png" alt="Why Choose Icon">
+              </div>
+              <div class="item-content">
+                <h4>End-to-End Recruitment Support</h4>
+                <p>
+                  From sourcing and screening to onboarding and compensation management, we handle the entire
+                  recruitment
+                  lifecycle for seamless project integration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TRANSFORM -->
+      <section class="why-choose-new">
+        <div class="why-choose-content">
+          <h3 class="why-title">Transform Your Workforce</h3>
+          <h1 class="why-heading">People Prime Worldwide</h1>
+          <p class="why-desc">
+            At People Prime Worldwide, we go beyond conventional hiring to become your strategic talent partner.
+            Whether you require specialized expertise, rapid workforce expansion, or flexible staffing solutions,
+            our staff augmentation services ensure you have the right talent—exactly when you need it.
+          </p>
+        </div>
+      </section>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <!-- ✅ wrap everything -->
+
+      <div class="footer-top">
+        <!-- Left Logo + Description -->
+        <div class="footer-about">
+          <img src="assets/logos/logo.png" alt="logo" class="footer-logo" />
+
+          <p>
+            We specialize in
+            <b>IT Consulting, Staff Augmentation, & Managed Services</b>,
+            delivering comprehensive workforce solutions that drive business
+            success. As a trusted technology partner, we bridge the talent gap
+            with tailored Staff strategies, ensuring seamless alignment with
+            organizational goals.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="activejobs.html">Active Jobs</a></li>
+              <li><a href="iso.html">Corporate Compliance</a></li>
+              <li><a href="it-security.html">IT Security Policies</a></li>
+              <li><a href="technology-hub/technology-hub.html">Technology Hub</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="it-consulting.html">IT Consulting & Implementation Services</a></li>
+              <li><a href="staff.html">Staff Augmentation</a></li>
+              <li><a href="managed-services.html">Managed Teams & Services</a></li>
+              <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+            </ul>
+          </div>
+
+
+          <div class="footer-column">
+            <h3>Toll Free</h3>
+            <p class="phone">1800 572 1880</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect Us On</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank">F</a>
+              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>
+          Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="tagline">Better Careers Better Lives</span>
+      </div>
+    </div>
+    <!-- ✅ CLOSE footer-inner -->
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    function cs1Switch(tab) {
+      const section = tab.closest('.cs1-section');
+      section.querySelectorAll('.cs1-tab').forEach(t => t.classList.remove('active'));
+      section.querySelectorAll('.cs1-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      const panelId = tab.getAttribute('data-panel');
+      document.getElementById(panelId).classList.add('active');
+    }
+
+    function cs2Switch(clickedTab) {
+      const parent = clickedTab.closest('.cs1-section');
+      parent.querySelectorAll('.cs1-tab').forEach(t => t.classList.remove('active'));
+      parent.querySelectorAll('.cs1-panel').forEach(p => p.classList.remove('active'));
+      clickedTab.classList.add('active');
+      const panel = document.getElementById(clickedTab.getAttribute('data-panel'));
+      if (panel) panel.classList.add('active');
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,751 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top IoT companies| IoT recruitment</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
+  <meta name="title" content="Top IoT companies| IoT recruitment" />
+  <meta name="description"
+    content="Find top IoT companies and IoT recruitment services. People Prime Worldwide connects businesses with the best IoT talent to innovate and lead in the IoT industry." />
+  <!--add content here -->
+  <meta name="keywords"
+    content="IoT companies, developer IoT, IoT applications development companies, IoT based companies, IoT services provider, IoT recruitment, IoT staffing, IoT technology companies, top IoT companies" />
+  <meta name="author" content="www.people-prime.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/it-consulting.css" />
+
+  <style>
+    /* ===== Java Page Custom ===== */
+
+    .section {
+      padding: 100px 60px;
+      background: transparent;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    /* Grid */
+    .skills-grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    /* Modal */
+    .custom-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #021814;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 90%;
+      color: white;
+      border: 1px solid #00c896;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      font-size: 22px;
+      color: #00c896;
+    }
+
+    /* List spacing */
+    .modal-content ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .modal-content li {
+      margin-bottom: 8px;
+    }
+
+    /* Grid Layout for Skills */
+    .skills-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .cards-1,
+    .cards-2,
+    .cards-3 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      gap: 40px;
+      width: 100%;
+    }
+
+    .cards-2 {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+    }
+
+    .grid-1,
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      flex: 1;
+    }
+
+    .cards-1 img,
+    .cards-2 img,
+    .cards-3 img {
+      width: 350px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 15px;
+    }
+
+    @media (max-width: 1024px) {
+
+      .cards-1,
+      .cards-2,
+      .cards-3 {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .grid-1,
+      .grid-2 {
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
+
+      .cards-1 img,
+      .cards-2 img,
+      .cards-3 img {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+
+    /* Hero Height Fix */
+    .hero,
+    .hero-content {
+      height: auto !important;
+      min-height: auto !important;
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+      background: transparent !important;
+    }
+
+    .hero-content {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: -webkit-flex !important;
+      display: flex !important;
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+      -webkit-flex-direction: row !important;
+      flex-direction: row !important;
+      -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+      -webkit-justify-content: center !important;
+      justify-content: center !important;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      max-width: 1200px;
+      margin: 0 auto !important;
+    }
+
+    .hero-content>div {
+      flex: 0 1 700px;
+      min-width: 300px;
+    }
+
+    .square-video {
+      width: 350px !important;
+      height: 350px !important;
+      flex: 0 0 350px !important;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .square-video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-content h2 {
+      text-align: center;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-content img {
+        margin-right: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      &#9776;
+    </button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Platform</span></a>
+        </li>
+        <li>
+          <a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a>
+        </li>
+        <li>
+          <a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="it-consulting.html">IT Consulting</a>
+            <a href="staff.html">Staff Augmentation (T&M)</a>
+            <a href="managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu skill-dropdown">
+            <a href="java.html">Java Technologies</a>
+            <a href="microsoft.html">Microsoft Technologies</a>
+            <a href="it-infra.html">IT Infrastructure</a>
+            <a href="sap.html">SAP</a>
+            <a href="datasci.html">Data Science</a>
+            <a href="servicenow.html">Service Now</a>
+            <a href="salesforce.html">Salesforce</a>
+            <a href="dw.html">Data Warehouse</a>
+            <a href="cloud.html">Cloud Technologies</a>
+            <a href="ai-ml.html">AI and ML</a>
+            <a href="iot.html">IOT</a>
+            <a href="database.html">Database management</a>
+            <a href="testing.html">Testing</a>
+            <a href="cybersecurity.html">Cyber Security</a>
+            <a href="oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Corporate Compliance<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="iso.html">ISO9001-27001</a>
+            <a href="cobe.html">Code of Business Ethics</a>
+            <a href="soc2type2.html">SOC2 Type 2</a>
+            <a href="statutory.html">Statutory Compliance</a>
+            <a href="env-sus.html">Environmental Sustainability</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">About Us<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="lt.html">Leadership Team</a>
+            <a href="it-security.html">IT Security Policies</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="activejobs.html" class="nav-btn">Active Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        &#10005;
+      </button>
+    </div>
+    <ul class="drawer-nav">
+      <li>
+        <a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span class="drawer-ptaas-subtext">Platform</span></a>
+      </li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">People Remotely</a></li>
+      <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Services <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="it-consulting.html">IT Consulting</a>
+          <a href="staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Skill Sets <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="java.html">Java Technologies</a>
+          <a href="microsoft.html">Microsoft Technologies</a>
+          <a href="it-infra.html">IT Infrastructure</a>
+          <a href="sap.html">SAP</a>
+          <a href="datasci.html">Data Science</a>
+          <a href="servicenow.html">Service Now</a>
+          <a href="salesforce.html">Salesforce</a>
+          <a href="dw.html">Data Warehouse</a>
+          <a href="cloud.html">Cloud Technologies</a>
+          <a href="ai-ml.html">AI and ML</a>
+          <a href="iot.html">IOT</a>
+          <a href="database.html">Database management</a>
+          <a href="testing.html">Testing</a>
+          <a href="cybersecurity.html">Cyber Security</a>
+          <a href="oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Corporate Compliance <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="iso.html">ISO9001-27001</a>
+          <a href="cobe.html">Code of Business Ethics</a>
+          <a href="soc2type2.html">SOC2 Type 2</a>
+          <a href="statutory.html">Statutory Compliance</a>
+          <a href="env-sus.html">Environmental Sustainability</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          About Us <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="lt.html">Leadership Team</a>
+          <a href="it-security.html">IT Security Policies</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li>
+        <a href="activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="it-header">
+    <h2>Skill Sets</h2>
+    <h1>IOT</h1>
+  </div>
+
+  <!-- ✅ HERO (Java intro) -->
+  <div class="it-body-background">
+    <section class="hero">
+      <div class="hero-content" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap">
+        <div>
+          <h2>IoT</h2>
+          <p class="description">
+            We at People Prime Worldwide help businesses find the best talent in
+            Internet of Things (IoT) technology. We have deep knowledge of
+            hiring professionals with skills in areas like embedded systems,
+            connectivity, cloud platforms, data analytics, and IoT security.
+            This means we can connect you with top-tier candidates who can make
+            your IoT projects more innovative and efficient. Whether you need
+            IoT engineers, cloud specialists, or data analysts, we'll find the
+            right people to help you use IoT to transform your business.
+          </p>
+        </div>
+
+        <div class="square-video">
+          <video autoplay loop muted playsinline>
+            <source src="assets/videos/IOT.webm" type="video/webm">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ SKILLS SECTION -->
+    <section class="section">
+      <h2><span class="highlight">IoT</span> Skill Sets</h2>
+
+      <div class="skills-grid">
+        <!-- 4 cards plus an image are in cards-1 and cards-2 classes -->
+        <div class="cards-1">
+          <img src="assets/images/iot01.png" alt="" />
+          <div class="grid-1">
+            <div class="card" onclick="openModal('iotEmbedded')">
+              <div class="card-icon">
+                <img src="assets/images/cdicon1.png" alt="" />
+              </div>
+              <h3>Embedded Systems</h3>
+              <p>
+                Knowledge of MCUs like Arduino, Raspberry Pi, ESP8266, and
+                STM32, FreeRTOS, VxWorks....
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('iotNetwork')">
+              <div class="card-icon">
+                <img src="assets/images/cdicon2.png" alt="" />
+              </div>
+              <h3>Networking & Communication</h3>
+              <p>
+                Understanding of MQTT, CoAP, AMQP, TCP, IP, and DDS for IoT
+                device communication...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('iotConnect')">
+              <div class="card-icon">
+                <img src="assets/images/cdicon3.png" alt="" />
+              </div>
+              <h3>Connectivity</h3>
+              <p>
+                Proficiency in Bluetooth, Zigbee, Z-Wave, LoRaWAN, and Wi-Fi
+                protocols...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('iotSensors')">
+              <div class="card-icon">
+                <img src="assets/images/cdicon4.png" alt="" />
+              </div>
+              <h3>Sensors and Actuators</h3>
+              <p>Sensor Integration: Experience with various sensors....</p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-2">
+          <img src="assets/images/iot02.png" alt="" />
+          <div class="grid-2">
+            <div class="card" onclick="openModal('iotDataProc')">
+              <div class="card-icon">
+                <img src="assets/images/cdicon5.png" alt="" />
+              </div>
+              <h3>Data Processing</h3>
+              <p>
+                Ability to implement edge computing solutions using platforms
+                like AWS Greengrass....
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('iotDataAnal')">
+              <div class="card-icon">
+                <img src="assets/images/cdicon6.png" alt="" />
+              </div>
+              <h3>Data Analytics</h3>
+              <p>
+                Big Data Processing, Edge Computing, Real-Time Analytics,
+                Machine Learning and AI Integration...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('iotCloud')">
+              <div class="card-icon">
+                <img src="assets/images/mticon1.png" alt="" />
+              </div>
+              <h3>Cloud Platforms</h3>
+              <p>
+                Experience with IoT cloud platforms such as AWS IoT, Azure IoT
+                Hub, Google Cloud IoT ...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('iotSecurity')">
+              <div class="card-icon">
+                <img src="assets/images/mticon2.png" alt="" />
+              </div>
+              <h3>Security</h3>
+              <p>
+                kills in securing IoT devices, including secure boot, firmware
+                updates, and hardware...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-3">
+          <img src="assets/images/iot03.png" alt="" />
+          <div class="grid-1">
+            <div class="card" onclick="openModal('iotSoftDev')">
+              <div class="card-icon">
+                <img src="assets/images/mticon3.png" alt="" />
+              </div>
+              <h3>Software Development</h3>
+              <p>
+                Proficiency in languages commonly used in IoT development, such
+                as C, C++....
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('iotIIoT')">
+              <div class="card-icon">
+                <img src="assets/images/mticon4.png" alt="" />
+              </div>
+              <h3>Industrial IoT (IIoT)</h3>
+              <p>
+                Knowledge of SCADA systems and protocols like Modbus and
+                OPC-UA...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('iotAppDev')">
+              <div class="card-icon">
+                <img src="assets/images/mticon5.png" alt="" />
+              </div>
+              <h3>Application Development</h3>
+              <p>
+                Experience in developing mobile applications for IoT device
+                control...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('iotInterop')">
+              <div class="card-icon">
+                <img src="assets/images/mticon6.png" alt="" />
+              </div>
+              <h3>Integration and Interoperability</h3>
+              <p>
+                Understanding of IoT interoperability standards like OCF,
+                AllJoyn...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ✅ MODAL -->
+  <div id="modal" class="custom-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">✖</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <!-- ✅ wrap everything -->
+
+      <div class="footer-top">
+        <!-- Left Logo + Description -->
+        <div class="footer-about">
+          <img src="assets/logos/logo.png" alt="logo" class="footer-logo" />
+
+          <p>
+            We specialize in
+            <b>IT Consulting, Staff Augmentation, & Managed Services</b>,
+            delivering comprehensive workforce solutions that drive business
+            success. As a trusted technology partner, we bridge the talent gap
+            with tailored Staff strategies, ensuring seamless alignment with
+            organizational goals.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="activejobs.html">Active Jobs</a></li>
+              <li><a href="iso.html">Corporate Compliance</a></li>
+              <li><a href="it-security.html">IT Security Policies</a></li>
+              <li>
+                <a href="technology-hub/technology-hub.html">Technology Hub</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="it-consulting.html">IT Consulting & Implementation Services</a>
+              </li>
+              <li><a href="staff.html">Staff Augmentation</a></li>
+              <li>
+                <a href="managed-services.html">Managed Teams & Services</a>
+              </li>
+              <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Toll Free</h3>
+            <p class="phone">1800 572 1880</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect Us On</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank">F</a>
+              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>
+          Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="tagline">Better Careers Better Lives</span>
+      </div>
+    </div>
+    <!-- ✅ CLOSE footer-inner -->
+  </footer>
+  <script src="js/script.js"></script>
+
+  <!-- ✅ JS -->
+  <script>
+    function openModal(type) {
+      const modal = document.getElementById("modal");
+      const body = document.getElementById("modal-body");
+
+      const data = {
+        iotEmbedded: `
+      <h3>Embedded Systems</h3>
+      <p><strong>Microcontrollers (MCUs)</strong> : Knowledge of MCUs like Arduino, Raspberry Pi, ESP8266, and STM32.</p>
+      <p><strong>Firmware Development</strong> : Skills in writing low-level code for microcontrollers using C/C++.</p>
+      <p><strong>Real-Time Operating Systems (RTOS)</strong> : Experience with RTOS like FreeRTOS, VxWorks, and Contiki.</p>`,
+
+        iotNetwork: `
+      <h3>Networking and Communication Protocols</h3>
+      <p><strong>IoT-Specific Protocols</strong> : Understanding of MQTT, CoAP, AMQP, TCP, IP, and DDS for IoT device communication.</p>
+      <p><strong>LPWAN Technologies</strong> :  Knowledge of Low-Power Wide-Area Network (LPWAN) technologies like NB-IoT and Sigfox.</p>`,
+
+        iotConnect: `
+      <h3>Connectivity </h3>
+      <p>Proficiency in Bluetooth, Zigbee, Z-Wave, LoRaWAN, and Wi-Fi protocols</p>
+      <p>Wireless Communication Protocols (Wi-Fi, Bluetooth, Zigbee, LoRa)</p>
+      <p>MQTT (Message Queuing Telemetry Transport)</p>
+      <p>HTTP/HTTPS</p>`,
+
+        iotSensors: `
+      <h3>Sensors and Actuators</h3>
+      <p><strong>Sensor Integration</strong> : Experience with various sensors such as temperature, humidity, motion, and light sensors, and the ability to interface them with microcontrollers.</p>
+      <p><strong>Actuator Control</strong> : Skills in controlling actuators like motors, relays, and servos for physical interactions in IoT applications.</p>`,
+
+        iotDataProc: `
+      <h3>Data Processing </h3>
+      <p><strong>Edge Computing</strong> : Ability to implement edge computing solutions using platforms like AWS Greengrass, Azure IoT Edge, and Google Edge TPU. Proficiency in data processing frameworks like Apache Spark, Hadoop, and specialized IoT analytics tools.</p>`,
+
+        iotDataAnal: `
+      <h3>Data Analytics </h3>
+      <p>Big Data Processing, Edge Computing, Real-Time Analytics, Machine Learning and AI Integration</p>`,
+
+        iotCloud: `
+      <h3>Cloud Platforms </h3>
+      <p><strong>IoT Platforms </strong> :  Experience with IoT cloud platforms such as AWS IoT, Azure IoT Hub, Google Cloud IoT, and IBM Watson IoT.</p>
+      <p><strong>Cloud Services</strong> : Knowledge of cloud services for storage, computing, and real-time data streaming (e.g., AWS Lambda, Azure Functions, Google Cloud Functions).</p>`,
+
+        iotSecurity: `
+      <h3>Security</h3>
+      <p><strong>Device Security </strong> :  Skills in securing IoT devices, including secure boot, firmware updates, and hardware security modules (HSM).</p>
+      <p><strong>Network Security </strong> : Understanding of secure communication protocols (TLS/SSL) and encryption methods.</p>
+      <p><strong>Data Security</strong> :  Knowledge of data protection techniques, authentication, and authorization mechanisms.</p>`,
+
+        iotSoftDev: `
+      <h3>Software Development </h3>
+      <p><strong>Programming Languages</strong> : Proficiency in languages commonly used in IoT development, such as C, C++, Python, JavaScript, and Node.js.</p>
+      <p><strong>Middleware Development</strong> : Experience in developing middleware for IoT device management and integration.</p>
+      <p><strong>API Integration</strong> :  Skills in integrating APIs for various IoT services and third-party applications.</p>`,
+
+        iotIIoT: `
+      <h3>Industrial IoT (IIoT)</h3>
+      <p><strong>SCADA Systems </strong> : Knowledge of Supervisory Control and Data Acquisition (SCADA) systems and protocols like Modbus and OPC-UA.</p>
+      <p><strong>Predictive Maintenance</strong> : Skills in implementing predictive maintenance solutions using IoT data and machine learning models.</p>`,
+
+        iotAppDev: `
+      <h3>Application Development</h3>
+      <p><strong>Mobile Applications</strong> : Experience in developing mobile applications for IoT device control and monitoring using Android and iOS platforms.</p>
+      <p><strong>Web Applications</strong> : Skills in building web applications and dashboards for IoT data visualization using frameworks like Angular, React, and Vue.js.</p>`,
+
+        iotInterop: `
+      <h3>Integration and Interoperability</h3>
+      <p><strong>Interoperability Standards </strong> : Understanding of IoT interoperability standards like OCF, AllJoyn, and oneM2M.</p>
+      <p><strong>Gateway Solutions </strong> :  Knowledge of IoT gateways for protocol translation and edge analytics.</p>`,
+      };
+
+      body.innerHTML = data[type];
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,652 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salesforce recruitment company | Salesforce hiring</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
+  <meta name="title" content="Salesforce recruitment company | Salesforce hiring" />
+  <meta name="description"
+    content="Explore exciting salesforce career opportunities with People Prime.  We help businesses find and hire salesforce talent to drive innovation and success." />
+  <!--add content here -->
+  <meta name="keywords"
+    content="Salesforce careers, salesforce career opportunities, jobs in salesforce, salesforce jobs, salesforce job postings, salesforce vacancy, sfdc jobs, salesforce job search, salesforce developer vacancy, salesforce developer recruitment, salesforce job listings, salesforce hiring, hire salesforce developer, salesforce job openings" />
+  <meta name="author" content="www.people-prime.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/it-consulting.css" />
+
+  <style>
+    /* ===== Java Page Custom ===== */
+
+    .section {
+      padding: 100px 60px;
+      background: transparent;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    /* Grid */
+    .skills-grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    /* Modal */
+    .custom-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #021814;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 90%;
+      color: white;
+      border: 1px solid #00c896;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      font-size: 22px;
+      color: #00c896;
+    }
+
+    /* List spacing */
+    .modal-content ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .modal-content li {
+      margin-bottom: 8px;
+    }
+
+    .cards-1 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .cards-2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      gap: 30px;
+    }
+
+    .grid-1,
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    /* Hero Height Fix */
+    .hero,
+    .hero-content {
+      height: auto !important;
+      min-height: auto !important;
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+      background: transparent !important;
+    }
+
+    .hero-content {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: -webkit-flex !important;
+      display: flex !important;
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+      -webkit-flex-direction: row !important;
+      flex-direction: row !important;
+      -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+      -webkit-justify-content: center !important;
+      justify-content: center !important;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      max-width: 1200px;
+      margin: 0 auto !important;
+    }
+
+    .hero-content>div {
+      flex: 0 1 700px;
+      min-width: 300px;
+    }
+
+    .hero-content h2 {
+      text-align: center;
+    }
+
+    .square-video {
+      width: 350px !important;
+      height: 350px !important;
+      border-radius: 20px;
+      overflow: hidden;
+      flex: 0 0 350px !important;
+    }
+
+    .square-video video {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+    }
+
+    @media (max-width: 1024px) {
+      .square-video {
+        width: 300px !important;
+        height: 300px !important;
+        flex: 0 0 300px !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-content {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 30px !important;
+      }
+
+      .square-video {
+        width: 100% !important;
+        max-width: 350px !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto !important;
+        flex: 0 0 auto !important;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-content img,
+      .hero-content .square-video {
+        margin-right: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      &#9776;
+    </button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Platform</span></a>
+        </li>
+        <li>
+          <a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a>
+        </li>
+        <li>
+          <a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="it-consulting.html">IT Consulting</a>
+            <a href="staff.html">Staff Augmentation (T&M)</a>
+            <a href="managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu skill-dropdown">
+            <a href="java.html">Java Technologies</a>
+            <a href="microsoft.html">Microsoft Technologies</a>
+            <a href="it-infra.html">IT Infrastructure</a>
+            <a href="sap.html">SAP</a>
+            <a href="datasci.html">Data Science</a>
+            <a href="servicenow.html">Service Now</a>
+            <a href="salesforce.html">Salesforce</a>
+            <a href="dw.html">Data Warehouse</a>
+            <a href="cloud.html">Cloud Technologies</a>
+            <a href="ai-ml.html">AI and ML</a>
+            <a href="iot.html">IOT</a>
+            <a href="database.html">Database management</a>
+            <a href="testing.html">Testing</a>
+            <a href="cybersecurity.html">Cyber Security</a>
+            <a href="oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Corporate Compliance<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="iso.html">ISO9001-27001</a>
+            <a href="cobe.html">Code of Business Ethics</a>
+            <a href="soc2type2.html">SOC2 Type 2</a>
+            <a href="statutory.html">Statutory Compliance</a>
+            <a href="env-sus.html">Environmental Sustainability</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">About Us<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="lt.html">Leadership Team</a>
+            <a href="it-security.html">IT Security Policies</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="activejobs.html" class="nav-btn">Active Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        &#10005;
+      </button>
+    </div>
+    <ul class="drawer-nav">
+      <li>
+        <a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span class="drawer-ptaas-subtext">Platform</span></a>
+      </li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">People Remotely</a></li>
+      <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Services <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="it-consulting.html">IT Consulting</a>
+          <a href="staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Skill Sets <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="java.html">Java Technologies</a>
+          <a href="microsoft.html">Microsoft Technologies</a>
+          <a href="it-infra.html">IT Infrastructure</a>
+          <a href="sap.html">SAP</a>
+          <a href="datasci.html">Data Science</a>
+          <a href="servicenow.html">Service Now</a>
+          <a href="salesforce.html">Salesforce</a>
+          <a href="dw.html">Data Warehouse</a>
+          <a href="cloud.html">Cloud Technologies</a>
+          <a href="ai-ml.html">AI and ML</a>
+          <a href="iot.html">IOT</a>
+          <a href="database.html">Database management</a>
+          <a href="testing.html">Testing</a>
+          <a href="cybersecurity.html">Cyber Security</a>
+          <a href="oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Corporate Compliance <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="iso.html">ISO9001-27001</a>
+          <a href="cobe.html">Code of Business Ethics</a>
+          <a href="soc2type2.html">SOC2 Type 2</a>
+          <a href="statutory.html">Statutory Compliance</a>
+          <a href="env-sus.html">Environmental Sustainability</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          About Us <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="lt.html">Leadership Team</a>
+          <a href="it-security.html">IT Security Policies</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li>
+        <a href="activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="it-header">
+    <h2>Skill Sets</h2>
+    <h1>Salesforce</h1>
+  </div>
+
+  <!-- ✅ HERO (Java intro) -->
+  <div class="it-body-background">
+    <section class="hero">
+      <div class="hero-content" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap">
+        <div>
+          <h2>Salesforce</h2>
+          <p class="description">
+            At People Prime Worldwide, we specialize in connecting top talent
+            with organizations utilizing Salesforce technologies. Salesforce, a
+            leading cloud-based customer relationship management (CRM) platform,
+            offers innovative solutions to enhance business processes and
+            customer engagement. Our recruitment services focus on hiring
+            skilled candidates proficient in Salesforce technologies, including
+            Sales Cloud, Service Cloud, Marketing Cloud, Commerce Cloud, and
+            Salesforce Platform. We ensure our clients have access to the best
+            professionals to drive their Salesforce initiatives and achieve
+            their business goals.
+          </p>
+        </div>
+
+        <div class="square-video">
+          <video autoplay loop muted playsinline>
+            <source src="assets/videos/saf.webm" type="video/webm">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ SKILLS SECTION -->
+    <section class="section">
+      <h2><span class="highlight">Salesforce</span> Skill Sets</h2>
+
+      <div class="skills-grid">
+        <!-- 4 cards plus an image are in cards-1 and cards-2 classes -->
+        <div class="cards-1">
+          <img src="assets/images/saf1.png" alt="" />
+          <div class="grid-1">
+            <div class="card" onclick="openModal('sfLwc')">
+              <div class="card-icon">
+                <img src="assets/images/sficon1.png" alt="" />
+              </div>
+              <h3>SFDC LWC Developer</h3>
+              <p>
+                SFDC, Apex, Triggers, Lightning Web Components (LWC),
+                Visualforce, Workflows, Batch Apex...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('sfAdmin')">
+              <div class="card-icon">
+                <img src="assets/images/sficon2.png" alt="" />
+              </div>
+              <h3>SFDC Administrator</h3>
+              <p>
+                Salesforce security, administrative functions,
+                troubleshooting, internal system audits...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('sfFsl')">
+              <div class="card-icon">
+                <img src="assets/images/sficon3.png" alt="" />
+              </div>
+              <h3>SFDC Field Service Lightning</h3>
+              <p>
+                Salesforce Certified PD1/PD2, Sales/Service Cloud, Salesforce
+                development, Apex code...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('sfNcino')">
+              <div class="card-icon">
+                <img src="assets/images/sficon4.png" alt="" />
+              </div>
+              <h3>SFDC Ncino</h3>
+              <p>
+                nCino - cloud banking software, JavaScript frameworks like
+                Angular...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-2">
+          <img src="assets/images/saf2.png" alt="" />
+          <div class="grid-2">
+            <div class="card" onclick="openModal('sfVlocity')">
+              <div class="card-icon">
+                <img src="assets/images/sficon5.png" alt="" />
+              </div>
+              <h3>Salesforce Vlocity Developer</h3>
+              <p>
+                Apache Hadoop, Apache Spark, Apache Kafka, Apache Flink, Java
+                Data Mining (JDM) API...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('sfCpq')">
+              <div class="card-icon">
+                <img src="assets/images/sficon6.png" alt="" />
+              </div>
+              <h3>SFDC CPQ Developer</h3>
+              <p>
+                Salesforce Sales Cloud, Salesforce CPQ like Price Rules,
+                Product Rules, QCP, Quote Templates...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('sfDevOps')">
+              <div class="card-icon">
+                <img src="assets/images/sficon1.png" alt="" />
+              </div>
+              <h3>SFDC With Flosum, Copado</h3>
+              <p>
+                Salesforce development, COPADO deployments and DevOps/release
+                management...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('sfMarketing')">
+              <div class="card-icon">
+                <img src="assets/images/sficon2.png" alt="" />
+              </div>
+              <h3>Salesforce Marketing Cloud</h3>
+              <p>
+                Java ME Embedded, Eclipse IoT, Pi4J (Java for Raspberry Pi),
+                MQTT...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ✅ MODAL -->
+  <div id="modal" class="custom-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">✖</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <!-- ✅ wrap everything -->
+
+      <div class="footer-top">
+        <!-- Left Logo + Description -->
+        <div class="footer-about">
+          <img src="assets/logos/logo.png" alt="logo" class="footer-logo" />
+
+          <p>
+            We specialize in
+            <b>IT Consulting, Staff Augmentation, & Managed Services</b>,
+            delivering comprehensive workforce solutions that drive business
+            success. As a trusted technology partner, we bridge the talent gap
+            with tailored Staff strategies, ensuring seamless alignment with
+            organizational goals.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="activejobs.html">Active Jobs</a></li>
+              <li><a href="iso.html">Corporate Compliance</a></li>
+              <li><a href="it-security.html">IT Security Policies</a></li>
+              <li>
+                <a href="technology-hub/technology-hub.html">Technology Hub</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="it-consulting.html">IT Consulting & Implementation Services</a>
+              </li>
+              <li><a href="staff.html">Staff Augmentation</a></li>
+              <li>
+                <a href="managed-services.html">Managed Teams & Services</a>
+              </li>
+              <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Toll Free</h3>
+            <p class="phone">1800 572 1880</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect Us On</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank">F</a>
+              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>
+          Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="tagline">Better Careers Better Lives</span>
+      </div>
+    </div>
+    <!-- ✅ CLOSE footer-inner -->
+  </footer>
+  <script src="js/script.js"></script>
+
+  <!-- ✅ JS -->
+  <script>
+    function openModal(type) {
+      const modal = document.getElementById("modal");
+      const body = document.getElementById("modal-body");
+
+      const data = {
+        sfLwc: `
+                  <h3>SFDC LWC Developer</h3>
+                  <p>SFDC, Apex, Triggers, Lightning Web Components (LWC), Visualforce, Workflows, Batch Apex, Apex Data loader, Salesforce ecosystem, Sales cloud, Service cloud, Experience cloud and Salesforce platform, Vlocity, FinDock, DocuSign, Salesforce lightning web components (LWC), Data Architecture, Management Designer, Integration Architecture Designer, and Agile Scrum. Declarative tools (e.g., Process Builder, Flow Builder), programmatic development (e.g., Apex, Visualforce, Lightning Web Components).</p>`,
+        sfAdmin: `
+                  <h3>SFDC Administrator</h3>
+                  <p>Salesforce security, administrative functions, troubleshooting, internal system audits, Administration, development testing, SFDC, Author, UAT, Apex, Salesforce Visualforce</p>`,
+
+        sfFsl: `
+                  <h3>SFDC With Field Service Lightning Developer </h3>
+                  <p>Salesforce Certified PD1/PD2, Sales/Service Cloud, Salesforce development, Apex code, Lightning web components, and Visualforce pages.
+
+      Salesforce components, Apex classes, triggers, Lightning web components, Visualforce pages, code reviews, business processes, workflows, and automation.
+
+      Salesforce integrations - REST and SOAP APIs. Salesforce functionality - debugging and testing.
+      </p>`,
+
+        sfNcino: `
+                  <h3>SFDC Ncino</h3>
+                  <p> nCino - cloud banking software, JavaScript frameworks like Angular, React, Knockout, Agile software development Loan Origination, SOQL, Salesforce, Salesforce Administration, Salesforce Consulting, Salesforce Development, Visualforce.</p>`,
+
+        sfVlocity: `
+                  <h3>Salesforce Vlocity Developer </h3>
+                  <p>Salesforce and Vlocity, Vlocity Data Models, Omniscripts, Data Raptors, Vlocity Order Manager, Vlocity Card, Vlocity Integration Procedures, Vlocity Product Modelling (EPC) & Vlocity CPQ (Configure Price Quote), SFDC, Apex, Triggers, Visualforce, Workflows.</p>`,
+
+        sfCpq: `
+                  <h3>SFDC CPQ Developer</h3>
+                  <p>Salesforce Sales Cloud, Salesforce CPQ like Price Rules, Product Rules, QCP, Quote Templates, MDQ (Multi-dimensional Quote), API Integration, Visualforce Pages, Triggers, Lightning, Force.com IDE, Apex Classes, Salesforce Object Query Language (SOQL), Java-script, and LWC, LWC-enabled OS, Workflows, Steel Brick CPQ, Apttus CPQ, CLM, FSL, Triggers, Configuration.</p>`,
+
+        sfDevOps: `
+                  <h3>SFDC With Flosum, Copado</h3>
+                  <p>Salesforce development, COPADO deployments and DevOps/release management, CI/CD processes, Salesforce development lifecycle, including sandboxes, change sets, metadata deployment, version control, Deployment Automation, deployment (CI/CD) workflows, Jenkins, GitLab, Git or SVN, branching strategies, and code merging, Copado data templates and Copado data deployments, Copado fundamental-II or Salesforce Certified Deployment Specialists</p>`,
+
+        sfMarketing: `
+                  <h3>Salesforce Marketing Cloud Developer</h3>
+                  <p>Salesforce Marketing Cloud (SFMC), REST API, AmpScript, SQL development, Cloudpage template development, Web sitemap, and SDK development, CDP, engagement campaigns, including email templates, Cloud Pages, Automation Studio, Journey Builder development, and Interaction Studio content insertions.</p>`,
+      };
+
+      body.innerHTML = data[type];
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

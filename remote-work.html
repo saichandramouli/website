@@ -1,0 +1,835 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remote Jobs as a Service | People Prime Worldwide</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
+    <meta name="title" content="Remote Jobs as a Service | People Prime Worldwide" />
+    <meta name="description"
+        content="Scale globally. Deliver faster. Build smarter teams. A modern workforce model designed for agility, efficiency, and long-term business growth." />
+    <meta name="author" content="www.people-prime.com" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/it-consulting.css" />
+
+    <style>
+        :root {
+            --accent-blue: #14DEFF;
+            --text-gray: #ffffff;
+            --white: #ffffff;
+        }
+
+        .it-body-background {
+            /* Inheriting from it-consulting.css */
+        }
+
+        .it-header {
+            /* Inheriting from it-consulting.css */
+        }
+
+        .it-header h1 {
+            color: var(--accent-blue);
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        .tagline-section {
+            text-align: center;
+            padding: 80px 20px 40px;
+        }
+
+        .tagline-section h2 {
+            font-size: 2.2rem;
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .tagline-section p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-row {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .video-container {
+            width: 550px;
+            aspect-ratio: 16 / 9;
+            flex: 0 0 550px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border: none;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-gray);
+        }
+
+        .why-choose-header {
+            text-align: center;
+            margin: 100px auto 60px;
+            padding: 0 20px;
+        }
+
+        .why-choose-header h2 {
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .why-choose-header h4 {
+            font-size: 1.3rem;
+            color: var(--accent-blue);
+            font-weight: 400;
+        }
+
+        .services-list {
+            max-width: 900px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+        }
+
+        .service-point {
+            margin-bottom: 50px;
+        }
+
+        .service-point.has-bg {
+            background-size: 100% 100%;
+            background-position: center;
+            padding: 40px;
+            border-radius: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .service-point.bg-1 {
+            background-image: url('assets/images/r1.png');
+        }
+
+        .service-point.bg-2 {
+            background-image: url('assets/images/r2.png');
+        }
+
+        .service-point.bg-3 {
+            background-image: url('assets/images/r3.png');
+        }
+
+        .service-point.bg-4 {
+            background-image: url('assets/images/r4.png');
+        }
+
+        .service-point.bg-5 {
+            background-image: url('assets/images/r5.png');
+        }
+
+        .service-point.bg-6 {
+            background-image: url('assets/images/r6.png');
+        }
+
+        .service-point.has-bg:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-point h3 {
+            font-size: 1.6rem;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .service-point.has-bg h3 {
+            padding-left: 60px;
+        }
+
+        .service-point h5 {
+            font-size: 1.1rem;
+            color: var(--white);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .service-point p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-gray);
+        }
+
+        .talent-advantage {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .talent-advantage h2 {
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .talent-advantage h4 {
+            font-size: 1.3rem;
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+        }
+
+        /* Global White Text Overrides */
+        p,
+        li,
+        .description,
+        .sub,
+        .talent-item p,
+        .service-point p,
+        .footer-column ul li,
+        .footer-column ul li a,
+        .footer-about p {
+            color: #ffffff !important;
+        }
+
+        .talent-advantage p.sub {
+            color: var(--text-gray);
+            margin-bottom: 50px;
+        }
+
+        .talent-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .talent-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 80px;
+            text-align: left;
+        }
+
+        .talent-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .talent-text {
+            flex: 1;
+        }
+
+        .talent-item h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .talent-item h4 {
+            color: var(--accent-blue);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .talent-item p {
+            color: var(--text-gray);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .talent-image {
+            width: 350px;
+            height: 350px;
+            object-fit: contain;
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 20px rgba(20, 222, 255, 0.2));
+        }
+
+        .what-you-get {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .what-you-get h2 {
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .what-you-get h4 {
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+        }
+
+        .what-you-get p.sub {
+            color: var(--text-gray);
+            margin-bottom: 60px;
+        }
+
+        .pills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .pill {
+            padding: 12px 30px;
+            border: 1.5px solid rgba(255, 255, 255, 0.6);
+            border-radius: 50px;
+            color: var(--white);
+            font-size: 1rem;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .pill:hover {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+            background: rgba(20, 222, 255, 0.05);
+            transform: translateY(-3px);
+        }
+
+        /* --- Responsive Design --- */
+
+        /* Hide Hamburger on Desktop */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        @media (max-width: 1024px) {
+            .navbar {
+                padding: 20px 40px;
+            }
+
+            .it-header h1 {
+                font-size: 3rem;
+            }
+
+            .talent-grid {
+                gap: 60px;
+                padding: 0 40px;
+            }
+
+            .talent-item {
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .navbar nav {
+                display: none;
+            }
+
+            .navbar {
+                padding: 15px 20px;
+                position: fixed;
+                background: rgba(0, 0, 0, 0.9);
+                backdrop-filter: blur(10px);
+            }
+
+            .it-header {
+                padding: 120px 20px 60px;
+            }
+
+            .it-header h1 {
+                font-size: 2.2rem;
+            }
+
+            .about-row {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+                margin: 40px auto;
+            }
+
+            .video-container {
+                width: 100%;
+                max-width: 550px;
+                flex: 0 0 auto;
+                margin: 0 auto;
+            }
+
+            .tagline-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .service-point.has-bg {
+                padding: 30px 20px;
+                background-size: cover;
+            }
+
+            .service-point.has-bg h3 {
+                padding-left: 0;
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            .service-point h3 {
+                font-size: 1.4rem;
+                text-align: center;
+            }
+
+            .service-point h5,
+            .service-point p {
+                text-align: center;
+            }
+
+            .talent-grid {
+                gap: 80px;
+                padding: 0 20px;
+            }
+
+            .talent-item,
+            .talent-item:nth-child(even) {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .talent-image {
+                width: 100%;
+                max-width: 300px;
+                height: 300px;
+                margin: 0 auto;
+            }
+
+            .what-you-get h2 {
+                font-size: 2rem;
+            }
+
+            .pills-container {
+                gap: 12px;
+            }
+
+            .pill {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .footer-top {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            .grid-links {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            &#9776;
+        </button>
+
+        <nav>
+            <ul>
+                <li><a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Platform</span></a></li>
+                <li><a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a></li>
+                <li><a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a></li>
+                <li class="dropdown">
+                    <a href="#">Services <span class="nav-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="it-consulting.html">IT Consulting</a>
+                        <a href="staff.html">Staff Augmentation (T&M)</a>
+                        <a href="managed-services.html">Managed Teams and Managed Services</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Skill Sets <span class="nav-arrow">▼</span></a>
+                    <div class="dropdown-menu skill-dropdown">
+                        <a href="java.html">Java Technologies</a>
+                        <a href="microsoft.html">Microsoft Technologies</a>
+                        <a href="it-infra.html">IT Infrastructure</a>
+                        <a href="sap.html">SAP</a>
+                        <a href="datasci.html">Data Science</a>
+                        <a href="servicenow.html">Service Now</a>
+                        <a href="salesforce.html">Salesforce</a>
+                        <a href="dw.html">Data Warehouse</a>
+                        <a href="cloud.html">Cloud Technologies</a>
+                        <a href="ai-ml.html">AI and ML</a>
+                        <a href="iot.html">IOT</a>
+                        <a href="database.html">Database management</a>
+                        <a href="testing.html">Testing</a>
+                        <a href="cybersecurity.html">Cyber Security</a>
+                        <a href="oracle.html">Oracle</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Corporate Compliance<span class="nav-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="iso.html">ISO9001-27001</a>
+                        <a href="cobe.html">Code of Business Ethics</a>
+                        <a href="soc2type2.html">SOC2 Type 2</a>
+                        <a href="statutory.html">Statutory Compliance</a>
+                        <a href="env-sus.html">Environmental Sustainability</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">About Us<span class="nav-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="lt.html">Leadership Team</a>
+                        <a href="it-security.html">IT Security Policies</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </li>
+                <li><a href="activejobs.html" class="nav-btn">Active Jobs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+            <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+                &#10005;
+            </button>
+        </div>
+        <ul class="drawer-nav">
+            <li><a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span class="drawer-ptaas-subtext">Platform</span></a></li>
+            <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">People Remotely</a></li>
+            <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+            <li class="drawer-dropdown">
+                <button class="drawer-dropdown-btn">Services <span class="drawer-arrow">&#9660;</span></button>
+                <div class="drawer-dropdown-menu">
+                    <a href="it-consulting.html">IT Consulting</a>
+                    <a href="staff.html">Staff Augmentation (T&amp;M)</a>
+                    <a href="managed-services.html">Managed Teams and Managed Services</a>
+                </div>
+            </li>
+            <li class="drawer-dropdown">
+                <button class="drawer-dropdown-btn">Skill Sets <span class="drawer-arrow">&#9660;</span></button>
+                <div class="drawer-dropdown-menu">
+                    <a href="java.html">Java Technologies</a>
+                    <a href="microsoft.html">Microsoft Technologies</a>
+                    <a href="it-infra.html">IT Infrastructure</a>
+                    <a href="sap.html">SAP</a>
+                    <a href="datasci.html">Data Science</a>
+                    <a href="servicenow.html">Service Now</a>
+                    <a href="salesforce.html">Salesforce</a>
+                    <a href="dw.html">Data Warehouse</a>
+                    <a href="cloud.html">Cloud Technologies</a>
+                    <a href="ai-ml.html">AI and ML</a>
+                    <a href="iot.html">IOT</a>
+                    <a href="database.html">Database management</a>
+                    <a href="testing.html">Testing</a>
+                    <a href="cybersecurity.html">Cyber Security</a>
+                    <a href="oracle.html">Oracle</a>
+                </div>
+            </li>
+            <li class="drawer-dropdown">
+                <button class="drawer-dropdown-btn">
+                    Corporate Compliance <span class="drawer-arrow">&#9660;</span>
+                </button>
+                <div class="drawer-dropdown-menu">
+                    <a href="iso.html">ISO9001-27001</a>
+                    <a href="cobe.html">Code of Business Ethics</a>
+                    <a href="soc2type2.html">SOC2 Type 2</a>
+                    <a href="statutory.html">Statutory Compliance</a>
+                    <a href="env-sus.html">Environmental Sustainability</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </li>
+            <li class="drawer-dropdown">
+                <button class="drawer-dropdown-btn">
+                    About Us <span class="drawer-arrow">&#9660;</span>
+                </button>
+                <div class="drawer-dropdown-menu">
+                    <a href="lt.html">Leadership Team</a>
+                    <a href="it-security.html">IT Security Policies</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </li>
+            <li><a href="activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a></li>
+        </ul>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Hero Header -->
+    <div class="it-header" style="position: relative;">
+        <h1>Remote Work</h1>
+        <a href="contact.html" class="btn-secondary" style="display: inline-block; margin-top: 20px;">Contact Us</a>
+        <div style="margin-top: 20px; color: rgba(255, 255, 255, 0.9); font-size: 18px;">
+            <a href="tel:+17472121886" style="color: var(--accent-blue); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                +1 7472121886
+            </a>
+        </div>
+        <div style="margin-top: 10px; color: rgba(255, 255, 255, 0.9); font-size: 18px;">
+            <a href="mailto:remote@people-prime.com" style="color: var(--accent-blue); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                remote@people-prime.com
+            </a>
+        </div>
+    </div>
+
+    <div class="it-body-background">
+        <!-- Tagline Section -->
+        <section class="tagline-section">
+            <h2>Scale globally. Deliver faster. Build smarter teams.</h2>
+
+        </section>
+
+        <!-- About Row -->
+        <section class="about-row">
+            <div class="video-container">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ali9Y8LPaNA" title="How US Companies Can Build High-Performing Remote Teams from India | People Prime Worldwide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="about-text">
+                <p>
+                    At People Prime Worldwide, we enable organizations to scale faster by providing access to
+                    high-quality remote talent across India and Eastern Europe. Our Remote Jobs as a Service model is
+                    designed to deliver agility, efficiency, and innovation—without the overhead of traditional hiring.
+                    <br><br>
+                    Whether you're building new capabilities or scaling existing teams, we act as your extended
+                    workforce partner, managing everything from talent acquisition to delivery.
+                </p>
+            </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section class="why-choose-header">
+            <h2>Why Choose People Prime?</h2>
+            <h4>More than staffing — we become your strategic workforce partner.</h4>
+            <p style="color: var(--text-gray); max-width: 800px; margin: 15px auto;">
+                We help organizations build distributed teams that are productive, scalable, and outcome-driven.
+            </p>
+        </section>
+
+        <!-- Services List -->
+        <section class="services-list">
+            <div class="service-point has-bg bg-1">
+                <h3>1. High Productivity, Proven Talent</h3>
+                <h5>Top-quality talent that is deployment-ready from day one.</h5>
+                <p>
+                    Our professionals are selected not just for skill, but for delivery excellence and global work
+                    readiness. We provide pre-vetted, highly skilled professionals who are experienced in working with
+                    global teams. Our structured onboarding and performance-driven approach ensure faster ramp-up and
+                    consistent output.
+                </p>
+            </div>
+
+            <div class="service-point has-bg bg-2">
+                <h3>2. Optimized Cost Advantage</h3>
+                <h5>Premium talent delivery without premium operational overhead.</h5>
+                <p>
+                    Maximize value while maintaining speed, quality, and efficiency. Leverage significant cost
+                    efficiencies without compromising on quality. Our global talent hubs in India and Eastern Europe
+                    help
+                    you reduce operational and hiring costs while maintaining top-tier performance.
+                </p>
+            </div>
+
+            <div class="service-point has-bg bg-3">
+                <h3>3. Unlimited Scalability</h3>
+                <h5>Grow when needed. Optimize when needed.</h5>
+                <p>
+                    Our flexible talent model helps you respond quickly to changing business priorities. Scale your
+                    teams
+                    up or down based on business demand. Our flexible model allows you to quickly expand capabilities
+                    without long-term commitments or infrastructure constraints.
+                </p>
+            </div>
+
+            <div class="service-point has-bg bg-4">
+                <h3>4. Driving Innovation</h3>
+                <h5>Innovation starts with access to the right expertise.</h5>
+                <p>
+                    Bring specialized skills into your teams faster to accelerate transformation initiatives. Access
+                    talent with cutting-edge skills in AI, Data, Engineering, and Digital technologies. We bring in
+                    fresh perspectives and innovation-led thinking to accelerate your business outcomes.
+                </p>
+            </div>
+
+            <div class="service-point has-bg bg-5">
+                <h3>5. Pod-Based Delivery Model</h3>
+                <h5>Dedicated teams built for accountability and execution.</h5>
+                <p>
+                    Structured collaboration models that improve delivery velocity and ownership. We go beyond
+                    individual hiring by offering dedicated pod setups—self-managed teams consisting of developers, QA,
+                    leads, and specialists aligned to your project goals. This ensures better collaboration,
+                    accountability, and faster delivery.
+                </p>
+            </div>
+
+            <div class="service-point has-bg bg-6">
+                <h3>6. End-to-End Delivery Management</h3>
+                <h5>From hiring to governance — we manage the full lifecycle.</h5>
+                <p>
+                    A streamlined delivery framework focused on transparency, quality, and measurable outcomes. From
+                    sourcing and onboarding to performance tracking and governance, we manage the entire delivery
+                    lifecycle. Our structured approach ensures quality, transparency, and measurable results.
+                </p>
+            </div>
+        </section>
+
+        <!-- Global Talent Advantage -->
+        <section class="talent-advantage">
+            <h2>Our Global Talent Advantage</h2>
+            <h4>Two powerful talent hubs. One global delivery advantage.</h4>
+            <p class="sub">Access world-class professionals with regional strengths tailored for business growth.</p>
+
+            <div class="talent-grid">
+                <div class="talent-item">
+                    <div class="talent-text">
+                        <h3>India</h3>
+                        <h4>A mature talent ecosystem built for scale and technology excellence.</h4>
+                        <p>Strong expertise in IT services, AI/ML, product engineering, and support functions.</p>
+                    </div>
+                    <img src="assets/images/r7.png" alt="India" class="talent-image" />
+                </div>
+                <div class="talent-item">
+                    <div class="talent-text">
+                        <h3>Eastern Europe</h3>
+                        <h4>Deep engineering capability with strong technical specialization.</h4>
+                        <p>High-quality engineering talent with strong technical depth and timezone advantage for global
+                            clients.</p>
+                    </div>
+                    <img src="assets/images/r8.png" alt="Eastern Europe" class="talent-image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- What You Get -->
+        <section class="what-you-get">
+            <h2>What You Get</h2>
+            <h4>A workforce model built for speed, flexibility, and performance.</h4>
+            <p class="sub">Everything you need to scale delivery without operational complexity.</p>
+
+            <div class="pills-container">
+                <div class="pill">✔ Faster hiring turnaround</div>
+                <div class="pill">✔ Access to niche and in-demand skills</div>
+                <div class="pill">✔ Reduced operational burden</div>
+                <div class="pill">✔ Dedicated account management</div>
+                <div class="pill">✔ Seamless integration with your internal teams</div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <!-- ✅ wrap everything -->
+
+            <div class="footer-top">
+                <!-- Left Logo + Description -->
+                <div class="footer-about">
+                    <img src="assets/logos/logo.png" alt="logo" class="footer-logo" />
+
+                    <p>
+                        We specialize in
+                        <b>IT Consulting, Staff Augmentation, & Managed Services</b>,
+                        delivering comprehensive workforce solutions that drive business
+                        success. As a trusted technology partner, we bridge the talent gap
+                        with tailored Staff strategies, ensuring seamless alignment with
+                        organizational goals.
+                    </p>
+                </div>
+
+                <!-- Grid -->
+                <div class="grid-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="activejobs.html">Active Jobs</a></li>
+                            <li><a href="iso.html">Corporate Compliance</a></li>
+                            <li><a href="it-security.html">IT Security Policies</a></li>
+                            <li>
+                                <a href="technology-hub/technology-hub.html">Technology Hub</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li>
+                                <a href="it-consulting.html">IT Consulting & Implementation Services</a>
+                            </li>
+                            <li><a href="staff.html">Staff Augmentation</a></li>
+                            <li>
+                                <a href="managed-services.html">Managed Teams & Services</a>
+                            </li>
+                            <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Toll Free</h3>
+                        <p class="phone">1800 572 1880</p>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Connect Us On</h3>
+                        <div class="social-icons">
+                            <a href="#" target="_blank">F</a>
+                            <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+                            <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+                            <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all"
+                                target="_blank">in</a>
+                            <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p>
+                    Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+                </p>
+                <span class="tagline">Better Careers Better Lives</span>
+            </div>
+        </div>
+        <!-- ✅ CLOSE footer-inner -->
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,860 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Java Developer Recruitment | People Prime Worldwide</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
+  <meta name="title" content="Top Java Developer Recruitment | People Prime Worldwide" />
+  <meta name="description"
+    content="People Prime Worldwide – Experts in Java Developer Recruitment. We help businesses find and hire top Java talent to drive innovation, efficiency, and success." />
+  <!--add content here -->
+  <meta name="keywords"
+    content="java developers, core java, java full stack developer, jdk for java, java stack, jdk software, JavaScript developer, java full stack, java backend developer, java web development, java backend, java full stack developer jobs, advanced java programming, developer JavaScript, job openings for java developer, java full stack jobs" />
+  <meta name="author" content="www.people-prime.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/it-consulting.css" />
+
+  <style>
+    /* ===== Java Page Custom ===== */
+
+    .section {
+      padding: 100px 60px;
+      background: transparent;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    /* Grid */
+    .skills-grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    /* Modal */
+    .custom-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #021814;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 90%;
+      color: white;
+      border: 1px solid #00c896;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      font-size: 22px;
+      color: #00c896;
+    }
+
+    /* List spacing */
+    .modal-content ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .modal-content li {
+      margin-bottom: 8px;
+    }
+
+    .cards-1 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .cards-2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      gap: 30px;
+    }
+
+    .cards-1 img,
+    .cards-2 img {
+      width: 350px !important;
+      height: auto !important;
+      max-height: 350px !important;
+      object-fit: contain !important;
+      border-radius: 20px;
+    }
+
+    .grid-1,
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    /* Hero Height Fix */
+    .hero,
+    .hero-content {
+      height: auto !important;
+      min-height: auto !important;
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+    }
+
+    .hero-content {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: -webkit-flex !important;
+      display: flex !important;
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+      -webkit-flex-direction: row !important;
+      flex-direction: row !important;
+      -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+      -webkit-justify-content: center !important;
+      justify-content: center !important;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      gap: 40px !important;
+      max-width: 1200px;
+      margin: 0 auto !important;
+      -webkit-flex-wrap: wrap !important;
+      -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+    }
+
+    .hero-content>div {
+      flex: 0 1 700px;
+      min-width: 300px;
+    }
+
+    .hero-content h2 {
+      text-align: center;
+    }
+
+    .square-video {
+      width: 350px !important;
+      height: 350px !important;
+      border-radius: 20px;
+      overflow: hidden;
+      flex: 0 0 350px !important;
+    }
+
+    .square-video video {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+    }
+
+    /* Responsive Queries */
+    @media (max-width: 1024px) {
+      .section {
+        padding: 60px 40px;
+      }
+
+      .cards-1,
+      .cards-2 {
+        gap: 20px;
+      }
+
+      .cards-1 img,
+      .cards-2 img {
+        width: 300px !important;
+      }
+
+      .square-video {
+        width: 300px !important;
+        height: 300px !important;
+        flex: 0 0 300px !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        padding: 40px 20px;
+      }
+
+      .section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+
+      .cards-1,
+      .cards-2 {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .cards-2 {
+        flex-direction: column !important;
+      }
+
+      .cards-1 img,
+      .cards-2 img {
+        width: 100% !important;
+        max-width: 350px !important;
+        margin-top: 0 !important;
+        margin-bottom: 10px;
+      }
+
+      .grid-1,
+      .grid-2 {
+        grid-template-columns: 1fr;
+        width: 100%;
+      }
+
+      .hero-content {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 30px !important;
+      }
+
+      .hero-content>div {
+        flex: 1 1 auto;
+        min-width: unset;
+      }
+
+      .hero-content h2 {
+        text-align: center !important;
+      }
+
+      .square-video {
+        width: 100% !important;
+        max-width: 350px !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto !important;
+        flex: 0 0 auto !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section {
+        padding: 40px 15px;
+      }
+
+      .it-header h1 {
+        font-size: 28px !important;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+
+      .hero-content img,
+      .hero-content .square-video {
+        margin-right: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      &#9776;
+    </button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Platform</span></a>
+        </li>
+        <li>
+          <a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a>
+        </li>
+        <li>
+          <a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="it-consulting.html">IT Consulting</a>
+            <a href="staff.html">Staff Augmentation (T&M)</a>
+            <a href="managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu skill-dropdown">
+            <a href="java.html">Java Technologies</a>
+            <a href="microsoft.html">Microsoft Technologies</a>
+            <a href="it-infra.html">IT Infrastructure</a>
+            <a href="sap.html">SAP</a>
+            <a href="datasci.html">Data Science</a>
+            <a href="servicenow.html">Service Now</a>
+            <a href="salesforce.html">Salesforce</a>
+            <a href="dw.html">Data Warehouse</a>
+            <a href="cloud.html">Cloud Technologies</a>
+            <a href="ai-ml.html">AI and ML</a>
+            <a href="iot.html">IOT</a>
+            <a href="database.html">Database management</a>
+            <a href="testing.html">Testing</a>
+            <a href="cybersecurity.html">Cyber Security</a>
+            <a href="oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Corporate Compliance<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="iso.html">ISO9001-27001</a>
+            <a href="cobe.html">Code of Business Ethics</a>
+            <a href="soc2type2.html">SOC2 Type 2</a>
+            <a href="statutory.html">Statutory Compliance</a>
+            <a href="env-sus.html">Environmental Sustainability</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">About Us<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="lt.html">Leadership Team</a>
+            <a href="it-security.html">IT Security Policies</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="activejobs.html" class="nav-btn">Active Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        &#10005;
+      </button>
+    </div>
+    <ul class="drawer-nav">
+      <li>
+        <a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span class="drawer-ptaas-subtext">Platform</span></a>
+      </li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">People Remotely</a></li>
+      <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Services <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="it-consulting.html">IT Consulting</a>
+          <a href="staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Skill Sets <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="java.html">Java Technologies</a>
+          <a href="microsoft.html">Microsoft Technologies</a>
+          <a href="it-infra.html">IT Infrastructure</a>
+          <a href="sap.html">SAP</a>
+          <a href="datasci.html">Data Science</a>
+          <a href="servicenow.html">Service Now</a>
+          <a href="salesforce.html">Salesforce</a>
+          <a href="dw.html">Data Warehouse</a>
+          <a href="cloud.html">Cloud Technologies</a>
+          <a href="ai-ml.html">AI and ML</a>
+          <a href="iot.html">IOT</a>
+          <a href="database.html">Database management</a>
+          <a href="testing.html">Testing</a>
+          <a href="cybersecurity.html">Cyber Security</a>
+          <a href="oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Corporate Compliance <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="iso.html">ISO9001-27001</a>
+          <a href="cobe.html">Code of Business Ethics</a>
+          <a href="soc2type2.html">SOC2 Type 2</a>
+          <a href="statutory.html">Statutory Compliance</a>
+          <a href="env-sus.html">Environmental Sustainability</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          About Us <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="lt.html">Leadership Team</a>
+          <a href="it-security.html">IT Security Policies</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li>
+        <a href="activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="it-header">
+    <h2>Skill Sets</h2>
+    <h1>Java Technologies</h1>
+  </div>
+
+  <!-- ✅ HERO (Java intro) -->
+  <div class="it-body-background">
+    <section class="hero">
+      <div class="hero-content">
+        <div>
+          <h2>Java</h2>
+          <p class="description">
+            At People Prime Worldwide, we specialize in finding the best Java
+            developers for your company. Java is a powerful programming language
+            used in many types of software, from large business systems to
+            mobile apps. We have a decade of expertise and understanding of all
+            aspects of Java, including core Java, Java EE, Spring Framework,
+            Hibernate, JavaFX, and Java ME. Whether you need developers for
+            backend, frontend, or full-stack projects, we can help you find the
+            perfect people to make your projects successful. Partner with us to
+            get the best Java talent and take your technology solutions to the
+            next level.
+          </p>
+        </div>
+
+        <div class="square-video">
+          <video autoplay loop muted playsinline>
+            <source src="assets/videos/staff.webm" type="video/webm">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ SKILLS SECTION -->
+    <section class="section">
+      <h2><span class="highlight">Java</span> Skill Sets</h2>
+
+      <div class="skills-grid">
+        <!-- 4 cards plus an image are in cards-1 and cards-2 classes -->
+        <div class="cards-1">
+          <img src="assets/images/j1.png" alt="" />
+          <div class="grid-1">
+            <div class="card" onclick="openModal('coreJava')">
+              <div class="card-icon">
+                <img src="assets/images/jicon01.svg" alt="" />
+              </div>
+              <h3>Core Java</h3>
+              <p>
+                Core Java, Basic Syntax, Object-Oriented Programming,
+                Exception Handling...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('advJava')">
+              <div class="card-icon">
+                <img src="assets/images/jicon2.png" alt="" />
+              </div>
+              <h3>Advanced Java</h3>
+              <p>
+                <strong>Java EE</strong> Servlets, JavaServer Pages (JSP),
+                Enterprise JavaBeans (EJB), Java Message Service (JMS)...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('game')">
+              <div class="card-icon">
+                <img src="assets/images/jicon3.png" alt="" />
+              </div>
+              <h3>Java for Game Development</h3>
+              <p>
+                Lightweight Java Game Library (LWJGL), jMonkeyEngine, libGDX...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('mobile')">
+              <div class="card-icon">
+                <img src="assets/images/jicon4.png" alt="" />
+              </div>
+              <h3>Mobile & Embedded Java</h3>
+              <p>
+                Servlets, JavaServer Pages (JSP), Enterprise JavaBeans (EJB),
+                Java Message Service (JMS)...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-2">
+          <img src="assets/images/j2.png" alt="" />
+          <div class="grid-2">
+            <div class="card" onclick="openModal('bigdata')">
+              <div class="card-icon">
+                <img src="assets/images/jicon5.png" alt="" />
+              </div>
+              <h3>Java for Big Data</h3>
+              <p>
+                Apache Hadoop, Apache Spark, Apache Kafka, Apache Flink, Java
+                Data Mining (JDM) API...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('cloud')">
+              <div class="card-icon">
+                <img src="assets/images/jicon6.png" alt="" />
+              </div>
+              <h3>Java for Cloud Computing</h3>
+              <p>
+                Amazon Web Services (AWS), Google Cloud Platform (GCP),
+                Microsoft Azure, AWS Lambda, Google App Engine...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('aiml')">
+              <div class="card-icon">
+                <img src="assets/images/jicon7.png" alt="" />
+              </div>
+              <h3>Java for AI & ML</h3>
+              <p>
+                Deeplearning4j, Weka, Java-ML, Apache Mahout, TensorFlow for
+                Java...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('iot')">
+              <div class="card-icon">
+                <img src="assets/images/jicon8.png" alt="" />
+              </div>
+              <h3>Java for Internet of Things</h3>
+              <p>
+                Java ME Embedded, Eclipse IoT, Pi4J (Java for Raspberry Pi),
+                MQTT...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ✅ MODAL -->
+  <div id="modal" class="custom-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">✖</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <!-- ✅ wrap everything -->
+
+      <div class="footer-top">
+        <!-- Left Logo + Description -->
+        <div class="footer-about">
+          <img src="assets/logos/logo.png" alt="logo" class="footer-logo" />
+
+          <p>
+            We specialize in
+            <b>IT Consulting, Staff Augmentation, & Managed Services</b>,
+            delivering comprehensive workforce solutions that drive business
+            success. As a trusted technology partner, we bridge the talent gap
+            with tailored Staff strategies, ensuring seamless alignment with
+            organizational goals.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="activejobs.html">Active Jobs</a></li>
+              <li><a href="iso.html">Corporate Compliance</a></li>
+              <li><a href="it-security.html">IT Security Policies</a></li>
+              <li>
+                <a href="technology-hub/technology-hub.html">Technology Hub</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="it-consulting.html">IT Consulting & Implementation Services</a>
+              </li>
+              <li><a href="staff.html">Staff Augmentation</a></li>
+              <li>
+                <a href="managed-services.html">Managed Teams & Services</a>
+              </li>
+              <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Toll Free</h3>
+            <p class="phone">1800 572 1880</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect Us On</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank">F</a>
+              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>
+          Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="tagline">Better Careers Better Lives</span>
+      </div>
+    </div>
+    <!-- ✅ CLOSE footer-inner -->
+  </footer>
+  <script src="js/script.js"></script>
+
+  <!-- ✅ JS -->
+  <script>
+    function openModal(type) {
+      const modal = document.getElementById("modal");
+      const body = document.getElementById("modal-body");
+
+      const data = {
+        coreJava: `
+      <h3>Core Java</h3>
+      <ul>
+        <li>Basic Syntax</li>
+        <li>Exception Handling</li>
+        <li>Collections Framework</li>
+        <li>Multithreading</li>
+        <li>Object-Oriented Programming</li>
+        <li>I/O Streams</li>
+        <li>Functional Interfaces</li>
+        <li>Networking</li>
+        <li>Generics</li>
+        <li>Lambda Expressions</li>
+      </ul>`,
+
+        advJava: `
+      <h3>Advanced Java</h3>
+      <ul>
+        <li>Java EE (Enterprise Edition)</li>
+        <li>Servlets</li>
+        <li>JavaServer Pages (JSP)</li>
+        <li>Enterprise JavaBeans (EJB)</li>
+        <li>Java Message Service (JMS)</li>
+        <li>Java API for RESTful Web Services (JAX-RS)</li>
+        <li>Java API for XML Web Services (JAX-WS)</li>
+        <li>Contexts and Dependency Injection (CDI)</li>
+        <li>Java Persistence API (JPA)</li>
+        <li>Java Transaction API (JTA)</li>
+        <li>JavaMail</li>
+        <li>Java Naming and Directory Interface (JNDI)</li>
+      </ul>
+
+      <h3>Web Technologies</h3>
+      <ul>
+        <li>JavaServer Faces (JSF)</li>
+        <li>Thymeleaf</li>
+        <li>Apache Struts</li>
+      </ul>
+      <h3>Spring Framework</h3>
+      <ul>
+        <li>Spring Core</li>
+        <li>Spring MVC</li>
+        <li>Spring Boot</li>
+        <li>Spring Security</li>
+        <li>Spring Data</li>
+        <li>Spring Cloud</li>
+      </ul>
+      <h3>Hibernate</h3>
+      <ul>
+        <li>ORM Concepts</li>
+        <li>Session Management</li>
+        <li>Transaction Management</li>
+        <li>Query Language (HQL)</li>
+        <li>Criteria API</li>
+      </ul>
+
+      <h3>Microservices</h3>
+      <ul>
+        <li>Spring Boot</li>
+        <li>Spring Cloud</li>
+        <li>Netflix OSS</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+      </ul>
+
+      <h3>Testing</h3>
+      <ul>
+        <li>JUnit</li>
+        <li>TestNG</li>
+        <li>Mockito</li>
+        <li>Selenium</li>
+      </ul>`,
+
+        game: `
+      <h3>Game Development</h3>
+      <ul>
+        <li>Lightweight Java Game Library(LWJGL)</li>
+        <li>jMonkeyEngine</li>
+        <li>libGDX</li>
+      </ul>`,
+
+        mobile: `
+      <h3>Mobile & Embedded Java</h3>
+
+      
+      <ul>
+        <li>Servlets</li>
+        <li>JavaServer Pages (JSP)</li>
+        <li>Enterprise JavaBeans (EJB)</li>
+        <li>Java Message Service (JMS)</li>
+      </ul> 
+      <h3>Java ME (Micro Edition)</h3>
+      <ul> 
+        <li>MIDP (Mobile Information Device Profile)</li>
+        <li>CLDC (Connected Limited Device Configuration)</li>
+        <li>JavaFX Mobile</li>
+      </ul>
+      <h3>Android Development</h3>
+      <ul>
+        <li>Android SDK</li>
+        <li>Jetpack Components</li>
+        <li>Material Design</li>
+      </ul>`,
+
+        bigdata: `
+      <h3>Java for Big Data</h3>
+      <ul>
+        <li>Apache Hadoop</li>
+        <li>Apache Spark</li>
+        <li>Apache Kafka</li>
+        <li>Apache Flink</li>
+        <li>Java Data Mining (JDM) API</li>
+      </ul>`,
+
+        cloud: `
+      <h3>Java for Cloud Computing </h3>
+      <ul>
+        <li>Cloud Platforms</li>
+        <li>Amazon Web Services (AWS)</li>
+        <li>Google Cloud Platform (GCP)</li>
+        <li>Microsoft Azure</li>
+        <li>Cloud Services</li>
+        <li>AWS Lambda,</li>
+        <li>Google App Engine,</li>
+        <li>Azure Functions</li>
+        <li>DevOps</li>
+        <li>Jenkins,</li>
+        <li>Docker,</li>
+        <li>Kubernetes,</li>
+        <li>Ansible</li>
+      </ul>`,
+
+        aiml: `
+      <h3>Java for AI and ML</h3>
+      <ul>
+        <li>Deeplearning4j</li>
+        <li>Weka</li>
+        <li>Java-ML</li>
+        <li>Apache Mahout</li>
+        <li>TensorFlow for Java</li>
+      </ul>`,
+
+        iot: `
+      <h3>Java for Internet of Things</h3>
+      <ul>
+        <li>Java ME Embedded</li>
+        <li>Eclipse IoT</li>
+        <li>Pi4J (Java for Raspberry Pi)</li>
+        <li>MQTT</li>
+      </ul>`,
+      };
+
+      body.innerHTML = data[type];
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

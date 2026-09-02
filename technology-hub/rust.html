@@ -1,0 +1,403 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technology Hub - Rust & Go lang</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon.png?v=1">
+  <meta name="title" content="Technology Hub">
+  <meta name="description"
+    content="Explore flexible contract staffing solutions to fill short-term roles with top talent, enhancing workforce agility and reducing hiring costs for your business." />
+  <!--add content here -->
+  <meta name="keywords"
+    content="Contract staffing, contract staffing services, contract agencies, contract agency, contract recruitment agencies, contract recruiting, contract recruiting companies, contract placement agency, it contract staffing, on-site staffing, IT Staffing services, IT Staffing agency in India" />
+  <meta name="author" content="www.people-prime.com">
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="../css/it-consulting.css" />
+  <style>
+    h3,
+    h4 {
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      &#9776;
+    </button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Platform</span></a>
+        </li>
+        <li>
+          <a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a>
+        </li>
+        <li>
+          <a href="../gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="../it-consulting.html">IT Consulting</a>
+            <a href="../staff.html">Staff Augmentation (T&M)</a>
+            <a href="../managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu skill-dropdown">
+            <a href="../java.html">Java Technologies</a>
+            <a href="../microsoft.html">Microsoft Technologies</a>
+            <a href="../it-infra.html">IT Infrastructure</a>
+            <a href="../sap.html">SAP</a>
+            <a href="../datasci.html">Data Science</a>
+            <a href="../servicenow.html">Service Now</a>
+            <a href="../salesforce.html">Salesforce</a>
+            <a href="../dw.html">Data Warehouse</a>
+            <a href="../cloud.html">Cloud Technologies</a>
+            <a href="../ai-ml.html">AI and ML</a>
+            <a href="../iot.html">IOT</a>
+            <a href="../database.html">Database management</a>
+            <a href="../testing.html">Testing</a>
+            <a href="../cybersecurity.html">Cyber Security</a>
+            <a href="../oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Corporate Compliance<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="../iso.html">ISO9001-27001</a>
+            <a href="../cobe.html">Code of Business Ethics</a>
+            <a href="../soc2type2.html">SOC2 Type 2</a>
+            <a href="../statutory.html">Statutory Compliance</a>
+            <a href="../env-sus.html">Environmental Sustainability</a>
+            <a href="../privacy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">About Us<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="../lt.html">Leadership Team</a>
+            <a href="../it-security.html">IT Security Policies</a>
+            <a href="../contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="../activejobs.html" class="nav-btn">Active Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="../assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        &#10005;
+      </button>
+    </div>
+    <ul class="drawer-nav">
+      <li>
+        <a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span class="drawer-ptaas-subtext">Platform</span></a>
+      </li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">People Remotely</a></li>
+      <li><a href="../gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Services <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="../it-consulting.html">IT Consulting</a>
+          <a href="../staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="../managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Skill Sets <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="../java.html">Java Technologies</a>
+          <a href="../microsoft.html">Microsoft Technologies</a>
+          <a href="../it-infra.html">IT Infrastructure</a>
+          <a href="../sap.html">SAP</a>
+          <a href="../datasci.html">Data Science</a>
+          <a href="../servicenow.html">Service Now</a>
+          <a href="../salesforce.html">Salesforce</a>
+          <a href="../dw.html">Data Warehouse</a>
+          <a href="../cloud.html">Cloud Technologies</a>
+          <a href="../ai-ml.html">AI and ML</a>
+          <a href="../iot.html">IOT</a>
+          <a href="../database.html">Database management</a>
+          <a href="../testing.html">Testing</a>
+          <a href="../cybersecurity.html">Cyber Security</a>
+          <a href="../oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Corporate Compliance <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="../iso.html">ISO9001-27001</a>
+          <a href="../cobe.html">Code of Business Ethics</a>
+          <a href="../soc2type2.html">SOC2 Type 2</a>
+          <a href="../statutory.html">Statutory Compliance</a>
+          <a href="../env-sus.html">Environmental Sustainability</a>
+          <a href="../privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          About Us <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="../lt.html">Leadership Team</a>
+          <a href="../it-security.html">IT Security Policies</a>
+          <a href="../contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li>
+        <a href="../activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+</body>
+
+</html>
+
+<div class="services-head">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-12">
+        <h1>Technology</h1>
+        <h2>Rust and Go Lang</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-12 col-md-12 mb-5">
+      <img src="../assets/images/tb19.png" class="mobile-resize" style="max-width: 1300px;">
+    </div>
+    <div class="col-12 col-md-12 mb-5">
+
+      <h3 class="mb-3">Rust and Go Lang: The Rise of Modern Programming Languages Over Java</h3>
+      <p class="mb-3">In the ever-evolving landscape of software development, Rust and Go Lang have emerged as
+        formidable contenders, challenging Java’s long-standing dominance. While Java continues to serve as a versatile
+        and widely used language, developers are increasingly favoring Rust and Go Lang due to their performance,
+        simplicity, and modern tooling. This article explores how these languages compare and why they are overtaking
+        Java as the programming language of choice.</p>
+      <!-- <a href="graphs-representation.php" class="btn btn-primary gView mt-3">Read More</a> -->
+    </div>
+
+
+    <div class="col-12 col-md-12 mb-5">
+
+      <h3 class="mb-3">Rust vs Go Lang vs Java: A Comparative Overview</h3>
+      <p>Each of these languages has its strengths and weaknesses, making them suitable for different use cases:</p>
+      <p class="mb-3"><strong>Rust :</strong> It offers high performance and safety, particularly with memory
+        management, but has a steep learning curve.</p>
+      <p class="mb-3"><strong>Go Lang (Golang) : </strong>It provides simplicity and efficient concurrency, making it
+        ideal for rapid development, though it lacks some advanced language features.</p>
+      <p class="mb-3"><strong>Java : </strong>It is platform-independent and backed by a rich ecosystem but can be
+        verbose and less efficient compared to Rust and Go.</p>
+      <p>The choice between these languages largely depends on the project's specific needs, but trends indicate a shift
+        towards Rust and Go for various reasons.</p>
+
+    </div>
+
+    <div class="col-12 col-md-12 mb-5">
+
+      <h3 class="mb-3">Why Developers Prefer Go Lang</h3>
+      <p>Go Lang has gained traction due to its fast development speed, straightforward syntax, and robust concurrency
+        support. Developers appreciate its efficient error-handling mechanisms, but some have expressed concerns about
+        refactoring, as type reflection can introduce runtime issues. Despite this, Go remains a top choice for
+        scalable, high-performance applications.</p>
+      <p class="mb-3">Go’s static analysis suite (such as errcheck) is mature and helps maintain code quality.</p>
+      <p class="mb-3">Go's tooling and compilation speed surpass Java’s often complex and outdated build systems.</p>
+      <p class="mb-3">Cross-platform compatibility is a strong suit for Go, as it compiles efficiently for architectures
+        like MIPS.</p>
+      <p class="mb-3">Multivalue returns provide a balance between safety and productivity, making it easier to manage
+        errors compared to Java’s null-checking paradigm.</p>
+
+    </div>
+
+
+
+    <div class="col-12 col-md-12 mb-5">
+
+      <h3 class="mb-3">Why Developers Prefer Rust</h3>
+      <p>Rust is favored for its robust memory safety and strict error-handling mechanisms. Unlike Java, where runtime
+        exceptions can cause crashes, Rust enforces error handling at compile time, reducing the likelihood of failures
+        in production environments.</p>
+      <p class="mb-3">Ownership and Borrowing system ensures memory safety without needing a garbage collector.</p>
+      <p class="mb-3">Option and Enum types force developers to handle edge cases properly.</p>
+      <p class="mb-3">Cargo package manager enhances productivity with efficient dependency management and package
+        installation.</p>
+      <p class="mb-3">No race conditions due to Rust’s strict concurrency model, a major advantage over Java and Go.</p>
+      <p class="mb-3">Bare-metal performance is achievable since Rust can be statically compiled, making it a preferred
+        choice for systems programming.</p>
+
+    </div>
+
+
+
+
+    <div class="col-12 col-md-12 mb-5">
+
+      <h3 class="mb-3">Java: Still Relevant but Losing Favor</h3>
+      <p>While Java remains a popular choice for enterprise applications, developers are increasingly frustrated with
+        its outdated tooling and verbose syntax. Some of the biggest drawbacks include:</p>
+      <p class="mb-3">Ownership and Borrowing system ensures memory safety without needing a garbage collector.</p>
+      <p class="mb-3">Option and Enum types force developers to handle edge cases properly.</p>
+      <p class="mb-3">Cargo package manager enhances productivity with efficient dependency management and package
+        installation.</p>
+      <p class="mb-3">No race conditions due to Rust’s strict concurrency model, a major advantage over Java and Go.</p>
+      <p class="mb-3">Bare-metal performance is achievable since Rust can be statically compiled, making it a preferred
+        choice for systems programming.</p>
+
+    </div>
+
+
+
+    <div class="col-12 col-md-12 mb-5">
+
+      <h3 class="mb-3">The Future of Programming: Where Do Rust and Go Fit</h3>
+      <p>Different use cases call for different languages, and Rust and Go have carved their niches:</p>
+      <p class="mb-3"><strong>Rust:</strong> Ideal for system-level programming, machine learning applications, and
+        performance-intensive tasks.</p>
+      <p class="mb-3"><strong>Go:</strong> Preferred for network services, cloud applications, and quick development
+        cycles.</p>
+      <p class="mb-3"><strong>Java/Kotlin:</strong> Still relevant for large-scale web applications and business
+        logic-heavy systems.</p>
+      <p class="mb-3"><strong>Python:</strong> Used for data analysis, scripting, and AI applications, though it has
+        scalability limitations.</p>
+      <p class="mb-3">For developers considering C or C++, Rust presents itself as the modern alternative, offering
+        safer memory management and better overall security. Many in the tech community believe that new projects should
+        no longer be started in C or C++ when Rust is available.</p>
+
+    </div>
+
+
+    <div class="col-12 col-md-12">
+      <h3 class="mb-3">Conclusion</h3>
+      <p>The rise of Rust and Go Lang marks a shift in how developers approach software development. While Java
+        continues to be a mainstay in the industry, Rust and Go provide modern solutions that address many of Java’s
+        shortcomings. Rust’s memory safety and performance make it a compelling choice for system-level development,
+        whereas Go’s simplicity and concurrency support make it perfect for scalable applications. As technology
+        evolves, it is evident that Rust and Go will continue to shape the future of programming, reducing reliance on
+        Java for many emerging use cases.</p>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+
+<footer class="footer">
+  <div class="footer-inner">
+    <!-- ✅ wrap everything -->
+
+    <div class="footer-top">
+      <!-- Left Logo + Description -->
+      <div class="footer-about">
+        <img src="../assets/logos/logo.png" alt="logo" class="footer-logo" />
+
+        <p>
+          We specialize in
+          <b>IT Consulting, Staff Augmentation, & Managed Services</b>,
+          delivering comprehensive workforce solutions that drive business
+          success. As a trusted technology partner, we bridge the talent gap
+          with tailored Staff strategies, ensuring seamless alignment with
+          organizational goals.
+        </p>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid-links">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+            <li><a href="../activejobs.html">Active Jobs</a></li>
+            <li><a href="../iso.html">Corporate Compliance</a></li>
+            <li><a href="../it-security.html">IT Security Policies</a></li>
+            <li><a href="technology-hub.html">Technology Hub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Our Services</h3>
+          <ul>
+            <li>
+              <a href="../it-consulting.html">IT Consulting & Implementation Services</a>
+            </li>
+            <li><a href="../staff.html">Staff Augmentation</a></li>
+            <li>
+              <a href="../managed-services.html">Managed Teams & Services</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Toll Free</h3>
+          <p class="phone">1800 572 1880</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Connect Us On</h3>
+          <div class="social-icons">
+            <a href="#" target="_blank">F</a>
+            <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+            <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+            <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+            <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>
+        Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+      </p>
+      <span class="tagline">Better Careers Better Lives</span>
+    </div>
+  </div>
+  <!-- ✅ CLOSE footer-inner -->
+</footer>
+<script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI & Data Engineering Experts | People Prime Worldwide</title>
+  <meta name="description"
+    content="People Prime Worldwide provides specialized AI expertise across Data Engineering, Machine Learning, Generative AI, and MLOps to help organizations accelerate AI execution." />
+  <meta name="keywords"
+    content="AI talent, Data Engineering, Generative AI, MLOps, Machine Learning, staff augmentation, People Prime Worldwide" />
+  <meta name="author" content="www.people-prime.com" />
+  <link rel="icon" type="image/png" href="../../favicon.png?v=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- intl-tel-input: flag images + dial codes (local) -->
+  <link rel="stylesheet" href="../../../assets/iti/css/intlTelInput.css" />
+  <style>
+    /* =============================
+       RESET & BASE
+    ============================= */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #ffffff;
+      color: #1a1a2e;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* =============================
+       HEADER / NAVBAR
+    ============================= */
+    .lp-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(10, 15, 30, 0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      height: 68px;
+    }
+
+    .lp-header-container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      height: 100%;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .lp-logo img {
+      height: 38px;
+      width: auto;
+      display: block;
+    }
+
+    .lp-header-cta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .lp-phone {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      transition: color 0.2s;
+    }
+
+    .lp-phone:hover {
+      color: #fff;
+    }
+
+    .lp-header-btn {
+      background: linear-gradient(135deg, #6366f1, #3b82f6);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 9px 22px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.15s;
+      white-space: nowrap;
+    }
+
+    .lp-header-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    /* Unified Page Wrapper for continuous gradient */
+    .lp-page-wrapper {
+      background: radial-gradient(circle at 50% 0%, #171b38 0%, #0d0f22 45%, #05060b 100%);
+      min-height: 100vh;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lp-hero {
+      min-height: 100vh;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-top: 108px; /* 68px header + 40px spacing */
+    }
+
+    .lp-page-wrapper::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      left: -5%;
+      width: 55%;
+      height: 120%;
+      background: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .lp-page-wrapper::after {
+      content: '';
+      position: absolute;
+      bottom: 20%;
+      right: 10%;
+      width: 40%;
+      height: 80%;
+      background: radial-gradient(ellipse at center, rgba(147, 51, 234, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .lp-hero-inner {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 40px 40px 40px;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* --- Left Column --- */
+    .lp-hero-left {
+      color: #fff;
+    }
+
+    .lp-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #a5b4fc;
+      margin-bottom: 28px;
+    }
+
+    .lp-eyebrow-dot {
+      width: 6px;
+      height: 6px;
+      background: #6366f1;
+      border-radius: 50%;
+      animation: pulse-dot 2s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.4); }
+    }
+
+    .lp-hero-headline {
+      font-size: clamp(30px, 3.8vw, 52px);
+      font-weight: 900;
+      line-height: 1.15;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      margin-bottom: 22px;
+    }
+
+    .lp-hero-headline .highlight {
+      background: linear-gradient(90deg, #6366f1, #3b82f6, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .lp-hero-sub {
+      font-size: 17px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.75;
+      max-width: 560px;
+      margin-bottom: 32px;
+    }
+
+    /* Hero Bullet List */
+    .lp-hero-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 580px;
+    }
+
+    .lp-hero-bullet-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .lp-hero-bullet-check {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #3b82f6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .lp-hero-bullet-check svg {
+      width: 11px;
+      height: 11px;
+      stroke: #fff;
+      stroke-width: 3;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .lp-hero-bullet-text {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.5;
+    }
+
+    .lp-hero-bullet-text strong {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+
+    /* Expertise Tags */
+    .lp-expertise-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 48px;
+    }
+
+    .lp-tag {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      padding: 7px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.85);
+      letter-spacing: 0.2px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .lp-tag:hover {
+      background: rgba(99, 102, 241, 0.15);
+      border-color: rgba(99, 102, 241, 0.35);
+    }
+
+    /* Social Proof Bar */
+    .lp-social-proof {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      padding-top: 36px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .lp-stat {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lp-stat-number {
+      font-size: 26px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .lp-stat-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.5);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .lp-stat-divider {
+      width: 1px;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    /* --- Right Column: Form Card --- */
+    .lp-hero-right {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .lp-form-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 36px 32px;
+      width: 100%;
+      box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.07),
+        0 20px 60px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+      position: relative;
+      top: 0;
+    }
+
+    .lp-form-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #0b1233;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .lp-form-subtitle {
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .lp-form-group {
+      margin-bottom: 16px;
+    }
+
+    .lp-form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .lp-form-row .lp-form-group {
+      margin-bottom: 0;
+    }
+
+    .lp-form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .lp-form-group input,
+    .lp-form-group select,
+    .lp-form-group textarea {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #1a1a2e;
+      background: #f8fafc;
+      transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+      outline: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .lp-form-group input::placeholder,
+    .lp-form-group textarea::placeholder {
+      color: #94a3b8;
+    }
+
+    .lp-form-group input:focus,
+    .lp-form-group select:focus,
+    .lp-form-group textarea:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+      background: #fff;
+    }
+
+    .lp-form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2394a3b8' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 36px;
+      cursor: pointer;
+    }
+
+    .lp-form-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    /* Phone field — intl-tel-input overrides */
+    .iti {
+      width: 100%;
+      display: block;
+    }
+
+    /* Override the generic .lp-form-group input rule for the iti input */
+    .lp-form-group .iti input,
+    .lp-form-group .iti input[type="tel"] {
+      width: 100%;
+      padding: 11px 14px 11px 90px;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #1a1a2e;
+      background: #f8fafc;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+      box-sizing: border-box;
+    }
+
+    .lp-form-group .iti input:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+      background: #fff;
+    }
+
+    .lp-form-group .iti input.error-border {
+      border-color: #ef4444 !important;
+    }
+
+    .iti__flag-container {
+      border-radius: 8px 0 0 8px;
+    }
+
+    .iti__selected-dial-code {
+      font-size: 13px;
+      color: #374151;
+    }
+
+    .lp-submit-btn {
+      width: 100%;
+      padding: 14px 24px;
+      background: linear-gradient(135deg, #6366f1, #3b82f6);
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      margin-top: 4px;
+      transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+    }
+
+    .lp-submit-btn:hover {
+      opacity: 0.92;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
+    }
+
+    .lp-submit-btn:active {
+      transform: translateY(0);
+    }
+
+    .lp-form-disclaimer {
+      font-size: 11px;
+      color: #94a3b8;
+      text-align: center;
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+
+    .lp-form-disclaimer a {
+      color: #6366f1;
+      text-decoration: none;
+    }
+
+    /* =============================
+       WHY CHOOSE SECTION (3-Column Grid)
+    ============================= */
+    .lp-why {
+      background: transparent;
+      padding: 90px 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .lp-why-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .lp-why-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .lp-section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #6366f1;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .lp-section-title {
+      font-size: clamp(26px, 3vw, 40px);
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 16px;
+      line-height: 1.2;
+      letter-spacing: -0.3px;
+    }
+
+    .lp-section-desc {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* 3-Column Responsive Grid */
+    .lp-benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .lp-benefit-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 38px 34px;
+      box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.2), 
+        inset 0 1px 1px rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Gradient border indicator on hover */
+    .lp-benefit-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #6366f1, #a855f7);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .lp-benefit-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 
+        0 20px 40px -10px rgba(99, 102, 241, 0.25),
+        0 10px 20px -10px rgba(147, 51, 234, 0.15);
+      border-color: rgba(99, 102, 241, 0.3);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .lp-benefit-card:hover::before {
+      opacity: 1;
+    }
+
+    .lp-benefit-icon-wrapper {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.06) 0%, rgba(168, 85, 247, 0.06) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 26px;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(99, 102, 241, 0.05);
+    }
+
+    .lp-benefit-card:hover .lp-benefit-icon-wrapper {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(168, 85, 247, 0.12) 100%);
+      transform: scale(1.05);
+      border-color: rgba(99, 102, 241, 0.15);
+    }
+
+    .lp-benefit-icon-wrapper svg {
+      width: 24px;
+      height: 24px;
+      stroke: #6366f1;
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .lp-benefit-title {
+      font-size: 19px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 12px;
+      line-height: 1.4;
+      letter-spacing: -0.2px;
+    }
+
+    .lp-benefit-desc {
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.65);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+
+    /* Align the 2 bottom cards to be centered on desktops */
+    @media (min-width: 1025px) {
+      .lp-benefits-grid {
+        grid-template-columns: repeat(6, 1fr);
+      }
+      .lp-benefit-card {
+        grid-column: span 2;
+      }
+      .lp-benefit-card:nth-child(4) {
+        grid-column: 2 / span 2;
+      }
+      .lp-benefit-card:nth-child(5) {
+        grid-column: 4 / span 2;
+      }
+    }
+
+
+
+    /* =============================
+       CLIENT PROOF SECTION
+    ============================= */
+    .lp-proof-section {
+      padding: 90px 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .lp-proof-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    /* Testimonial Glass Card */
+    .lp-testimonial-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+      box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.2), 
+        inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    }
+
+    .lp-testimonial-quote {
+      font-size: 20px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.4;
+      margin-bottom: 18px;
+    }
+
+    .lp-testimonial-text {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .lp-testimonial-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .lp-testimonial-logo img {
+      height: 28px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
+
+    .lp-testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 20px;
+    }
+
+    .lp-author-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(99, 102, 241, 0.4);
+    }
+
+    .lp-author-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+
+    .lp-author-title {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Right column: Partners Logos info */
+    .lp-partners-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .lp-partners-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.4;
+      margin-bottom: 30px;
+      max-width: 440px;
+    }
+
+    .lp-partners-img-container {
+      width: 100%;
+      max-width: 460px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lp-partners-img-container img {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+    }
+
+    @media (max-width: 991px) {
+      .lp-proof-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+      .lp-proof-section {
+        padding: 64px 20px;
+      }
+    }
+
+    /* =============================
+       VIDEO SECTION
+    ============================= */
+    .lp-video-section {
+      background: transparent;
+      padding: 0 40px 100px 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .lp-video-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      position: relative;
+      overflow: visible;
+    }
+
+    /* Ambient background glows inside the container */
+    .lp-video-inner::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      left: -20%;
+      width: 60%;
+      height: 140%;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .lp-video-inner::after {
+      content: '';
+      position: absolute;
+      bottom: -20%;
+      right: -20%;
+      width: 60%;
+      height: 140%;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .lp-video-wrapper {
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    .lp-video-wrapper:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 35px 60px -10px rgba(99, 102, 241, 0.3);
+    }
+
+    .lp-video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .lp-video-section {
+        padding: 0 16px 64px 16px;
+      }
+    }
+
+    .lp-expertise {
+      background: #000;
+      padding: 90px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lp-expertise::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      background: radial-gradient(ellipse at right center, rgba(0, 200, 150, 0.1), transparent 70%);
+      pointer-events: none;
+    }
+
+    .lp-expertise-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .lp-expertise .lp-section-label {
+      color: #00c896;
+    }
+
+    .lp-expertise .lp-section-title {
+      color: #fff;
+    }
+
+    .lp-expertise .lp-section-desc {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .lp-skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .lp-skill-item {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 24px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: background 0.25s, border-color 0.25s, transform 0.25s;
+    }
+
+    .lp-skill-item:hover {
+      background: rgba(0, 200, 150, 0.15);
+      border-color: rgba(0, 200, 150, 0.3);
+      transform: translateY(-3px);
+    }
+
+    .lp-skill-icon {
+      font-size: 26px;
+      flex-shrink: 0;
+    }
+
+    .lp-skill-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.3;
+    }
+
+    /* =============================
+       CTA SECTION
+    ============================= */
+    .lp-cta {
+      background: #fff;
+      padding: 90px 40px;
+    }
+
+    .lp-cta-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .lp-cta-title {
+      font-size: clamp(24px, 2.5vw, 36px);
+      font-weight: 800;
+      color: #0a0f1e;
+      line-height: 1.25;
+      margin-bottom: 10px;
+      letter-spacing: -0.3px;
+    }
+
+    .lp-cta-sub {
+      font-size: 16px;
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    .lp-cta-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #6366f1, #3b82f6);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    }
+
+    .lp-cta-btn:hover {
+      opacity: 0.92;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45);
+    }
+
+    /* =============================
+       FOOTER
+    ============================= */
+    .lp-footer {
+      background: #000000;
+      padding: 56px 40px 28px;
+    }
+
+    .lp-footer-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .lp-footer-top {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .lp-footer-logo img {
+      height: 36px;
+      width: auto;
+      margin-bottom: 18px;
+      display: block;
+    }
+
+    .lp-footer-about p {
+      font-size: 13.5px;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.75;
+    }
+
+    .lp-footer-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .lp-footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .lp-footer-col ul a {
+      font-size: 13.5px;
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .lp-footer-col ul a:hover {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .lp-footer-phone {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .lp-footer-phone-label {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+      letter-spacing: 0.5px;
+    }
+
+    .lp-social-links {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .lp-social-links a {
+      width: 36px;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .lp-social-links a:hover {
+      background: rgba(99, 102, 241, 0.2);
+      color: #fff;
+    }
+
+    .lp-footer-bottom {
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .lp-footer-copy {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    .lp-footer-tagline {
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.3);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* =============================
+       SUCCESS STATE
+    ============================= */
+    .lp-success-msg {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .lp-success-msg .success-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #10b981, #059669);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 26px;
+    }
+
+    .lp-success-msg h3 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #0b1233;
+      margin-bottom: 10px;
+    }
+
+    .lp-success-msg p {
+      font-size: 14px;
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    /* =============================
+       RESPONSIVE
+    ============================= */
+    @media (max-width: 1024px) {
+      .lp-header-container {
+        padding: 0 20px;
+      }
+
+      .lp-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding: 50px 20px 50px;
+      }
+
+      .lp-hero-right {
+        justify-content: center;
+      }
+
+      .lp-form-card {
+        max-width: 520px;
+        width: 100%;
+      }
+
+      .lp-why-inner {
+        gap: 40px;
+      }
+
+      .lp-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      /* Reset the desktop card offset shift in tablet view */
+      .lp-benefit-card:nth-child(4),
+      .lp-benefit-card:nth-child(5) {
+        grid-column: auto;
+        margin-left: 0;
+      }
+
+      .lp-footer-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .lp-header-container {
+        padding: 0 16px;
+      }
+
+      .lp-hero-inner {
+        padding: 40px 16px 48px;
+      }
+
+      .lp-why,
+      .lp-cta {
+        padding: 64px 16px;
+      }
+
+      .lp-why-inner {
+        gap: 32px;
+      }
+
+      .lp-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .lp-benefit-card {
+        padding: 28px 24px;
+      }
+
+      .lp-footer {
+        padding: 48px 16px 24px;
+      }
+
+      .lp-footer-top {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .lp-footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .lp-social-proof {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .lp-stat-divider {
+        display: none;
+      }
+
+      .lp-form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .lp-hero-headline {
+        font-size: 28px;
+      }
+
+      .lp-phone {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===========================
+       HEADER
+  =========================== -->
+  <header class="lp-header">
+    <div class="lp-header-container">
+      <div class="lp-logo">
+        <a href="../../index.html">
+          <img src="../../assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="lp-page-wrapper">
+
+    <!-- ===========================
+         HERO SECTION
+    =========================== -->
+    <section class="lp-hero" id="hero">
+    <div class="lp-hero-inner">
+
+      <!-- Left: Content -->
+      <div class="lp-hero-left">
+
+        <h1 class="lp-hero-headline">
+          From Data Engineering to
+          <span class="highlight">Generative AI</span>—We've Got the Experts.
+        </h1>
+
+        <p class="lp-hero-sub">
+          People Prime Worldwide provides specialized AI expertise across Data Engineering, Machine Learning,
+          Generative AI, and MLOps to help organizations accelerate AI execution.
+        </p>
+
+        <!-- Key Benefits beside the form with original full copy -->
+        <ul class="lp-hero-bullets">
+          <li class="lp-hero-bullet-item">
+            <div class="lp-hero-bullet-check">
+              <svg viewBox="0 0 16 16"><polyline points="2,8 6,12 14,4"/></svg>
+            </div>
+            <div class="lp-hero-bullet-text">
+              <strong>Specialized AI &amp; Technology Talent</strong> – Access highly skilled professionals across AI, Data Engineering, Machine Learning, Generative AI, Cloud, and MLOps—hand-picked for the roles that matter most.
+            </div>
+          </li>
+          <li class="lp-hero-bullet-item">
+            <div class="lp-hero-bullet-check">
+              <svg viewBox="0 0 16 16"><polyline points="2,8 6,12 14,4"/></svg>
+            </div>
+            <div class="lp-hero-bullet-text">
+              <strong>Faster Hiring, Faster Delivery</strong> – Reduce hiring timelines dramatically with pre-vetted candidates who are ready to contribute from day one—no ramp-up surprises.
+            </div>
+          </li>
+          <li class="lp-hero-bullet-item">
+            <div class="lp-hero-bullet-check">
+              <svg viewBox="0 0 16 16"><polyline points="2,8 6,12 14,4"/></svg>
+            </div>
+            <div class="lp-hero-bullet-text">
+              <strong>Cost-Effective Global Talent</strong> – Build world-class teams while lowering recruitment and operational costs through our global delivery model spanning multiple continents.
+            </div>
+          </li>
+          <li class="lp-hero-bullet-item">
+            <div class="lp-hero-bullet-check">
+              <svg viewBox="0 0 16 16"><polyline points="2,8 6,12 14,4"/></svg>
+            </div>
+            <div class="lp-hero-bullet-text">
+              <strong>Rigorous Technical Screening</strong> – Every candidate is evaluated for technical expertise, communication skills, and cultural fit before reaching your interview stage.
+            </div>
+          </li>
+          <li class="lp-hero-bullet-item">
+            <div class="lp-hero-bullet-check">
+              <svg viewBox="0 0 16 16"><polyline points="2,8 6,12 14,4"/></svg>
+            </div>
+            <div class="lp-hero-bullet-text">
+              <strong>Scalable Hiring Solutions</strong> – Whether you need one specialist or an entire project team, we provide flexible hiring solutions that grow with your business and ambitions.
+            </div>
+          </li>
+        </ul>
+
+
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="lp-hero-right" id="contact-form">
+        <div class="lp-form-card">
+          <div id="lp-form-content">
+            <h2 class="lp-form-title">Connect with an AI Talent Expert</h2>
+            <p class="lp-form-subtitle">Tell us your hiring needs and we'll match you with the right experts—fast.</p>
+
+            <form id="lpContactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+              <!-- 🔑 Access Key (same as contact.html) -->
+              <input type="hidden" name="access_key" value="ed4ac44d-4b09-4f2c-ad7b-ff8296fdd48b" />
+              <!-- 📩 Email Settings -->
+              <input type="hidden" name="subject" value="New AI Talent Request - Landing Page" />
+              <input type="hidden" name="from_name" value="People Prime AI Landing Page" />
+              <input type="hidden" name="email_template" value="table" />
+
+              <div class="lp-form-group">
+                <label for="lp-work-email">Business Email *</label>
+                <input type="email" id="lp-work-email" name="email" placeholder="you@company.com" required />
+              </div>
+
+              <div class="lp-form-group">
+                <label for="lp-full-name">Full Name *</label>
+                <input type="text" id="lp-full-name" name="fullName" placeholder="John Smith" required />
+              </div>
+
+              <div class="lp-form-group">
+                <label for="lp-company-name">Company Name *</label>
+                <input type="text" id="lp-company-name" name="companyName" placeholder="e.g. Acme Corp" required />
+              </div>
+
+              <div class="lp-form-group">
+                <label for="lp-phone-number">Phone Number *</label>
+                <input type="tel" id="lp-phone-number" name="phone" placeholder="(555) 000-0000" autocomplete="tel" />
+              </div>
+
+              <div class="lp-form-group">
+                <label for="lp-job-title">Job Title *</label>
+                <input type="text" id="lp-job-title" name="jobTitle" placeholder="e.g. VP of Engineering, CTO" required />
+              </div>
+
+              <button type="submit" class="lp-submit-btn" id="lp-submit-btn">
+                Get Matched with AI Experts →
+              </button>
+
+              <p class="lp-form-disclaimer">
+                By submitting, you agree to our
+                <a href="../../privacy.html" target="_blank">Privacy Policy</a>.
+                We'll never share your info.
+              </p>
+            </form>
+          </div>
+
+          <!-- Success State -->
+          <div class="lp-success-msg" id="lp-success-msg">
+            <div class="success-icon">✓</div>
+            <h3>Thank You!</h3>
+            <p>
+              Your request has been received. One of our AI talent specialists
+              will reach out to you within 1 business day.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /right -->
+
+    </div>
+  </section>
+  <!-- /hero -->
+
+
+  <!-- ===========================
+       CLIENT PROOF SECTION
+  =========================== -->
+  <section class="lp-proof-section">
+    <div class="lp-proof-inner">
+
+      <!-- Left Column: Testimonial Card -->
+      <div class="lp-testimonial-card">
+        <h3 class="lp-testimonial-quote">“Building World-Class Technology Teams, Faster”</h3>
+        <p class="lp-testimonial-text">
+          "Their ability to source niche AI, Data Engineering, and Cloud professionals has been exceptional. The team is proactive, responsive, and understands our technical hiring needs very well."
+        </p>
+        <div class="lp-testimonial-logo">
+          <!-- Inline SVG or Logo placeholder for Kidde -->
+          <svg width="120" height="28" viewBox="0 0 120 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 6l-6 6 6 6M20 18l6-6-6-6" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="36" y="20" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="900" font-size="18" letter-spacing="1">KIDDE</text>
+          </svg>
+        </div>
+        <div class="lp-testimonial-author">
+          <img class="lp-author-img" src="../../assets/images/w1.png" alt="William" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80'" />
+          <div>
+            <div class="lp-author-name">William</div>
+            <div class="lp-author-title">Delivery Manager - Talent Acquisition</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Partners Block -->
+      <div class="lp-partners-block">
+        <h3 class="lp-partners-title">Trusted Recruitment Partner for AI, Technology &amp; GCC Hiring</h3>
+        <div class="lp-partners-img-container">
+          <!-- Partners group PNG -->
+          <img src="../../assets/images/new_bg.png" alt="Trusted Partner Logos" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===========================
+       VIDEO SECTION
+  =========================== -->
+  <section class="lp-video-section">
+    <div class="lp-video-inner">
+      <div class="lp-video-wrapper">
+        <iframe src="https://www.youtube.com/embed/Vy7tipMpFCA" title="YouTube video player" frameborder="0"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  </div><!-- /lp-page-wrapper -->
+
+  <!-- ===========================
+       FOOTER
+  =========================== -->
+  <footer class="lp-footer">
+    <div class="lp-footer-inner">
+      <div class="lp-footer-top">
+
+        <div class="lp-footer-about">
+          <div class="lp-footer-logo">
+            <img src="../../assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+          </div>
+          <p>
+            We specialize in IT Consulting, Staff Augmentation, &amp; Managed Services,
+            delivering comprehensive workforce solutions that drive business success.
+            As a trusted technology partner, we bridge the talent gap with tailored
+            strategies ensuring seamless alignment with organizational goals.
+          </p>
+          <div class="lp-social-links" style="margin-top: 20px;">
+            <a href="https://x.com/peopleprimeww" target="_blank" rel="noopener">X</a>
+            <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank"
+              rel="noopener">in</a>
+            <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank" rel="noopener">▶</a>
+            <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank" rel="noopener">◎</a>
+          </div>
+        </div>
+
+        <div class="lp-footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+            <li><a href="../../activejobs.html">Active Jobs</a></li>
+            <li><a href="../../gcc.html">Global Capability Center</a></li>
+            <li><a href="../../privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="lp-footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="../../it-consulting.html">IT Consulting</a></li>
+            <li><a href="../../staff.html">Staff Augmentation</a></li>
+            <li><a href="../../managed-services.html">Managed Teams &amp; Services</a></li>
+            <li><a href="../../ai-ml.html">AI &amp; ML</a></li>
+            <li><a href="../../datasci.html">Data Science</a></li>
+          </ul>
+        </div>
+
+        <div class="lp-footer-col">
+          <h4>Contact</h4>
+          <div class="lp-footer-phone">1800 572 1880</div>
+          <div class="lp-footer-phone-label">Toll Free</div>
+          <br />
+          <ul>
+            <li><a href="mailto:info@people-prime.com">info@people-prime.com</a></li>
+            <li><a href="../../contact.html">Send us a message</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="lp-footer-bottom">
+        <p class="lp-footer-copy">
+          Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="lp-footer-tagline">Better Careers · Better Lives</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- intl-tel-input JS (local) -->
+  <script src="../../../assets/iti/js/intlTelInput.min.js"></script>
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Initialize intl-tel-input on the phone field
+    const phoneInput = document.getElementById('lp-phone-number');
+    const iti = window.intlTelInput(phoneInput, {
+      initialCountry: 'us',
+      separateDialCode: true,
+      nationalMode: true,
+      utilsScript: '../../../assets/iti/js/utils.js',
+    });
+
+    // Form submission handler
+    const form = document.getElementById('lpContactForm');
+    const formContent = document.getElementById('lp-form-content');
+    const successMsg = document.getElementById('lp-success-msg');
+    const submitBtn = document.getElementById('lp-submit-btn');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Basic validation for non-phone required fields
+      const required = form.querySelectorAll('[required]');
+      let valid = true;
+
+      required.forEach(field => {
+        if (field.id === 'lp-phone-number') return; // handled by iti capture listener
+        field.style.borderColor = '';
+        if (!field.value.trim()) {
+          field.style.borderColor = '#ef4444';
+          valid = false;
+        }
+      });
+
+      // Email format check
+      const emailField = document.getElementById('lp-work-email');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (emailField.value && !emailRegex.test(emailField.value)) {
+        emailField.style.borderColor = '#ef4444';
+        valid = false;
+      }
+
+      // Phone check via local iti validation (if it exists)
+      const phoneEl = document.getElementById('lp-phone-number');
+      phoneEl.classList.remove('error-border');
+      if (typeof iti !== 'undefined') {
+        if (!iti.isValidNumber()) {
+          phoneEl.classList.add('error-border');
+          valid = false;
+        }
+      } else if (!phoneEl.value.trim()) {
+        phoneEl.classList.add('error-border');
+        valid = false;
+      }
+
+      if (!valid) return;
+
+      // Show loading state
+      submitBtn.textContent = 'Sending…';
+      submitBtn.disabled = true;
+
+      // Package data for Web3Forms submission
+      const formData = new FormData(form);
+      
+      // Ensure phone field captures the formatted input with dial code
+      if (typeof iti !== 'undefined') {
+        formData.set('phone', iti.getNumber());
+      }
+
+      // POST to Web3Forms endpoint
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          formContent.style.display = 'none';
+          successMsg.style.display = 'block';
+        } else {
+          alert('Submission error. Please try again.');
+          submitBtn.textContent = 'Get Matched with AI Experts →';
+          submitBtn.disabled = false;
+        }
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        alert('Network error. Please try again.');
+        submitBtn.textContent = 'Get Matched with AI Experts →';
+        submitBtn.disabled = false;
+      });
+    });
+
+    // Reset error highlight on input
+    form.querySelectorAll('input, select, textarea').forEach(field => {
+      field.addEventListener('input', function () {
+        this.style.borderColor = '';
+        this.classList.remove('error-border');
+      });
+    });
+
+    // Intersection observer for card entrance animation
+    const cards = document.querySelectorAll('.lp-benefit-card, .lp-skill-item');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(24px)';
+      card.style.transition = 'opacity 0.5s ease, transform 0.5s ease, box-shadow 0.25s, border-color 0.25s';
+      observer.observe(card);
+    });
+  </script>
+
+
+
+</body>
+
+</html>

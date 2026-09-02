@@ -1,0 +1,556 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technology Hub</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon.png?v=1">
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="../css/it-consulting.css" />
+  <style>
+    h3,
+    h4 {
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+    }
+
+    .tech-tile-img {
+      height: 220px !important;
+      object-fit: cover !important;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      &#9776;
+    </button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Platform</span></a>
+        </li>
+        <li>
+          <a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a>
+        </li>
+        <li>
+          <a href="../gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="../it-consulting.html">IT Consulting</a>
+            <a href="../staff.html">Staff Augmentation (T&M)</a>
+            <a href="../managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu skill-dropdown">
+            <a href="../java.html">Java Technologies</a>
+            <a href="../microsoft.html">Microsoft Technologies</a>
+            <a href="../it-infra.html">IT Infrastructure</a>
+            <a href="../sap.html">SAP</a>
+            <a href="../datasci.html">Data Science</a>
+            <a href="../servicenow.html">Service Now</a>
+            <a href="../salesforce.html">Salesforce</a>
+            <a href="../dw.html">Data Warehouse</a>
+            <a href="../cloud.html">Cloud Technologies</a>
+            <a href="../ai-ml.html">AI and ML</a>
+            <a href="../iot.html">IOT</a>
+            <a href="../database.html">Database management</a>
+            <a href="../testing.html">Testing</a>
+            <a href="../cybersecurity.html">Cyber Security</a>
+            <a href="../oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Corporate Compliance<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="../iso.html">ISO9001-27001</a>
+            <a href="../cobe.html">Code of Business Ethics</a>
+            <a href="../soc2type2.html">SOC2 Type 2</a>
+            <a href="../statutory.html">Statutory Compliance</a>
+            <a href="../env-sus.html">Environmental Sustainability</a>
+            <a href="../privacy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">About Us<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="../lt.html">Leadership Team</a>
+            <a href="../it-security.html">IT Security Policies</a>
+            <a href="../contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="../activejobs.html" class="nav-btn">Active Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="../assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        &#10005;
+      </button>
+    </div>
+    <ul class="drawer-nav">
+      <li>
+        <a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span class="drawer-ptaas-subtext">Platform</span></a>
+      </li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">People Remotely</a></li>
+      <li><a href="../gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Services <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="../it-consulting.html">IT Consulting</a>
+          <a href="../staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="../managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Skill Sets <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="../java.html">Java Technologies</a>
+          <a href="../microsoft.html">Microsoft Technologies</a>
+          <a href="../it-infra.html">IT Infrastructure</a>
+          <a href="../sap.html">SAP</a>
+          <a href="../datasci.html">Data Science</a>
+          <a href="../servicenow.html">Service Now</a>
+          <a href="../salesforce.html">Salesforce</a>
+          <a href="../dw.html">Data Warehouse</a>
+          <a href="../cloud.html">Cloud Technologies</a>
+          <a href="../ai-ml.html">AI and ML</a>
+          <a href="../iot.html">IOT</a>
+          <a href="../database.html">Database management</a>
+          <a href="../testing.html">Testing</a>
+          <a href="../cybersecurity.html">Cyber Security</a>
+          <a href="../oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Corporate Compliance <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="../iso.html">ISO9001-27001</a>
+          <a href="../cobe.html">Code of Business Ethics</a>
+          <a href="../soc2type2.html">SOC2 Type 2</a>
+          <a href="../statutory.html">Statutory Compliance</a>
+          <a href="../env-sus.html">Environmental Sustainability</a>
+          <a href="../privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          About Us <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="../lt.html">Leadership Team</a>
+          <a href="../it-security.html">IT Security Policies</a>
+          <a href="../contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li>
+        <a href="../activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="services-head">
+    <div class="container" style="margin-top: 120px; margin-left: 20px">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12" style="text-align: center">
+          <h1>Technology Hub</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="tech-hub-grid">
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/build-borrow-bot.jpg"
+          alt="The Future of Work: Build, Borrow, or Bot?" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 10/06/2026
+          </p>
+          <h3 class="mb-3">
+            The Future of Work: Build, Borrow, or Bot?
+          </h3>
+          <p class="mb-3">
+            As organizations prepare for the future, a new workforce strategy is emerging: Build, Borrow, or Bot. This approach combines permanent employees, on-demand gig talent, and AI-powered automation to create agile, scalable, and future-ready organizations.
+          </p>
+          <a href="build-borrow-bot.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/frt.jpeg"
+          alt="Building Future-Ready Teams in an AI-Powered Economy" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 30/04/2026
+          </p>
+          <h3 class="mb-3">
+            Building Future-Ready Teams in an AI-Powered Economy
+          </h3>
+          <p class="mb-3">
+            A future-ready team is not simply a group of highly skilled professionals.
+            It is a workforce designed to adapt, innovate, and thrive in an environment where
+            technology and market demands evolve continuously. These teams combine technical
+            expertise, agility, collaboration, and a growth mindset to create long-term business value.
+          </p>
+          <a href="future-ready-teams.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/futureai.jpeg" alt="The Future of Work in the AI Era" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 30/04/2026
+          </p>
+          <h3 class="mb-3">
+            The Future of Work in the AI Era: How AI Impacts the Job Market and
+            Employment Trends
+          </h3>
+          <p class="mb-3">
+            Artificial Intelligence (AI) is fundamentally reshaping the job
+            market and redefining employment trends. While automation will
+            change many traditional roles, it will also create entirely new
+            opportunities, industries, and career paths. The future belongs to
+            adaptable professionals, forward-thinking businesses, and
+            organizations willing to invest in skills, innovation, and
+            responsible AI adoption.
+          </p>
+          <a href="future-of-work-ai.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/tb1.png" alt="technology-hub10-700x467" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 24/03/2025
+          </p>
+          <h3 class="mb-3">
+            How AI Marketplaces are Transforming IT Solutions
+          </h3>
+          <p class="mb-3">
+            Artificial Intelligence (AI) is driving a paradigm shift in the IT
+            industry, enhancing decision-making, automating processes, and
+            optimizing business outcomes. However, maintaining AI models that
+            adapt to changing business needs remains a challenge. This is
+            where AI marketplaces come into play, offering businesses a
+            platform to access, fine-tune, and integrate pre-trained AI models
+            seamlessly.
+          </p>
+          <a href="ai-marketplace.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/tb3.png" alt="technology-hub8-700x467" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 11/03/2025
+          </p>
+          <h3 class="mb-3">
+            How Global Capability Centers (GCCs) Are Adapting to the Changing
+            IT Environment
+          </h3>
+          <p class="mb-3">
+            Global Capability Centers (GCCs) have transformed significantly
+            over the years. Initially set up as cost-effective offshore
+            centers focusing on IT and business process support, GCCs have
+            evolved into strategic innovation hubs that drive digital
+            transformation, product development, and business growth. As the
+            IT landscape rapidly changes, GCCs must continuously adapt to new
+            trends, technologies, and operational challenges to remain
+            relevant and competitive.
+          </p>
+          <a href="tgcc.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/tb5.png" alt="technology-hub8-700x467" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 07/03/2025
+          </p>
+          <h3 class="mb-3">
+            How Global Capability Centers (GCCs) Are Thriving in India
+            Post-COVID
+          </h3>
+          <p class="mb-3">
+            Global Capability Centers (GCCs) have become an essential part of
+            India's corporate ecosystem, serving as offshore strategic units
+            for multinational corporations (MNCs). These centers perform
+            critical business functions, including information technology (IT)
+            services, research and development (R&D), finance, human
+            resources, and customer support. Over the years, India has
+            solidified its position as a preferred hub for GCCs, owing to its
+            skilled workforce, cost advantages, and robust technological
+            infrastructure.
+          </p>
+          <a href="howgcc.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/tb7.png" alt="How AI is Revolutionizing Staff Augmentation" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 03/03/2025
+          </p>
+          <h3 class="mb-3">
+            How AI is Revolutionizing Staff Augmentation and Applicant
+            Tracking Systems
+          </h3>
+          <p class="mb-3">
+            Artificial Intelligence (AI) is significantly transforming the
+            recruitment industry, reshaping both staff augmentation and
+            Applicant Tracking Systems (ATS). By automating processes,
+            improving decision-making, and enhancing candidate experiences, AI
+            is making hiring faster, smarter, and more efficient. With
+            companies striving to attract top talent in a competitive market,
+            leveraging AI-driven staffing solutions is becoming essential.
+          </p>
+          <a href="aistaff.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/tb9.png" alt="Power Automate vs UiPath" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 27/02/2025
+          </p>
+          <h3 class="mb-3">
+            Power Automate vs. UiPath: The Battle for Automation Supremacy
+          </h3>
+          <p class="mb-3">
+            Automation is at the heart of modern business transformation,
+            enabling organizations to optimize workflows, improve efficiency,
+            and reduce operational costs. Robotic Process Automation (RPA) has
+            long been dominated by UiPath, a leader in intelligent automation
+            solutions for enterprises. However, Microsoft Power Automate has
+            been rapidly making inroads, offering an alternative approach to
+            automation that integrates seamlessly with Microsoft's ecosystem.
+          </p>
+          <a href="powerautomate.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/tb11.png" alt="Azure vs GCP vs AWS" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 21/02/2025
+          </p>
+          <h3 class="mb-3">Azure vs. GCP vs. AWS</h3>
+          <p class="mb-3">
+            Cloud computing has become the backbone of modern businesses,
+            enabling companies to scale, optimize costs, and improve
+            efficiency. For mid-size organizations considering a cloud
+            migration today, choosing between Microsoft Azure, Google Cloud
+            Platform (GCP), and Amazon Web Services (AWS) can be challenging.
+            Each platform offers unique strengths, making it crucial to
+            evaluate them based on key factors relevant to your business
+            needs.
+          </p>
+          <a href="azure.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/tb13.png" alt="SAP vs Microsoft Dynamics" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 20/02/2025
+          </p>
+          <h3 class="mb-3">SAP vs. Microsoft Dynamics</h3>
+          <p class="mb-3">
+            Enterprise Resource Planning (ERP) solutions are a critical part
+            of modern business operations, enabling organizations to manage
+            finance, supply chain, human resources, and other key functions.
+            SAP and Microsoft Dynamics have long been among the top contenders
+            in this space. However, recent market trends indicate that
+            Microsoft Dynamics is steadily capturing a larger share,
+            encroaching on the space traditionally dominated by SAP. In this
+            article, we explore the strengths and weaknesses of both ERP
+            solutions and analyze the reasons behind Microsoft Dynamics'
+            growing dominance.
+          </p>
+          <a href="tsap.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/tb15.png" alt="The Rise of ServiceNow" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 17/02/2025
+          </p>
+          <h3 class="mb-3">The Rise of ServiceNow</h3>
+          <p class="mb-3">
+            In the rapidly evolving world of enterprise IT solutions,
+            ServiceNow has emerged as a dominant player, redefining how
+            organizations manage workflows, IT service management (ITSM), and
+            digital transformation. As businesses continue to embrace
+            automation and cloud-based solutions, ServiceNow's influence is
+            expanding unprecedentedly. In this article, we explore the rapid
+            growth of ServiceNow, its market expansion, and potential position
+            in the next five years.
+          </p>
+          <a href="riseofsn.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/tb17.png" alt="Salesforce vs Zoho CRM" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 11/02/2025
+          </p>
+          <h3 class="mb-3">Salesforce vs Zoho CRM</h3>
+          <p class="mb-3">
+            Customer Relationship Management (CRM) software is an essential
+            tool for businesses looking to streamline sales, marketing, and
+            customer support operations. Two of the most prominent players in
+            the CRM space are Salesforce and Zoho CRM. While Salesforce is
+            widely recognized as a global leader in CRM solutions, Zoho CRM
+            has gained significant traction, especially in India’s mid-sized
+            business market, due to its affordability and comprehensive
+            feature set. In this article, we compare Salesforce and Zoho CRM
+            to help businesses make informed decisions.
+          </p>
+          <a href="zoho.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+      <div class="tech-hub-tile">
+        <img class="tech-tile-img" src="../assets/images/tb19.png" alt="Rust and Go Lang" />
+        <div class="tech-tile-content">
+          <p class="timeStamp">
+            <i class="fa-regular fa-clock"></i> 10/02/2025
+          </p>
+          <h3 class="mb-3">
+            Rust and Go Lang: The Rise of Modern Programming Languages Over
+            Java
+          </h3>
+          <p class="mb-3">
+            In the ever-evolving landscape of software development, Rust and
+            Go Lang have emerged as formidable contenders, challenging Java’s
+            long-standing dominance. While Java continues to serve as a
+            versatile and widely used language, developers are increasingly
+            favoring Rust and Go Lang due to their performance, simplicity,
+            and modern tooling. This article explores how these languages
+            compare and why they are overtaking Java as the programming
+            language of choice.
+          </p>
+          <a href="rust.html" class="btn btn-primary gView mt-3">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <!-- ✅ wrap everything -->
+
+      <div class="footer-top">
+        <!-- Left Logo + Description -->
+        <div class="footer-about">
+          <img src="../assets/logos/logo.png" alt="logo" class="footer-logo" />
+
+          <p>
+            We specialize in
+            <b>IT Consulting, Staff Augmentation, & Managed Services</b>,
+            delivering comprehensive workforce solutions that drive business
+            success. As a trusted technology partner, we bridge the talent gap
+            with tailored Staff strategies, ensuring seamless alignment with
+            organizational goals.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../contact.html">Contact Us</a></li>
+              <li><a href="../activejobs.html">Active Jobs</a></li>
+              <li><a href="../iso.html">Corporate Compliance</a></li>
+              <li><a href="../it-security.html">IT Security Policies</a></li>
+              <li>
+                <a href="technology-hub.html">Technology Hub</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="../it-consulting.html">IT Consulting & Implementation Services</a>
+              </li>
+              <li><a href="../staff.html">Staff Augmentation</a></li>
+              <li>
+                <a href="../managed-services.html">Managed Teams & Services</a>
+              </li>
+              <li><a href="../gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Toll Free</h3>
+            <p class="phone">1800 572 1880</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect Us On</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank">F</a>
+              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>
+          Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="tagline">Better Careers Better Lives</span>
+      </div>
+    </div>
+    <!-- ✅ CLOSE footer-inner -->
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

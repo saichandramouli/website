@@ -1,0 +1,838 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People Prime Worldwide provides the Best Staffing, Placement and IT Job Consultancy in Hyderabad & Chennai
+  </title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
+  <meta name="title"
+    content="People Prime Worldwide provides the Best Staffing, Placement and IT Job Consultancy in Hyderabad & Chennai">
+  <meta name="description"
+    content="Find the best Recruitment company in Hyderabad & Chennai that helps in timely fulfilment of recruitment positions. Experience the best placement needs with our smooth process." />
+  <!--add content here -->
+  <meta name="keywords"
+    content=" job consultancy, staffing companies, it job consultancy, staffing recruiter, recruitment service, consultancies for jobs in hyderabad, chennai job consultancy, best consultancy for jobs in hyderabad, manpower agencies in chennai, consultancy for it jobs in hyderabad, consultancy in chennai for it jobs" />
+  <meta name="author" content="www.people-prime.com">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/it-consulting.css" />
+  <style>
+    /* Case Study 1 Interactive Section */
+    .cs1-section {
+      background: linear-gradient(160deg, #071525, #0b1e35, #091828);
+      border-radius: 20px;
+      padding: 60px 40px;
+      margin-top: 40px;
+      color: white;
+    }
+
+    .cs1-heading {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: white;
+    }
+
+    .cs1-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 40px;
+    }
+
+    .cs1-tabs {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .cs1-tab {
+      padding: 15px 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-left: 4px solid transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: left;
+    }
+
+    .cs1-tab label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #00b4ff;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    .cs1-tab span {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.4;
+      display: block;
+    }
+
+    .cs1-tab i {
+      display: block;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+    .cs1-tab.active {
+      background: rgba(0, 180, 255, 0.1);
+      border-left-color: #00b4ff;
+    }
+
+    .cs1-panels {
+      position: relative;
+    }
+
+    .cs1-panel {
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .cs1-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Image Zone (Static) */
+    .cs1-banner-img-wrap {
+      width: 100%;
+      height: 240px;
+      background: rgba(0, 0, 0, 0.3);
+      border: 2px solid rgba(0, 180, 255, 0.1);
+      border-radius: 15px;
+      position: relative;
+      overflow: hidden;
+
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .cs1-banner-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      justify-content: center;
+      font-size: 24px;
+      color: #00b4ff;
+      margin-bottom: 15px;
+    }
+
+    .cs1-banner-img-wrap.has-image .cs1-upload-overlay {
+      opacity: 0;
+    }
+
+    .cs1-banner-img-wrap:hover .cs1-upload-overlay {
+      opacity: 1;
+    }
+
+    .cs1-panel-body h4 {
+      font-size: 22px;
+      color: #00b4ff;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .cs1-panel-body p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 991px) {
+      .cs1-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cs1-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        scrollbar-width: none;
+      }
+
+      .cs1-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .cs1-tab {
+        min-width: 200px;
+        flex-shrink: 0;
+      }
+
+      .cs1-section {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Platform</span></a>
+        </li>
+        <li><a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a></li>
+        <li><a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="it-consulting.html">IT Consulting</a>
+            <a href="staff.html">Staff Augmentation (T&M)</a>
+            <a href="managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu skill-dropdown">
+            <a href="java.html">Java Technologies</a>
+            <a href="microsoft.html">Microsoft Technologies</a>
+            <a href="it-infra.html">IT Infrastructure</a>
+            <a href="sap.html">SAP</a>
+            <a href="datasci.html">Data Science</a>
+            <a href="servicenow.html">Service Now</a>
+            <a href="salesforce.html">Salesforce</a>
+            <a href="dw.html">Data Warehouse</a>
+            <a href="cloud.html">Cloud Technologies</a>
+            <a href="ai-ml.html">AI and ML</a>
+            <a href="iot.html">IOT</a>
+            <a href="database.html">Database management</a>
+            <a href="testing.html">Testing</a>
+            <a href="cybersecurity.html">Cyber Security</a>
+            <a href="oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Corporate Compliance<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="iso.html">ISO9001-27001</a>
+            <a href="cobe.html">Code of Business Ethics</a>
+            <a href="soc2type2.html">SOC2 Type 2</a>
+            <a href="statutory.html">Statutory Compliance</a>
+            <a href="env-sus.html">Environmental Sustainability</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">About Us<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="lt.html">Leadership Team</a>
+            <a href="it-security.html">IT Security Policies</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="activejobs.html" class="nav-btn">Active Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">&#10005;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span class="drawer-ptaas-subtext">Platform</span></a></li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">People Remotely</a></li>
+      <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">Services <span class="drawer-arrow">&#9660;</span></button>
+        <div class="drawer-dropdown-menu">
+          <a href="it-consulting.html">IT Consulting</a>
+          <a href="staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">Skill Sets <span class="drawer-arrow">&#9660;</span></button>
+        <div class="drawer-dropdown-menu">
+          <a href="java.html">Java Technologies</a>
+          <a href="microsoft.html">Microsoft Technologies</a>
+          <a href="it-infra.html">IT Infrastructure</a>
+          <a href="sap.html">SAP</a>
+          <a href="datasci.html">Data Science</a>
+          <a href="servicenow.html">Service Now</a>
+          <a href="salesforce.html">Salesforce</a>
+          <a href="dw.html">Data Warehouse</a>
+          <a href="cloud.html">Cloud Technologies</a>
+          <a href="ai-ml.html">AI and ML</a>
+          <a href="iot.html">IOT</a>
+          <a href="database.html">Database management</a>
+          <a href="testing.html">Testing</a>
+          <a href="cybersecurity.html">Cyber Security</a>
+          <a href="oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">Corporate Compliance <span class="drawer-arrow">&#9660;</span></button>
+        <div class="drawer-dropdown-menu">
+          <a href="iso.html">ISO9001-27001</a>
+          <a href="cobe.html">Code of Business Ethics</a>
+          <a href="soc2type2.html">SOC2 Type 2</a>
+          <a href="statutory.html">Statutory Compliance</a>
+          <a href="env-sus.html">Environmental Sustainability</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">About Us <span class="drawer-arrow">&#9660;</span></button>
+        <div class="drawer-dropdown-menu">
+          <a href="lt.html">Leadership Team</a>
+          <a href="it-security.html">IT Security Policies</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li><a href="activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a></li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <section class="it-page">
+    <!-- HERO -->
+    <div class="it-header">
+      <h2>Services</h2>
+      <h1>Managed Teams and Managed Services</h1>
+    </div>
+
+    <!-- INTRO -->
+    <div class="it-body-background">
+      <div class="it-section">
+        <div class="it-row">
+          <div class="square-video">
+            <video autoplay loop muted playsinline>
+              <source src="assets/videos/managed-services.webm" type="video/webm">
+            </video>
+          </div>
+          <div class="it-text">
+            <h2>Managed Teams & Managed Services</h2>
+            <p>
+              At People Prime Worldwide, we provide Managed Teams and Managed Services that enable businesses to focus
+              on
+              core priorities while we handle workforce and IT operations. Our scalable, high-performing teams integrate
+              seamlessly into workflows, delivering consistent results and operational efficiency. With dedicated teams
+              and SLA-driven services, we optimize costs, improve productivity, and ensure compliance—supporting
+              seamless
+              execution and long-term business growth.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- APPROACH SECTIONS -->
+      <div class="it-section">
+        <div class="process-header">
+          <h2>Our Managed Teams Approach</h2>
+        </div>
+
+        <div class="process-grid">
+          <!-- Item 1 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon1.png" alt="Approach Icon">
+            </div>
+            <div class="item-content">
+              <h4>Talent Acquisition & Team Formation</h4>
+              <p>
+                We build high-performing teams aligned with your business objectives and project requirements.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon2.png" alt="Approach Icon">
+            </div>
+            <div class="item-content">
+              <h4>Specialized Training & Development</h4>
+              <p>
+                Targeted upskilling ensures teams are equipped with the right technical expertise to deliver results.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon3.png" alt="Approach Icon">
+            </div>
+            <div class="item-content">
+              <h4>Seamless Onboarding & Deployment</h4>
+              <p>
+                Rapid onboarding enables smooth integration into ongoing projects with minimal disruption.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon4.png" alt="Approach Icon">
+            </div>
+            <div class="item-content">
+              <h4>Performance Optimization & Reporting</h4>
+              <p>
+                Continuous monitoring and detailed reporting drive efficiency, accountability, and improved outcomes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="process-item item-full-center">
+            <div class="icon-circle">
+              <img src="assets/images/mticon5.png" alt="Approach Icon">
+            </div>
+            <div class="item-content">
+              <h4>Cost-Effective & Scalable Solutions</h4>
+              <p>
+                Flexible workforce models help optimize costs while supporting scalable business growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="it-section">
+        <div class="process-header">
+          <h2>Our Managed Services Approach</h2>
+        </div>
+
+        <div class="process-grid">
+          <!-- Item 1 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon6.png" alt="Approach Icon">
+            </div>
+            <div class="item-content">
+              <h4>IT Infrastructure Management</h4>
+              <p>
+                End-to-end management of cloud, network, and server environments with enterprise-grade security and
+                reliability.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon7.png" alt="Approach Icon">
+            </div>
+            <div class="item-content">
+              <h4>Application Support & Maintenance</h4>
+              <p>
+                24/7 support for enterprise applications, cloud platforms, and software systems to ensure uninterrupted
+                performance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon8.png" alt="Approach Icon">
+            </div>
+            <div class="item-content">
+              <h4>Cybersecurity & Compliance</h4>
+              <p>
+                Robust security frameworks to safeguard data, manage risks, and maintain regulatory compliance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon9.png" alt="Approach Icon">
+            </div>
+            <div class="item-content">
+              <h4>IT Helpdesk & Technical Support</h4>
+              <p>
+                Proactive monitoring, rapid issue resolution, and continuous performance optimization.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="process-item item-full-center">
+            <div class="icon-circle">
+              <img src="assets/images/mticon10.png" alt="Approach Icon">
+            </div>
+            <div class="item-content">
+              <h4>Business Process Outsourcing (BPO)</h4>
+              <p>
+                Streamlining and automating non-core operations to improve efficiency and reduce operational overhead.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CASE STUDY 1 -->
+      <div class="it-section">
+        <section class="cs1-section">
+          <h2 class="cs1-heading">Success Stories: "How we deliver excellence in Managed Teams"</h2>
+          <div class="cs1-grid">
+            <!-- Left side: Tabs -->
+            <div class="cs1-tabs">
+              <div class="cs1-tab active" data-panel="cs1-panel-challenge" onclick="cs1Switch(this)">
+                <label>Case Study 1</label>
+                <span>Salesforce LWC – Hire, Train, Deploy (HTD) Model</span>
+              </div>
+              <div class="cs1-tab" data-panel="cs1-panel-solution" onclick="cs1Switch(this)">
+                <label>Our Solution</label>
+                <i>"Sourced, trained, and deployed LWC engineers in 60 days."</i>
+              </div>
+              <div class="cs1-tab" data-panel="cs1-panel-results" onclick="cs1Switch(this)">
+                <label>Results Achieved</label>
+                <i>"Zero cost to client for training, zero compromise on quality."</i>
+              </div>
+            </div>
+
+            <!-- Right side: Content Panels -->
+            <div class="cs1-panels">
+              <!-- Challenge Panel -->
+              <div class="cs1-panel active" id="cs1-panel-challenge">
+                <div class="cs1-banner-img-wrap" id="wrap1-challenge">
+                  <img id="img1-challenge" src="assets/images/p4.png" alt="Case Study Banner">
+                </div>
+                <div class="cs1-panel-body">
+                  <h4>The Challenge</h4>
+                  <p>
+                    A global technology company required Salesforce Lightning Web Components (LWC) engineers within 2
+                    months to meet rapid project expansion needs. The primary challenge was finding Java/.NET
+                    developers, training them in Salesforce LWC, and ensuring they were deployment-ready within a short
+                    timeframe.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Solution Panel -->
+              <div class="cs1-panel" id="cs1-panel-solution">
+                <div class="cs1-banner-img-wrap" id="wrap1-solution">
+                  <img id="img1-solution" src="assets/images/p7.png" alt="Case Study Banner">
+                </div>
+                <div class="cs1-panel-body">
+                  <h4>Our Solution</h4>
+                  <p>
+                    We sourced Java/.NET engineers with strong programming backgrounds and conducted a 30-day Salesforce
+                    LWC training program using a client-curated curriculum. To ensure seamless integration, we deployed
+                    engineers for a 2-month trial period at no cost to the client before converting them to full-time
+                    temp employees.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Results Panel -->
+              <div class="cs1-panel" id="cs1-panel-results">
+                <div class="cs1-banner-img-wrap" id="wrap1-results">
+                  <img id="img1-results" src="assets/images/p7.png" alt="Case Study Banner">
+                </div>
+                <div class="cs1-panel-body">
+                  <h4>Results Achieved</h4>
+                  <p>
+                    Successfully onboarded and trained Salesforce LWC engineers, ensuring fast project execution while
+                    minimizing client hiring costs by delivering deployment-ready professionals. Improved overall team
+                    performance and efficiency, consistently meeting strict project timelines.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- CASE STUDY 2 -->
+      <div class="it-section">
+        <section class="cs1-section">
+          <h2 class="cs1-heading">Success Stories: "Excellence in Managed Services Scaling"</h2>
+          <div class="cs1-grid">
+            <!-- Left side: Tabs -->
+            <div class="cs1-tabs">
+              <div class="cs1-tab active" data-panel="cs2-panel-challenge" onclick="cs2Switch(this)">
+                <label>Case Study 2</label>
+                <span>Salesforce Vlocity – Scalable Managed Teams Model</span>
+              </div>
+              <div class="cs1-tab" data-panel="cs2-panel-solution" onclick="cs2Switch(this)">
+                <label>Our Solution</label>
+                <i>"Implemented HTD model for specialized Vlocity talent."</i>
+              </div>
+              <div class="cs1-tab" data-panel="cs2-panel-results" onclick="cs2Switch(this)">
+                <label>Results Achieved</label>
+                <i>"Onboarded 10 engineers monthly with steady supply."</i>
+              </div>
+            </div>
+
+            <!-- Right side: Content Panels -->
+            <div class="cs1-panels">
+              <!-- Challenge Panel -->
+              <div class="cs1-panel active" id="cs2-panel-challenge">
+                <div class="cs1-banner-img-wrap" id="wrap2-challenge">
+                  <img id="img2-challenge" src="assets/images/p10.png" alt="Case Study Banner">
+                </div>
+                <div class="cs1-panel-body">
+                  <h4>The Challenge</h4>
+                  <p>
+                    A global technology leader required specialized Salesforce Vlocity engineers to be hired and trained
+                    within a 6-month window. The challenge lay in finding highly specialized talent, aligning them with
+                    client-specific needs, and ensuring a steady onboarding pipeline.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Solution Panel -->
+              <div class="cs1-panel" id="cs2-panel-solution">
+                <div class="cs1-banner-img-wrap" id="wrap2-solution">
+                  <img id="img2-solution" src="assets/images/p11.png" alt="Case Study Banner">
+                </div>
+                <div class="cs1-panel-body">
+                  <h4>Our Solution</h4>
+                  <p>
+                    We implemented a Hire-Train-Deploy model for Salesforce Vlocity engineers, providing a 30-day
+                    intensive training program based on a client-provided curriculum. We ensured client involvement in
+                    the final selection process and managed the steady onboarding of 10 engineers per month.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Results Panel -->
+              <div class="cs1-panel" id="cs2-panel-results">
+                <div class="cs1-banner-img-wrap" id="wrap2-results">
+                  <img id="img2-results" src="assets/images/p12.png" alt="Case Study Banner">
+                </div>
+                <div class="cs1-panel-body">
+                  <h4>Results Achieved</h4>
+                  <p>
+                    Successfully delivered Salesforce Vlocity-trained engineers within strict deadlines, enabling
+                    cost-effective workforce scaling. Improved team retention and performance ensured the long-term
+                    success of the client's steady growth strategy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="it-section">
+        <div class="process-header">
+          <h2>Why Choose People Prime Worldwide?</h2>
+        </div>
+
+        <div class="process-grid">
+          <!-- Item 1 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon11.png" alt="Why Choose Icon">
+            </div>
+            <div class="item-content">
+              <h4>Pre-Built Expert Teams</h4>
+              <p>
+                Fully managed, high-performing teams aligned to your project requirements, enabling faster deployment
+                and
+                reduced timelines.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon12.png" alt="Why Choose Icon">
+            </div>
+            <div class="item-content">
+              <h4>End-to-End Workforce Management</h4>
+              <p>
+                We manage the entire lifecycle—from sourcing and onboarding to training, performance monitoring, and
+                continuous optimization.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon13.png" alt="Why Choose Icon">
+            </div>
+            <div class="item-content">
+              <h4>Flexible & Scalable Teams</h4>
+              <p>
+                Easily scale your workforce up or down based on project demands, ensuring agility and operational
+                efficiency.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="process-item">
+            <div class="icon-circle">
+              <img src="assets/images/mticon14.png" alt="Why Choose Icon">
+            </div>
+            <div class="item-content">
+              <h4>Cost-Effective Solutions</h4>
+              <p>
+                Optimize costs by outsourcing IT management, staffing, and project execution without compromising
+                quality.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="process-item item-full-center">
+            <div class="icon-circle">
+              <img src="assets/images/mticon15.png" alt="Why Choose Icon">
+            </div>
+            <div class="item-content">
+              <h4>SLA-Driven Managed Services</h4>
+              <p>
+                Delivering reliable, secure, and compliant operations with defined service levels and 24/7 availability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="why-choose-new">
+      <div class="why-choose-content">
+        <h3 class="why-title">Transform Your Business</h3>
+        <h1 class="why-heading">People Prime Worldwide</h1>
+        <p class="why-desc">
+          At People Prime Worldwide, we go beyond traditional staffing to build and manage high-performance teams
+          while delivering SLA-driven IT services that accelerate business success. Whether you require specialized
+          project teams, fully managed IT services, or scalable workforce solutions, our Managed Teams & Managed
+          Services ensure operational efficiency, cost optimization, and seamless execution.
+        </p>
+      </div>
+    </section>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <!-- ✅ wrap everything -->
+
+      <div class="footer-top">
+        <!-- Left Logo + Description -->
+        <div class="footer-about">
+          <img src="assets/logos/logo.png" alt="logo" class="footer-logo" />
+
+          <p>
+            We specialize in
+            <b>IT Consulting, Staff Augmentation, & Managed Services</b>,
+            delivering comprehensive workforce solutions that drive business
+            success. As a trusted technology partner, we bridge the talent gap
+            with tailored Staff strategies, ensuring seamless alignment with
+            organizational goals.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="activejobs.html">Active Jobs</a></li>
+              <li><a href="iso.html">Corporate Compliance</a></li>
+              <li><a href="it-security.html">IT Security Policies</a></li>
+              <li><a href="technology-hub/technology-hub.html">Technology Hub</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="it-consulting.html">IT Consulting & Implementation Services</a></li>
+              <li><a href="staff.html">Staff Augmentation</a></li>
+              <li><a href="managed-services.html">Managed Teams & Services</a></li>
+              <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+            </ul>
+          </div>
+
+
+          <div class="footer-column">
+            <h3>Toll Free</h3>
+            <p class="phone">1800 572 1880</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect Us On</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank">F</a>
+              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>
+          Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="tagline">Better Careers Better Lives</span>
+      </div>
+    </div>
+    <!-- ✅ CLOSE footer-inner -->
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    function cs1Switch(tab) {
+      const section = tab.closest('.cs1-section');
+      section.querySelectorAll('.cs1-tab').forEach(t => t.classList.remove('active'));
+      section.querySelectorAll('.cs1-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      const panelId = tab.getAttribute('data-panel');
+      document.getElementById(panelId).classList.add('active');
+    }
+
+    function cs2Switch(clickedTab) {
+      const parent = clickedTab.closest('.cs1-section');
+      parent.querySelectorAll('.cs1-tab').forEach(t => t.classList.remove('active'));
+      parent.querySelectorAll('.cs1-panel').forEach(p => p.classList.remove('active'));
+      clickedTab.classList.add('active');
+      const panel = document.getElementById(clickedTab.getAttribute('data-panel'));
+      if (panel) panel.classList.add('active');
+    }
+  </script>
+</body>
+
+</html>

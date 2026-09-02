@@ -1,0 +1,639 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Tech Staffing | Microsoft Recruitment</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
+  <meta name="title" content="Microsoft Tech Staffing | Microsoft Recruitment" />
+  <meta name="description"
+    content="People Prime specializes in recruiting top talent for Microsoft Technologies providing expertise to help businesses find the best candidates to meet their needs" />
+  <!--add content here -->
+  <meta name="keywords"
+    content="Office e365, Microsoft artificial intelligence, Microsoft 0ffice 365, Microsoft careers, Microsoft technologies, Microsoft and AI, AI in Microsoft, azure in cloud computing, Microsoft job opportunities, job vacancies in Microsoft, Microsoft employment opportunities, Microsoft India hiring, Microsoft hiring, Microsoft recruitment" />
+  <meta name="author" content="www.people-prime.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/it-consulting.css" />
+
+  <style>
+    /* ===== Microsoft Page Custom ===== */
+
+    .section {
+      padding: 100px 60px;
+      background: transparent;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    /* Grid */
+    .skills-grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    /* Modal */
+    .custom-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #021814;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 90%;
+      color: white;
+      border: 1px solid #00c896;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      font-size: 22px;
+      color: #00c896;
+    }
+
+    /* List spacing */
+    .modal-content ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .modal-content li {
+      margin-bottom: 8px;
+    }
+
+    .cards-1 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .cards-2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      gap: 30px;
+    }
+
+    .cards-1 img,
+    .cards-2 img {
+      width: 350px !important;
+      height: auto !important;
+      max-height: 350px !important;
+      object-fit: contain !important;
+      border-radius: 20px;
+    }
+
+    .grid-1,
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    /* Hero Height Fix */
+    .hero,
+    .hero-content {
+      height: auto !important;
+      min-height: auto !important;
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+      background: transparent !important;
+    }
+
+    .hero-content {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: -webkit-flex !important;
+      display: flex !important;
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+      -webkit-flex-direction: row !important;
+      flex-direction: row !important;
+      -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+      -webkit-justify-content: center !important;
+      justify-content: center !important;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      max-width: 1200px;
+      margin: 0 auto !important;
+    }
+
+    .hero-content>div:not(.square-video) {
+      flex: 0 1 700px;
+      min-width: 300px;
+    }
+
+    .square-video {
+      width: 350px !important;
+      height: 350px !important;
+      flex: 0 0 350px !important;
+    }
+
+    .hero-content h2 {
+      text-align: center;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-content img {
+        margin-right: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      &#9776;
+    </button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Platform</span></a>
+        </li>
+        <li>
+          <a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a>
+        </li>
+        <li>
+          <a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="it-consulting.html">IT Consulting</a>
+            <a href="staff.html">Staff Augmentation (T&M)</a>
+            <a href="managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu skill-dropdown">
+            <a href="java.html">Java Technologies</a>
+            <a href="microsoft.html">Microsoft Technologies</a>
+            <a href="it-infra.html">IT Infrastructure</a>
+            <a href="sap.html">SAP</a>
+            <a href="datasci.html">Data Science</a>
+            <a href="servicenow.html">Service Now</a>
+            <a href="salesforce.html">Salesforce</a>
+            <a href="dw.html">Data Warehouse</a>
+            <a href="cloud.html">Cloud Technologies</a>
+            <a href="ai-ml.html">AI and ML</a>
+            <a href="iot.html">IOT</a>
+            <a href="database.html">Database management</a>
+            <a href="testing.html">Testing</a>
+            <a href="cybersecurity.html">Cyber Security</a>
+            <a href="oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Corporate Compliance<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="iso.html">ISO9001-27001</a>
+            <a href="cobe.html">Code of Business Ethics</a>
+            <a href="soc2type2.html">SOC2 Type 2</a>
+            <a href="statutory.html">Statutory Compliance</a>
+            <a href="env-sus.html">Environmental Sustainability</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">About Us<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="lt.html">Leadership Team</a>
+            <a href="it-security.html">IT Security Policies</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="activejobs.html" class="nav-btn">Active Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        &#10005;
+      </button>
+    </div>
+    <ul class="drawer-nav">
+      <li>
+        <a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span class="drawer-ptaas-subtext">Platform</span></a>
+      </li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">People Remotely</a></li>
+      <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Services <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="it-consulting.html">IT Consulting</a>
+          <a href="staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Skill Sets <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="java.html">Java Technologies</a>
+          <a href="microsoft.html">Microsoft Technologies</a>
+          <a href="it-infra.html">IT Infrastructure</a>
+          <a href="sap.html">SAP</a>
+          <a href="datasci.html">Data Science</a>
+          <a href="servicenow.html">Service Now</a>
+          <a href="salesforce.html">Salesforce</a>
+          <a href="dw.html">Data Warehouse</a>
+          <a href="cloud.html">Cloud Technologies</a>
+          <a href="ai-ml.html">AI and ML</a>
+          <a href="iot.html">IOT</a>
+          <a href="database.html">Database management</a>
+          <a href="testing.html">Testing</a>
+          <a href="cybersecurity.html">Cyber Security</a>
+          <a href="oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Corporate Compliance <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="iso.html">ISO9001-27001</a>
+          <a href="cobe.html">Code of Business Ethics</a>
+          <a href="soc2type2.html">SOC2 Type 2</a>
+          <a href="statutory.html">Statutory Compliance</a>
+          <a href="env-sus.html">Environmental Sustainability</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          About Us <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="lt.html">Leadership Team</a>
+          <a href="it-security.html">IT Security Policies</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li>
+        <a href="activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="it-header">
+    <h2>Skill Sets</h2>
+    <h1>Microsoft Technologies</h1>
+  </div>
+
+  <!-- ✅ HERO (Java intro) -->
+  <div class="it-body-background">
+    <section class="hero">
+      <div class="hero-content" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap">
+        <div>
+          <h2>Microsoft</h2>
+          <p class="description">
+            We at People Prime specialize in finding the best talent for
+            Microsoft Technologies. We connect skilled professionals with the
+            perfect job opportunities in areas like .NET development, Azure
+            cloud solutions, SQL Server management, and Power BI analytics. We
+            understand Microsoft platforms and use a personalized approach to
+            recruitment, which helps us deliver exceptional candidates who will
+            drive innovation and excellence in your company. Partner with us to
+            find the best talent in Microsoft Technologies and help your
+            business grow.
+          </p>
+        </div>
+
+        <div class="square-video">
+          <video autoplay loop muted playsinline width="350" height="350">
+            <source src="assets/videos/micro.webm" type="video/webm">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ SKILLS SECTION -->
+    <section class="section">
+      <h2><span class="highlight">Microsoft</span> Skill Sets</h2>
+
+      <div class="skills-grid">
+        <!-- 4 cards plus an image are in cards-1 and cards-2 classes -->
+        <div class="cards-1">
+          <img src="assets/images/micro1.png" alt="" />
+          <div class="grid-1">
+            <div class="card" onclick="openModal('msDevFrameworks')">
+              <div class="card-icon">
+                <img src="assets/images/mticon1.png" alt="" />
+              </div>
+              <h3>Development Frameworks</h3>
+              <p>
+                .NET Framework - ASP.NET, Windows Forms, WPF (Windows
+                Presentation Foundation)...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('msCloudComputing')">
+              <div class="card-icon">
+                <img src="assets/images/mticon2.png" alt="" />
+              </div>
+              <h3>Cloud Computing</h3>
+              <p>
+                Azure Compute, Virtual Machines, Azure Kubernetes Service
+                (AKS)...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('msDatabase')">
+              <div class="card-icon">
+                <img src="assets/images/mticon3.png" alt="" />
+              </div>
+              <h3>Database Technologies</h3>
+              <p>
+                SQL Server Management Studio (SSMS), SQL Server Integration...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('msBi')">
+              <div class="card-icon">
+                <img src="assets/images/mticon4.png" alt="" />
+              </div>
+              <h3>Business Intelligence</h3>
+              <p>
+                Power BI - Power BI Desktop, Power BI Service, Power BI Report
+                ...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-2">
+          <img src="assets/images/micro2.png" alt="" />
+          <div class="grid-2">
+            <div class="card" onclick="openModal('msEnterprise')">
+              <div class="card-icon">
+                <img src="assets/images/mticon5.png" alt="" />
+              </div>
+              <h3>Enterprise Solutions</h3>
+              <p>
+                Dynamics 365 Business Central - Microsoft Dynamics GP,
+                Dynamics SL...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('msSecurity')">
+              <div class="card-icon">
+                <img src="assets/images/mticon6.png" alt="" />
+              </div>
+              <h3>Security</h3>
+              <p>
+                Microsoft Defender for Endpoint, Identity protection,
+                Cloud security...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('msAad')">
+              <div class="card-icon">
+                <img src="assets/images/mticon7.png" alt="" />
+              </div>
+              <h3>Azure Active Directory (AAD)</h3>
+              <p>
+                Single Sign-On (SSO), Multi-Factor Authentication (MFA)...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('msAiMl')">
+              <div class="card-icon">
+                <img src="assets/images/mticon8.png" alt="" />
+              </div>
+              <h3>AI and ML</h3>
+              <p>
+                Azure Cognitive Services - Computer Vision, Speech, Language
+                Understanding...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ✅ MODAL -->
+  <div id="modal" class="custom-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">✖</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <!-- ✅ wrap everything -->
+
+      <div class="footer-top">
+        <!-- Left Logo + Description -->
+        <div class="footer-about">
+          <img src="assets/logos/logo.png" alt="logo" class="footer-logo" />
+
+          <p>
+            We specialize in
+            <b>IT Consulting, Staff Augmentation, & Managed Services</b>,
+            delivering comprehensive workforce solutions that drive business
+            success. As a trusted technology partner, we bridge the talent gap
+            with tailored Staff strategies, ensuring seamless alignment with
+            organizational goals.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="activejobs.html">Active Jobs</a></li>
+              <li><a href="iso.html">Corporate Compliance</a></li>
+              <li><a href="it-security.html">IT Security Policies</a></li>
+              <li>
+                <a href="technology-hub/technology-hub.html">Technology Hub</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="it-consulting.html">IT Consulting & Implementation Services</a>
+              </li>
+              <li><a href="staff.html">Staff Augmentation</a></li>
+              <li>
+                <a href="managed-services.html">Managed Teams & Services</a>
+              </li>
+              <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Toll Free</h3>
+            <p class="phone">1800 572 1880</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect Us On</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank">F</a>
+              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>
+          Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="tagline">Better Careers Better Lives</span>
+      </div>
+    </div>
+    <!-- ✅ CLOSE footer-inner -->
+  </footer>
+  <script src="js/script.js"></script>
+
+  <!-- ✅ JS -->
+  <script>
+    function openModal(type) {
+      const modal = document.getElementById("modal");
+      const body = document.getElementById("modal-body");
+
+      const data = {
+        msDevFrameworks: `
+      <h3>Development Frameworks</h3>
+        <p>.NET Framework - ASP.NET, Windows Forms, WPF (Windows Presentation Foundation), ADO.NET, Entity Framework, WCF. .NET Core - ASP.NET Core, Entity Framework Core, Blazor, Web API .NET 5/6/7+ - Unified Platform, Cross-platform Development, MAUI (Multi-platform App UI) Programming Languages - C#, VB.NET (Visual Basic .NET), F#, TypeScript, PowerShell</p>`,
+
+        msCloudComputing: `
+      <h3>Cloud Computing</h3>
+        <P><strong>Microsoft Azure</strong> - Azure Compute, Virtual Machines, Azure Kubernetes Service (AKS), Azure Functions, Azure App Services, Azure Storage, Blob Storage, Table Storage, Queue Storage, Disk Storage, Azure Networking, Virtual Networks, VPN Gateway, Azure Traffic Manager, Azure Load Balancer, Azure Databases, Azure SQL Database, Cosmos DB, Azure Database for PostgreSQL, Azure Database for MySQL, Azure AI & Machine Learning, Azure Cognitive Services, Azure Machine Learning, Azure DevOps, Azure Pipelines, Azure Repos, Azure Artifacts, Azure Test Plans, Azure Security, Azure Security Center, Azure Sentinel, Azure Key Vault</P>`,
+
+        msDatabase: `
+      <h3>Database Technologies</h3>
+        <p>SQL Server - SQL Server Management Studio (SSMS), SQL Server Integration Services (SSIS), SQL Server Analysis Services (SSAS), SQL Server Reporting Services (SSRS), SQL Server Data Tools (SSDT), Azure SQL Database, Cosmos DB, Access</p>`,
+
+        msBi: `
+      <h3>Business Intelligence</h3>
+        <p>Power BI - Power BI Desktop, Power BI Service, Power BI Report Server, SQL Server Reporting Services (SSRS), SQL Server Analysis Services (SSAS)</p>`,
+
+        msEnterprise: `
+      <h3>Enterprise Solutions</h3>
+        <P>Dynamics 365 Business Central - Microsoft Dynamics GP, Dynamics SL, and Dynamics NAV Dynamics 365 for Finance & Supply Chain Management - Microsoft Dynamics AX, Finance, Supply Chain Management.</P>
+        <p><strong>SharePoint -</strong> SharePoint Online, SharePoint Server, SharePoint Designer, SharePoint Framework (SPFx)</p>
+        <h4>Collaboration Tools</h4>
+        <p>Microsoft 365 – Word, Excel, PowerPoint, Outlook, OneDrive, Teams, OneNote, Planner.
+
+        Microsoft Teams - Team Collaboration, Meetings & Calling, Integration with Microsoft 365 Apps
+
+        DevOps and CI/CD
+
+        Azure DevOps – Boards, Repos, Pipelines, Test Plans, Artifacts
+
+        GitHub - GitHub Actions, GitHub Packages, GitHub Codespaces</p>`,
+
+        msSecurity: `
+      <h3>Security</h3>
+        <p>Microsoft Defender - Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Office 365, Microsoft Defender for Cloud</p>`,
+
+        msAad: `
+      <h3>Azure Active Directory (AAD)</h3>
+      <p>Single Sign-On (SSO), Multi-Factor Authentication (MFA), Identity Protection</p>`,
+
+        msAiMl: `
+      <h3>Artificial Intelligence and Machine Learning </h3>
+      <p>Azure Cognitive Services - Computer Vision, Speech, Language Understanding (LUIS), Face API, Azure Machine Learning, Bot Services</p>`,
+      };
+
+      body.innerHTML = data[type];
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

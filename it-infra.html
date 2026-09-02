@@ -1,0 +1,741 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Infrastructure Recruitment | People Prime IT Infra</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
+  <meta name="title" content="IT Infrastructure Recruitment | People Prime IT Infra" />
+  <meta name="description"
+    content="People Prime Worldwide specializes in recruiting top IT infrastructure talent, empowering your organization with expert IT recruitment and hiring solutions" />
+  <!--add content here -->
+  <meta name="keywords"
+    content="IT infrastructure recruitment agency, it infrastructure, IT Infrastructure Staffing solutions, IT Infrastructure solutions, it infrastructure recruitment, infrastructure recruitment, infrastructure recruitment agency, infrastructure recruitment group, infrastructure recruitment specialists, it infra recruitment" />
+  <meta name="author" content="www.people-prime.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/it-consulting.css" />
+
+  <style>
+    /* ===== Java Page Custom ===== */
+
+    .section {
+      padding: 100px 60px;
+      background: transparent;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    /* Grid */
+    .skills-grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    /* Modal */
+    .custom-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #021814;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 90%;
+      color: white;
+      border: 1px solid #00c896;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      font-size: 22px;
+      color: #00c896;
+    }
+
+    /* List spacing */
+    .modal-content ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .modal-content li {
+      margin-bottom: 8px;
+    }
+
+    .cards-1 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .cards-2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+      -webkit-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      gap: 30px;
+    }
+
+    .cards-3 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .cards-1 img,
+    .cards-2 img,
+    .cards-3 img {
+      width: 350px !important;
+      height: auto !important;
+      max-height: 350px !important;
+      object-fit: contain !important;
+      border-radius: 20px;
+    }
+
+    .grid-1,
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+    /* Hero Height Fix */
+    .hero,
+    .hero-content {
+      height: auto !important;
+      min-height: auto !important;
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+    }
+
+    .hero-content {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: -webkit-flex !important;
+      display: flex !important;
+      -webkit-box-orient: horizontal !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+      -webkit-flex-direction: row !important;
+      flex-direction: row !important;
+      -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+      -webkit-justify-content: center !important;
+      justify-content: center !important;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      -webkit-align-items: center !important;
+      align-items: center !important;
+      max-width: 1200px;
+      margin: 0 auto !important;
+    }
+
+    .hero-content>div:not(.square-video) {
+      flex: 0 1 700px;
+      min-width: 300px;
+    }
+
+    .square-video {
+      width: 350px !important;
+      height: 350px !important;
+      flex: 0 0 350px !important;
+    }
+
+    .hero-content h2 {
+      text-align: center;
+    }
+
+    @media (min-width: 1024px) {
+      .hero-content img {
+        margin-right: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      &#9776;
+    </button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Platform</span></a>
+        </li>
+        <li>
+          <a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a>
+        </li>
+        <li>
+          <a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="it-consulting.html">IT Consulting</a>
+            <a href="staff.html">Staff Augmentation (T&M)</a>
+            <a href="managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu skill-dropdown">
+            <a href="java.html">Java Technologies</a>
+            <a href="microsoft.html">Microsoft Technologies</a>
+            <a href="it-infra.html">IT Infrastructure</a>
+            <a href="sap.html">SAP</a>
+            <a href="datasci.html">Data Science</a>
+            <a href="servicenow.html">Service Now</a>
+            <a href="salesforce.html">Salesforce</a>
+            <a href="dw.html">Data Warehouse</a>
+            <a href="cloud.html">Cloud Technologies</a>
+            <a href="ai-ml.html">AI and ML</a>
+            <a href="iot.html">IOT</a>
+            <a href="database.html">Database management</a>
+            <a href="testing.html">Testing</a>
+            <a href="cybersecurity.html">Cyber Security</a>
+            <a href="oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Corporate Compliance<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="iso.html">ISO9001-27001</a>
+            <a href="cobe.html">Code of Business Ethics</a>
+            <a href="soc2type2.html">SOC2 Type 2</a>
+            <a href="statutory.html">Statutory Compliance</a>
+            <a href="env-sus.html">Environmental Sustainability</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">About Us<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="lt.html">Leadership Team</a>
+            <a href="it-security.html">IT Security Policies</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="activejobs.html" class="nav-btn">Active Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        &#10005;
+      </button>
+    </div>
+    <ul class="drawer-nav">
+      <li>
+        <a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span class="drawer-ptaas-subtext">Platform</span></a>
+      </li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">People Remotely</a></li>
+      <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Services <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="it-consulting.html">IT Consulting</a>
+          <a href="staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Skill Sets <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="java.html">Java Technologies</a>
+          <a href="microsoft.html">Microsoft Technologies</a>
+          <a href="it-infra.html">IT Infrastructure</a>
+          <a href="sap.html">SAP</a>
+          <a href="datasci.html">Data Science</a>
+          <a href="servicenow.html">Service Now</a>
+          <a href="salesforce.html">Salesforce</a>
+          <a href="dw.html">Data Warehouse</a>
+          <a href="cloud.html">Cloud Technologies</a>
+          <a href="ai-ml.html">AI and ML</a>
+          <a href="iot.html">IOT</a>
+          <a href="database.html">Database management</a>
+          <a href="testing.html">Testing</a>
+          <a href="cybersecurity.html">Cyber Security</a>
+          <a href="oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Corporate Compliance <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="iso.html">ISO9001-27001</a>
+          <a href="cobe.html">Code of Business Ethics</a>
+          <a href="soc2type2.html">SOC2 Type 2</a>
+          <a href="statutory.html">Statutory Compliance</a>
+          <a href="env-sus.html">Environmental Sustainability</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          About Us <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="lt.html">Leadership Team</a>
+          <a href="it-security.html">IT Security Policies</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li>
+        <a href="activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <div class="it-header">
+    <h2>Skill Sets</h2>
+    <h1>IT Infrastructure</h1>
+  </div>
+
+  <!-- ✅ HERO (Java intro) -->
+  <div class="it-body-background">
+    <section class="hero">
+      <div class="hero-content" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap">
+        <div>
+          <h2>IT Infrastructure</h2>
+          <p class="description">
+            People Prime Worldwide specializes in finding and hiring exceptional
+            IT Infrastructure professionals to bolster your organization's
+            technological foundation. Our candidates are skilled in crucial
+            areas like network and systems administration, cloud computing,
+            cybersecurity, database management, IT service management, and
+            end-user computing. We leverage expertise in leading technologies
+            like AWS, Azure, VMware, and ITIL frameworks to ensure your IT
+            infrastructure is robust, scalable, and secure. Choose People Prime
+            Worldwide for the talent you need to maintain and grow your IT
+            capabilities.
+          </p>
+        </div>
+
+        <div class="square-video">
+          <video autoplay loop muted playsinline width="350" height="350">
+            <source src="assets/videos/it-infra.webm" type="video/webm">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ SKILLS SECTION -->
+    <section class="section">
+      <h2><span class="highlight">IT Infrastructure</span> Skill Sets</h2>
+
+      <div class="skills-grid">
+        <!-- 4 cards plus an image are in cards-1 and cards-2 classes -->
+        <div class="cards-1">
+          <img src="assets/images/itinfra1.png" alt="" />
+          <div class="grid-1">
+            <div class="card" onclick="openModal('databaseManagement')">
+              <div class="card-icon">
+                <img src="assets/images/mticon9.png" alt="" />
+              </div>
+              <h3>Database Management</h3>
+              <p>
+                Database Management Systems (DBMS), Database Design and
+                Modeling, SQL (Structured Query Language)...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('cloudInfrastructure')">
+              <div class="card-icon">
+                <img src="assets/images/mticon10.png" alt="" />
+              </div>
+              <h3>Cloud Infrastructure Admin</h3>
+              <p>
+                Amazon Web Services (AWS), EC2 and Lambda, S3 and EBS, ECS and
+                EKS,K2, RDS and DynamoDB...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('itsm')">
+              <div class="card-icon">
+                <img src="assets/images/mticon11.png" alt="" />
+              </div>
+              <h3>ITSM</h3>
+              <p>
+                IT Service Management, Change Management, Incident Management,
+                Problem Management, Asset Management...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('itil')">
+              <div class="card-icon">
+                <img src="assets/images/mticon12.png" alt="" />
+              </div>
+              <h3>ITIL</h3>
+              <p>
+                Service Strategy, Service Design, Service Transition, Service
+                Operation, Continual Service Improvement (CSI)...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-2">
+          <img src="assets/images/itinfra2.png" alt="" />
+          <div class="grid-2">
+            <div class="card" onclick="openModal('networkInfrastructure')">
+              <div class="card-icon">
+                <img src="assets/images/mticon13.png" alt="" />
+              </div>
+              <h3>Network Infrastructure</h3>
+              <p>
+                Routers, Switches, Firewalls, Load Balancers, VPNs...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('storageBackup')">
+              <div class="card-icon">
+                <img src="assets/images/mticon14.png" alt="" />
+              </div>
+              <h3>Storage, Backup & Recovery Admin</h3>
+              <p>
+                Storage (NAS), Netapp 7-mode, Netapp Snap suite of products
+                Snapmirror...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('cyberSecurity')">
+              <div class="card-icon">
+                <img src="assets/images/mticon15.png" alt="" />
+              </div>
+              <h3>Cyber Security</h3>
+              <p>
+                Critical Infrastructure Security, Network Security,Endpoint
+                Security,Application Security,Cloud Security ...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+
+            <div class="card" onclick="openModal('middleware')">
+              <div class="card-icon">
+                <img src="assets/images/mticon1.png" alt="" />
+              </div>
+              <h3>Middleware Applications</h3>
+              <p>
+                IBM WebSphere Application Server, Oracle WebLogic Application
+                Server, IBM MQ (Message Queue), Microsoft BizTalk Server...
+              </p>
+              <div class="read-more-footer">Read more <span>&gt;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-3">
+        <img src="assets/images/itinfra3.png" alt="" />
+        <div class="grid-1">
+          <div class="card" onclick="openModal('networking')">
+            <div class="card-icon">
+              <img src="assets/images/mticon2.png" alt="" />
+            </div>
+            <h3>Networking</h3>
+            <p>
+              TCP/IP (Transmission Control Protocol/Internet Protocol),
+              Routing & Switching, Network Protocols...
+            </p>
+            <div class="read-more-footer">Read more <span>&gt;</span></div>
+          </div>
+
+          <div class="card" onclick="openModal('systemAdmin')">
+            <div class="card-icon">
+              <img src="assets/images/mticon3.png" alt="" />
+            </div>
+            <h3>System Administration & OS</h3>
+            <p>
+              Amazon Web Services (AWS), EC2 and Lambda, S3 and EBS, ECS and
+              EKS,K2, RDS and DynamoDB...
+            </p>
+            <div class="read-more-footer">Read more <span>&gt;</span></div>
+          </div>
+
+          <div class="card" onclick="openModal('cisco')">
+            <div class="card-icon">
+              <img src="assets/images/mticon4.png" alt="" />
+            </div>
+            <h3>Cisco</h3>
+            <p>
+              Unified Communications CISCO, CISCO Network Admin, CISCO ACI,
+              CISCO Meraki – Cloud Network...
+            </p>
+            <div class="read-more-footer">Read more <span>&gt;</span></div>
+          </div>
+
+          <div class="card" onclick="openModal('itSecurity')">
+            <div class="card-icon">
+              <img src="assets/images/mticon5.png" alt="" />
+            </div>
+            <h3>IT Security</h3>
+            <p>
+              Identity and Access Management, Security Information and Event
+              Management (SIEM), Endpoint Security...
+            </p>
+            <div class="read-more-footer">Read more <span>&gt;</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ✅ MODAL -->
+  <div id="modal" class="custom-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">✖</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <!-- ✅ wrap everything -->
+
+      <div class="footer-top">
+        <!-- Left Logo + Description -->
+        <div class="footer-about">
+          <img src="assets/logos/logo.png" alt="logo" class="footer-logo" />
+
+          <p>
+            We specialize in
+            <b>IT Consulting, Staff Augmentation, & Managed Services</b>,
+            delivering comprehensive workforce solutions that drive business
+            success. As a trusted technology partner, we bridge the talent gap
+            with tailored Staff strategies, ensuring seamless alignment with
+            organizational goals.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="activejobs.html">Active Jobs</a></li>
+              <li><a href="iso.html">Corporate Compliance</a></li>
+              <li><a href="it-security.html">IT Security Policies</a></li>
+              <li>
+                <a href="technology-hub/technology-hub.html">Technology Hub</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="it-consulting.html">IT Consulting & Implementation Services</a>
+              </li>
+              <li><a href="staff.html">Staff Augmentation</a></li>
+              <li>
+                <a href="managed-services.html">Managed Teams & Services</a>
+              </li>
+              <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Toll Free</h3>
+            <p class="phone">1800 572 1880</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect Us On</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank">F</a>
+              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>
+          Copyright © People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="tagline">Better Careers Better Lives</span>
+      </div>
+    </div>
+    <!-- ✅ CLOSE footer-inner -->
+  </footer>
+  <script src="js/script.js"></script>
+
+  <!-- ✅ JS -->
+  <script>
+    function openModal(type) {
+      const modal = document.getElementById("modal");
+      const body = document.getElementById("modal-body");
+
+      const data = {
+        databaseManagement: `
+      <h3>Database Management</h3>
+      <p>Database Management Systems (DBMS), Database Design and Modeling, SQL (Structured Query Language), Performance Tuning and Optimization, Backup and Recovery, Security and Access Control, Oracle DBA, Oracle Apps DBA, Oracle DBA with Exadata, MS SQL DBA, MYSQL DBA, PostgreSQL DBA, System DBA, Db2 LUW DBA, Maria DB, Sybase DBA, Collections Framework, Multithreading, I/O Streams, Functional Interfaces Networking, Generics, Lambda Expressions</p>`,
+
+        cloudInfrastructure: `
+      <h3>Cloud Infrastructure Admin</h3>
+      <p>Amazon Web Services (AWS), EC2 and Lambda, S3 and EBS, ECS and EKS, K2, RDS and DynamoDB, Google Cloud Platform (GCP), GCP, Cloud SQL, Bigtable, Networking through VPC,</p>
+      <p><strong>Microsoft Azure</strong> : Kubernetes, Orchestration, Azure Virtual Machines, Azure Active Directory, Azure Storage</p>
+      <p><strong>IBM Cloud</strong> : Virtual Private Cloud (VPC) Oracle Cloud service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), CX</p>`,
+
+        itsm: `
+      <h3>ITSM </h3>
+      <p>IT Service Management, Change Management, Incident Management, Problem Management, Asset Management, Configuration Management, Disaster Recovery Management, Service Level Management, Knowledge Management, Automation and Orchestration, IT Security and Compliance, IT Infrastructure Knowledge, Monitoring and Alerting, ITIL Framework, Service Reporting and Analysis</p>`,
+
+        itil: `
+      <h3>ITIL</h3>
+      <p>Service Strategy, Service Design, Service Transition, Service Operation, Continual Service Improvement (CSI), Configuration Management, Disaster Recovery Management, Service Level Management, Knowledge Management, Automation and Orchestration, IT Security and Compliance, IT Infrastructure Knowledge, Monitoring and Alerting, ITIL Framework, Service Reporting and Analysis</p>`,
+
+        networkInfrastructure: `
+      <h3>Network Infrastructure</h3>
+      <p><strong>Routers and Switches</strong>: Cisco, Juniper, Arista, HP, Dell Networking. Routing protocols – BGP, OSPF, EIGRP, IS-IS.</p>
+      <p><strong>Firewalls and Load Balancers</strong>: Palo Alto, Fortinet, Check Point, Cisco Firepower, F5 Big-IP, Citrix ADC.</p>
+      <p><strong>VPN and Connectivity</strong>: IPsec VPN, SSL VPN, MPLS, SD-WAN implementation and management.</p>
+      <p><strong>Network Monitoring</strong>: SolarWinds, Wireshark, Nagios, Cisco Prime, PRTG Network Monitor.</p>`,
+
+        storageBackup: `
+      <h3>Storage, Backup & Recovery Administration </h3>
+      <p><strong>NetApp Storage Admin</strong> : Kubernetes, Orchestration, Azure Virtual Machines, Azure Active Directory, Azure Storage</p>
+      <p><strong>Veritas NetBackup</strong> : Virtual Private Cloud (VPC) Oracle Cloud service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), CX</p>
+      <p><strong>Commvault Backup & Recovery</strong> : Kubernetes, Orchestration, Azure Virtual Machines, Azure Active Directory, Azure Storage</p>
+      <p><strong>Rubrik</strong> : Virtual Private Cloud (VPC) Oracle Cloud service (SaaS), Platform as a service (PaaS), Infrastructure as a service (IaaS), CX</p>
+      <p><strong>IBM Storage</strong> : Kubernetes, Orchestration, Azure Virtual Machines, Azure Active Directory, Azure Storage</p>
+      <p><strong>DELL EMC</strong> :  PowerStore. Intelligent all-flash storage, PowerFlex, VxRail, PowerMax, Unity XT, PowerVault, data storage arrays</p>`,
+
+        cyberSecurity: `
+      <h3>Cyber Security</h3>
+      <p>Critical Infrastructure Security, Network Security,Endpoint Security,Application Security,Cloud Security,Information Security, Mobile Security</p>`,
+
+        middleware: `
+      <h3>Middleware Applications</h3>
+      <p><strong>IBM WebSphere Application Server</strong> : WASND and IBM HTTP Server Plugins, IBM HTTP Server systems and Administering JDBC, JMS, JNDI, Thread Dumps, JVM Dumps, Exception Stack Traces, and b services (e.g., SOAP, UDDI, WSDL, etc.)</p>
+      <p><strong>Oracle WebLogic Application Server</strong> : Oracle Weblogic version 12c, WebLogic resources (JMS, JDBC), WLST, Symantec Siteminder.</p>
+      <p><strong>IBM MQ (Message Queue)</strong> : MQ v8.x to MQ v9.x as well as IIB v9.x to ACE v11.x or higher, MQ and IIB/ACE, Incident, Problem and Change management</p>
+      <p><strong>Microsoft BizTalk Server</strong> : BizTalk Mapper, maps, pipelines, port configuration, XSLT, XML, XSD, performance, SQL Server and WCF SQL Adapter</p>
+      <p><strong>JBoss Application Server</strong> : JBoss 5x/6x/7x 6, JDBC, JMS queues in Jboss EAP, JAR WAR EAR, J2EE</p>`,
+
+        networking: `
+      <h3>Networking </h3>
+      <p>TCP/IP (Transmission Control Protocol/Internet Protocol), Routing & Switching, Network Protocols, Troubleshooting, Network Design, Wireless Networking, Network Management, Network Architecture, Network Security, Network Monitoring, Firewalls & Security, Desktop Virtualization</p>`,
+
+        systemAdmin: `
+      <h3>System Administration & OS </h3>
+      <p><strong>Windows Server Administration</strong> : Windows Server Administration (2008/2012/2016/2019), Active Directory, DNS, Group Policy</p>
+      <p><strong>Service Desk</strong> : Calls, Emails, Chats & Web tickets, tickets tolls(Zendesk. Freshdesk, HubSpot Service Hub, Zoho Desk, Help Scout, Jira Service Desk Vision Helpdesk, etc.), Printer and Network issues.</p>
+      <p><strong>Linux Administration</strong> :  CentOS version 6/7/8, scripting Perl, Python, and Shell, creating a user account, taking reports, performing backup, updating configuration files, documentation, and performing recovery actions.</p>
+      <p><strong>SCCM (System Center Configuration Manager)</strong> :  Microsoft Windows Server 2008 R2, 2012 R2, 2016 & 2019, SCCM patch management, Client stakeholders/business, Vulnerabilities on Windows, VMWare, SCCM Platforms</p>
+      <p><strong>MS Exchange - Messaging</strong> : MAPI, email clients, POP3, IMAP, and EAS, MS Exchange, Azure AD</p>
+      <p><strong>M365 Admin - Intune</strong> : O365 (Exchange Online, MS Teams, Onedrive & Sharepoint), Azure AD & MS Exchange, Intune integrates, Azure AD, Windows Autopilot, Windows Autopatch</p>
+      <p><strong>AIX Admin</strong> : AIX Operating System, AIX/Linux server, JPMC AIX, AIX VMs, PowerVM, Power Firmware and HMC</p>`,
+
+        cisco: `
+      <h3>Cisco</h3>
+      <p><strong>Unified Communications CISCO</strong> : Cisco Call Manager, Cisco Unity; Cisco UCCE; oIP protocols (H323, MGCP, SIP, SCCP), Cisco voice gateways and CUBE, third-party vendors including Service Providers, Cisco TAC, etc.</p>
+      <p><strong>CISCO Network Admin</strong> : Switches, Firewall, CCNA Troubleshoot, VoIP, Network Infrastructure, BGP, Lan Wan</p>
+      <p><strong>CISCO ACI</strong> :  Cisco ACI, Cisco - Routers/Switches, Aruba - Routers/Switches/AP’s, SolarWinds NCM, Cradle Point, F5 load balancer, and Wireless</p>
+      <p><strong>CISCO Meraki – Cloud Network</strong> :  Mintegrating Cisco Meraki, Cisco ASA, Cisco Meraki Firewall, IPSEC VPN, HLD and LLD, Cisco NCM and NTA</p>
+      <p><strong>Wireless Networking – CISCO</strong> :Routing & Switching (Cisco & HP), routing protocols – EIGRP, BGP & OSPF, Wireless Controller</p>
+      <p><strong>CISCO VPN</strong> : Cisco ASA, routing, switching, ACS, Cisco IOS, Cisco ICM, Cisco CVP scripting</p>
+      <p><strong>CISCO IP Telephony</strong> : IP Telephony, client, ECB monitoring tools, Troubleshooting techniques in networking (CUCM, UCCX, Voice Routing areas, IP-based voice)</p>`,
+
+        itSecurity: `
+      <h3>IT Security</h3>
+      <p><strong>Identity and Access Management</strong> : Active Directory, LDAP, Okta.</p>
+      <p><strong>Security Information and Event Management (SIEM)</strong> :  Splunk, IBM QRadar, ArcSight</p>
+      <p><strong>Endpoint Security</strong> :  Symantec, McAfee, CrowdStrike</p>
+      <p><strong>Encryption</strong> : SSL/TLS, VPN encryption protocols, disk encryption (BitLocker, VeraCrypt)</p>`,
+      };
+
+      body.innerHTML = data[type];
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
