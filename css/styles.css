@@ -134,16 +134,22 @@ nav ul {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
   list-style: none;
   font-size: 14px;
 }
 
 /* Fix navbar links */
+nav ul li {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 14px;
+  white-space: nowrap;
 }
 
 /* Optional hover effect (recommended) */
@@ -1584,35 +1590,46 @@ li {
 
 /* ===== MOBILE RESPONSIVE FIX (ADD AT END) ===== */
 
-@media (max-width: 1024px) {
+/* Wide & Laptop screens: smoothly scale padding, gap, and font size */
+@media (max-width: 1360px) {
   .navbar {
-    padding: 15px 30px;
+    padding: 16px 30px;
+  }
+
+  .logo img {
+    width: 140px;
   }
 
   nav ul {
-    gap: 10px;
-    font-size: 13px;
+    gap: 12px;
   }
 
   nav ul li a {
     font-size: 13px;
   }
 
-  .home-page .cards-container {
-    grid-template-columns: repeat(2, 1fr);
+  .nav-btn {
+    padding: 7px 12px;
+    font-size: 13px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 
   /* NAVBAR */
   .navbar {
-    padding: 10px 20px;
+    padding: 12px 24px;
   }
 
   nav {
-    display: none;
-    /* hide menu for now */
+    display: none !important;
+    /* switch to hamburger menu cleanly */
+  }
+
+  .hamburger {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
   }
 
   /* HERO */
@@ -1954,8 +1971,8 @@ li {
   padding-left: 20px !important;
 }
 
-/* Show hamburger on mobile */
-@media (max-width: 768px) {
+/* Show hamburger on mobile & tablet */
+@media (max-width: 1100px) {
   .hamburger {
     display: flex;
     align-items: center;
@@ -3615,14 +3632,14 @@ li {
     linear-gradient(to bottom, rgba(0, 163, 255, 0.15) 1px, transparent 1px),
     radial-gradient(ellipse 85% 60% at 50% 10%, rgba(0, 120, 255, 0.15) 0%, transparent 70%);
   background-size: 48px 48px, 48px 48px, 100% 100%;
-  padding: 110px 30px 130px;
+  padding: 80px 24px 100px;
   overflow: hidden;
   color: #ffffff;
   border-top: 1px solid rgba(0, 163, 255, 0.25);
 }
 
 .aiml-overview-container {
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -3631,8 +3648,8 @@ li {
 /* Section Header */
 .aiml-overview-header {
   text-align: center;
-  max-width: 900px;
-  margin: 0 auto 65px;
+  max-width: 860px;
+  margin: 0 auto 48px;
 }
 
 .aiml-badge {
@@ -3717,16 +3734,17 @@ li {
 .aiml-pillars-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-  margin-bottom: 65px;
+  gap: 20px;
+  max-width: 1060px;
+  margin: 0 auto 50px;
 }
 
 .aiml-pillar-card {
   background: #090d16;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  padding: 38px 34px;
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06), 0 12px 30px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(59, 130, 246, 0.28);
+  border-radius: 14px;
+  padding: 12px 12px 20px;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08), 0 10px 28px rgba(0, 0, 0, 0.7);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   -webkit-transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
@@ -3748,66 +3766,70 @@ li {
   opacity: 0;
   transition: opacity 0.35s ease;
   -webkit-transition: opacity 0.35s ease;
+  z-index: 3;
 }
 
 .aiml-pillar-card:hover {
-  transform: translateY(-5px);
-  -webkit-transform: translateY(-5px);
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
   background: #0d1322;
-  border-color: rgba(59, 130, 246, 0.45);
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.12), 0 20px 45px -10px rgba(0, 0, 0, 0.9), 0 0 30px rgba(37, 99, 235, 0.14);
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), 0 16px 36px -8px rgba(0, 0, 0, 0.9), 0 0 28px rgba(0, 163, 255, 0.2);
 }
 
 .aiml-pillar-card:hover::before {
   opacity: 1;
 }
 
-.aiml-card-icon-wrap {
-  width: 52px;
-  height: 52px;
-  border-radius: 12px;
-  background: rgba(30, 58, 138, 0.25);
-  border: 1px solid rgba(59, 130, 246, 0.3);
+/* Pillar Card Image Banner */
+.aiml-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background: #04060a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 14px;
+}
+
+.aiml-pillar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aiml-pillar-card:hover .aiml-pillar-img {
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+}
+
+.aiml-card-body {
   display: flex;
   display: -webkit-flex;
-  align-items: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-  margin-bottom: 22px;
-  color: #60a5fa;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-  -webkit-transition: -webkit-transform 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-}
-
-.aiml-pillar-card:hover .aiml-card-icon-wrap {
-  transform: scale(1.06);
-  -webkit-transform: scale(1.06);
-  border-color: #60a5fa;
-  color: #38bdf8;
-  background: rgba(30, 58, 138, 0.4);
-}
-
-.aiml-card-icon-wrap svg {
-  width: 26px;
-  height: 26px;
-  fill: currentColor;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  padding: 0 6px;
 }
 
 .aiml-card-title {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 700;
   color: #f8fafc;
-  margin-bottom: 12px;
-  line-height: 1.35;
+  margin-bottom: 8px;
+  line-height: 1.3;
 }
 
 .aiml-card-desc {
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 13.5px;
+  line-height: 1.55;
   color: #94a3b8;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   flex-grow: 1;
   -webkit-flex-grow: 1;
 }
@@ -3817,28 +3839,28 @@ li {
   display: -webkit-flex;
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
   margin-top: auto;
-  padding-top: 18px;
+  padding-top: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .aiml-tag {
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #94a3b8;
-  font-size: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  color: #60a5fa;
+  font-size: 11.5px;
   font-weight: 500;
-  padding: 4px 11px;
-  border-radius: 6px;
+  padding: 4px 10px;
+  border-radius: 5px;
   transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
 }
 
 .aiml-pillar-card:hover .aiml-tag {
-  background: rgba(30, 58, 138, 0.22);
-  border-color: rgba(59, 130, 246, 0.35);
-  color: #cbd5e1;
+  background: rgba(30, 58, 138, 0.25);
+  border-color: rgba(59, 130, 246, 0.5);
+  color: #93c5fd;
 }
 
 /* Strategic ROI Banner */
@@ -3987,8 +4009,47 @@ li {
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .aiml-pillars-grid {
-    grid-template-columns: 1fr;
-    gap: 22px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+  }
+
+  .aiml-pillar-card {
+    padding: 12px 12px 20px;
+    border-radius: 14px;
+  }
+
+  .aiml-card-img-wrap {
+    margin-bottom: 14px;
+    border-radius: 10px;
+  }
+
+  .aiml-card-body {
+    padding: 0 4px;
+  }
+
+  .aiml-card-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .aiml-card-desc {
+    font-size: 13.5px;
+    line-height: 1.55;
+    margin-bottom: 14px;
+  }
+
+  .aiml-tags-list {
+    gap: 6px;
+    padding-top: 12px;
+  }
+
+  .aiml-tag {
+    font-size: 11px;
+    padding: 3px 8px;
   }
   
   .aiml-strategic-banner {
@@ -4013,53 +4074,432 @@ li {
 
 @media (max-width: 768px) {
   .aiml-overview-section {
-    padding: 70px 20px 90px;
+    padding: 50px 16px 70px;
     background-size: 36px 36px, 36px 36px, 100% 100%;
   }
   
   .aiml-main-heading {
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 14px;
   }
   
   .aiml-sub-heading {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .aiml-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
   }
   
   .aiml-pillar-card {
-    padding: 26px 22px;
+    padding: 12px 12px 18px;
+    border-radius: 14px;
+  }
+
+  .aiml-card-img-wrap {
+    aspect-ratio: 16 / 8.5;
+    margin-bottom: 14px;
+    border-radius: 10px;
+  }
+
+  .aiml-card-body {
+    padding: 0 4px;
   }
   
   .aiml-card-title {
-    font-size: 19px;
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+
+  .aiml-card-desc {
+    font-size: 13.5px;
+    line-height: 1.55;
+    margin-bottom: 14px;
+  }
+
+  .aiml-tags-list {
+    gap: 6px;
+    padding-top: 12px;
+  }
+
+  .aiml-tag {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
   }
   
   .aiml-strategic-banner {
-    padding: 26px 20px;
+    padding: 24px 18px;
   }
   
   .aiml-banner-text h3 {
-    font-size: 21px;
+    font-size: 20px;
+  }
+
+  .aiml-banner-text p {
+    font-size: 14px;
   }
   
   .aiml-banner-actions {
     flex-direction: column;
     -webkit-flex-direction: column;
     width: 100%;
+    gap: 10px;
   }
   
   .aiml-btn-primary,
   .aiml-btn-secondary {
     width: 100%;
+    font-size: 13.5px;
+    padding: 11px 18px;
   }
 }
 
 @media (max-width: 480px) {
+  .aiml-overview-header {
+    margin-bottom: 35px;
+  }
+
   .aiml-main-heading {
-    font-size: 24px;
+    font-size: 22px;
   }
   
   .aiml-badge {
-    font-size: 11px;
-    padding: 5px 12px;
+    font-size: 10.5px;
+    padding: 4px 10px;
+    margin-bottom: 16px;
+  }
+
+  .aiml-pillars-grid {
+    gap: 16px;
+    max-width: 100%;
+  }
+
+  .aiml-pillar-card {
+    padding: 10px 10px 16px;
+  }
+
+  .aiml-card-img-wrap {
+    margin-bottom: 12px;
+  }
+
+  .aiml-card-title {
+    font-size: 16px;
+  }
+
+  .aiml-card-desc {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .aiml-tag {
+    font-size: 10.5px;
+    padding: 3px 7px;
+  }
+}
+
+/* =========================================================
+   AIML Video Showcase Section
+   ========================================================= */
+
+.aiml-video-section {
+  position: relative;
+  background-color: #03060f;
+  background-image: 
+    linear-gradient(to right, rgba(0, 163, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 163, 255, 0.12) 1px, transparent 1px);
+  background-size: 48px 48px;
+  padding: 45px 25px 35px;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 163, 255, 0.2);
+}
+
+.aiml-video-container {
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.aiml-video-frame-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #090d16;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  box-shadow: 
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.12),
+    0 20px 60px -15px rgba(0, 0, 0, 0.9),
+    0 0 35px rgba(0, 163, 255, 0.15);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition: border-color 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+
+.aiml-video-frame-wrapper:hover {
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+    0 25px 70px -10px rgba(0, 0, 0, 0.95),
+    0 0 45px rgba(0, 163, 255, 0.25);
+}
+
+.aiml-video-frame-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .aiml-video-section {
+    padding: 40px 20px 30px;
+    background-size: 36px 36px;
+  }
+
+  .aiml-video-frame-wrapper {
+    border-radius: 12px;
+  }
+}
+
+/* =========================================================
+   The Enterprise AI Journey - Strategy to Scale Section
+   ========================================================= */
+
+.ai-journey-section {
+  position: relative;
+  background-color: #03060f;
+  background-image: 
+    linear-gradient(to right, rgba(0, 163, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 163, 255, 0.12) 1px, transparent 1px);
+  background-size: 48px 48px;
+  padding: 80px 30px 120px;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 163, 255, 0.2);
+}
+
+.ai-journey-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.ai-journey-card {
+  background: #020817;
+  border: 1.5px solid #0052cc;
+  border-radius: 20px;
+  padding: 60px 70px 65px;
+  box-shadow: 
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.1),
+    0 25px 70px -15px rgba(0, 0, 0, 0.95),
+    0 0 45px rgba(0, 122, 255, 0.18);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Outer ambient edge flare */
+.ai-journey-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00a3ff, transparent);
+}
+
+/* Header */
+.ai-journey-header {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.ai-journey-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.ai-journey-highlight {
+  color: #00d2ff;
+  background: linear-gradient(135deg, #00d2ff 0%, #0099ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Grid Layout */
+.ai-journey-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+  row-gap: 45px;
+  margin-bottom: 45px;
+}
+
+.ai-journey-item {
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  gap: 20px;
+}
+
+/* Icon Box */
+.ai-journey-icon-wrap {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #021a30 0%, #020c1b 100%);
+  border: 1.5px solid #00c2ff;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  color: #00e5ff;
+  box-shadow: 0 0 16px rgba(0, 194, 255, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  -webkit-transition: -webkit-transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  margin-top: 2px;
+}
+
+.ai-journey-item:hover .ai-journey-icon-wrap {
+  transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  border-color: #38e1ff;
+  box-shadow: 0 0 24px rgba(0, 229, 255, 0.55);
+}
+
+.ai-journey-icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Text Content */
+.ai-journey-text {
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+.ai-journey-item-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #00d2ff;
+  margin: 0 0 6px 0;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+}
+
+.ai-journey-item-desc {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+/* 7th Item Centered */
+.ai-journey-center-bottom {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  padding-top: 10px;
+}
+
+.ai-journey-center-bottom .ai-journey-item {
+  max-width: 520px;
+}
+
+/* Responsive Rules */
+@media (max-width: 1024px) {
+  .ai-journey-card {
+    padding: 45px 40px 50px;
+  }
+  
+  .ai-journey-grid {
+    column-gap: 35px;
+    row-gap: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-journey-section {
+    padding: 60px 20px 80px;
+    background-size: 36px 36px;
+  }
+  
+  .ai-journey-card {
+    padding: 35px 24px 40px;
+    border-radius: 16px;
+  }
+
+  .ai-journey-title {
+    font-size: 26px;
+  }
+
+  .ai-journey-grid {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .ai-journey-center-bottom .ai-journey-item {
+    max-width: 100%;
+  }
+
+  .ai-journey-icon-wrap {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+  }
+
+  .ai-journey-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ai-journey-item-title {
+    font-size: 17px;
+  }
+
+  .ai-journey-item-desc {
+    font-size: 13.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ai-journey-title {
+    font-size: 22px;
+  }
+
+  .ai-journey-card {
+    padding: 28px 16px 32px;
+  }
+
+  .ai-journey-item {
+    gap: 14px;
   }
 }
