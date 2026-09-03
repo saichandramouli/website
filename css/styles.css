@@ -1608,10 +1608,14 @@ li {
     font-size: 13px;
   }
 
-  .nav-btn,
-  .nav-aiml-btn {
+  .nav-btn {
     padding: 7px 12px;
     font-size: 13px;
+  }
+
+  .nav-aiml-btn {
+    padding: 4px 8px;
+    font-size: 12px;
   }
 }
 
@@ -1632,10 +1636,14 @@ li {
     font-size: 12.5px;
   }
 
-  .nav-btn,
-  .nav-aiml-btn {
+  .nav-btn {
     padding: 6px 10px;
-    font-size: 12px;
+    font-size: 12.5px;
+  }
+
+  .nav-aiml-btn {
+    padding: 3px 7px;
+    font-size: 11.5px;
   }
 }
 
@@ -2009,9 +2017,9 @@ li {
 .nav-aiml-btn {
   background: #ffffff;
   color: #000000 !important;
-  padding: 7px 14px;
-  border-radius: 6px;
-  font-size: 13.5px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12.5px;
   font-weight: 600;
   text-decoration: none;
   display: inline-flex;
@@ -2019,7 +2027,7 @@ li {
   justify-content: center;
   transition: all 0.3s ease;
   white-space: nowrap;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
 .nav-aiml-btn:hover {
