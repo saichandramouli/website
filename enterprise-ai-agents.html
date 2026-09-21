@@ -1,0 +1,1247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJE64RHR03"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EJE64RHR03');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enterprise AI Agents | AIML Technology Services | People Prime Worldwide</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
+  <meta name="title" content="Enterprise AI Agents | People Prime Worldwide" />
+  <meta name="description"
+    content="Build AI agents that understand requests, access enterprise systems and data, and perform multi-step tasks autonomously." />
+  <meta name="keywords"
+    content="Enterprise AI Agents, Autonomous Workflow Execution, GenAI Engineers, AI Agent Developers, People Prime Worldwide" />
+  <meta name="author" content="www.people-prime.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+
+  <style>
+    /* Custom Page Styles for Enterprise AI Agents */
+    html,
+    body {
+      background-color: #030712;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: clip;
+    }
+
+    /* Hero Banner with standard pages background (it0.webp) */
+    .agent-header-banner {
+      position: relative;
+      background: #020b1e url('assets/images/it0.webp') no-repeat center center;
+      background-size: cover;
+      padding: 160px 20px 80px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .agent-header-banner::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 50% 40%, rgba(2, 11, 30, 0.4) 0%, rgba(2, 11, 30, 0.85) 100%);
+      pointer-events: none;
+    }
+
+    .agent-header-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .agent-header-title {
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0 0 16px;
+      line-height: 1.2;
+    }
+
+    .agent-header-nav {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      margin-top: 4px;
+    }
+
+    .agent-header-nav-item {
+      font-size: 16px;
+      font-weight: 600;
+      color: #94a3b8;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 5px 12px;
+      border-radius: 6px;
+      background: transparent;
+      border: 1px solid transparent;
+      transition: all 0.25s ease;
+      letter-spacing: 0.2px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .agent-header-nav-item:hover {
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.08);
+    }
+
+    .agent-header-nav-item.active {
+      color: #0080ff;
+      background: rgba(0, 128, 255, 0.12);
+      border-color: rgba(0, 128, 255, 0.35);
+      box-shadow: 0 0 12px rgba(0, 128, 255, 0.2);
+    }
+
+    /* Button for AIML Technology Services with white background highlight */
+    .nav-aiml-pill {
+      background: #ffffff !important;
+      border: 1px solid #ffffff !important;
+      border-radius: 6px !important;
+      padding: 6px 14px !important;
+      color: #000000 !important;
+      font-weight: 600 !important;
+      font-size: 13.5px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      line-height: normal !important;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-aiml-pill:hover {
+      background: #f0fdf4 !important;
+      border-color: #00a87a !important;
+      color: #000000 !important;
+    }
+
+    .nav-aiml-pill .nav-arrow {
+      color: #000000 !important;
+      font-size: 9px;
+      margin-left: 2px;
+    }
+
+    /* Main Container with Sidebar + Content */
+    .agent-main-section {
+      background-color: #030712;
+      padding: 60px 40px 100px;
+      max-width: 1360px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .agent-layout-grid {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    /* Left Sidebar Navigation Card (Sticky on scroll) */
+    .agent-sidebar {
+      background: #0b1c2d;
+      border: 1px solid #1a3654;
+      border-radius: 12px;
+      padding: 24px 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 30px;
+    }
+
+    .agent-sidebar-heading {
+      color: #00b4d8;
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(0, 180, 216, 0.25);
+    }
+
+    .agent-sidebar-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .agent-sidebar-list li {
+      margin-bottom: 14px;
+    }
+
+    .agent-sidebar-list li a {
+      display: block;
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 13.5px;
+      line-height: 1.45;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .agent-sidebar-list li a:hover {
+      color: #38bdf8;
+      transform: translateX(3px);
+    }
+
+    .agent-sidebar-list li.active a {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* Right Main Content Area */
+    .agent-content-area {
+      color: #ffffff;
+      min-width: 0;
+    }
+
+    .agent-main-heading {
+      font-size: 34px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+      letter-spacing: -0.3px;
+    }
+
+    .agent-subheading {
+      font-size: 17.5px;
+      color: #cbd5e1;
+      line-height: 1.5;
+      margin: 0 0 10px;
+    }
+
+    .agent-lead-text {
+      font-size: 17.5px;
+      font-weight: 500;
+      color: #e2e8f0;
+      line-height: 1.5;
+      margin: 0 0 32px;
+      max-width: 900px;
+    }
+
+    /* Section: Features & Offers */
+    .agent-features-section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    /* Service Section container - all on the same page */
+    .agent-service-section {
+      position: relative;
+      scroll-margin-top: 60px;
+    }
+
+    .agent-service-section+.agent-service-section {
+      margin-top: 60px;
+      padding-top: 50px;
+      border-top: 1px solid rgba(56, 189, 248, 0.15);
+    }
+
+    .agent-showcase-row {
+      margin-bottom: 36px;
+    }
+
+    /* Features List with Cyan Hexagon/Circle Icons - 2 left, 2 right */
+    .agent-features-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px 36px;
+    }
+
+    .agent-feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      text-align: left;
+      background: rgba(13, 27, 42, 0.4);
+      border: 1px solid rgba(56, 189, 248, 0.14);
+      border-radius: 10px;
+      padding: 16px 20px;
+      box-sizing: border-box;
+      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .agent-feature-item:hover {
+      border-color: rgba(56, 189, 248, 0.35);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0, 170, 255, 0.12);
+    }
+
+    .agent-feature-icon {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1.5px solid #00c0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 192, 240, 0.08);
+      box-shadow: 0 0 10px rgba(0, 192, 240, 0.3);
+      margin-top: 2px;
+    }
+
+    .agent-feature-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: #00c0f0;
+      stroke-width: 1.8;
+    }
+
+    .agent-feature-body h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #00aaff;
+      margin: 0 0 4px;
+      line-height: 1.4;
+    }
+
+    .agent-feature-body p {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Bottom Box: People Prime Talent Pool (Compact fit) */
+    .agent-talent-card {
+      background: #0d1b2a;
+      border: 1px solid #1e3a5f;
+      border-radius: 10px;
+      padding: 14px 24px;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      margin: 0 auto;
+      width: fit-content;
+      max-width: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .agent-talent-title {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 10px;
+      letter-spacing: 0.3px;
+    }
+
+    .agent-badges-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .agent-badge {
+      background: #050b14;
+      color: #ffffff;
+      border: 1px solid #1a2a3a;
+      border-radius: 6px;
+      padding: 7px 14px;
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .agent-badge:hover {
+      border-color: #00aaff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 170, 255, 0.2);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      .agent-layout-grid {
+        grid-template-columns: 240px 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .agent-features-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .agent-layout-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .agent-sidebar {
+        position: static;
+        margin-bottom: 30px;
+      }
+
+      .agent-main-section {
+        padding: 40px 20px 60px;
+      }
+
+      .agent-header-title {
+        font-size: 26px;
+      }
+
+      .agent-header-nav-item {
+        font-size: 16px;
+        padding: 5px 10px;
+      }
+
+      .agent-main-heading {
+        font-size: 26px;
+      }
+
+      .agent-badges-grid {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .agent-badge {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body class="home-page">
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      &#9776;
+    </button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Talent
+              Platform</span></a>
+        </li>
+        <li>
+          <a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a>
+        </li>
+        <li>
+          <a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="nav-aiml-pill active">AIML Technology Services <span class="nav-arrow"
+              style="color: black;">▼</span></a>
+          <div class="dropdown-menu">
+            <!-- <div class="nested-dropdown">
+              <a href="aiml-tech-services.html" class="nested-trigger">AIML Engineering and MLOps <span
+                  class="sub-arrow">▶</span></a>
+              <div class="nested-dropdown-menu">
+                <a href="ai-ml-model-development.html">AI/ML Model Development</a>
+                <a href="data-engineering-aiml.html">Data Engineering for AI/ML</a>
+                <a href="mlops-ml-platforms.html">MLOps &amp; ML Platforms</a>
+                <a href="ml-model-deployment.html">ML Model Deployment &amp; Productionization</a>
+                <a href="model-monitoring-optimization.html">Model Monitoring &amp; Optimization</a>
+                <a href="cloud-aiml-engineering.html">Cloud AI/ML Engineering</a>
+                <a href="enterprise-aiml-transformation.html">Enterprise AI/ML Transformation</a>
+              </div>
+            </div> -->
+            <div class="nested-dropdown">
+              <a href="ai-model-training.html" class="nested-trigger">AI Model Training <span class="sub-arrow">▶</span></a>
+              <div class="nested-dropdown-menu">
+                <a href="ai-model-training.html#expert-data-creation-annotation-section">Expert Data Creation &amp; Annotation</a>
+                <a href="ai-model-training.html#rlhf-human-feedback-section">RLHF / Human Feedback</a>
+                <a href="ai-model-training.html#ai-model-evaluation-section">AI Model Evaluation</a>
+                <a href="ai-model-training.html#benchmark-test-set-creation-section">Benchmark &amp; Test-Set Creation</a>
+                <a href="ai-model-training.html#coding-expertise-ai-training-section">Coding Expertise for AI Training</a>
+                <a href="ai-model-training.html#stem-reasoning-expertise-section">STEM &amp; Reasoning Expertise</a>
+                <a href="ai-model-training.html#reinforcement-learning-environments-section">Reinforcement-Learning Environments</a>
+              </div>
+            </div>
+            <div class="nested-dropdown">
+              <a href="enterprise-ai-agents.html" class="nested-trigger">Enterprise Gen AI <span class="sub-arrow">▶</span></a>
+              <div class="nested-dropdown-menu">
+                <a href="#enterprise-ai-agents-section">Enterprise AI Agents</a>
+                <a href="#rag-solutions-section">RAG Solutions</a>
+                <a href="#customized-fine-tuned-llms-section">Customized / Fine-Tuned LLMs</a>
+                <!-- <a href="enterprise-ai-copilots.html">Enterprise AI Copilots</a> -->
+                <!-- <a href="document-intelligence-knowledge-ai.html">Document Intelligence &amp; Knowledge AI</a> -->
+                <!-- <a href="conversational-ai-customer-service.html">Conversational AI / Customer Service AI</a> -->
+                <!-- <a href="enterprise-genai-app-development.html">Enterprise GenAI Application Development</a> -->
+                <!-- <a href="genai-integration-modernization.html">GenAI Integration &amp; Modernization</a> -->
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="it-consulting.html">IT Consulting</a>
+            <a href="staff.html">Staff Augmentation (T&M)</a>
+            <a href="managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu skill-dropdown">
+            <a href="java.html">Java Technologies</a>
+            <a href="microsoft.html">Microsoft Technologies</a>
+            <a href="it-infra.html">IT Infrastructure</a>
+            <a href="sap.html">SAP</a>
+            <a href="datasci.html">Data Science</a>
+            <a href="servicenow.html">Service Now</a>
+            <a href="salesforce.html">Salesforce</a>
+            <a href="dw.html">Data Warehouse</a>
+            <a href="cloud.html">Cloud Technologies</a>
+            <a href="ai-ml.html">AI and ML</a>
+            <a href="iot.html">IOT</a>
+            <a href="database.html">Database management</a>
+            <a href="testing.html">Testing</a>
+            <a href="cybersecurity.html">Cyber Security</a>
+            <a href="oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Corporate Compliance<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="iso.html">ISO9001-27001</a>
+            <a href="cobe.html">Code of Business Ethics</a>
+            <a href="soc2type2.html">SOC2 Type 2</a>
+            <a href="statutory.html">Statutory Compliance</a>
+            <a href="env-sus.html">Environmental Sustainability</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">About Us<span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="lt.html">Leadership Team</a>
+            <a href="it-security.html">IT Security Policies</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li><a href="activejobs.html" class="nav-btn">Active Jobs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        &#10005;
+      </button>
+    </div>
+    <ul class="drawer-nav">
+      <li>
+        <a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span
+            class="drawer-ptaas-subtext">Platform</span></a>
+      </li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">Primescale<span
+            class="drawer-primescale-subtext">Remote Work</span></a></li>
+      <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a>
+      </li>
+      <li class="drawer-dropdown open">
+        <button class="drawer-dropdown-btn drawer-aiml-btn active">
+          AIML Technology Services <span class="drawer-arrow" style="color: black;">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <!-- <div class="drawer-nested-dropdown">
+            <button class="drawer-nested-btn">
+              AIML Engineering and MLOps <span class="drawer-arrow">&#9660;</span>
+            </button>
+            <div class="drawer-nested-menu">
+              <a href="ai-ml-model-development.html">AI/ML Model Development</a>
+              <a href="data-engineering-aiml.html">Data Engineering for AI/ML</a>
+              <a href="mlops-ml-platforms.html">MLOps &amp; ML Platforms</a>
+              <a href="ml-model-deployment.html">ML Model Deployment &amp; Productionization</a>
+              <a href="model-monitoring-optimization.html">Model Monitoring &amp; Optimization</a>
+              <a href="cloud-aiml-engineering.html">Cloud AI/ML Engineering</a>
+              <a href="enterprise-aiml-transformation.html">Enterprise AI/ML Transformation</a>
+            </div>
+          </div> -->
+          <div class="drawer-nested-dropdown">
+            <button class="drawer-nested-btn">
+              AI Model Training <span class="drawer-arrow">&#9660;</span>
+            </button>
+            <div class="drawer-nested-menu" style="display: block;">
+              <a href="ai-model-training.html">Expert Data Creation &amp; Annotation</a>
+              <a href="rlhf-human-feedback.html">RLHF / Human Feedback</a>
+              <a href="ai-model-evaluation.html">AI Model Evaluation</a>
+              <a href="Benchmark & Test-Set Creation.html">Benchmark &amp; Test-Set Creation</a>
+              <a href="coding-expertise-ai-training.html">Coding Expertise for AI Training</a>
+              <a href="stem-reasoning-expertise.html">STEM &amp; Reasoning Expertise</a>
+              <a href="reinforcement-learning-environments.html">Reinforcement-Learning Environments</a>
+            </div>
+          </div>
+          <div class="drawer-nested-dropdown open">
+            <button class="drawer-nested-btn">
+              Enterprise Gen AI <span class="drawer-arrow">&#9660;</span>
+            </button>
+            <div class="drawer-nested-menu" style="display: block;">
+              <a href="#enterprise-ai-agents-section" style="color: #00aaff; font-weight: bold;">Enterprise AI
+                Agents</a>
+              <a href="#rag-solutions-section">RAG Solutions</a>
+              <a href="#customized-fine-tuned-llms-section">Customized / Fine-Tuned LLMs</a>
+              <!-- <a href="enterprise-ai-copilots.html">Enterprise AI Copilots</a> -->
+              <!-- <a href="document-intelligence-knowledge-ai.html">Document Intelligence &amp; Knowledge AI</a> -->
+              <!-- <a href="conversational-ai-customer-service.html">Conversational AI / Customer Service AI</a> -->
+              <!-- <a href="enterprise-genai-app-development.html">Enterprise GenAI Application Development</a> -->
+              <!-- <a href="genai-integration-modernization.html">GenAI Integration &amp; Modernization</a> -->
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Services <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="it-consulting.html">IT Consulting</a>
+          <a href="staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Skill Sets <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="java.html">Java Technologies</a>
+          <a href="microsoft.html">Microsoft Technologies</a>
+          <a href="it-infra.html">IT Infrastructure</a>
+          <a href="sap.html">SAP</a>
+          <a href="datasci.html">Data Science</a>
+          <a href="servicenow.html">Service Now</a>
+          <a href="salesforce.html">Salesforce</a>
+          <a href="dw.html">Data Warehouse</a>
+          <a href="cloud.html">Cloud Technologies</a>
+          <a href="ai-ml.html">AI and ML</a>
+          <a href="iot.html">IOT</a>
+          <a href="database.html">Database management</a>
+          <a href="testing.html">Testing</a>
+          <a href="cybersecurity.html">Cyber Security</a>
+          <a href="oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Corporate Compliance <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="iso.html">ISO9001-27001</a>
+          <a href="cobe.html">Code of Business Ethics</a>
+          <a href="soc2type2.html">SOC2 Type 2</a>
+          <a href="statutory.html">Statutory Compliance</a>
+          <a href="env-sus.html">Environmental Sustainability</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          About Us <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="lt.html">Leadership Team</a>
+          <a href="it-security.html">IT Security Policies</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li>
+        <a href="activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Header Banner matching reference image -->
+  <section class="agent-header-banner">
+    <div class="agent-header-content">
+      <h1 class="agent-header-title">AIML TECHNOLOGY SERVICES</h1>
+      <div class="agent-header-nav" id="aimlHeaderNav">
+        <!-- <button type="button" class="agent-header-nav-item" data-category="aiml-engineering">AIML Engineering and
+          MLOps</button> -->
+        <button type="button" class="agent-header-nav-item" data-category="ai-model-training">AI Model Training</button>
+        <button type="button" class="agent-header-nav-item active" data-category="enterprise-gen-ai">Enterprise Gen
+          AI</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Body Content with Left Sidebar and Details -->
+  <main class="agent-main-section">
+    <div class="agent-layout-grid">
+
+      <!-- Left Category Navigation Card -->
+      <aside class="agent-sidebar">
+        <h3 class="agent-sidebar-heading" id="agentSidebarHeading">Enterprise Gen AI</h3>
+        <ul class="agent-sidebar-list" id="agentSidebarList">
+          <li class="active"><a href="#enterprise-ai-agents-section">Enterprise AI Agents</a></li>
+          <li><a href="#rag-solutions-section">RAG Solutions</a></li>
+          <li><a href="#customized-fine-tuned-llms-section">Customized / Fine-Tuned LLMs</a></li>
+          <li><!-- <a href="document-intelligence-knowledge-ai.html">Document Intelligence &amp; Knowledge AI</a> --></li>
+          <li><!-- <a href="conversational-ai-customer-service.html">Conversational AI / Customer Service AI</a> --></li>
+          <li><!-- <a href="enterprise-genai-app-development.html">Enterprise GenAI Application Development</a> --></li>
+          <li><!-- <a href="genai-integration-modernization.html">GenAI Integration &amp; Modernization</a> --></li>
+        </ul>
+      </aside>
+
+      <!-- Right Main Content Area -->
+      <section class="agent-content-area">
+        <!-- Section 1: Enterprise AI Agents -->
+        <div class="agent-service-section" id="enterprise-ai-agents-section">
+          <h2 class="agent-main-heading">Enterprise AI Agents</h2>
+          <p class="agent-subheading">Build AI agents that can understand a request, access enterprise systems/data and
+            perform multi-step tasks</p>
+
+          <p class="agent-lead-text">
+            End-to-end enterprise AI agent development, moving deployments beyond pilots to reliable, measurable,
+            production-scale business outcomes.
+          </p>
+
+          <!-- Features & Offers Section -->
+          <h3 class="agent-features-section-title">Features &amp; Offers</h3>
+
+          <div class="agent-showcase-row">
+            <!-- Feature Bullets with Glowing Cyan Circle Icons -->
+            <div class="agent-features-list">
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Autonomous / workflow icon -->
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path
+                      d="M12 2v3m0 14v3M2 12h3m14 0h3m-3.5-6.5l-2.1 2.1m-8.8 8.8l-2.1 2.1m0-13l2.1 2.1m8.8 8.8l2.1 2.1">
+                    </path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Autonomous Workflow Execution</h4>
+                  <p>AI agents will do more than answer questions. They will autonomously handle real business
+                    workflows.
+                  </p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Bounded task / hierarchy icon -->
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="6" r="2.5"></circle>
+                    <circle cx="6.5" cy="17.5" r="2.5"></circle>
+                    <circle cx="17.5" cy="17.5" r="2.5"></circle>
+                    <path d="M12 8.5v4m0 0l-5.5 5m5.5-5l5.5 5"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Bounded and Reliable Business Tasks</h4>
+                  <p>These agents can perform clearly defined tasks within approved limits, helping organizations reduce
+                    manual effort.</p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Production systems icon -->
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="6" rx="2"></rect>
+                    <rect x="3" y="14" width="18" height="6" rx="2"></rect>
+                    <circle cx="7" cy="7" r="1"></circle>
+                    <circle cx="7" cy="17" r="1"></circle>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>From AI Pilots to Production Systems</h4>
+                  <p>Many organizations are experimenting with AI agents, but the real challenge is turning a promising
+                    pilot into a reliable system.</p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Bridge the gap / network icon -->
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="2"></circle>
+                    <circle cx="5" cy="7" r="2"></circle>
+                    <circle cx="19" cy="7" r="2"></circle>
+                    <circle cx="5" cy="17" r="2"></circle>
+                    <circle cx="19" cy="17" r="2"></circle>
+                    <path d="M7 8l3.5 2.5m3 0L17 8M7 16l3.5-2.5m3 0L17 16"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>People Prime Worldwide Bridges the Gap</h4>
+                  <p>People Prime Worldwide supports this transformation through data annotation, model evaluation,
+                    RLHF,
+                    model training.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- People Prime Talent Pool Box -->
+          <div class="agent-talent-card">
+            <h3 class="agent-talent-title">People Prime Talent Pool for Enterprise Gen AI</h3>
+            <div class="agent-badges-grid">
+              <span class="agent-badge">GenAI Engineers</span>
+              <span class="agent-badge">AI Agent Developers</span>
+              <span class="agent-badge">Python Developers</span>
+              <span class="agent-badge">Solution Architects</span>
+              <span class="agent-badge">Integration Engineers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: RAG Solutions -->
+        <div class="agent-service-section" id="rag-solutions-section">
+          <h2 class="agent-main-heading">Retrieval-Augmented Generation (RAG)</h2>
+          <p class="agent-subheading">Connect an LLM securely to a company's internal documents/data so it answers using
+            company-specific information</p>
+
+          <p class="agent-lead-text">
+            Enterprise RAG solutions grounding AI responses in your trusted data, delivering accurate, source-verified
+            answers instead of guesses.
+          </p>
+
+          <!-- Features & Offers Section for RAG -->
+          <h3 class="agent-features-section-title">Features &amp; Offers</h3>
+
+          <div class="agent-showcase-row">
+            <!-- Feature Bullets with Glowing Cyan Circle Icons - 2 Left, 2 Right -->
+            <div class="agent-features-list">
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Connect / Knowledge base icon -->
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path
+                      d="M12 2v3m0 14v3M2 12h3m14 0h3m-3.5-6.5l-2.1 2.1m-8.8 8.8l-2.1 2.1m0-13l2.1 2.1m8.8 8.8l2.1 2.1">
+                    </path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Connect LLMs to Trusted Knowledge</h4>
+                  <p>RAG connects large language models with enterprise documents, databases, knowledge bases, APIs, and
+                    vector stores.</p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Generate accurate responses / check icon -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Generate Accurate, Current Responses</h4>
+                  <p>It retrieves relevant information from company systems before generating an answer, helping the
+                    model respond using current and verified business knowledge instead of relying only on frozen
+                    training data.</p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Scalable and cost-efficient / trend icon -->
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                    <polyline points="17 6 23 6 23 12"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Scalable and Cost-Efficient AI</h4>
+                  <p>RAG reduces the need to constantly retrain or fine-tune models whenever business information
+                    changes, making AI solutions more scalable and cost-efficient.</p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Foundation / Architecture network icon -->
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="2"></circle>
+                    <circle cx="5" cy="7" r="2"></circle>
+                    <circle cx="19" cy="7" r="2"></circle>
+                    <circle cx="5" cy="17" r="2"></circle>
+                    <circle cx="19" cy="17" r="2"></circle>
+                    <path d="M7 8l3.5 2.5m3 0L17 8M7 16l3.5-2.5m3 0L17 16"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>People Prime Worldwide Builds the RAG Foundation</h4>
+                  <p>People Prime Worldwide provides data pipelines, retrieval architecture, evaluation, and ongoing
+                    tuning to keep RAG systems accurate as knowledge bases grow—helping AI deliver your business’s real,
+                    current truth rather than a guess.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- People Prime Talent Pool Box for RAG Solutions -->
+          <div class="agent-talent-card">
+            <h3 class="agent-talent-title">People Prime Talent Pool for RAG Solutions</h3>
+            <div class="agent-badges-grid">
+              <span class="agent-badge">RAG Engineers</span>
+              <span class="agent-badge">GenAI Engineers</span>
+              <span class="agent-badge">Data Engineers</span>
+              <span class="agent-badge">Python Developers</span>
+              <span class="agent-badge">Vector DB Specialists</span>
+              <span class="agent-badge">Cloud Engineers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: Customized / Fine-Tuned LLMs -->
+        <div class="agent-service-section" id="customized-fine-tuned-llms-section">
+          <h2 class="agent-main-heading">Customized / Fine-Tuned LLMs</h2>
+          <p class="agent-subheading">Adapt an existing model to perform better for a company's particular domain,
+            terminology or task</p>
+
+          <p class="agent-lead-text">
+            Custom fine-tuned LLMs trained on your proprietary data, delivering domain-accurate outputs at lower
+            long-term operating cost.
+          </p>
+
+          <!-- Features & Offers Section for Customized / Fine-Tuned LLMs -->
+          <h3 class="agent-features-section-title">Features &amp; Offers</h3>
+
+          <div class="agent-showcase-row">
+            <!-- Feature Bullets with Glowing Cyan Circle Icons - 2 Left, 2 Right -->
+            <div class="agent-features-list">
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Business-specific data / microchip icon -->
+                  <svg viewBox="0 0 24 24">
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                    <rect x="9" y="9" width="6" height="6"></rect>
+                    <path d="M9 1v3m6-3v3M9 20v3m6-3v3M20 9h3m-3 5h3M1 9h3m-3 5h3"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Train AI on Business-Specific Data</h4>
+                  <p>Fine-tune general-purpose LLMs using proprietary documents, domain terminology, historical decisions,
+                    and workflow patterns.</p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Domain-specific behavior / tuning sliders icon -->
+                  <svg viewBox="0 0 24 24">
+                    <line x1="4" y1="21" x2="4" y2="14"></line>
+                    <line x1="4" y1="10" x2="4" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12" y2="3"></line>
+                    <line x1="20" y1="21" x2="20" y2="16"></line>
+                    <line x1="20" y1="12" x2="20" y2="3"></line>
+                    <line x1="1" y1="14" x2="7" y2="14"></line>
+                    <line x1="9" y1="8" x2="15" y2="8"></line>
+                    <line x1="17" y1="16" x2="23" y2="16"></line>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Create Domain-Specific AI Behavior</h4>
+                  <p>Change the model’s learned behavior so it performs better on narrow, repeated tasks and delivers
+                    outputs aligned with your business context.</p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- High-quality training & evaluation / shield check icon -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Ensure High-Quality Training and Evaluation</h4>
+                  <p>Our domain experts curate reliable training data, while engineers build evaluation loops to test
+                    model performance.</p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Custom benchmarks / chart icon -->
+                  <svg viewBox="0 0 24 24">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                    <line x1="2" y1="20" x2="22" y2="20"></line>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Measure Results Against Custom Benchmarks</h4>
+                  <p>We evaluate models using benchmarks that reflect your actual business processes—not generic AI
+                    scores.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- People Prime Talent Pool Box for Customized / Fine-Tuned LLMs -->
+          <div class="agent-talent-card">
+            <h3 class="agent-talent-title">People Prime Talent Pool for Customized / Fine-Tuned LLMs</h3>
+            <div class="agent-badges-grid">
+              <span class="agent-badge">LLM Engineers</span>
+              <span class="agent-badge"> ML Engineers</span>
+              <span class="agent-badge">Data Scientists</span>
+              <span class="agent-badge">NLP Engineers</span>
+              <span class="agent-badge">MLOps Engineers</span>
+              <span class="agent-badge">Domain SMEs</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-about">
+          <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="footer-logo" />
+          <p>
+            We specialize in
+            <b>IT Consulting, Staff Augmentation, Managed Services, AIML Technology Services, and AIML Solutions</b>,
+            delivering end-to-end technology capabilities that drive business
+            success. As a trusted technology partner, we combine specialized
+            expertise and experienced teams to help organizations build,
+            implement, and manage innovative solutions aligned with their
+            business goals.
+          </p>
+        </div>
+
+        <div class="grid-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="activejobs.html">Active Jobs</a></li>
+              <li><a href="iso.html">Corporate Compliance</a></li>
+              <li><a href="it-security.html">IT Security Policies</a></li>
+              <li>
+                <a href="technology-hub/technology-hub.html">Technology Hub</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="aiml-tech-services.html">AIML Technology Services</a>
+              </li>
+              <li>
+                <a href="it-consulting.html">IT Consulting &amp; Implementation Services</a>
+              </li>
+              <li><a href="staff.html">Staff Augmentation</a></li>
+              <li>
+                <a href="managed-services.html">Managed Teams &amp; Services</a>
+              </li>
+              <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span
+                    class="drawer-gcc-subtext">Center</span></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Toll Free</h3>
+            <p class="phone">1800 572 1880</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect Us On</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank">F</a>
+              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          Copyright &copy; People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="tagline">Better Careers Better Lives</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const categoryData = {
+        "aiml-engineering": {
+          title: "AIML Engineering and MLOps",
+          items: [
+            { name: "AI/ML Model Development", url: "ai-ml-model-development.html" },
+            { name: "Data Engineering for AI/ML", url: "data-engineering-aiml.html" },
+            { name: "MLOps & ML Platforms", url: "mlops-ml-platforms.html" },
+            { name: "ML Model Deployment & Productionization", url: "ml-model-deployment.html" },
+            { name: "Model Monitoring & Optimization", url: "model-monitoring-optimization.html" },
+            { name: "Cloud AI/ML Engineering", url: "cloud-aiml-engineering.html" },
+            { name: "Enterprise AI/ML Transformation", url: "enterprise-aiml-transformation.html" }
+          ]
+        },
+        "ai-model-training": {
+          title: "AI Model Training",
+          items: [
+            { name: "Expert Data Creation & Annotation", url: "expert-data-creation-annotation.html" },
+            { name: "RLHF / Human Feedback", url: "rlhf-human-feedback.html" },
+            { name: "AI Model Evaluation", url: "ai-model-evaluation.html" },
+            { name: "Coding Expertise for AI Training", url: "coding-expertise-ai-training.html" },
+            { name: "STEM & Reasoning Expertise", url: "stem-reasoning-expertise.html" },
+            { name: "Reinforcement-Learning Environments", url: "reinforcement-learning-environments.html" }
+          ]
+        },
+        "enterprise-gen-ai": {
+          title: "Enterprise Gen AI",
+          items: [
+            { name: "Enterprise AI Agents", url: "#enterprise-ai-agents-section", active: true },
+            { name: "RAG Solutions", url: "#rag-solutions-section" },
+            { name: "Customized / Fine-Tuned LLMs", url: "#customized-fine-tuned-llms-section" },
+            { name: "Enterprise AI Copilots", url: "enterprise-ai-copilots.html" },
+            { name: "Document Intelligence & Knowledge AI", url: "document-intelligence-knowledge-ai.html" },
+            { name: "Conversational AI / Customer Service AI", url: "conversational-ai-customer-service.html" },
+            { name: "Enterprise GenAI Application Development", url: "enterprise-genai-app-development.html" },
+            { name: "GenAI Integration & Modernization", url: "genai-integration-modernization.html" }
+          ]
+        }
+      };
+
+      const headerNavBtns = document.querySelectorAll("#aimlHeaderNav .agent-header-nav-item");
+      const sidebarHeading = document.getElementById("agentSidebarHeading");
+      const sidebarList = document.getElementById("agentSidebarList");
+
+
+      function attachSidebarListeners() {
+        if (!sidebarList) return;
+        const links = sidebarList.querySelectorAll("li a");
+        links.forEach(function (link) {
+          link.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+            if (href.startsWith("#")) {
+              e.preventDefault();
+              sidebarList.querySelectorAll("li").forEach(function (li) { li.classList.remove("active"); });
+              this.parentElement.classList.add("active");
+              const targetElement = document.querySelector(href);
+              if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }
+          });
+        });
+      }
+
+      attachSidebarListeners();
+
+      // ScrollSpy: highlight sidebar link when scrolling past sections
+      const sections = document.querySelectorAll(".agent-service-section");
+      window.addEventListener("scroll", function () {
+        let current = "";
+        const scrollPosition = window.pageYOffset + 140;
+        sections.forEach(function (section) {
+          if (section.offsetTop <= scrollPosition) {
+            current = section.getAttribute("id");
+          }
+        });
+        if (current) {
+          const links = sidebarList.querySelectorAll("li a");
+          links.forEach(function (link) {
+            const href = link.getAttribute("href");
+            if (href === "#" + current) {
+              sidebarList.querySelectorAll("li").forEach(function (li) { li.classList.remove("active"); });
+              link.parentElement.classList.add("active");
+            }
+          });
+        }
+      });
+
+      headerNavBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          const categoryKey = this.getAttribute("data-category");
+          if (!categoryKey) return;
+
+          if (categoryKey === "ai-model-training") {
+            window.location.href = "ai-model-training.html";
+            return;
+          }
+
+          if (!categoryData[categoryKey]) return;
+
+          // Toggle active class on header buttons
+          headerNavBtns.forEach(function (b) {
+            b.classList.remove("active");
+          });
+          this.classList.add("active");
+
+          // Update sidebar category heading and list
+          const data = categoryData[categoryKey];
+          if (sidebarHeading) {
+            sidebarHeading.textContent = data.title;
+          }
+
+          if (sidebarList) {
+            sidebarList.innerHTML = "";
+            data.items.forEach(function (item) {
+              const li = document.createElement("li");
+              if (item.active) {
+                li.classList.add("active");
+              }
+              const a = document.createElement("a");
+              a.href = item.url.startsWith("#") ? item.url : (item.name === "Enterprise AI Agents" ? "#enterprise-ai-agents-section" : (item.name === "RAG Solutions" ? "#rag-solutions-section" : (item.name === "Customized / Fine-Tuned LLMs" ? "#customized-fine-tuned-llms-section" : item.url)));
+              a.textContent = item.name;
+              li.appendChild(a);
+              sidebarList.appendChild(li);
+            });
+            attachSidebarListeners();
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

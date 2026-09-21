@@ -1,0 +1,1549 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJE64RHR03"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EJE64RHR03');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Model Training | AIML Technology Services | People Prime Worldwide</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
+  <meta name="title" content="AI Model Training | People Prime Worldwide" />
+  <meta name="description"
+    content="High-precision AI model training, expert human annotation, RLHF, rigorous benchmarking, and domain-specific dataset creation." />
+  <meta name="keywords"
+    content="AI Model Training, Expert Data Creation, RLHF, AI Model Evaluation, Benchmark Creation, People Prime Worldwide" />
+  <meta name="author" content="www.people-prime.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+
+  <style>
+    /* Custom Page Styles for AI Model Training */
+    html,
+    body {
+      background-color: #030712;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: clip;
+    }
+
+    /* Hero Banner with standard pages background (it0.webp) */
+    .agent-header-banner {
+      position: relative;
+      background: #020b1e url('assets/images/it0.webp') no-repeat center center;
+      background-size: cover;
+      padding: 160px 20px 80px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .agent-header-banner::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 50% 40%, rgba(2, 11, 30, 0.4) 0%, rgba(2, 11, 30, 0.85) 100%);
+      pointer-events: none;
+    }
+
+    .agent-header-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .agent-header-title {
+      font-size: 42px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0 0 16px;
+      line-height: 1.2;
+    }
+
+    .agent-header-nav {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      margin-top: 4px;
+    }
+
+    .agent-header-nav-item {
+      font-size: 16px;
+      font-weight: 600;
+      color: #94a3b8;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 5px 12px;
+      border-radius: 6px;
+      background: transparent;
+      border: 1px solid transparent;
+      transition: all 0.25s ease;
+      letter-spacing: 0.2px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .agent-header-nav-item:hover {
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.08);
+    }
+
+    .agent-header-nav-item.active {
+      color: #0080ff;
+      background: rgba(0, 128, 255, 0.12);
+      border-color: rgba(0, 128, 255, 0.35);
+      box-shadow: 0 0 12px rgba(0, 128, 255, 0.2);
+    }
+
+    /* Button for AIML Technology Services with white background highlight */
+    .nav-aiml-pill {
+      background: #ffffff !important;
+      border: 1px solid #ffffff !important;
+      border-radius: 6px !important;
+      padding: 6px 14px !important;
+      color: #000000 !important;
+      font-weight: 600 !important;
+      font-size: 13.5px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      line-height: normal !important;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-aiml-pill:hover {
+      background: #f0fdf4 !important;
+      border-color: #00a87a !important;
+      color: #000000 !important;
+    }
+
+    .nav-aiml-pill .nav-arrow {
+      color: #000000 !important;
+      font-size: 9px;
+      margin-left: 2px;
+    }
+
+    /* Main Container with Sidebar + Content */
+    .agent-main-section {
+      background-color: #030712;
+      padding: 60px 40px 100px;
+      max-width: 1360px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .agent-layout-grid {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    /* Left Sidebar Navigation Card (Sticky on scroll) */
+    .agent-sidebar {
+      background: #0b1c2d;
+      border: 1px solid #1a3654;
+      border-radius: 12px;
+      padding: 24px 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 30px;
+    }
+
+    .agent-sidebar-heading {
+      color: #00b4d8;
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(0, 180, 216, 0.25);
+    }
+
+    .agent-sidebar-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .agent-sidebar-list li {
+      margin-bottom: 14px;
+    }
+
+    .agent-sidebar-list li a {
+      display: block;
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 13.5px;
+      line-height: 1.45;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .agent-sidebar-list li a:hover {
+      color: #38bdf8;
+      transform: translateX(3px);
+    }
+
+    .agent-sidebar-list li.active a {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* Right Main Content Area */
+    .agent-content-area {
+      color: #ffffff;
+      min-width: 0;
+    }
+
+    .agent-main-heading {
+      font-size: 34px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+      letter-spacing: -0.3px;
+    }
+
+    .agent-subheading {
+      font-size: 17.5px;
+      color: #cbd5e1;
+      line-height: 1.5;
+      margin: 0 0 10px;
+    }
+
+    .agent-lead-text {
+      font-size: 17.5px;
+      font-weight: 500;
+      color: #e2e8f0;
+      line-height: 1.5;
+      margin: 0 0 32px;
+      max-width: 900px;
+    }
+
+    /* Section: Features & Offers */
+    .agent-features-section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    /* Service Section container - all on the same page */
+    .agent-service-section {
+      position: relative;
+      scroll-margin-top: 60px;
+    }
+
+    .agent-service-section+.agent-service-section {
+      margin-top: 60px;
+      padding-top: 50px;
+      border-top: 1px solid rgba(56, 189, 248, 0.15);
+    }
+
+    .agent-showcase-row {
+      margin-bottom: 36px;
+    }
+
+    /* Features List with Cyan Hexagon/Circle Icons - 2 left, 2 right */
+    .agent-features-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px 36px;
+    }
+
+    .agent-feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      text-align: left;
+      background: rgba(13, 27, 42, 0.4);
+      border: 1px solid rgba(56, 189, 248, 0.14);
+      border-radius: 10px;
+      padding: 16px 20px;
+      box-sizing: border-box;
+      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .agent-feature-item:hover {
+      border-color: rgba(56, 189, 248, 0.35);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0, 170, 255, 0.12);
+    }
+
+    .agent-feature-icon {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1.5px solid #00c0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 192, 240, 0.08);
+      box-shadow: 0 0 10px rgba(0, 192, 240, 0.3);
+      margin-top: 2px;
+    }
+
+    .agent-feature-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: #00c0f0;
+      stroke-width: 1.8;
+    }
+
+    .agent-feature-body h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #00aaff;
+      margin: 0 0 4px;
+      line-height: 1.4;
+    }
+
+    .agent-feature-body p {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Bottom Box: People Prime Talent Pool (Compact fit) */
+    .agent-talent-card {
+      background: #0d1b2a;
+      border: 1px solid #1e3a5f;
+      border-radius: 10px;
+      padding: 14px 24px;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      margin: 0 auto;
+      width: fit-content;
+      max-width: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .agent-talent-title {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 10px;
+      letter-spacing: 0.3px;
+    }
+
+    .agent-badges-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .agent-badge {
+      background: #050b14;
+      color: #ffffff;
+      border: 1px solid #1a2a3a;
+      border-radius: 6px;
+      padding: 7px 14px;
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .agent-badge:hover {
+      border-color: #00aaff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 170, 255, 0.2);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      .agent-layout-grid {
+        grid-template-columns: 240px 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .agent-features-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .agent-layout-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .agent-sidebar {
+        position: static;
+        margin-bottom: 30px;
+      }
+
+      .agent-main-section {
+        padding: 40px 20px 60px;
+      }
+
+      .agent-header-title {
+        font-size: 26px;
+      }
+
+      .agent-header-nav-item {
+        font-size: 16px;
+        padding: 5px 10px;
+      }
+
+      .agent-main-heading {
+        font-size: 26px;
+      }
+
+      .agent-badges-grid {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .agent-badge {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body class="home-page">
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      &#9776;
+    </button>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Talent
+              Platform</span></a>
+        </li>
+        <li>
+          <a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a>
+        </li>
+        <li>
+          <a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="nav-aiml-pill active">AIML Technology Services <span class="nav-arrow"
+              style="color: black;">▼</span></a>
+          <div class="dropdown-menu">
+            <!-- <div class="nested-dropdown">
+              <a href="aiml-tech-services.html" class="nested-trigger">AIML Engineering and MLOps <span
+                  class="sub-arrow">▶</span></a>
+              <div class="nested-dropdown-menu">
+                <a href="ai-ml-model-development.html">AI/ML Model Development</a>
+                <a href="data-engineering-aiml.html">Data Engineering for AI/ML</a>
+                <a href="mlops-ml-platforms.html">MLOps &amp; ML Platforms</a>
+                <a href="ml-model-deployment.html">ML Model Deployment &amp; Productionization</a>
+                <a href="model-monitoring-optimization.html">Model Monitoring &amp; Optimization</a>
+                <a href="cloud-aiml-engineering.html">Cloud AI/ML Engineering</a>
+                <a href="enterprise-aiml-transformation.html">Enterprise AI/ML Transformation</a>
+              </div>
+            </div> -->
+            <div class="nested-dropdown">
+              <a href="ai-model-training.html" class="nested-trigger">AI Model Training <span class="sub-arrow">▶</span></a>
+              <div class="nested-dropdown-menu">
+                <a href="ai-model-training.html#expert-data-creation-annotation-section">Expert Data Creation &amp; Annotation</a>
+                <a href="ai-model-training.html#rlhf-human-feedback-section">RLHF / Human Feedback</a>
+                <a href="ai-model-training.html#ai-model-evaluation-section">AI Model Evaluation</a>
+                <a href="ai-model-training.html#benchmark-test-set-creation-section">Benchmark &amp; Test-Set Creation</a>
+                <a href="ai-model-training.html#coding-expertise-ai-training-section">Coding Expertise for AI Training</a>
+                <a href="ai-model-training.html#stem-reasoning-expertise-section">STEM &amp; Reasoning Expertise</a>
+                <a href="ai-model-training.html#reinforcement-learning-environments-section">Reinforcement-Learning Environments</a>
+              </div>
+            </div>
+            <div class="nested-dropdown">
+              <a href="enterprise-ai-agents.html" class="nested-trigger">Enterprise Gen AI <span class="sub-arrow">▶</span></a>
+              <div class="nested-dropdown-menu">
+                <a href="enterprise-ai-agents.html#enterprise-ai-agents-section">Enterprise AI Agents</a>
+                <a href="enterprise-ai-agents.html#rag-solutions-section">RAG Solutions</a>
+                <a href="enterprise-ai-agents.html#customized-fine-tuned-llms-section">Customized / Fine-Tuned LLMs</a>
+                <!-- <a href="enterprise-ai-copilots.html">Enterprise AI Copilots</a> -->
+                <!-- <a href="document-intelligence-knowledge-ai.html">Document Intelligence &amp; Knowledge AI</a> -->
+                <!-- <a href="conversational-ai-customer-service.html">Conversational AI / Customer Service AI</a> -->
+                <!-- <a href="enterprise-genai-app-development.html">Enterprise GenAI Application Development</a> -->
+                <!-- <a href="genai-integration-modernization.html">GenAI Integration &amp; Modernization</a> -->
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Services <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="it-consulting.html">IT Consulting</a>
+            <a href="staff.html">Staff Augmentation (T&M)</a>
+            <a href="managed-services.html">Managed Teams and Managed Services</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Skill Sets <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="java.html">Java Technologies</a>
+            <a href="microsoft.html">Microsoft Technologies</a>
+            <a href="it-infra.html">IT Infrastructure</a>
+            <a href="sap.html">SAP</a>
+            <a href="datasci.html">Data Science</a>
+            <a href="servicenow.html">Service Now</a>
+            <a href="salesforce.html">Salesforce</a>
+            <a href="dw.html">Data Warehouse</a>
+            <a href="cloud.html">Cloud Technologies</a>
+            <a href="ai-ml.html">AI and ML</a>
+            <a href="iot.html">IOT</a>
+            <a href="database.html">Database management</a>
+            <a href="testing.html">Testing</a>
+            <a href="cybersecurity.html">Cyber Security</a>
+            <a href="oracle.html">Oracle</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">Corporate Compliance <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="iso.html">ISO9001-27001</a>
+            <a href="cobe.html">Code of Business Ethics</a>
+            <a href="soc2type2.html">SOC2 Type 2</a>
+            <a href="statutory.html">Statutory Compliance</a>
+            <a href="env-sus.html">Environmental Sustainability</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">About Us <span class="nav-arrow">▼</span></a>
+          <div class="dropdown-menu">
+            <a href="lt.html">Leadership Team</a>
+            <a href="it-security.html">IT Security Policies</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </li>
+        <li>
+          <a href="activejobs.html" class="nav-btn jobs-btn">Active Jobs</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        &#10005;
+      </button>
+    </div>
+    <ul class="drawer-nav">
+      <li>
+        <a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span
+            class="drawer-ptaas-subtext">Platform</span></a>
+      </li>
+      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">Primescale<span
+            class="drawer-primescale-subtext">Remote Work</span></a></li>
+      <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a>
+      </li>
+      <li class="drawer-dropdown open">
+        <button class="drawer-dropdown-btn drawer-aiml-btn active">
+          AIML Technology Services <span class="drawer-arrow" style="color: black;">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <!-- <div class="drawer-nested-dropdown">
+            <button class="drawer-nested-btn">
+              AIML Engineering and MLOps <span class="drawer-arrow">&#9660;</span>
+            </button>
+            <div class="drawer-nested-menu">
+              <a href="ai-ml-model-development.html">AI/ML Model Development</a>
+              <a href="data-engineering-aiml.html">Data Engineering for AI/ML</a>
+              <a href="mlops-ml-platforms.html">MLOps &amp; ML Platforms</a>
+              <a href="ml-model-deployment.html">ML Model Deployment &amp; Productionization</a>
+              <a href="model-monitoring-optimization.html">Model Monitoring &amp; Optimization</a>
+              <a href="cloud-aiml-engineering.html">Cloud AI/ML Engineering</a>
+              <a href="enterprise-aiml-transformation.html">Enterprise AI/ML Transformation</a>
+            </div>
+          </div> -->
+          <div class="drawer-nested-dropdown open">
+            <button class="drawer-nested-btn">
+              AI Model Training <span class="drawer-arrow">&#9660;</span>
+            </button>
+            <div class="drawer-nested-menu" style="display: block;">
+              <a href="#expert-data-creation-annotation-section" style="color: #00aaff; font-weight: bold;">Expert Data
+                Creation &amp; Annotation</a>
+              <a href="rlhf-human-feedback.html">RLHF / Human Feedback</a>
+              <a href="ai-model-evaluation.html">AI Model Evaluation</a>
+              <a href="Benchmark & Test-Set Creation.html">Benchmark &amp; Test-Set Creation</a>
+              <a href="coding-expertise-ai-training.html">Coding Expertise for AI Training</a>
+              <a href="stem-reasoning-expertise.html">STEM &amp; Reasoning Expertise</a>
+              <a href="reinforcement-learning-environments.html">Reinforcement-Learning Environments</a>
+            </div>
+          </div>
+          <div class="drawer-nested-dropdown">
+            <button class="drawer-nested-btn">
+              Enterprise Gen AI <span class="drawer-arrow">&#9660;</span>
+            </button>
+            <div class="drawer-nested-menu">
+              <a href="enterprise-ai-agents.html#enterprise-ai-agents-section">Enterprise AI Agents</a>
+              <a href="enterprise-ai-agents.html#rag-solutions-section">RAG Solutions</a>
+              <a href="enterprise-ai-agents.html#customized-fine-tuned-llms-section">Customized / Fine-Tuned LLMs</a>
+              <!-- <a href="enterprise-ai-copilots.html">Enterprise AI Copilots</a> -->
+              <!-- <a href="document-intelligence-knowledge-ai.html">Document Intelligence &amp; Knowledge AI</a> -->
+              <!-- <a href="conversational-ai-customer-service.html">Conversational AI / Customer Service AI</a> -->
+              <!-- <a href="enterprise-genai-app-development.html">Enterprise GenAI Application Development</a> -->
+              <!-- <a href="genai-integration-modernization.html">GenAI Integration &amp; Modernization</a> -->
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Services <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="it-consulting.html">IT Consulting</a>
+          <a href="staff.html">Staff Augmentation (T&amp;M)</a>
+          <a href="managed-services.html">Managed Teams and Managed Services</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Skill Sets <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="java.html">Java Technologies</a>
+          <a href="microsoft.html">Microsoft Technologies</a>
+          <a href="it-infra.html">IT Infrastructure</a>
+          <a href="sap.html">SAP</a>
+          <a href="datasci.html">Data Science</a>
+          <a href="servicenow.html">Service Now</a>
+          <a href="salesforce.html">Salesforce</a>
+          <a href="dw.html">Data Warehouse</a>
+          <a href="cloud.html">Cloud Technologies</a>
+          <a href="ai-ml.html">AI and ML</a>
+          <a href="iot.html">IOT</a>
+          <a href="database.html">Database management</a>
+          <a href="testing.html">Testing</a>
+          <a href="cybersecurity.html">Cyber Security</a>
+          <a href="oracle.html">Oracle</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          Corporate Compliance <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="iso.html">ISO9001-27001</a>
+          <a href="cobe.html">Code of Business Ethics</a>
+          <a href="soc2type2.html">SOC2 Type 2</a>
+          <a href="statutory.html">Statutory Compliance</a>
+          <a href="env-sus.html">Environmental Sustainability</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </li>
+      <li class="drawer-dropdown">
+        <button class="drawer-dropdown-btn">
+          About Us <span class="drawer-arrow">&#9660;</span>
+        </button>
+        <div class="drawer-dropdown-menu">
+          <a href="lt.html">Leadership Team</a>
+          <a href="it-security.html">IT Security Policies</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </li>
+      <li>
+        <a href="activejobs.html" class="nav-btn drawer-jobs-btn">Active Jobs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Header Banner matching reference image -->
+  <section class="agent-header-banner">
+    <div class="agent-header-content">
+      <h1 class="agent-header-title">AIML TECHNOLOGY SERVICES</h1>
+      <div class="agent-header-nav" id="aimlHeaderNav">
+        <!-- <button type="button" class="agent-header-nav-item" data-category="aiml-engineering">AIML Engineering and
+          MLOps</button> -->
+        <button type="button" class="agent-header-nav-item active" data-category="ai-model-training">AI Model
+          Training</button>
+        <button type="button" class="agent-header-nav-item" data-category="enterprise-gen-ai"
+          onclick="window.location.href='enterprise-ai-agents.html'">Enterprise Gen
+          AI</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Body Content with Left Sidebar and Details -->
+  <main class="agent-main-section">
+    <div class="agent-layout-grid">
+
+      <!-- Left Category Navigation Card -->
+      <aside class="agent-sidebar">
+        <h3 class="agent-sidebar-heading" id="agentSidebarHeading">AI Model Training</h3>
+        <ul class="agent-sidebar-list" id="agentSidebarList">
+          <li class="active"><a href="#expert-data-creation-annotation-section">Expert Data Creation &amp;
+              Annotation</a></li>
+          <li><a href="#rlhf-human-feedback-section">RLHF / Human Feedback</a></li>
+          <li><a href="#ai-model-evaluation-section">AI Model Evaluation</a></li>
+          <li><a href="#benchmark-test-set-creation-section">Benchmark &amp; Test-Set Creation</a></li>
+          <li><a href="#coding-expertise-ai-training-section">Coding Expertise for AI Training</a></li>
+          <li><a href="#stem-reasoning-expertise-section">STEM &amp; Reasoning Expertise</a></li>
+          <li><a href="#reinforcement-learning-environments-section">Reinforcement-Learning Environments</a></li>
+        </ul>
+      </aside>
+
+      <!-- Right Main Content Area -->
+      <section class="agent-content-area">
+        <!-- Section 1: Expert Data Creation & Annotation -->
+        <div class="agent-service-section" id="expert-data-creation-annotation-section">
+          <h2 class="agent-main-heading">Expert Data Creation &amp; Annotation</h2>
+          <p class="agent-subheading">We can deploy 50–500 vetted software engineers to create, review and evaluate
+            coding tasks for model training.</p>
+
+          <p class="agent-lead-text">
+            Expert-led data creation and annotation that transforms raw enterprise data into accurate, model-ready
+            training assets for reliable AI.
+          </p>
+
+          <!-- Features & Offers Section -->
+          <h3 class="agent-features-section-title">Features &amp; Offers</h3>
+
+          <div class="agent-showcase-row">
+            <!-- Feature Bullets with Glowing Cyan Circle Icons -->
+            <div class="agent-features-list">
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Multimodal data / bounding-box icon -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 7V4h3m10 0h3v3M4 17v3h3m10 0h3v-3"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Build High-Quality Training Data</h4>
+                  <p>Create real-world datasets through image labeling, audio transcription, text tagging, video
+                    annotation,
+                    and bounding-box creation.</p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Expert evaluation / user-check icon -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <polyline points="16 11 18 13 22 9"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Move from Labeling to Expert Evaluation</h4>
+                  <p>Use domain experts to evaluate whether AI outputs are contextually correct, not just technically
+                    well-formed—especially in specialized fields such as healthcare and finance.</p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Specialized proprietary datasets / layers icon -->
+                  <svg viewBox="0 0 24 24">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Create Specialized, Proprietary Datasets</h4>
+                  <p>Move beyond generic datasets with domain-specific training data designed around your organization’s
+                    unique business requirements and workflows.</p>
+                </div>
+              </div>
+
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <!-- Traceability, quality & bias control / shield check icon -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Ensure Traceability, Quality &amp; Bias Control</h4>
+                  <p>People Prime Worldwide provides high-quality, traceable training data with auditable provenance,
+                    expert validation, and bias-control processes—helping organizations build more reliable AI systems.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- People Prime Talent Pool Box -->
+          <div class="agent-talent-card">
+            <h3 class="agent-talent-title">People Prime Talent Pool for AI Model Training</h3>
+            <div class="agent-badges-grid">
+              <span class="agent-badge">Data annotators</span>
+              <span class="agent-badge">domain SMEs</span>
+              <span class="agent-badge">linguists</span>
+              <span class="agent-badge">quality analysts</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: RLHF / Human Feedback -->
+        <div class="agent-service-section" id="rlhf-human-feedback-section">
+          <h2 class="agent-main-heading">RLHF / Human Feedback</h2>
+          <p class="agent-subheading">We provide managed expert teams to evaluate, rank and improve model responses at
+            scale.</p>
+
+          <p class="agent-lead-text">
+            Enterprise-grade RLHF and human feedback services that align AI models with expert judgment, ensuring
+            reliable, production-ready performance.
+          </p>
+
+          <h3 class="agent-features-section-title">Features &amp; Offers</h3>
+
+          <div class="agent-showcase-row">
+            <div class="agent-features-list">
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                    </path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Align Pretrained Models with Human Preferences</h4>
+                  <p>Transform pretrained language models into useful, aligned assistants by training them on human
+                    judgments and preferences.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Learn from Human Feedback</h4>
+                  <p>Have human experts rank or evaluate model outputs, then use those preferences to train a reward
+                    model that guides the AI’s behavior.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Improve Business-Specific AI Behavior</h4>
+                  <p>Help models follow business instructions, stay on-topic, provide appropriate responses, and handle
+                    harmful or unsuitable requests more reliably.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Choose the Right Alignment Approach</h4>
+                  <p>Select practical alignment methods based on available data, model requirements, and compute
+                    budget—balancing performance, cost, and complexity instead of defaulting to the most
+                    resource-intensive approach.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- People Prime Talent Pool Box -->
+          <div class="agent-talent-card">
+            <h3 class="agent-talent-title">People Prime Talent Pool for RLHF</h3>
+            <div class="agent-badges-grid">
+              <span class="agent-badge">AI trainers</span>
+              <span class="agent-badge">developers</span>
+              <span class="agent-badge">SMEs</span>
+              <span class="agent-badge">language experts</span>
+              <span class="agent-badge">reviewers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: AI Model Evaluation -->
+        <div class="agent-service-section" id="ai-model-evaluation-section">
+          <h2 class="agent-main-heading">AI Model Evaluation</h2>
+          <p class="agent-subheading">We provide technical and domain experts to systematically evaluate model accuracy,
+            reasoning and output quality.</p>
+
+          <p class="agent-lead-text">
+            Rigorous, multi-dimensional AI model evaluation ensuring fairness, safety, and reliability — delivering
+            trustworthy AI performance before production deployment.
+          </p>
+
+          <h3 class="agent-features-section-title">Features &amp; Offers</h3>
+
+          <div class="agent-showcase-row">
+            <div class="agent-features-list">
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M2 12h4l3-9 5 18 3-9h5"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Test Beyond Standard Benchmarks</h4>
+                  <p>Evaluate AI systems for subtle failure modes that traditional capability benchmarks may not detect,
+                    including how models respond to misleading or falsely framed claims.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Evaluate Responsible AI Dimensions</h4>
+                  <p>Assess models across fairness, bias, privacy, transparency, safety, and factual accuracy—not just
+                    performance and capability.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Test AI in Real-World Business Contexts</h4>
+                  <p>Evaluate how models behave under realistic scenarios, business workflows, and situations where
+                    incorrect outputs can have meaningful consequences.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Measure Trustworthiness &amp; Reliability</h4>
+                  <p>People Prime Worldwide helps organizations determine whether an AI system is reliable, responsible,
+                    and suitable for real-world deployment, beyond simply measuring how capable the model is.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- People Prime Talent Pool Box -->
+          <div class="agent-talent-card">
+            <h3 class="agent-talent-title">People Prime Talent Pool for AI Model Evaluation</h3>
+            <div class="agent-badges-grid">
+              <span class="agent-badge">LLM evaluators</span>
+              <span class="agent-badge">ML engineers</span>
+              <span class="agent-badge">QA engineers</span>
+              <span class="agent-badge">developers</span>
+              <span class="agent-badge">SMEs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4: Benchmark & Test-Set Creation -->
+        <div class="agent-service-section" id="benchmark-test-set-creation-section">
+          <h2 class="agent-main-heading">Benchmark &amp; Test-Set Creation</h2>
+          <p class="agent-subheading">We create expert-authored benchmarks and test sets to measure coding, STEM and
+            reasoning capabilities.</p>
+
+          <p class="agent-lead-text">
+            Custom benchmark and test-set development grounded in your business context, validating AI performance
+            reliably before costly production deployment.
+          </p>
+
+          <h3 class="agent-features-section-title">Features &amp; Offers</h3>
+
+          <div class="agent-showcase-row">
+            <div class="agent-features-list">
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Evaluate Models on Real Business Data</h4>
+                  <p>Test AI models using your organization’s actual data, workflows, domain knowledge, and real-world
+                    edge cases.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <line x1="12" y1="20" x2="12" y2="10"></line>
+                    <line x1="18" y1="20" x2="18" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="16"></line>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Build Custom Evaluation Datasets</h4>
+                  <p>Create evaluation datasets based on your knowledge base, business domain, and real usage patterns
+                    instead of relying solely on generic benchmarks.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <path d="M9 12l2 2 4-4"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Measure What Matters to Your Business</h4>
+                  <p>Assess model performance against business-specific requirements rather than generic leaderboard
+                    scores, recognizing that models can perform differently across specialized domains.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Evaluate Agent Trajectory Accuracy</h4>
+                  <p>For agentic AI systems, go beyond simple task success by evaluating whether the agent reached the
+                    correct outcome through a sound, reliable, and repeatable process.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- People Prime Talent Pool Box -->
+          <div class="agent-talent-card">
+            <h3 class="agent-talent-title">People Prime Talent Pool for Benchmark &amp; Test-Set Creation</h3>
+            <div class="agent-badges-grid">
+              <span class="agent-badge">Developers</span>
+              <span class="agent-badge">mathematicians</span>
+              <span class="agent-badge">researchers</span>
+              <span class="agent-badge">PhDs</span>
+              <span class="agent-badge">STEM SMEs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 5: Coding Expertise for AI Training -->
+        <div class="agent-service-section" id="coding-expertise-ai-training-section">
+          <h2 class="agent-main-heading">Coding Expertise for AI Training</h2>
+          <p class="agent-subheading">We can deploy 50–500 vetted software engineers to create, review and evaluate
+            coding tasks for model training.</p>
+
+          <p class="agent-lead-text">
+            Leverage expert developers to create, annotate, and evaluate code datasets across diverse languages and
+            frameworks to dramatically improve model problem-solving skills.Expert developers training and validating AI
+            coding models, ensuring secure, reliable code generation your engineering teams can trust.
+          </p>
+
+          <h3 class="agent-features-section-title">Features &amp; Offers</h3>
+
+          <div class="agent-showcase-row">
+            <div class="agent-features-list">
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Provide Expert Software Engineers</h4>
+                  <p>Deploy trained engineers who can write, review, rank, and correct code across programming languages
+                    and frameworks.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 16v-4"></path>
+                    <path d="M12 8h.01"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Evaluate AI-Generated Code</h4>
+                  <p>Review AI-generated code for correctness, security, quality, performance, and maintainability
+                    before it reaches production.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Create High-Quality Coding Training Data</h4>
+                  <p>Generate code samples and provide structured expert judgments on which solutions, fixes, and
+                    approaches best reflect real-world engineering practices—supporting fine-tuning and RLHF.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Bring Human Expertise into AI Development</h4>
+                  <p>People Prime Worldwide provides access to a global pool of software engineering expertise, helping
+                    organizations ensure that fast-moving AI coding systems are guided by experienced human judgment and
+                    production standards.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- People Prime Talent Pool Box -->
+          <div class="agent-talent-card">
+            <h3 class="agent-talent-title">People Prime Talent Pool for Coding Expertise</h3>
+            <div class="agent-badges-grid">
+              <span class="agent-badge">Python</span>
+              <span class="agent-badge">Java</span>
+              <span class="agent-badge">full-stack</span>
+              <span class="agent-badge">data engineers</span>
+              <span class="agent-badge">competitive programmers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 6: STEM & Reasoning Expertise -->
+        <div class="agent-service-section" id="stem-reasoning-expertise-section">
+          <h2 class="agent-main-heading">STEM &amp; Reasoning Expertise</h2>
+          <p class="agent-subheading">We build managed expert networks across mathematics, science and engineering for
+            advanced model training and evaluation.</p>
+
+          <p class="agent-lead-text">
+            PhD-level domain experts building and validating STEM reasoning data, ensuring AI models reason accurately,
+            not just convincingly.
+          </p>
+
+          <h3 class="agent-features-section-title">Features &amp; Offers</h3>
+
+          <div class="agent-showcase-row">
+            <div class="agent-features-list">
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Provide PhDs &amp; Domain Experts</h4>
+                  <p>Bring specialized experts in mathematics, physics, chemistry, biology, and engineering to support
+                    advanced AI reasoning and model training.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Create &amp; Validate Complex Problems</h4>
+                  <p>Experts design challenging problems, verify solutions, and create step-by-step reasoning examples
+                    that help models learn correct logical deduction.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Evaluate the Reasoning Process</h4>
+                  <p>Go beyond checking whether the final answer is correct. Experts validate whether the problem is
+                    unambiguous and whether the model’s reasoning follows a sound and defensible process.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                    </path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Build Reliable Reasoning AI</h4>
+                  <p>People Prime Worldwide combines deep domain expertise with structured training and evaluation to
+                    help build AI systems that reason reliably—not just convincingly.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- People Prime Talent Pool Box -->
+          <div class="agent-talent-card">
+            <h3 class="agent-talent-title">People Prime Talent Pool for STEM &amp; Reasoning Expertise</h3>
+            <div class="agent-badges-grid">
+              <span class="agent-badge">Mathematicians</span>
+              <span class="agent-badge">physicists</span>
+              <span class="agent-badge">engineers</span>
+              <span class="agent-badge">researchers</span>
+              <span class="agent-badge">PhDs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 7: Reinforcement-Learning Environments -->
+        <div class="agent-service-section" id="reinforcement-learning-environments-section">
+          <h2 class="agent-main-heading">Reinforcement-Learning Environments</h2>
+          <p class="agent-subheading">We provide engineering teams to develop environments and evaluation systems for
+            training AI agents.</p>
+
+          <p class="agent-lead-text">
+            High-fidelity, expert-designed RL environments training AI agents on real business complexity, ensuring
+            genuine, production-ready operational performance.
+          </p>
+
+          <h3 class="agent-features-section-title">Features &amp; Offers</h3>
+
+          <div class="agent-showcase-row">
+            <div class="agent-features-list">
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Create Controlled AI Environments</h4>
+                  <p>Build simulated environments that model real-world workflows, tools, and system states where AI agents can safely interact without affecting live production systems.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Enable Safe Trial-and-Error Learning</h4>
+                  <p>Allow agents to take actions, receive feedback, and improve through repeated experiments in a controlled and resettable environment.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Generate Decision &amp; Action Trajectories</h4>
+                  <p>Capture structured sequences of decisions, actions, feedback, and outcomes to teach AI agents how to plan and act—not simply what to say.</p>
+                </div>
+              </div>
+              <div class="agent-feature-item">
+                <div class="agent-feature-icon">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+                <div class="agent-feature-body">
+                  <h4>Apply Verifiable Rewards</h4>
+                  <p>Use Reinforcement Learning from Verifiable Rewards (RLVR) to provide measurable feedback based on whether an agent’s actions achieve defined, verifiable outcomes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- People Prime Talent Pool Box -->
+          <div class="agent-talent-card">
+            <h3 class="agent-talent-title">People Prime Talent Pool for Reinforcement-Learning</h3>
+            <div class="agent-badges-grid">
+              <span class="agent-badge">RL engineers</span>
+              <span class="agent-badge">ML engineers</span>
+              <span class="agent-badge">agent engineers</span>
+              <span class="agent-badge">Python engineers</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-about">
+          <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="footer-logo" />
+          <p>
+            We specialize in
+            <b>IT Consulting, Staff Augmentation, Managed Services, AIML Technology Services, and AIML Solutions</b>,
+            delivering end-to-end technology capabilities that drive business
+            success. As a trusted technology partner, we combine specialized
+            expertise and experienced teams to help organizations build,
+            implement, and manage innovative solutions aligned with their
+            business goals.
+          </p>
+        </div>
+
+        <div class="grid-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="activejobs.html">Active Jobs</a></li>
+              <li><a href="iso.html">Corporate Compliance</a></li>
+              <li><a href="it-security.html">IT Security Policies</a></li>
+              <li>
+                <a href="technology-hub/technology-hub.html">Technology Hub</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="aiml-tech-services.html">AIML Technology Services</a>
+              </li>
+              <li>
+                <a href="it-consulting.html">IT Consulting &amp; Implementation Services</a>
+              </li>
+              <li><a href="staff.html">Staff Augmentation</a></li>
+              <li>
+                <a href="managed-services.html">Managed Teams &amp; Services</a>
+              </li>
+              <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span
+                    class="drawer-gcc-subtext">Center</span></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Toll Free</h3>
+            <p class="phone">1800 572 1880</p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Connect Us On</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank">F</a>
+              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
+              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
+              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
+              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          Copyright &copy; People Prime Worldwide Pvt Ltd. All rights reserved.
+        </p>
+        <span class="tagline">Better Careers Better Lives</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const categoryData = {
+        "aiml-engineering": {
+          title: "AIML Engineering and MLOps",
+          items: [
+            { name: "AI/ML Model Development", url: "ai-ml-model-development.html" },
+            { name: "Data Engineering for AI/ML", url: "data-engineering-aiml.html" },
+            { name: "MLOps & ML Platforms", url: "mlops-ml-platforms.html" },
+            { name: "ML Model Deployment & Productionization", url: "ml-model-deployment.html" },
+            { name: "Model Monitoring & Optimization", url: "model-monitoring-optimization.html" },
+            { name: "Cloud AI/ML Engineering", url: "cloud-aiml-engineering.html" },
+            { name: "Enterprise AI/ML Transformation", url: "enterprise-aiml-transformation.html" }
+          ]
+        },
+        "ai-model-training": {
+          title: "AI Model Training",
+          items: [
+            { name: "Expert Data Creation & Annotation", url: "#expert-data-creation-annotation-section", active: true },
+            { name: "RLHF / Human Feedback", url: "rlhf-human-feedback.html" },
+            { name: "AI Model Evaluation", url: "ai-model-evaluation.html" },
+            { name: "Benchmark & Test-Set Creation", url: "Benchmark & Test-Set Creation.html" },
+            { name: "Coding Expertise for AI Training", url: "coding-expertise-ai-training.html" },
+            { name: "STEM & Reasoning Expertise", url: "stem-reasoning-expertise.html" },
+            { name: "Reinforcement-Learning Environments", url: "reinforcement-learning-environments.html" }
+          ]
+        },
+        "enterprise-gen-ai": {
+          title: "Enterprise Gen AI",
+          items: [
+            { name: "Enterprise AI Agents", url: "enterprise-ai-agents.html#enterprise-ai-agents-section" },
+            { name: "RAG Solutions", url: "enterprise-ai-agents.html#rag-solutions-section" },
+            { name: "Customized / Fine-Tuned LLMs", url: "enterprise-ai-agents.html#customized-fine-tuned-llms-section" },
+            { name: "Enterprise AI Copilots", url: "enterprise-ai-copilots.html" },
+            { name: "Document Intelligence & Knowledge AI", url: "document-intelligence-knowledge-ai.html" },
+            { name: "Conversational AI / Customer Service AI", url: "conversational-ai-customer-service.html" },
+            { name: "Enterprise GenAI Application Development", url: "enterprise-genai-app-development.html" },
+            { name: "GenAI Integration & Modernization", url: "genai-integration-modernization.html" }
+          ]
+        }
+      };
+
+      const headerNavBtns = document.querySelectorAll("#aimlHeaderNav .agent-header-nav-item");
+      const sidebarHeading = document.getElementById("agentSidebarHeading");
+      const sidebarList = document.getElementById("agentSidebarList");
+
+      function attachSidebarListeners() {
+        if (!sidebarList) return;
+        const links = sidebarList.querySelectorAll("li a");
+        links.forEach(function (link) {
+          link.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+            if (href.startsWith("#")) {
+              e.preventDefault();
+              sidebarList.querySelectorAll("li").forEach(function (li) { li.classList.remove("active"); });
+              this.parentElement.classList.add("active");
+              const targetElement = document.querySelector(href);
+              if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }
+          });
+        });
+      }
+
+      attachSidebarListeners();
+
+      // ScrollSpy: highlight sidebar link when scrolling past sections
+      const sections = document.querySelectorAll(".agent-service-section");
+      window.addEventListener("scroll", function () {
+        let current = "";
+        const scrollPosition = window.pageYOffset + 140;
+        sections.forEach(function (section) {
+          if (section.offsetTop <= scrollPosition) {
+            current = section.getAttribute("id");
+          }
+        });
+        if (current) {
+          const links = sidebarList.querySelectorAll("li a");
+          links.forEach(function (link) {
+            const href = link.getAttribute("href");
+            if (href === "#" + current) {
+              sidebarList.querySelectorAll("li").forEach(function (li) { li.classList.remove("active"); });
+              link.parentElement.classList.add("active");
+            }
+          });
+        }
+      });
+
+      headerNavBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          const categoryKey = this.getAttribute("data-category");
+          if (!categoryKey) return;
+
+          if (categoryKey === "enterprise-gen-ai") {
+            window.location.href = "enterprise-ai-agents.html";
+            return;
+          }
+
+          if (!categoryData[categoryKey]) return;
+
+          // Toggle active class on header buttons
+          headerNavBtns.forEach(function (b) {
+            b.classList.remove("active");
+          });
+          this.classList.add("active");
+
+          // Update sidebar category heading and list
+          const data = categoryData[categoryKey];
+          if (sidebarHeading) {
+            sidebarHeading.textContent = data.title;
+          }
+
+          if (sidebarList) {
+            sidebarList.innerHTML = "";
+            data.items.forEach(function (item) {
+              const li = document.createElement("li");
+              if (item.active) {
+                li.classList.add("active");
+              }
+              const a = document.createElement("a");
+              a.href = item.url;
+              a.textContent = item.name;
+              li.appendChild(a);
+              sidebarList.appendChild(li);
+            });
+            attachSidebarListeners();
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
