@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 const dir = 'c:/Users/Sai chandra Mouli/Desktop/Website';
@@ -14,14 +14,14 @@ for (const file of files) {
     // AIML Engineering and MLOps
     const aimlPattern = /<a href="javascript:void\(0\)" class="nested-trigger">AIML Engineering and \s*MLOps <span/g;
     if (content.match(aimlPattern)) {
-        content = content.replace(aimlPattern, '<a href="aiml-tech-services.html" class="nested-trigger">AIML Engineering and MLOps <span');
+        content = content.replace(aimlPattern, '<a href="aiml-engineering-mlops.html" class="nested-trigger">AIML Engineering and MLOps <span');
         changed = true;
     }
 
     // AIML Engineering and MLOps (without newline)
     const aimlPattern2 = /<a href="javascript:void\(0\)" class="nested-trigger">AIML Engineering and MLOps <span/g;
     if (content.match(aimlPattern2)) {
-        content = content.replace(aimlPattern2, '<a href="aiml-tech-services.html" class="nested-trigger">AIML Engineering and MLOps <span');
+        content = content.replace(aimlPattern2, '<a href="aiml-engineering-mlops.html" class="nested-trigger">AIML Engineering and MLOps <span');
         changed = true;
     }
 
