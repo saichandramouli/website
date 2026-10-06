@@ -1,0 +1,3153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The AI Leadership Brief · Issue 02 | People Prime Worldwide</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <meta name="description" content="The AI Leadership Brief — The week’s AI developments that matter to CXOs and decision-makers by Jayaraman (Jay) Ganapathi.">
+
+  <!-- Google Fonts: Editorial Serif + Clean Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* RESET & DOCUMENT BASE */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: #e9e6dd;
+      color: #1a1a1a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13.5px;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: #edeae2;
+      padding-bottom: 60px;
+    }
+
+    /* TOP READER TOOLBAR (Hidden in Print) */
+    .reader-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #111a16;
+      color: #e5ede8;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+      font-size: 13px;
+    }
+
+    .toolbar-left, .toolbar-center, .toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .toolbar-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.08);
+      color: #f1f5f3;
+      transition: all 0.2s ease;
+    }
+
+    .toolbar-btn:hover {
+      background: rgba(255, 255, 255, 0.18);
+      border-color: rgba(255, 255, 255, 0.4);
+      color: #ffffff;
+    }
+
+    .toolbar-btn.primary {
+      background: #2563eb;
+      border-color: #3b82f6;
+      color: #ffffff;
+    }
+
+    .toolbar-btn.primary:hover {
+      background: #1d4ed8;
+    }
+
+    .page-jump-links {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .page-jump-link {
+      padding: 4px 9px;
+      border-radius: 4px;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      transition: all 0.15s ease;
+    }
+
+    .page-jump-link:hover {
+      background: #1f3b2e;
+      color: #86efac;
+    }
+
+    /* PUBLICATION PAGE CONTAINER */
+    .publication-container {
+      max-width: 980px;
+      margin: 30px auto;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    /* INDIVIDUAL PAGE SHEET (A4/Letter replica) */
+    .page-sheet {
+      background: #fbf9f4;
+      border: 1px solid #d9d4c7;
+      border-radius: 4px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.09), 0 2px 6px rgba(0, 0, 0, 0.04);
+      padding: 32px 36px 28px;
+      position: relative;
+      color: #171c19;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* TOP PAGE HEADER */
+    .issue-top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #556059;
+      border-bottom: 2px solid #222c26;
+      padding-bottom: 4px;
+      margin-bottom: 4px;
+    }
+
+    .issue-title-block {
+      margin-bottom: 8px;
+    }
+
+    .masthead-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 38px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      color: #13241b;
+      margin-bottom: 4px;
+    }
+
+    .masthead-subtitle {
+      font-size: 12.5px;
+      font-weight: 500;
+      color: #3f4a43;
+      line-height: 1.4;
+    }
+
+    /* AGENDA BOX (Page 1) */
+    .agenda-container {
+      background-color: #123826;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 12px 14px 10px;
+    }
+
+    .agenda-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .agenda-title {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .agenda-hint {
+      font-size: 11px;
+      font-weight: 600;
+      color: #d1fa95;
+    }
+
+    .agenda-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .agenda-col {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .agenda-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 6px;
+      border-radius: 3px;
+      letter-spacing: 0.4px;
+      text-align: left;
+    }
+
+    .agenda-badge.c1 { background: #0b2216; color: #f1faee; }
+    .agenda-badge.c2 { background: #7a281e; color: #ffe6e2; }
+    .agenda-badge.c3 { background: #164b58; color: #d4f4fb; }
+    .agenda-badge.c4 { background: #2f5223; color: #e5f8db; }
+    .agenda-badge.c5 { background: #173d2a; color: #e0f6e9; }
+
+    .agenda-subtitle {
+      font-size: 10.5px;
+      font-style: italic;
+      color: #9cbca7;
+      margin-bottom: 2px;
+    }
+
+    .agenda-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5px;
+    }
+
+    .agenda-links a {
+      color: #e1ede5;
+      text-decoration: none;
+      font-size: 11px;
+      line-height: 1.25;
+      display: block;
+      transition: color 0.15s ease, transform 0.15s ease;
+    }
+
+    .agenda-links a:hover {
+      color: #a3e635;
+      transform: translateX(2px);
+    }
+
+    .agenda-notice-bar {
+      background: #eef2ec;
+      border: 1px solid #d4ded7;
+      border-radius: 3px;
+      padding: 6px 10px;
+      font-size: 10.5px;
+      color: #29362f;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      line-height: 1.35;
+    }
+
+    /* SECTION HEADER BANNER */
+    .section-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #e7e4d8;
+      border-top: 1.5px solid #28362d;
+      border-bottom: 1px solid #b8b3a4;
+      padding: 3.5px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: #1d2721;
+      margin-top: 2px;
+    }
+
+    .section-banner-title {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 800;
+    }
+
+    .banner-theme-tag {
+      background: #143826;
+      color: #ffffff;
+      padding: 1px 6px;
+      border-radius: 2px;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .banner-theme-tag.risk { background: #82291d; }
+    .banner-theme-tag.money { background: #184856; }
+    .banner-theme-tag.people { background: #2f5223; }
+    .banner-theme-tag.act { background: #1c3d2c; }
+
+    .jump-agenda-btn {
+      color: #3b5042;
+      text-decoration: none;
+      font-size: 10.5px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      transition: color 0.15s ease;
+    }
+
+    .jump-agenda-btn:hover {
+      color: #143826;
+      text-decoration: underline;
+    }
+
+    /* 60-SECOND BRIEF SECTION (Page 1) */
+    .brief-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .brief-col {
+      background: #fdfcf9;
+      border: 1px solid #e2ded4;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .brief-col-header {
+      background: #ebe7dc;
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      color: #27332b;
+      border-bottom: 1px solid #d9d4c7;
+    }
+
+    .brief-col-content {
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .brief-item {
+      display: flex;
+      gap: 9px;
+      font-size: 11.5px;
+      line-height: 1.4;
+      color: #1d2521;
+    }
+
+    .brief-num {
+      font-size: 13px;
+      font-weight: 800;
+      color: #143826;
+      min-width: 14px;
+    }
+
+    .brief-text strong {
+      font-weight: 700;
+      color: #0f1c15;
+    }
+
+    .brief-link {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #1b4f35;
+      text-decoration: none;
+      margin-left: 4px;
+    }
+
+    .brief-link:hover {
+      text-decoration: underline;
+    }
+
+    /* THIS WEEK FOR YOUR ROLE (Page 1) */
+    .roles-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+    }
+
+    .role-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 105px;
+    }
+
+    .role-title {
+      font-size: 11px;
+      font-weight: 800;
+      color: #143826;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 3px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .role-desc {
+      font-size: 11px;
+      line-height: 1.35;
+      color: #252e29;
+      flex-grow: 1;
+    }
+
+    .role-desc strong {
+      color: #0e1712;
+      font-weight: 600;
+    }
+
+    .role-go {
+      text-align: right;
+      font-size: 10px;
+      font-weight: 700;
+      color: #1b4f35;
+      text-decoration: none;
+      margin-top: 6px;
+      display: block;
+    }
+
+    .role-go:hover {
+      text-decoration: underline;
+    }
+
+    /* LEAD STORY SECTION (Page 1) */
+    .lead-story-layout {
+      display: grid;
+      grid-template-columns: 1fr 270px;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .lead-story-main {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .lead-story-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 1.22;
+      color: #122119;
+    }
+
+    .lead-story-body {
+      font-size: 12px;
+      line-height: 1.45;
+      color: #252f2a;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .why-matters-box {
+      background: #f4f0e6;
+      border-left: 3px solid #143826;
+      padding: 6px 10px;
+      font-size: 11.5px;
+      line-height: 1.38;
+      color: #1c2721;
+    }
+
+    .sources-row {
+      font-size: 10px;
+      color: #636f68;
+      font-style: italic;
+      margin-top: 2px;
+    }
+
+    .timeline-box {
+      background: #1b2631;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .timeline-header {
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #cad8e6;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 5px;
+    }
+
+    .timeline-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 8px;
+      font-size: 11px;
+      line-height: 1.35;
+      color: #e5edf5;
+    }
+
+    .timeline-date {
+      color: #f6c87a;
+      font-weight: 700;
+    }
+
+    /* CARTOON OF THE WEEK (Page 1) */
+    .cartoon-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 4px;
+      padding: 12px 16px;
+      align-items: center;
+    }
+
+    .cartoon-illustration-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cartoon-quote-box {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .cartoon-quote-text {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 15.5px;
+      font-style: italic;
+      line-height: 1.35;
+      color: #122119;
+    }
+
+    .cartoon-serious-point {
+      font-size: 11.5px;
+      line-height: 1.4;
+      color: #3b4640;
+    }
+
+    /* NUMBERS OF THE WEEK (Page 1) */
+    .numbers-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+    }
+
+    .stat-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 7px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stat-val {
+      font-size: 17px;
+      font-weight: 800;
+      color: #143826;
+      line-height: 1.15;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 10.5px;
+      line-height: 1.3;
+      color: #27332c;
+      margin-bottom: 4px;
+    }
+
+    .stat-src {
+      font-size: 9.5px;
+      color: #69776f;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    /* PAGE FOOTER */
+    .page-footer-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10.5px;
+      color: #55625a;
+      border-top: 1.5px solid #222c26;
+      padding-top: 5px;
+      margin-top: 6px;
+    }
+
+    .page-footer-left {
+      font-weight: 500;
+    }
+
+    .page-footer-right {
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* PAGE 2 STYLES */
+    .two-col-layout {
+      display: grid;
+      grid-template-columns: 1fr 270px;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .dark-card-box {
+      background: #1b2631;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 11px 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .dark-card-title {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #c9d8e5;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 5px;
+    }
+
+    .dark-card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .dark-card-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      font-size: 11px;
+      line-height: 1.35;
+      color: #dbe4ec;
+    }
+
+    .dark-card-item strong {
+      color: #f7cb78;
+      font-weight: 700;
+    }
+
+    /* SPECTRUM BAR GRAPHIC (Page 2) */
+    .spectrum-wrap {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 4px;
+      padding: 10px 14px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .spectrum-bar-container {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .spectrum-labels-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      font-weight: 800;
+      color: #17241e;
+    }
+
+    .spectrum-line {
+      position: relative;
+      height: 12px;
+      background: linear-gradient(to right, #43a047 0%, #fb8c00 50%, #e53935 100%);
+      border-radius: 6px;
+      margin: 8px 12px 14px;
+    }
+
+    .spectrum-point {
+      position: absolute;
+      top: -4px;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .spectrum-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #111e17;
+      border: 2px solid #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .spectrum-point-name {
+      position: absolute;
+      top: 20px;
+      font-size: 10px;
+      font-weight: 700;
+      white-space: nowrap;
+      color: #14241c;
+    }
+
+    .spectrum-takeaway {
+      font-size: 11px;
+      color: #49554e;
+      font-style: italic;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* QUOTE CARDS (Page 2) */
+    .quotes-grid-5 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    .quote-box {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 9px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .quote-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: #143826;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 2px;
+      letter-spacing: 0.5px;
+    }
+
+    .quote-body {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 11.5px;
+      line-height: 1.35;
+      color: #17211b;
+      font-style: italic;
+    }
+
+    .quote-author {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-style: normal;
+      color: #4f5a53;
+      margin-top: auto;
+      line-height: 1.3;
+    }
+
+    .quote-author strong {
+      color: #122119;
+    }
+
+    /* WORKFORCE & TALENT SECTION (Page 2) */
+    .workforce-grid {
+      display: grid;
+      grid-template-columns: 210px 1fr 1fr;
+      gap: 12px;
+    }
+
+    .stats-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .stat-box-large {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 10px;
+    }
+
+    .stat-box-large .stat-val {
+      font-size: 18px;
+      font-weight: 800;
+      color: #143826;
+      margin-bottom: 2px;
+    }
+
+    .stat-box-large .stat-label {
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #2b352f;
+    }
+
+    .workforce-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .workforce-card-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #143826;
+      line-height: 1.25;
+    }
+
+    .workforce-card-text {
+      font-size: 11px;
+      line-height: 1.38;
+      color: #2b352f;
+    }
+
+    .action-callout-strip {
+      background: #f4f0e6;
+      border-left: 3px solid #143826;
+      padding: 6px 10px;
+      font-size: 11px;
+      line-height: 1.38;
+      color: #1b2620;
+    }
+
+    /* REGIONAL PULSE (Page 2) */
+    .regional-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .regional-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .regional-title {
+      font-size: 10.5px;
+      font-weight: 800;
+      color: #143826;
+      border-bottom: 1px solid #c9c3b4;
+      padding-bottom: 2px;
+      letter-spacing: 0.5px;
+    }
+
+    .regional-text {
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #26322b;
+    }
+
+    /* ONE YEAR AGO & WEEK AHEAD (Page 2 bottom) */
+    .bottom-split-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 12px;
+    }
+
+    .timeline-light-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .timeline-light-item {
+      display: grid;
+      grid-template-columns: 74px 1fr;
+      gap: 8px;
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #222e27;
+      padding-bottom: 5px;
+      border-bottom: 1px dashed #e2ded4;
+    }
+
+    .timeline-light-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .timeline-light-date {
+      font-weight: 700;
+      color: #8b2b1a;
+    }
+
+    /* PAGE 3 STYLES */
+    .cyber-layout {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .chart-card-dark {
+      background: #19242f;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .chart-group-title {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #cedde8;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 3px;
+    }
+
+    .h-bar-row {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-bottom: 4px;
+    }
+
+    .h-bar-label-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10.5px;
+      color: #e0e8ef;
+    }
+
+    .h-bar-track {
+      height: 10px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .h-bar-fill {
+      height: 100%;
+      border-radius: 2px;
+    }
+
+    .fill-orange { background: #ea580c; }
+    .fill-teal { background: #0d9488; }
+    .fill-red { background: #dc2626; }
+    .fill-blue { background: #2563eb; }
+
+    /* SECURITY INCIDENTS SECTION (Page 3) */
+    .incidents-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .incidents-col {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .incidents-subhead {
+      font-size: 11px;
+      font-weight: 800;
+      color: #17241d;
+      letter-spacing: 0.6px;
+      border-bottom: 1px solid #d8d3c5;
+      padding-bottom: 3px;
+    }
+
+    .incident-entry {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      font-size: 11px;
+      line-height: 1.35;
+      color: #27332c;
+    }
+
+    .incident-pill {
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 3px;
+      white-space: nowrap;
+      min-width: 68px;
+      text-align: center;
+    }
+
+    .incident-pill.ai {
+      background: #872a1e;
+      color: #ffffff;
+    }
+
+    .incident-pill.breach {
+      background: #2a3d4f;
+      color: #ffffff;
+    }
+
+    /* GLOBAL RULES TRACKER TABLE (Page 3) */
+    .table-wrap {
+      overflow-x: auto;
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+    }
+
+    .brief-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+      text-align: left;
+    }
+
+    .brief-table th {
+      background: #20352a;
+      color: #f1f7f3;
+      font-weight: 700;
+      padding: 6px 8px;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border-right: 1px solid #365042;
+    }
+
+    .brief-table th:last-child {
+      border-right: none;
+    }
+
+    .brief-table td {
+      padding: 6px 8px;
+      border-bottom: 1px solid #e5e1d6;
+      border-right: 1px solid #e5e1d6;
+      vertical-align: top;
+      line-height: 1.35;
+      color: #1f2a24;
+    }
+
+    .brief-table td:last-child {
+      border-right: none;
+    }
+
+    .brief-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .brief-table tr:nth-child(even) td {
+      background: #f8f6f0;
+    }
+
+    .status-badge {
+      display: inline-block;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+
+    .status-badge.enacted { background: #15803d; color: #ffffff; }
+    .status-badge.inforce { background: #166534; color: #ffffff; }
+    .status-badge.proposed { background: #d97706; color: #ffffff; }
+    .status-badge.priority { background: #475569; color: #ffffff; }
+
+    /* INFRASTRUCTURE & HARDWARE / UNSOLVED PROBLEMS (Page 3) */
+    .three-box-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .info-card-bordered {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .info-card-bordered .stat-val {
+      font-size: 18px;
+      font-weight: 800;
+      color: #143826;
+      margin-bottom: 2px;
+    }
+
+    .unsolved-card-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #143826;
+      border-bottom: 1px solid #ddd7ca;
+      padding-bottom: 2px;
+    }
+
+    .unsolved-card-highlight {
+      font-size: 15px;
+      font-weight: 800;
+      color: #b91c1c;
+      margin: 2px 0;
+    }
+
+    /* PAGE 4 STYLES: INDUSTRY & INVESTMENTS */
+    .industries-grid-8 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .industry-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 9px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-height: 115px;
+    }
+
+    .industry-card.author-card {
+      background: #f6f3ea;
+      border-color: #cbbe9f;
+    }
+
+    .industry-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: #143826;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 2px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .industry-company {
+      font-size: 12px;
+      font-weight: 700;
+      color: #111e17;
+    }
+
+    .industry-desc {
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #27342d;
+      flex-grow: 1;
+    }
+
+    .industry-sowhat {
+      font-size: 10px;
+      font-style: italic;
+      color: #4b5850;
+      background: #ece8dc;
+      padding: 3px 5px;
+      border-radius: 2px;
+      margin-top: 3px;
+    }
+
+    .deals-charts-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 14px;
+    }
+
+    .chart-box-light {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .chart-box-title {
+      font-size: 11px;
+      font-weight: 800;
+      color: #143826;
+      border-bottom: 1px solid #dcd7ca;
+      padding-bottom: 3px;
+      letter-spacing: 0.6px;
+    }
+
+    .chart-row-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 11px;
+    }
+
+    .chart-name {
+      flex: 1;
+      line-height: 1.25;
+      color: #1f2c25;
+    }
+
+    .chart-bar-container-flex {
+      width: 140px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .bar-line-fill {
+      height: 10px;
+      background: #ea580c;
+      border-radius: 2px;
+    }
+
+    .bar-num-val {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #143826;
+      min-width: 28px;
+      text-align: right;
+    }
+
+    /* PAGE 5 STYLES: SURVEYS, EVENTS & ACTION LIST */
+    .surveys-grid-6 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .survey-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .survey-firm {
+      font-size: 11px;
+      font-weight: 800;
+      color: #143826;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .survey-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: #16241d;
+    }
+
+    .survey-meta {
+      font-size: 9.5px;
+      color: #66746c;
+      border-bottom: 1px solid #e0dbce;
+      padding-bottom: 3px;
+      margin-bottom: 4px;
+    }
+
+    .survey-stat-item {
+      display: flex;
+      gap: 7px;
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #27342d;
+      margin-bottom: 3px;
+    }
+
+    .survey-stat-val {
+      font-weight: 800;
+      color: #143826;
+      min-width: 38px;
+    }
+
+    .survey-sowhat {
+      font-size: 10px;
+      font-style: italic;
+      color: #405047;
+      background: #f2eee3;
+      padding: 3px 6px;
+      border-radius: 2px;
+      margin-top: auto;
+    }
+
+    .pattern-banner {
+      background: #eef2ec;
+      border: 1px solid #cbd8d0;
+      border-left: 4px solid #143826;
+      padding: 7px 12px;
+      font-size: 11px;
+      font-style: italic;
+      line-height: 1.4;
+      color: #192720;
+    }
+
+    .events-grid-6 {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+    }
+
+    .event-col {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 7px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .event-region-title {
+      font-size: 10px;
+      font-weight: 800;
+      color: #143826;
+      border-bottom: 1px solid #c9c3b4;
+      padding-bottom: 2px;
+      letter-spacing: 0.5px;
+    }
+
+    .event-entry {
+      font-size: 10px;
+      line-height: 1.35;
+      color: #2b3831;
+      margin-bottom: 3px;
+    }
+
+    /* ACTION LIST (Page 5) */
+    .actions-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .action-col {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .action-col-title {
+      font-size: 11px;
+      font-weight: 800;
+      color: #143826;
+      letter-spacing: 0.6px;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 3px;
+    }
+
+    .action-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .action-item {
+      display: flex;
+      gap: 7px;
+      font-size: 11px;
+      line-height: 1.38;
+      color: #212c26;
+    }
+
+    .action-item-num {
+      font-weight: 800;
+      color: #143826;
+      min-width: 14px;
+    }
+
+    .feedback-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .feedback-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .feedback-card-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #143826;
+    }
+
+    .feedback-card-desc {
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #38453e;
+    }
+
+    .caution-note-box {
+      background: #fbf5e8;
+      border: 1px solid #eed9b3;
+      border-left: 3px solid #d97706;
+      border-radius: 3px;
+      padding: 6px 10px;
+      font-size: 10.5px;
+      line-height: 1.38;
+      color: #4b3815;
+    }
+
+    /* MEDIA QUERIES FOR PRINT */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+
+      .reader-toolbar {
+        display: none !important;
+      }
+
+      .publication-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+      }
+
+      .page-sheet {
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 20mm 15mm;
+        page-break-after: always;
+        break-after: page;
+      }
+    }
+
+    /* RESPONSIVE DESIGN FOR SMALLER SCREENS */
+    @media (max-width: 860px) {
+      .agenda-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .roles-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .lead-story-layout, .two-col-layout, .cyber-layout, .deals-charts-grid, .bottom-split-grid {
+        grid-template-columns: 1fr;
+      }
+      .quotes-grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .workforce-grid {
+        grid-template-columns: 1fr;
+      }
+      .regional-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .numbers-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .industries-grid-8 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .surveys-grid-6 {
+        grid-template-columns: 1fr;
+      }
+      .events-grid-6 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .actions-grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .feedback-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .cartoon-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .page-sheet {
+        padding: 18px 14px;
+      }
+      .agenda-grid {
+        grid-template-columns: 1fr;
+      }
+      .roles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .brief-columns, .incidents-grid, .three-box-grid {
+        grid-template-columns: 1fr;
+      }
+      .numbers-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .quotes-grid-5, .regional-grid-4, .industries-grid-8, .events-grid-6, .feedback-grid-4 {
+        grid-template-columns: 1fr;
+      }
+      .masthead-title {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP TOOLBAR: Quick Reader Controls -->
+  <header class="reader-toolbar" role="banner">
+    <div class="toolbar-left">
+      <a href="aiml-tech-services.html" class="toolbar-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Website
+      </a>
+      <span style="font-weight: 700; color: #94a3b8; font-size: 13px;">The AI Leadership Brief</span>
+      <span style="background: rgba(255,255,255,0.1); padding: 2px 7px; border-radius: 4px; font-size: 11px; color: #a7f3d0;">Issue 02</span>
+    </div>
+
+    <div class="toolbar-center">
+      <div class="page-jump-links">
+        <span style="font-size: 11px; color: #94a3b8; margin-right: 4px;">Jump to:</span>
+        <a href="#page-1" class="page-jump-link">Page 1</a>
+        <a href="#page-2" class="page-jump-link">Page 2</a>
+        <a href="#page-3" class="page-jump-link">Page 3</a>
+        <a href="#page-4" class="page-jump-link">Page 4</a>
+        <a href="#page-5" class="page-jump-link">Page 5</a>
+      </div>
+    </div>
+
+    <div class="toolbar-right">
+      <button onclick="window.print()" class="toolbar-btn primary" title="Print document or save as PDF">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / Save PDF
+      </button>
+    </div>
+  </header>
+
+  <!-- PUBLICATION CONTENT: 5 PAGE SHEETS -->
+  <main class="publication-container">
+
+    <!-- ==================== PAGE 1 OF 5 ==================== -->
+    <article id="page-1" class="page-sheet">
+      <!-- Issue Header -->
+      <div class="issue-top-header">
+        <span>WEEKLY · ISSUE 02</span>
+        <span>29 SEPTEMBER – 4 OCTOBER 2026 · PAGE 1 OF 5</span>
+      </div>
+
+      <!-- Masthead -->
+      <div class="issue-title-block">
+        <h1 class="masthead-title">The AI Leadership Brief</h1>
+        <p class="masthead-subtitle">The week’s AI developments that matter to CXOs and decision-makers · By Jayaraman (Jay) Ganapathi · 5 October 2026</p>
+      </div>
+
+      <!-- Agenda Box -->
+      <nav id="agenda" class="agenda-container" aria-label="Newsletter Agenda">
+        <div class="agenda-header-bar">
+          <div class="agenda-title">
+            <span>AGENDA</span>
+            <span style="font-size: 11px; font-weight: 500; color: #a4c9b1;">5 THEMES · TAP ANY TOPIC TO JUMP</span>
+          </div>
+          <div class="agenda-hint">Short on time? 60-second brief → Your role → Action list</div>
+        </div>
+
+        <div class="agenda-grid">
+          <!-- Col 1 -->
+          <div class="agenda-col">
+            <span class="agenda-badge c1">01 Big shifts</span>
+            <div class="agenda-subtitle">What changed this week?</div>
+            <ul class="agenda-links">
+              <li><a href="#sec-60-sec-brief">p1 60-second brief</a></li>
+              <li><a href="#sec-lead-story">p1 Agent safety · lead</a></li>
+              <li><a href="#sec-numbers-week">p1 Numbers of the week</a></li>
+              <li><a href="#sec-studies-surveys">p5 Studies &amp; surveys</a></li>
+              <li><a href="#sec-ai-agents">p2 AI agents</a></li>
+              <li><a href="#sec-leaders-future">p2 Leaders on AI’s future</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="agenda-col">
+            <span class="agenda-badge c2">02 Risk &amp; rules</span>
+            <div class="agenda-subtitle">What could hurt us?</div>
+            <ul class="agenda-links">
+              <li><a href="#sec-cybersecurity">p3 Cybersecurity</a></li>
+              <li><a href="#sec-security-incidents">p3 Security incidents</a></li>
+              <li><a href="#sec-rules-tracker">p3 Global AI rules</a></li>
+              <li><a href="#sec-unsolved-problems">p3 Unsolved problems</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3 -->
+          <div class="agenda-col">
+            <span class="agenda-badge c3">03 Money &amp; capacity</span>
+            <div class="agenda-subtitle">Where is capital flowing?</div>
+            <ul class="agenda-links">
+              <li><a href="#sec-ai-investments">p4 AI investments</a></li>
+              <li><a href="#sec-infra-hardware">p3 Infrastructure &amp; Hardware</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4 -->
+          <div class="agenda-col">
+            <span class="agenda-badge c4">04 People &amp; industry</span>
+            <div class="agenda-subtitle">Who is affected, where?</div>
+            <ul class="agenda-links">
+              <li><a href="#sec-workforce-talent">p2 Workforce &amp; talent</a></li>
+              <li><a href="#sec-industrial-sectors">p4 AI in Industrial Sectors</a></li>
+              <li><a href="#sec-regional-pulse">p2 Regional pulse</a></li>
+              <li><a href="#sec-events-conferences">p5 Events &amp; conferences</a></li>
+              <li><a href="#sec-week-ahead">p2 Week ahead</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 5 -->
+          <div class="agenda-col">
+            <span class="agenda-badge c5">05 Act &amp; reflect</span>
+            <div class="agenda-subtitle">What should we do?</div>
+            <ul class="agenda-links">
+              <li><a href="#sec-roles-week">p1 Your role this week</a></li>
+              <li><a href="#sec-action-list">p5 Action list</a></li>
+              <li><a href="#sec-one-year-ago">p2 One year ago</a></li>
+              <li><a href="#sec-cartoon-week">p1 Cartoon of the week</a></li>
+              <li><a href="#sec-feedback">p5 Your feedback</a></li>
+              <li><a href="#sec-caution-note">p5 ⚠ Caution note</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Agenda Notice Bar -->
+      <div class="agenda-notice-bar">
+        <span>📥</span>
+        <span><strong>On LinkedIn?</strong> Download the PDF (top-right) for clickable links. ⚠ <strong>Using this data for business?</strong> Verify it independently first.</span>
+      </div>
+
+      <!-- Section: 60-Second Brief -->
+      <section id="sec-60-sec-brief">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag">01 BIG SHIFTS · P1</span>
+            <span>THE 60-SECOND BRIEF · IF YOU READ NOTHING ELSE</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="brief-columns" style="margin-top: 6px;">
+          <!-- KNOW -->
+          <div class="brief-col">
+            <div class="brief-col-header">KNOW</div>
+            <div class="brief-col-content">
+              <div class="brief-item">
+                <span class="brief-num">1</span>
+                <div class="brief-text">
+                  <strong>Agent safety is now a regulatory matter.</strong> The US FTC confirmed an inquiry into OpenAI, Anthropic and METR; leading labs signed a voluntary safety accord. <a href="#sec-lead-story" class="brief-link">Lead ›</a>
+                </div>
+              </div>
+              <div class="brief-item">
+                <span class="brief-num">2</span>
+                <div class="brief-text">
+                  <strong>Your customers’ AI agents are arriving.</strong> OpenAI and Meta launched always-on agents that act for people and firms. <a href="#sec-ai-agents" class="brief-link">Agents ›</a>
+                </div>
+              </div>
+              <div class="brief-item">
+                <span class="brief-num">3</span>
+                <div class="brief-text">
+                  <strong>Open models near frontier exploit skill.</strong> AI agents also leaked 13,000+ internal screenshots. <a href="#sec-cybersecurity" class="brief-link">Cyber ›</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DO THIS QUARTER -->
+          <div class="brief-col">
+            <div class="brief-col-header">DO THIS QUARTER</div>
+            <div class="brief-col-content">
+              <div class="brief-item">
+                <span class="brief-num">1</span>
+                <div class="brief-text">
+                  <strong>Ask for the evidence.</strong> Request an AI incident log and proof behind every AI safety claim you make to customers.
+                </div>
+              </div>
+              <div class="brief-item">
+                <span class="brief-num">2</span>
+                <div class="brief-text">
+                  <strong>Gate the agents.</strong> No AI agent may spend, share or publish without human approval and a log.
+                </div>
+              </div>
+              <div class="brief-item">
+                <span class="brief-num">3</span>
+                <div class="brief-text">
+                  <strong>Secure capacity.</strong> Lock in compute and memory for 2027; shortages may last to 2028. <a href="#sec-infra-hardware" class="brief-link">Money ›</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: This Week For Your Role -->
+      <section id="sec-roles-week">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag act">05 ACT &amp; REFLECT · P1</span>
+            <span>THIS WEEK FOR YOUR ROLE · ONE LINE PER FUNCTION</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="roles-grid" style="margin-top: 6px;">
+          <!-- CEO -->
+          <div class="role-card">
+            <div class="role-title">CEO</div>
+            <div class="role-desc"><strong>Regulators now test AI safety claims.</strong> Make AI risk appetite a board item.</div>
+            <a href="#sec-lead-story" class="role-go">Go ›</a>
+          </div>
+          <!-- CFO -->
+          <div class="role-card">
+            <div class="role-title">CFO</div>
+            <div class="role-desc"><strong>$100B+ in AI financing this week;</strong> memory tight to 2028. Check vendors’ staying power.</div>
+            <a href="#sec-ai-investments" class="role-go">Go ›</a>
+          </div>
+          <!-- CIO / CTO -->
+          <div class="role-card">
+            <div class="role-title">CIO / CTO</div>
+            <div class="role-desc"><strong>New agent platforms launched;</strong> models keep retiring. Track vendor deprecation dates.</div>
+            <a href="#sec-ai-agents" class="role-go">Go ›</a>
+          </div>
+          <!-- CISO -->
+          <div class="role-card">
+            <div class="role-title">CISO</div>
+            <div class="role-desc"><strong>Open models near frontier exploit skill;</strong> agents leaked internal screens. Review permissions.</div>
+            <a href="#sec-cybersecurity" class="role-go">Go ›</a>
+          </div>
+          <!-- CHRO -->
+          <div class="role-card">
+            <div class="role-title">CHRO</div>
+            <div class="role-desc"><strong>Junior hiring is the pressure point;</strong> California set new workplace AI limits.</div>
+            <a href="#sec-workforce-talent" class="role-go">Go ›</a>
+          </div>
+          <!-- COO / CMO -->
+          <div class="role-card">
+            <div class="role-title">COO / CMO</div>
+            <div class="role-desc"><strong>Customers will send agents to your service lines.</strong> Build a scoped, logged channel.</div>
+            <a href="#sec-ai-agents" class="role-go">Go ›</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Lead Story -->
+      <section id="sec-lead-story">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag">01 BIG SHIFTS · P1</span>
+            <span>AI SAFETY &amp; REGULATION · LEAD STORY</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="lead-story-layout" style="margin-top: 6px;">
+          <div class="lead-story-main">
+            <h2 class="lead-story-title">Agent safety leaves the lab and lands on the regulator’s desk</h2>
+            <div class="lead-story-body">
+              <p>On 30 Sept the US Federal Trade Commission confirmed a broad inquiry, opened this summer, into OpenAI, Anthropic and evaluator METR, examining potential consumer risks from AI agents and advanced models. Formal information demands are expected.</p>
+              <p>A day earlier, leading AI labs and chipmaker Nvidia signed a non-binding White House accord on internal controls, outside audits and board oversight. OpenAI has since informed 100+ organisations of unauthorised activity by its AI agents.</p>
+              <div class="why-matters-box">
+                <strong>Why it matters:</strong> AI safety claims increasingly need supporting evidence; expect buyers and regulators to ask for incident logs.
+              </div>
+              <div class="sources-row">Sources: Washington Post · WSJ · Axios · Reuters · CBS</div>
+            </div>
+          </div>
+
+          <!-- Timeline Sidebar -->
+          <div class="timeline-box">
+            <div class="timeline-header">TIMELINE · FOUR DAYS OF OVERSIGHT</div>
+            <ul class="timeline-list">
+              <li class="timeline-item">
+                <span class="timeline-date">29 Sep</span>
+                <span>Voluntary frontier-AI accord signed at the White House</span>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-date">29 Sep</span>
+                <span>Report: open-weight GLM-5.3 nears frontier cyber skill — report</span>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-date">30 Sep</span>
+                <span>FTC confirms inquiry into OpenAI, Anthropic and METR</span>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-date">1 Oct</span>
+                <span>OpenAI informs 100+ organisations of unauthorised agent activity</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Cartoon of the Week -->
+      <section id="sec-cartoon-week">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag act">05 ACT &amp; REFLECT · P1</span>
+            <span>CARTOON OF THE WEEK · ORIGINAL · PUBLIC DOMAIN (CC0), FREE TO REUSE</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="cartoon-row" style="margin-top: 6px;">
+          <div class="cartoon-illustration-wrap">
+            <svg width="340" height="125" viewBox="0 0 340 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Clock on Left -->
+              <circle cx="28" cy="30" r="14" stroke="#122119" stroke-width="1.8" fill="#ffffff"/>
+              <line x1="28" y1="30" x2="28" y2="22" stroke="#122119" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="28" y1="30" x2="35" y2="30" stroke="#122119" stroke-width="1.8" stroke-linecap="round"/>
+              <text x="14" y="55" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#49554e">hour 6</text>
+
+              <!-- Customer Speech Bubble -->
+              <rect x="52" y="10" width="100" height="26" rx="4" fill="#ffffff" stroke="#122119" stroke-width="1.5"/>
+              <path d="M75 36 L70 44 L80 36 Z" fill="#ffffff" stroke="#122119" stroke-width="1.5"/>
+              <rect x="73" y="34" width="8" height="4" fill="#ffffff"/>
+              <text x="58" y="26" font-family="'Inter', sans-serif" font-size="8" font-weight="600" fill="#111827">Is my refund done yet?</text>
+
+              <!-- Customer Character Face -->
+              <circle cx="75" cy="62" r="14" stroke="#122119" stroke-width="1.5" fill="#fcfbf7"/>
+              <circle cx="71" cy="59" r="1.5" fill="#122119"/>
+              <circle cx="79" cy="59" r="1.5" fill="#122119"/>
+              <path d="M71 68 Q75 64 79 68" stroke="#122119" stroke-width="1.5" fill="none"/>
+
+              <!-- Agent Speech Bubble -->
+              <rect x="100" y="44" width="120" height="34" rx="4" fill="#ffffff" stroke="#122119" stroke-width="1.5"/>
+              <text x="106" y="57" font-family="'Inter', sans-serif" font-size="7.5" fill="#111827">Almost! Their agent and I</text>
+              <text x="106" y="68" font-family="'Inter', sans-serif" font-size="7.5" fill="#111827">are on round 214 of</text>
+              <text x="106" y="75" font-family="'Inter', sans-serif" font-size="7" font-weight="700" fill="#143826">“per my last message.”</text>
+
+              <!-- Agent Avatar -->
+              <rect x="145" y="85" width="28" height="24" rx="4" stroke="#122119" stroke-width="1.5" fill="#e2f1e8"/>
+              <circle cx="153" cy="95" r="2" fill="#122119"/>
+              <circle cx="165" cy="95" r="2" fill="#122119"/>
+              <path d="M154 102 Q159 105 164 102" stroke="#122119" stroke-width="1.2" fill="none"/>
+              <line x1="159" y1="85" x2="159" y2="80" stroke="#122119" stroke-width="1.5"/>
+              <circle cx="159" cy="79" r="2" fill="#143826"/>
+
+              <!-- Vendor's Agent Speech Bubble -->
+              <rect x="228" y="20" width="102" height="34" rx="4" fill="#ffffff" stroke="#122119" stroke-width="1.5"/>
+              <path d="M255 54 L250 62 L260 54 Z" fill="#ffffff" stroke="#122119" stroke-width="1.5"/>
+              <rect x="253" y="52" width="8" height="4" fill="#ffffff"/>
+              <text x="233" y="32" font-family="'Inter', sans-serif" font-size="7.5" fill="#111827">Thank you for your</text>
+              <text x="233" y="42" font-family="'Inter', sans-serif" font-size="7.5" fill="#111827">patience. Per my</text>
+              <text x="233" y="50" font-family="'Inter', sans-serif" font-size="7.5" fill="#111827">last message…</text>
+
+              <!-- Vendor's Agent Avatar (Dark Card) -->
+              <rect x="240" y="66" width="30" height="28" rx="4" fill="#1b2631"/>
+              <rect x="245" y="73" width="6" height="3" rx="1" fill="#60a5fa"/>
+              <rect x="259" y="73" width="6" height="3" rx="1" fill="#60a5fa"/>
+              <line x1="248" y1="84" x2="262" y2="84" stroke="#94a3b8" stroke-width="1.2"/>
+              <text x="233" y="103" font-family="'Inter', sans-serif" font-size="6.5" font-weight="600" fill="#49554e">Vendor’s agent</text>
+            </svg>
+          </div>
+
+          <div class="cartoon-quote-box">
+            <blockquote class="cartoon-quote-text">
+              “Customer service, now fully agent-to-agent. Infinitely polite. Never finished.”
+            </blockquote>
+            <p class="cartoon-serious-point">
+              <strong>The serious point:</strong> when agents negotiate with agents, set limits, keep a log and give a human the tie-break.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Numbers of the Week -->
+      <section id="sec-numbers-week">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag">01 BIG SHIFTS · P1</span>
+            <span>NUMBERS OF THE WEEK · THE DATA POINTS WORTH REPEATING IN THE BOARDROOM</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="numbers-grid" style="margin-top: 6px;">
+          <!-- 1 -->
+          <div class="stat-card">
+            <div class="stat-val">69%→2%</div>
+            <div class="stat-label">S&amp;P 500 firms with live AI vs those tracking an AI metric over time.</div>
+            <div class="stat-src">Apollo</div>
+          </div>
+          <!-- 2 -->
+          <div class="stat-card">
+            <div class="stat-val">93% vs 25%</div>
+            <div class="stat-label">report returns when AI is in 3+ functions vs none.</div>
+            <div class="stat-src">PYMNTS</div>
+          </div>
+          <!-- 3 -->
+          <div class="stat-card">
+            <div class="stat-val">56.1%</div>
+            <div class="stat-label">of US firms on Ramp paid for AI in Aug, vs 22.1% per Census.</div>
+            <div class="stat-src">Ramp AI Index</div>
+          </div>
+          <!-- 4 -->
+          <div class="stat-card">
+            <div class="stat-val">$2.7T</div>
+            <div class="stat-label">worldwide AI spending forecast for 2026, up 49.5%.</div>
+            <div class="stat-src">Gartner</div>
+          </div>
+          <!-- 5 -->
+          <div class="stat-card">
+            <div class="stat-val">$10.3T</div>
+            <div class="stat-label">estimated US AI build-out cost, 2025–32.</div>
+            <div class="stat-src">Brookings</div>
+          </div>
+          <!-- 6 -->
+          <div class="stat-card">
+            <div class="stat-val">~$70B</div>
+            <div class="stat-label">OpenAI revenue run-rate, up 70%+ since July (reported).</div>
+            <div class="stat-src">Axios</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 1 Footer -->
+      <footer class="page-footer-bar">
+        <div class="page-footer-left">👍 <strong>Useful?</strong> React on the LinkedIn post and comment your top theme, e.g. “👍 02”.</div>
+        <div class="page-footer-right"><a href="#agenda" style="color: inherit; text-decoration: none;">↑ Agenda</a> · Issue 02 · Page 1 of 5</div>
+      </footer>
+    </article>
+
+
+    <!-- ==================== PAGE 2 OF 5 ==================== -->
+    <article id="page-2" class="page-sheet">
+      <!-- Issue Header -->
+      <div class="issue-top-header">
+        <span>The AI Leadership Brief</span>
+        <span>29 SEP – 4 OCT 2026 · PAGE 2 OF 5</span>
+      </div>
+
+      <!-- Section: AI Agents Products -->
+      <section id="sec-ai-agents">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag">01 BIG SHIFTS · P2</span>
+            <span>AI AGENTS · PRODUCTS</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="two-col-layout" style="margin-top: 6px;">
+          <div>
+            <h2 class="lead-story-title" style="font-size: 20px;">Your customers’ AI agents are coming</h2>
+            <div class="lead-story-body" style="margin-top: 6px;">
+              <p>Two agent products shipped on 29 Sep. OpenAI’s dots run around the clock on their own cloud computer and reach 4,000+ apps, and Meta’s Muse for Small Business handles tasks for US and Canadian firms. On the receiving end, Decagon’s Personal Agent Gateway lets companies detect customers’ agents and limit what they may do.</p>
+              <div class="why-matters-box">
+                <strong>Why it matters:</strong> your service channels will soon serve software too. Decide how to recognise and limit customer agents.
+              </div>
+              <div class="sources-row">Sources: OpenAI · Meta · Decagon</div>
+            </div>
+          </div>
+
+          <div class="dark-card-box">
+            <div class="dark-card-title">AGENTS LAUNCHED THIS WEEK</div>
+            <div class="dark-card-list">
+              <div class="dark-card-item">
+                <strong>dots · OpenAI · 29 Sep</strong>
+                <span>Pro &amp; Business users; approval rules for sensitive acts</span>
+              </div>
+              <div class="dark-card-item">
+                <strong>Muse for Small Business · Meta · 29 Sep</strong>
+                <span>Nothing sends or spends unapproved</span>
+              </div>
+              <div class="dark-card-item">
+                <strong>Personal Agent Gateway · Decagon · 1 Oct</strong>
+                <span>Spots customer agents, enforces their limits</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Leaders on Future of AI -->
+      <section id="sec-leaders-future">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag">01 BIG SHIFTS · P2</span>
+            <span>AI LEADERS ON THE FUTURE OF AI · WHAT THEY SAID, 18 SEP – 4 OCT 2026</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <!-- Spectrum Chart -->
+        <div class="spectrum-wrap" style="margin-top: 6px;">
+          <div class="spectrum-bar-container">
+            <div class="spectrum-labels-top">
+              <span style="color: #2e7d32;">Go faster</span>
+              <span style="color: #c62828;">More guardrails</span>
+            </div>
+            <div class="spectrum-line">
+              <!-- Huang -->
+              <div class="spectrum-point" style="left: 12%;">
+                <div class="spectrum-dot"></div>
+                <span class="spectrum-point-name">Huang</span>
+              </div>
+              <!-- Chen -->
+              <div class="spectrum-point" style="left: 36%;">
+                <div class="spectrum-dot"></div>
+                <span class="spectrum-point-name">Chen</span>
+              </div>
+              <!-- Pichai -->
+              <div class="spectrum-point" style="left: 52%;">
+                <div class="spectrum-dot"></div>
+                <span class="spectrum-point-name">Pichai</span>
+              </div>
+              <!-- Suleyman -->
+              <div class="spectrum-point" style="left: 68%;">
+                <div class="spectrum-dot"></div>
+                <span class="spectrum-point-name">Suleyman</span>
+              </div>
+              <!-- Gates -->
+              <div class="spectrum-point" style="left: 82%;">
+                <div class="spectrum-dot"></div>
+                <span class="spectrum-point-name">Gates</span>
+              </div>
+            </div>
+          </div>
+          <div class="spectrum-takeaway">
+            Takeaway: agents are coming fast; leaders split on who holds the brakes. (Placement is the author’s reading.)
+          </div>
+        </div>
+
+        <!-- 5 Quote Cards -->
+        <div class="quotes-grid-5" style="margin-top: 8px;">
+          <!-- 1 PACE -->
+          <div class="quote-box">
+            <div class="quote-tag">PACE</div>
+            <p class="quote-body">“Go as fast as we can, but not faster than we should.” Calls doom forecasts unscientific.</p>
+            <div class="quote-author"><strong>Jensen Huang</strong>, CEO, Nvidia · 21–23 Sep · Fortune · Axios</div>
+          </div>
+          <!-- 2 CONTROL -->
+          <div class="quote-box">
+            <div class="quote-tag">CONTROL</div>
+            <p class="quote-body">“Nobody wants to create something that we can’t control, and that should be a red line.” Backs external audits of labs.</p>
+            <div class="quote-author"><strong>Mustafa Suleyman</strong>, CEO, Microsoft AI · 24 Sep · TNW / Bloomberg</div>
+          </div>
+          <!-- 3 SAFETY -->
+          <div class="quote-box">
+            <div class="quote-tag">SAFETY</div>
+            <p class="quote-body">OpenAI is “not going to shoot ourselves in the foot” by halting; monitored progress is safer.</p>
+            <div class="quote-author"><strong>Mark Chen</strong>, Chief Research Officer, OpenAI · 30 Sep · MIT TR</div>
+          </div>
+          <!-- 4 GOVERNANCE -->
+          <div class="quote-box">
+            <div class="quote-tag">GOVERNANCE</div>
+            <p class="quote-body">Accord is “a solid basis for moving forward” with “real tangible steps to promote safe development”.</p>
+            <div class="quote-author"><strong>Sundar Pichai</strong>, CEO, Alphabet · 29 Sep · Al Jazeera</div>
+          </div>
+          <!-- 5 REGULATION -->
+          <div class="quote-box">
+            <div class="quote-tag">REGULATION</div>
+            <p class="quote-body">“No one thinks self-regulation is enough.” Sees bio and cyber misuse as live risks.</p>
+            <div class="quote-author"><strong>Bill Gates</strong>, Gates Foundation · 27 Sep (NBC) · Fortune · TNW</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Workforce & Talent -->
+      <section id="sec-workforce-talent">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P2</span>
+            <span>WORKFORCE &amp; TALENT · JOBS, SKILLS AND ROLES</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="workforce-grid" style="margin-top: 6px;">
+          <!-- Left: 3 Stat Cards -->
+          <div class="stats-stack">
+            <div class="stat-box-large">
+              <div class="stat-val">10–15%</div>
+              <div class="stat-label">workforce reduction executives expect from AI by 2030. <strong style="color: #64748b;">BCG</strong></div>
+            </div>
+            <div class="stat-box-large">
+              <div class="stat-val">7%→22%</div>
+              <div class="stat-label">share of roles that are dedicated AI roles, 2026 to 2030 (projected). <strong style="color: #64748b;">BCG</strong></div>
+            </div>
+            <div class="stat-box-large">
+              <div class="stat-val">11M</div>
+              <div class="stat-label">US workers (7%) may need to change occupation by 2035. <strong style="color: #64748b;">McKinsey</strong></div>
+            </div>
+          </div>
+
+          <!-- Middle: Junior Roles + Training -->
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div class="workforce-card">
+              <h3 class="workforce-card-title">The pressure is on junior roles</h3>
+              <p class="workforce-card-text">Employment of 22–25-year-olds in AI-exposed jobs is 19% below peers in ADP payroll data to June, mostly through fewer hires, not lay-offs; experienced workers show no such gap. <em style="color:#64748b;">Stanford</em></p>
+            </div>
+            <div class="workforce-card">
+              <h3 class="workforce-card-title">Training gets cheaper</h3>
+              <p class="workforce-card-text">In a 23 Sep study of 2,383 learners, AI tutors matched expert human tutors on GRE learning gains; one open model did so at about 1/900th of the cost. <em style="color:#64748b;">StudentBench</em></p>
+            </div>
+          </div>
+
+          <!-- Right: Robots + Skills -->
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div class="workforce-card">
+              <h3 class="workforce-card-title">Robots: capable, not yet cheap</h3>
+              <p class="workforce-card-text">Robots can technically do 74% of US physical tasks, but are cost-competitive for only 0.3% today; at historical price declines, parity for 10% of work is ~40 years away. <em style="color:#64748b;">Anthropic</em></p>
+            </div>
+            <div class="workforce-card">
+              <h3 class="workforce-card-title">Skills, not capital, is the constraint</h3>
+              <p class="workforce-card-text">72% of 1,200 CEOs see skills shortages as a bigger barrier than capital within three years; only 16% have clear, real-time visibility of AI ROI. <em style="color:#64748b;">EY</em></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-callout-strip" style="margin-top: 8px;">
+          <strong>For HR leaders:</strong> protect the graduate pipeline, redesign junior roles around AI, fund an automation engineer per function, and audit HR tools against the new California rules (p. 3).
+        </div>
+      </section>
+
+      <!-- Section: Around the World -->
+      <section id="sec-regional-pulse">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P2</span>
+            <span>AROUND THE WORLD · REGIONAL PULSE</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="regional-grid-4" style="margin-top: 6px;">
+          <!-- China -->
+          <div class="regional-card">
+            <div class="regional-title">CHINA</div>
+            <p class="regional-text">China is expanding alternatives to Nvidia: DeepSeek released tools supporting AI workloads on Huawei chips. This could fragment the global AI hardware ecosystem. <em style="color:#64748b;">GitHub</em></p>
+          </div>
+          <!-- Middle East -->
+          <div class="regional-card">
+            <div class="regional-title">MIDDLE EAST</div>
+            <p class="regional-text">Saudi HUMAIN engages EY to build the kingdom’s first AI-native BPO service. <em style="color:#64748b;">EY</em></p>
+          </div>
+          <!-- Europe -->
+          <div class="regional-card">
+            <div class="regional-title">EUROPE</div>
+            <p class="regional-text">A Dutch–Belgian optician chain paused sales of Meta’s camera glasses after hospitals and the Defence Ministry tightened rules: AI wearables face workplace bans. <em style="color:#64748b;">RetailDetail</em></p>
+          </div>
+          <!-- Asia-Pacific -->
+          <div class="regional-card">
+            <div class="regional-title">ASIA-PACIFIC</div>
+            <p class="regional-text">Anthropic asked Australia’s parliament for a narrow, opt-out copyright route for AI training. <em style="color:#64748b;">Guardian</em></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: One Year Ago & Week Ahead -->
+      <section id="sec-one-year-ago">
+        <div class="bottom-split-grid" style="margin-top: 6px;">
+          <!-- One Year Ago -->
+          <div>
+            <div class="section-banner" style="margin-top:0;">
+              <div class="section-banner-title">
+                <span class="banner-theme-tag act">05 · P2</span>
+                <span>ONE YEAR AGO · TOP 3, 2025</span>
+              </div>
+              <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+            </div>
+            <div class="timeline-light-card" style="margin-top: 6px;">
+              <div class="timeline-light-item">
+                <span class="timeline-light-date">29 SEP 25</span>
+                <span>ChatGPT launched Instant Checkout and an open Agentic Commerce Protocol with Stripe. Now: grocers build carts inside ChatGPT (Safeway, p. 4). <em style="color:#64748b;">OpenAI</em></span>
+              </div>
+              <div class="timeline-light-item">
+                <span class="timeline-light-date">29 SEP 25</span>
+                <span>California enacted SB 53, the first US frontier-AI transparency law: safety frameworks, incident reports, whistleblower protection. Now: federal regulators test existing law on agents. <em style="color:#64748b;">CA.gov</em></span>
+              </div>
+              <div class="timeline-light-item">
+                <span class="timeline-light-date">30 SEP 25</span>
+                <span>OpenAI launched Sora 2 with a social video app. Now: the app closed in April 2026; its API shut on 24 Sept. <em style="color:#64748b;">OpenAI · The Decoder</em></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- The Week Ahead -->
+          <div id="sec-week-ahead">
+            <div class="section-banner" style="margin-top:0;">
+              <div class="section-banner-title">
+                <span class="banner-theme-tag people">04 · P2</span>
+                <span>THE WEEK AHEAD</span>
+              </div>
+              <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+            </div>
+            <div class="timeline-light-card" style="margin-top: 6px;">
+              <div class="timeline-light-item">
+                <span class="timeline-light-date">7–8 Oct</span>
+                <span>World Summit AI, Amsterdam. <em style="color:#64748b;">WSAI</em></span>
+              </div>
+              <div class="timeline-light-item">
+                <span class="timeline-light-date">13–15 Oct</span>
+                <span>TechCrunch Disrupt, San Francisco: start-up and investor signals. <em style="color:#64748b;">TechCrunch</em></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 2 Footer -->
+      <footer class="page-footer-bar">
+        <div class="page-footer-left">Next (p. 3): cybersecurity, incidents, global rules, infrastructure, unsolved problems</div>
+        <div class="page-footer-right"><a href="#agenda" style="color: inherit; text-decoration: none;">↑ Agenda</a> · Issue 02 · Page 2 of 5</div>
+      </footer>
+    </article>
+
+
+    <!-- ==================== PAGE 3 OF 5 ==================== -->
+    <article id="page-3" class="page-sheet">
+      <!-- Issue Header -->
+      <div class="issue-top-header">
+        <span>The AI Leadership Brief</span>
+        <span>29 SEP – 4 OCT 2026 · PAGE 3 OF 5</span>
+      </div>
+
+      <!-- Section: Cybersecurity -->
+      <section id="sec-cybersecurity">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag risk">02 RISK &amp; RULES · P3</span>
+            <span>CYBERSECURITY · AI ON BOTH SIDES OF THE ATTACK</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="cyber-layout" style="margin-top: 6px;">
+          <div>
+            <div class="lead-story-body">
+              <p><strong>Open models close the exploit gap:</strong> Anthropic says Z.ai’s open-weight GLM-5.3 built 50 of 410 end-to-end exploits, near its own restricted Mythos Preview; a ~$4,400 modification run cut its refusals to roughly 2–12%. <em style="color:#64748b;">Anthropic</em></p>
+              <p><strong>Ransomware gets an AI assist:</strong> Zscaler’s annual report finds ransomware up more than 275% year on year, ~900 TB stolen and $328M paid; attackers use generative AI to move faster, and 62% of victims were managers or above. <em style="color:#64748b;">Zscaler</em></p>
+              <p><strong>Platforms lock down for agents:</strong> Apple is tightening macOS “Full Disk Access”, requiring explicit consent before apps reach files, mail and messages, citing increasingly autonomous AI agents. <em style="color:#64748b;">TechCrunch</em></p>
+              <div class="why-matters-box">
+                <strong>Why it matters:</strong> open models are approaching frontier-level exploit-development capability. Fund AI-speed patching and review every agent’s permissions.
+              </div>
+            </div>
+          </div>
+
+          <!-- Chart Card -->
+          <div class="chart-card-dark">
+            <div class="chart-group-title">END-TO-END EXPLOITS BUILT · 410 TASKS</div>
+            <div>
+              <div class="h-bar-row">
+                <div class="h-bar-label-line">
+                  <span>Mythos Preview (restricted)</span>
+                  <span style="font-weight:700;">56</span>
+                </div>
+                <div class="h-bar-track">
+                  <div class="h-bar-fill fill-orange" style="width: 65%;"></div>
+                </div>
+              </div>
+              <div class="h-bar-row">
+                <div class="h-bar-label-line">
+                  <span>GLM-5.3 (open-weight)</span>
+                  <span style="font-weight:700;">50</span>
+                </div>
+                <div class="h-bar-track">
+                  <div class="h-bar-fill fill-orange" style="width: 58%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chart-group-title" style="margin-top: 4px;">GLM-5.3 REFUSAL RATE</div>
+            <div>
+              <div class="h-bar-row">
+                <div class="h-bar-label-line">
+                  <span>As released</span>
+                  <span style="font-weight:700;">&gt;90%</span>
+                </div>
+                <div class="h-bar-track">
+                  <div class="h-bar-fill fill-teal" style="width: 92%;"></div>
+                </div>
+              </div>
+              <div class="h-bar-row">
+                <div class="h-bar-label-line">
+                  <span>After ~$4,400 tweak</span>
+                  <span style="font-weight:700;">2–12%</span>
+                </div>
+                <div class="h-bar-track">
+                  <div class="h-bar-fill fill-red" style="width: 10%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="font-size: 9.5px; color: #94a3b8; line-height: 1.3; margin-top: auto;">
+              Source: Anthropic (ExploitBench). Open weights can be modified outside the maker’s safeguards.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Security Incidents -->
+      <section id="sec-security-incidents">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag risk">02 RISK &amp; RULES · P3</span>
+            <span>SECURITY INCIDENTS THIS WEEK · ORGANISATIONS NOT NAMED</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="incidents-grid" style="margin-top: 6px;">
+          <!-- AI-Related -->
+          <div class="incidents-col">
+            <div class="incidents-subhead">AI-RELATED</div>
+            <div class="incident-entry">
+              <span class="incident-pill ai">Data leak</span>
+              <div><strong>Agents published internal screenshots.</strong> Help Net Security reported that AI coding agents pushed 13,000+ internal screenshots, incl. billing records, to public repositories across 300+ organisations. <em style="color:#64748b;">Help Net Security</em></div>
+            </div>
+            <div class="incident-entry">
+              <span class="incident-pill ai">Rogue agents</span>
+              <div><strong>100+ organisations notified.</strong> An AI lab warned them of unauthorised activity by its AI agents after reviewing ~50 PB of data. <em style="color:#64748b;">Reuters</em></div>
+            </div>
+            <div class="incident-entry">
+              <span class="incident-pill ai">Privacy</span>
+              <div><strong>Over-trusted agent.</strong> A consumer AI agent shared a private seller’s home pickup address with a buyer. <em style="color:#64748b;">TechRepublic</em></div>
+            </div>
+          </div>
+
+          <!-- Major Breaches -->
+          <div class="incidents-col">
+            <div class="incidents-subhead">MAJOR BREACHES</div>
+            <div class="incident-entry">
+              <span class="incident-pill breach">Defence · US</span>
+              <div><strong>Personnel database breached:</strong> 2.76M living and 294,000 deceased people, incl. Social Security numbers. <em style="color:#64748b;">Security Affairs</em></div>
+            </div>
+            <div class="incident-entry">
+              <span class="incident-pill breach">Crypto</span>
+              <div><strong>Exchange lost ~$352M from hot and warm wallets;</strong> cause under investigation, users covered by a protection fund. <em style="color:#64748b;">CryptoSlate</em></div>
+            </div>
+            <div class="incident-entry">
+              <span class="incident-pill breach">Technology</span>
+              <div><strong>Phone-maker zero-day used in an “extremely sophisticated” targeted attack;</strong> patch issued. <em style="color:#64748b;">SecurityWeek</em></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-callout-strip" style="margin-top: 8px;">
+          <strong>Why it matters:</strong> AI incidents came from agents doing ordinary jobs with too much access. Limit what agents can publish and reach.
+        </div>
+      </section>
+
+      <!-- Section: Global AI Rules Tracker -->
+      <section id="sec-rules-tracker">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag risk">02 RISK &amp; RULES · P3</span>
+            <span>GLOBAL AI RULES TRACKER · DIRECTIVES, LAWS AND REGULATORY ACTIONS</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="table-wrap" style="margin-top: 6px;">
+          <table class="brief-table">
+            <thead>
+              <tr>
+                <th style="width: 58px;">DATE</th>
+                <th style="width: 95px;">WHERE</th>
+                <th>WHAT WAS ISSUED</th>
+                <th style="width: 80px;">STATUS</th>
+                <th style="width: 240px;">WHAT CXOs SHOULD DO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>30 Sep</strong></td>
+                <td><strong>California, US</strong></td>
+                <td>Three workplace AI and surveillance laws: limits on emotion-recognition and neural-data tools at work (AB 1883); requirements for specified automated employment decisions (SB 947); limits on bathroom surveillance (AB 1331). <em style="color:#64748b;">NatLawReview</em></td>
+                <td><span class="status-badge enacted">Enacted</span></td>
+                <td>Audit HR tech now; from 1 Jul 2027 SB 947 bars discipline or firing based solely on AI.</td>
+              </tr>
+              <tr>
+                <td><strong>1 Oct</strong></td>
+                <td><strong>China</strong></td>
+                <td>Ministry of Public Security cyberspace inspection rules take effect: police online monitoring and remote testing; covers algorithm-recommendation controls. <em style="color:#64748b;">Hunton</em></td>
+                <td><span class="status-badge inforce">In force</span></td>
+                <td>China operations: check logs, security-level protection and algorithm records.</td>
+              </tr>
+              <tr>
+                <td><strong>1 Oct</strong></td>
+                <td><strong>US · Congress</strong></td>
+                <td>Bipartisan AI Agent Accountability Act announced: computer-fraud liability for agent operators and developers. <em style="color:#64748b;">US Senate</em></td>
+                <td><span class="status-badge proposed">Proposed</span></td>
+                <td>Track it: deployers could share liability for agents.</td>
+              </tr>
+              <tr>
+                <td><strong>23 Sep</strong></td>
+                <td><strong>EU · ESMA</strong></td>
+                <td>AI in finance named a 2027 supervisory priority: bias, unclear outputs, vendor concentration. <em style="color:#64748b;">ESMA</em></td>
+                <td><span class="status-badge priority">Priority set</span></td>
+                <td>EU financial firms: build AI inventories and model documentation.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section: Infrastructure & Hardware -->
+      <section id="sec-infra-hardware">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag money">03 MONEY &amp; CAPACITY · P3</span>
+            <span>INFRASTRUCTURE &amp; HARDWARE</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="three-box-grid" style="margin-top: 6px;">
+          <div class="info-card-bordered">
+            <div class="stat-val">$15B+</div>
+            <div style="font-weight:700; font-size:11.5px; color:#143826;">Japan power meets AI</div>
+            <p style="font-size:11px; line-height:1.35; color:#25312a;">JERA and Dell plan a ~400 MW data centre beside a Chiba power plant, phased from 2028. <em style="color:#64748b;">Nikkei</em></p>
+          </div>
+          <div class="info-card-bordered">
+            <div class="stat-val">~100k</div>
+            <div style="font-weight:700; font-size:11.5px; color:#143826;">Tencent rents GPUs abroad</div>
+            <p style="font-size:11px; line-height:1.35; color:#25312a;">Reported deal for GPUs in Oracle’s Southeast Asian data centres. <em style="color:#64748b;">DCD (reported)</em></p>
+          </div>
+          <div class="info-card-bordered">
+            <div class="stat-val">2028</div>
+            <div style="font-weight:700; font-size:11.5px; color:#143826;">Memory stays tight</div>
+            <p style="font-size:11px; line-height:1.35; color:#25312a;">Micron warns AI-driven memory shortages may tighten through 2028; next year largely sold. <em style="color:#64748b;">Tom’s Hardware</em></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Unsolved Problems -->
+      <section id="sec-unsolved-problems">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag risk">02 RISK &amp; RULES · P3</span>
+            <span>UNSOLVED PROBLEMS IN AI · WHAT THIS WEEK’S RESEARCH SAYS IS STILL BROKEN</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="three-box-grid" style="margin-top: 6px;">
+          <!-- 1 -->
+          <div class="info-card-bordered">
+            <div class="unsolved-card-title">Keeping agents contained</div>
+            <div class="unsolved-card-highlight" style="font-size:14px; color:#872a1e;">Sandbox ≠ safe</div>
+            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">Useful agents need network and tool access, so isolation alone cannot contain them, argues cryptographer Matthew Green. <em style="color:#64748b;">Blog</em></p>
+            <div style="font-size:10px; font-weight:600; color:#143826; margin-top:auto;">Implication: layer permissions, monitoring and kill switches.</div>
+          </div>
+          <!-- 2 -->
+          <div class="info-card-bordered">
+            <div class="unsolved-card-title">Honest self-reporting</div>
+            <div class="unsolved-card-highlight">2 of 200</div>
+            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">reports disclosed a planted negative result in the logs; adding “Be honest” raised that to 190. <em style="color:#64748b;">arXiv</em></p>
+            <div style="font-size:10px; font-weight:600; color:#143826; margin-top:auto;">Implication: never accept an agent’s own summary as the audit.</div>
+          </div>
+          <!-- 3 -->
+          <div class="info-card-bordered">
+            <div class="unsolved-card-title">Finding problems unprompted</div>
+            <div class="unsolved-card-highlight">4.7%</div>
+            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">of ~4,100 real bugs fixed by the best agent when not told where to look. <em style="color:#64748b;">SWE-sweep</em></p>
+            <div style="font-size:10px; font-weight:600; color:#143826; margin-top:auto;">Implication: AI fixes well; discovery still needs humans and tests.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 3 Footer -->
+      <footer class="page-footer-bar">
+        <div class="page-footer-left">Next (p. 4): AI in industries and AI investments</div>
+        <div class="page-footer-right"><a href="#agenda" style="color: inherit; text-decoration: none;">↑ Agenda</a> · Issue 02 · Page 3 of 5</div>
+      </footer>
+    </article>
+
+
+    <!-- ==================== PAGE 4 OF 5 ==================== -->
+    <article id="page-4" class="page-sheet">
+      <!-- Issue Header -->
+      <div class="issue-top-header">
+        <span>The AI Leadership Brief</span>
+        <span>29 SEP – 4 OCT 2026 · PAGE 4 OF 5</span>
+      </div>
+
+      <!-- Section: AI in Industrial Sectors -->
+      <section id="sec-industrial-sectors">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P4</span>
+            <span>AI IN INDUSTRIAL SECTORS · WHO PUT AI TO WORK, BY INDUSTRY</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="industries-grid-8" style="margin-top: 6px;">
+          <!-- 1 Banking -->
+          <div class="industry-card">
+            <div class="industry-tag">BANKING</div>
+            <div class="industry-company">Barclays</div>
+            <div class="industry-desc">16,000+ staff have used an AI knowledge assistant (Anthropic’s Claude); ~120,000 markets emails processed daily; Claude Code for half of developers by end-2026. <em style="color:#64748b;">Anthropic</em></div>
+            <div class="industry-sowhat"><strong>So what:</strong> regulated banks are moving past pilots.</div>
+          </div>
+          <!-- 2 Retail -->
+          <div class="industry-card">
+            <div class="industry-tag">RETAIL</div>
+            <div class="industry-company">Albertsons × OpenAI</div>
+            <div class="industry-desc">ChatGPT Enterprise in-house; Safeway in ChatGPT turns a recipe or photo into a cart across 2,200+ stores. <em style="color:#64748b;">OpenAI</em></div>
+            <div class="industry-sowhat"><strong>So what:</strong> the basket is moving into the chat.</div>
+          </div>
+          <!-- 3 Manufacturing -->
+          <div class="industry-card">
+            <div class="industry-tag">MANUFACTURING · ROBOTICS</div>
+            <div class="industry-company">Boston Dynamics</div>
+            <div class="industry-desc">New Atlas hands: 13 degrees of freedom, palm sensors, can carry a 100+ lb mini-fridge; built for simulation training. <em style="color:#64748b;">Boston Dynamics</em></div>
+            <div class="industry-sowhat"><strong>So what:</strong> dexterity is the next factory bottleneck.</div>
+          </div>
+          <!-- 4 Cyber -->
+          <div class="industry-card">
+            <div class="industry-tag">CYBERSECURITY</div>
+            <div class="industry-company">Wiz × Gemini 4 Argon</div>
+            <div class="industry-desc">Found a critical flaw exposing personal data in hospital software used worldwide, one earlier models missed. <em style="color:#64748b;">Google</em></div>
+            <div class="industry-sowhat"><strong>So what:</strong> defenders get frontier models first.</div>
+          </div>
+          <!-- 5 Food Service -->
+          <div class="industry-card">
+            <div class="industry-tag">FOOD SERVICE</div>
+            <div class="industry-company">McDonald’s</div>
+            <div class="industry-desc">A machine-learning system across ~14,000 US restaurants recommends item prices, per Reuters. <em style="color:#64748b;">Reuters</em></div>
+            <div class="industry-sowhat"><strong>So what:</strong> AI pricing invites a fairness test.</div>
+          </div>
+          <!-- 6 Legal -->
+          <div class="industry-card">
+            <div class="industry-tag">LEGAL</div>
+            <div class="industry-company">Thomson Reuters</div>
+            <div class="industry-desc">Launched “Thomson”, an LLM trained only on Thomson Reuters’ own content; can review up to 10,000 documents at once. <em style="color:#64748b;">Thomson Reuters</em></div>
+            <div class="industry-sowhat"><strong>So what:</strong> proprietary content becomes the model.</div>
+          </div>
+          <!-- 7 Healthcare -->
+          <div class="industry-card">
+            <div class="industry-tag">HEALTHCARE</div>
+            <div class="industry-company">Heidi II</div>
+            <div class="industry-desc">Clinical AI platform adds agents, persistent memory and research tools, moving beyond note-taking into admin work. <em style="color:#64748b;">Fierce Healthcare</em></div>
+            <div class="industry-sowhat"><strong>So what:</strong> the back office is next for clinical AI.</div>
+          </div>
+          <!-- 8 Author's Reading -->
+          <div class="industry-card author-card">
+            <div class="industry-tag" style="color: #82291d; border-color: #82291d;">AUTHOR’S READING</div>
+            <div class="industry-company">The pattern</div>
+            <div class="industry-desc">Across banking, retail, legal and healthcare, this week’s moves were production roll-outs, not pilots. The question has shifted from “whether” to “how fast and how governed”.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: AI Investments -->
+      <section id="sec-ai-investments">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag money">03 MONEY &amp; CAPACITY · P4</span>
+            <span>AI INVESTMENTS · WHERE THE MONEY WENT, 29 SEP – 4 OCT 2026</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div style="font-size: 10px; color: #55625a; margin: 4px 0 6px;">
+          Scope: only investments of US$100 million or more reported between 29 Sep and 4 Oct 2026 are listed; valuations excluded.
+        </div>
+
+        <!-- 4 Investment Top Stats -->
+        <div class="regional-grid-4" style="margin-bottom: 10px;">
+          <div class="stat-box-large">
+            <div class="stat-val">$100B+</div>
+            <div class="stat-label">in strategic financing and build-outs announced or reported (5 deals)</div>
+          </div>
+          <div class="stat-box-large">
+            <div class="stat-val">$2.34B</div>
+            <div class="stat-label">raised or agreed in 6 AI start-up rounds of $100M or more</div>
+          </div>
+          <div class="stat-box-large">
+            <div class="stat-val">39%</div>
+            <div class="stat-label">of that went to physical AI and robotics, the largest theme</div>
+          </div>
+          <div class="stat-box-large">
+            <div class="stat-val">2 of 6</div>
+            <div class="stat-label">big rounds include Nvidia as an investor</div>
+          </div>
+        </div>
+
+        <!-- Breakdown Charts Grid -->
+        <div class="deals-charts-grid">
+          <!-- Mega-Deals -->
+          <div class="chart-box-light">
+            <div class="chart-box-title">MEGA-DEALS · FINANCING &amp; BUILD-OUTS (US$ BN)</div>
+            <div style="display: flex; flex-direction: column; gap: 7px; margin-top: 2px;">
+              <div class="chart-row-flex">
+                <div class="chart-name">
+                  <strong>Broadcom → Anthropic</strong><br>
+                  <span style="font-size: 9.5px; color: #556059;">$60B chip financing for Anthropic and others; Blackstone leads junior tranche</span>
+                </div>
+                <div class="chart-bar-container-flex">
+                  <div class="bar-line-fill" style="width: 100px;"></div>
+                  <span class="bar-num-val">60</span>
+                </div>
+              </div>
+
+              <div class="chart-row-flex">
+                <div class="chart-name">
+                  <strong>JERA + Dell, Japan</strong><br>
+                  <span style="font-size: 9.5px; color: #556059;">~400 MW AI data centre in Chiba (see p. 3)</span>
+                </div>
+                <div class="chart-bar-container-flex">
+                  <div class="bar-line-fill" style="width: 25px;"></div>
+                  <span class="bar-num-val">15+</span>
+                </div>
+              </div>
+
+              <div class="chart-row-flex">
+                <div class="chart-name">
+                  <strong>SoftBank → OpenAI</strong><br>
+                  <span style="font-size: 9.5px; color: #556059;">Final tranche; completes a $30B follow-on commitment</span>
+                </div>
+                <div class="chart-bar-container-flex">
+                  <div class="bar-line-fill" style="width: 17px;"></div>
+                  <span class="bar-num-val">10</span>
+                </div>
+              </div>
+
+              <div class="chart-row-flex">
+                <div class="chart-name">
+                  <strong>Nvidia → OpenAI</strong><br>
+                  <span style="font-size: 9.5px; color: #556059;">Final tranche of a $30B pledge (reported)</span>
+                </div>
+                <div class="chart-bar-container-flex">
+                  <div class="bar-line-fill" style="width: 17px;"></div>
+                  <span class="bar-num-val">10</span>
+                </div>
+              </div>
+
+              <div class="chart-row-flex">
+                <div class="chart-name">
+                  <strong>Tencent via Oracle</strong><br>
+                  <span style="font-size: 9.5px; color: #556059;">~100,000 GPUs in Southeast Asia (reported)</span>
+                </div>
+                <div class="chart-bar-container-flex">
+                  <div class="bar-line-fill" style="width: 12px;"></div>
+                  <span class="bar-num-val">~7</span>
+                </div>
+              </div>
+            </div>
+            <div style="font-size: 9.5px; color: #64748b; margin-top: auto;">Sources: Bloomberg · Nikkei · SoftBank · The Information · DCD</div>
+          </div>
+
+          <!-- Rounds by Theme -->
+          <div class="chart-box-light">
+            <div class="chart-box-title">ROUNDS ≥ $100M BY THEME (US$ MILLIONS)</div>
+            <div style="display: flex; flex-direction: column; gap: 7px; margin-top: 2px;">
+              <div class="chart-row-flex">
+                <div class="chart-name"><strong>Physical AI &amp; robotics</strong></div>
+                <div class="chart-bar-container-flex">
+                  <div class="bar-line-fill" style="width: 92px; background: #92400e;"></div>
+                  <span class="bar-num-val">920</span>
+                </div>
+              </div>
+              <div class="chart-row-flex">
+                <div class="chart-name"><strong>Compute &amp; interconnect</strong></div>
+                <div class="chart-bar-container-flex">
+                  <div class="bar-line-fill" style="width: 81px; background: #0f766e;"></div>
+                  <span class="bar-num-val">813</span>
+                </div>
+              </div>
+              <div class="chart-row-flex">
+                <div class="chart-name"><strong>Agents &amp; enterprise apps</strong></div>
+                <div class="chart-bar-container-flex">
+                  <div class="bar-line-fill" style="width: 35px; background: #b91c1c;"></div>
+                  <span class="bar-num-val">350</span>
+                </div>
+              </div>
+              <div class="chart-row-flex">
+                <div class="chart-name"><strong>Security</strong></div>
+                <div class="chart-bar-container-flex">
+                  <div class="bar-line-fill" style="width: 25px; background: #334155;"></div>
+                  <span class="bar-num-val">256</span>
+                </div>
+              </div>
+            </div>
+            <div style="font-size: 9.5px; color: #64748b;">Author’s grouping of the rounds listed below.</div>
+
+            <div class="action-callout-strip" style="margin-top: auto; font-size: 10.5px;">
+              <strong>Why it matters:</strong> money is chasing robots, compute and agents that do real work; Nvidia and Intel are backing the plumbing. Expect tight capacity; pick partners with staying power.
+            </div>
+          </div>
+        </div>
+
+        <!-- Startup Rounds Table -->
+        <div style="margin-top: 10px;">
+          <div style="font-size: 10.5px; font-weight: 800; color: #143826; letter-spacing: 0.6px; margin-bottom: 4px;">START-UP ROUNDS OF $100M OR MORE THIS WEEK</div>
+          <div class="table-wrap">
+            <table class="brief-table">
+              <thead>
+                <tr>
+                  <th style="width: 48px;">DATE</th>
+                  <th style="width: 105px;">COMPANY</th>
+                  <th>WHAT THEY DO</th>
+                  <th style="width: 60px;">AMOUNT</th>
+                  <th style="width: 130px;">TYPE</th>
+                  <th style="width: 130px;">LED / BACKED BY</th>
+                  <th style="width: 85px;">THEME</th>
+                  <th style="width: 85px;">SOURCE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>2 Oct</strong></td>
+                  <td><strong>FieldAI</strong></td>
+                  <td>AI “brains” for field robots in construction, data centres &amp; defence</td>
+                  <td><strong>$700M</strong></td>
+                  <td>Term sheet (reported)</td>
+                  <td>Not stated</td>
+                  <td>Physical AI</td>
+                  <td>Business Insider</td>
+                </tr>
+                <tr>
+                  <td><strong>30 Sep</strong></td>
+                  <td><strong>GMI Cloud</strong></td>
+                  <td>GPU cloud capacity, US, Taiwan &amp; APAC</td>
+                  <td><strong>$668M</strong></td>
+                  <td>Series B ($223M) + $445M debt</td>
+                  <td>ARCHIV; Nvidia joins</td>
+                  <td>Compute</td>
+                  <td>TNW</td>
+                </tr>
+                <tr>
+                  <td><strong>29 Sep</strong></td>
+                  <td><strong>EliseAI</strong></td>
+                  <td>Agents for housing &amp; healthcare operations</td>
+                  <td><strong>$350M</strong></td>
+                  <td>Growth</td>
+                  <td>a16z, Bessemer</td>
+                  <td>Agents &amp; apps</td>
+                  <td>GlobeNewswire</td>
+                </tr>
+                <tr>
+                  <td><strong>1 Oct</strong></td>
+                  <td><strong>Armadin</strong></td>
+                  <td>Autonomous security agents that test attack paths</td>
+                  <td><strong>$255.5M</strong></td>
+                  <td>Series B</td>
+                  <td>a16z, Accel</td>
+                  <td>Security</td>
+                  <td>PR Newswire</td>
+                </tr>
+                <tr>
+                  <td><strong>29 Sep</strong></td>
+                  <td><strong>General Intuition</strong></td>
+                  <td>Action models trained on gameplay video, for robotics</td>
+                  <td><strong>$220M</strong></td>
+                  <td>Growth</td>
+                  <td>Valor, Atreides, Khosla</td>
+                  <td>Physical AI</td>
+                  <td>GamesBeat</td>
+                </tr>
+                <tr>
+                  <td><strong>30 Sep</strong></td>
+                  <td><strong>CScale</strong></td>
+                  <td>Optical interconnect for gigawatt-scale AI</td>
+                  <td><strong>$145M</strong></td>
+                  <td>Series C</td>
+                  <td>Atreides, Valor, Premji; Nvidia, Intel</td>
+                  <td>Compute</td>
+                  <td>DCD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 4 Footer -->
+      <footer class="page-footer-bar">
+        <div class="page-footer-left">Next (p. 5): studies &amp; surveys, events, action list</div>
+        <div class="page-footer-right"><a href="#agenda" style="color: inherit; text-decoration: none;">↑ Agenda</a> · Issue 02 · Page 4 of 5</div>
+      </footer>
+    </article>
+
+
+    <!-- ==================== PAGE 5 OF 5 ==================== -->
+    <article id="page-5" class="page-sheet">
+      <!-- Issue Header -->
+      <div class="issue-top-header">
+        <span>The AI Leadership Brief</span>
+        <span>29 SEP – 4 OCT 2026 · PAGE 5 OF 5</span>
+      </div>
+
+      <!-- Section: Studies & Surveys -->
+      <section id="sec-studies-surveys">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag">01 BIG SHIFTS · P5</span>
+            <span>STUDIES &amp; SURVEYS · BIG 4, MCKINSEY, BCG, GARTNER · 15 SEP – 4 OCT</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="surveys-grid-6" style="margin-top: 6px;">
+          <!-- 1 EY-Parthenon -->
+          <div class="survey-card">
+            <div class="survey-firm">EY-PARTHENON</div>
+            <div class="survey-name">CEO Outlook</div>
+            <div class="survey-meta">1 Oct · 1,200 CEOs, 21 countries</div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">50%</span>
+              <span>of CEOs call AI their biggest productivity driver</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">16%</span>
+              <span>have clear, real-time visibility of AI ROI</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">72%</span>
+              <span>see skills shortages as a bigger barrier than capital</span>
+            </div>
+            <div class="survey-sowhat"><strong>So what:</strong> Productivity is real; proving it in the P&amp;L is the gap. Source ↗</div>
+          </div>
+
+          <!-- 2 BCG -->
+          <div class="survey-card">
+            <div class="survey-firm">BCG</div>
+            <div class="survey-name">Applied AI Index 2026</div>
+            <div class="survey-meta">30 Sep · 1,330 senior executives</div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">7.5%</span>
+              <span>deliver significant AI value (5% in 2025)</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">3.3%</span>
+              <span>of revenue now spent on AI, up from 1.7%</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">5%</span>
+              <span>have full controls in place for agentic AI</span>
+            </div>
+            <div class="survey-sowhat"><strong>So what:</strong> Spend has doubled; governance has not kept up. Source ↗</div>
+          </div>
+
+          <!-- 3 McKinsey -->
+          <div class="survey-card">
+            <div class="survey-firm">MCKINSEY GLOBAL INSTITUTE</div>
+            <div class="survey-name">Workforce in Motion (US)</div>
+            <div class="survey-meta">29 Sep · US labour-market model</div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">11M</span>
+              <span>US workers (7%) may need to change occupation in a decade</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">770k</span>
+              <span>job switches a year, 3–4× the historical pace</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">~70%</span>
+              <span>will need some level of role reinvention</span>
+            </div>
+            <div class="survey-sowhat"><strong>So what:</strong> Plan reskilling at scale, not case by case. Source ↗</div>
+          </div>
+
+          <!-- 4 KPMG -->
+          <div class="survey-card">
+            <div class="survey-firm">KPMG</div>
+            <div class="survey-name">Q3 AI Pulse</div>
+            <div class="survey-meta">24 Sep · 314 US leaders, $1B+ firms</div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">58%</span>
+              <span>report measurable business value from AI</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">62%</span>
+              <span>are building or deploying AI agents (53% last quarter)</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">74%</span>
+              <span>now review costs before approving AI projects</span>
+            </div>
+            <div class="survey-sowhat"><strong>So what:</strong> Agents are mainstream; cost discipline is arriving. Source ↗</div>
+          </div>
+
+          <!-- 5 Gartner (Spending) -->
+          <div class="survey-card">
+            <div class="survey-firm">GARTNER</div>
+            <div class="survey-name">AI spending forecast</div>
+            <div class="survey-meta">16 Sep · worldwide</div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">$2.7T</span>
+              <span>Gartner forecast for worldwide AI spending in 2026, up 49.5%</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">$3.6T</span>
+              <span>forecast for 2027</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">55%</span>
+              <span>of 2026 spend goes to infrastructure ($1.48T)</span>
+            </div>
+            <div class="survey-sowhat"><strong>So what:</strong> Capacity, not software, absorbs most of the money.<br><small>🔗 gartner.com/en/newsroom</small></div>
+          </div>
+
+          <!-- 6 Gartner (Predictions) -->
+          <div class="survey-card">
+            <div class="survey-firm">GARTNER</div>
+            <div class="survey-name">Strategic Predictions 2027+</div>
+            <div class="survey-meta">15 Sep · predictions</div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">60%</span>
+              <span>of AI adopters will have a team mapping AI cost to value by 2029</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">80%</span>
+              <span>of firms with public-facing AI hit by “cost-exhaustion” attacks by 2030</span>
+            </div>
+            <div class="survey-stat-item">
+              <span class="survey-stat-val">10B+</span>
+              <span>autonomous agents by 2030</span>
+            </div>
+            <div class="survey-sowhat"><strong>So what:</strong> Budget for AI FinOps and abuse controls now.<br><small>🔗 gartner.com/en/newsroom</small></div>
+          </div>
+        </div>
+
+        <div class="pattern-banner" style="margin-top: 8px;">
+          <strong>The pattern:</strong> adoption and spending are surging, but few firms can prove returns or govern AI well, and skills, not capital, are now the binding constraint.
+        </div>
+      </section>
+
+      <!-- Section: Events & Conferences -->
+      <section id="sec-events-conferences">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P5</span>
+            <span>EVENTS &amp; CONFERENCES · BY CONTINENT · OCT – DEC 2026</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="events-grid-6" style="margin-top: 6px;">
+          <!-- North America -->
+          <div class="event-col">
+            <div class="event-region-title">NORTH AMERICA</div>
+            <div class="event-entry"><strong>13–15 Oct</strong> TechCrunch Disrupt · San Francisco ↗</div>
+            <div class="event-entry"><strong>9–13 Dec</strong> NeurIPS · Atlanta ↗</div>
+          </div>
+          <!-- South America -->
+          <div class="event-col">
+            <div class="event-region-title">SOUTH AMERICA</div>
+            <div class="event-entry"><strong>Mar 2027</strong> GITEX LATAM · São Paulo, 16–17 Mar ↗</div>
+          </div>
+          <!-- Europe -->
+          <div class="event-col">
+            <div class="event-region-title">EUROPE</div>
+            <div class="event-entry"><strong>7–8 Oct</strong> World Summit AI · Amsterdam ↗</div>
+            <div class="event-entry"><strong>9–12 Nov</strong> Web Summit · Lisbon ↗</div>
+            <div class="event-entry"><strong>9–13 Dec</strong> NeurIPS · Paris ↗</div>
+          </div>
+          <!-- Africa -->
+          <div class="event-col">
+            <div class="event-region-title">AFRICA</div>
+            <div class="event-entry"><strong>28–29 Oct</strong> AI Expo Africa · Johannesburg, Sandton Convention Centre ↗</div>
+          </div>
+          <!-- Asia & Middle East -->
+          <div class="event-col">
+            <div class="event-region-title">ASIA &amp; MIDDLE EAST</div>
+            <div class="event-entry"><strong>26–29 Oct</strong> FII10 · Riyadh ↗</div>
+            <div class="event-entry"><strong>17–19 Nov</strong> Bengaluru Tech Summit · “AI &amp; Beyond” ↗</div>
+            <div class="event-entry"><strong>7–11 Dec</strong> GITEX Global · Expo City Dubai ↗</div>
+          </div>
+          <!-- Oceania -->
+          <div class="event-col">
+            <div class="event-region-title">OCEANIA</div>
+            <div class="event-entry"><strong>6–12 Dec</strong> NeurIPS · Sydney, one of three 2026 sites ↗</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Action List -->
+      <section id="sec-action-list">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag act">05 ACT &amp; REFLECT · P5</span>
+            <span>ACTION LIST · AUTHOR’S VIEW · WHAT TO DO ON MONDAY</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="actions-grid-2" style="margin-top: 6px;">
+          <!-- For Board & CXOs -->
+          <div class="action-col">
+            <div class="action-col-title">FOR THE BOARD &amp; CXOs</div>
+            <ul class="action-list">
+              <li class="action-item">
+                <span class="action-item-num">1.</span>
+                <div><strong>Keep the receipts.</strong> Log agent actions and AI incidents; regulators will ask.</div>
+              </li>
+              <li class="action-item">
+                <span class="action-item-num">2.</span>
+                <div><strong>Gate the agents.</strong> Human approval for spend, sharing and account changes.</div>
+              </li>
+              <li class="action-item">
+                <span class="action-item-num">3.</span>
+                <div><strong>Ready a lane for bots.</strong> Give customers’ agents a scoped, logged channel.</div>
+              </li>
+              <li class="action-item">
+                <span class="action-item-num">4.</span>
+                <div><strong>Book capacity early.</strong> Compute and memory stay tight to 2028.</div>
+              </li>
+              <li class="action-item">
+                <span class="action-item-num">5.</span>
+                <div><strong>Fund AI security testing.</strong> Open models now approach frontier exploit skill.</div>
+              </li>
+              <li class="action-item">
+                <span class="action-item-num">6.</span>
+                <div><strong>Protect the talent pipeline.</strong> Redesign junior roles; don’t just cut them.</div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- For Teams -->
+          <div class="action-col">
+            <div class="action-col-title">FOR YOUR TEAMS · VPs &amp; DIRECTORS</div>
+            <ul class="action-list">
+              <li class="action-item">
+                <span class="action-item-num">1.</span>
+                <div><strong>Track model retirements across every AI vendor;</strong> test successors on your own tasks before cut-off.</div>
+              </li>
+              <li class="action-item">
+                <span class="action-item-num">2.</span>
+                <div><strong>Inventory every agent and its permissions;</strong> turn off “allow always” and public publishing.</div>
+              </li>
+              <li class="action-item">
+                <span class="action-item-num">3.</span>
+                <div><strong>Audit HR tools for emotion recognition and AI-only firing decisions</strong> (California).</div>
+              </li>
+              <li class="action-item">
+                <span class="action-item-num">4.</span>
+                <div><strong>Pilot a customer-agent channel in one service line,</strong> with limits and logs.</div>
+              </li>
+              <li class="action-item">
+                <span class="action-item-num">5.</span>
+                <div><strong>Run an AI red-team test on one critical application</strong> this quarter.</div>
+              </li>
+              <li class="action-item">
+                <span class="action-item-num">6.</span>
+                <div><strong>Name an automation engineer in each function</strong> to wire AI into workflows.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Feedback -->
+      <section id="sec-feedback">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag act">05 ACT &amp; REFLECT · P5</span>
+            <span>YOUR FEEDBACK · HELP SHAPE ISSUE 03 · TAKES 10 SECONDS</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="feedback-grid-4" style="margin-top: 6px;">
+          <div class="feedback-card">
+            <div class="feedback-card-title">👍 1. React</div>
+            <p class="feedback-card-desc">Tap 👍 (or any reaction) on the LinkedIn post if this brief was useful.</p>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-card-title">💬 2. Comment</div>
+            <p class="feedback-card-desc">Comment the theme number that helped most: 01 Big shifts · 02 Risk &amp; rules · 03 Money · 04 People &amp; industry · 05 Act.</p>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-card-title">📊 3. Vote in the poll</div>
+            <p class="feedback-card-desc">Answer the one-question poll in the first comment: which section should grow next week?</p>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-card-title">🔁 4. Pass it on</div>
+            <p class="feedback-card-desc">Share or repost to your leadership team. Want a topic covered? Say so in the comments.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Caution Note -->
+      <section id="sec-caution-note" style="margin-top: 4px;">
+        <div class="caution-note-box">
+          <strong>⚠ CAUTION NOTE:</strong> For general information only, not investment, legal or professional advice. Items come from public sources believed reliable at the time of writing but may change or be corrected; “reported” means one outlet. If you use any data or news from this newsletter for business purposes, verify it independently against the original source first.
+        </div>
+      </section>
+
+      <!-- Page 5 Footer -->
+      <footer class="page-footer-bar">
+        <div class="page-footer-left">
+          Method: news 29 Sep – 4 Oct; leader remarks 18 Sep – 4 Oct; studies &amp; data points may be earlier and are dated; picked for CXO relevance; “reported” = one outlet; valuations excluded.
+        </div>
+        <div class="page-footer-right"><a href="#agenda" style="color: inherit; text-decoration: none;">↑ Agenda</a> · Issue 02 · Page 5 of 5</div>
+      </footer>
+    </article>
+
+  </main>
+
+</body>
+</html>
