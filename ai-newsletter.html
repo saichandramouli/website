@@ -206,6 +206,18 @@
       color: #d1fa95;
     }
 
+    .agenda-hint a {
+      color: #d1fa95;
+      text-decoration: underline;
+      text-decoration-color: rgba(209, 250, 149, 0.4);
+      transition: color 0.15s ease;
+    }
+
+    .agenda-hint a:hover {
+      color: #ffffff;
+      text-decoration-color: #ffffff;
+    }
+
     .agenda-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -327,6 +339,37 @@
     .jump-agenda-btn:hover {
       color: #143826;
       text-decoration: underline;
+    }
+
+    /* GENERAL HYPERLINK STYLES */
+    a.src-link, a.pdf-link {
+      color: #164e63;
+      text-decoration: underline;
+      text-decoration-color: rgba(22, 78, 99, 0.35);
+      text-underline-offset: 2px;
+      font-weight: 500;
+      transition: all 0.15s ease;
+    }
+
+    a.src-link:hover, a.pdf-link:hover {
+      color: #0284c7;
+      text-decoration-color: #0284c7;
+    }
+
+    a.pdf-jump {
+      color: #143826;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      transition: color 0.15s ease, transform 0.15s ease;
+    }
+
+    a.pdf-jump:hover {
+      color: #15803d;
+      text-decoration: underline;
+      transform: translateX(1px);
     }
 
     /* 60-SECOND BRIEF SECTION (Page 1) */
@@ -488,9 +531,8 @@
     }
 
     .sources-row {
-      font-size: 10px;
-      color: #636f68;
-      font-style: italic;
+      font-size: 10.5px;
+      color: #55625a;
       margin-top: 2px;
     }
 
@@ -607,7 +649,7 @@
 
     .stat-src {
       font-size: 9.5px;
-      color: #69776f;
+      color: #164e63;
       font-weight: 600;
       text-align: right;
     }
@@ -676,9 +718,16 @@
       color: #dbe4ec;
     }
 
-    .dark-card-item strong {
+    .dark-card-item a {
       color: #f7cb78;
       font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: rgba(247, 203, 120, 0.4);
+    }
+
+    .dark-card-item a:hover {
+      color: #ffffff;
+      text-decoration-color: #ffffff;
     }
 
     /* SPECTRUM BAR GRAPHIC (Page 2) */
@@ -1611,7 +1660,7 @@
             <span>AGENDA</span>
             <span style="font-size: 11px; font-weight: 500; color: #a4c9b1;">5 THEMES · TAP ANY TOPIC TO JUMP</span>
           </div>
-          <div class="agenda-hint">Short on time? 60-second brief → Your role → Action list</div>
+          <div class="agenda-hint">Short on time? <a href="#sec-60-sec-brief">60-second brief</a> → <a href="#sec-roles-week">Your role</a> → <a href="#sec-action-list">Action list</a></div>
         </div>
 
         <div class="agenda-grid">
@@ -1818,7 +1867,14 @@
               <div class="why-matters-box">
                 <strong>Why it matters:</strong> AI safety claims increasingly need supporting evidence; expect buyers and regulators to ask for incident logs.
               </div>
-              <div class="sources-row">Sources: Washington Post · WSJ · Axios · Reuters · CBS</div>
+              <div class="sources-row">
+                Sources: 
+                <a href="https://www.washingtonpost.com/technology/2026/09/30/ftc-launches-broad-investigation-into-anthropic-openai/" target="_blank" rel="noopener noreferrer" class="src-link">Washington Post</a> · 
+                <a href="https://www.wsj.com/tech/ai/ftc-opens-investigation-of-anthropic-and-openai-a317b617" target="_blank" rel="noopener noreferrer" class="src-link">WSJ</a> · 
+                <a href="https://www.axios.com/2026/09/30/ai-constitution-trump-white-house" target="_blank" rel="noopener noreferrer" class="src-link">Axios</a> · 
+                <a href="https://www.reuters.com/legal/litigation/openai-alerts-more-than-100-groups-about-rogue-ai-agent-activity-2026-10-01/" target="_blank" rel="noopener noreferrer" class="src-link">Reuters</a> · 
+                <a href="https://cbsnews.com/news/ftc-investigation-openai-anthropic-ai-safety" target="_blank" rel="noopener noreferrer" class="src-link">CBS</a>
+              </div>
             </div>
           </div>
 
@@ -1832,7 +1888,7 @@
               </li>
               <li class="timeline-item">
                 <span class="timeline-date">29 Sep</span>
-                <span>Report: open-weight GLM-5.3 nears frontier cyber skill — report</span>
+                <span>Report: open-weight GLM-5.3 nears frontier cyber skill — <a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: underline;">report</a></span>
               </li>
               <li class="timeline-item">
                 <span class="timeline-date">30 Sep</span>
@@ -1935,37 +1991,37 @@
           <div class="stat-card">
             <div class="stat-val">69%→2%</div>
             <div class="stat-label">S&amp;P 500 firms with live AI vs those tracking an AI metric over time.</div>
-            <div class="stat-src">Apollo</div>
+            <div class="stat-src"><a href="https://www.apollo.com/institutional/insights-news/insights/daily-spark/from-who-is-deploying-ai-to-who-can-prove-the-roi" target="_blank" rel="noopener noreferrer" class="src-link">Apollo</a></div>
           </div>
           <!-- 2 -->
           <div class="stat-card">
             <div class="stat-val">93% vs 25%</div>
             <div class="stat-label">report returns when AI is in 3+ functions vs none.</div>
-            <div class="stat-src">PYMNTS</div>
+            <div class="stat-src"><a href="https://www.pymnts.com/news/artificial-intelligence/2026/enterprises-see-bigger-ai-payoffs-when-it-becomes-daily-practice/" target="_blank" rel="noopener noreferrer" class="src-link">PYMNTS</a></div>
           </div>
           <!-- 3 -->
           <div class="stat-card">
             <div class="stat-val">56.1%</div>
             <div class="stat-label">of US firms on Ramp paid for AI in Aug, vs 22.1% per Census.</div>
-            <div class="stat-src">Ramp AI Index</div>
+            <div class="stat-src"><a href="https://ramp.com/data/ai-index" target="_blank" rel="noopener noreferrer" class="src-link">Ramp AI Index</a></div>
           </div>
           <!-- 4 -->
           <div class="stat-card">
             <div class="stat-val">$2.7T</div>
             <div class="stat-label">worldwide AI spending forecast for 2026, up 49.5%.</div>
-            <div class="stat-src">Gartner</div>
+            <div class="stat-src"><a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-16-gartner-forecasts-worldwide-ai-spending-to-grow-49-point-5-percent-in-2026" target="_blank" rel="noopener noreferrer" class="src-link">Gartner</a></div>
           </div>
           <!-- 5 -->
           <div class="stat-card">
             <div class="stat-val">$10.3T</div>
             <div class="stat-label">estimated US AI build-out cost, 2025–32.</div>
-            <div class="stat-src">Brookings</div>
+            <div class="stat-src"><a href="https://www.brookings.edu/articles/financing-the-ai-buildout/" target="_blank" rel="noopener noreferrer" class="src-link">Brookings</a></div>
           </div>
           <!-- 6 -->
           <div class="stat-card">
             <div class="stat-val">~$70B</div>
             <div class="stat-label">OpenAI revenue run-rate, up 70%+ since July (reported).</div>
-            <div class="stat-src">Axios</div>
+            <div class="stat-src"><a href="https://www.axios.com/2026/09/29/scoop-openais-annual-recurring-revenue-nears-70b" target="_blank" rel="noopener noreferrer" class="src-link">Axios</a></div>
           </div>
         </div>
       </section>
@@ -1973,7 +2029,7 @@
       <!-- Page 1 Footer -->
       <footer class="page-footer-bar">
         <div class="page-footer-left">👍 <strong>Useful?</strong> React on the LinkedIn post and comment your top theme, e.g. “👍 02”.</div>
-        <div class="page-footer-right"><a href="#agenda" style="color: inherit; text-decoration: none;">↑ Agenda</a> · Issue 02 · Page 1 of 5</div>
+        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 02 · Page 1 of 5</div>
       </footer>
     </article>
 
@@ -2004,7 +2060,12 @@
               <div class="why-matters-box">
                 <strong>Why it matters:</strong> your service channels will soon serve software too. Decide how to recognise and limit customer agents.
               </div>
-              <div class="sources-row">Sources: OpenAI · Meta · Decagon</div>
+              <div class="sources-row">
+                Sources: 
+                <a href="https://openai.com/index/introducing-dots/" target="_blank" rel="noopener noreferrer" class="src-link">OpenAI</a> · 
+                <a href="https://about.fb.com/news/2026/09/introducing-muse-small-business/" target="_blank" rel="noopener noreferrer" class="src-link">Meta</a> · 
+                <a href="https://decagon.ai/blog/personal-agents-are-here" target="_blank" rel="noopener noreferrer" class="src-link">Decagon</a>
+              </div>
             </div>
           </div>
 
@@ -2012,15 +2073,15 @@
             <div class="dark-card-title">AGENTS LAUNCHED THIS WEEK</div>
             <div class="dark-card-list">
               <div class="dark-card-item">
-                <strong>dots · OpenAI · 29 Sep</strong>
+                <a href="https://openai.com/index/introducing-dots/" target="_blank" rel="noopener noreferrer">dots · OpenAI · 29 Sep</a>
                 <span>Pro &amp; Business users; approval rules for sensitive acts</span>
               </div>
               <div class="dark-card-item">
-                <strong>Muse for Small Business · Meta · 29 Sep</strong>
+                <a href="https://about.fb.com/news/2026/09/introducing-muse-small-business/" target="_blank" rel="noopener noreferrer">Muse for Small Business · Meta · 29 Sep</a>
                 <span>Nothing sends or spends unapproved</span>
               </div>
               <div class="dark-card-item">
-                <strong>Personal Agent Gateway · Decagon · 1 Oct</strong>
+                <a href="https://decagon.ai/blog/personal-agents-are-here" target="_blank" rel="noopener noreferrer">Personal Agent Gateway · Decagon · 1 Oct</a>
                 <span>Spots customer agents, enforces their limits</span>
               </div>
             </div>
@@ -2084,31 +2145,48 @@
           <div class="quote-box">
             <div class="quote-tag">PACE</div>
             <p class="quote-body">“Go as fast as we can, but not faster than we should.” Calls doom forecasts unscientific.</p>
-            <div class="quote-author"><strong>Jensen Huang</strong>, CEO, Nvidia · 21–23 Sep · Fortune · Axios</div>
+            <div class="quote-author">
+              <strong>Jensen Huang</strong>, CEO, Nvidia · 21–23 Sep · 
+              <a href="https://fortune.com/2026/09/21/jensen-huang-ai-leaders-doomsday-narratives/" target="_blank" rel="noopener noreferrer" class="src-link">Fortune</a> · 
+              <a href="https://www.axios.com/2026/09/23/nvidia-jensen-huang-ai-doom-predictions" target="_blank" rel="noopener noreferrer" class="src-link">Axios</a>
+            </div>
           </div>
           <!-- 2 CONTROL -->
           <div class="quote-box">
             <div class="quote-tag">CONTROL</div>
             <p class="quote-body">“Nobody wants to create something that we can’t control, and that should be a red line.” Backs external audits of labs.</p>
-            <div class="quote-author"><strong>Mustafa Suleyman</strong>, CEO, Microsoft AI · 24 Sep · TNW / Bloomberg</div>
+            <div class="quote-author">
+              <strong>Mustafa Suleyman</strong>, CEO, Microsoft AI · 24 Sep · 
+              <a href="https://thenextweb.com/news/microsoft-suleyman-red-line-ai-control-bloomberg" target="_blank" rel="noopener noreferrer" class="src-link">TNW / Bloomberg</a>
+            </div>
           </div>
           <!-- 3 SAFETY -->
           <div class="quote-box">
             <div class="quote-tag">SAFETY</div>
             <p class="quote-body">OpenAI is “not going to shoot ourselves in the foot” by halting; monitored progress is safer.</p>
-            <div class="quote-author"><strong>Mark Chen</strong>, Chief Research Officer, OpenAI · 30 Sep · MIT TR</div>
+            <div class="quote-author">
+              <strong>Mark Chen</strong>, Chief Research Officer, OpenAI · 30 Sep · 
+              <a href="https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/" target="_blank" rel="noopener noreferrer" class="src-link">MIT TR</a>
+            </div>
           </div>
           <!-- 4 GOVERNANCE -->
           <div class="quote-box">
             <div class="quote-tag">GOVERNANCE</div>
             <p class="quote-body">Accord is “a solid basis for moving forward” with “real tangible steps to promote safe development”.</p>
-            <div class="quote-author"><strong>Sundar Pichai</strong>, CEO, Alphabet · 29 Sep · Al Jazeera</div>
+            <div class="quote-author">
+              <strong>Sundar Pichai</strong>, CEO, Alphabet · 29 Sep · 
+              <a href="https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work" target="_blank" rel="noopener noreferrer" class="src-link">Al Jazeera</a>
+            </div>
           </div>
           <!-- 5 REGULATION -->
           <div class="quote-box">
             <div class="quote-tag">REGULATION</div>
             <p class="quote-body">“No one thinks self-regulation is enough.” Sees bio and cyber misuse as live risks.</p>
-            <div class="quote-author"><strong>Bill Gates</strong>, Gates Foundation · 27 Sep (NBC) · Fortune · TNW</div>
+            <div class="quote-author">
+              <strong>Bill Gates</strong>, Gates Foundation · 27 Sep (NBC) · 
+              <a href="https://fortune.com/2026/09/30/bill-gates-ai-dangers-bioweapons/" target="_blank" rel="noopener noreferrer" class="src-link">Fortune</a> · 
+              <a href="https://thenextweb.com/news/bill-gates-ezra-klein-ai-bio-cyber-thresholds" target="_blank" rel="noopener noreferrer" class="src-link">TNW</a>
+            </div>
           </div>
         </div>
       </section>
@@ -2128,15 +2206,15 @@
           <div class="stats-stack">
             <div class="stat-box-large">
               <div class="stat-val">10–15%</div>
-              <div class="stat-label">workforce reduction executives expect from AI by 2030. <strong style="color: #64748b;">BCG</strong></div>
+              <div class="stat-label">workforce reduction executives expect from AI by 2030. <a href="https://www.bcg.com/press/30september2026-ai-starting-to-pay-off-companies-generate-value" target="_blank" rel="noopener noreferrer" class="src-link">BCG</a></div>
             </div>
             <div class="stat-box-large">
               <div class="stat-val">7%→22%</div>
-              <div class="stat-label">share of roles that are dedicated AI roles, 2026 to 2030 (projected). <strong style="color: #64748b;">BCG</strong></div>
+              <div class="stat-label">share of roles that are dedicated AI roles, 2026 to 2030 (projected). <a href="https://www.bcg.com/press/30september2026-ai-starting-to-pay-off-companies-generate-value" target="_blank" rel="noopener noreferrer" class="src-link">BCG</a></div>
             </div>
             <div class="stat-box-large">
               <div class="stat-val">11M</div>
-              <div class="stat-label">US workers (7%) may need to change occupation by 2035. <strong style="color: #64748b;">McKinsey</strong></div>
+              <div class="stat-label">US workers (7%) may need to change occupation by 2035. <a href="https://www.mckinsey.com/mgi/our-research/workforce-in-motion-skills-and-pathways-to-future-jobs-in-the-united-states" target="_blank" rel="noopener noreferrer" class="src-link">McKinsey</a></div>
             </div>
           </div>
 
@@ -2144,11 +2222,11 @@
           <div style="display: flex; flex-direction: column; gap: 8px;">
             <div class="workforce-card">
               <h3 class="workforce-card-title">The pressure is on junior roles</h3>
-              <p class="workforce-card-text">Employment of 22–25-year-olds in AI-exposed jobs is 19% below peers in ADP payroll data to June, mostly through fewer hires, not lay-offs; experienced workers show no such gap. <em style="color:#64748b;">Stanford</em></p>
+              <p class="workforce-card-text">Employment of 22–25-year-olds in AI-exposed jobs is 19% below peers in ADP payroll data to June, mostly through fewer hires, not lay-offs; experienced workers show no such gap. <a href="https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf" target="_blank" rel="noopener noreferrer" class="src-link">Stanford</a></p>
             </div>
             <div class="workforce-card">
               <h3 class="workforce-card-title">Training gets cheaper</h3>
-              <p class="workforce-card-text">In a 23 Sep study of 2,383 learners, AI tutors matched expert human tutors on GRE learning gains; one open model did so at about 1/900th of the cost. <em style="color:#64748b;">StudentBench</em></p>
+              <p class="workforce-card-text">In a 23 Sep study of 2,383 learners, AI tutors matched expert human tutors on GRE learning gains; one open model did so at about 1/900th of the cost. <a href="https://arxiv.org/abs/2609.28470" target="_blank" rel="noopener noreferrer" class="src-link">StudentBench</a></p>
             </div>
           </div>
 
@@ -2156,17 +2234,17 @@
           <div style="display: flex; flex-direction: column; gap: 8px;">
             <div class="workforce-card">
               <h3 class="workforce-card-title">Robots: capable, not yet cheap</h3>
-              <p class="workforce-card-text">Robots can technically do 74% of US physical tasks, but are cost-competitive for only 0.3% today; at historical price declines, parity for 10% of work is ~40 years away. <em style="color:#64748b;">Anthropic</em></p>
+              <p class="workforce-card-text">Robots can technically do 74% of US physical tasks, but are cost-competitive for only 0.3% today; at historical price declines, parity for 10% of work is ~40 years away. <a href="https://www.anthropic.com/research/what-work-can-robots-do" target="_blank" rel="noopener noreferrer" class="src-link">Anthropic</a></p>
             </div>
             <div class="workforce-card">
               <h3 class="workforce-card-title">Skills, not capital, is the constraint</h3>
-              <p class="workforce-card-text">72% of 1,200 CEOs see skills shortages as a bigger barrier than capital within three years; only 16% have clear, real-time visibility of AI ROI. <em style="color:#64748b;">EY</em></p>
+              <p class="workforce-card-text">72% of 1,200 CEOs see skills shortages as a bigger barrier than capital within three years; only 16% have clear, real-time visibility of AI ROI. <a href="https://ey.com/en_gl/newsroom/2026/10/ai-drives-productivity-but-ceos-struggle-to-turn-gains-into-grow" target="_blank" rel="noopener noreferrer" class="src-link">EY</a></p>
             </div>
           </div>
         </div>
 
         <div class="action-callout-strip" style="margin-top: 8px;">
-          <strong>For HR leaders:</strong> protect the graduate pipeline, redesign junior roles around AI, fund an automation engineer per function, and audit HR tools against the new California rules (p. 3).
+          <strong>For HR leaders:</strong> protect the graduate pipeline, redesign junior roles around AI, fund an automation engineer per function, and audit HR tools against the new California rules (<a href="#sec-rules-tracker" class="pdf-jump">p. 3</a>).
         </div>
       </section>
 
@@ -2184,22 +2262,22 @@
           <!-- China -->
           <div class="regional-card">
             <div class="regional-title">CHINA</div>
-            <p class="regional-text">China is expanding alternatives to Nvidia: DeepSeek released tools supporting AI workloads on Huawei chips. This could fragment the global AI hardware ecosystem. <em style="color:#64748b;">GitHub</em></p>
+            <p class="regional-text">China is expanding alternatives to Nvidia: DeepSeek released tools supporting AI workloads on Huawei chips. This could fragment the global AI hardware ecosystem. <a href="https://github.com/deepseek-ai/DeepGEMM-Ascend" target="_blank" rel="noopener noreferrer" class="src-link">GitHub</a></p>
           </div>
           <!-- Middle East -->
           <div class="regional-card">
             <div class="regional-title">MIDDLE EAST</div>
-            <p class="regional-text">Saudi HUMAIN engages EY to build the kingdom’s first AI-native BPO service. <em style="color:#64748b;">EY</em></p>
+            <p class="regional-text">Saudi HUMAIN engages EY to build the kingdom’s first AI-native BPO service. <a href="https://www.ey.com/en_bh/newsroom/2026/09/humain-engages-ey-mena-to-develop-saudi-arabia-s-first-ai-native-business-process-outsourcing-service" target="_blank" rel="noopener noreferrer" class="src-link">EY</a></p>
           </div>
           <!-- Europe -->
           <div class="regional-card">
             <div class="regional-title">EUROPE</div>
-            <p class="regional-text">A Dutch–Belgian optician chain paused sales of Meta’s camera glasses after hospitals and the Defence Ministry tightened rules: AI wearables face workplace bans. <em style="color:#64748b;">RetailDetail</em></p>
+            <p class="regional-text">A Dutch–Belgian optician chain paused sales of Meta’s camera glasses after hospitals and the Defence Ministry tightened rules: AI wearables face workplace bans. <a href="https://www.retaildetail.eu/news/general/privacy-controversy-surrounding-meta-glasses-forces-hans-anders-to-halt-sales/" target="_blank" rel="noopener noreferrer" class="src-link">RetailDetail</a></p>
           </div>
           <!-- Asia-Pacific -->
           <div class="regional-card">
             <div class="regional-title">ASIA-PACIFIC</div>
-            <p class="regional-text">Anthropic asked Australia’s parliament for a narrow, opt-out copyright route for AI training. <em style="color:#64748b;">Guardian</em></p>
+            <p class="regional-text">Anthropic asked Australia’s parliament for a narrow, opt-out copyright route for AI training. <a href="https://www.theguardian.com/technology/2026/oct/02/anthropic-ai-opt-out-australia-copyright-abc-cannibalisation-of-news" target="_blank" rel="noopener noreferrer" class="src-link">Guardian</a></p>
           </div>
         </div>
       </section>
@@ -2219,15 +2297,15 @@
             <div class="timeline-light-card" style="margin-top: 6px;">
               <div class="timeline-light-item">
                 <span class="timeline-light-date">29 SEP 25</span>
-                <span>ChatGPT launched Instant Checkout and an open Agentic Commerce Protocol with Stripe. Now: grocers build carts inside ChatGPT (Safeway, p. 4). <em style="color:#64748b;">OpenAI</em></span>
+                <span>ChatGPT launched Instant Checkout and an open Agentic Commerce Protocol with Stripe. Now: grocers build carts inside ChatGPT (<a href="#sec-industrial-sectors" class="pdf-jump">Safeway, p. 4</a>). <a href="https://openai.com/index/buy-it-in-chatgpt/" target="_blank" rel="noopener noreferrer" class="src-link">OpenAI</a></span>
               </div>
               <div class="timeline-light-item">
                 <span class="timeline-light-date">29 SEP 25</span>
-                <span>California enacted SB 53, the first US frontier-AI transparency law: safety frameworks, incident reports, whistleblower protection. Now: federal regulators test existing law on agents. <em style="color:#64748b;">CA.gov</em></span>
+                <span>California enacted SB 53, the first US frontier-AI transparency law: safety frameworks, incident reports, whistleblower protection. Now: federal regulators test existing law on agents. <a href="https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/" target="_blank" rel="noopener noreferrer" class="src-link">CA.gov</a></span>
               </div>
               <div class="timeline-light-item">
                 <span class="timeline-light-date">30 SEP 25</span>
-                <span>OpenAI launched Sora 2 with a social video app. Now: the app closed in April 2026; its API shut on 24 Sept. <em style="color:#64748b;">OpenAI · The Decoder</em></span>
+                <span>OpenAI launched Sora 2 with a social video app. Now: the app closed in April 2026; its API shut on 24 Sept. <a href="https://openai.com/index/sora-2/" target="_blank" rel="noopener noreferrer" class="src-link">OpenAI</a> · <a href="https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/" target="_blank" rel="noopener noreferrer" class="src-link">The Decoder</a></span>
               </div>
             </div>
           </div>
@@ -2244,11 +2322,11 @@
             <div class="timeline-light-card" style="margin-top: 6px;">
               <div class="timeline-light-item">
                 <span class="timeline-light-date">7–8 Oct</span>
-                <span>World Summit AI, Amsterdam. <em style="color:#64748b;">WSAI</em></span>
+                <span>World Summit AI, Amsterdam. <a href="https://worldsummit.ai/" target="_blank" rel="noopener noreferrer" class="src-link">WSAI</a></span>
               </div>
               <div class="timeline-light-item">
                 <span class="timeline-light-date">13–15 Oct</span>
-                <span>TechCrunch Disrupt, San Francisco: start-up and investor signals. <em style="color:#64748b;">TechCrunch</em></span>
+                <span>TechCrunch Disrupt, San Francisco: start-up and investor signals. <a href="https://techcrunch.com/2026/10/01/the-founders-guide-to-techcrunch-disrupt-2026-everything-you-need-to-know/" target="_blank" rel="noopener noreferrer" class="src-link">TechCrunch</a></span>
               </div>
             </div>
           </div>
@@ -2257,8 +2335,8 @@
 
       <!-- Page 2 Footer -->
       <footer class="page-footer-bar">
-        <div class="page-footer-left">Next (p. 3): cybersecurity, incidents, global rules, infrastructure, unsolved problems</div>
-        <div class="page-footer-right"><a href="#agenda" style="color: inherit; text-decoration: none;">↑ Agenda</a> · Issue 02 · Page 2 of 5</div>
+        <div class="page-footer-left"><a href="#page-3" class="pdf-jump">Next (p. 3): cybersecurity, incidents, global rules, infrastructure, unsolved problems</a></div>
+        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 02 · Page 2 of 5</div>
       </footer>
     </article>
 
@@ -2284,9 +2362,9 @@
         <div class="cyber-layout" style="margin-top: 6px;">
           <div>
             <div class="lead-story-body">
-              <p><strong>Open models close the exploit gap:</strong> Anthropic says Z.ai’s open-weight GLM-5.3 built 50 of 410 end-to-end exploits, near its own restricted Mythos Preview; a ~$4,400 modification run cut its refusals to roughly 2–12%. <em style="color:#64748b;">Anthropic</em></p>
-              <p><strong>Ransomware gets an AI assist:</strong> Zscaler’s annual report finds ransomware up more than 275% year on year, ~900 TB stolen and $328M paid; attackers use generative AI to move faster, and 62% of victims were managers or above. <em style="color:#64748b;">Zscaler</em></p>
-              <p><strong>Platforms lock down for agents:</strong> Apple is tightening macOS “Full Disk Access”, requiring explicit consent before apps reach files, mail and messages, citing increasingly autonomous AI agents. <em style="color:#64748b;">TechCrunch</em></p>
+              <p><strong>Open models close the exploit gap:</strong> Anthropic says Z.ai’s open-weight GLM-5.3 built 50 of 410 end-to-end exploits, near its own restricted Mythos Preview; a ~$4,400 modification run cut its refusals to roughly 2–12%. <a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities" target="_blank" rel="noopener noreferrer" class="src-link">Anthropic</a></p>
+              <p><strong>Ransomware gets an AI assist:</strong> Zscaler’s annual report finds ransomware up more than 275% year on year, ~900 TB stolen and $328M paid; attackers use generative AI to move faster, and 62% of victims were managers or above. <a href="https://www.globenewswire.com/news-release/2026/09/30/3371551/0/en/new-zscaler-report-reveals-ai-assisted-attackers-move-to-massive-data-theft-executive-targeting-and-millions-in-extortion-payments.html" target="_blank" rel="noopener noreferrer" class="src-link">Zscaler</a></p>
+              <p><strong>Platforms lock down for agents:</strong> Apple is tightening macOS “Full Disk Access”, requiring explicit consent before apps reach files, mail and messages, citing increasingly autonomous AI agents. <a href="https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/" target="_blank" rel="noopener noreferrer" class="src-link">TechCrunch</a></p>
               <div class="why-matters-box">
                 <strong>Why it matters:</strong> open models are approaching frontier-level exploit-development capability. Fund AI-speed patching and review every agent’s permissions.
               </div>
@@ -2340,7 +2418,7 @@
             </div>
 
             <div style="font-size: 9.5px; color: #94a3b8; line-height: 1.3; margin-top: auto;">
-              Source: Anthropic (ExploitBench). Open weights can be modified outside the maker’s safeguards.
+              Source: <a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: underline;">Anthropic (ExploitBench)</a>. Open weights can be modified outside the maker’s safeguards.
             </div>
           </div>
         </div>
@@ -2362,15 +2440,15 @@
             <div class="incidents-subhead">AI-RELATED</div>
             <div class="incident-entry">
               <span class="incident-pill ai">Data leak</span>
-              <div><strong>Agents published internal screenshots.</strong> Help Net Security reported that AI coding agents pushed 13,000+ internal screenshots, incl. billing records, to public repositories across 300+ organisations. <em style="color:#64748b;">Help Net Security</em></div>
+              <div><strong>Agents published internal screenshots.</strong> Help Net Security reported that AI coding agents pushed 13,000+ internal screenshots, incl. billing records, to public repositories across 300+ organisations. <a href="https://www.helpnetsecurity.com/2026/09/30/ai-coding-agents-github-screenshot-leak/" target="_blank" rel="noopener noreferrer" class="src-link">Help Net Security</a></div>
             </div>
             <div class="incident-entry">
               <span class="incident-pill ai">Rogue agents</span>
-              <div><strong>100+ organisations notified.</strong> An AI lab warned them of unauthorised activity by its AI agents after reviewing ~50 PB of data. <em style="color:#64748b;">Reuters</em></div>
+              <div><strong>100+ organisations notified.</strong> An AI lab warned them of unauthorised activity by its AI agents after reviewing ~50 PB of data. <a href="https://www.reuters.com/legal/litigation/openai-alerts-more-than-100-groups-about-rogue-ai-agent-activity-2026-10-01/" target="_blank" rel="noopener noreferrer" class="src-link">Reuters</a></div>
             </div>
             <div class="incident-entry">
               <span class="incident-pill ai">Privacy</span>
-              <div><strong>Over-trusted agent.</strong> A consumer AI agent shared a private seller’s home pickup address with a buyer. <em style="color:#64748b;">TechRepublic</em></div>
+              <div><strong>Over-trusted agent.</strong> A consumer AI agent shared a private seller’s home pickup address with a buyer. <a href="https://www.techrepublic.com/article/news-meta-ai-facebook-marketplace-buyer-seller-address/" target="_blank" rel="noopener noreferrer" class="src-link">TechRepublic</a></div>
             </div>
           </div>
 
@@ -2379,15 +2457,15 @@
             <div class="incidents-subhead">MAJOR BREACHES</div>
             <div class="incident-entry">
               <span class="incident-pill breach">Defence · US</span>
-              <div><strong>Personnel database breached:</strong> 2.76M living and 294,000 deceased people, incl. Social Security numbers. <em style="color:#64748b;">Security Affairs</em></div>
+              <div><strong>Personnel database breached:</strong> 2.76M living and 294,000 deceased people, incl. Social Security numbers. <a href="https://securityaffairs.com/?p=200017" target="_blank" rel="noopener noreferrer" class="src-link">Security Affairs</a></div>
             </div>
             <div class="incident-entry">
               <span class="incident-pill breach">Crypto</span>
-              <div><strong>Exchange lost ~$352M from hot and warm wallets;</strong> cause under investigation, users covered by a protection fund. <em style="color:#64748b;">CryptoSlate</em></div>
+              <div><strong>Exchange lost ~$352M from hot and warm wallets;</strong> cause under investigation, users covered by a protection fund. <a href="https://cryptoslate.com/bitgets-351-6-million-hack-pushes-september-crypto-losses-to-2026-high/" target="_blank" rel="noopener noreferrer" class="src-link">CryptoSlate</a></div>
             </div>
             <div class="incident-entry">
               <span class="incident-pill breach">Technology</span>
-              <div><strong>Phone-maker zero-day used in an “extremely sophisticated” targeted attack;</strong> patch issued. <em style="color:#64748b;">SecurityWeek</em></div>
+              <div><strong>Phone-maker zero-day used in an “extremely sophisticated” targeted attack;</strong> patch issued. <a href="https://www.securityweek.com/apple-patches-meta-reported-zero-day-linked-to-extremely-sophisticated-attack/" target="_blank" rel="noopener noreferrer" class="src-link">SecurityWeek</a></div>
             </div>
           </div>
         </div>
@@ -2422,28 +2500,28 @@
               <tr>
                 <td><strong>30 Sep</strong></td>
                 <td><strong>California, US</strong></td>
-                <td>Three workplace AI and surveillance laws: limits on emotion-recognition and neural-data tools at work (AB 1883); requirements for specified automated employment decisions (SB 947); limits on bathroom surveillance (AB 1331). <em style="color:#64748b;">NatLawReview</em></td>
+                <td>Three workplace AI and surveillance laws: limits on emotion-recognition and neural-data tools at work (AB 1883); requirements for specified automated employment decisions (SB 947); limits on bathroom surveillance (AB 1331). <a href="https://natlawreview.com/article/california-governor-signs-3-bills-targeting-ai-and-workplace-surveillance" target="_blank" rel="noopener noreferrer" class="src-link">NatLawReview</a></td>
                 <td><span class="status-badge enacted">Enacted</span></td>
                 <td>Audit HR tech now; from 1 Jul 2027 SB 947 bars discipline or firing based solely on AI.</td>
               </tr>
               <tr>
                 <td><strong>1 Oct</strong></td>
                 <td><strong>China</strong></td>
-                <td>Ministry of Public Security cyberspace inspection rules take effect: police online monitoring and remote testing; covers algorithm-recommendation controls. <em style="color:#64748b;">Hunton</em></td>
+                <td>Ministry of Public Security cyberspace inspection rules take effect: police online monitoring and remote testing; covers algorithm-recommendation controls. <a href="https://www.hunton.com/privacy-and-cybersecurity-law-blog/china-issues-new-rules-on-cyberspace-security-inspection" target="_blank" rel="noopener noreferrer" class="src-link">Hunton</a></td>
                 <td><span class="status-badge inforce">In force</span></td>
                 <td>China operations: check logs, security-level protection and algorithm records.</td>
               </tr>
               <tr>
                 <td><strong>1 Oct</strong></td>
                 <td><strong>US · Congress</strong></td>
-                <td>Bipartisan AI Agent Accountability Act announced: computer-fraud liability for agent operators and developers. <em style="color:#64748b;">US Senate</em></td>
+                <td>Bipartisan AI Agent Accountability Act announced: computer-fraud liability for agent operators and developers. <a href="https://www.hawley.senate.gov/senators-hawley-murphy-announce-bipartisan-ai-agent-accountability-act/" target="_blank" rel="noopener noreferrer" class="src-link">US Senate</a></td>
                 <td><span class="status-badge proposed">Proposed</span></td>
                 <td>Track it: deployers could share liability for agents.</td>
               </tr>
               <tr>
                 <td><strong>23 Sep</strong></td>
                 <td><strong>EU · ESMA</strong></td>
-                <td>AI in finance named a 2027 supervisory priority: bias, unclear outputs, vendor concentration. <em style="color:#64748b;">ESMA</em></td>
+                <td>AI in finance named a 2027 supervisory priority: bias, unclear outputs, vendor concentration. <a href="https://www.esma.europa.eu/sites/default/files/2026-09/Union_strategic_supervisory_priorities_-_factsheet.pdf" target="_blank" rel="noopener noreferrer" class="src-link">ESMA</a></td>
                 <td><span class="status-badge priority">Priority set</span></td>
                 <td>EU financial firms: build AI inventories and model documentation.</td>
               </tr>
@@ -2466,17 +2544,17 @@
           <div class="info-card-bordered">
             <div class="stat-val">$15B+</div>
             <div style="font-weight:700; font-size:11.5px; color:#143826;">Japan power meets AI</div>
-            <p style="font-size:11px; line-height:1.35; color:#25312a;">JERA and Dell plan a ~400 MW data centre beside a Chiba power plant, phased from 2028. <em style="color:#64748b;">Nikkei</em></p>
+            <p style="font-size:11px; line-height:1.35; color:#25312a;">JERA and Dell plan a ~400 MW data centre beside a Chiba power plant, phased from 2028. <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/japan-s-largest-power-producer-teams-with-dell-on-15bn-data-center" target="_blank" rel="noopener noreferrer" class="src-link">Nikkei</a></p>
           </div>
           <div class="info-card-bordered">
             <div class="stat-val">~100k</div>
             <div style="font-weight:700; font-size:11.5px; color:#143826;">Tencent rents GPUs abroad</div>
-            <p style="font-size:11px; line-height:1.35; color:#25312a;">Reported deal for GPUs in Oracle’s Southeast Asian data centres. <em style="color:#64748b;">DCD (reported)</em></p>
+            <p style="font-size:11px; line-height:1.35; color:#25312a;">Reported deal for GPUs in Oracle’s Southeast Asian data centres. <a href="https://www.datacenterdynamics.com/en/news/tencent-signs-on-for-100000-gpus-via-oracle-report/" target="_blank" rel="noopener noreferrer" class="src-link">DCD (reported)</a></p>
           </div>
           <div class="info-card-bordered">
             <div class="stat-val">2028</div>
             <div style="font-weight:700; font-size:11.5px; color:#143826;">Memory stays tight</div>
-            <p style="font-size:11px; line-height:1.35; color:#25312a;">Micron warns AI-driven memory shortages may tighten through 2028; next year largely sold. <em style="color:#64748b;">Tom’s Hardware</em></p>
+            <p style="font-size:11px; line-height:1.35; color:#25312a;">Micron warns AI-driven memory shortages may tighten through 2028; next year largely sold. <a href="https://www.tomshardware.com/pc-components/dram/micron-projects-tightening-ram-shortages-through-2028-as-it-generates-record-profit-record-86-25-percent-gross-margin-drives-over-usd53-billion-in-quarterly-profit" target="_blank" rel="noopener noreferrer" class="src-link">Tom’s Hardware</a></p>
           </div>
         </div>
       </section>
@@ -2496,21 +2574,21 @@
           <div class="info-card-bordered">
             <div class="unsolved-card-title">Keeping agents contained</div>
             <div class="unsolved-card-highlight" style="font-size:14px; color:#872a1e;">Sandbox ≠ safe</div>
-            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">Useful agents need network and tool access, so isolation alone cannot contain them, argues cryptographer Matthew Green. <em style="color:#64748b;">Blog</em></p>
+            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">Useful agents need network and tool access, so isolation alone cannot contain them, argues cryptographer Matthew Green. <a href="https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/" target="_blank" rel="noopener noreferrer" class="src-link">Blog</a></p>
             <div style="font-size:10px; font-weight:600; color:#143826; margin-top:auto;">Implication: layer permissions, monitoring and kill switches.</div>
           </div>
           <!-- 2 -->
           <div class="info-card-bordered">
             <div class="unsolved-card-title">Honest self-reporting</div>
             <div class="unsolved-card-highlight">2 of 200</div>
-            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">reports disclosed a planted negative result in the logs; adding “Be honest” raised that to 190. <em style="color:#64748b;">arXiv</em></p>
+            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">reports disclosed a planted negative result in the logs; adding “Be honest” raised that to 190. <a href="https://arxiv.org/abs/2609.36139" target="_blank" rel="noopener noreferrer" class="src-link">arXiv</a></p>
             <div style="font-size:10px; font-weight:600; color:#143826; margin-top:auto;">Implication: never accept an agent’s own summary as the audit.</div>
           </div>
           <!-- 3 -->
           <div class="info-card-bordered">
             <div class="unsolved-card-title">Finding problems unprompted</div>
             <div class="unsolved-card-highlight">4.7%</div>
-            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">of ~4,100 real bugs fixed by the best agent when not told where to look. <em style="color:#64748b;">SWE-sweep</em></p>
+            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">of ~4,100 real bugs fixed by the best agent when not told where to look. <a href="https://swesweep.com/" target="_blank" rel="noopener noreferrer" class="src-link">SWE-sweep</a></p>
             <div style="font-size:10px; font-weight:600; color:#143826; margin-top:auto;">Implication: AI fixes well; discovery still needs humans and tests.</div>
           </div>
         </div>
@@ -2518,8 +2596,8 @@
 
       <!-- Page 3 Footer -->
       <footer class="page-footer-bar">
-        <div class="page-footer-left">Next (p. 4): AI in industries and AI investments</div>
-        <div class="page-footer-right"><a href="#agenda" style="color: inherit; text-decoration: none;">↑ Agenda</a> · Issue 02 · Page 3 of 5</div>
+        <div class="page-footer-left"><a href="#page-4" class="pdf-jump">Next (p. 4): AI in industries and AI investments</a></div>
+        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 02 · Page 3 of 5</div>
       </footer>
     </article>
 
@@ -2547,49 +2625,49 @@
           <div class="industry-card">
             <div class="industry-tag">BANKING</div>
             <div class="industry-company">Barclays</div>
-            <div class="industry-desc">16,000+ staff have used an AI knowledge assistant (Anthropic’s Claude); ~120,000 markets emails processed daily; Claude Code for half of developers by end-2026. <em style="color:#64748b;">Anthropic</em></div>
+            <div class="industry-desc">16,000+ staff have used an AI knowledge assistant (Anthropic’s Claude); ~120,000 markets emails processed daily; Claude Code for half of developers by end-2026. <a href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener noreferrer" class="src-link">Anthropic</a></div>
             <div class="industry-sowhat"><strong>So what:</strong> regulated banks are moving past pilots.</div>
           </div>
           <!-- 2 Retail -->
           <div class="industry-card">
             <div class="industry-tag">RETAIL</div>
             <div class="industry-company">Albertsons × OpenAI</div>
-            <div class="industry-desc">ChatGPT Enterprise in-house; Safeway in ChatGPT turns a recipe or photo into a cart across 2,200+ stores. <em style="color:#64748b;">OpenAI</em></div>
+            <div class="industry-desc">ChatGPT Enterprise in-house; Safeway in ChatGPT turns a recipe or photo into a cart across 2,200+ stores. <a href="https://openai.com/index/albertsons-reimagining-retail/" target="_blank" rel="noopener noreferrer" class="src-link">OpenAI</a></div>
             <div class="industry-sowhat"><strong>So what:</strong> the basket is moving into the chat.</div>
           </div>
           <!-- 3 Manufacturing -->
           <div class="industry-card">
             <div class="industry-tag">MANUFACTURING · ROBOTICS</div>
             <div class="industry-company">Boston Dynamics</div>
-            <div class="industry-desc">New Atlas hands: 13 degrees of freedom, palm sensors, can carry a 100+ lb mini-fridge; built for simulation training. <em style="color:#64748b;">Boston Dynamics</em></div>
+            <div class="industry-desc">New Atlas hands: 13 degrees of freedom, palm sensors, can carry a 100+ lb mini-fridge; built for simulation training. <a href="https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work/" target="_blank" rel="noopener noreferrer" class="src-link">Boston Dynamics</a></div>
             <div class="industry-sowhat"><strong>So what:</strong> dexterity is the next factory bottleneck.</div>
           </div>
           <!-- 4 Cyber -->
           <div class="industry-card">
             <div class="industry-tag">CYBERSECURITY</div>
             <div class="industry-company">Wiz × Gemini 4 Argon</div>
-            <div class="industry-desc">Found a critical flaw exposing personal data in hospital software used worldwide, one earlier models missed. <em style="color:#64748b;">Google</em></div>
+            <div class="industry-desc">Found a critical flaw exposing personal data in hospital software used worldwide, one earlier models missed. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener noreferrer" class="src-link">Google</a></div>
             <div class="industry-sowhat"><strong>So what:</strong> defenders get frontier models first.</div>
           </div>
           <!-- 5 Food Service -->
           <div class="industry-card">
             <div class="industry-tag">FOOD SERVICE</div>
             <div class="industry-company">McDonald’s</div>
-            <div class="industry-desc">A machine-learning system across ~14,000 US restaurants recommends item prices, per Reuters. <em style="color:#64748b;">Reuters</em></div>
+            <div class="industry-desc">A machine-learning system across ~14,000 US restaurants recommends item prices, per Reuters. <a href="https://www.reuters.com/business/inside-mcdonalds-push-to-have-ai-price-your-big-mac-2026-09-29/" target="_blank" rel="noopener noreferrer" class="src-link">Reuters</a></div>
             <div class="industry-sowhat"><strong>So what:</strong> AI pricing invites a fairness test.</div>
           </div>
           <!-- 6 Legal -->
           <div class="industry-card">
             <div class="industry-tag">LEGAL</div>
             <div class="industry-company">Thomson Reuters</div>
-            <div class="industry-desc">Launched “Thomson”, an LLM trained only on Thomson Reuters’ own content; can review up to 10,000 documents at once. <em style="color:#64748b;">Thomson Reuters</em></div>
+            <div class="industry-desc">Launched “Thomson”, an LLM trained only on Thomson Reuters’ own content; can review up to 10,000 documents at once. <a href="https://legal.thomsonreuters.com/blog/meet-thomson-the-llm-built-by-thomson-reuters/" target="_blank" rel="noopener noreferrer" class="src-link">Thomson Reuters</a></div>
             <div class="industry-sowhat"><strong>So what:</strong> proprietary content becomes the model.</div>
           </div>
           <!-- 7 Healthcare -->
           <div class="industry-card">
             <div class="industry-tag">HEALTHCARE</div>
             <div class="industry-company">Heidi II</div>
-            <div class="industry-desc">Clinical AI platform adds agents, persistent memory and research tools, moving beyond note-taking into admin work. <em style="color:#64748b;">Fierce Healthcare</em></div>
+            <div class="industry-desc">Clinical AI platform adds agents, persistent memory and research tools, moving beyond note-taking into admin work. <a href="https://www.fiercehealthcare.com/ai-and-machine-learning/heidi-launches-new-platform-tackle-administrative-work-ai-agents" target="_blank" rel="noopener noreferrer" class="src-link">Fierce Healthcare</a></div>
             <div class="industry-sowhat"><strong>So what:</strong> the back office is next for clinical AI.</div>
           </div>
           <!-- 8 Author's Reading -->
@@ -2644,7 +2722,7 @@
               <div class="chart-row-flex">
                 <div class="chart-name">
                   <strong>Broadcom → Anthropic</strong><br>
-                  <span style="font-size: 9.5px; color: #556059;">$60B chip financing for Anthropic and others; Blackstone leads junior tranche</span>
+                  <span style="font-size: 9.5px; color: #556059;">$60B chip financing for Anthropic and others; Blackstone leads junior tranche (<a href="https://www.bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic" target="_blank" rel="noopener noreferrer" class="src-link">reported</a>)</span>
                 </div>
                 <div class="chart-bar-container-flex">
                   <div class="bar-line-fill" style="width: 100px;"></div>
@@ -2655,7 +2733,7 @@
               <div class="chart-row-flex">
                 <div class="chart-name">
                   <strong>JERA + Dell, Japan</strong><br>
-                  <span style="font-size: 9.5px; color: #556059;">~400 MW AI data centre in Chiba (see p. 3)</span>
+                  <span style="font-size: 9.5px; color: #556059;">~400 MW AI data centre in Chiba (<a href="https://asia.nikkei.com/business/technology/artificial-intelligence/japan-s-largest-power-producer-teams-with-dell-on-15bn-data-center" target="_blank" rel="noopener noreferrer" class="src-link">see p. 3</a>)</span>
                 </div>
                 <div class="chart-bar-container-flex">
                   <div class="bar-line-fill" style="width: 25px;"></div>
@@ -2666,7 +2744,7 @@
               <div class="chart-row-flex">
                 <div class="chart-name">
                   <strong>SoftBank → OpenAI</strong><br>
-                  <span style="font-size: 9.5px; color: #556059;">Final tranche; completes a $30B follow-on commitment</span>
+                  <span style="font-size: 9.5px; color: #556059;">Final tranche; completes a $30B follow-on commitment (<a href="https://group.softbank/en/news/press/20261001" target="_blank" rel="noopener noreferrer" class="src-link">SoftBank</a>)</span>
                 </div>
                 <div class="chart-bar-container-flex">
                   <div class="bar-line-fill" style="width: 17px;"></div>
@@ -2677,7 +2755,7 @@
               <div class="chart-row-flex">
                 <div class="chart-name">
                   <strong>Nvidia → OpenAI</strong><br>
-                  <span style="font-size: 9.5px; color: #556059;">Final tranche of a $30B pledge (reported)</span>
+                  <span style="font-size: 9.5px; color: #556059;">Final tranche of a $30B pledge (<a href="https://www.theinformation.com/briefings/exclusive-nvidia-softbank-make-final-20-billion-investment-openais-last-round" target="_blank" rel="noopener noreferrer" class="src-link">reported</a>)</span>
                 </div>
                 <div class="chart-bar-container-flex">
                   <div class="bar-line-fill" style="width: 17px;"></div>
@@ -2688,7 +2766,7 @@
               <div class="chart-row-flex">
                 <div class="chart-name">
                   <strong>Tencent via Oracle</strong><br>
-                  <span style="font-size: 9.5px; color: #556059;">~100,000 GPUs in Southeast Asia (reported)</span>
+                  <span style="font-size: 9.5px; color: #556059;">~100,000 GPUs in Southeast Asia (<a href="https://www.datacenterdynamics.com/en/news/tencent-signs-on-for-100000-gpus-via-oracle-report/" target="_blank" rel="noopener noreferrer" class="src-link">reported</a>)</span>
                 </div>
                 <div class="chart-bar-container-flex">
                   <div class="bar-line-fill" style="width: 12px;"></div>
@@ -2696,7 +2774,14 @@
                 </div>
               </div>
             </div>
-            <div style="font-size: 9.5px; color: #64748b; margin-top: auto;">Sources: Bloomberg · Nikkei · SoftBank · The Information · DCD</div>
+            <div style="font-size: 9.5px; color: #64748b; margin-top: auto;">
+              Sources: 
+              <a href="https://www.bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic" target="_blank" rel="noopener noreferrer" class="src-link">Bloomberg</a> · 
+              <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/japan-s-largest-power-producer-teams-with-dell-on-15bn-data-center" target="_blank" rel="noopener noreferrer" class="src-link">Nikkei</a> · 
+              <a href="https://group.softbank/en/news/press/20261001" target="_blank" rel="noopener noreferrer" class="src-link">SoftBank</a> · 
+              <a href="https://www.theinformation.com/briefings/exclusive-nvidia-softbank-make-final-20-billion-investment-openais-last-round" target="_blank" rel="noopener noreferrer" class="src-link">The Information</a> · 
+              <a href="https://www.datacenterdynamics.com/en/news/tencent-signs-on-for-100000-gpus-via-oracle-report/" target="_blank" rel="noopener noreferrer" class="src-link">DCD</a>
+            </div>
           </div>
 
           <!-- Rounds by Theme -->
@@ -2766,7 +2851,7 @@
                   <td>Term sheet (reported)</td>
                   <td>Not stated</td>
                   <td>Physical AI</td>
-                  <td>Business Insider</td>
+                  <td><a href="https://www.businessinsider.com/robotics-startup-fieldai-raises-at-10b-valuation-in-new-round-2026-10" target="_blank" rel="noopener noreferrer" class="src-link">Business Insider</a></td>
                 </tr>
                 <tr>
                   <td><strong>30 Sep</strong></td>
@@ -2776,7 +2861,7 @@
                   <td>Series B ($223M) + $445M debt</td>
                   <td>ARCHIV; Nvidia joins</td>
                   <td>Compute</td>
-                  <td>TNW</td>
+                  <td><a href="https://thenextweb.com/news/gmi-cloud-668m-series-b-nvidia-archiv-ctbc" target="_blank" rel="noopener noreferrer" class="src-link">TNW</a></td>
                 </tr>
                 <tr>
                   <td><strong>29 Sep</strong></td>
@@ -2786,7 +2871,7 @@
                   <td>Growth</td>
                   <td>a16z, Bessemer</td>
                   <td>Agents &amp; apps</td>
-                  <td>GlobeNewswire</td>
+                  <td><a href="https://www.globenewswire.com/news-release/2026/09/29/3370681/0/en/eliseai-raises-350-million-at-4-billion-valuation-to-bring-ai-deeper-into-housing-and-healthcare-operations.html" target="_blank" rel="noopener noreferrer" class="src-link">GlobeNewswire</a></td>
                 </tr>
                 <tr>
                   <td><strong>1 Oct</strong></td>
@@ -2796,7 +2881,7 @@
                   <td>Series B</td>
                   <td>a16z, Accel</td>
                   <td>Security</td>
-                  <td>PR Newswire</td>
+                  <td><a href="https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html" target="_blank" rel="noopener noreferrer" class="src-link">PR Newswire</a></td>
                 </tr>
                 <tr>
                   <td><strong>29 Sep</strong></td>
@@ -2806,7 +2891,7 @@
                   <td>Growth</td>
                   <td>Valor, Atreides, Khosla</td>
                   <td>Physical AI</td>
-                  <td>GamesBeat</td>
+                  <td><a href="https://gamesbeat.com/general-intuition-raises-another-220m-at-6-2b-valuation-for-training-models-with-game-data/" target="_blank" rel="noopener noreferrer" class="src-link">GamesBeat</a></td>
                 </tr>
                 <tr>
                   <td><strong>30 Sep</strong></td>
@@ -2816,7 +2901,7 @@
                   <td>Series C</td>
                   <td>Atreides, Valor, Premji; Nvidia, Intel</td>
                   <td>Compute</td>
-                  <td>DCD</td>
+                  <td><a href="https://www.datacenterdynamics.com/en/news/optical-interconnect-startup-cscale-emerges-from-stealth-following-investment-from-nvidia-and-intel/" target="_blank" rel="noopener noreferrer" class="src-link">DCD</a></td>
                 </tr>
               </tbody>
             </table>
@@ -2826,8 +2911,8 @@
 
       <!-- Page 4 Footer -->
       <footer class="page-footer-bar">
-        <div class="page-footer-left">Next (p. 5): studies &amp; surveys, events, action list</div>
-        <div class="page-footer-right"><a href="#agenda" style="color: inherit; text-decoration: none;">↑ Agenda</a> · Issue 02 · Page 4 of 5</div>
+        <div class="page-footer-left"><a href="#page-5" class="pdf-jump">Next (p. 5): studies &amp; surveys, events, action list</a></div>
+        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 02 · Page 4 of 5</div>
       </footer>
     </article>
 
@@ -2868,7 +2953,7 @@
               <span class="survey-stat-val">72%</span>
               <span>see skills shortages as a bigger barrier than capital</span>
             </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Productivity is real; proving it in the P&amp;L is the gap. Source ↗</div>
+            <div class="survey-sowhat"><strong>So what:</strong> Productivity is real; proving it in the P&amp;L is the gap. <a href="https://ey.com/en_gl/newsroom/2026/10/ai-drives-productivity-but-ceos-struggle-to-turn-gains-into-grow" target="_blank" rel="noopener noreferrer" class="src-link">Source ↗</a></div>
           </div>
 
           <!-- 2 BCG -->
@@ -2888,7 +2973,7 @@
               <span class="survey-stat-val">5%</span>
               <span>have full controls in place for agentic AI</span>
             </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Spend has doubled; governance has not kept up. Source ↗</div>
+            <div class="survey-sowhat"><strong>So what:</strong> Spend has doubled; governance has not kept up. <a href="https://www.bcg.com/press/30september2026-ai-starting-to-pay-off-companies-generate-value" target="_blank" rel="noopener noreferrer" class="src-link">Source ↗</a></div>
           </div>
 
           <!-- 3 McKinsey -->
@@ -2908,7 +2993,7 @@
               <span class="survey-stat-val">~70%</span>
               <span>will need some level of role reinvention</span>
             </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Plan reskilling at scale, not case by case. Source ↗</div>
+            <div class="survey-sowhat"><strong>So what:</strong> Plan reskilling at scale, not case by case. <a href="https://www.mckinsey.com/mgi/our-research/workforce-in-motion-skills-and-pathways-to-future-jobs-in-the-united-states" target="_blank" rel="noopener noreferrer" class="src-link">Source ↗</a></div>
           </div>
 
           <!-- 4 KPMG -->
@@ -2928,7 +3013,7 @@
               <span class="survey-stat-val">74%</span>
               <span>now review costs before approving AI projects</span>
             </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Agents are mainstream; cost discipline is arriving. Source ↗</div>
+            <div class="survey-sowhat"><strong>So what:</strong> Agents are mainstream; cost discipline is arriving. <a href="https://kpmg.com/us/en/media/news/q3-ai-pulse-2026.html" target="_blank" rel="noopener noreferrer" class="src-link">Source ↗</a></div>
           </div>
 
           <!-- 5 Gartner (Spending) -->
@@ -2948,7 +3033,7 @@
               <span class="survey-stat-val">55%</span>
               <span>of 2026 spend goes to infrastructure ($1.48T)</span>
             </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Capacity, not software, absorbs most of the money.<br><small>🔗 gartner.com/en/newsroom</small></div>
+            <div class="survey-sowhat"><strong>So what:</strong> Capacity, not software, absorbs most of the money.<br><a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-16-gartner-forecasts-worldwide-ai-spending-to-grow-49-point-5-percent-in-2026" target="_blank" rel="noopener noreferrer" class="src-link">🔗 Website: gartner.com/en/newsroom</a></div>
           </div>
 
           <!-- 6 Gartner (Predictions) -->
@@ -2957,8 +3042,8 @@
             <div class="survey-name">Strategic Predictions 2027+</div>
             <div class="survey-meta">15 Sep · predictions</div>
             <div class="survey-stat-item">
-              <span class="survey-stat-val">60%</span>
-              <span>of AI adopters will have a team mapping AI cost to value by 2029</span>
+              <span class="survey-stat-val">$2030</span>
+              <span>of AI adopters will have a team mapping AI cost to value by 2029 (60%)</span>
             </div>
             <div class="survey-stat-item">
               <span class="survey-stat-val">80%</span>
@@ -2968,7 +3053,7 @@
               <span class="survey-stat-val">10B+</span>
               <span>autonomous agents by 2030</span>
             </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Budget for AI FinOps and abuse controls now.<br><small>🔗 gartner.com/en/newsroom</small></div>
+            <div class="survey-sowhat"><strong>So what:</strong> Budget for AI FinOps and abuse controls now.<br><a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond" target="_blank" rel="noopener noreferrer" class="src-link">🔗 Website: gartner.com/en/newsroom</a></div>
           </div>
         </div>
 
@@ -2991,37 +3076,37 @@
           <!-- North America -->
           <div class="event-col">
             <div class="event-region-title">NORTH AMERICA</div>
-            <div class="event-entry"><strong>13–15 Oct</strong> TechCrunch Disrupt · San Francisco ↗</div>
-            <div class="event-entry"><strong>9–13 Dec</strong> NeurIPS · Atlanta ↗</div>
+            <div class="event-entry"><strong>13–15 Oct</strong> <a href="https://moscone.com/events/techcrunch-disrupt-2026" target="_blank" rel="noopener noreferrer" class="src-link">TechCrunch Disrupt · San Francisco ↗</a></div>
+            <div class="event-entry"><strong>9–13 Dec</strong> <a href="https://neurips.cc/Conferences/current/Dates" target="_blank" rel="noopener noreferrer" class="src-link">NeurIPS · Atlanta ↗</a></div>
           </div>
           <!-- South America -->
           <div class="event-col">
             <div class="event-region-title">SOUTH AMERICA</div>
-            <div class="event-entry"><strong>Mar 2027</strong> GITEX LATAM · São Paulo, 16–17 Mar ↗</div>
+            <div class="event-entry"><strong>Mar 2027</strong> <a href="https://mediaoffice.ae/en/news/2025/october/14-10/gitex-expands-to-latin-america-propelling-us950-billion-digital-future" target="_blank" rel="noopener noreferrer" class="src-link">GITEX LATAM · São Paulo, 16–17 Mar ↗</a></div>
           </div>
           <!-- Europe -->
           <div class="event-col">
             <div class="event-region-title">EUROPE</div>
-            <div class="event-entry"><strong>7–8 Oct</strong> World Summit AI · Amsterdam ↗</div>
-            <div class="event-entry"><strong>9–12 Nov</strong> Web Summit · Lisbon ↗</div>
-            <div class="event-entry"><strong>9–13 Dec</strong> NeurIPS · Paris ↗</div>
+            <div class="event-entry"><strong>7–8 Oct</strong> <a href="https://worldsummit.ai/" target="_blank" rel="noopener noreferrer" class="src-link">World Summit AI · Amsterdam ↗</a></div>
+            <div class="event-entry"><strong>9–12 Nov</strong> <a href="https://websummit.com/web-summit-2026/" target="_blank" rel="noopener noreferrer" class="src-link">Web Summit · Lisbon ↗</a></div>
+            <div class="event-entry"><strong>9–13 Dec</strong> <a href="https://neurips.cc/Conferences/current/Dates" target="_blank" rel="noopener noreferrer" class="src-link">NeurIPS · Paris ↗</a></div>
           </div>
           <!-- Africa -->
           <div class="event-col">
             <div class="event-region-title">AFRICA</div>
-            <div class="event-entry"><strong>28–29 Oct</strong> AI Expo Africa · Johannesburg, Sandton Convention Centre ↗</div>
+            <div class="event-entry"><strong>28–29 Oct</strong> <a href="https://aiexpoafrica.com/ai-expo-africa-2026-faq/" target="_blank" rel="noopener noreferrer" class="src-link">AI Expo Africa · Johannesburg, Sandton Convention Centre ↗</a></div>
           </div>
           <!-- Asia & Middle East -->
           <div class="event-col">
             <div class="event-region-title">ASIA &amp; MIDDLE EAST</div>
-            <div class="event-entry"><strong>26–29 Oct</strong> FII10 · Riyadh ↗</div>
-            <div class="event-entry"><strong>17–19 Nov</strong> Bengaluru Tech Summit · “AI &amp; Beyond” ↗</div>
-            <div class="event-entry"><strong>7–11 Dec</strong> GITEX Global · Expo City Dubai ↗</div>
+            <div class="event-entry"><strong>26–29 Oct</strong> <a href="https://fortune.com/press-releases/fii-10th-anniversary-riyadh-2026-2026-07-14/" target="_blank" rel="noopener noreferrer" class="src-link">FII10 · Riyadh ↗</a></div>
+            <div class="event-entry"><strong>17–19 Nov</strong> <a href="https://www.bengalurutechsummit.com/" target="_blank" rel="noopener noreferrer" class="src-link">Bengaluru Tech Summit · “AI &amp; Beyond” ↗</a></div>
+            <div class="event-entry"><strong>7–11 Dec</strong> <a href="https://www.gitex.com/gitex-global-2026" target="_blank" rel="noopener noreferrer" class="src-link">GITEX Global · Expo City Dubai ↗</a></div>
           </div>
           <!-- Oceania -->
           <div class="event-col">
             <div class="event-region-title">OCEANIA</div>
-            <div class="event-entry"><strong>6–12 Dec</strong> NeurIPS · Sydney, one of three 2026 sites ↗</div>
+            <div class="event-entry"><strong>6–12 Dec</strong> <a href="https://neurips.cc/Conferences/current/Dates" target="_blank" rel="noopener noreferrer" class="src-link">NeurIPS · Sydney, one of three 2026 sites ↗</a></div>
           </div>
         </div>
       </section>
@@ -3143,7 +3228,7 @@
         <div class="page-footer-left">
           Method: news 29 Sep – 4 Oct; leader remarks 18 Sep – 4 Oct; studies &amp; data points may be earlier and are dated; picked for CXO relevance; “reported” = one outlet; valuations excluded.
         </div>
-        <div class="page-footer-right"><a href="#agenda" style="color: inherit; text-decoration: none;">↑ Agenda</a> · Issue 02 · Page 5 of 5</div>
+        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 02 · Page 5 of 5</div>
       </footer>
     </article>
 
