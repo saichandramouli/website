@@ -1,393 +1,227 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJE64RHR03"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-EJE64RHR03');
   </script>
-  <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
-o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
-o.onload=function(){window.trackingFunctions.onLoad({appId:"6a9f8fbd28060b00149b77be"})},
-document.head.appendChild(o)}initApollo();</script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Healthcare AI Data Quality Degradation and Its Impact | Executive Discussion Paper | People Prime Worldwide</title>
+  <script>
+    function initApollo(){
+      var n = Math.random().toString(36).substring(7),
+          o = document.createElement("script");
+      o.src = "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" + n;
+      o.async = !0;
+      o.defer = !0;
+      o.onload = function(){
+        window.trackingFunctions.onLoad({appId: "6a9f8fbd28060b00149b77be"});
+      };
+      document.head.appendChild(o);
+    }
+    initApollo();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare AI Data Quality Degradation and Its Impact | People Prime Worldwide</title>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon.png?v=1">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon.png?v=1">
-  <meta name="title" content="Healthcare AI Data Quality Degradation and Its Impact | People Prime Worldwide" />
-  <meta name="description"
-    content="Executive discussion paper on Healthcare AI data quality degradation, post-deployment monitoring, patient safety, model drift, and business impact by Jayaraman (Jay) Ganapathi." />
-  <meta name="keywords"
-    content="Healthcare AI, AI Data Quality, AI Model Monitoring, Model Drift, MLOps, Data Governance, People Prime Worldwide, Jayaraman Ganapathi" />
-  <meta name="author" content="Jay (Jayaraman Ganapathi) - People Prime Worldwide (people-prime.com)" />
+  <meta name="description" content="Executive discussion paper on Healthcare AI data quality degradation, post-deployment monitoring, patient safety, and business impact by Jayaraman (Jay) Ganapathi.">
+  <meta name="author" content="Jay (Jayaraman Ganapathi) - People Prime Worldwide (people-prime.com)">
 
-  <!-- Google Fonts for Editorial & Clean Executive Presentation -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    /* BASE ROOT THEME & RESET */
-    :root {
-      --article-bg: #f8fafc;
-      --paper-bg: #ffffff;
-      --doc-navy: #0f274a;
-      --doc-blue: #1e3a8a;
-      --doc-accent-blue: #2563eb;
-      --doc-ice: #eff6ff;
-      --doc-ice-border: #bfdbfe;
-      --doc-text-dark: #1e293b;
-      --doc-text-muted: #475569;
-      --doc-text-light: #64748b;
-      --doc-border: #e2e8f0;
-      --doc-highlight: #0284c7;
-      --takeaway-bg: #f1f5f9;
-      --takeaway-border: #cbd5e1;
-    }
-
-    body.articles-page {
-      background-color: #0b1120;
-      color: #334155;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      overflow-x: clip;
+    /* RESET & DOCUMENT BASE (Newsletter Viewer Aesthetic) */
+    *, *::before, *::after {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    /* AIML pill highlight in navbar */
-    .nav-aiml-pill {
-      background: #ffffff !important;
-      border: 1px solid #ffffff !important;
-      border-radius: 6px !important;
-      padding: 6px 14px !important;
-      color: #000000 !important;
-      font-weight: 600 !important;
-      font-size: 13.5px !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      gap: 6px !important;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-      line-height: normal !important;
-      transition: background 0.2s ease, color 0.2s ease;
-    }
-
-    .nav-aiml-pill:hover {
-      background: #f0fdf4 !important;
-      border-color: #00a87a !important;
-      color: #000000 !important;
-    }
-
-    .nav-aiml-pill .nav-arrow {
-      color: #000000 !important;
-      font-size: 9px;
-      margin-left: 2px;
-    }
-
-    .dropdown-menu a.dropdown-active {
-      color: #00c896 !important;
-      font-weight: 600 !important;
-    }
-
-    /* HERO INTRO BAR */
-    .articles-hero-banner {
-      background: radial-gradient(circle at top right, #1e3a8a 0%, #0f172a 60%, #030712 100%);
-      padding: 130px 24px 40px;
-      color: #ffffff;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      position: relative;
-    }
-
-    .articles-hero-inner {
-      max-width: 1040px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .articles-badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .article-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(37, 99, 235, 0.25);
-      border: 1px solid rgba(59, 130, 246, 0.4);
-      color: #93c5fd;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      padding: 4px 12px;
-      border-radius: 999px;
-    }
-
-    .article-category-label {
-      color: #cbd5e1;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-    }
-
-    .articles-hero-title {
-      font-family: 'Outfit', 'Inter', sans-serif;
-      font-size: clamp(26px, 4vw, 42px);
-      font-weight: 800;
-      line-height: 1.2;
-      color: #ffffff;
-      letter-spacing: -0.02em;
-      margin: 0;
-    }
-
-    .articles-hero-subtitle {
-      font-size: clamp(14px, 1.8vw, 17px);
-      color: #94a3b8;
-      max-width: 820px;
+    html {
+      scroll-behavior: smooth;
+      background-color: #edeae2;
+      color: #1a1a1a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14px;
       line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: #edeae2;
+      padding-bottom: 60px;
       margin: 0;
     }
 
-    .articles-meta-strip {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 20px;
-      padding-top: 10px;
-      font-size: 13px;
-      color: #cbd5e1;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .meta-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .meta-item strong {
-      color: #ffffff;
-    }
-
-    /* STICKY DOCUMENT CONTROL BAR */
-    .document-control-bar {
+    /* TOP READER TOOLBAR (Matches AI Newsletter) */
+    .reader-toolbar {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: #0f172a;
+      background: #111a16;
+      color: #e5ede8;
       border-bottom: 1px solid rgba(255, 255, 255, 0.12);
       padding: 10px 24px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-
-    .control-bar-inner {
-      max-width: 1040px;
-      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      flex-wrap: wrap;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+      font-size: 13px;
     }
 
-    .control-group-left {
+    .toolbar-left, .toolbar-center, .toolbar-right {
       display: flex;
       align-items: center;
       gap: 12px;
     }
 
-    .control-group-right {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .doc-page-jumps {
-      display: flex;
+    .toolbar-btn {
+      display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(255, 255, 255, 0.06);
-      padding: 3px 6px;
+      padding: 6px 14px;
       border-radius: 6px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .doc-page-jumps span {
-      font-size: 11px;
-      color: #94a3b8;
-      padding: 0 4px;
+      font-size: 13px;
       font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.08);
+      color: #f1f5f3;
+      transition: all 0.2s ease;
     }
 
-    .doc-jump-btn {
-      color: #e2e8f0;
-      background: transparent;
-      border: none;
+    .toolbar-btn:hover {
+      background: rgba(255, 255, 255, 0.18);
+      border-color: rgba(255, 255, 255, 0.4);
+      color: #ffffff;
+    }
+
+    .toolbar-btn.primary {
+      background: #2563eb;
+      border-color: #3b82f6;
+      color: #ffffff;
+    }
+
+    .toolbar-btn.primary:hover {
+      background: #1d4ed8;
+    }
+
+    .toolbar-title {
+      font-weight: 700;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    .toolbar-badge {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      color: #a7f3d0;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .page-jump-links {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .page-jump-link {
       padding: 4px 10px;
       border-radius: 4px;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 600;
       font-size: 12px;
-      font-weight: 600;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      display: inline-flex;
-      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      transition: all 0.15s ease;
     }
 
-    .doc-jump-btn:hover {
-      background: #2563eb;
-      color: #ffffff;
+    .page-jump-link:hover {
+      background: #1f3b2e;
+      color: #86efac;
     }
 
-    .doc-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 7px 15px;
-      border-radius: 6px;
-      font-size: 12.5px;
-      font-weight: 600;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      border: 1px solid transparent;
-      white-space: nowrap;
-    }
-
-    .doc-btn-secondary {
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.18);
-      color: #f1f5f9;
-    }
-
-    .doc-btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.16);
-      border-color: rgba(255, 255, 255, 0.35);
-      color: #ffffff;
-      transform: translateY(-1px);
-    }
-
-    .doc-btn-primary {
-      background: #2563eb;
-      color: #ffffff;
-      border-color: #3b82f6;
-      box-shadow: 0 2px 8px rgba(37, 99, 235, 0.4);
-    }
-
-    .doc-btn-primary:hover {
-      background: #1d4ed8;
-      border-color: #2563eb;
-      transform: translateY(-1px);
-    }
-
-    /* MAIN DOCUMENT SHEETS WRAPPER */
-    .article-document-canvas {
-      background: #e2e8f0;
-      padding: 40px 16px 80px;
-      min-height: 100vh;
+    /* PUBLICATION CANVAS CONTAINER */
+    .publication-container {
+      max-width: 860px;
+      margin: 32px auto;
+      padding: 0 16px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 40px;
+      gap: 36px;
     }
 
-    /* INDIVIDUAL PAGE SHEET (A4 replica & responsive card) */
-    .doc-sheet {
+    /* INDIVIDUAL PDF PAGE SHEET (Exact A4 Reproduction) */
+    .page-sheet {
       background: #ffffff;
-      width: 100%;
-      max-width: 900px;
-      box-sizing: border-box;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+      border: 1px solid #d9d4c7;
       border-radius: 3px;
-      padding: 56px 64px 44px;
-      color: #1e293b;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.09), 0 2px 6px rgba(0, 0, 0, 0.04);
+      padding: 48px 58px 40px;
       position: relative;
+      color: #1a1a1a;
       display: flex;
       flex-direction: column;
-      gap: 22px;
-      line-height: 1.55;
-      font-size: 14px;
+      min-height: 1080px;
+      box-sizing: border-box;
     }
 
-    /* SHEET TOP RUNNING HEADER */
-    .sheet-header-rule {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 11.5px;
-      font-weight: 700;
-      color: #0f172a;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      padding-bottom: 6px;
-      border-bottom: 1.5px solid #cbd5e1;
-    }
-
-    .sheet-header-category {
-      color: #0f274a;
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
-
-    .sheet-header-author-tag {
+    /* TOP RUNNING HEADER */
+    .doc-running-header {
+      text-align: right;
       font-size: 11px;
-      color: #475569;
-      font-weight: 600;
-      text-transform: none;
-      letter-spacing: 0;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      color: #111a16;
+      text-transform: uppercase;
+      margin-bottom: 22px;
     }
 
-    /* MAIN TITLE BLOCK (PAGE 1) */
+    /* MAIN TITLE BLOCK */
     .doc-title-block {
       text-align: center;
-      padding: 6px 0 10px;
+      margin-bottom: 12px;
     }
 
     .doc-main-title {
-      font-family: 'Outfit', 'Inter', sans-serif;
-      font-size: clamp(26px, 3.8vw, 38px);
-      font-weight: 800;
-      color: #0f2b5c;
-      letter-spacing: -0.02em;
-      line-height: 1.18;
-      margin: 0 auto 10px;
-      max-width: 760px;
+      font-size: 32px;
+      font-weight: 700;
+      color: #244b7a;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin-bottom: 14px;
     }
 
-    .doc-title-underline {
-      height: 2px;
+    .doc-title-divider {
       width: 100%;
-      background: #3b82f6;
-      margin: 12px 0 16px;
+      height: 2.5px;
+      background-color: #3b74a8;
+      margin: 0 auto 14px;
     }
 
     .doc-author-line {
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 600;
-      color: #1e293b;
+      color: #222222;
       margin-bottom: 4px;
     }
 
     .doc-author-line a {
-      color: #1e3a8a;
+      color: #244b7a;
       text-decoration: none;
     }
 
@@ -395,1110 +229,366 @@ document.head.appendChild(o)}initApollo();</script>
       text-decoration: underline;
     }
 
-    .doc-paper-type {
-      font-size: 13px;
+    .doc-subtitle-line {
+      font-size: 12.5px;
       font-style: italic;
-      color: #475569;
-      margin-bottom: 12px;
+      color: #4b5563;
+      margin-bottom: 16px;
     }
 
-    /* STANDOUT CALLOUT BANNER */
-    .doc-callout-banner {
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      border-radius: 6px;
-      padding: 12px 20px;
+    /* CALLOUT BANNER */
+    .doc-banner {
+      background-color: #ebf2f8;
+      padding: 10px 16px;
       text-align: center;
-      margin: 4px 0 12px;
-    }
-
-    .doc-callout-text {
-      font-size: clamp(16px, 2.2vw, 21px);
-      font-weight: 800;
-      color: #1e3a8a;
-      letter-spacing: -0.01em;
-      margin: 0;
-    }
-
-    /* SECTION TITLES */
-    .doc-section-heading {
-      font-family: 'Outfit', 'Inter', sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      color: #1e40af;
-      margin: 8px 0 6px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .doc-p {
-      color: #334155;
-      font-size: 13.8px;
-      line-height: 1.62;
-      margin: 0 0 10px;
-    }
-
-    /* EVIDENCE SNAPSHOT STATS GRID */
-    .stats-kpi-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin: 14px 0 16px;
-    }
-
-    .stat-kpi-card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-left: 4px solid #2563eb;
-      border-radius: 6px;
-      padding: 12px 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .stat-kpi-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-      border-left-color: #1d4ed8;
-    }
-
-    .kpi-figure {
-      font-family: 'Outfit', sans-serif;
-      font-size: 26px;
-      font-weight: 800;
-      color: #1e3a8a;
-      line-height: 1;
-    }
-
-    .kpi-label {
-      font-size: 12.8px;
-      color: #334155;
-      line-height: 1.45;
-    }
-
-    /* BULLET LIST */
-    .doc-bullet-list {
-      list-style: none;
-      padding: 0;
-      margin: 8px 0 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .doc-bullet-item {
-      position: relative;
-      padding-left: 20px;
-      font-size: 13.8px;
-      color: #334155;
-      line-height: 1.55;
-    }
-
-    .doc-bullet-item::before {
-      content: "•";
-      position: absolute;
-      left: 4px;
-      top: -1px;
-      color: #1e3a8a;
-      font-size: 20px;
-      font-weight: 800;
-    }
-
-    /* IMPACT NUMBERED LIST */
-    .impact-numbered-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      margin: 10px 0 8px;
-    }
-
-    .impact-step-card {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 6px;
-      padding: 14px 18px;
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-      transition: background 0.2s ease;
-    }
-
-    .impact-step-card:hover {
-      background: #f1f5f9;
-    }
-
-    .impact-badge {
-      flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      background: #1e3a8a;
-      color: #ffffff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 13px;
-      font-weight: 700;
-      margin-top: 2px;
-    }
-
-    .impact-content {
-      flex: 1;
-    }
-
-    .impact-title {
-      font-size: 15px;
-      font-weight: 700;
-      color: #0f172a;
-      margin: 0 0 4px;
-    }
-
-    .impact-desc {
-      font-size: 13.5px;
-      color: #334155;
-      line-height: 1.55;
-      margin: 0;
-    }
-
-    /* FUTURE ROADMAP / STUDIES */
-    .future-timeline-box {
-      background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
-      border: 1px solid #bfdbfe;
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin: 12px 0 16px;
-    }
-
-    .timeline-milestones {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-bottom: 12px;
-      padding-bottom: 12px;
-      border-bottom: 1px dashed #cbd5e1;
-    }
-
-    .milestone-col {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .milestone-year {
-      font-family: 'Outfit', sans-serif;
-      font-size: 18px;
-      font-weight: 800;
-      color: #1e40af;
-    }
-
-    .milestone-text {
-      font-size: 12px;
-      color: #334155;
-      line-height: 1.4;
-    }
-
-    /* RECOMMENDATION CARD */
-    .recommendation-card {
-      background: #fafaf9;
-      border: 1px solid #e7e5e4;
-      border-left: 4px solid #0284c7;
-      border-radius: 6px;
-      padding: 16px 20px;
-      margin: 8px 0 14px;
-    }
-
-    /* EXECUTIVE TAKEAWAY BOX */
-    .executive-takeaway-block {
-      background: #f1f5f9;
-      border: 1px solid #cbd5e1;
-      border-radius: 6px;
-      padding: 18px 24px;
-      margin: 10px 0 6px;
-      position: relative;
-    }
-
-    .takeaway-header-title {
-      font-family: 'Outfit', sans-serif;
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      color: #0f172a;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .takeaway-header-title::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      background: #1e3a8a;
+      margin: 6px 0 22px;
       border-radius: 2px;
     }
 
-    .takeaway-body-text {
+    .doc-banner-text {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1e3a68;
+      letter-spacing: -0.01em;
+    }
+
+    /* SECTION HEADINGS */
+    .doc-section-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: #2d5a8b;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    /* BODY PARAGRAPHS */
+    .doc-paragraph {
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: #1a1a1a;
+      margin-bottom: 10px;
+    }
+
+    /* BULLET LIST */
+    .doc-bullets {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 6px 0 16px;
+    }
+
+    .doc-bullets li {
+      position: relative;
+      padding-left: 18px;
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: #1a1a1a;
+      margin-bottom: 6px;
+    }
+
+    .doc-bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 3px;
+      top: 0;
       font-size: 16px;
+      color: #1a1a1a;
+    }
+
+    /* NUMBERED IMPACT ITEMS */
+    .impact-item {
+      margin-bottom: 12px;
+    }
+
+    .impact-item-title {
+      font-size: 14px;
       font-weight: 700;
-      color: #0f274a;
-      line-height: 1.5;
-      margin: 0;
+      color: #2d5a8b;
+      margin-bottom: 3px;
     }
 
-    /* SHEET FOOTER */
-    .sheet-footer-rule {
-      margin-top: auto;
-      padding-top: 14px;
-      border-top: 1px solid #e2e8f0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 12px;
-      color: #64748b;
-      font-weight: 500;
+    .impact-item-text {
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: #1a1a1a;
     }
 
-    .sheet-footer-author {
-      color: #334155;
-      font-weight: 600;
+    /* EXECUTIVE TAKEAWAY BOX */
+    .takeaway-box {
+      background-color: #f1f3f5;
+      padding: 16px 20px;
+      margin-top: 18px;
+      margin-bottom: 14px;
+      border-radius: 2px;
     }
 
-    .sheet-footer-page {
-      font-weight: 700;
-      color: #1e3a8a;
-    }
-
-    /* TOAST NOTIFICATION */
-    .share-toast {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: #0f172a;
-      color: #ffffff;
-      padding: 10px 18px;
-      border-radius: 8px;
+    .takeaway-label {
       font-size: 13px;
+      font-weight: 800;
+      color: #111a16;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .takeaway-text {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.45;
+      color: #111a16;
+    }
+
+    /* PAGE FOOTER */
+    .doc-footer {
+      margin-top: auto;
+      padding-top: 24px;
+      text-align: center;
+      font-size: 11.5px;
       font-weight: 600;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-      z-index: 2000;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: all 0.3s ease;
-      pointer-events: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      color: #222222;
     }
 
-    .share-toast.show {
-      opacity: 1;
-      transform: translateY(0);
+    .doc-footer a {
+      color: #222222;
+      text-decoration: none;
     }
 
-    /* RESPONSIVE BREAKPOINTS */
-    @media (max-width: 920px) {
-      .doc-sheet {
-        padding: 40px 32px 36px;
-        gap: 18px;
-      }
-      .timeline-milestones {
-        grid-template-columns: 1fr;
-        gap: 8px;
-      }
-    }
-
-    @media (max-width: 680px) {
-      .articles-hero-banner {
-        padding: 110px 16px 30px;
-      }
-      .control-bar-inner {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 10px;
-      }
-      .control-group-left, .control-group-right {
-        justify-content: space-between;
-        width: 100%;
-      }
-      .doc-btn {
-        flex: 1;
-        justify-content: center;
-        padding: 8px 10px;
-        font-size: 11.5px;
-      }
-      .article-document-canvas {
-        padding: 20px 10px 50px;
-        gap: 24px;
-      }
-      .doc-sheet {
-        padding: 26px 18px 24px;
-        border-radius: 8px;
-      }
-      .sheet-header-rule {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
-      }
-      .stats-kpi-grid {
-        grid-template-columns: 1fr;
-      }
-      .doc-main-title {
-        font-size: 24px;
-      }
-      .sheet-footer-rule {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6px;
-      }
-    }
-
-    /* PRINT SPECIFIC STYLES FOR CRISP 2-PAGE PDF OUTPUT */
+    /* PRINT STYLES */
     @media print {
-      body.articles-page {
-        background: #ffffff !important;
-        color: #000000 !important;
+      body {
+        background: #ffffff;
+        padding: 0;
       }
-      .navbar,
-      .articles-hero-banner,
-      .document-control-bar,
-      .mobile-drawer,
-      .drawer-overlay,
-      footer,
-      .quick-scroll-nav,
-      .no-print {
+
+      .reader-toolbar {
         display: none !important;
       }
-      .article-document-canvas {
-        background: transparent !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        display: block !important;
+
+      .publication-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        gap: 0;
       }
-      .doc-sheet {
-        box-shadow: none !important;
-        border: none !important;
-        padding: 15mm 15mm 12mm !important;
-        margin: 0 !important;
-        max-width: 100% !important;
-        width: 100% !important;
+
+      .page-sheet {
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 15mm 15mm;
+        min-height: auto;
         page-break-after: always;
         break-after: page;
-        min-height: 270mm;
       }
+
       #page-2 {
         page-break-after: auto;
         break-after: auto;
       }
-      .stat-kpi-card, .impact-step-card, .doc-callout-banner, .executive-takeaway-block, .future-timeline-box, .recommendation-card {
+
+      .doc-banner, .takeaway-box {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
       }
     }
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+      .page-sheet {
+        padding: 30px 22px 26px;
+      }
+
+      .doc-main-title {
+        font-size: 25px;
+      }
+
+      .doc-banner-text {
+        font-size: 16px;
+      }
+
+      .toolbar-left span {
+        display: none;
+      }
+    }
   </style>
 </head>
+<body>
 
-<body class="articles-page">
-
-  <!-- Main Website Navigation Bar -->
-  <header class="navbar">
-    <div class="logo">
-      <a href="index.html">
-        <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" />
+  <!-- TOP READER TOOLBAR (Matches AI Newsletter) -->
+  <header class="reader-toolbar" role="banner">
+    <div class="toolbar-left">
+      <a href="aiml-tech-services.html" class="toolbar-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Website
       </a>
+      <span class="toolbar-title">Healthcare AI Data Quality Degradation</span>
+      <span class="toolbar-badge">Executive Paper</span>
     </div>
 
-    <button class="hamburger" id="hamburger" aria-label="Open menu">
-      &#9776;
-    </button>
+    <div class="toolbar-center">
+      <div class="page-jump-links">
+        <span style="font-size: 11px; color: #94a3b8; margin-right: 4px;">Jump to:</span>
+        <a href="#page-1" class="page-jump-link">Page 1</a>
+        <a href="#page-2" class="page-jump-link">Page 2</a>
+      </div>
+    </div>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="https://talentplatform.people-prime.com" class="ptaas-link">TaaS<span class="ptaas-subtext">Talent
-              Platform</span></a>
-        </li>
-        <li>
-          <a href="https://peopleremotely.com/" class="primescale-link">People Remotely</a>
-        </li>
-        <li>
-          <a href="gcc.html" class="gcc-link">Global Capability<span class="gcc-subtext">Center</span></a>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="nav-aiml-pill active">AIML Technology Services <span class="nav-arrow"
-              style="color: black;">▼</span></a>
-          <div class="dropdown-menu">
-            <div class="nested-dropdown">
-              <a href="aiml-engineering-mlops.html" class="nested-trigger">AIML Engineering and MLOps <span
-                  class="sub-arrow">▶</span></a>
-              <div class="nested-dropdown-menu">
-                <a href="aiml-engineering-mlops.html#ai-ml-model-development-section">AI/ML Model Development</a>
-                <a href="aiml-engineering-mlops.html#data-engineering-aiml-section">Data Engineering for AI/ML</a>
-                <a href="aiml-engineering-mlops.html#mlops-ml-platforms-section">MLOps &amp; ML Platforms</a>
-                <a href="aiml-engineering-mlops.html#ml-model-deployment-section">ML Model Deployment &amp; Productionization</a>
-                <a href="aiml-engineering-mlops.html#model-monitoring-optimization-section">Model Monitoring &amp; Optimization</a>
-                <a href="aiml-engineering-mlops.html#cloud-aiml-engineering-section">Cloud AI/ML Engineering</a>
-                <a href="aiml-engineering-mlops.html#enterprise-aiml-transformation-section">Enterprise AI/ML Transformation</a>
-              </div>
-            </div>
-            <div class="nested-dropdown">
-              <a href="ai-model-training.html" class="nested-trigger">AI Model Training <span class="sub-arrow">▶</span></a>
-              <div class="nested-dropdown-menu">
-                <a href="ai-model-training.html#expert-data-creation-annotation-section">Expert Data Creation &amp; Annotation</a>
-                <a href="ai-model-training.html#rlhf-human-feedback-section">RLHF / Human Feedback</a>
-                <a href="ai-model-training.html#ai-model-evaluation-section">AI Model Evaluation</a>
-                <a href="ai-model-training.html#benchmark-test-set-creation-section">Benchmark &amp; Test-Set Creation</a>
-                <a href="ai-model-training.html#coding-expertise-ai-training-section">Coding Expertise for AI Training</a>
-                <a href="ai-model-training.html#stem-reasoning-expertise-section">STEM &amp; Reasoning Expertise</a>
-                <a href="ai-model-training.html#reinforcement-learning-environments-section">Reinforcement-Learning Environments</a>
-              </div>
-            </div>
-            <div class="nested-dropdown">
-              <a href="enterprise-ai-agents.html" class="nested-trigger">Enterprise Gen AI <span class="sub-arrow">▶</span></a>
-              <div class="nested-dropdown-menu">
-                <a href="enterprise-ai-agents.html#enterprise-ai-agents-section">Enterprise AI Agents</a>
-                <a href="enterprise-ai-agents.html#rag-solutions-section">RAG Solutions</a>
-                <a href="enterprise-ai-agents.html#customized-fine-tuned-llms-section">Customized / Fine-Tuned LLMs</a>
-                <a href="enterprise-ai-agents.html#enterprise-ai-copilots-section">Enterprise AI Copilots</a>
-                <a href="enterprise-ai-agents.html#document-intelligence-knowledge-ai-section">Document Intelligence &amp; Knowledge AI</a>
-                <a href="enterprise-ai-agents.html#conversational-ai-customer-service-section">Conversational AI / Customer Service AI</a>
-                <a href="enterprise-ai-agents.html#enterprise-genai-app-development-section">Enterprise GenAI Application Development</a>
-                <a href="enterprise-ai-agents.html#genai-integration-modernization-section">GenAI Integration &amp; Modernization</a>
-              </div>
-            </div>
-            <div class="nested-dropdown">
-              <a href="ai-ml-talent-services.html" class="nested-trigger">AI/ML Talent Services <span class="sub-arrow">▶</span></a>
-              <div class="nested-dropdown-menu">
-                <a href="ai-ml-talent-services.html#specialized-aiml-talent-section">Specialized AI/ML Talent</a>
-                <a href="ai-ml-talent-services.html#flexible-talent-access-section">Flexible Talent Access</a>
-                <a href="ai-ml-talent-services.html#scalable-aiml-teams-section">Scalable AI/ML Teams</a>
-                <a href="ai-ml-talent-services.html#faster-project-delivery-section">Faster Project Delivery</a>
-              </div>
-            </div>
-            <a href="ai-newsletter.html">AI News Letter</a>
-            <a href="articles.html" class="dropdown-active">Articles</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)">Services <span class="nav-arrow">▼</span></a>
-          <div class="dropdown-menu">
-            <a href="it-consulting.html">IT Consulting</a>
-            <a href="staff.html">Staff Augmentation (T&M)</a>
-            <a href="managed-services.html">Managed Teams and Managed Services</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)">Skill Sets <span class="nav-arrow">▼</span></a>
-          <div class="dropdown-menu">
-            <a href="java.html">Java Technologies</a>
-            <a href="microsoft.html">Microsoft Technologies</a>
-            <a href="it-infra.html">IT Infrastructure</a>
-            <a href="sap.html">SAP</a>
-            <a href="datasci.html">Data Science</a>
-            <a href="servicenow.html">Service Now</a>
-            <a href="salesforce.html">Salesforce</a>
-            <a href="dw.html">Data Warehouse</a>
-            <a href="cloud.html">Cloud Technologies</a>
-            <a href="ai-ml.html">AI and ML</a>
-            <a href="iot.html">IOT</a>
-            <a href="database.html">Database management</a>
-            <a href="testing.html">Testing</a>
-            <a href="cybersecurity.html">Cyber Security</a>
-            <a href="oracle.html">Oracle</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)">Corporate Compliance <span class="nav-arrow">▼</span></a>
-          <div class="dropdown-menu">
-            <a href="iso.html">ISO9001-27001</a>
-            <a href="cobe.html">Code of Business Ethics</a>
-            <a href="soc2type2.html">SOC2 Type 2</a>
-            <a href="statutory.html">Statutory Compliance</a>
-            <a href="env-sus.html">Environmental Sustainability</a>
-            <a href="privacy.html">Privacy Policy</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a href="javascript:void(0)">About Us <span class="nav-arrow">▼</span></a>
-          <div class="dropdown-menu">
-            <a href="lt.html">Leadership Team</a>
-            <a href="it-security.html">IT Security Policies</a>
-            <a href="contact.html">Contact Us</a>
-          </div>
-        </li>
-        <li>
-          <a href="activejobs.html" class="nav-btn jobs-btn">Active Jobs</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Mobile Nav Drawer -->
-  <div class="mobile-drawer" id="mobileDrawer">
-    <div class="drawer-header">
-      <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="drawer-logo" />
-      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
-        &#10005;
+    <div class="toolbar-right">
+      <a href="assets/articles/healthcare-ai-data-quality-degradation-and-its-impact.pdf" download="healthcare-ai-data-quality-degradation-and-its-impact.pdf" class="toolbar-btn" title="Download original PDF">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Download PDF
+      </a>
+      <button onclick="window.print()" class="toolbar-btn primary" title="Print document or save as PDF">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / Save PDF
       </button>
     </div>
-    <ul class="drawer-nav">
-      <li>
-        <a href="https://talentplatform.people-prime.com" class="drawer-ptaas-link">TaaS<span
-            class="drawer-ptaas-subtext">Platform</span></a>
-      </li>
-      <li><a href="https://peopleremotely.com/" class="drawer-primescale-link">Primescale<span
-            class="drawer-primescale-subtext">Remote Work</span></a></li>
-      <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span class="drawer-gcc-subtext">Center</span></a>
-      </li>
-      <li class="drawer-dropdown open">
-        <button class="drawer-dropdown-btn drawer-aiml-btn active">
-          AIML Technology Services <span class="drawer-arrow" style="color: black;">&#9660;</span>
-        </button>
-        <div class="drawer-dropdown-menu">
-          <div class="drawer-nested-dropdown">
-            <button class="drawer-nested-btn">
-              AIML Engineering and MLOps <span class="drawer-arrow">&#9660;</span>
-            </button>
-            <div class="drawer-nested-menu">
-              <a href="aiml-engineering-mlops.html#ai-ml-model-development-section">AI/ML Model Development</a>
-              <a href="aiml-engineering-mlops.html#data-engineering-aiml-section">Data Engineering for AI/ML</a>
-              <a href="aiml-engineering-mlops.html#mlops-ml-platforms-section">MLOps &amp; ML Platforms</a>
-              <a href="aiml-engineering-mlops.html#ml-model-deployment-section">ML Model Deployment &amp; Productionization</a>
-              <a href="aiml-engineering-mlops.html#model-monitoring-optimization-section">Model Monitoring &amp; Optimization</a>
-              <a href="aiml-engineering-mlops.html#cloud-aiml-engineering-section">Cloud AI/ML Engineering</a>
-              <a href="aiml-engineering-mlops.html#enterprise-aiml-transformation-section">Enterprise AI/ML Transformation</a>
-            </div>
-          </div>
-          <div class="drawer-nested-dropdown">
-            <button class="drawer-nested-btn">
-              AI Model Training <span class="drawer-arrow">&#9660;</span>
-            </button>
-            <div class="drawer-nested-menu">
-              <a href="ai-model-training.html#expert-data-creation-annotation-section">Expert Data Creation &amp; Annotation</a>
-              <a href="ai-model-training.html#rlhf-human-feedback-section">RLHF / Human Feedback</a>
-              <a href="ai-model-training.html#ai-model-evaluation-section">AI Model Evaluation</a>
-              <a href="ai-model-training.html#benchmark-test-set-creation-section">Benchmark &amp; Test-Set Creation</a>
-              <a href="ai-model-training.html#coding-expertise-ai-training-section">Coding Expertise for AI Training</a>
-              <a href="ai-model-training.html#stem-reasoning-expertise-section">STEM &amp; Reasoning Expertise</a>
-              <a href="ai-model-training.html#reinforcement-learning-environments-section">Reinforcement-Learning Environments</a>
-            </div>
-          </div>
-          <div class="drawer-nested-dropdown">
-            <button class="drawer-nested-btn">
-              Enterprise Gen AI <span class="drawer-arrow">&#9660;</span>
-            </button>
-            <div class="drawer-nested-menu">
-              <a href="enterprise-ai-agents.html#enterprise-ai-agents-section">Enterprise AI Agents</a>
-              <a href="enterprise-ai-agents.html#rag-solutions-section">RAG Solutions</a>
-              <a href="enterprise-ai-agents.html#customized-fine-tuned-llms-section">Customized / Fine-Tuned LLMs</a>
-              <a href="enterprise-ai-agents.html#enterprise-ai-copilots-section">Enterprise AI Copilots</a>
-              <a href="enterprise-ai-agents.html#document-intelligence-knowledge-ai-section">Document Intelligence &amp; Knowledge AI</a>
-              <a href="enterprise-ai-agents.html#conversational-ai-customer-service-section">Conversational AI / Customer Service AI</a>
-              <a href="enterprise-ai-agents.html#enterprise-genai-app-development-section">Enterprise GenAI Application Development</a>
-              <a href="enterprise-ai-agents.html#genai-integration-modernization-section">GenAI Integration &amp; Modernization</a>
-            </div>
-          </div>
-          <div class="drawer-nested-dropdown">
-            <button class="drawer-nested-btn">
-              AI/ML Talent Services <span class="drawer-arrow">&#9660;</span>
-            </button>
-            <div class="drawer-nested-menu">
-              <a href="ai-ml-talent-services.html#specialized-aiml-talent-section">Specialized AI/ML Talent</a>
-              <a href="ai-ml-talent-services.html#flexible-talent-access-section">Flexible Talent Access</a>
-              <a href="ai-ml-talent-services.html#scalable-aiml-teams-section">Scalable AI/ML Teams</a>
-              <a href="ai-ml-talent-services.html#faster-project-delivery-section">Faster Project Delivery</a>
-            </div>
-          </div>
-          <a href="ai-newsletter.html">AI News Letter</a>
-          <a href="articles.html" style="color: #00c896; font-weight: bold;">Articles</a>
-        </div>
-      </li>
-      <li class="drawer-dropdown">
-        <button class="drawer-dropdown-btn">
-          Services <span class="drawer-arrow">&#9660;</span>
-        </button>
-        <div class="drawer-dropdown-menu">
-          <a href="it-consulting.html">IT Consulting</a>
-          <a href="staff.html">Staff Augmentation (T&amp;M)</a>
-          <a href="managed-services.html">Managed Teams and Managed Services</a>
-        </div>
-      </li>
-      <li class="drawer-dropdown">
-        <button class="drawer-dropdown-btn">
-          Skill Sets <span class="drawer-arrow">&#9660;</span>
-        </button>
-        <div class="drawer-dropdown-menu">
-          <a href="java.html">Java Technologies</a>
-          <a href="microsoft.html">Microsoft Technologies</a>
-          <a href="it-infra.html">IT Infrastructure</a>
-          <a href="sap.html">SAP</a>
-          <a href="datasci.html">Data Science</a>
-          <a href="servicenow.html">Service Now</a>
-          <a href="salesforce.html">Salesforce</a>
-          <a href="dw.html">Data Warehouse</a>
-          <a href="cloud.html">Cloud Technologies</a>
-          <a href="ai-ml.html">AI and ML</a>
-          <a href="iot.html">IOT</a>
-          <a href="database.html">Database management</a>
-          <a href="testing.html">Testing</a>
-          <a href="cybersecurity.html">Cyber Security</a>
-          <a href="oracle.html">Oracle</a>
-        </div>
-      </li>
-      <li class="drawer-dropdown">
-        <button class="drawer-dropdown-btn">
-          Corporate Compliance <span class="drawer-arrow">&#9660;</span>
-        </button>
-        <div class="drawer-dropdown-menu">
-          <a href="iso.html">ISO9001-27001</a>
-          <a href="cobe.html">Code of Business Ethics</a>
-          <a href="soc2type2.html">SOC2 Type 2</a>
-          <a href="statutory.html">Statutory Compliance</a>
-          <a href="env-sus.html">Environmental Sustainability</a>
-          <a href="privacy.html">Privacy Policy</a>
-        </div>
-      </li>
-      <li class="drawer-dropdown">
-        <button class="drawer-dropdown-btn">
-          About Us <span class="drawer-arrow">&#9660;</span>
-        </button>
-        <div class="drawer-dropdown-menu">
-          <a href="lt.html">Leadership Team</a>
-          <a href="it-security.html">IT Security Policies</a>
-          <a href="contact.html">Contact Us</a>
-        </div>
-      </li>
-      <li>
-        <a href="activejobs.html" class="drawer-nav-btn">Active Jobs</a>
-      </li>
-    </ul>
-  </div>
+  </header>
 
-  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <!-- PUBLICATION CONTENT (2 EXACT PDF SHEETS) -->
+  <main class="publication-container">
 
-  <!-- Hero Banner -->
-  <section class="articles-hero-banner">
-    <div class="articles-hero-inner">
-      <div class="articles-badge-row">
-        <span class="article-tag">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-          Executive Discussion Paper
-        </span>
-        <span class="article-category-label">Healthcare AI / ML · Data Quality &amp; Governance</span>
-      </div>
-      <h1 class="articles-hero-title">Healthcare AI Data Quality Degradation and Its Impact</h1>
-      <p class="articles-hero-subtitle">
-        An executive discussion paper examining AI readiness, post-deployment monitoring, patient safety, and revenue exposure across enterprise healthcare environments.
-      </p>
-      <div class="articles-meta-strip">
-        <div class="meta-item">
-          <span>Author:</span>
-          <strong>Jay (Jayaraman Ganapathi)</strong>
-        </div>
-        <div class="meta-item">
-          <span>Organization:</span>
-          <a href="https://people-prime.com" target="_blank" style="color: #93c5fd; text-decoration: none; font-weight: 600;">People Prime Worldwide</a>
-        </div>
-        <div class="meta-item">
-          <span>Length:</span>
-          <strong>2 Pages · ~4 Min Read</strong>
-        </div>
-        <div class="meta-item">
-          <span>Topic:</span>
-          <strong>AI Governance &amp; Monitoring</strong>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sticky Document Reader Controls Bar -->
-  <aside class="document-control-bar" role="toolbar" aria-label="Document Reader Actions">
-    <div class="control-bar-inner">
-      <div class="control-group-left">
-        <a href="aiml-tech-services.html" class="doc-btn doc-btn-secondary" title="Return to AIML Services Hub">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-          <span>AIML Services</span>
-        </a>
-        <div class="doc-page-jumps">
-          <span>Jump to:</span>
-          <a href="#page-1" class="doc-jump-btn">Page 1</a>
-          <a href="#page-2" class="doc-jump-btn">Page 2</a>
-        </div>
-      </div>
-
-      <div class="control-group-right">
-        <button type="button" class="doc-btn doc-btn-secondary" id="shareBtn" title="Copy article link to clipboard">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg>
-          <span>Share</span>
-        </button>
-
-        <a href="assets/articles/healthcare-ai-data-quality-degradation-and-its-impact.pdf" download="healthcare-ai-data-quality-degradation-and-its-impact.pdf" class="doc-btn doc-btn-secondary" title="Download original PDF document">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-          <span>Download PDF</span>
-        </a>
-
-        <button type="button" onclick="window.print()" class="doc-btn doc-btn-primary" title="Print article or Save as PDF">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-          <span>Print / Save PDF</span>
-        </button>
-      </div>
-    </div>
-  </aside>
-
-  <!-- Document Canvas -->
-  <main class="article-document-canvas">
-
-    <!-- ==========================================
-         PAGE 1 OF 2
-    =========================================== -->
-    <article class="doc-sheet" id="page-1" aria-label="Executive Paper Page 1">
+    <!-- ==================== PAGE 1 OF 2 ==================== -->
+    <article id="page-1" class="page-sheet" aria-label="Page 1">
 
       <!-- Running Header -->
-      <div class="sheet-header-rule">
-        <span class="sheet-header-category">HEALTHCARE AI / ML | DATA QUALITY &amp; GOVERNANCE</span>
-        <span class="sheet-header-author-tag">Author: Jay (Jayaraman Ganapathi) - People Prime Worldwide (people-prime.com)</span>
+      <div class="doc-running-header">
+        HEALTHCARE AI / ML | DATA QUALITY &amp; GOVERNANCE
       </div>
 
-      <!-- Title Block -->
+      <!-- Main Title Block -->
       <div class="doc-title-block">
-        <h2 class="doc-main-title">Healthcare AI Data Quality Degradation<br>and Its Impact</h2>
-        <div class="doc-title-underline"></div>
-        <p class="doc-author-line">
+        <h1 class="doc-main-title">Healthcare AI Data Quality Degradation<br>and Its Impact</h1>
+        <div class="doc-title-divider"></div>
+        <div class="doc-author-line">
           Author: Jay (Jayaraman Ganapathi) - <a href="https://people-prime.com" target="_blank" rel="noopener">People Prime Worldwide (people-prime.com)</a>
-        </p>
-        <p class="doc-paper-type">Executive discussion paper | AI readiness, monitoring, patient safety and business impact</p>
+        </div>
+        <div class="doc-subtitle-line">
+          Executive discussion paper | AI readiness, monitoring, patient safety and business impact
+        </div>
       </div>
 
-      <!-- Highlight Banner -->
-      <div class="doc-callout-banner">
-        <p class="doc-callout-text">AI confidence is running ahead of data quality</p>
+      <!-- Callout Banner -->
+      <div class="doc-banner">
+        <div class="doc-banner-text">AI confidence is running ahead of data quality</div>
       </div>
 
       <!-- Evidence Snapshot -->
-      <section aria-labelledby="evidence-heading">
-        <h3 class="doc-section-heading" id="evidence-heading">Evidence Snapshot</h3>
-        <p class="doc-p">
-          The most recent study cited in this article is a 2025 qualitative study based on interviews conducted in 2024 with 16 radiologists across the U.S. and Europe. It found that AI monitoring remains relatively immature: manual retrospective comparison against radiology reports was common, while automated/statistical monitoring was much less common. (Springer)
-        </p>
-        <p class="doc-p" style="margin-bottom: 6px;">
-          Another study by Fivetran and Vanson Bourne, <em>“AI in 2024,”</em> surveyed 550 respondents in March 2024 and reported:
-        </p>
+      <h2 class="doc-section-title">Evidence Snapshot</h2>
+      <p class="doc-paragraph">
+        The most recent study cited in this article is a 2025 qualitative study based on interviews conducted in 2024 with 16 radiologists across the U.S. and Europe. It found that AI monitoring remains relatively immature: manual retrospective comparison against radiology reports was common, while automated/statistical monitoring was much less common. (Springer)
+      </p>
+      <p class="doc-paragraph">
+        Another study by Fivetran and Vanson Bourne, “AI in 2024,” surveyed 550 respondents in March 2024 and reported:
+      </p>
 
-        <!-- KPI Visual Highlights -->
-        <div class="stats-kpi-grid">
-          <div class="stat-kpi-card">
-            <span class="kpi-figure">81%</span>
-            <span class="kpi-label">of surveyed organizations say they trust their AI/ML outputs despite fundamental data inefficiencies.</span>
-          </div>
-          <div class="stat-kpi-card">
-            <span class="kpi-figure">42%</span>
-            <span class="kpi-label">reported experiencing generative-AI data hallucinations.</span>
-          </div>
-          <div class="stat-kpi-card">
-            <span class="kpi-figure">50%</span>
-            <span class="kpi-label">of the time, organizations in the U.S. using LLMs reported data inaccuracies or hallucinations.</span>
-          </div>
-          <div class="stat-kpi-card">
-            <span class="kpi-figure">$406M</span>
-            <span class="kpi-label">average annual global revenue impact (6% of revenue) caused by underperforming AI built on inaccurate data.</span>
-          </div>
-        </div>
-
-        <ul class="doc-bullet-list">
-          <li class="doc-bullet-item">81% of surveyed organizations said they trust their AI/ML outputs despite fundamental data inefficiencies.</li>
-          <li class="doc-bullet-item">42% reported experiencing generative-AI data hallucinations.</li>
-          <li class="doc-bullet-item">In the U.S., organizations using LLMs reported data inaccuracies or hallucinations 50% of the time.</li>
-          <li class="doc-bullet-item">Underperforming AI models built on inaccurate or low-quality data were reported to impact 6% of annual global revenue &mdash; $406M on average.</li>
-        </ul>
-      </section>
+      <ul class="doc-bullets">
+        <li>81% of surveyed organizations said they trust their AI/ML outputs despite fundamental data inefficiencies.</li>
+        <li>42% reported experiencing generative-AI data hallucinations.</li>
+        <li>In the U.S., organizations using LLMs reported data inaccuracies or hallucinations 50% of the time.</li>
+        <li>Underperforming AI models built on inaccurate or low-quality data were reported to impact 6% of annual global revenue — $406M on average.</li>
+      </ul>
 
       <!-- Key challenge -->
-      <section aria-labelledby="key-challenge-heading">
-        <h3 class="doc-section-heading" id="key-challenge-heading">Key challenge: post-deployment AI monitoring</h3>
-        <p class="doc-p">
-          The most common method of monitoring involved a manual process of retrospectively comparing the AI results against the radiology report. Automated and statistical methods of monitoring were much less common. The biggest challenges are a lack of resources to support AI monitoring and uncertainty about how to create a robust and scalable process of monitoring the breadth and variety of radiology AI applications available.
-        </p>
-      </section>
+      <h2 class="doc-section-title">Key challenge: post-deployment AI monitoring</h2>
+      <p class="doc-paragraph">
+        The most common method of monitoring involved a manual process of retrospectively comparing the AI results against the radiology report. Automated and statistical methods of monitoring were much less common. The biggest challenges are a lack of resources to support AI monitoring and uncertainty about how to create a robust and scalable process of monitoring the breadth and variety of radiology AI applications available.
+      </p>
 
-      <!-- Impact Section Part 1 -->
-      <section aria-labelledby="impact-heading">
-        <h3 class="doc-section-heading" id="impact-heading">Impact - Not monitoring data after model deployment &amp; scaled usage</h3>
-        
-        <div class="impact-numbered-flow">
-          <div class="impact-step-card">
-            <div class="impact-badge">1</div>
-            <div class="impact-content">
-              <h4 class="impact-title">Errors multiply.</h4>
-              <p class="impact-desc">
-                Bad data doesn't stay in one place. A wrong diagnosis code or duplicate patient record feeds the risk model, which drives an Assist alert, which becomes a note, which becomes training data for the next model. With more AI tools connected, one error reaches many more workflows.
-              </p>
-            </div>
-          </div>
+      <!-- Impact -->
+      <h2 class="doc-section-title">Impact - Not monitoring data after model deployment &amp; scaled usage</h2>
 
-          <div class="impact-step-card">
-            <div class="impact-badge">2</div>
-            <div class="impact-content">
-              <h4 class="impact-title">Models drift and get worse over time.</h4>
-              <p class="impact-desc">
-                Clinical guidelines, coding rules and patient populations keep changing. Without fresh, correctly labeled data, a model that worked at launch slowly becomes less accurate, often without anyone noticing until outcomes slip.
-              </p>
-            </div>
-          </div>
+      <div class="impact-item">
+        <div class="impact-item-title">1. Errors multiply.</div>
+        <div class="impact-item-text">
+          Bad data doesn't stay in one place. A wrong diagnosis code or duplicate patient record feeds the risk model, which drives an Assist alert, which becomes a note, which becomes training data for the next model. With more AI tools connected, one error reaches many more workflows.
         </div>
-      </section>
-
-      <!-- Sheet Footer -->
-      <div class="sheet-footer-rule">
-        <span class="sheet-footer-author">Author: Jay (Jayaraman Ganapathi) - People Prime Worldwide (people-prime.com)</span>
-        <span class="sheet-footer-page">Page 1 of 2</span>
       </div>
+
+      <div class="impact-item">
+        <div class="impact-item-title">2. Models drift and get worse over time.</div>
+        <div class="impact-item-text">
+          Clinical guidelines, coding rules and patient populations keep changing. Without fresh, correctly labeled data, a model that worked at launch slowly becomes less accurate, often without anyone noticing until outcomes slip.
+        </div>
+      </div>
+
+      <!-- Footer Page 1 -->
+      <footer class="doc-footer">
+        Author: Jay (Jayaraman Ganapathi) - <a href="https://people-prime.com" target="_blank" rel="noopener">People Prime Worldwide (people-prime.com)</a>
+      </footer>
 
     </article>
 
 
-    <!-- ==========================================
-         PAGE 2 OF 2
-    =========================================== -->
-    <article class="doc-sheet" id="page-2" aria-label="Executive Paper Page 2">
+    <!-- ==================== PAGE 2 OF 2 ==================== -->
+    <article id="page-2" class="page-sheet" aria-label="Page 2">
 
       <!-- Running Header -->
-      <div class="sheet-header-rule">
-        <span class="sheet-header-category">HEALTHCARE AI / ML | DATA QUALITY &amp; GOVERNANCE</span>
-        <span class="sheet-header-author-tag">Author: Jay (Jayaraman Ganapathi) - People Prime Worldwide (people-prime.com)</span>
+      <div class="doc-running-header">
+        HEALTHCARE AI / ML | DATA QUALITY &amp; GOVERNANCE
       </div>
 
-      <!-- Impact Continued -->
-      <section aria-labelledby="impact-continued-heading">
-        <div class="impact-numbered-flow" style="margin-top: 4px;">
-          
-          <div class="impact-step-card">
-            <div class="impact-badge">3</div>
-            <div class="impact-content">
-              <h4 class="impact-title">AI starts learning from its own mistakes.</h4>
-              <p class="impact-desc">
-                As AI-generated content grows (ambient notes, summaries, suggested codes), it flows back into the records. If no one checks it, future models train on earlier models' errors, and quality declines with each cycle.
-              </p>
-            </div>
-          </div>
-
-          <div class="impact-step-card">
-            <div class="impact-badge">4</div>
-            <div class="impact-content">
-              <h4 class="impact-title">Physicians stop trusting it.</h4>
-              <p class="impact-desc">
-                Doctors forgive the first few bad suggestions. After that they tune out alerts, which is alert fatigue, and adoption drops. At that point the AI investment stops paying back, even though the software still works.
-              </p>
-            </div>
-          </div>
-
-          <div class="impact-step-card">
-            <div class="impact-badge">5</div>
-            <div class="impact-content">
-              <h4 class="impact-title">Financial and compliance exposure.</h4>
-              <p class="impact-desc">
-                In value-based care, inaccurate risk scores or care-gap flags mean missed quality measures and lost shared savings. Unsupported coding can also trigger payer audits and clawbacks. Stale or wrong data in the EHR also creates HIPAA and patient-safety risk.
-              </p>
-            </div>
-          </div>
-
-          <div class="impact-step-card">
-            <div class="impact-badge">6</div>
-            <div class="impact-content">
-              <h4 class="impact-title">Fixing it later costs far more.</h4>
-              <p class="impact-desc">
-                Cleaning data before it goes into a model is cheap. Finding and correcting errors after they've spread across several models, records and payer submissions is slow and expensive.
-              </p>
-            </div>
-          </div>
-
+      <!-- Impact Items (continued) -->
+      <div class="impact-item" style="margin-top: 6px;">
+        <div class="impact-item-title">3. AI starts learning from its own mistakes.</div>
+        <div class="impact-item-text">
+          As AI-generated content grows (ambient notes, summaries, suggested codes), it flows back into the records. If no one checks it, future models train on earlier models' errors, and quality declines with each cycle.
         </div>
-      </section>
+      </div>
+
+      <div class="impact-item">
+        <div class="impact-item-title">4. Physicians stop trusting it.</div>
+        <div class="impact-item-text">
+          Doctors forgive the first few bad suggestions. After that they tune out alerts, which is alert fatigue, and adoption drops. At that point the AI investment stops paying back, even though the software still works.
+        </div>
+      </div>
+
+      <div class="impact-item">
+        <div class="impact-item-title">5. Financial and compliance exposure.</div>
+        <div class="impact-item-text">
+          In value-based care, inaccurate risk scores or care-gap flags mean missed quality measures and lost shared savings. Unsupported coding can also trigger payer audits and clawbacks. Stale or wrong data in the EHR also creates HIPAA and patient-safety risk.
+        </div>
+      </div>
+
+      <div class="impact-item">
+        <div class="impact-item-title">6. Fixing it later costs far more.</div>
+        <div class="impact-item-text">
+          Cleaning data before it goes into a model is cheap. Finding and correcting errors after they've spread across several models, records and payer submissions is slow and expensive.
+        </div>
+      </div>
 
       <!-- What does the future look like? -->
-      <section aria-labelledby="future-heading">
-        <h3 class="doc-section-heading" id="future-heading">What does the future look like?</h3>
-        
-        <div class="future-timeline-box">
-          <div class="timeline-milestones">
-            <div class="milestone-col">
-              <span class="milestone-year">2024</span>
-              <span class="milestone-text">Proving AI works in clinical and hospital operations.</span>
-            </div>
-            <div class="milestone-col">
-              <span class="milestone-year">2026</span>
-              <span class="milestone-text">Scaling AI deployments across enterprise workflows.</span>
-            </div>
-            <div class="milestone-col">
-              <span class="milestone-year">2028</span>
-              <span class="milestone-text">Proving it is accurate, safe, auditable &amp; compliant.</span>
-            </div>
-          </div>
-          <p class="doc-p" style="margin: 0; font-size: 13.2px;">
-            Physician use will likely reach <strong>90% or more</strong>, and AI note-taking will become a standard EHR feature rather than a separate purchase.
-          </p>
-        </div>
-
-        <p class="doc-p">
-          As per a different study, <strong>91% of machine learning models lose accuracy over time</strong> (<em>Scientific Reports</em>, 2022). Gartner found that <strong>63% of organizations don't have</strong>, or aren't sure they have, the right data management practices for AI. It predicts that through 2026, <strong>organizations will abandon 60% of AI projects</strong> that lack AI-ready data.
-        </p>
-      </section>
+      <h2 class="doc-section-title" style="margin-top: 22px;">What does the future look like?</h2>
+      <p class="doc-paragraph">
+        2024 was about proving AI works in healthcare, 2026 is about scaling it, and 2028 will be about proving it's accurate, safe and auditable. Physician use will likely reach 90% or more, and AI note-taking will become a standard EHR feature rather than a separate purchase.
+      </p>
+      <p class="doc-paragraph">
+        As per a different study, 91% of machine learning models lose accuracy over time (Scientific Reports, 2022). Gartner found that 63% of organizations don't have, or aren't sure they have, the right data management practices for AI. It predicts that through 2026, organizations will abandon 60% of AI projects that lack AI-ready data.
+      </p>
 
       <!-- Recommendation -->
-      <section aria-labelledby="recommendation-heading">
-        <h3 class="doc-section-heading" id="recommendation-heading">Recommendation</h3>
-        <div class="recommendation-card">
-          <p class="doc-p" style="margin: 0;">
-            Healthcare organizations which are using AI Models across the globe should breathe easy for about 3 to 6 months and focus on improving the underlying AI generated healthcare data. They should look for inhouse, insource or outsource agencies who specialize in healthcare data and have the requisite domain expertise and AI/ML technical experts. Else be ready for missed or delayed diagnosis, incorrect treatment or clinical recommendations, health inequity, complete abandoning of AI solutions out of perceived risks which was not resolved though solutions and methods are available.
-          </p>
-        </div>
-      </section>
+      <h2 class="doc-section-title" style="margin-top: 22px;">Recommendation</h2>
+      <p class="doc-paragraph">
+        Healthcare organizations which are using AI Models across the globe should breathe easy for about 3 to 6 months and focus on improving the underlying AI generated healthcare data. The should look for inhouse, insource or outsource agencies who specialize in healthcare data and have the requisite domain expertise and AI/ML technical experts. Else be ready for missed or delayed diagnosis, incorrect treatment or clinical recommendations, health inequity, complete abandoning of AI solutions out of perceived risks which was not resolved though solutions and methods are available.
+      </p>
 
-      <!-- Executive Takeaway -->
-      <section aria-labelledby="takeaway-heading">
-        <div class="executive-takeaway-block" id="takeaway-heading">
-          <div class="takeaway-header-title">EXECUTIVE TAKEAWAY</div>
-          <p class="takeaway-body-text">
-            AI scale without data quality, post-deployment monitoring and accountable governance can amplify operational, financial, compliance and patient-safety risks.
-          </p>
+      <!-- Executive Takeaway Box -->
+      <div class="takeaway-box">
+        <div class="takeaway-label">EXECUTIVE TAKEAWAY</div>
+        <div class="takeaway-text">
+          AI scale without data quality, post-deployment monitoring and accountable governance can amplify operational, financial, compliance and patient-safety risks.
         </div>
-      </section>
-
-      <!-- Sheet Footer -->
-      <div class="sheet-footer-rule">
-        <span class="sheet-footer-author">Author: Jay (Jayaraman Ganapathi) - People Prime Worldwide (people-prime.com)</span>
-        <span class="sheet-footer-page">Page 2 of 2</span>
       </div>
+
+      <!-- Footer Page 2 -->
+      <footer class="doc-footer">
+        Author: Jay (Jayaraman Ganapathi) - <a href="https://people-prime.com" target="_blank" rel="noopener">People Prime Worldwide (people-prime.com)</a>
+      </footer>
 
     </article>
 
   </main>
 
-  <!-- Share Toast -->
-  <div class="share-toast" id="shareToast">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-    <span>Article link copied to clipboard!</span>
-  </div>
-
-  <!-- Standard Website Footer -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-about">
-          <img src="assets/logos/logo.png" alt="People Prime Worldwide Logo" class="footer-logo" />
-          <p>
-            We specialize in
-            <b>IT Consulting, Staff Augmentation, Managed Services, AIML Technology Services, and AIML Solutions</b>,
-            delivering end-to-end technology capabilities that drive business
-            success. As a trusted technology partner, we combine specialized
-            expertise and experienced teams to help organizations build,
-            implement, and manage innovative solutions aligned with their
-            business goals.
-          </p>
-        </div>
-
-        <div class="grid-links">
-          <div class="footer-column">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="activejobs.html">Active Jobs</a></li>
-              <li><a href="iso.html">Corporate Compliance</a></li>
-              <li><a href="it-security.html">IT Security Policies</a></li>
-              <li>
-                <a href="technology-hub/technology-hub.html">Technology Hub</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h3>Our Services</h3>
-            <ul>
-              <li>
-                <a href="aiml-tech-services.html">AIML Technology Services</a>
-              </li>
-              <li>
-                <a href="it-consulting.html">IT Consulting &amp; Implementation Services</a>
-              </li>
-              <li><a href="staff.html">Staff Augmentation</a></li>
-              <li>
-                <a href="managed-services.html">Managed Teams &amp; Services</a>
-              </li>
-              <li><a href="gcc.html" class="drawer-gcc-link">Global Capability<span
-                    class="drawer-gcc-subtext">Center</span></a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
-            <h3>Toll Free</h3>
-            <p class="phone">1800 572 1880</p>
-          </div>
-
-          <div class="footer-column">
-            <h3>Connect Us On</h3>
-            <div class="social-icons">
-              <a href="#" target="_blank">F</a>
-              <a href="https://x.com/peopleprimeww" target="_blank">X</a>
-              <a href="https://www.youtube.com/@PeoplePrime_ITinfraJobs" target="_blank">▶</a>
-              <a href="https://www.linkedin.com/company/peopleprimeww/posts/?feedView=all" target="_blank">in</a>
-              <a href="https://www.instagram.com/peopleprime_worldwide/" target="_blank">◎</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>
-          Copyright &copy; People Prime Worldwide Pvt Ltd. All rights reserved.
-        </p>
-        <span class="tagline">Better Careers Better Lives</span>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Copy link / share handler
-    document.addEventListener("DOMContentLoaded", function () {
-      const shareBtn = document.getElementById("shareBtn");
-      const shareToast = document.getElementById("shareToast");
-
-      if (shareBtn) {
-        shareBtn.addEventListener("click", function () {
-          if (navigator.clipboard && window.location.href) {
-            navigator.clipboard.writeText(window.location.href).then(function () {
-              showToast();
-            }).catch(function () {
-              fallbackCopy();
-            });
-          } else {
-            fallbackCopy();
-          }
-        });
-      }
-
-      function fallbackCopy() {
-        const dummy = document.createElement("input");
-        document.body.appendChild(dummy);
-        dummy.value = window.location.href;
-        dummy.select();
-        document.execCommand("copy");
-        document.body.removeChild(dummy);
-        showToast();
-      }
-
-      function showToast() {
-        if (!shareToast) return;
-        shareToast.classList.add("show");
-        setTimeout(function () {
-          shareToast.classList.remove("show");
-        }, 2800);
-      }
-    });
-  </script>
-
 </body>
-
 </html>
