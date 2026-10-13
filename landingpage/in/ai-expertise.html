@@ -618,6 +618,27 @@ document.head.appendChild(o)}initApollo();</script>
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 6px;
+      max-height: 135px;
+      overflow-y: auto;
+      padding: 2px 4px 2px 0;
+    }
+
+    .lp-time-slots::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .lp-time-slots::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 4px;
+    }
+
+    .lp-time-slots::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+
+    .lp-time-slots::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
     }
 
     .lp-time-pill {
@@ -1518,14 +1539,29 @@ document.head.appendChild(o)}initApollo();</script>
 
                   <!-- Time slots unlocked once date is selected -->
                   <div class="lp-time-slot-wrapper" id="lp-time-slot-wrapper" style="display: none;">
-                    <label class="lp-time-label">Select Time Slot (IST)</label>
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                      <label class="lp-time-label" style="margin-bottom: 0;">Select Time Slot (IST)</label>
+                      <span style="font-size: 10px; color: #64748b; font-weight: 500;">9:30 AM – 6:30 PM</span>
+                    </div>
                     <div class="lp-time-slots" id="lp-time-slots">
+                      <button type="button" class="lp-time-pill" data-slot="09:30 AM - 10:00 AM">09:30 AM</button>
                       <button type="button" class="lp-time-pill" data-slot="10:00 AM - 10:30 AM">10:00 AM</button>
+                      <button type="button" class="lp-time-pill" data-slot="10:30 AM - 11:00 AM">10:30 AM</button>
+                      <button type="button" class="lp-time-pill" data-slot="11:00 AM - 11:30 AM">11:00 AM</button>
                       <button type="button" class="lp-time-pill" data-slot="11:30 AM - 12:00 PM">11:30 AM</button>
+                      <button type="button" class="lp-time-pill" data-slot="12:00 PM - 12:30 PM">12:00 PM</button>
+                      <button type="button" class="lp-time-pill" data-slot="12:30 PM - 01:00 PM">12:30 PM</button>
+                      <button type="button" class="lp-time-pill" data-slot="01:00 PM - 01:30 PM">01:00 PM</button>
+                      <button type="button" class="lp-time-pill" data-slot="01:30 PM - 02:00 PM">01:30 PM</button>
                       <button type="button" class="lp-time-pill" data-slot="02:00 PM - 02:30 PM">02:00 PM</button>
+                      <button type="button" class="lp-time-pill" data-slot="02:30 PM - 03:00 PM">02:30 PM</button>
+                      <button type="button" class="lp-time-pill" data-slot="03:00 PM - 03:30 PM">03:30 PM</button>
                       <button type="button" class="lp-time-pill" data-slot="03:30 PM - 04:00 PM">03:30 PM</button>
+                      <button type="button" class="lp-time-pill" data-slot="04:00 PM - 04:30 PM">04:00 PM</button>
                       <button type="button" class="lp-time-pill" data-slot="04:30 PM - 05:00 PM">04:30 PM</button>
+                      <button type="button" class="lp-time-pill" data-slot="05:00 PM - 05:30 PM">05:00 PM</button>
                       <button type="button" class="lp-time-pill" data-slot="05:30 PM - 06:00 PM">05:30 PM</button>
+                      <button type="button" class="lp-time-pill" data-slot="06:00 PM - 06:30 PM">06:00 PM</button>
                     </div>
                     <input type="hidden" id="lp-meeting-time" name="meeting_time" value="" />
                   </div>
