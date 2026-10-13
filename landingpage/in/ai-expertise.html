@@ -537,6 +537,117 @@ document.head.appendChild(o)}initApollo();</script>
       color: #374151;
     }
 
+    /* Meeting Scheduler Card */
+    .lp-meeting-card {
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .lp-meeting-card:focus-within {
+      border-color: #6366f1;
+      background: #fbfbfe;
+    }
+
+    .lp-meeting-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .lp-meeting-title-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #1e293b;
+      letter-spacing: 0.2px;
+    }
+
+    .lp-calendar-svg {
+      stroke: #6366f1;
+    }
+
+    .lp-meeting-badge {
+      font-size: 10px;
+      font-weight: 600;
+      background: #e2e8f0;
+      color: #64748b;
+      padding: 1px 7px;
+      border-radius: 12px;
+      letter-spacing: 0.3px;
+    }
+
+    .lp-meeting-card input[type="date"] {
+      cursor: pointer;
+    }
+
+    .lp-time-slot-wrapper {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px dashed #cbd5e1;
+      animation: lpFadeSlide 0.25s ease forwards;
+    }
+
+    @keyframes lpFadeSlide {
+      from {
+        opacity: 0;
+        transform: translateY(-4px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .lp-time-label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .lp-time-slots {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+    }
+
+    .lp-time-pill {
+      background: #ffffff;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 7px 4px;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      color: #475569;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-align: center;
+      outline: none;
+    }
+
+    .lp-time-pill:hover {
+      border-color: #818cf8;
+      background: #eef2ff;
+      color: #4338ca;
+    }
+
+    .lp-time-pill.selected {
+      background: linear-gradient(135deg, #6366f1, #4f46e5);
+      color: #ffffff;
+      border-color: #4338ca;
+      box-shadow: 0 2px 6px rgba(99, 102, 241, 0.35);
+    }
+
     .lp-submit-btn {
       width: 100%;
       padding: 11px 20px;
@@ -1385,6 +1496,41 @@ document.head.appendChild(o)}initApollo();</script>
                     required />
                 </div>
 
+                <!-- Schedule a Meeting (Calendar & Time Slot) -->
+                <div class="lp-meeting-card">
+                  <div class="lp-meeting-header">
+                    <div class="lp-meeting-title-row">
+                      <svg class="lp-calendar-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                      </svg>
+                      <span>Schedule a Meeting</span>
+                    </div>
+                    <span class="lp-meeting-badge">Optional</span>
+                  </div>
+
+                  <div class="lp-form-group" style="margin-bottom: 0;">
+                    <label for="lp-meeting-date">Select Date</label>
+                    <input type="date" id="lp-meeting-date" name="meeting_date" />
+                  </div>
+
+                  <!-- Time slots unlocked once date is selected -->
+                  <div class="lp-time-slot-wrapper" id="lp-time-slot-wrapper" style="display: none;">
+                    <label class="lp-time-label">Select Time Slot (IST)</label>
+                    <div class="lp-time-slots" id="lp-time-slots">
+                      <button type="button" class="lp-time-pill" data-slot="10:00 AM - 10:30 AM">10:00 AM</button>
+                      <button type="button" class="lp-time-pill" data-slot="11:30 AM - 12:00 PM">11:30 AM</button>
+                      <button type="button" class="lp-time-pill" data-slot="02:00 PM - 02:30 PM">02:00 PM</button>
+                      <button type="button" class="lp-time-pill" data-slot="03:30 PM - 04:00 PM">03:30 PM</button>
+                      <button type="button" class="lp-time-pill" data-slot="04:30 PM - 05:00 PM">04:30 PM</button>
+                      <button type="button" class="lp-time-pill" data-slot="05:30 PM - 06:00 PM">05:30 PM</button>
+                    </div>
+                    <input type="hidden" id="lp-meeting-time" name="meeting_time" value="" />
+                  </div>
+                </div>
+
                 <button type="submit" class="lp-submit-btn" id="lp-submit-btn">
                   Click to connect with your consultant →
                 </button>
@@ -1578,6 +1724,41 @@ document.head.appendChild(o)}initApollo();</script>
       utilsScript: '../../../assets/iti/js/utils.js',
     });
 
+    // Meeting Date & Time Slot selection
+    const dateInput = document.getElementById('lp-meeting-date');
+    const timeSlotWrapper = document.getElementById('lp-time-slot-wrapper');
+    const timeHiddenInput = document.getElementById('lp-meeting-time');
+    const timePills = document.querySelectorAll('.lp-time-pill');
+
+    if (dateInput) {
+      // Prevent picking past dates
+      const todayStr = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', todayStr);
+
+      dateInput.addEventListener('change', function () {
+        if (this.value) {
+          timeSlotWrapper.style.display = 'block';
+          // Auto-select first slot if none selected yet
+          if (!timeHiddenInput.value && timePills.length > 0) {
+            timePills[0].classList.add('selected');
+            timeHiddenInput.value = timePills[0].getAttribute('data-slot');
+          }
+        } else {
+          timeSlotWrapper.style.display = 'none';
+          timeHiddenInput.value = '';
+          timePills.forEach(pill => pill.classList.remove('selected'));
+        }
+      });
+    }
+
+    timePills.forEach(pill => {
+      pill.addEventListener('click', function () {
+        timePills.forEach(p => p.classList.remove('selected'));
+        this.classList.add('selected');
+        timeHiddenInput.value = this.getAttribute('data-slot');
+      });
+    });
+
     // Form submission handler
     const form = document.getElementById('lpContactForm');
     const formContent = document.getElementById('lp-form-content');
@@ -1633,6 +1814,15 @@ document.head.appendChild(o)}initApollo();</script>
       // Ensure phone field captures the formatted input with dial code
       if (typeof iti !== 'undefined') {
         formData.set('phone', iti.getNumber());
+      }
+
+      // Format scheduled meeting details for submission
+      const mDate = dateInput ? dateInput.value : '';
+      const mTime = timeHiddenInput ? timeHiddenInput.value : '';
+      if (mDate && mTime) {
+        formData.set('scheduled_meeting', `${mDate} at ${mTime} (IST)`);
+      } else if (mDate) {
+        formData.set('scheduled_meeting', `${mDate} (Time to be confirmed)`);
       }
 
       // POST to Web3Forms endpoint
