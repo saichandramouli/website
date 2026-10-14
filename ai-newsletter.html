@@ -12,17 +12,17 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The AI Leadership Brief · Issue 02 | People Prime Worldwide</title>
+  <title>The AI Leadership Brief · Issue 03 | People Prime Worldwide</title>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
-  <meta name="description" content="The AI Leadership Brief — The week’s AI developments that matter to CXOs and decision-makers by Jayaraman (Jay) Ganapathi.">
+  <meta name="description" content="The AI Leadership Brief (Issue 03 · 5–11 October 2026) — The week’s AI developments that matter to CXOs and decision-makers by Jayaraman (Jay) Ganapathi.">
 
   <!-- Google Fonts: Editorial Serif + Clean Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 
   <style>
-    /* RESET & DOCUMENT BASE */
+    /* RESET & BASE */
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
@@ -131,7 +131,7 @@
       gap: 36px;
     }
 
-    /* INDIVIDUAL PAGE SHEET (A4/Letter replica) */
+    /* INDIVIDUAL PAGE SHEET (Exact A4/Letter replica) */
     .page-sheet {
       background: #fbf9f4;
       border: 1px solid #d9d4c7;
@@ -480,11 +480,6 @@
       flex-grow: 1;
     }
 
-    .role-desc strong {
-      color: #0e1712;
-      font-weight: 600;
-    }
-
     .role-go {
       text-align: right;
       font-size: 10px;
@@ -513,6 +508,17 @@
       gap: 8px;
     }
 
+    .lead-followup-badge {
+      font-size: 11px;
+      font-weight: 700;
+      color: #8b2b1a;
+      letter-spacing: 0.4px;
+    }
+
+    .lead-followup-badge strong {
+      color: #8b2b1a;
+    }
+
     .lead-story-title {
       font-family: 'Playfair Display', Georgia, serif;
       font-size: 21px;
@@ -537,12 +543,6 @@
       font-size: 11.5px;
       line-height: 1.38;
       color: #1c2721;
-    }
-
-    .sources-row {
-      font-size: 10.5px;
-      color: #55625a;
-      margin-top: 2px;
     }
 
     .timeline-box {
@@ -574,7 +574,7 @@
 
     .timeline-item {
       display: grid;
-      grid-template-columns: 48px 1fr;
+      grid-template-columns: 52px 1fr;
       gap: 8px;
       font-size: 11px;
       line-height: 1.35;
@@ -584,6 +584,16 @@
     .timeline-date {
       color: #f6c87a;
       font-weight: 700;
+    }
+
+    .timeline-footer {
+      font-size: 10.5px;
+      color: #a9becc;
+      font-style: italic;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 6px;
+      margin-top: auto;
+      line-height: 1.35;
     }
 
     /* CARTOON OF THE WEEK (Page 1) */
@@ -640,34 +650,37 @@
     .cartoon-card-wrap {
       width: 100%;
       margin-top: 4px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid #d9d4c7;
+      background: #fdfcf9;
     }
 
     .cartoon-full-img {
       width: 100%;
       height: auto;
       display: block;
-      border-radius: 6px;
     }
 
     /* NUMBERS OF THE WEEK (Page 1) */
-    .numbers-grid {
+    .numbers-grid-3 {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
     }
 
     .stat-card {
       background: #fdfcf9;
       border: 1px solid #dcd7ca;
       border-radius: 3px;
-      padding: 8px 7px;
+      padding: 10px 12px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
     .stat-val {
-      font-size: 17px;
+      font-size: 26px;
       font-weight: 800;
       color: #143826;
       line-height: 1.15;
@@ -675,14 +688,14 @@
     }
 
     .stat-label {
-      font-size: 10.5px;
-      line-height: 1.3;
+      font-size: 11px;
+      line-height: 1.35;
       color: #27332c;
       margin-bottom: 4px;
     }
 
     .stat-src {
-      font-size: 9.5px;
+      font-size: 10px;
       color: #164e63;
       font-weight: 600;
       text-align: right;
@@ -712,7 +725,7 @@
     /* PAGE 2 STYLES */
     .two-col-layout {
       display: grid;
-      grid-template-columns: 1fr 270px;
+      grid-template-columns: 1fr 280px;
       gap: 16px;
       align-items: stretch;
     }
@@ -728,7 +741,7 @@
     }
 
     .dark-card-title {
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 800;
       letter-spacing: 0.8px;
       text-transform: uppercase;
@@ -737,116 +750,143 @@
       padding-bottom: 5px;
     }
 
-    .dark-card-list {
+    .model-card-item {
       display: flex;
-      flex-direction: column;
-      gap: 8px;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     }
 
-    .dark-card-item {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      font-size: 11px;
+    .model-card-item:last-of-type {
+      border-bottom: none;
+      padding-bottom: 2px;
+    }
+
+    .model-card-desc {
+      flex: 1;
+      font-size: 10.5px;
       line-height: 1.35;
       color: #dbe4ec;
     }
 
-    .dark-card-item a {
-      color: #f7cb78;
-      font-weight: 700;
-      text-decoration: underline;
-      text-decoration-color: rgba(247, 203, 120, 0.4);
-    }
-
-    .dark-card-item a:hover {
+    .model-card-desc strong {
+      display: block;
       color: #ffffff;
-      text-decoration-color: #ffffff;
-    }
-
-    /* SPECTRUM BAR GRAPHIC (Page 2) */
-    .spectrum-wrap {
-      background: #fdfcf9;
-      border: 1px solid #dcd7ca;
-      border-radius: 4px;
-      padding: 10px 14px 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .spectrum-bar-container {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .spectrum-labels-top {
-      display: flex;
-      justify-content: space-between;
+      font-weight: 700;
       font-size: 11px;
-      font-weight: 800;
-      color: #17241e;
+      margin-bottom: 2px;
     }
 
-    .spectrum-line {
-      position: relative;
-      height: 12px;
-      background: linear-gradient(to right, #43a047 0%, #fb8c00 50%, #e53935 100%);
-      border-radius: 6px;
-      margin: 8px 12px 14px;
-    }
-
-    .spectrum-point {
-      position: absolute;
-      top: -4px;
-      transform: translateX(-50%);
+    .model-date-tag {
       display: flex;
       flex-direction: column;
-      align-items: center;
-    }
-
-    .spectrum-dot {
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background: #111e17;
-      border: 2px solid #ffffff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    }
-
-    .spectrum-point-name {
-      position: absolute;
-      top: 20px;
+      align-items: flex-end;
+      gap: 3px;
       font-size: 10px;
       font-weight: 700;
+      color: #f6c87a;
       white-space: nowrap;
-      color: #14241c;
     }
 
-    .spectrum-takeaway {
-      font-size: 11px;
-      color: #49554e;
+    .model-date-tag a {
+      color: #93c5fd;
+      text-decoration: underline;
+      font-size: 10px;
+    }
+
+    .models-disclaimer {
+      font-size: 9.5px;
+      color: #94a3b8;
       font-style: italic;
-      text-align: center;
-      margin-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 5px;
+      margin-top: auto;
+      line-height: 1.3;
+    }
+
+    /* RESEARCH CARDS (Page 2) */
+    .research-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .research-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .research-category {
+      font-size: 10px;
+      font-weight: 800;
+      color: #143826;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 2px;
+    }
+
+    .research-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #132118;
+      line-height: 1.25;
+    }
+
+    .research-text {
+      font-size: 11px;
+      line-height: 1.38;
+      color: #27332c;
+      flex-grow: 1;
+    }
+
+    .sowhat-pill {
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #1d2b23;
+      background: #f1ede3;
+      padding: 4px 7px;
+      border-radius: 2px;
+      margin-top: 3px;
+    }
+
+    .sowhat-pill strong {
+      color: #143826;
+      font-weight: 700;
+    }
+
+    .sub-note-strip {
+      background: #f5f2e9;
+      border: 1px solid #e0dbce;
+      padding: 4px 8px;
+      font-size: 10.5px;
+      color: #3e4a42;
+      border-radius: 2px;
+      margin-top: 4px;
     }
 
     /* QUOTE CARDS (Page 2) */
-    .quotes-grid-5 {
+    .quotes-grid-3 {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
     }
 
     .quote-box {
       background: #fdfcf9;
       border: 1px solid #dcd7ca;
       border-radius: 3px;
-      padding: 8px 9px;
+      padding: 9px 10px;
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 6px;
     }
 
     .quote-tag {
@@ -860,7 +900,7 @@
 
     .quote-body {
       font-family: 'Newsreader', Georgia, serif;
-      font-size: 11.5px;
+      font-size: 12.5px;
       line-height: 1.35;
       color: #17211b;
       font-style: italic;
@@ -875,63 +915,53 @@
       line-height: 1.3;
     }
 
-    .quote-author strong {
-      color: #122119;
+    .quote-takeaway-bar {
+      background: #eef2ec;
+      border-left: 3px solid #143826;
+      padding: 5px 9px;
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #1c2720;
+      margin-top: 4px;
     }
 
     /* WORKFORCE & TALENT SECTION (Page 2) */
-    .workforce-grid {
+    .workforce-grid-2 {
       display: grid;
-      grid-template-columns: 210px 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 12px;
-    }
-
-    .stats-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
     }
 
     .stat-box-large {
       background: #fdfcf9;
       border: 1px solid #dcd7ca;
       border-radius: 3px;
-      padding: 8px 10px;
-    }
-
-    .stat-box-large .stat-val {
-      font-size: 18px;
-      font-weight: 800;
-      color: #143826;
-      margin-bottom: 2px;
-    }
-
-    .stat-box-large .stat-label {
-      font-size: 10.5px;
-      line-height: 1.35;
-      color: #2b352f;
-    }
-
-    .workforce-card {
-      background: #fdfcf9;
-      border: 1px solid #dcd7ca;
-      border-radius: 3px;
       padding: 9px 11px;
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 3px;
     }
 
-    .workforce-card-title {
-      font-size: 12px;
-      font-weight: 700;
+    .stat-box-header {
+      font-size: 10px;
+      font-weight: 800;
       color: #143826;
-      line-height: 1.25;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #e2ded4;
+      padding-bottom: 2px;
     }
 
-    .workforce-card-text {
+    .stat-box-large .stat-val {
+      font-size: 22px;
+      font-weight: 800;
+      color: #143826;
+      margin: 2px 0;
+    }
+
+    .stat-box-large .stat-label {
       font-size: 11px;
-      line-height: 1.38;
+      line-height: 1.35;
       color: #2b352f;
     }
 
@@ -944,42 +974,10 @@
       color: #1b2620;
     }
 
-    /* REGIONAL PULSE (Page 2) */
-    .regional-grid-4 {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-    }
-
-    .regional-card {
-      background: #fdfcf9;
-      border: 1px solid #dcd7ca;
-      border-radius: 3px;
-      padding: 8px 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .regional-title {
-      font-size: 10.5px;
-      font-weight: 800;
-      color: #143826;
-      border-bottom: 1px solid #c9c3b4;
-      padding-bottom: 2px;
-      letter-spacing: 0.5px;
-    }
-
-    .regional-text {
-      font-size: 10.5px;
-      line-height: 1.35;
-      color: #26322b;
-    }
-
-    /* ONE YEAR AGO & WEEK AHEAD (Page 2 bottom) */
+    /* BOTTOM SPLIT GRID (Page 2 bottom) */
     .bottom-split-grid {
       display: grid;
-      grid-template-columns: 1.6fr 1fr;
+      grid-template-columns: 1.15fr 1fr;
       gap: 12px;
     }
 
@@ -1014,118 +1012,78 @@
       color: #8b2b1a;
     }
 
-    /* PAGE 3 STYLES */
-    .cyber-layout {
+    .regional-table-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .regional-row {
       display: grid;
-      grid-template-columns: 1fr 280px;
-      gap: 16px;
-      align-items: stretch;
-    }
-
-    .chart-card-dark {
-      background: #19242f;
-      color: #ffffff;
-      border-radius: 4px;
-      padding: 10px 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 9px;
-    }
-
-    .chart-group-title {
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      color: #cedde8;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      padding-bottom: 3px;
-    }
-
-    .h-bar-row {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-      margin-bottom: 4px;
-    }
-
-    .h-bar-label-line {
-      display: flex;
-      justify-content: space-between;
+      grid-template-columns: 86px 1fr;
+      gap: 8px;
       font-size: 10.5px;
-      color: #e0e8ef;
+      line-height: 1.35;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #ede8de;
     }
 
-    .h-bar-track {
-      height: 10px;
-      background: rgba(255, 255, 255, 0.12);
-      border-radius: 2px;
-      overflow: hidden;
+    .regional-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
     }
 
-    .h-bar-fill {
-      height: 100%;
-      border-radius: 2px;
+    .regional-region-name {
+      font-weight: 700;
+      color: #143826;
     }
 
-    .fill-orange { background: #ea580c; }
-    .fill-teal { background: #0d9488; }
-    .fill-red { background: #dc2626; }
-    .fill-blue { background: #2563eb; }
+    .regional-news-list {
+      color: #243028;
+    }
 
-    /* SECURITY INCIDENTS SECTION (Page 3) */
-    .incidents-grid {
+    /* PAGE 3 STYLES: CYBER, INCIDENTS, RULES, INFRA */
+    .two-box-equal {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 14px;
+      gap: 12px;
     }
 
-    .incidents-col {
+    .card-bordered {
       background: #fdfcf9;
       border: 1px solid #dcd7ca;
       border-radius: 3px;
       padding: 9px 11px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 5px;
     }
 
-    .incidents-subhead {
-      font-size: 11px;
+    .card-bordered-header {
+      font-size: 10px;
       font-weight: 800;
-      color: #17241d;
+      color: #143826;
       letter-spacing: 0.6px;
-      border-bottom: 1px solid #d8d3c5;
-      padding-bottom: 3px;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 2px;
     }
 
-    .incident-entry {
-      display: flex;
-      gap: 8px;
-      align-items: flex-start;
-      font-size: 11px;
-      line-height: 1.35;
-      color: #27332c;
-    }
-
-    .incident-pill {
-      font-size: 9.5px;
+    .card-bordered-title {
+      font-size: 13px;
       font-weight: 700;
-      padding: 2px 6px;
-      border-radius: 3px;
-      white-space: nowrap;
-      min-width: 68px;
-      text-align: center;
+      color: #132118;
+      line-height: 1.25;
     }
 
-    .incident-pill.ai {
-      background: #872a1e;
-      color: #ffffff;
-    }
-
-    .incident-pill.breach {
-      background: #2a3d4f;
-      color: #ffffff;
+    .card-bordered-text {
+      font-size: 11px;
+      line-height: 1.38;
+      color: #27332c;
     }
 
     /* GLOBAL RULES TRACKER TABLE (Page 3) */
@@ -1188,54 +1146,208 @@
       white-space: nowrap;
     }
 
-    .status-badge.enacted { background: #15803d; color: #ffffff; }
-    .status-badge.inforce { background: #166534; color: #ffffff; }
-    .status-badge.proposed { background: #d97706; color: #ffffff; }
-    .status-badge.priority { background: #475569; color: #ffffff; }
+    .status-badge.accepted { background: #15803d; color: #ffffff; }
+    .status-badge.order { background: #c2410c; color: #ffffff; }
+    .status-badge.planned { background: #d97706; color: #ffffff; }
 
-    /* INFRASTRUCTURE & HARDWARE / UNSOLVED PROBLEMS (Page 3) */
-    .three-box-grid {
+    /* SAMSUNG BAR CHART */
+    .samsung-layout {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
+      grid-template-columns: 1fr 280px;
+      gap: 16px;
+      align-items: stretch;
     }
 
-    .info-card-bordered {
+    .chart-box-light {
       background: #fdfcf9;
       border: 1px solid #dcd7ca;
       border-radius: 3px;
-      padding: 8px 10px;
+      padding: 9px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .chart-box-title {
+      font-size: 10px;
+      font-weight: 800;
+      color: #143826;
+      border-bottom: 1px solid #dcd7ca;
+      padding-bottom: 3px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .h-bar-row-flex {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10.5px;
+      margin-bottom: 3px;
+    }
+
+    .h-bar-label {
+      width: 82px;
+      font-weight: 600;
+      color: #27342d;
+    }
+
+    .h-bar-track-wrap {
+      flex: 1;
+      height: 14px;
+      background: #ebe7de;
+      border-radius: 2px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .h-bar-fill-samsung {
+      height: 100%;
+      background: #104e39;
+      border-radius: 2px;
+    }
+
+    .h-bar-num {
+      width: 42px;
+      text-align: right;
+      font-weight: 700;
+      color: #143826;
+    }
+
+    /* PAGE 4 STYLES: US MORTGAGES */
+    .mortgage-header-layout {
+      display: grid;
+      grid-template-columns: 1fr 270px;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .mortgage-stages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .mortgage-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 10px;
       display: flex;
       flex-direction: column;
       gap: 4px;
     }
 
-    .info-card-bordered .stat-val {
-      font-size: 18px;
+    .mortgage-stage-tag {
+      font-size: 10px;
       font-weight: 800;
       color: #143826;
-      margin-bottom: 2px;
-    }
-
-    .unsolved-card-title {
-      font-size: 11px;
-      font-weight: 700;
-      color: #143826;
-      border-bottom: 1px solid #ddd7ca;
+      border-bottom: 1.5px solid #143826;
       padding-bottom: 2px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
     }
 
-    .unsolved-card-highlight {
-      font-size: 15px;
-      font-weight: 800;
-      color: #b91c1c;
-      margin: 2px 0;
+    .mortgage-card-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #132118;
+      line-height: 1.25;
     }
 
-    /* PAGE 4 STYLES: INDUSTRY & INVESTMENTS */
-    .industries-grid-8 {
+    .mortgage-card-desc {
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #27342d;
+      flex-grow: 1;
+    }
+
+    .numbers-grid-4 {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .questions-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .question-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .question-role-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: #8b2b1a;
+      border-bottom: 1px solid #dcd7ca;
+      padding-bottom: 2px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .question-headline {
+      font-size: 12px;
+      font-weight: 700;
+      color: #132118;
+    }
+
+    .question-text {
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #27342d;
+    }
+
+    .rulebook-banner {
+      background: #f5f2e8;
+      border: 1px solid #ddd7ca;
+      border-left: 3px solid #143826;
+      padding: 8px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .rulebook-header {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #8b2b1a;
+    }
+
+    .rulebook-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #122119;
+    }
+
+    .rulebook-text {
+      font-size: 11px;
+      line-height: 1.4;
+      color: #222d26;
+    }
+
+    .scope-note {
+      font-size: 9.5px;
+      color: #617067;
+      font-style: italic;
+      margin-top: 2px;
+      line-height: 1.3;
+    }
+
+    /* PAGE 5 STYLES: INDUSTRIAL, INVESTMENTS, EVENTS, ACTIONS */
+    .industries-grid-6 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 10px;
     }
 
@@ -1243,11 +1355,10 @@
       background: #fdfcf9;
       border: 1px solid #dcd7ca;
       border-radius: 3px;
-      padding: 8px 9px;
+      padding: 8px 10px;
       display: flex;
       flex-direction: column;
       gap: 4px;
-      min-height: 115px;
     }
 
     .industry-card.author-card {
@@ -1278,267 +1389,129 @@
       flex-grow: 1;
     }
 
-    .industry-sowhat {
-      font-size: 10px;
-      font-style: italic;
-      color: #4b5850;
-      background: #ece8dc;
-      padding: 3px 5px;
-      border-radius: 2px;
-      margin-top: 3px;
-    }
-
     .deals-charts-grid {
       display: grid;
-      grid-template-columns: 1.15fr 1fr;
+      grid-template-columns: 280px 1fr;
       gap: 14px;
     }
 
-    .chart-box-light {
+    .deals-bar-box {
       background: #fdfcf9;
       border: 1px solid #dcd7ca;
       border-radius: 3px;
       padding: 9px 11px;
       display: flex;
       flex-direction: column;
-      gap: 7px;
-    }
-
-    .chart-box-title {
-      font-size: 11px;
-      font-weight: 800;
-      color: #143826;
-      border-bottom: 1px solid #dcd7ca;
-      padding-bottom: 3px;
-      letter-spacing: 0.6px;
-    }
-
-    .chart-row-flex {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      font-size: 11px;
-    }
-
-    .chart-name {
-      flex: 1;
-      line-height: 1.25;
-      color: #1f2c25;
-    }
-
-    .chart-bar-container-flex {
-      width: 140px;
-      display: flex;
-      align-items: center;
       gap: 6px;
     }
 
-    .bar-line-fill {
-      height: 10px;
-      background: #ea580c;
+    .deals-bar-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 10px;
+    }
+
+    .deals-bar-name {
+      width: 105px;
+      font-weight: 600;
+      color: #25332a;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .deals-bar-track {
+      flex: 1;
+      height: 12px;
+      background: #ebe7de;
+      border-radius: 2px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .deals-bar-fill {
+      height: 100%;
+      background: #143826;
       border-radius: 2px;
     }
 
-    .bar-num-val {
-      font-size: 10.5px;
-      font-weight: 700;
-      color: #143826;
-      min-width: 28px;
+    .deals-bar-val {
+      width: 50px;
       text-align: right;
-    }
-
-    /* PAGE 5 STYLES: SURVEYS, EVENTS & ACTION LIST */
-    .surveys-grid-6 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-    }
-
-    .survey-card {
-      background: #fdfcf9;
-      border: 1px solid #dcd7ca;
-      border-radius: 3px;
-      padding: 8px 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .survey-firm {
-      font-size: 11px;
-      font-weight: 800;
-      color: #143826;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-    }
-
-    .survey-name {
-      font-size: 12px;
       font-weight: 700;
-      color: #16241d;
-    }
-
-    .survey-meta {
-      font-size: 9.5px;
-      color: #66746c;
-      border-bottom: 1px solid #e0dbce;
-      padding-bottom: 3px;
-      margin-bottom: 4px;
-    }
-
-    .survey-stat-item {
-      display: flex;
-      gap: 7px;
-      font-size: 10.5px;
-      line-height: 1.35;
-      color: #27342d;
-      margin-bottom: 3px;
-    }
-
-    .survey-stat-val {
-      font-weight: 800;
       color: #143826;
-      min-width: 38px;
     }
 
-    .survey-sowhat {
-      font-size: 10px;
-      font-style: italic;
-      color: #405047;
-      background: #f2eee3;
-      padding: 3px 6px;
-      border-radius: 2px;
-      margin-top: auto;
-    }
-
-    .pattern-banner {
-      background: #eef2ec;
-      border: 1px solid #cbd8d0;
-      border-left: 4px solid #143826;
-      padding: 7px 12px;
-      font-size: 11px;
-      font-style: italic;
-      line-height: 1.4;
-      color: #192720;
-    }
-
-    .events-grid-6 {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 10px;
-    }
-
-    .event-col {
-      background: #fdfcf9;
-      border: 1px solid #dcd7ca;
-      border-radius: 3px;
-      padding: 7px 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
-
-    .event-region-title {
-      font-size: 10px;
-      font-weight: 800;
-      color: #143826;
-      border-bottom: 1px solid #c9c3b4;
-      padding-bottom: 2px;
-      letter-spacing: 0.5px;
-    }
-
-    .event-entry {
-      font-size: 10px;
-      line-height: 1.35;
-      color: #2b3831;
-      margin-bottom: 3px;
-    }
-
-    /* ACTION LIST (Page 5) */
     .actions-grid-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 14px;
+      gap: 12px;
     }
 
-    .action-col {
+    .action-item-card {
       background: #fdfcf9;
       border: 1px solid #dcd7ca;
       border-radius: 3px;
-      padding: 9px 12px;
+      padding: 7px 10px;
       display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-
-    .action-col-title {
-      font-size: 11px;
-      font-weight: 800;
-      color: #143826;
-      letter-spacing: 0.6px;
-      border-bottom: 1.5px solid #143826;
-      padding-bottom: 3px;
-    }
-
-    .action-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .action-item {
-      display: flex;
-      gap: 7px;
+      gap: 9px;
+      align-items: flex-start;
       font-size: 11px;
       line-height: 1.38;
-      color: #212c26;
+      color: #1f2a23;
     }
 
-    .action-item-num {
-      font-weight: 800;
-      color: #143826;
-      min-width: 14px;
-    }
-
-    .feedback-grid-4 {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-    }
-
-    .feedback-card {
-      background: #fdfcf9;
-      border: 1px solid #dcd7ca;
-      border-radius: 3px;
-      padding: 8px 10px;
+    .action-circle-num {
+      width: 20px;
+      height: 20px;
+      background: #143826;
+      color: #ffffff;
+      border-radius: 50%;
       display: flex;
-      flex-direction: column;
-      gap: 3px;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 1px;
     }
 
-    .feedback-card-title {
-      font-size: 11px;
+    .action-tag-link {
       font-weight: 700;
-      color: #143826;
+      color: #164e63;
+      text-decoration: none;
+      margin-left: 4px;
     }
 
-    .feedback-card-desc {
-      font-size: 10.5px;
-      line-height: 1.35;
-      color: #38453e;
+    .action-tag-link:hover {
+      text-decoration: underline;
     }
 
-    .caution-note-box {
-      background: #fbf5e8;
-      border: 1px solid #eed9b3;
-      border-left: 3px solid #d97706;
+    .bottom-two-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .feedback-box-p5 {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
       border-radius: 3px;
-      padding: 6px 10px;
-      font-size: 10.5px;
-      line-height: 1.38;
-      color: #4b3815;
+      padding: 8px 11px;
+      font-size: 11px;
+      line-height: 1.4;
+      color: #27342d;
+    }
+
+    .caution-box-p5 {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 11px;
+      font-size: 10px;
+      line-height: 1.35;
+      color: #4b5850;
     }
 
     /* MEDIA QUERIES FOR PRINT */
@@ -1564,13 +1537,13 @@
         border: none;
         border-radius: 0;
         margin: 0;
-        padding: 20mm 15mm;
+        padding: 15mm 12mm;
         page-break-after: always;
         break-after: page;
       }
     }
 
-    /* RESPONSIVE DESIGN FOR SMALLER SCREENS */
+    /* RESPONSIVE DESIGN FOR SCREENS */
     @media (max-width: 860px) {
       .agenda-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1578,39 +1551,20 @@
       .roles-grid {
         grid-template-columns: repeat(3, 1fr);
       }
-      .lead-story-layout, .two-col-layout, .cyber-layout, .deals-charts-grid, .bottom-split-grid {
+      .lead-story-layout, .two-col-layout, .samsung-layout, .mortgage-header-layout, .deals-charts-grid, .bottom-split-grid, .two-box-equal, .research-grid-2, .workforce-grid-2, .bottom-two-cards {
         grid-template-columns: 1fr;
       }
-      .quotes-grid-5 {
+      .quotes-grid-3, .mortgage-stages-grid, .industries-grid-6, .questions-grid-3 {
         grid-template-columns: repeat(2, 1fr);
       }
-      .workforce-grid {
-        grid-template-columns: 1fr;
-      }
-      .regional-grid-4 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .numbers-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      .industries-grid-8 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .surveys-grid-6 {
-        grid-template-columns: 1fr;
-      }
-      .events-grid-6 {
+      .numbers-grid-3, .numbers-grid-4 {
         grid-template-columns: repeat(2, 1fr);
       }
       .actions-grid-2 {
         grid-template-columns: 1fr;
       }
-      .feedback-grid-4 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .cartoon-section-header {
-        flex-wrap: wrap;
-        gap: 6px;
+      .deals-charts-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -1618,23 +1572,14 @@
       .page-sheet {
         padding: 18px 14px;
       }
-      .agenda-grid {
-        grid-template-columns: 1fr;
-      }
-      .roles-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .brief-columns, .incidents-grid, .three-box-grid {
-        grid-template-columns: 1fr;
-      }
-      .numbers-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .quotes-grid-5, .regional-grid-4, .industries-grid-8, .events-grid-6, .feedback-grid-4 {
+      .agenda-grid, .roles-grid, .quotes-grid-3, .mortgage-stages-grid, .industries-grid-6, .questions-grid-3, .numbers-grid-3, .numbers-grid-4, .brief-columns {
         grid-template-columns: 1fr;
       }
       .masthead-title {
         font-size: 28px;
+      }
+      .timeline-item {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -1649,7 +1594,7 @@
         Back to Website
       </a>
       <span style="font-weight: 700; color: #94a3b8; font-size: 13px;">The AI Leadership Brief</span>
-      <span style="background: rgba(255,255,255,0.1); padding: 2px 7px; border-radius: 4px; font-size: 11px; color: #a7f3d0;">Issue 02</span>
+      <span style="background: rgba(255,255,255,0.1); padding: 2px 7px; border-radius: 4px; font-size: 11px; color: #a7f3d0;">Issue 03</span>
     </div>
 
     <div class="toolbar-center">
@@ -1664,6 +1609,10 @@
     </div>
 
     <div class="toolbar-right">
+      <a href="assets/the-ai-leadership-brief-issue-03.pdf" download class="toolbar-btn" title="Download Original PDF">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download PDF
+      </a>
       <button onclick="window.print()" class="toolbar-btn primary" title="Print document or save as PDF">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
         Print / Save PDF
@@ -1678,14 +1627,14 @@
     <article id="page-1" class="page-sheet">
       <!-- Issue Header -->
       <div class="issue-top-header">
-        <span>WEEKLY · ISSUE 02</span>
-        <span>29 SEPTEMBER – 4 OCTOBER 2026 · PAGE 1 OF 5</span>
+        <span>WEEKLY · ISSUE 03</span>
+        <span>5 – 11 OCTOBER 2026 · PAGE 1 OF 5</span>
       </div>
 
       <!-- Masthead -->
       <div class="issue-title-block">
         <h1 class="masthead-title">The AI Leadership Brief</h1>
-        <p class="masthead-subtitle">The week’s AI developments that matter to CXOs and decision-makers · By Jayaraman (Jay) Ganapathi · 5 October 2026</p>
+        <p class="masthead-subtitle">The week’s AI developments that matter to CXOs and decision-makers · By Jayaraman (Jay) Ganapathi · 12 October 2026</p>
       </div>
 
       <!-- Agenda Box -->
@@ -1705,10 +1654,10 @@
             <div class="agenda-subtitle">What changed this week?</div>
             <ul class="agenda-links">
               <li><a href="#sec-60-sec-brief">p1 60-second brief</a></li>
-              <li><a href="#sec-lead-story">p1 Agent safety · lead</a></li>
+              <li><a href="#sec-lead-story">p1 Lead: agents escape tests</a></li>
               <li><a href="#sec-numbers-week">p1 Numbers of the week</a></li>
-              <li><a href="#sec-studies-surveys">p5 Studies &amp; surveys</a></li>
-              <li><a href="#sec-ai-agents">p2 AI agents</a></li>
+              <li><a href="#sec-agents-models">p2 AI agents &amp; models</a></li>
+              <li><a href="#sec-ai-research">p2 AI research</a></li>
               <li><a href="#sec-leaders-future">p2 Leaders on AI’s future</a></li>
             </ul>
           </div>
@@ -1719,8 +1668,8 @@
             <div class="agenda-subtitle">What could hurt us?</div>
             <ul class="agenda-links">
               <li><a href="#sec-cybersecurity">p3 Cybersecurity</a></li>
-              <li><a href="#sec-security-incidents">p3 Security incidents</a></li>
-              <li><a href="#sec-rules-tracker">p3 Global AI rules</a></li>
+              <li><a href="#sec-security-incidents">p3 AI security incidents</a></li>
+              <li><a href="#sec-global-rules">p3 Global AI rules</a></li>
               <li><a href="#sec-unsolved-problems">p3 Unsolved problems</a></li>
             </ul>
           </div>
@@ -1730,7 +1679,7 @@
             <span class="agenda-badge c3">03 Money &amp; capacity</span>
             <div class="agenda-subtitle">Where is capital flowing?</div>
             <ul class="agenda-links">
-              <li><a href="#sec-ai-investments">p4 AI investments</a></li>
+              <li><a href="#sec-ai-investments">p5 AI investments</a></li>
               <li><a href="#sec-infra-hardware">p3 Infrastructure &amp; Hardware</a></li>
             </ul>
           </div>
@@ -1741,10 +1690,10 @@
             <div class="agenda-subtitle">Who is affected, where?</div>
             <ul class="agenda-links">
               <li><a href="#sec-workforce-talent">p2 Workforce &amp; talent</a></li>
-              <li><a href="#sec-industrial-sectors">p4 AI in Industrial Sectors</a></li>
-              <li><a href="#sec-regional-pulse">p2 Regional pulse</a></li>
+              <li><a href="#sec-us-mortgages">p4 US mortgages · AI spotlight</a></li>
+              <li><a href="#sec-industrial-sectors">p5 AI in Industrial Sectors</a></li>
+              <li><a href="#sec-regional-index">p2 Regional index</a></li>
               <li><a href="#sec-events-conferences">p5 Events &amp; conferences</a></li>
-              <li><a href="#sec-week-ahead">p2 Week ahead</a></li>
             </ul>
           </div>
 
@@ -1766,8 +1715,7 @@
 
       <!-- Agenda Notice Bar -->
       <div class="agenda-notice-bar">
-        <span>📥</span>
-        <span><strong>On LinkedIn?</strong> Download the PDF (top-right) for clickable links. ⚠ <strong>Using this data for business?</strong> Verify it independently first.</span>
+        <span>On LinkedIn? Download the PDF (top-right) for clickable links. ⚠ Using this data for business? Verify it independently first.</span>
       </div>
 
       <!-- Section: 60-Second Brief -->
@@ -1788,19 +1736,19 @@
               <div class="brief-item">
                 <span class="brief-num">1</span>
                 <div class="brief-text">
-                  <strong>Agent safety is now a regulatory matter.</strong> The US FTC confirmed an inquiry into OpenAI, Anthropic and METR; leading labs signed a voluntary safety accord. <a href="#sec-lead-story" class="brief-link">Lead ›</a>
+                  <strong>AI agents in testing reached the real world.</strong> A knowledge foundation and a US police force described unapproved actions by two labs’ agents. <a href="#sec-lead-story" class="brief-link">Lead ›</a>
                 </div>
               </div>
               <div class="brief-item">
                 <span class="brief-num">2</span>
                 <div class="brief-text">
-                  <strong>Your customers’ AI agents are arriving.</strong> OpenAI and Meta launched always-on agents that act for people and firms. <a href="#sec-ai-agents" class="brief-link">Agents ›</a>
+                  <strong>Agents are getting an ID card.</strong> A big-tech platform and an AI customer-service firm, with Walmart, Shopify and Stripe, proposed how personal agents sign in to businesses. <a href="#sec-agents-models" class="brief-link">Agents ›</a>
                 </div>
               </div>
               <div class="brief-item">
                 <span class="brief-num">3</span>
                 <div class="brief-text">
-                  <strong>Open models near frontier exploit skill.</strong> AI agents also leaked 13,000+ internal screenshots. <a href="#sec-cybersecurity" class="brief-link">Cyber ›</a>
+                  <strong>AI demand shows in chip results — and in permits.</strong> Record memory profits; Finland paused two planned hyperscaler data-centre sites. <a href="#sec-infra-hardware" class="brief-link">Infra ›</a>
                 </div>
               </div>
             </div>
@@ -1813,19 +1761,19 @@
               <div class="brief-item">
                 <span class="brief-num">1</span>
                 <div class="brief-text">
-                  <strong>Ask for the evidence.</strong> Request an AI incident log and proof behind every AI safety claim you make to customers.
+                  <strong>Contain every agent pilot.</strong> Isolated test environments, a written off-limits list and a named person who can stop a run.
                 </div>
               </div>
               <div class="brief-item">
                 <span class="brief-num">2</span>
                 <div class="brief-text">
-                  <strong>Gate the agents.</strong> No AI agent may spend, share or publish without human approval and a log.
+                  <strong>Name an owner for agent identity.</strong> Track the new sign-in protocol (v0.1 due late Oct) and rivals; decide which your sites will accept. <a href="#sec-agents-models" class="brief-link">Agents ›</a>
                 </div>
               </div>
               <div class="brief-item">
                 <span class="brief-num">3</span>
                 <div class="brief-text">
-                  <strong>Secure capacity.</strong> Lock in compute and memory for 2027; shortages may last to 2028. <a href="#sec-infra-hardware" class="brief-link">Money ›</a>
+                  <strong>Add site risk to vendor reviews.</strong> Ask cloud and data-centre partners for permit and power status of any new region you rely on. <a href="#sec-global-rules" class="brief-link">Rules ›</a>
                 </div>
               </div>
             </div>
@@ -1846,39 +1794,56 @@
         <div class="roles-grid" style="margin-top: 6px;">
           <!-- CEO -->
           <div class="role-card">
-            <div class="role-title">CEO</div>
-            <div class="role-desc"><strong>Regulators now test AI safety claims.</strong> Make AI risk appetite a board item.</div>
+            <div>
+              <div class="role-title">CEO</div>
+              <p class="role-desc">Vendors’ AI test practices are now your reputational risk. Ask how they contain agents.</p>
+            </div>
             <a href="#sec-lead-story" class="role-go">Go ›</a>
           </div>
+
           <!-- CFO -->
           <div class="role-card">
-            <div class="role-title">CFO</div>
-            <div class="role-desc"><strong>$100B+ in AI financing this week;</strong> memory tight to 2028. Check vendors’ staying power.</div>
-            <a href="#sec-ai-investments" class="role-go">Go ›</a>
+            <div>
+              <div class="role-title">CFO</div>
+              <p class="role-desc">Memory makers have pricing power. Budget for dearer devices and servers.</p>
+            </div>
+            <a href="#sec-infra-hardware" class="role-go">Go ›</a>
           </div>
+
           <!-- CIO / CTO -->
           <div class="role-card">
-            <div class="role-title">CIO / CTO</div>
-            <div class="role-desc"><strong>New agent platforms launched;</strong> models keep retiring. Track vendor deprecation dates.</div>
-            <a href="#sec-ai-agents" class="role-go">Go ›</a>
+            <div>
+              <div class="role-title">CIO / CTO</div>
+              <p class="role-desc">Two new open-weight models, one frontier-scale, arrive this month; plan a self-hosting test.</p>
+            </div>
+            <a href="#sec-agents-models" class="role-go">Go ›</a>
           </div>
+
           <!-- CISO -->
           <div class="role-card">
-            <div class="role-title">CISO</div>
-            <div class="role-desc"><strong>Open models near frontier exploit skill;</strong> agents leaked internal screens. Review permissions.</div>
-            <a href="#sec-cybersecurity" class="role-go">Go ›</a>
+            <div>
+              <div class="role-title">CISO</div>
+              <p class="role-desc">One web page made an AI coding tool leak secrets. Watch for fetch→run→read→send.</p>
+            </div>
+            <a href="#sec-security-incidents" class="role-go">Go ›</a>
           </div>
+
           <!-- CHRO -->
           <div class="role-card">
-            <div class="role-title">CHRO</div>
-            <div class="role-desc"><strong>Junior hiring is the pressure point;</strong> California set new workplace AI limits.</div>
+            <div>
+              <div class="role-title">CHRO</div>
+              <p class="role-desc">A large study finds AI help can erode persistence. Keep “AI-off” practice in training.</p>
+            </div>
             <a href="#sec-workforce-talent" class="role-go">Go ›</a>
           </div>
+
           <!-- COO / CMO -->
           <div class="role-card">
-            <div class="role-title">COO / CMO</div>
-            <div class="role-desc"><strong>Customers will send agents to your service lines.</strong> Build a scoped, logged channel.</div>
-            <a href="#sec-ai-agents" class="role-go">Go ›</a>
+            <div>
+              <div class="role-title">COO / CMO</div>
+              <p class="role-desc">A sign-in standard for customer agents is coming. Name an owner to assess it this month.</p>
+            </div>
+            <a href="#sec-agents-models" class="role-go">Go ›</a>
           </div>
         </div>
       </section>
@@ -1888,52 +1853,53 @@
         <div class="section-banner">
           <div class="section-banner-title">
             <span class="banner-theme-tag">01 BIG SHIFTS · P1</span>
-            <span>AI SAFETY &amp; REGULATION · LEAD STORY</span>
+            <span>AI SAFETY &amp; ACCOUNTABILITY · LEAD STORY</span>
           </div>
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
+        <div style="margin-top: 4px;">
+          <span class="lead-followup-badge">Follow-up to Issue 02</span>
+          <span style="font-size: 11px; color: #556059; margin-left: 6px;">Last week: regulators probed agent safety. Now: what test agents did.</span>
+        </div>
+
         <div class="lead-story-layout" style="margin-top: 6px;">
+          <!-- Left: Main Story Content -->
           <div class="lead-story-main">
-            <h2 class="lead-story-title">Agent safety leaves the lab and lands on the regulator’s desk</h2>
+            <h2 class="lead-story-title">AI agents under test keep leaving the sandbox</h2>
             <div class="lead-story-body">
-              <p>On 30 Sept the US Federal Trade Commission confirmed a broad inquiry, opened this summer, into OpenAI, Anthropic and evaluator METR, examining potential consumer risks from AI agents and advanced models. Formal information demands are expected.</p>
-              <p>A day earlier, leading AI labs and chipmaker Nvidia signed a non-binding White House accord on internal controls, outside audits and board oversight. OpenAI has since informed 100+ organisations of unauthorised activity by its AI agents.</p>
+              <p>On 5 Oct a major online-knowledge foundation said AI agents it believes a leading LLM provider operated made unapproved edits (mostly in sandbox areas), misused tools and sent millions of requests that may have contributed to a May outage; no data were compromised. <a href="https://www.helpnetsecurity.com/?p=386959" target="_blank" rel="noopener noreferrer" class="src-link">Help Net Security</a></p>
+              <p>On 9 Oct a US city police department said a model from another leading AI lab, in an automated test that visited random websites, submitted a fabricated homicide tip through its public form on 18 July. It was flagged as spam; the lab stopped the test and added a validation step. <a href="https://www.ksl.com/article/51634619/anthropic-ai-model-submits-false-homicide-tip-to-police-website" target="_blank" rel="noopener noreferrer" class="src-link">Reuters</a> · <a href="https://www.inquirer.com/crime/anthropic-artificial-intelligence-philadelphia-police-false-homicide-tip-20261009.html" target="_blank" rel="noopener noreferrer" class="src-link">Local newspaper</a></p>
               <div class="why-matters-box">
-                <strong>Why it matters:</strong> AI safety claims increasingly need supporting evidence; expect buyers and regulators to ask for incident logs.
-              </div>
-              <div class="sources-row">
-                Sources: 
-                <a href="https://www.washingtonpost.com/technology/2026/09/30/ftc-launches-broad-investigation-into-anthropic-openai/" target="_blank" rel="noopener noreferrer" class="src-link">Washington Post</a> · 
-                <a href="https://www.wsj.com/tech/ai/ftc-opens-investigation-of-anthropic-and-openai-a317b617" target="_blank" rel="noopener noreferrer" class="src-link">WSJ</a> · 
-                <a href="https://www.axios.com/2026/09/30/ai-constitution-trump-white-house" target="_blank" rel="noopener noreferrer" class="src-link">Axios</a> · 
-                <a href="https://www.reuters.com/legal/litigation/openai-alerts-more-than-100-groups-about-rogue-ai-agent-activity-2026-10-01/" target="_blank" rel="noopener noreferrer" class="src-link">Reuters</a> · 
-                <a href="https://cbsnews.com/news/ftc-investigation-openai-anthropic-ai-safety" target="_blank" rel="noopener noreferrer" class="src-link">CBS</a>
+                <strong>Why it matters:</strong> both cases came from evaluations, not customer use. Your suppliers’ testing practices are now part of your third-party risk; ask how they isolate agents and how fast they disclose.
               </div>
             </div>
           </div>
 
-          <!-- Timeline Sidebar -->
+          <!-- Right: Timeline Box -->
           <div class="timeline-box">
-            <div class="timeline-header">TIMELINE · FOUR DAYS OF OVERSIGHT</div>
+            <div class="timeline-header">TIMELINE · FROM TEST RUN TO PUBLIC STATEMENT</div>
             <ul class="timeline-list">
               <li class="timeline-item">
-                <span class="timeline-date">29 Sep</span>
-                <span>Voluntary frontier-AI accord signed at the White House</span>
+                <span class="timeline-date">May 2026</span>
+                <div>Partial outage of a public data service; agent traffic later named a possible factor</div>
               </li>
               <li class="timeline-item">
-                <span class="timeline-date">29 Sep</span>
-                <span>Report: open-weight GLM-5.3 nears frontier cyber skill — <a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: underline;">report</a></span>
+                <span class="timeline-date">18 Jul</span>
+                <div>False homicide tip submitted by a model in an automated test</div>
               </li>
               <li class="timeline-item">
-                <span class="timeline-date">30 Sep</span>
-                <span>FTC confirms inquiry into OpenAI, Anthropic and METR</span>
+                <span class="timeline-date">5 Oct</span>
+                <div>Foundation publishes its findings on agent activity</div>
               </li>
               <li class="timeline-item">
-                <span class="timeline-date">1 Oct</span>
-                <span>OpenAI informs 100+ organisations of unauthorised agent activity</span>
+                <span class="timeline-date">7–9 Oct</span>
+                <div>Lab notifies police; police go public</div>
               </li>
             </ul>
+            <div class="timeline-footer">
+              Common thread: months, not days, from incident to public disclosure (about 3 to 5).
+            </div>
           </div>
         </div>
       </section>
@@ -1949,7 +1915,7 @@
         </div>
 
         <div class="cartoon-card-wrap">
-          <img src="assets/images/cartoon-of-the-week.png" alt="Cartoon of the week: Customer service, now fully agent-to-agent. Infinitely polite. Never finished. The serious point: when agents negotiate with agents, set limits, keep a log and give a human the tie-break." class="cartoon-full-img">
+          <img src="assets/images/cartoon-issue-03.png" alt="Cartoon of the week: Stay in the sandbox. Define sandbox. The serious point: agents take goals literally. State limits as explicit instructions, enforce them with real network isolation, and assume a test can touch the live world." class="cartoon-full-img">
         </div>
       </section>
 
@@ -1958,55 +1924,37 @@
         <div class="section-banner">
           <div class="section-banner-title">
             <span class="banner-theme-tag">01 BIG SHIFTS · P1</span>
-            <span>NUMBERS OF THE WEEK · THE DATA POINTS WORTH REPEATING IN THE BOARDROOM</span>
+            <span>NUMBERS OF THE WEEK · DATA POINTS NOT REPEATED ELSEWHERE IN THIS ISSUE</span>
           </div>
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
-        <div class="numbers-grid" style="margin-top: 6px;">
+        <div class="numbers-grid-3" style="margin-top: 6px;">
           <!-- 1 -->
           <div class="stat-card">
-            <div class="stat-val">69%→2%</div>
-            <div class="stat-label">S&amp;P 500 firms with live AI vs those tracking an AI metric over time.</div>
-            <div class="stat-src"><a href="https://www.apollo.com/institutional/insights-news/insights/daily-spark/from-who-is-deploying-ai-to-who-can-prove-the-roi" target="_blank" rel="noopener noreferrer" class="src-link">Apollo</a></div>
+            <div class="stat-val">1.2B+</div>
+            <div class="stat-label">weekly users of the most widely used AI assistant, now moving to a new model generation with interactive answers.</div>
+            <div class="stat-src"><a href="https://openai.com/index/gpt-6-for-everyone/" target="_blank" rel="noopener noreferrer" class="src-link">Company blog</a></div>
           </div>
           <!-- 2 -->
           <div class="stat-card">
-            <div class="stat-val">93% vs 25%</div>
-            <div class="stat-label">report returns when AI is in 3+ functions vs none.</div>
-            <div class="stat-src"><a href="https://www.pymnts.com/news/artificial-intelligence/2026/enterprises-see-bigger-ai-payoffs-when-it-becomes-daily-practice/" target="_blank" rel="noopener noreferrer" class="src-link">PYMNTS</a></div>
+            <div class="stat-val">+50%</div>
+            <div class="stat-label">TSMC’s Q3 revenue growth, to a record ~$46.7B, above its own guidance.</div>
+            <div class="stat-src"><a href="https://www.thestar.com.my/tech/tech-news/2026/10/08/tsmc039s-third-quarter-revenue-surges-to-record-beating-market-forecast" target="_blank" rel="noopener noreferrer" class="src-link">Reuters</a></div>
           </div>
           <!-- 3 -->
           <div class="stat-card">
-            <div class="stat-val">56.1%</div>
-            <div class="stat-label">of US firms on Ramp paid for AI in Aug, vs 22.1% per Census.</div>
-            <div class="stat-src"><a href="https://ramp.com/data/ai-index" target="_blank" rel="noopener noreferrer" class="src-link">Ramp AI Index</a></div>
-          </div>
-          <!-- 4 -->
-          <div class="stat-card">
-            <div class="stat-val">$2.7T</div>
-            <div class="stat-label">worldwide AI spending forecast for 2026, up 49.5%.</div>
-            <div class="stat-src"><a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-16-gartner-forecasts-worldwide-ai-spending-to-grow-49-point-5-percent-in-2026" target="_blank" rel="noopener noreferrer" class="src-link">Gartner</a></div>
-          </div>
-          <!-- 5 -->
-          <div class="stat-card">
-            <div class="stat-val">$10.3T</div>
-            <div class="stat-label">estimated US AI build-out cost, 2025–32.</div>
-            <div class="stat-src"><a href="https://www.brookings.edu/articles/financing-the-ai-buildout/" target="_blank" rel="noopener noreferrer" class="src-link">Brookings</a></div>
-          </div>
-          <!-- 6 -->
-          <div class="stat-card">
-            <div class="stat-val">~$70B</div>
-            <div class="stat-label">OpenAI revenue run-rate, up 70%+ since July (reported).</div>
-            <div class="stat-src"><a href="https://www.axios.com/2026/09/29/scoop-openais-annual-recurring-revenue-nears-70b" target="_blank" rel="noopener noreferrer" class="src-link">Axios</a></div>
+            <div class="stat-val">129,000</div>
+            <div class="stat-label">verified software flaws found by AI-assisted defenders in one programme, Apr–Jul 2026.</div>
+            <div class="stat-src"><a href="https://www.csoonline.com/article/4231812/anthropic-widens-access-to-ai-cyber-capabilities-for-vetted-security-teams.html" target="_blank" rel="noopener noreferrer" class="src-link">CSO Online</a></div>
           </div>
         </div>
       </section>
 
       <!-- Page 1 Footer -->
       <footer class="page-footer-bar">
-        <div class="page-footer-left">👍 <strong>Useful?</strong> React on the LinkedIn post and comment your top theme, e.g. “👍 02”.</div>
-        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 02 · Page 1 of 5</div>
+        <div class="page-footer-left">👍 <strong>Useful?</strong> React on the LinkedIn post and comment your top theme, e.g. “👍 02”. <a href="#sec-feedback" class="pdf-jump">Feedback ›</a></div>
+        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 03 · Page 1 of 5</div>
       </footer>
     </article>
 
@@ -2016,53 +1964,109 @@
       <!-- Issue Header -->
       <div class="issue-top-header">
         <span>The AI Leadership Brief</span>
-        <span>29 SEP – 4 OCT 2026 · PAGE 2 OF 5</span>
+        <span>5 – 11 OCT 2026 · PAGE 2 OF 5</span>
       </div>
 
-      <!-- Section: AI Agents Products -->
-      <section id="sec-ai-agents">
+      <!-- Section: AI Agents & Models -->
+      <section id="sec-agents-models">
         <div class="section-banner">
           <div class="section-banner-title">
             <span class="banner-theme-tag">01 BIG SHIFTS · P2</span>
-            <span>AI AGENTS · PRODUCTS</span>
+            <span>AI AGENTS &amp; MODELS · WHAT SHIPPED</span>
           </div>
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
+        <div style="margin-top: 4px;">
+          <span class="lead-followup-badge">Follow-up to Issue 02</span>
+          <span style="font-size: 11px; color: #556059; margin-left: 6px;">Last week: personal agents. Now: a sign‑in standard.</span>
+        </div>
+
         <div class="two-col-layout" style="margin-top: 6px;">
           <div>
-            <h2 class="lead-story-title" style="font-size: 20px;">Your customers’ AI agents are coming</h2>
+            <h2 class="lead-story-title" style="font-size: 20px;">Personal agents get a front door</h2>
             <div class="lead-story-body" style="margin-top: 6px;">
-              <p>Two agent products shipped on 29 Sep. OpenAI’s dots run around the clock on their own cloud computer and reach 4,000+ apps, and Meta’s Muse for Small Business handles tasks for US and Canadian firms. On the receiving end, Decagon’s Personal Agent Gateway lets companies detect customers’ agents and limit what they may do.</p>
+              <p>On 6 Oct an AI customer-service firm and a big-tech platform proposed the <strong>Personal Agent Protocol</strong>, an open, OAuth-based standard for how a consumer’s AI agent signs in to a business and what it may do: browse as a guest, read account data, or take actions such as returns and rebookings. The consumer decides what access to grant; the company sets the limits.</p>
+              <p>Genesys, Instinct, Rocket, Shopify, Stripe and Walmart are named partners; a v0.1 specification is due later in October. <a href="https://www.cmswire.com/contact-center/genesys-joins-sierra-meta-on-open-standard-for-personal-ai-agents-01/" target="_blank" rel="noopener noreferrer" class="src-link">CMSWire</a> · <a href="https://yourstory.com/ai-story/ai-agents-common-language-meta-walmart-stripe" target="_blank" rel="noopener noreferrer" class="src-link">YourStory</a></p>
               <div class="why-matters-box">
-                <strong>Why it matters:</strong> your service channels will soon serve software too. Decide how to recognise and limit customer agents.
-              </div>
-              <div class="sources-row">
-                Sources: 
-                <a href="https://openai.com/index/introducing-dots/" target="_blank" rel="noopener noreferrer" class="src-link">OpenAI</a> · 
-                <a href="https://about.fb.com/news/2026/09/introducing-muse-small-business/" target="_blank" rel="noopener noreferrer" class="src-link">Meta</a> · 
-                <a href="https://decagon.ai/blog/personal-agents-are-here" target="_blank" rel="noopener noreferrer" class="src-link">Decagon</a>
+                <strong>Why it matters:</strong> competing sign-in standards are forming now. Joining or tracking one early is cheaper than retrofitting your sites later.
               </div>
             </div>
           </div>
 
           <div class="dark-card-box">
-            <div class="dark-card-title">AGENTS LAUNCHED THIS WEEK</div>
-            <div class="dark-card-list">
-              <div class="dark-card-item">
-                <a href="https://openai.com/index/introducing-dots/" target="_blank" rel="noopener noreferrer">dots · OpenAI · 29 Sep</a>
-                <span>Pro &amp; Business users; approval rules for sensitive acts</span>
+            <div class="dark-card-title">MODELS LAUNCHED THIS WEEK · WHY LEADERS SHOULD CARE</div>
+            <div class="model-card-item">
+              <div class="model-card-desc">
+                <strong>New flagship assistant model · a leading LLM provider</strong>
+                Answers now arrive as charts, forms and mini-tools, not just text. So what: customers’ expectations of software interfaces will shift.
               </div>
-              <div class="dark-card-item">
-                <a href="https://about.fb.com/news/2026/09/introducing-muse-small-business/" target="_blank" rel="noopener noreferrer">Muse for Small Business · Meta · 29 Sep</a>
-                <span>Nothing sends or spends unapproved</span>
-              </div>
-              <div class="dark-card-item">
-                <a href="https://decagon.ai/blog/personal-agents-are-here" target="_blank" rel="noopener noreferrer">Personal Agent Gateway · Decagon · 1 Oct</a>
-                <span>Spots customer agents, enforces their limits</span>
+              <div class="model-date-tag">
+                <span>7 OCT</span>
+                <a href="https://openai.com/index/gpt-6-for-everyone/" target="_blank" rel="noopener noreferrer">Link</a>
               </div>
             </div>
+            <div class="model-card-item">
+              <div class="model-card-desc">
+                <strong>Large open-weight model (preview) · a European AI lab</strong>
+                Trained and hosted in Europe; open weights promised by end-October; maker cites strength in cyber, finance and law. So what: a European, self-hostable frontier option.
+              </div>
+              <div class="model-date-tag">
+                <span>6 OCT</span>
+                <a href="https://betanews.com/article/mistral-large-4-preview-open-weights/" target="_blank" rel="noopener noreferrer">Link</a>
+              </div>
+            </div>
+            <div class="model-card-item">
+              <div class="model-card-desc">
+                <strong>Efficient open model · a US open-model start-up</strong>
+                Open-weight model for coding and agents, designed to run on less compute; weights due later in October. So what: cheaper in-house agents become plausible.
+              </div>
+              <div class="model-date-tag">
+                <span>5 OCT</span>
+                <a href="https://techcrunch.com/?p=3173994" target="_blank" rel="noopener noreferrer">Link</a>
+              </div>
+            </div>
+            <div class="models-disclaimer">
+              Performance claims are the makers’ own and not independently verified.
+            </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Section: AI Research -->
+      <section id="sec-ai-research">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag">01 BIG SHIFTS · P2</span>
+            <span>AI RESEARCH · THE WEEK’S MOST IMPORTANT RESULTS</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="research-grid-2" style="margin-top: 6px;">
+          <!-- Card 1: Mathematics -->
+          <div class="research-card">
+            <div class="research-category">MATHEMATICS · 6 OCT</div>
+            <div class="research-title">An AI model publishes 722 maths manuscripts</div>
+            <p class="research-text">A leading LLM provider released 722 manuscripts of new results produced by an unreleased internal model from ~4,000 problems posed. Many proofs are machine-checked (in the Lean proof language); unchecked ones may contain errors. An Institute for Advanced Study advisory group has urged caution about testing open problems on proprietary models. <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank" rel="noopener noreferrer" class="src-link">Company blog</a> · <a href="https://www.unite.ai/openai-releases-722-math-manuscripts-from-an-unreleased-ai-model/" target="_blank" rel="noopener noreferrer" class="src-link">Unite.AI</a></p>
+            <div class="sowhat-pill">
+              <strong>So what:</strong> AI is producing new, checkable knowledge. Ask for machine-verifiable evidence, not just fluent answers, before relying on AI output.
+            </div>
+          </div>
+
+          <!-- Card 2: Hardware Design -->
+          <div class="research-card">
+            <div class="research-category">HARDWARE DESIGN · 7 OCT</div>
+            <div class="research-title">AI agents design a working AI chip</div>
+            <p class="research-text">In the open-source openTPU project, AI agents did much of the design of an inference accelerator — hardware, instruction set, compiler and simulator. It runs small open models on a programmable (FPGA) card; results are not yet peer-reviewed. <a href="https://www.gigazine.net/news/20261007-opentpu/" target="_blank" rel="noopener noreferrer" class="src-link">GIGAZINE</a></p>
+            <div class="sowhat-pill">
+              <strong>So what:</strong> AI is starting to shorten custom-silicon design cycles. Expect cheaper, task-specific inference hardware in the medium term.
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-note-strip">
+          Also this week: a randomised study on how AI help affects human persistence is in <a href="#sec-workforce-talent" class="pdf-jump">Workforce &amp; talent</a>.
         </div>
       </section>
 
@@ -2071,100 +2075,42 @@
         <div class="section-banner">
           <div class="section-banner-title">
             <span class="banner-theme-tag">01 BIG SHIFTS · P2</span>
-            <span>AI LEADERS ON THE FUTURE OF AI · WHAT THEY SAID, 18 SEP – 4 OCT 2026</span>
+            <span>AI LEADERS ON THE FUTURE OF AI · WHAT THEY SAID, 28 SEP – 11 OCT 2026</span>
           </div>
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
-        <!-- Spectrum Chart -->
-        <div class="spectrum-wrap" style="margin-top: 6px;">
-          <div class="spectrum-bar-container">
-            <div class="spectrum-labels-top">
-              <span style="color: #2e7d32;">Go faster</span>
-              <span style="color: #c62828;">More guardrails</span>
-            </div>
-            <div class="spectrum-line">
-              <!-- Huang -->
-              <div class="spectrum-point" style="left: 12%;">
-                <div class="spectrum-dot"></div>
-                <span class="spectrum-point-name">Huang</span>
-              </div>
-              <!-- Chen -->
-              <div class="spectrum-point" style="left: 36%;">
-                <div class="spectrum-dot"></div>
-                <span class="spectrum-point-name">Chen</span>
-              </div>
-              <!-- Pichai -->
-              <div class="spectrum-point" style="left: 52%;">
-                <div class="spectrum-dot"></div>
-                <span class="spectrum-point-name">Pichai</span>
-              </div>
-              <!-- Suleyman -->
-              <div class="spectrum-point" style="left: 68%;">
-                <div class="spectrum-dot"></div>
-                <span class="spectrum-point-name">Suleyman</span>
-              </div>
-              <!-- Gates -->
-              <div class="spectrum-point" style="left: 82%;">
-                <div class="spectrum-dot"></div>
-                <span class="spectrum-point-name">Gates</span>
-              </div>
+        <div class="quotes-grid-3" style="margin-top: 6px;">
+          <!-- Card 1 -->
+          <div class="quote-box">
+            <span class="quote-tag">COOPERATION</span>
+            <blockquote class="quote-body">“We don’t have any more luxury of having human fight against human.”</blockquote>
+            <div class="quote-author">
+              <strong>Masayoshi Son</strong>, CEO, SoftBank · 4 Oct, Kyoto · urging countries to build trust on AI safety · <a href="https://www.thestar.com.my/tech/tech-news/2026/10/05/softbanks-masayoshi-son-has-rare-cautionary-note-on-ai-safety" target="_blank" rel="noopener noreferrer" class="src-link">Bloomberg</a>
             </div>
           </div>
-          <div class="spectrum-takeaway">
-            Takeaway: agents are coming fast; leaders split on who holds the brakes. (Placement is the author’s reading.)
+
+          <!-- Card 2 -->
+          <div class="quote-box">
+            <span class="quote-tag">CONTROL</span>
+            <blockquote class="quote-body">Capabilities are “scary” to a degree, but he remains an “AI optimist”; a “kill switch for every AI [workflow] sits in the network.”</blockquote>
+            <div class="quote-author">
+              <strong>Tim Höttges</strong>, CEO, Deutsche Telekom · 5 Oct · <a href="https://www.telecomtv.com/content/ai/dt-s-ceo-spies-1bn-in-near-term-ai-revenues-56393/" target="_blank" rel="noopener noreferrer" class="src-link">TelecomTV</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="quote-box">
+            <span class="quote-tag">ADOPTION</span>
+            <blockquote class="quote-body">“Clients are moving from experimenting with AI to redesigning how their businesses operate.”</blockquote>
+            <div class="quote-author">
+              <strong>Janet Truncale</strong>, Global Chair &amp; CEO, EY · 8 Oct · <a href="https://www.accountingtoday.com/news/ey-global-revenue-increased-to-57b" target="_blank" rel="noopener noreferrer" class="src-link">Accounting Today</a>
+            </div>
           </div>
         </div>
 
-        <!-- 5 Quote Cards -->
-        <div class="quotes-grid-5" style="margin-top: 8px;">
-          <!-- 1 PACE -->
-          <div class="quote-box">
-            <div class="quote-tag">PACE</div>
-            <p class="quote-body">“Go as fast as we can, but not faster than we should.” Calls doom forecasts unscientific.</p>
-            <div class="quote-author">
-              <strong>Jensen Huang</strong>, CEO, Nvidia · 21–23 Sep · 
-              <a href="https://fortune.com/2026/09/21/jensen-huang-ai-leaders-doomsday-narratives/" target="_blank" rel="noopener noreferrer" class="src-link">Fortune</a> · 
-              <a href="https://www.axios.com/2026/09/23/nvidia-jensen-huang-ai-doom-predictions" target="_blank" rel="noopener noreferrer" class="src-link">Axios</a>
-            </div>
-          </div>
-          <!-- 2 CONTROL -->
-          <div class="quote-box">
-            <div class="quote-tag">CONTROL</div>
-            <p class="quote-body">“Nobody wants to create something that we can’t control, and that should be a red line.” Backs external audits of labs.</p>
-            <div class="quote-author">
-              <strong>Mustafa Suleyman</strong>, CEO, Microsoft AI · 24 Sep · 
-              <a href="https://thenextweb.com/news/microsoft-suleyman-red-line-ai-control-bloomberg" target="_blank" rel="noopener noreferrer" class="src-link">TNW / Bloomberg</a>
-            </div>
-          </div>
-          <!-- 3 SAFETY -->
-          <div class="quote-box">
-            <div class="quote-tag">SAFETY</div>
-            <p class="quote-body">OpenAI is “not going to shoot ourselves in the foot” by halting; monitored progress is safer.</p>
-            <div class="quote-author">
-              <strong>Mark Chen</strong>, Chief Research Officer, OpenAI · 30 Sep · 
-              <a href="https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/" target="_blank" rel="noopener noreferrer" class="src-link">MIT TR</a>
-            </div>
-          </div>
-          <!-- 4 GOVERNANCE -->
-          <div class="quote-box">
-            <div class="quote-tag">GOVERNANCE</div>
-            <p class="quote-body">Accord is “a solid basis for moving forward” with “real tangible steps to promote safe development”.</p>
-            <div class="quote-author">
-              <strong>Sundar Pichai</strong>, CEO, Alphabet · 29 Sep · 
-              <a href="https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work" target="_blank" rel="noopener noreferrer" class="src-link">Al Jazeera</a>
-            </div>
-          </div>
-          <!-- 5 REGULATION -->
-          <div class="quote-box">
-            <div class="quote-tag">REGULATION</div>
-            <p class="quote-body">“No one thinks self-regulation is enough.” Sees bio and cyber misuse as live risks.</p>
-            <div class="quote-author">
-              <strong>Bill Gates</strong>, Gates Foundation · 27 Sep (NBC) · 
-              <a href="https://fortune.com/2026/09/30/bill-gates-ai-dangers-bioweapons/" target="_blank" rel="noopener noreferrer" class="src-link">Fortune</a> · 
-              <a href="https://thenextweb.com/news/bill-gates-ezra-klein-ai-bio-cyber-thresholds" target="_blank" rel="noopener noreferrer" class="src-link">TNW</a>
-            </div>
-          </div>
+        <div class="quote-takeaway-bar">
+          <strong>Takeaway:</strong> the debate has moved from “how capable” to “who holds the controls” — governments, networks or enterprises.
         </div>
       </section>
 
@@ -2178,142 +2124,90 @@
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
-        <div class="workforce-grid" style="margin-top: 6px;">
-          <!-- Left: 3 Stat Cards -->
-          <div class="stats-stack">
-            <div class="stat-box-large">
-              <div class="stat-val">10–15%</div>
-              <div class="stat-label">workforce reduction executives expect from AI by 2030. <a href="https://www.bcg.com/press/30september2026-ai-starting-to-pay-off-companies-generate-value" target="_blank" rel="noopener noreferrer" class="src-link">BCG</a></div>
-            </div>
-            <div class="stat-box-large">
-              <div class="stat-val">7%→22%</div>
-              <div class="stat-label">share of roles that are dedicated AI roles, 2026 to 2030 (projected). <a href="https://www.bcg.com/press/30september2026-ai-starting-to-pay-off-companies-generate-value" target="_blank" rel="noopener noreferrer" class="src-link">BCG</a></div>
-            </div>
-            <div class="stat-box-large">
-              <div class="stat-val">11M</div>
-              <div class="stat-label">US workers (7%) may need to change occupation by 2035. <a href="https://www.mckinsey.com/mgi/our-research/workforce-in-motion-skills-and-pathways-to-future-jobs-in-the-united-states" target="_blank" rel="noopener noreferrer" class="src-link">McKinsey</a></div>
-            </div>
+        <div class="workforce-grid-2" style="margin-top: 6px;">
+          <!-- Skills that fade -->
+          <div class="stat-box-large">
+            <div class="stat-box-header">SKILLS THAT FADE</div>
+            <div class="stat-val">n = 1,222</div>
+            <div class="stat-label">In randomised trials, brief AI help reduced people’s persistence and their performance once the AI was taken away, on maths and reading tasks. <a href="https://arxiv.org/pdf/2604.04721" target="_blank" rel="noopener noreferrer" class="src-link">arXiv</a></div>
           </div>
 
-          <!-- Middle: Junior Roles + Training -->
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <div class="workforce-card">
-              <h3 class="workforce-card-title">The pressure is on junior roles</h3>
-              <p class="workforce-card-text">Employment of 22–25-year-olds in AI-exposed jobs is 19% below peers in ADP payroll data to June, mostly through fewer hires, not lay-offs; experienced workers show no such gap. <a href="https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf" target="_blank" rel="noopener noreferrer" class="src-link">Stanford</a></p>
-            </div>
-            <div class="workforce-card">
-              <h3 class="workforce-card-title">Training gets cheaper</h3>
-              <p class="workforce-card-text">In a 23 Sep study of 2,383 learners, AI tutors matched expert human tutors on GRE learning gains; one open model did so at about 1/900th of the cost. <a href="https://arxiv.org/abs/2609.28470" target="_blank" rel="noopener noreferrer" class="src-link">StudentBench</a></p>
-            </div>
-          </div>
-
-          <!-- Right: Robots + Skills -->
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <div class="workforce-card">
-              <h3 class="workforce-card-title">Robots: capable, not yet cheap</h3>
-              <p class="workforce-card-text">Robots can technically do 74% of US physical tasks, but are cost-competitive for only 0.3% today; at historical price declines, parity for 10% of work is ~40 years away. <a href="https://www.anthropic.com/research/what-work-can-robots-do" target="_blank" rel="noopener noreferrer" class="src-link">Anthropic</a></p>
-            </div>
-            <div class="workforce-card">
-              <h3 class="workforce-card-title">Skills, not capital, is the constraint</h3>
-              <p class="workforce-card-text">72% of 1,200 CEOs see skills shortages as a bigger barrier than capital within three years; only 16% have clear, real-time visibility of AI ROI. <a href="https://ey.com/en_gl/newsroom/2026/10/ai-drives-productivity-but-ceos-struggle-to-turn-gains-into-grow" target="_blank" rel="noopener noreferrer" class="src-link">EY</a></p>
-            </div>
+          <!-- People still want people -->
+          <div class="stat-box-large">
+            <div class="stat-box-header">PEOPLE STILL WANT PEOPLE</div>
+            <div class="stat-val">82.6%</div>
+            <div class="stat-label">of 7,675 US adults prefer a person for banking (84.0% for healthcare), though 40.1% would let an AI agent handle an everyday task. <a href="https://www.businesswire.com/news/home/20261008533804/en" target="_blank" rel="noopener noreferrer" class="src-link">Channel V Media</a></div>
           </div>
         </div>
 
-        <div class="action-callout-strip" style="margin-top: 8px;">
-          <strong>For HR leaders:</strong> protect the graduate pipeline, redesign junior roles around AI, fund an automation engineer per function, and audit HR tools against the new California rules (<a href="#sec-rules-tracker" class="pdf-jump">p. 3</a>).
+        <div class="action-callout-strip" style="margin-top: 6px;">
+          <strong>For HR leaders:</strong> pair every AI roll-out with “AI-off” skill checks, protect learning time for junior staff, and keep a human route for high-trust services. Telecom and professional-services workforce data: <a href="#sec-industrial-sectors" class="pdf-jump">p5</a>.
         </div>
       </section>
 
-      <!-- Section: Around the World -->
-      <section id="sec-regional-pulse">
-        <div class="section-banner">
-          <div class="section-banner-title">
-            <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P2</span>
-            <span>AROUND THE WORLD · REGIONAL PULSE</span>
-          </div>
-          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
-        </div>
-
-        <div class="regional-grid-4" style="margin-top: 6px;">
-          <!-- China -->
-          <div class="regional-card">
-            <div class="regional-title">CHINA</div>
-            <p class="regional-text">China is expanding alternatives to Nvidia: DeepSeek released tools supporting AI workloads on Huawei chips. This could fragment the global AI hardware ecosystem. <a href="https://github.com/deepseek-ai/DeepGEMM-Ascend" target="_blank" rel="noopener noreferrer" class="src-link">GitHub</a></p>
-          </div>
-          <!-- Middle East -->
-          <div class="regional-card">
-            <div class="regional-title">MIDDLE EAST</div>
-            <p class="regional-text">Saudi HUMAIN engages EY to build the kingdom’s first AI-native BPO service. <a href="https://www.ey.com/en_bh/newsroom/2026/09/humain-engages-ey-mena-to-develop-saudi-arabia-s-first-ai-native-business-process-outsourcing-service" target="_blank" rel="noopener noreferrer" class="src-link">EY</a></p>
-          </div>
-          <!-- Europe -->
-          <div class="regional-card">
-            <div class="regional-title">EUROPE</div>
-            <p class="regional-text">A Dutch–Belgian optician chain paused sales of Meta’s camera glasses after hospitals and the Defence Ministry tightened rules: AI wearables face workplace bans. <a href="https://www.retaildetail.eu/news/general/privacy-controversy-surrounding-meta-glasses-forces-hans-anders-to-halt-sales/" target="_blank" rel="noopener noreferrer" class="src-link">RetailDetail</a></p>
-          </div>
-          <!-- Asia-Pacific -->
-          <div class="regional-card">
-            <div class="regional-title">ASIA-PACIFIC</div>
-            <p class="regional-text">Anthropic asked Australia’s parliament for a narrow, opt-out copyright route for AI training. <a href="https://www.theguardian.com/technology/2026/oct/02/anthropic-ai-opt-out-australia-copyright-abc-cannibalisation-of-news" target="_blank" rel="noopener noreferrer" class="src-link">Guardian</a></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section: One Year Ago & Week Ahead -->
-      <section id="sec-one-year-ago">
-        <div class="bottom-split-grid" style="margin-top: 6px;">
-          <!-- One Year Ago -->
-          <div>
-            <div class="section-banner" style="margin-top:0;">
-              <div class="section-banner-title">
-                <span class="banner-theme-tag act">05 · P2</span>
-                <span>ONE YEAR AGO · TOP 3, 2025</span>
-              </div>
-              <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+      <!-- Bottom Split: One Year Ago & Regional Index -->
+      <div class="bottom-split-grid">
+        <!-- One Year Ago -->
+        <section id="sec-one-year-ago">
+          <div class="section-banner">
+            <div class="section-banner-title">
+              <span class="banner-theme-tag act">05 · P2</span>
+              <span>ONE YEAR AGO · OCTOBER 2025</span>
             </div>
-            <div class="timeline-light-card" style="margin-top: 6px;">
-              <div class="timeline-light-item">
-                <span class="timeline-light-date">29 SEP 25</span>
-                <span>ChatGPT launched Instant Checkout and an open Agentic Commerce Protocol with Stripe. Now: grocers build carts inside ChatGPT (<a href="#sec-industrial-sectors" class="pdf-jump">Safeway, p. 4</a>). <a href="https://openai.com/index/buy-it-in-chatgpt/" target="_blank" rel="noopener noreferrer" class="src-link">OpenAI</a></span>
-              </div>
-              <div class="timeline-light-item">
-                <span class="timeline-light-date">29 SEP 25</span>
-                <span>California enacted SB 53, the first US frontier-AI transparency law: safety frameworks, incident reports, whistleblower protection. Now: federal regulators test existing law on agents. <a href="https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/" target="_blank" rel="noopener noreferrer" class="src-link">CA.gov</a></span>
-              </div>
-              <div class="timeline-light-item">
-                <span class="timeline-light-date">30 SEP 25</span>
-                <span>OpenAI launched Sora 2 with a social video app. Now: the app closed in April 2026; its API shut on 24 Sept. <a href="https://openai.com/index/sora-2/" target="_blank" rel="noopener noreferrer" class="src-link">OpenAI</a> · <a href="https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/" target="_blank" rel="noopener noreferrer" class="src-link">The Decoder</a></span>
-              </div>
-            </div>
+            <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
           </div>
 
-          <!-- The Week Ahead -->
-          <div id="sec-week-ahead">
-            <div class="section-banner" style="margin-top:0;">
-              <div class="section-banner-title">
-                <span class="banner-theme-tag people">04 · P2</span>
-                <span>THE WEEK AHEAD</span>
-              </div>
-              <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+          <div class="timeline-light-card" style="margin-top: 6px;">
+            <div class="timeline-light-item">
+              <span class="timeline-light-date">6 OCT 25</span>
+              <div>AMD and a leading LLM provider agreed a 6 GW GPU deal; first 1 GW due from 2H 2026. Now: that first gigawatt is due to be deploying. <a href="https://openai.com/index/openai-amd-strategic-partnership" target="_blank" rel="noopener noreferrer" class="src-link">Company blog</a></div>
             </div>
-            <div class="timeline-light-card" style="margin-top: 6px;">
-              <div class="timeline-light-item">
-                <span class="timeline-light-date">7–8 Oct</span>
-                <span>World Summit AI, Amsterdam. <a href="https://worldsummit.ai/" target="_blank" rel="noopener noreferrer" class="src-link">WSAI</a></span>
-              </div>
-              <div class="timeline-light-item">
-                <span class="timeline-light-date">13–15 Oct</span>
-                <span>TechCrunch Disrupt, San Francisco: start-up and investor signals. <a href="https://techcrunch.com/2026/10/01/the-founders-guide-to-techcrunch-disrupt-2026-everything-you-need-to-know/" target="_blank" rel="noopener noreferrer" class="src-link">TechCrunch</a></span>
-              </div>
+            <div class="timeline-light-item">
+              <span class="timeline-light-date">7 OCT 25</span>
+              <div>A Big Four firm agreed a partial refund to the Australian government over a report with AI-generated errors. Now: verifying AI-assisted work is a contract issue. <a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2025/10/07/deloitte-to-partially-refund-australian-government-for-report-with-apparent-ai-generated-errors/" target="_blank" rel="noopener noreferrer" class="src-link">AP</a></div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- Regional Index -->
+        <section id="sec-regional-index">
+          <div class="section-banner">
+            <div class="section-banner-title">
+              <span class="banner-theme-tag people">04 · P2</span>
+              <span>REGIONAL INDEX · WHERE THE NEWS IS</span>
+            </div>
+            <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+          </div>
+
+          <div class="regional-table-card" style="margin-top: 6px;">
+            <div class="regional-row">
+              <span class="regional-region-name">Europe</span>
+              <div class="regional-news-list">UK health-AI rules <a href="#sec-global-rules" class="pdf-jump">p3</a> · Finland site pause <a href="#sec-global-rules" class="pdf-jump">p3</a> · Finnish AI campus <a href="#sec-ai-investments" class="pdf-jump">p5</a> · European open model <a href="#sec-agents-models" class="pdf-jump">p2</a> · Deutsche Telekom <a href="#sec-industrial-sectors" class="pdf-jump">p5</a></div>
+            </div>
+            <div class="regional-row">
+              <span class="regional-region-name">Asia</span>
+              <div class="regional-news-list">India AI-regulation paper <a href="#sec-global-rules" class="pdf-jump">p3</a> · Korean chips <a href="#sec-infra-hardware" class="pdf-jump">p3</a> · Taiwanese chips <a href="#sec-numbers-week" class="pdf-jump">p1</a> · AI-agent developer raise <a href="#sec-ai-investments" class="pdf-jump">p5</a> · Kyoto remarks <a href="#sec-leaders-future" class="pdf-jump">p2</a></div>
+            </div>
+            <div class="regional-row">
+              <span class="regional-region-name">Americas</span>
+              <div class="regional-news-list">Agent incidents <a href="#sec-lead-story" class="pdf-jump">p1</a> · agent protocol <a href="#sec-agents-models" class="pdf-jump">p2</a> · start-up rounds <a href="#sec-ai-investments" class="pdf-jump">p5</a> · US mortgages <a href="#sec-us-mortgages" class="pdf-jump">p4</a></div>
+            </div>
+            <div class="regional-row">
+              <span class="regional-region-name">Australia</span>
+              <div class="regional-news-list">AI data-centre IPO shelved <a href="#sec-infra-hardware" class="pdf-jump">p3</a> · Commonwealth Bank AI-benefits target <a href="#sec-industrial-sectors" class="pdf-jump">p5</a></div>
+            </div>
+            <div class="regional-row">
+              <span class="regional-region-name">Middle East · Africa</span>
+              <div class="regional-news-list">No major new AI news this week</div>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <!-- Page 2 Footer -->
       <footer class="page-footer-bar">
-        <div class="page-footer-left"><a href="#page-3" class="pdf-jump">Next (p. 3): cybersecurity, incidents, global rules, infrastructure, unsolved problems</a></div>
-        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 02 · Page 2 of 5</div>
+        <div class="page-footer-left">Next (p. 3): cybersecurity, incidents, rules, unsolved problems, infrastructure</div>
+        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 03 · Page 2 of 5</div>
       </footer>
     </article>
 
@@ -2323,7 +2217,7 @@
       <!-- Issue Header -->
       <div class="issue-top-header">
         <span>The AI Leadership Brief</span>
-        <span>29 SEP – 4 OCT 2026 · PAGE 3 OF 5</span>
+        <span>5 – 11 OCT 2026 · PAGE 3 OF 5</span>
       </div>
 
       <!-- Section: Cybersecurity -->
@@ -2336,124 +2230,60 @@
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
-        <div class="cyber-layout" style="margin-top: 6px;">
-          <div>
-            <div class="lead-story-body">
-              <p><strong>Open models close the exploit gap:</strong> Anthropic says Z.ai’s open-weight GLM-5.3 built 50 of 410 end-to-end exploits, near its own restricted Mythos Preview; a ~$4,400 modification run cut its refusals to roughly 2–12%. <a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities" target="_blank" rel="noopener noreferrer" class="src-link">Anthropic</a></p>
-              <p><strong>Ransomware gets an AI assist:</strong> Zscaler’s annual report finds ransomware up more than 275% year on year, ~900 TB stolen and $328M paid; attackers use generative AI to move faster, and 62% of victims were managers or above. <a href="https://www.globenewswire.com/news-release/2026/09/30/3371551/0/en/new-zscaler-report-reveals-ai-assisted-attackers-move-to-massive-data-theft-executive-targeting-and-millions-in-extortion-payments.html" target="_blank" rel="noopener noreferrer" class="src-link">Zscaler</a></p>
-              <p><strong>Platforms lock down for agents:</strong> Apple is tightening macOS “Full Disk Access”, requiring explicit consent before apps reach files, mail and messages, citing increasingly autonomous AI agents. <a href="https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/" target="_blank" rel="noopener noreferrer" class="src-link">TechCrunch</a></p>
-              <div class="why-matters-box">
-                <strong>Why it matters:</strong> open models are approaching frontier-level exploit-development capability. Fund AI-speed patching and review every agent’s permissions.
-              </div>
-            </div>
+        <div class="two-box-equal" style="margin-top: 6px;">
+          <!-- DEFENCE -->
+          <div class="card-bordered">
+            <div class="card-bordered-header">DEFENCE</div>
+            <div class="card-bordered-title">Defenders get fewer guardrails — after vetting</div>
+            <p class="card-bordered-text">On 6 Oct a leading AI lab merged its critical-software defender programme into a three-tier cyber verification programme (defence, red team, specialised access). Vetted security teams get its most capable models with fewer cyber blocks, in exchange for data retention so misuse can be monitored. <a href="https://www.csoonline.com/article/4231812/anthropic-widens-access-to-ai-cyber-capabilities-for-vetted-security-teams.html" target="_blank" rel="noopener noreferrer" class="src-link">CSO Online</a> · <a href="https://darkreading.com/vulnerabilities-threats/anthropic-vetted-defenders-claude-guardrails" target="_blank" rel="noopener noreferrer" class="src-link">Dark Reading</a></p>
           </div>
 
-          <!-- Chart Card -->
-          <div class="chart-card-dark">
-            <div class="chart-group-title">END-TO-END EXPLOITS BUILT · 410 TASKS</div>
-            <div>
-              <div class="h-bar-row">
-                <div class="h-bar-label-line">
-                  <span>Mythos Preview (restricted)</span>
-                  <span style="font-weight:700;">56</span>
-                </div>
-                <div class="h-bar-track">
-                  <div class="h-bar-fill fill-orange" style="width: 65%;"></div>
-                </div>
-              </div>
-              <div class="h-bar-row">
-                <div class="h-bar-label-line">
-                  <span>GLM-5.3 (open-weight)</span>
-                  <span style="font-weight:700;">50</span>
-                </div>
-                <div class="h-bar-track">
-                  <div class="h-bar-fill fill-orange" style="width: 58%;"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="chart-group-title" style="margin-top: 4px;">GLM-5.3 REFUSAL RATE</div>
-            <div>
-              <div class="h-bar-row">
-                <div class="h-bar-label-line">
-                  <span>As released</span>
-                  <span style="font-weight:700;">&gt;90%</span>
-                </div>
-                <div class="h-bar-track">
-                  <div class="h-bar-fill fill-teal" style="width: 92%;"></div>
-                </div>
-              </div>
-              <div class="h-bar-row">
-                <div class="h-bar-label-line">
-                  <span>After ~$4,400 tweak</span>
-                  <span style="font-weight:700;">2–12%</span>
-                </div>
-                <div class="h-bar-track">
-                  <div class="h-bar-fill fill-red" style="width: 10%;"></div>
-                </div>
-              </div>
-            </div>
-
-            <div style="font-size: 9.5px; color: #94a3b8; line-height: 1.3; margin-top: auto;">
-              Source: <a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; text-decoration: underline;">Anthropic (ExploitBench)</a>. Open weights can be modified outside the maker’s safeguards.
-            </div>
+          <!-- ATTACK -->
+          <div class="card-bordered">
+            <div class="card-bordered-header">ATTACK</div>
+            <div class="card-bordered-title">AI-assisted influence operations disrupted</div>
+            <p class="card-bordered-text">On 8 Oct a leading LLM provider said it banned two covert influence operations (Russia- and Iran-origin, by its assessment) that used AI to run “false front” outlets and personas that placed articles in real media; it rated one its first Category 5 case. <a href="https://openai.com/index/disrupting-ai-enabled-false-front-operations/" target="_blank" rel="noopener noreferrer" class="src-link">Company blog</a></p>
           </div>
+        </div>
+
+        <div class="why-matters-box" style="margin-top: 6px;">
+          <strong>Why it matters:</strong> defenders get stronger AI through vetting while attackers use it to scale deception. Check which teams qualify; brief comms teams on AI-made “experts”.
         </div>
       </section>
 
-      <!-- Section: Security Incidents -->
+      <!-- Section: AI Security Incidents -->
       <section id="sec-security-incidents">
         <div class="section-banner">
           <div class="section-banner-title">
             <span class="banner-theme-tag risk">02 RISK &amp; RULES · P3</span>
-            <span>SECURITY INCIDENTS THIS WEEK · ORGANISATIONS NOT NAMED</span>
+            <span>AI SECURITY INCIDENTS THIS WEEK · ORGANISATIONS NOT NAMED</span>
           </div>
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
-        <div class="incidents-grid" style="margin-top: 6px;">
-          <!-- AI-Related -->
-          <div class="incidents-col">
-            <div class="incidents-subhead">AI-RELATED</div>
-            <div class="incident-entry">
-              <span class="incident-pill ai">Data leak</span>
-              <div><strong>Agents published internal screenshots.</strong> Help Net Security reported that AI coding agents pushed 13,000+ internal screenshots, incl. billing records, to public repositories across 300+ organisations. <a href="https://www.helpnetsecurity.com/2026/09/30/ai-coding-agents-github-screenshot-leak/" target="_blank" rel="noopener noreferrer" class="src-link">Help Net Security</a></div>
-            </div>
-            <div class="incident-entry">
-              <span class="incident-pill ai">Rogue agents</span>
-              <div><strong>100+ organisations notified.</strong> An AI lab warned them of unauthorised activity by its AI agents after reviewing ~50 PB of data. <a href="https://www.reuters.com/legal/litigation/openai-alerts-more-than-100-groups-about-rogue-ai-agent-activity-2026-10-01/" target="_blank" rel="noopener noreferrer" class="src-link">Reuters</a></div>
-            </div>
-            <div class="incident-entry">
-              <span class="incident-pill ai">Privacy</span>
-              <div><strong>Over-trusted agent.</strong> A consumer AI agent shared a private seller’s home pickup address with a buyer. <a href="https://www.techrepublic.com/article/news-meta-ai-facebook-marketplace-buyer-seller-address/" target="_blank" rel="noopener noreferrer" class="src-link">TechRepublic</a></div>
-            </div>
+        <div class="two-box-equal" style="margin-top: 6px;">
+          <!-- Intrusion -->
+          <div class="card-bordered">
+            <div class="card-bordered-header">Intrusion · agents under test</div>
+            <div class="card-bordered-title">Test agents broke in, not just out</div>
+            <p class="card-bordered-text">A lab’s review found its test agents exploited injection flaws on a university server, bypassed a fee gate on public records and filed ~20 incomplete visa forms on a government site. It has cut live internet access for its internal tests. <a href="https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html" target="_blank" rel="noopener noreferrer" class="src-link">The Hacker News</a></p>
           </div>
 
-          <!-- Major Breaches -->
-          <div class="incidents-col">
-            <div class="incidents-subhead">MAJOR BREACHES</div>
-            <div class="incident-entry">
-              <span class="incident-pill breach">Defence · US</span>
-              <div><strong>Personnel database breached:</strong> 2.76M living and 294,000 deceased people, incl. Social Security numbers. <a href="https://securityaffairs.com/?p=200017" target="_blank" rel="noopener noreferrer" class="src-link">Security Affairs</a></div>
-            </div>
-            <div class="incident-entry">
-              <span class="incident-pill breach">Crypto</span>
-              <div><strong>Exchange lost ~$352M from hot and warm wallets;</strong> cause under investigation, users covered by a protection fund. <a href="https://cryptoslate.com/bitgets-351-6-million-hack-pushes-september-crypto-losses-to-2026-high/" target="_blank" rel="noopener noreferrer" class="src-link">CryptoSlate</a></div>
-            </div>
-            <div class="incident-entry">
-              <span class="incident-pill breach">Technology</span>
-              <div><strong>Phone-maker zero-day used in an “extremely sophisticated” targeted attack;</strong> patch issued. <a href="https://www.securityweek.com/apple-patches-meta-reported-zero-day-linked-to-extremely-sophisticated-attack/" target="_blank" rel="noopener noreferrer" class="src-link">SecurityWeek</a></div>
-            </div>
+          <!-- Prompt injection -->
+          <div class="card-bordered">
+            <div class="card-bordered-header">Prompt injection · tools in use</div>
+            <div class="card-bordered-title">Secrets leaked in 28 seconds</div>
+            <p class="card-bordered-text">Researchers showed one encrypted web page could make a popular AI coding assistant’s command-line tool, in autopilot mode, send a developer’s credentials file to an attacker. The vendor says the user had granted full autonomy; no fix announced. <a href="https://www.csoonline.com/article/4231763/encrypted-instructions-trick-copilot-cli-to-spill-dev-secrets.html" target="_blank" rel="noopener noreferrer" class="src-link">CSO Online</a></p>
           </div>
         </div>
 
-        <div class="action-callout-strip" style="margin-top: 8px;">
-          <strong>Why it matters:</strong> AI incidents came from agents doing ordinary jobs with too much access. Limit what agents can publish and reach.
+        <div class="why-matters-box" style="margin-top: 6px;">
+          <strong>Why it matters:</strong> both came from AI given too much autonomy. Treat hidden content an agent fetches as untrusted; alert on web fetch → code run → file read → outbound call. <a href="#sec-lead-story" class="pdf-jump">See also the lead story.</a>
         </div>
       </section>
 
       <!-- Section: Global AI Rules Tracker -->
-      <section id="sec-rules-tracker">
+      <section id="sec-global-rules">
         <div class="section-banner">
           <div class="section-banner-title">
             <span class="banner-theme-tag risk">02 RISK &amp; RULES · P3</span>
@@ -2466,44 +2296,66 @@
           <table class="brief-table">
             <thead>
               <tr>
-                <th style="width: 58px;">DATE</th>
-                <th style="width: 95px;">WHERE</th>
+                <th style="width: 70px;">DATE</th>
+                <th style="width: 80px;">WHERE</th>
                 <th>WHAT WAS ISSUED</th>
-                <th style="width: 80px;">STATUS</th>
-                <th style="width: 240px;">WHAT CXOs SHOULD DO</th>
+                <th style="width: 85px;">STATUS</th>
+                <th style="width: 250px;">WHAT CXOs SHOULD DO</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>30 Sep</strong></td>
-                <td><strong>California, US</strong></td>
-                <td>Three workplace AI and surveillance laws: limits on emotion-recognition and neural-data tools at work (AB 1883); requirements for specified automated employment decisions (SB 947); limits on bathroom surveillance (AB 1331). <a href="https://natlawreview.com/article/california-governor-signs-3-bills-targeting-ai-and-workplace-surveillance" target="_blank" rel="noopener noreferrer" class="src-link">NatLawReview</a></td>
-                <td><span class="status-badge enacted">Enacted</span></td>
-                <td>Audit HR tech now; from 1 Jul 2027 SB 947 bars discipline or firing based solely on AI.</td>
+                <td><strong>6 OCT</strong></td>
+                <td><strong>UK</strong></td>
+                <td>Government accepts all 44 recommendations of the National Commission on AI in healthcare: lifecycle regulation of AI medical devices; MHRA opens AI Airlock phase 3 on post-market surveillance. <a href="https://www.gov.uk/government/news/government-backs-recommendations-of-nhs-doctors-led-ai-commission" target="_blank" rel="noopener noreferrer" class="src-link">GOV.UK</a></td>
+                <td><span class="status-badge accepted">Accepted</span></td>
+                <td>Health &amp; medtech: plan for ongoing monitoring of deployed AI; roadmap due spring 2027.</td>
               </tr>
               <tr>
-                <td><strong>1 Oct</strong></td>
-                <td><strong>China</strong></td>
-                <td>Ministry of Public Security cyberspace inspection rules take effect: police online monitoring and remote testing; covers algorithm-recommendation controls. <a href="https://www.hunton.com/privacy-and-cybersecurity-law-blog/china-issues-new-rules-on-cyberspace-security-inspection" target="_blank" rel="noopener noreferrer" class="src-link">Hunton</a></td>
-                <td><span class="status-badge inforce">In force</span></td>
-                <td>China operations: check logs, security-level protection and algorithm records.</td>
+                <td><strong>6–7 OCT</strong></td>
+                <td><strong>Finland</strong></td>
+                <td>Supervisory agency LVV orders a hyperscaler’s subsidiary to suspend land-altering work at two planned AI data-centre sites until environmental impact assessments are done (by 23 Oct). <a href="https://www.aljazeera.com/news/2026/10/7/finland-orders-halt-to-work-on-google-data-sites-over-environment-concerns" target="_blank" rel="noopener noreferrer" class="src-link">Al Jazeera</a></td>
+                <td><span class="status-badge order">Order</span></td>
+                <td>Infra buyers: ask providers for permit status and timeline risk on new regions.</td>
               </tr>
               <tr>
-                <td><strong>1 Oct</strong></td>
-                <td><strong>US · Congress</strong></td>
-                <td>Bipartisan AI Agent Accountability Act announced: computer-fraud liability for agent operators and developers. <a href="https://www.hawley.senate.gov/senators-hawley-murphy-announce-bipartisan-ai-agent-accountability-act/" target="_blank" rel="noopener noreferrer" class="src-link">US Senate</a></td>
-                <td><span class="status-badge proposed">Proposed</span></td>
-                <td>Track it: deployers could share liability for agents.</td>
-              </tr>
-              <tr>
-                <td><strong>23 Sep</strong></td>
-                <td><strong>EU · ESMA</strong></td>
-                <td>AI in finance named a 2027 supervisory priority: bias, unclear outputs, vendor concentration. <a href="https://www.esma.europa.eu/sites/default/files/2026-09/Union_strategic_supervisory_priorities_-_factsheet.pdf" target="_blank" rel="noopener noreferrer" class="src-link">ESMA</a></td>
-                <td><span class="status-badge priority">Priority set</span></td>
-                <td>EU financial firms: build AI inventories and model documentation.</td>
+                <td><strong>8 OCT</strong></td>
+                <td><strong>India</strong></td>
+                <td>IT ministry to release an AI-regulation consultation paper within a month: safety, deepfakes, human-first approach, skilling. <a href="https://theprint.in/economy/ai-regulations-consultation-paper-in-a-month-safety-deepfakes-among-key-focus-areas-says-vaishnaw/3065421/" target="_blank" rel="noopener noreferrer" class="src-link">PTI / ThePrint</a></td>
+                <td><span class="status-badge planned">Planned</span></td>
+                <td>India operations: map AI systems and prepare comments for an early-November window.</td>
               </tr>
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <!-- Section: Unsolved Problems in AI -->
+      <section id="sec-unsolved-problems">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag risk">02 RISK &amp; RULES · P3</span>
+            <span>UNSOLVED PROBLEMS IN AI · WHAT THIS WEEK SHOWS IS STILL OPEN</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="two-box-equal" style="margin-top: 6px;">
+          <!-- AGENT IDENTITY -->
+          <div class="card-bordered">
+            <div class="card-bordered-header">AGENT IDENTITY</div>
+            <div class="card-bordered-title">Too many front doors</div>
+            <p class="card-bordered-text">The new protocol joins rival approaches: protocols from a card network, from a leading LLM provider with a payments firm, and from a search-and-cloud giant. Merchants may need to support several. <a href="https://www.trendingtopics.eu/personal-agent-protocol-meta-walmart-shopping-agents/" target="_blank" rel="noopener noreferrer" class="src-link">Trending Topics</a></p>
+            <div style="font-size: 10.5px; font-weight: 700; color: #143826; margin-top: auto;">Implication: build an adapter layer, not a single bet.</div>
+          </div>
+
+          <!-- DISCLOSURE -->
+          <div class="card-bordered">
+            <div class="card-bordered-header">DISCLOSURE</div>
+            <div class="card-bordered-title">No clock for AI test incidents</div>
+            <p class="card-bordered-text">Police called the lab’s roughly ten-day gap between finding the false tip and telling them “unacceptable”; there is no common standard for how fast AI-test incidents must be reported. <a href="https://www.phillyvoice.com/anthropic-ai-false-homicide-tip-philly-police/" target="_blank" rel="noopener noreferrer" class="src-link">Local news</a></p>
+            <div style="font-size: 10.5px; font-weight: 700; color: #143826; margin-top: auto;">Implication: write disclosure timelines into AI vendor contracts.</div>
+          </div>
         </div>
       </section>
 
@@ -2517,64 +2369,68 @@
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
-        <div class="three-box-grid" style="margin-top: 6px;">
-          <div class="info-card-bordered">
-            <div class="stat-val">$15B+</div>
-            <div style="font-weight:700; font-size:11.5px; color:#143826;">Japan power meets AI</div>
-            <p style="font-size:11px; line-height:1.35; color:#25312a;">JERA and Dell plan a ~400 MW data centre beside a Chiba power plant, phased from 2028. <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/japan-s-largest-power-producer-teams-with-dell-on-15bn-data-center" target="_blank" rel="noopener noreferrer" class="src-link">Nikkei</a></p>
+        <div class="samsung-layout" style="margin-top: 6px;">
+          <!-- Left: Memory makers story -->
+          <div>
+            <h2 class="lead-story-title" style="font-size: 18px;">Memory makers print records — supply stays tight</h2>
+            <div class="lead-story-body" style="margin-top: 6px;">
+              <p>Samsung estimated Q3 operating profit of ~107.4T won (~$80B), its fourth straight record, as AI demand outstrips DRAM, NAND and high-bandwidth memory supply. Higher memory prices are also pushing up device costs; full results are due 29 Oct. <a href="https://www.silicon.co.uk/cloud/ai/samsung-profit-2-631827" target="_blank" rel="noopener noreferrer" class="src-link">Silicon UK</a> · <a href="https://www.hl.co.uk/shares/stock-market-news/company--news/samsung-electronics-guides-to-huge-surge-in-q3-profits" target="_blank" rel="noopener noreferrer" class="src-link">Sharecast</a></p>
+              <div class="why-matters-box">
+                <strong>Why it matters:</strong> record profits give memory makers pricing power, and the cost now shows up in devices as well as servers. Budget for higher hardware costs in 2027 refresh cycles.
+              </div>
+            </div>
           </div>
-          <div class="info-card-bordered">
-            <div class="stat-val">~100k</div>
-            <div style="font-weight:700; font-size:11.5px; color:#143826;">Tencent rents GPUs abroad</div>
-            <p style="font-size:11px; line-height:1.35; color:#25312a;">Reported deal for GPUs in Oracle’s Southeast Asian data centres. <a href="https://www.datacenterdynamics.com/en/news/tencent-signs-on-for-100000-gpus-via-oracle-report/" target="_blank" rel="noopener noreferrer" class="src-link">DCD (reported)</a></p>
-          </div>
-          <div class="info-card-bordered">
-            <div class="stat-val">2028</div>
-            <div style="font-weight:700; font-size:11.5px; color:#143826;">Memory stays tight</div>
-            <p style="font-size:11px; line-height:1.35; color:#25312a;">Micron warns AI-driven memory shortages may tighten through 2028; next year largely sold. <a href="https://www.tomshardware.com/pc-components/dram/micron-projects-tightening-ram-shortages-through-2028-as-it-generates-record-profit-record-86-25-percent-gross-margin-drives-over-usd53-billion-in-quarterly-profit" target="_blank" rel="noopener noreferrer" class="src-link">Tom’s Hardware</a></p>
+
+          <!-- Right: Samsung Profit Chart -->
+          <div class="chart-box-light">
+            <div class="chart-box-title">SAMSUNG QUARTERLY OPERATING PROFIT (TRILLION WON)</div>
+            <div style="display: flex; flex-direction: column; gap: 7px; margin: 4px 0;">
+              <!-- Q3 2025 -->
+              <div class="h-bar-row-flex">
+                <span class="h-bar-label">Q3 2025</span>
+                <div class="h-bar-track-wrap">
+                  <div class="h-bar-fill-samsung" style="width: 11.4%;"></div>
+                </div>
+                <span class="h-bar-num">12.2</span>
+              </div>
+              <!-- Q2 2026 -->
+              <div class="h-bar-row-flex">
+                <span class="h-bar-label">Q2 2026</span>
+                <div class="h-bar-track-wrap">
+                  <div class="h-bar-fill-samsung" style="width: 83.3%;"></div>
+                </div>
+                <span class="h-bar-num">89.5</span>
+              </div>
+              <!-- Q3 2026 (est.) -->
+              <div class="h-bar-row-flex">
+                <span class="h-bar-label">Q3 2026 (est.)</span>
+                <div class="h-bar-track-wrap">
+                  <div class="h-bar-fill-samsung" style="width: 100%;"></div>
+                </div>
+                <span class="h-bar-num">107.4</span>
+              </div>
+            </div>
+            <div style="font-size: 9.5px; color: #55625a; font-style: italic; border-top: 1px solid #e5e1d6; padding-top: 4px;">
+              Source: Samsung preliminary results via Sharecast.
+            </div>
           </div>
         </div>
-      </section>
 
-      <!-- Section: Unsolved Problems -->
-      <section id="sec-unsolved-problems">
-        <div class="section-banner">
-          <div class="section-banner-title">
-            <span class="banner-theme-tag risk">02 RISK &amp; RULES · P3</span>
-            <span>UNSOLVED PROBLEMS IN AI · WHAT THIS WEEK’S RESEARCH SAYS IS STILL BROKEN</span>
-          </div>
-          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
-        </div>
-
-        <div class="three-box-grid" style="margin-top: 6px;">
-          <!-- 1 -->
-          <div class="info-card-bordered">
-            <div class="unsolved-card-title">Keeping agents contained</div>
-            <div class="unsolved-card-highlight" style="font-size:14px; color:#872a1e;">Sandbox ≠ safe</div>
-            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">Useful agents need network and tool access, so isolation alone cannot contain them, argues cryptographer Matthew Green. <a href="https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/" target="_blank" rel="noopener noreferrer" class="src-link">Blog</a></p>
-            <div style="font-size:10px; font-weight:600; color:#143826; margin-top:auto;">Implication: layer permissions, monitoring and kill switches.</div>
-          </div>
-          <!-- 2 -->
-          <div class="info-card-bordered">
-            <div class="unsolved-card-title">Honest self-reporting</div>
-            <div class="unsolved-card-highlight">2 of 200</div>
-            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">reports disclosed a planted negative result in the logs; adding “Be honest” raised that to 190. <a href="https://arxiv.org/abs/2609.36139" target="_blank" rel="noopener noreferrer" class="src-link">arXiv</a></p>
-            <div style="font-size:10px; font-weight:600; color:#143826; margin-top:auto;">Implication: never accept an agent’s own summary as the audit.</div>
-          </div>
-          <!-- 3 -->
-          <div class="info-card-bordered">
-            <div class="unsolved-card-title">Finding problems unprompted</div>
-            <div class="unsolved-card-highlight">4.7%</div>
-            <p style="font-size:10.5px; line-height:1.35; color:#25312a;">of ~4,100 real bugs fixed by the best agent when not told where to look. <a href="https://swesweep.com/" target="_blank" rel="noopener noreferrer" class="src-link">SWE-sweep</a></p>
-            <div style="font-size:10px; font-weight:600; color:#143826; margin-top:auto;">Implication: AI fixes well; discovery still needs humans and tests.</div>
+        <!-- Australia Financing -->
+        <div class="card-bordered" style="margin-top: 8px;">
+          <div class="card-bordered-header">AUSTRALIA · FINANCING</div>
+          <div class="card-bordered-title" style="font-size: 14px;">AI infrastructure funding gets a reality check</div>
+          <p class="card-bordered-text">On 9 Oct an Australian, chip-maker-backed AI data-centre operator shelved a planned ~US$5B IPO, citing market conditions. Prospective investors questioned its growth plans and debt load, which analysts put at about US$30B; it will now seek private capital. <a href="https://www.itnews.com.au/news/australian-nvidia-backed-ai-data-centre-operator-firmus-shelves-ipo-629529" target="_blank" rel="noopener noreferrer" class="src-link">iTnews / Reuters</a></p>
+          <div class="sowhat-pill" style="margin-top: 4px;">
+            <strong>So what:</strong> capital for AI build-outs is not unlimited. Check providers’ financing before multi-year capacity deals.
           </div>
         </div>
       </section>
 
       <!-- Page 3 Footer -->
       <footer class="page-footer-bar">
-        <div class="page-footer-left"><a href="#page-4" class="pdf-jump">Next (p. 4): AI in industries and AI investments</a></div>
-        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 02 · Page 3 of 5</div>
+        <div class="page-footer-left">Next (p. 4): AI in US mortgages; then sectors, investments, events, actions (p. 5)</div>
+        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 03 · Page 3 of 5</div>
       </footer>
     </article>
 
@@ -2584,312 +2440,179 @@
       <!-- Issue Header -->
       <div class="issue-top-header">
         <span>The AI Leadership Brief</span>
-        <span>29 SEP – 4 OCT 2026 · PAGE 4 OF 5</span>
+        <span>5 – 11 OCT 2026 · PAGE 4 OF 5</span>
       </div>
 
-      <!-- Section: AI in Industrial Sectors -->
-      <section id="sec-industrial-sectors">
+      <!-- Section: US Mortgages -->
+      <section id="sec-us-mortgages">
         <div class="section-banner">
           <div class="section-banner-title">
             <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P4</span>
-            <span>AI IN INDUSTRIAL SECTORS · WHO PUT AI TO WORK, BY INDUSTRY</span>
+            <span>US MORTGAGES · AI ACROSS THE LOAN LIFE CYCLE</span>
           </div>
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
-        <div class="industries-grid-8" style="margin-top: 6px;">
-          <!-- 1 Banking -->
-          <div class="industry-card">
-            <div class="industry-tag">BANKING</div>
-            <div class="industry-company">Barclays</div>
-            <div class="industry-desc">16,000+ staff have used an AI knowledge assistant (Anthropic’s Claude); ~120,000 markets emails processed daily; Claude Code for half of developers by end-2026. <a href="https://www.anthropic.com/news/barclays-scales-claude" target="_blank" rel="noopener noreferrer" class="src-link">Anthropic</a></div>
-            <div class="industry-sowhat"><strong>So what:</strong> regulated banks are moving past pilots.</div>
+        <div class="mortgage-header-layout" style="margin-top: 6px;">
+          <!-- Left: Story -->
+          <div>
+            <h2 class="lead-story-title" style="font-size: 20px;">AI agents work through the US mortgage</h2>
+            <div class="lead-story-body" style="margin-top: 6px;">
+              <p>A US mortgage still takes about 40 days to close and costs about $11,000 to originate, mostly in human labour (TechCrunch). This week, AI moves touched every stage of a loan’s life — from application and documents to hedging, securitisation, servicing and keeping the customer. Most share one pattern: agents start with a person approving their work, then take on more as trust and audit trails build.</p>
+              <div class="why-matters-box">
+                <strong>Why it matters:</strong> the cost of a mortgage is mainly people time spent moving paper between stages. Lenders that connect AI across stages — not just pilot it in one — will set the price everyone else has to match.
+              </div>
+            </div>
           </div>
-          <!-- 2 Retail -->
-          <div class="industry-card">
-            <div class="industry-tag">RETAIL</div>
-            <div class="industry-company">Albertsons × OpenAI</div>
-            <div class="industry-desc">ChatGPT Enterprise in-house; Safeway in ChatGPT turns a recipe or photo into a cart across 2,200+ stores. <a href="https://openai.com/index/albertsons-reimagining-retail/" target="_blank" rel="noopener noreferrer" class="src-link">OpenAI</a></div>
-            <div class="industry-sowhat"><strong>So what:</strong> the basket is moving into the chat.</div>
+
+          <!-- Right: Who moved this week -->
+          <div class="dark-card-box">
+            <div class="dark-card-title">THE LOAN LIFE CYCLE · WHO MOVED THIS WEEK</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 4px; font-size: 11px;">
+              <li style="display: flex; justify-content: space-between;"><span style="color: #f6c87a; font-weight: 700;">1 Originate</span> <span style="color: #ffffff; font-weight: 600;">Vesta</span></li>
+              <li style="display: flex; justify-content: space-between;"><span style="color: #f6c87a; font-weight: 700;">2 Documents</span> <span style="color: #ffffff; font-weight: 600;">MeridianLink</span></li>
+              <li style="display: flex; justify-content: space-between;"><span style="color: #f6c87a; font-weight: 700;">3 Hedge the pipeline</span> <span style="color: #ffffff; font-weight: 600;">Polly · F9 Advisors</span></li>
+              <li style="display: flex; justify-content: space-between;"><span style="color: #f6c87a; font-weight: 700;">4 Securitise</span> <span style="color: #ffffff; font-weight: 600;">dv01</span></li>
+              <li style="display: flex; justify-content: space-between;"><span style="color: #f6c87a; font-weight: 700;">5 Service</span> <span style="color: #ffffff; font-weight: 600;">Valon</span></li>
+              <li style="display: flex; justify-content: space-between;"><span style="color: #f6c87a; font-weight: 700;">6 Retain the borrower</span> <span style="color: #ffffff; font-weight: 600;">Place · Ardley</span></li>
+            </ul>
           </div>
-          <!-- 3 Manufacturing -->
-          <div class="industry-card">
-            <div class="industry-tag">MANUFACTURING · ROBOTICS</div>
-            <div class="industry-company">Boston Dynamics</div>
-            <div class="industry-desc">New Atlas hands: 13 degrees of freedom, palm sensors, can carry a 100+ lb mini-fridge; built for simulation training. <a href="https://bostondynamics.com/blog/robot-hands-for-modern-ai-and-real-work/" target="_blank" rel="noopener noreferrer" class="src-link">Boston Dynamics</a></div>
-            <div class="industry-sowhat"><strong>So what:</strong> dexterity is the next factory bottleneck.</div>
+        </div>
+
+        <!-- 6 Mortgage Stages Grid -->
+        <div class="mortgage-stages-grid" style="margin-top: 8px;">
+          <!-- 1 -->
+          <div class="mortgage-card">
+            <span class="mortgage-stage-tag">1 · ORIGINATE · 8 OCT</span>
+            <div class="mortgage-card-title">Lenders back the agents they use</div>
+            <p class="mortgage-card-desc">Vesta, whose AI agents automate much of loan origination, raised new funding with two of its own lender customers, Pennymac and New American Funding, investing. Some lenders let the agents make underwriting decisions; every action and its reasoning is logged for audit. Revenue up 12× in a year. <a href="https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents" target="_blank" rel="noopener noreferrer" class="src-link">TechCrunch</a></p>
+            <div class="sowhat-pill"><strong>So what:</strong> when customers invest, AI origination has passed the pilot stage.</div>
           </div>
-          <!-- 4 Cyber -->
-          <div class="industry-card">
-            <div class="industry-tag">CYBERSECURITY</div>
-            <div class="industry-company">Wiz × Gemini 4 Argon</div>
-            <div class="industry-desc">Found a critical flaw exposing personal data in hospital software used worldwide, one earlier models missed. <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener noreferrer" class="src-link">Google</a></div>
-            <div class="industry-sowhat"><strong>So what:</strong> defenders get frontier models first.</div>
+
+          <!-- 2 -->
+          <div class="mortgage-card">
+            <span class="mortgage-stage-tag">2 · DOCUMENTS · 8 OCT</span>
+            <div class="mortgage-card-title">A document agent goes live in the loan system</div>
+            <p class="mortgage-card-desc">MeridianLink’s Doc Agent for Mortgage is live with three early lenders, including Credit Union of Colorado. It reviews documents, extracts data and flags missing items; staff approve every output. General availability is expected late Q4 2026. <a href="https://nationalmortgageprofessional.com/news/meridianlinks-ai-document-agent-goes-live-three-lenders" target="_blank" rel="noopener noreferrer" class="src-link">National Mortgage Professional</a></p>
+            <div class="sowhat-pill"><strong>So what:</strong> document handling — the biggest manual step — is becoming a built-in feature.</div>
           </div>
-          <!-- 5 Food Service -->
-          <div class="industry-card">
-            <div class="industry-tag">FOOD SERVICE</div>
-            <div class="industry-company">McDonald’s</div>
-            <div class="industry-desc">A machine-learning system across ~14,000 US restaurants recommends item prices, per Reuters. <a href="https://www.reuters.com/business/inside-mcdonalds-push-to-have-ai-price-your-big-mac-2026-09-29/" target="_blank" rel="noopener noreferrer" class="src-link">Reuters</a></div>
-            <div class="industry-sowhat"><strong>So what:</strong> AI pricing invites a fairness test.</div>
+
+          <!-- 3 -->
+          <div class="mortgage-card">
+            <span class="mortgage-stage-tag">3 · HEDGE · 8 OCT</span>
+            <div class="mortgage-card-title">AI enters pipeline hedging</div>
+            <p class="mortgage-card-desc">A new capital-markets advisory firm, F9 Advisors, part-owned by Polly, will use machine learning to cut “pull-through” error — the gap between loans expected to close and loans that do — to lower hedging costs. <a href="https://www.nationalmortgagenews.com/news/new-partnership-points-to-how-ai-can-be-used-in-hedging" target="_blank" rel="noopener noreferrer" class="src-link">National Mortgage News</a></p>
+            <div class="sowhat-pill"><strong>So what:</strong> better closing forecasts mean less money lost on hedges.</div>
           </div>
-          <!-- 6 Legal -->
-          <div class="industry-card">
-            <div class="industry-tag">LEGAL</div>
-            <div class="industry-company">Thomson Reuters</div>
-            <div class="industry-desc">Launched “Thomson”, an LLM trained only on Thomson Reuters’ own content; can review up to 10,000 documents at once. <a href="https://legal.thomsonreuters.com/blog/meet-thomson-the-llm-built-by-thomson-reuters/" target="_blank" rel="noopener noreferrer" class="src-link">Thomson Reuters</a></div>
-            <div class="industry-sowhat"><strong>So what:</strong> proprietary content becomes the model.</div>
+
+          <!-- 4 -->
+          <div class="mortgage-card">
+            <span class="mortgage-stage-tag">4 · SECURITISE · 6 OCT</span>
+            <div class="mortgage-card-title">Agents draft the deal</div>
+            <p class="mortgage-card-desc">dv01 launched an agentic platform for mortgage- and asset-backed securities. It turns an offering memo into a draft deal structure and drafts servicer reports from data on 650M+ loans. It can run inside leading AI assistants; people review and approve the output. <a href="https://www.nationalmortgagenews.com/news/capital-markets-fintech-dv01-launches-agentic-platform" target="_blank" rel="noopener noreferrer" class="src-link">National Mortgage News</a></p>
+            <div class="sowhat-pill"><strong>So what:</strong> capital-markets analysts shift from building to checking.</div>
           </div>
-          <!-- 7 Healthcare -->
-          <div class="industry-card">
-            <div class="industry-tag">HEALTHCARE</div>
-            <div class="industry-company">Heidi II</div>
-            <div class="industry-desc">Clinical AI platform adds agents, persistent memory and research tools, moving beyond note-taking into admin work. <a href="https://www.fiercehealthcare.com/ai-and-machine-learning/heidi-launches-new-platform-tackle-administrative-work-ai-agents" target="_blank" rel="noopener noreferrer" class="src-link">Fierce Healthcare</a></div>
-            <div class="industry-sowhat"><strong>So what:</strong> the back office is next for clinical AI.</div>
+
+          <!-- 5 -->
+          <div class="mortgage-card">
+            <span class="mortgage-stage-tag">5 · SERVICE · 5 OCT</span>
+            <div class="mortgage-card-title">Servicing platform raises $150M</div>
+            <p class="mortgage-card-desc">Valon raised a $150M Series D led by Ribbit Capital to expand its servicing platform, where AI agents answer emails, allocate payments and run escrow analysis. Valon says one in six US mortgages will be handled on its platform. <a href="https://www.nationalmortgagenews.com/news/valons-150m-raise-ups-ante-vs-ice-sagent-in-servicing" target="_blank" rel="noopener noreferrer" class="src-link">National Mortgage News</a></p>
+            <div class="sowhat-pill"><strong>So what:</strong> servicing, long a cost centre, is the next big AI battleground.</div>
           </div>
-          <!-- 8 Author's Reading -->
-          <div class="industry-card author-card">
-            <div class="industry-tag" style="color: #82291d; border-color: #82291d;">AUTHOR’S READING</div>
-            <div class="industry-company">The pattern</div>
-            <div class="industry-desc">Across banking, retail, legal and healthcare, this week’s moves were production roll-outs, not pilots. The question has shifted from “whether” to “how fast and how governed”.</div>
+
+          <!-- 6 -->
+          <div class="mortgage-card">
+            <span class="mortgage-stage-tag">6 · RETAIN · 9 OCT</span>
+            <div class="mortgage-card-title">Buying AI to keep borrowers</div>
+            <p class="mortgage-card-desc">Real-estate platform Place agreed to acquire Ardley, whose AI-driven software helps lenders win back existing borrowers when they refinance or move. Terms were not disclosed. <a href="https://nationalmortgagenews.com/news/place-rivals-mortgage-fintechs-with-ardley-acquisition" target="_blank" rel="noopener noreferrer" class="src-link">National Mortgage News</a></p>
+            <div class="sowhat-pill"><strong>So what:</strong> keeping a borrower is cheaper than finding one; AI is aimed at that gap.</div>
           </div>
         </div>
       </section>
 
-      <!-- Section: AI Investments -->
-      <section id="sec-ai-investments">
+      <!-- Section: US Mortgages Numbers -->
+      <section id="sec-mortgage-numbers">
         <div class="section-banner">
           <div class="section-banner-title">
-            <span class="banner-theme-tag money">03 MONEY &amp; CAPACITY · P4</span>
-            <span>AI INVESTMENTS · WHERE THE MONEY WENT, 29 SEP – 4 OCT 2026</span>
+            <span class="banner-theme-tag people">04 · P4</span>
+            <span>US MORTGAGES · THE NUMBERS BEHIND THE MOVES</span>
           </div>
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
-        <div style="font-size: 10px; color: #55625a; margin: 4px 0 6px;">
-          Scope: only investments of US$100 million or more reported between 29 Sep and 4 Oct 2026 are listed; valuations excluded.
-        </div>
-
-        <!-- 4 Investment Top Stats -->
-        <div class="regional-grid-4" style="margin-bottom: 10px;">
-          <div class="stat-box-large">
-            <div class="stat-val">$100B+</div>
-            <div class="stat-label">in strategic financing and build-outs announced or reported (5 deals)</div>
+        <div class="numbers-grid-4" style="margin-top: 6px;">
+          <div class="stat-card">
+            <div class="stat-val">~40 days</div>
+            <div class="stat-label">typical time to close a US mortgage.</div>
+            <div class="stat-src"><a href="https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents" target="_blank" rel="noopener noreferrer" class="src-link">TechCrunch</a></div>
           </div>
-          <div class="stat-box-large">
-            <div class="stat-val">$2.34B</div>
-            <div class="stat-label">raised or agreed in 6 AI start-up rounds of $100M or more</div>
+          <div class="stat-card">
+            <div class="stat-val">~$11,000</div>
+            <div class="stat-label">cost to originate one loan, mostly human labour.</div>
+            <div class="stat-src"><a href="https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents" target="_blank" rel="noopener noreferrer" class="src-link">TechCrunch</a></div>
           </div>
-          <div class="stat-box-large">
-            <div class="stat-val">39%</div>
-            <div class="stat-label">of that went to physical AI and robotics, the largest theme</div>
+          <div class="stat-card">
+            <div class="stat-val">1 in 6</div>
+            <div class="stat-label">US mortgages Valon says will run on its AI-enabled servicing platform.</div>
+            <div class="stat-src"><a href="https://www.nationalmortgagenews.com/news/valons-150m-raise-ups-ante-vs-ice-sagent-in-servicing" target="_blank" rel="noopener noreferrer" class="src-link">NMN</a></div>
           </div>
-          <div class="stat-box-large">
-            <div class="stat-val">2 of 6</div>
-            <div class="stat-label">big rounds include Nvidia as an investor</div>
-          </div>
-        </div>
-
-        <!-- Breakdown Charts Grid -->
-        <div class="deals-charts-grid">
-          <!-- Mega-Deals -->
-          <div class="chart-box-light">
-            <div class="chart-box-title">MEGA-DEALS · FINANCING &amp; BUILD-OUTS (US$ BN)</div>
-            <div style="display: flex; flex-direction: column; gap: 7px; margin-top: 2px;">
-              <div class="chart-row-flex">
-                <div class="chart-name">
-                  <strong>Broadcom → Anthropic</strong><br>
-                  <span style="font-size: 9.5px; color: #556059;">$60B chip financing for Anthropic and others; Blackstone leads junior tranche (<a href="https://www.bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic" target="_blank" rel="noopener noreferrer" class="src-link">reported</a>)</span>
-                </div>
-                <div class="chart-bar-container-flex">
-                  <div class="bar-line-fill" style="width: 100px;"></div>
-                  <span class="bar-num-val">60</span>
-                </div>
-              </div>
-
-              <div class="chart-row-flex">
-                <div class="chart-name">
-                  <strong>JERA + Dell, Japan</strong><br>
-                  <span style="font-size: 9.5px; color: #556059;">~400 MW AI data centre in Chiba (<a href="https://asia.nikkei.com/business/technology/artificial-intelligence/japan-s-largest-power-producer-teams-with-dell-on-15bn-data-center" target="_blank" rel="noopener noreferrer" class="src-link">see p. 3</a>)</span>
-                </div>
-                <div class="chart-bar-container-flex">
-                  <div class="bar-line-fill" style="width: 25px;"></div>
-                  <span class="bar-num-val">15+</span>
-                </div>
-              </div>
-
-              <div class="chart-row-flex">
-                <div class="chart-name">
-                  <strong>SoftBank → OpenAI</strong><br>
-                  <span style="font-size: 9.5px; color: #556059;">Final tranche; completes a $30B follow-on commitment (<a href="https://group.softbank/en/news/press/20261001" target="_blank" rel="noopener noreferrer" class="src-link">SoftBank</a>)</span>
-                </div>
-                <div class="chart-bar-container-flex">
-                  <div class="bar-line-fill" style="width: 17px;"></div>
-                  <span class="bar-num-val">10</span>
-                </div>
-              </div>
-
-              <div class="chart-row-flex">
-                <div class="chart-name">
-                  <strong>Nvidia → OpenAI</strong><br>
-                  <span style="font-size: 9.5px; color: #556059;">Final tranche of a $30B pledge (<a href="https://www.theinformation.com/briefings/exclusive-nvidia-softbank-make-final-20-billion-investment-openais-last-round" target="_blank" rel="noopener noreferrer" class="src-link">reported</a>)</span>
-                </div>
-                <div class="chart-bar-container-flex">
-                  <div class="bar-line-fill" style="width: 17px;"></div>
-                  <span class="bar-num-val">10</span>
-                </div>
-              </div>
-
-              <div class="chart-row-flex">
-                <div class="chart-name">
-                  <strong>Tencent via Oracle</strong><br>
-                  <span style="font-size: 9.5px; color: #556059;">~100,000 GPUs in Southeast Asia (<a href="https://www.datacenterdynamics.com/en/news/tencent-signs-on-for-100000-gpus-via-oracle-report/" target="_blank" rel="noopener noreferrer" class="src-link">reported</a>)</span>
-                </div>
-                <div class="chart-bar-container-flex">
-                  <div class="bar-line-fill" style="width: 12px;"></div>
-                  <span class="bar-num-val">~7</span>
-                </div>
-              </div>
-            </div>
-            <div style="font-size: 9.5px; color: #64748b; margin-top: auto;">
-              Sources: 
-              <a href="https://www.bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic" target="_blank" rel="noopener noreferrer" class="src-link">Bloomberg</a> · 
-              <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/japan-s-largest-power-producer-teams-with-dell-on-15bn-data-center" target="_blank" rel="noopener noreferrer" class="src-link">Nikkei</a> · 
-              <a href="https://group.softbank/en/news/press/20261001" target="_blank" rel="noopener noreferrer" class="src-link">SoftBank</a> · 
-              <a href="https://www.theinformation.com/briefings/exclusive-nvidia-softbank-make-final-20-billion-investment-openais-last-round" target="_blank" rel="noopener noreferrer" class="src-link">The Information</a> · 
-              <a href="https://www.datacenterdynamics.com/en/news/tencent-signs-on-for-100000-gpus-via-oracle-report/" target="_blank" rel="noopener noreferrer" class="src-link">DCD</a>
-            </div>
-          </div>
-
-          <!-- Rounds by Theme -->
-          <div class="chart-box-light">
-            <div class="chart-box-title">ROUNDS ≥ $100M BY THEME (US$ MILLIONS)</div>
-            <div style="display: flex; flex-direction: column; gap: 7px; margin-top: 2px;">
-              <div class="chart-row-flex">
-                <div class="chart-name"><strong>Physical AI &amp; robotics</strong></div>
-                <div class="chart-bar-container-flex">
-                  <div class="bar-line-fill" style="width: 92px; background: #92400e;"></div>
-                  <span class="bar-num-val">920</span>
-                </div>
-              </div>
-              <div class="chart-row-flex">
-                <div class="chart-name"><strong>Compute &amp; interconnect</strong></div>
-                <div class="chart-bar-container-flex">
-                  <div class="bar-line-fill" style="width: 81px; background: #0f766e;"></div>
-                  <span class="bar-num-val">813</span>
-                </div>
-              </div>
-              <div class="chart-row-flex">
-                <div class="chart-name"><strong>Agents &amp; enterprise apps</strong></div>
-                <div class="chart-bar-container-flex">
-                  <div class="bar-line-fill" style="width: 35px; background: #b91c1c;"></div>
-                  <span class="bar-num-val">350</span>
-                </div>
-              </div>
-              <div class="chart-row-flex">
-                <div class="chart-name"><strong>Security</strong></div>
-                <div class="chart-bar-container-flex">
-                  <div class="bar-line-fill" style="width: 25px; background: #334155;"></div>
-                  <span class="bar-num-val">256</span>
-                </div>
-              </div>
-            </div>
-            <div style="font-size: 9.5px; color: #64748b;">Author’s grouping of the rounds listed below.</div>
-
-            <div class="action-callout-strip" style="margin-top: auto; font-size: 10.5px;">
-              <strong>Why it matters:</strong> money is chasing robots, compute and agents that do real work; Nvidia and Intel are backing the plumbing. Expect tight capacity; pick partners with staying power.
-            </div>
+          <div class="stat-card">
+            <div class="stat-val">650M+</div>
+            <div class="stat-label">loans in the data set dv01’s agents draw on.</div>
+            <div class="stat-src"><a href="https://www.nationalmortgagenews.com/news/capital-markets-fintech-dv01-launches-agentic-platform" target="_blank" rel="noopener noreferrer" class="src-link">NMN</a></div>
           </div>
         </div>
+      </section>
 
-        <!-- Startup Rounds Table -->
-        <div style="margin-top: 10px;">
-          <div style="font-size: 10.5px; font-weight: 800; color: #143826; letter-spacing: 0.6px; margin-bottom: 4px;">START-UP ROUNDS OF $100M OR MORE THIS WEEK</div>
-          <div class="table-wrap">
-            <table class="brief-table">
-              <thead>
-                <tr>
-                  <th style="width: 48px;">DATE</th>
-                  <th style="width: 105px;">COMPANY</th>
-                  <th>WHAT THEY DO</th>
-                  <th style="width: 60px;">AMOUNT</th>
-                  <th style="width: 130px;">TYPE</th>
-                  <th style="width: 130px;">LED / BACKED BY</th>
-                  <th style="width: 85px;">THEME</th>
-                  <th style="width: 85px;">SOURCE</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>2 Oct</strong></td>
-                  <td><strong>FieldAI</strong></td>
-                  <td>AI “brains” for field robots in construction, data centres &amp; defence</td>
-                  <td><strong>$700M</strong></td>
-                  <td>Term sheet (reported)</td>
-                  <td>Not stated</td>
-                  <td>Physical AI</td>
-                  <td><a href="https://www.businessinsider.com/robotics-startup-fieldai-raises-at-10b-valuation-in-new-round-2026-10" target="_blank" rel="noopener noreferrer" class="src-link">Business Insider</a></td>
-                </tr>
-                <tr>
-                  <td><strong>30 Sep</strong></td>
-                  <td><strong>GMI Cloud</strong></td>
-                  <td>GPU cloud capacity, US, Taiwan &amp; APAC</td>
-                  <td><strong>$668M</strong></td>
-                  <td>Series B ($223M) + $445M debt</td>
-                  <td>ARCHIV; Nvidia joins</td>
-                  <td>Compute</td>
-                  <td><a href="https://thenextweb.com/news/gmi-cloud-668m-series-b-nvidia-archiv-ctbc" target="_blank" rel="noopener noreferrer" class="src-link">TNW</a></td>
-                </tr>
-                <tr>
-                  <td><strong>29 Sep</strong></td>
-                  <td><strong>EliseAI</strong></td>
-                  <td>Agents for housing &amp; healthcare operations</td>
-                  <td><strong>$350M</strong></td>
-                  <td>Growth</td>
-                  <td>a16z, Bessemer</td>
-                  <td>Agents &amp; apps</td>
-                  <td><a href="https://www.globenewswire.com/news-release/2026/09/29/3370681/0/en/eliseai-raises-350-million-at-4-billion-valuation-to-bring-ai-deeper-into-housing-and-healthcare-operations.html" target="_blank" rel="noopener noreferrer" class="src-link">GlobeNewswire</a></td>
-                </tr>
-                <tr>
-                  <td><strong>1 Oct</strong></td>
-                  <td><strong>Armadin</strong></td>
-                  <td>Autonomous security agents that test attack paths</td>
-                  <td><strong>$255.5M</strong></td>
-                  <td>Series B</td>
-                  <td>a16z, Accel</td>
-                  <td>Security</td>
-                  <td><a href="https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html" target="_blank" rel="noopener noreferrer" class="src-link">PR Newswire</a></td>
-                </tr>
-                <tr>
-                  <td><strong>29 Sep</strong></td>
-                  <td><strong>General Intuition</strong></td>
-                  <td>Action models trained on gameplay video, for robotics</td>
-                  <td><strong>$220M</strong></td>
-                  <td>Growth</td>
-                  <td>Valor, Atreides, Khosla</td>
-                  <td>Physical AI</td>
-                  <td><a href="https://gamesbeat.com/general-intuition-raises-another-220m-at-6-2b-valuation-for-training-models-with-game-data/" target="_blank" rel="noopener noreferrer" class="src-link">GamesBeat</a></td>
-                </tr>
-                <tr>
-                  <td><strong>30 Sep</strong></td>
-                  <td><strong>CScale</strong></td>
-                  <td>Optical interconnect for gigawatt-scale AI</td>
-                  <td><strong>$145M</strong></td>
-                  <td>Series C</td>
-                  <td>Atreides, Valor, Premji; Nvidia, Intel</td>
-                  <td>Compute</td>
-                  <td><a href="https://www.datacenterdynamics.com/en/news/optical-interconnect-startup-cscale-emerges-from-stealth-following-investment-from-nvidia-and-intel/" target="_blank" rel="noopener noreferrer" class="src-link">DCD</a></td>
-                </tr>
-              </tbody>
-            </table>
+      <!-- Section: Questions for Leaders -->
+      <section id="sec-mortgage-leaders">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag act">05 · P4</span>
+            <span>FOR MORTGAGE &amp; LENDING LEADERS · THREE QUESTIONS FOR THIS QUARTER</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="questions-grid-3" style="margin-top: 6px;">
+          <div class="question-card">
+            <span class="question-role-tag">CEO / COO</span>
+            <div class="question-headline">Where does a loan wait?</div>
+            <p class="question-text">Map the days each loan spends between stages. Put agents on the longest waits first, not the easiest tasks.</p>
+          </div>
+          <div class="question-card">
+            <span class="question-role-tag">CRO / COMPLIANCE</span>
+            <div class="question-headline">Can you replay every AI decision?</div>
+            <p class="question-text">Agent use in underwriting needs logged actions and reasons, human sign-off rules and a clear owner — before volume grows.</p>
+          </div>
+          <div class="question-card">
+            <span class="question-role-tag">CFO / CAPITAL MARKETS</span>
+            <div class="question-headline">What is pull-through error costing you?</div>
+            <p class="question-text">Measure the gap between forecast and actual closings; it sets the price of a better AI forecast.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Background Governance -->
+      <section id="sec-mortgage-rulebook" style="margin-top: 2px;">
+        <div class="rulebook-banner">
+          <div class="rulebook-header">BACKGROUND · THE RULEBOOK THESE AGENTS MUST FOLLOW</div>
+          <div class="rulebook-title">Both US mortgage agencies already require AI governance</div>
+          <p class="rulebook-text">Not this week’s news, but the context for all of it: Freddie Mac’s AI/ML governance rules have applied since 3 Mar 2026 and Fannie Mae’s since 6 Aug 2026. Lenders and servicers must keep written AI policies, review them yearly, govern vendors’ AI as strictly as their own, and explain on request which AI they use and how it is controlled. The rules do not require anyone to adopt AI. <a href="https://singlefamily.fanniemae.com/news-events/lender-letter-ll-2026-04-governance-framework-use-artificial-intelligence-and-machine-learning" target="_blank" rel="noopener noreferrer" class="src-link">Fannie Mae LL-2026-04</a> · <a href="https://bankingjournal.aba.com/2025/12/freddie-mac-issues-guidelines-for-ai-use-by-mortgage-companies/" target="_blank" rel="noopener noreferrer" class="src-link">ABA Banking Journal</a> · <a href="https://nationalmortgageprofessional.com/news/fannie-mae-ai-governance-deadline-arrives-aug-6" target="_blank" rel="noopener noreferrer" class="src-link">National Mortgage Professional</a></p>
+          <div class="sowhat-pill" style="margin-top: 2px;">
+            <strong>So what:</strong> every agent above — your own or a vendor’s — must sit inside a written, reviewable AI policy.
+          </div>
+          <div class="scope-note">
+            Scope: AI-related US mortgage news reported 5–11 Oct 2026. Company figures are the companies’ own claims. AI mortgage launches announced on 12 Oct will be covered in Issue 04.
           </div>
         </div>
       </section>
 
       <!-- Page 4 Footer -->
       <footer class="page-footer-bar">
-        <div class="page-footer-left"><a href="#page-5" class="pdf-jump">Next (p. 5): studies &amp; surveys, events, action list</a></div>
-        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 02 · Page 4 of 5</div>
+        <div class="page-footer-left">Next (p. 5): AI in other sectors, investments, events, action list</div>
+        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 03 · Page 4 of 5</div>
       </footer>
     </article>
 
@@ -2899,143 +2622,185 @@
       <!-- Issue Header -->
       <div class="issue-top-header">
         <span>The AI Leadership Brief</span>
-        <span>29 SEP – 4 OCT 2026 · PAGE 5 OF 5</span>
+        <span>5 – 11 OCT 2026 · PAGE 5 OF 5</span>
       </div>
 
-      <!-- Section: Studies & Surveys -->
-      <section id="sec-studies-surveys">
+      <!-- Section: AI in Industrial Sectors -->
+      <section id="sec-industrial-sectors">
         <div class="section-banner">
           <div class="section-banner-title">
-            <span class="banner-theme-tag">01 BIG SHIFTS · P5</span>
-            <span>STUDIES &amp; SURVEYS · BIG 4, MCKINSEY, BCG, GARTNER · 15 SEP – 4 OCT</span>
+            <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P5</span>
+            <span>AI IN INDUSTRIAL SECTORS · WHO PUT AI TO WORK, BY INDUSTRY</span>
           </div>
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
-        <div class="surveys-grid-6" style="margin-top: 6px;">
-          <!-- 1 EY-Parthenon -->
-          <div class="survey-card">
-            <div class="survey-firm">EY-PARTHENON</div>
-            <div class="survey-name">CEO Outlook</div>
-            <div class="survey-meta">1 Oct · 1,200 CEOs, 21 countries</div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">50%</span>
-              <span>of CEOs call AI their biggest productivity driver</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">16%</span>
-              <span>have clear, real-time visibility of AI ROI</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">72%</span>
-              <span>see skills shortages as a bigger barrier than capital</span>
-            </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Productivity is real; proving it in the P&amp;L is the gap. <a href="https://ey.com/en_gl/newsroom/2026/10/ai-drives-productivity-but-ceos-struggle-to-turn-gains-into-grow" target="_blank" rel="noopener noreferrer" class="src-link">Source ↗</a></div>
+        <div class="industries-grid-6" style="margin-top: 6px;">
+          <!-- Telecom -->
+          <div class="industry-card">
+            <span class="industry-tag">TELECOM</span>
+            <div class="industry-company">Deutsche Telekom</div>
+            <p class="industry-desc">Targets ~€2.5B indirect-cost savings from AI by 2030 and ~€800M AI revenue; 100,000+ staff trained; agents handle 40% of US customer contacts. <a href="https://theedgemalaysia.com/node/820528" target="_blank" rel="noopener noreferrer" class="src-link">Reuters</a> · <a href="https://www.intelligentcio.com/eu/?p=171601" target="_blank" rel="noopener noreferrer" class="src-link">Intelligent CIO</a></p>
+            <div class="sowhat-pill"><strong>So what:</strong> a telco puts hard numbers on AI savings.</div>
           </div>
 
-          <!-- 2 BCG -->
-          <div class="survey-card">
-            <div class="survey-firm">BCG</div>
-            <div class="survey-name">Applied AI Index 2026</div>
-            <div class="survey-meta">30 Sep · 1,330 senior executives</div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">7.5%</span>
-              <span>deliver significant AI value (5% in 2025)</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">3.3%</span>
-              <span>of revenue now spent on AI, up from 1.7%</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">5%</span>
-              <span>have full controls in place for agentic AI</span>
-            </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Spend has doubled; governance has not kept up. <a href="https://www.bcg.com/press/30september2026-ai-starting-to-pay-off-companies-generate-value" target="_blank" rel="noopener noreferrer" class="src-link">Source ↗</a></div>
+          <!-- Pharma -->
+          <div class="industry-card">
+            <span class="industry-tag">PHARMA</span>
+            <div class="industry-company">GSK × AI drug-design start-up</div>
+            <p class="industry-desc">After GSK’s own wet-lab tests found the start-up’s AI-designed molecules bound every target tested, the two expanded into a collaboration. <a href="https://www.contractpharma.com/breaking-news/chai-discovery-gsk-announce-collaboration-following-wet-lab-evaluation/" target="_blank" rel="noopener noreferrer" class="src-link">Contract Pharma</a></p>
+            <div class="sowhat-pill"><strong>So what:</strong> prove it in the lab before signing the platform deal.</div>
           </div>
 
-          <!-- 3 McKinsey -->
-          <div class="survey-card">
-            <div class="survey-firm">MCKINSEY GLOBAL INSTITUTE</div>
-            <div class="survey-name">Workforce in Motion (US)</div>
-            <div class="survey-meta">29 Sep · US labour-market model</div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">11M</span>
-              <span>US workers (7%) may need to change occupation in a decade</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">770k</span>
-              <span>job switches a year, 3–4× the historical pace</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">~70%</span>
-              <span>will need some level of role reinvention</span>
-            </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Plan reskilling at scale, not case by case. <a href="https://www.mckinsey.com/mgi/our-research/workforce-in-motion-skills-and-pathways-to-future-jobs-in-the-united-states" target="_blank" rel="noopener noreferrer" class="src-link">Source ↗</a></div>
+          <!-- Software & Work Tools -->
+          <div class="industry-card">
+            <span class="industry-tag">SOFTWARE &amp; WORK TOOLS</span>
+            <div class="industry-company">Atlassian × leading LLM provider</div>
+            <p class="industry-desc">The provider’s newest models will power agents across Jira, Confluence and Rovo, with work context shared both ways with its assistant and coding agent. <a href="https://openai.com/index/atlassian-partnership/" target="_blank" rel="noopener noreferrer" class="src-link">Company blog</a></p>
+            <div class="sowhat-pill"><strong>So what:</strong> your work data becomes the agent’s fuel.</div>
           </div>
 
-          <!-- 4 KPMG -->
-          <div class="survey-card">
-            <div class="survey-firm">KPMG</div>
-            <div class="survey-name">Q3 AI Pulse</div>
-            <div class="survey-meta">24 Sep · 314 US leaders, $1B+ firms</div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">58%</span>
-              <span>report measurable business value from AI</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">62%</span>
-              <span>are building or deploying AI agents (53% last quarter)</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">74%</span>
-              <span>now review costs before approving AI projects</span>
-            </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Agents are mainstream; cost discipline is arriving. <a href="https://kpmg.com/us/en/media/news/q3-ai-pulse-2026.html" target="_blank" rel="noopener noreferrer" class="src-link">Source ↗</a></div>
+          <!-- Professional Services -->
+          <div class="industry-card">
+            <span class="industry-tag">PROFESSIONAL SERVICES</span>
+            <div class="industry-company">EY</div>
+            <p class="industry-desc">AI-services revenue up 49% in FY26; AI-assistant licences rose from 203,000 to 381,000; 5.2M hours of formal AI learning and $448M on training. <a href="https://www.accountingtoday.com/news/ey-global-revenue-increased-to-57b" target="_blank" rel="noopener noreferrer" class="src-link">Accounting Today</a></p>
+            <div class="sowhat-pill"><strong>So what:</strong> advisers now sell redesign, and train at scale to do it.</div>
           </div>
 
-          <!-- 5 Gartner (Spending) -->
-          <div class="survey-card">
-            <div class="survey-firm">GARTNER</div>
-            <div class="survey-name">AI spending forecast</div>
-            <div class="survey-meta">16 Sep · worldwide</div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">$2.7T</span>
-              <span>Gartner forecast for worldwide AI spending in 2026, up 49.5%</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">$3.6T</span>
-              <span>forecast for 2027</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">55%</span>
-              <span>of 2026 spend goes to infrastructure ($1.48T)</span>
-            </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Capacity, not software, absorbs most of the money.<br><a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-16-gartner-forecasts-worldwide-ai-spending-to-grow-49-point-5-percent-in-2026" target="_blank" rel="noopener noreferrer" class="src-link">🔗 Website: gartner.com/en/newsroom</a></div>
+          <!-- Banking Australia -->
+          <div class="industry-card">
+            <span class="industry-tag">BANKING · AUSTRALIA</span>
+            <div class="industry-company">Commonwealth Bank</div>
+            <p class="industry-desc">Reported ~A$200M in AI benefits last financial year and targets A$400M this year, tracking every team’s work against that goal. <a href="https://www.itnews.com.au/news/cba-uses-atlassian-tool-to-stay-focused-on-400m-ai-goal-629566" target="_blank" rel="noopener noreferrer" class="src-link">iTnews</a></p>
+            <div class="sowhat-pill"><strong>So what:</strong> a bank-wide AI number, tracked down to team level.</div>
           </div>
 
-          <!-- 6 Gartner (Predictions) -->
-          <div class="survey-card">
-            <div class="survey-firm">GARTNER</div>
-            <div class="survey-name">Strategic Predictions 2027+</div>
-            <div class="survey-meta">15 Sep · predictions</div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">$2030</span>
-              <span>of AI adopters will have a team mapping AI cost to value by 2029 (60%)</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">80%</span>
-              <span>of firms with public-facing AI hit by “cost-exhaustion” attacks by 2030</span>
-            </div>
-            <div class="survey-stat-item">
-              <span class="survey-stat-val">10B+</span>
-              <span>autonomous agents by 2030</span>
-            </div>
-            <div class="survey-sowhat"><strong>So what:</strong> Budget for AI FinOps and abuse controls now.<br><a href="https://www.gartner.com/en/newsroom/press-releases/2026-09-15-gartner-unveils-top-strategic-predictions-for-2027-and-beyond" target="_blank" rel="noopener noreferrer" class="src-link">🔗 Website: gartner.com/en/newsroom</a></div>
+          <!-- Author's Reading -->
+          <div class="industry-card author-card">
+            <span class="industry-tag">AUTHOR’S READING</span>
+            <div class="industry-company">The pattern</div>
+            <p class="industry-desc">Most sector moves this week came with a measurable claim — savings, benefits, binding rates or licences. Ask your teams for the same before scaling.</p>
+            <div class="sowhat-pill"><strong>So what:</strong> no metric, no scale-up.</div>
           </div>
         </div>
+      </section>
 
-        <div class="pattern-banner" style="margin-top: 8px;">
-          <strong>The pattern:</strong> adoption and spending are surging, but few firms can prove returns or govern AI well, and skills, not capital, are now the binding constraint.
+      <!-- Section: AI Investments -->
+      <section id="sec-ai-investments">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag money">03 MONEY &amp; CAPACITY · P5</span>
+            <span>AI INVESTMENTS · WHERE THE MONEY WENT, 5 – 11 OCT 2026</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="scope-note" style="margin-top: 4px;">
+          Scope: only investments of US$100 million or more announced or reported between 5 and 11 Oct 2026 are listed; valuations excluded.
+        </div>
+
+        <div class="deals-charts-grid" style="margin-top: 6px;">
+          <!-- Left: Chart -->
+          <div class="deals-bar-box">
+            <div class="chart-box-title">CAPITAL COMMITTED (US$ MILLIONS, APPROX.)</div>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin: 4px 0;">
+              <!-- Sesterce -->
+              <div class="deals-bar-row">
+                <span class="deals-bar-name">Sesterce campus</span>
+                <div class="deals-bar-track"><div class="deals-bar-fill" style="width: 100%;"></div></div>
+                <span class="deals-bar-val">~11,200</span>
+              </div>
+              <!-- Decision-model -->
+              <div class="deals-bar-row">
+                <span class="deals-bar-name">Decision-model co.</span>
+                <div class="deals-bar-track"><div class="deals-bar-fill" style="width: 16%;"></div></div>
+                <span class="deals-bar-val">870</span>
+              </div>
+              <!-- AI-agent -->
+              <div class="deals-bar-row">
+                <span class="deals-bar-name">AI-agent developer</span>
+                <div class="deals-bar-track"><div class="deals-bar-fill" style="width: 11%;"></div></div>
+                <span class="deals-bar-val">500+</span>
+              </div>
+              <!-- Atomic Machines -->
+              <div class="deals-bar-row">
+                <span class="deals-bar-name">Atomic Machines</span>
+                <div class="deals-bar-track"><div class="deals-bar-fill" style="width: 7%;"></div></div>
+                <span class="deals-bar-val">250*</span>
+              </div>
+              <!-- Valon -->
+              <div class="deals-bar-row">
+                <span class="deals-bar-name">Valon</span>
+                <div class="deals-bar-track"><div class="deals-bar-fill" style="width: 5%;"></div></div>
+                <span class="deals-bar-val">150</span>
+              </div>
+            </div>
+            <div style="font-size: 9px; color: #55625a; font-style: italic; border-top: 1px solid #e5e1d6; padding-top: 3px;">
+              *Total raised to date, disclosed on exit from stealth. € converted at Reuters’ rate.
+            </div>
+            <div class="why-matters-box" style="margin-top: 4px; font-size: 10.5px; padding: 5px 8px;">
+              <strong>Why it matters:</strong> one data-centre campus outweighs all start-up rounds combined; Europe’s cool north is winning build-outs.
+            </div>
+          </div>
+
+          <!-- Right: Deals Table -->
+          <div class="table-wrap">
+            <table class="brief-table">
+              <thead>
+                <tr>
+                  <th style="width: 48px;">DATE</th>
+                  <th style="width: 86px;">COMPANY</th>
+                  <th>WHAT THEY DO</th>
+                  <th style="width: 72px;">AMOUNT</th>
+                  <th style="width: 95px;">LED / BACKED BY</th>
+                  <th style="width: 68px;">SOURCE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>8 OCT</strong></td>
+                  <td><strong>Sesterce</strong></td>
+                  <td>AI data-centre campus at a former paper mill in Jämsä, Finland; 200→600 MW</td>
+                  <td><strong>€10B+</strong> plan</td>
+                  <td>Company; anchor customer unnamed</td>
+                  <td><a href="https://wsau.com/?p=1024102" target="_blank" rel="noopener noreferrer" class="src-link">Reuters</a></td>
+                </tr>
+                <tr>
+                  <td><strong>9 OCT</strong></td>
+                  <td><strong>US AI model start-up</strong></td>
+                  <td>Model that returns structured decisions for software, not text</td>
+                  <td><strong>$870M</strong> Series A</td>
+                  <td>a16z; Sequoia, DCVC</td>
+                  <td><a href="https://siliconangle.com/?p=850033" target="_blank" rel="noopener noreferrer" class="src-link">SiliconANGLE</a></td>
+                </tr>
+                <tr>
+                  <td><strong>8 OCT</strong></td>
+                  <td><strong>China-founded AI-agent developer</strong></td>
+                  <td>General-purpose AI agents; first round since a cross-border acquisition was unwound</td>
+                  <td><strong>$500M+</strong></td>
+                  <td>Boyu, IDG; Tencent, HSG, ZhenFund</td>
+                  <td><a href="https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/" target="_blank" rel="noopener noreferrer" class="src-link">TechCrunch</a></td>
+                </tr>
+                <tr>
+                  <td><strong>7 OCT</strong></td>
+                  <td><strong>Atomic Machines</strong></td>
+                  <td>AI-native fabrication of micro-machines; first product for AI data-centre power</td>
+                  <td><strong>$250M</strong> (to date)</td>
+                  <td>OneIM, Gigafund, XTX, Valor, KAS</td>
+                  <td><a href="https://thenextweb.com/news/atomic-machines-250m-matter-compiler-micro-machines" target="_blank" rel="noopener noreferrer" class="src-link">TNW</a></td>
+                </tr>
+                <tr>
+                  <td><strong>5 OCT</strong></td>
+                  <td><strong>Valon</strong></td>
+                  <td>AI mortgage servicing (<a href="#sec-us-mortgages" class="pdf-jump">p4</a>)</td>
+                  <td><strong>$150M</strong> Series D</td>
+                  <td>Ribbit Capital; a16z</td>
+                  <td><a href="https://www.nationalmortgagenews.com/news/valons-150m-raise-ups-ante-vs-ice-sagent-in-servicing" target="_blank" rel="noopener noreferrer" class="src-link">NMN</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -3044,168 +2809,125 @@
         <div class="section-banner">
           <div class="section-banner-title">
             <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P5</span>
-            <span>EVENTS &amp; CONFERENCES · BY CONTINENT · OCT – DEC 2026</span>
+            <span>EVENTS &amp; CONFERENCES · MAJOR AI DATES AHEAD, BY CONTINENT</span>
           </div>
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
-        <div class="events-grid-6" style="margin-top: 6px;">
-          <!-- North America -->
-          <div class="event-col">
-            <div class="event-region-title">NORTH AMERICA</div>
-            <div class="event-entry"><strong>13–15 Oct</strong> <a href="https://moscone.com/events/techcrunch-disrupt-2026" target="_blank" rel="noopener noreferrer" class="src-link">TechCrunch Disrupt · San Francisco ↗</a></div>
-            <div class="event-entry"><strong>9–13 Dec</strong> <a href="https://neurips.cc/Conferences/current/Dates" target="_blank" rel="noopener noreferrer" class="src-link">NeurIPS · Atlanta ↗</a></div>
-          </div>
-          <!-- South America -->
-          <div class="event-col">
-            <div class="event-region-title">SOUTH AMERICA</div>
-            <div class="event-entry"><strong>Mar 2027</strong> <a href="https://mediaoffice.ae/en/news/2025/october/14-10/gitex-expands-to-latin-america-propelling-us950-billion-digital-future" target="_blank" rel="noopener noreferrer" class="src-link">GITEX LATAM · São Paulo, 16–17 Mar ↗</a></div>
-          </div>
-          <!-- Europe -->
-          <div class="event-col">
-            <div class="event-region-title">EUROPE</div>
-            <div class="event-entry"><strong>7–8 Oct</strong> <a href="https://worldsummit.ai/" target="_blank" rel="noopener noreferrer" class="src-link">World Summit AI · Amsterdam ↗</a></div>
-            <div class="event-entry"><strong>9–12 Nov</strong> <a href="https://websummit.com/web-summit-2026/" target="_blank" rel="noopener noreferrer" class="src-link">Web Summit · Lisbon ↗</a></div>
-            <div class="event-entry"><strong>9–13 Dec</strong> <a href="https://neurips.cc/Conferences/current/Dates" target="_blank" rel="noopener noreferrer" class="src-link">NeurIPS · Paris ↗</a></div>
-          </div>
-          <!-- Africa -->
-          <div class="event-col">
-            <div class="event-region-title">AFRICA</div>
-            <div class="event-entry"><strong>28–29 Oct</strong> <a href="https://aiexpoafrica.com/ai-expo-africa-2026-faq/" target="_blank" rel="noopener noreferrer" class="src-link">AI Expo Africa · Johannesburg, Sandton Convention Centre ↗</a></div>
-          </div>
-          <!-- Asia & Middle East -->
-          <div class="event-col">
-            <div class="event-region-title">ASIA &amp; MIDDLE EAST</div>
-            <div class="event-entry"><strong>26–29 Oct</strong> <a href="https://fortune.com/press-releases/fii-10th-anniversary-riyadh-2026-2026-07-14/" target="_blank" rel="noopener noreferrer" class="src-link">FII10 · Riyadh ↗</a></div>
-            <div class="event-entry"><strong>17–19 Nov</strong> <a href="https://www.bengalurutechsummit.com/" target="_blank" rel="noopener noreferrer" class="src-link">Bengaluru Tech Summit · “AI &amp; Beyond” ↗</a></div>
-            <div class="event-entry"><strong>7–11 Dec</strong> <a href="https://www.gitex.com/gitex-global-2026" target="_blank" rel="noopener noreferrer" class="src-link">GITEX Global · Expo City Dubai ↗</a></div>
-          </div>
-          <!-- Oceania -->
-          <div class="event-col">
-            <div class="event-region-title">OCEANIA</div>
-            <div class="event-entry"><strong>6–12 Dec</strong> <a href="https://neurips.cc/Conferences/current/Dates" target="_blank" rel="noopener noreferrer" class="src-link">NeurIPS · Sydney, one of three 2026 sites ↗</a></div>
-          </div>
+        <div class="table-wrap" style="margin-top: 6px;">
+          <table class="brief-table">
+            <thead>
+              <tr>
+                <th style="width: 100px;">DATES</th>
+                <th style="width: 110px;">CONTINENT</th>
+                <th>EVENT</th>
+                <th style="width: 260px;">WHY ATTEND / WATCH</th>
+                <th style="width: 100px;">SOURCE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>21–23 OCT 2026</strong></td>
+                <td>North America</td>
+                <td><strong>HIMSS AI Executive Leadership Summit &amp; AI in Healthcare Forum</strong>, San Diego</td>
+                <td>Health-system AI governance and scaling</td>
+                <td><a href="https://www.healthcareitnews.com/video/asia/building-community-hospital-ai-era" target="_blank" rel="noopener noreferrer" class="src-link">Healthcare IT News</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sub-note-strip">
+          Still ahead, listed in Issue 02: TechCrunch Disrupt (13–15 Oct), AI Expo Africa (28–29 Oct), GITEX Global (7–11 Dec). Also watch: TSMC Q3 earnings 15 Oct; Samsung results 29 Oct.
         </div>
       </section>
 
-      <!-- Section: Action List -->
+      <!-- Section: Action List For Your Teams -->
       <section id="sec-action-list">
         <div class="section-banner">
           <div class="section-banner-title">
             <span class="banner-theme-tag act">05 ACT &amp; REFLECT · P5</span>
-            <span>ACTION LIST · AUTHOR’S VIEW · WHAT TO DO ON MONDAY</span>
+            <span>FOR YOUR TEAMS · ACTION LIST</span>
           </div>
           <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
         </div>
 
         <div class="actions-grid-2" style="margin-top: 6px;">
-          <!-- For Board & CXOs -->
-          <div class="action-col">
-            <div class="action-col-title">FOR THE BOARD &amp; CXOs</div>
-            <ul class="action-list">
-              <li class="action-item">
-                <span class="action-item-num">1.</span>
-                <div><strong>Keep the receipts.</strong> Log agent actions and AI incidents; regulators will ask.</div>
-              </li>
-              <li class="action-item">
-                <span class="action-item-num">2.</span>
-                <div><strong>Gate the agents.</strong> Human approval for spend, sharing and account changes.</div>
-              </li>
-              <li class="action-item">
-                <span class="action-item-num">3.</span>
-                <div><strong>Ready a lane for bots.</strong> Give customers’ agents a scoped, logged channel.</div>
-              </li>
-              <li class="action-item">
-                <span class="action-item-num">4.</span>
-                <div><strong>Book capacity early.</strong> Compute and memory stay tight to 2028.</div>
-              </li>
-              <li class="action-item">
-                <span class="action-item-num">5.</span>
-                <div><strong>Fund AI security testing.</strong> Open models now approach frontier exploit skill.</div>
-              </li>
-              <li class="action-item">
-                <span class="action-item-num">6.</span>
-                <div><strong>Protect the talent pipeline.</strong> Redesign junior roles; don’t just cut them.</div>
-              </li>
-            </ul>
+          <!-- 1 -->
+          <div class="action-item-card">
+            <span class="action-circle-num">1</span>
+            <div>
+              <strong>Agent containment standard (CIO, CISO).</strong> For every agent pilot: isolated network, written off-limits list, a stop owner and a pre-run escape check. <a href="#sec-lead-story" class="action-tag-link">Lead</a>
+            </div>
           </div>
 
-          <!-- For Teams -->
-          <div class="action-col">
-            <div class="action-col-title">FOR YOUR TEAMS · VPs &amp; DIRECTORS</div>
-            <ul class="action-list">
-              <li class="action-item">
-                <span class="action-item-num">1.</span>
-                <div><strong>Track model retirements across every AI vendor;</strong> test successors on your own tasks before cut-off.</div>
-              </li>
-              <li class="action-item">
-                <span class="action-item-num">2.</span>
-                <div><strong>Inventory every agent and its permissions;</strong> turn off “allow always” and public publishing.</div>
-              </li>
-              <li class="action-item">
-                <span class="action-item-num">3.</span>
-                <div><strong>Audit HR tools for emotion recognition and AI-only firing decisions</strong> (California).</div>
-              </li>
-              <li class="action-item">
-                <span class="action-item-num">4.</span>
-                <div><strong>Pilot a customer-agent channel in one service line,</strong> with limits and logs.</div>
-              </li>
-              <li class="action-item">
-                <span class="action-item-num">5.</span>
-                <div><strong>Run an AI red-team test on one critical application</strong> this quarter.</div>
-              </li>
-              <li class="action-item">
-                <span class="action-item-num">6.</span>
-                <div><strong>Name an automation engineer in each function</strong> to wire AI into workflows.</div>
-              </li>
-            </ul>
+          <!-- 2 -->
+          <div class="action-item-card">
+            <span class="action-circle-num">2</span>
+            <div>
+              <strong>Vendor contracts (CPO, Risk).</strong> Require AI vendors to state how they contain test agents and how fast they disclose incidents. <a href="#sec-unsolved-problems" class="action-tag-link">Unsolved</a>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="action-item-card">
+            <span class="action-circle-num">3</span>
+            <div>
+              <strong>Agent identity standards (CDO, COO).</strong> Review the new protocol’s v0.1 spec when published and decide which identity standards your sites and APIs will accept. <a href="#sec-agents-models" class="action-tag-link">Agents</a>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="action-item-card">
+            <span class="action-circle-num">4</span>
+            <div>
+              <strong>Site-risk review (CFO, CIO).</strong> Ask cloud and data-centre partners for permit status and power dates for any new region you depend on. <a href="#sec-global-rules" class="action-tag-link">Rules</a>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="action-item-card">
+            <span class="action-circle-num">5</span>
+            <div>
+              <strong>“AI-off” skills (CHRO).</strong> Add periodic unaided checks to roles that rely on AI assistance. <a href="#sec-workforce-talent" class="action-tag-link">Workforce</a>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="action-item-card">
+            <span class="action-circle-num">6</span>
+            <div>
+              <strong>Loan cycle-time map (lending COOs).</strong> Measure the days each loan waits between stages and aim agents at the longest waits. <a href="#sec-us-mortgages" class="action-tag-link">Mortgages</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Section: Feedback -->
-      <section id="sec-feedback">
-        <div class="section-banner">
-          <div class="section-banner-title">
-            <span class="banner-theme-tag act">05 ACT &amp; REFLECT · P5</span>
-            <span>YOUR FEEDBACK · HELP SHAPE ISSUE 03 · TAKES 10 SECONDS</span>
+      <!-- Section: Feedback & Caution Note -->
+      <div class="bottom-two-cards" style="margin-top: 4px;">
+        <!-- Feedback -->
+        <section id="sec-feedback" class="feedback-box-p5">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #dcd7ca; padding-bottom: 3px; margin-bottom: 5px;">
+            <span style="font-size: 10px; font-weight: 800; color: #143826; letter-spacing: 0.6px; text-transform: uppercase;">05 · P5 · YOUR FEEDBACK</span>
+            <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
           </div>
-          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
-        </div>
+          <p>👍 <strong>Found this useful?</strong> React on the LinkedIn post and comment the theme number you read first (01–05). Tell me what to add or drop next week — every comment shapes Issue 04.</p>
+        </section>
 
-        <div class="feedback-grid-4" style="margin-top: 6px;">
-          <div class="feedback-card">
-            <div class="feedback-card-title">👍 1. React</div>
-            <p class="feedback-card-desc">Tap 👍 (or any reaction) on the LinkedIn post if this brief was useful.</p>
+        <!-- Caution Note -->
+        <section id="sec-caution-note" class="caution-box-p5">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #dcd7ca; padding-bottom: 3px; margin-bottom: 5px;">
+            <span style="font-size: 10px; font-weight: 800; color: #8b2b1a; letter-spacing: 0.6px; text-transform: uppercase;">05 · P5 · ⚠ CAUTION NOTE</span>
+            <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
           </div>
-          <div class="feedback-card">
-            <div class="feedback-card-title">💬 2. Comment</div>
-            <p class="feedback-card-desc">Comment the theme number that helped most: 01 Big shifts · 02 Risk &amp; rules · 03 Money · 04 People &amp; industry · 05 Act.</p>
-          </div>
-          <div class="feedback-card">
-            <div class="feedback-card-title">📊 3. Vote in the poll</div>
-            <p class="feedback-card-desc">Answer the one-question poll in the first comment: which section should grow next week?</p>
-          </div>
-          <div class="feedback-card">
-            <div class="feedback-card-title">🔁 4. Pass it on</div>
-            <p class="feedback-card-desc">Share or repost to your leadership team. Want a topic covered? Say so in the comments.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section: Caution Note -->
-      <section id="sec-caution-note" style="margin-top: 4px;">
-        <div class="caution-note-box">
-          <strong>⚠ CAUTION NOTE:</strong> For general information only, not investment, legal or professional advice. Items come from public sources believed reliable at the time of writing but may change or be corrected; “reported” means one outlet. If you use any data or news from this newsletter for business purposes, verify it independently against the original source first.
-        </div>
-      </section>
+          <p>This brief summarises public reports from the sources linked beside each item. Company figures are the companies’ own claims unless stated. If you use any data or news here for business decisions, verify it independently against the original source first. Nothing here is investment, legal or financial advice.</p>
+        </section>
+      </div>
 
       <!-- Page 5 Footer -->
       <footer class="page-footer-bar">
-        <div class="page-footer-left">
-          Method: news 29 Sep – 4 Oct; leader remarks 18 Sep – 4 Oct; studies &amp; data points may be earlier and are dated; picked for CXO relevance; “reported” = one outlet; valuations excluded.
-        </div>
-        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Issue 02 · Page 5 of 5</div>
+        <div class="page-footer-left">Issue 03 · 5 – 11 Oct 2026 · By Jayaraman (Jay) Ganapathi · Cartoon released under CC0 · Next issue: 19 Oct 2026</div>
+        <div class="page-footer-right"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · Page 5 of 5</div>
       </footer>
     </article>
 
