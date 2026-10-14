@@ -121,6 +121,105 @@
       color: #86efac;
     }
 
+    
+    /* ISSUE SWITCHER TABS IN TOOLBAR */
+    .issue-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 6px;
+      padding: 2px;
+      gap: 2px;
+    }
+
+    .issue-btn {
+      padding: 3px 10px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #94a3b8;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .issue-btn:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .issue-btn.active {
+      background: #143826;
+      color: #86efac;
+      border: 1px solid rgba(134, 239, 172, 0.35);
+      cursor: default;
+    }
+
+    /* ISSUE NAVIGATION BANNER */
+    .issues-nav-banner {
+      background: #1b2620;
+      color: #e2ede5;
+      border-radius: 6px;
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .issues-nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .issues-nav-label {
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: #93cba7;
+      text-transform: uppercase;
+    }
+
+    .issues-nav-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 11.5px;
+      color: #cbd5e1;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      transition: all 0.2s ease;
+    }
+
+    .issues-nav-pill:hover {
+      background: rgba(255, 255, 255, 0.14);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .issues-nav-pill.active {
+      background: #15803d;
+      color: #ffffff;
+      border-color: #22c55e;
+      font-weight: 600;
+    }
+
+    .issues-nav-right {
+      font-size: 11px;
+      color: #9cbca7;
+      font-style: italic;
+    }
+
     /* PUBLICATION PAGE CONTAINER */
     .publication-container {
       max-width: 980px;
@@ -1594,7 +1693,10 @@
         Back to Website
       </a>
       <span style="font-weight: 700; color: #94a3b8; font-size: 13px;">The AI Leadership Brief</span>
-      <span style="background: rgba(255,255,255,0.1); padding: 2px 7px; border-radius: 4px; font-size: 11px; color: #a7f3d0;">Issue 03</span>
+      <div class="issue-switcher">
+        <span class="issue-btn active">Issue 03 (Current)</span>
+        <a href="ai-newsletter-issue-02.html" class="issue-btn">Issue 02</a>
+      </div>
     </div>
 
     <div class="toolbar-center">
@@ -1622,6 +1724,22 @@
 
   <!-- PUBLICATION CONTENT: 5 PAGE SHEETS -->
   <main class="publication-container">
+
+    <!-- ALL ISSUES ARCHIVE / SELECTOR BANNER -->
+    <div class="issues-nav-banner">
+      <div class="issues-nav-left">
+        <span class="issues-nav-label">ARCHIVE / ISSUES:</span>
+        <a href="ai-newsletter.html" class="issues-nav-pill active">
+          <strong>Issue 03</strong> · 5 – 11 Oct 2026 (Latest)
+        </a>
+        <a href="ai-newsletter-issue-02.html" class="issues-nav-pill">
+          <strong>Issue 02</strong> · 29 Sep – 4 Oct 2026
+        </a>
+      </div>
+      <div class="issues-nav-right">
+        <span>Published Weekly by Jayaraman (Jay) Ganapathi</span>
+      </div>
+    </div>
 
     <!-- ==================== PAGE 1 OF 5 ==================== -->
     <article id="page-1" class="page-sheet">
