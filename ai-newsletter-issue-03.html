@@ -10,8 +10,22 @@
 
     gtag('config', 'G-EJE64RHR03');
   </script>
+  <script>
+    function initApollo(){
+      var n = Math.random().toString(36).substring(7),
+          o = document.createElement("script");
+      o.src = "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" + n;
+      o.async = !0;
+      o.defer = !0;
+      o.onload = function(){
+        window.trackingFunctions.onLoad({appId: "6a9f8fbd28060b00149b77be"});
+      };
+      document.head.appendChild(o);
+    }
+    initApollo();
+  </script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>The AI Leadership Brief · Issue 03 | People Prime Worldwide</title>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
   <meta name="description" content="The AI Leadership Brief (Issue 03 · 5–11 October 2026) — The week’s AI developments that matter to CXOs and decision-makers by Jayaraman (Jay) Ganapathi.">
@@ -33,15 +47,31 @@
       scroll-behavior: smooth;
       background-color: #e9e6dd;
       color: #1a1a1a;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
       font-size: 13.5px;
       line-height: 1.45;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      overflow-x: hidden;
     }
 
     body {
       background-color: #edeae2;
-      padding-bottom: 60px;
+      padding-bottom: max(60px, env(safe-area-inset-bottom, 60px));
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    svg {
+      flex-shrink: 0;
     }
 
     /* TOP READER TOOLBAR (Hidden in Print) */
@@ -52,26 +82,55 @@
       background: #111a16;
       color: #e5ede8;
       border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-      padding: 10px 24px;
+      padding: 10px max(20px, env(safe-area-inset-right, 20px)) 10px max(20px, env(safe-area-inset-left, 20px));
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: 12px;
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
       font-size: 13px;
+      width: 100%;
+      transition: padding 0.2s ease;
+    }
+
+    @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+      .reader-toolbar {
+        background: rgba(17, 26, 22, 0.94);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+      }
     }
 
     .toolbar-left, .toolbar-center, .toolbar-right {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
+    }
+
+    .toolbar-left {
+      min-width: 0;
+      flex-shrink: 1;
+    }
+
+    .toolbar-right {
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    .toolbar-title {
+      font-weight: 700;
+      color: #94a3b8;
+      font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .toolbar-btn {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 6px 14px;
+      padding: 6px 13px;
       border-radius: 6px;
       font-size: 13px;
       font-weight: 500;
@@ -81,12 +140,19 @@
       background: rgba(255, 255, 255, 0.08);
       color: #f1f5f3;
       transition: all 0.2s ease;
+      white-space: nowrap;
+      touch-action: manipulation;
+      min-height: 34px;
     }
 
     .toolbar-btn:hover {
       background: rgba(255, 255, 255, 0.18);
       border-color: rgba(255, 255, 255, 0.4);
       color: #ffffff;
+    }
+
+    .toolbar-btn:active {
+      transform: scale(0.98);
     }
 
     .toolbar-btn.primary {
@@ -100,9 +166,17 @@
     }
 
     .page-jump-links {
-      display: flex;
+      display: inline-flex;
       gap: 4px;
       align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    .jump-label {
+      font-size: 11px;
+      color: #94a3b8;
+      margin-right: 4px;
+      white-space: nowrap;
     }
 
     .page-jump-link {
@@ -114,6 +188,11 @@
       font-size: 12px;
       background: rgba(255, 255, 255, 0.05);
       transition: all 0.15s ease;
+      white-space: nowrap;
+      touch-action: manipulation;
+      min-height: 28px;
+      display: inline-flex;
+      align-items: center;
     }
 
     .page-jump-link:hover {
@@ -121,6 +200,9 @@
       color: #86efac;
     }
 
+    .page-jump-link:active {
+      transform: scale(0.96);
+    }
     
     /* ISSUE SWITCHER TABS IN TOOLBAR */
     .issue-switcher {
@@ -130,12 +212,13 @@
       border-radius: 6px;
       padding: 2px;
       gap: 2px;
+      flex-shrink: 0;
     }
 
     .issue-btn {
-      padding: 3px 10px;
+      padding: 3px 9px;
       border-radius: 4px;
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 600;
       color: #94a3b8;
       text-decoration: none;
@@ -143,6 +226,8 @@
       display: inline-flex;
       align-items: center;
       gap: 4px;
+      white-space: nowrap;
+      touch-action: manipulation;
     }
 
     .issue-btn:hover {
@@ -1188,13 +1273,31 @@
     /* GLOBAL RULES TRACKER TABLE (Page 3) */
     .table-wrap {
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
       background: #fdfcf9;
       border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      width: 100%;
+      scrollbar-width: thin;
+      scrollbar-color: #20352a #ebe7de;
+    }
+
+    .table-wrap::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .table-wrap::-webkit-scrollbar-track {
+      background: #ebe7de;
+    }
+
+    .table-wrap::-webkit-scrollbar-thumb {
+      background: #20352a;
       border-radius: 3px;
     }
 
     .brief-table {
       width: 100%;
+      min-width: 520px;
       border-collapse: collapse;
       font-size: 11px;
       text-align: left;
@@ -1643,42 +1746,273 @@
     }
 
     /* RESPONSIVE DESIGN FOR SCREENS */
-    @media (max-width: 860px) {
+    @media (max-width: 1100px) {
+      .toolbar-title {
+        max-width: 180px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .toolbar-title {
+        display: none;
+      }
       .agenda-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
       .roles-grid {
         grid-template-columns: repeat(3, 1fr);
       }
-      .lead-story-layout, .two-col-layout, .samsung-layout, .mortgage-header-layout, .deals-charts-grid, .bottom-split-grid, .two-box-equal, .research-grid-2, .workforce-grid-2, .bottom-two-cards {
-        grid-template-columns: 1fr;
-      }
-      .quotes-grid-3, .mortgage-stages-grid, .industries-grid-6, .questions-grid-3 {
+      .numbers-grid-4 {
         grid-template-columns: repeat(2, 1fr);
       }
-      .numbers-grid-3, .numbers-grid-4 {
+      .quotes-grid-3 {
         grid-template-columns: repeat(2, 1fr);
       }
-      .actions-grid-2 {
-        grid-template-columns: 1fr;
+      .mortgage-stages-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
-      .deals-charts-grid {
-        grid-template-columns: 1fr;
+      .industries-grid-6 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .questions-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 580px) {
-      .page-sheet {
-        padding: 18px 14px;
+    @media (max-width: 860px) {
+      .reader-toolbar {
+        padding: 8px 12px;
+        flex-wrap: wrap;
+        gap: 8px;
       }
-      .agenda-grid, .roles-grid, .quotes-grid-3, .mortgage-stages-grid, .industries-grid-6, .questions-grid-3, .numbers-grid-3, .numbers-grid-4, .brief-columns {
+
+      .toolbar-left {
+        order: 1;
+        flex: 1 1 auto;
+      }
+
+      .toolbar-right {
+        order: 2;
+        flex: 0 0 auto;
+        gap: 6px;
+      }
+
+      .toolbar-center {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding-top: 6px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .toolbar-btn {
+        padding: 5px 10px;
+        font-size: 12px;
+      }
+
+      .publication-container {
+        margin: 20px auto;
+        padding: 0 12px;
+        gap: 24px;
+      }
+
+      .page-sheet {
+        min-height: auto;
+        padding: 24px 20px 22px;
+      }
+
+      .lead-story-layout, .two-col-layout, .samsung-layout, .mortgage-header-layout, .deals-charts-grid, .bottom-split-grid, .two-box-equal, .research-grid-2, .workforce-grid-2, .bottom-two-cards, .actions-grid-2 {
         grid-template-columns: 1fr;
       }
-      .masthead-title {
-        font-size: 28px;
+
+      .agenda-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
+
+      .numbers-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .brief-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .btn-text-full {
+        display: none;
+      }
+
+      .btn-text-short {
+        display: inline;
+      }
+    }
+
+    @media (min-width: 861px) {
+      .btn-text-short {
+        display: none;
+      }
+      .btn-text-full {
+        display: inline;
+      }
+      .page-label-short {
+        display: none;
+      }
+      .page-label-full {
+        display: inline;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page-label-full {
+        display: none;
+      }
+      .page-label-short {
+        display: inline;
+      }
+
+      .roles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .quotes-grid-3, .mortgage-stages-grid, .industries-grid-6, .questions-grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .agenda-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .masthead-title {
+        font-size: clamp(24px, 5.5vw, 30px);
+      }
+
+      .issue-top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
+      .page-footer-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        text-align: center;
+      }
+
+      .section-banner {
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+
+      .h-bar-row-flex {
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+
+      .h-bar-label {
+        width: auto;
+        min-width: 72px;
+      }
+
+      .deals-bar-row {
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+
+      .deals-bar-name {
+        width: auto;
+        min-width: 85px;
+      }
+
+      .issues-nav-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .issues-nav-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .issues-nav-pill {
+        width: 100%;
+        justify-content: center;
+        min-height: 34px;
+      }
+    }
+
+    @media (max-width: 440px) {
+      .reader-toolbar {
+        padding: 6px 8px;
+        gap: 6px;
+      }
+
+      .toolbar-btn {
+        padding: 4px 7px;
+        font-size: 11px;
+        gap: 4px;
+      }
+
+      .issue-btn {
+        padding: 2.5px 6px;
+        font-size: 10px;
+      }
+
+      .page-jump-link {
+        padding: 3px 7px;
+        font-size: 11px;
+      }
+
+      .publication-container {
+        margin: 12px auto;
+        padding: 0 8px;
+        gap: 16px;
+      }
+
+      .page-sheet {
+        padding: 16px 12px 16px;
+        border-radius: 3px;
+      }
+
+      .roles-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .numbers-grid-3, .numbers-grid-4 {
+        grid-template-columns: 1fr;
+      }
+
       .timeline-item {
         grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .timeline-light-item {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .regional-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .cartoon-header-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
+      .stat-val {
+        font-size: 22px;
+      }
+
+      .stat-box-large .stat-val {
+        font-size: 20px;
       }
     }
   </style>
@@ -1688,11 +2022,12 @@
   <!-- TOP TOOLBAR: Quick Reader Controls -->
   <header class="reader-toolbar" role="banner">
     <div class="toolbar-left">
-      <a href="aiml-tech-services.html" class="toolbar-btn">
+      <a href="aiml-tech-services.html" class="toolbar-btn" title="Back to AIML Tech Services">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-        Back to Website
+        <span class="btn-text-full">Back to Website</span>
+        <span class="btn-text-short">Back</span>
       </a>
-      <span style="font-weight: 700; color: #94a3b8; font-size: 13px;">The AI Leadership Brief</span>
+      <span class="toolbar-title">The AI Leadership Brief</span>
       <div class="issue-switcher">
         <span class="issue-btn active">Issue 03 (Current)</span>
         <a href="ai-newsletter-issue-02.html" class="issue-btn">Issue 02</a>
@@ -1700,24 +2035,41 @@
     </div>
 
     <div class="toolbar-center">
-      <div class="page-jump-links">
-        <span style="font-size: 11px; color: #94a3b8; margin-right: 4px;">Jump to:</span>
-        <a href="#page-1" class="page-jump-link">Page 1</a>
-        <a href="#page-2" class="page-jump-link">Page 2</a>
-        <a href="#page-3" class="page-jump-link">Page 3</a>
-        <a href="#page-4" class="page-jump-link">Page 4</a>
-        <a href="#page-5" class="page-jump-link">Page 5</a>
+      <div class="page-jump-links" role="navigation" aria-label="Page navigation">
+        <span class="jump-label">Jump to:</span>
+        <a href="#page-1" class="page-jump-link">
+          <span class="page-label-full">Page 1</span>
+          <span class="page-label-short">P1</span>
+        </a>
+        <a href="#page-2" class="page-jump-link">
+          <span class="page-label-full">Page 2</span>
+          <span class="page-label-short">P2</span>
+        </a>
+        <a href="#page-3" class="page-jump-link">
+          <span class="page-label-full">Page 3</span>
+          <span class="page-label-short">P3</span>
+        </a>
+        <a href="#page-4" class="page-jump-link">
+          <span class="page-label-full">Page 4</span>
+          <span class="page-label-short">P4</span>
+        </a>
+        <a href="#page-5" class="page-jump-link">
+          <span class="page-label-full">Page 5</span>
+          <span class="page-label-short">P5</span>
+        </a>
       </div>
     </div>
 
     <div class="toolbar-right">
       <a href="assets/the-ai-leadership-brief-issue-03.pdf" download class="toolbar-btn" title="Download Original PDF">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download PDF
+        <span class="btn-text-full">Download PDF</span>
+        <span class="btn-text-short">PDF</span>
       </a>
       <button onclick="window.print()" class="toolbar-btn primary" title="Print document or save as PDF">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-        Print / Save PDF
+        <span class="btn-text-full">Print / Save PDF</span>
+        <span class="btn-text-short">Print</span>
       </button>
     </div>
   </header>
@@ -3050,6 +3402,113 @@
     </article>
 
   </main>
+
+  <!-- GOOGLE ANALYTICS INTERACTION & READING TRACKING -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof gtag !== 'function') return;
+
+      // 1. Track PDF Downloads
+      document.querySelectorAll('a[download], a[href$=".pdf"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          var fileName = this.getAttribute('download') || this.getAttribute('href');
+          gtag('event', 'file_download', {
+            event_category: 'Downloads',
+            event_label: fileName,
+            file_name: fileName,
+            file_extension: 'pdf',
+            link_url: this.href
+          });
+        });
+      });
+
+      // 2. Track Print / Save as PDF clicks
+      document.querySelectorAll('button[onclick*="print"]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          gtag('event', 'print_document', {
+            event_category: 'Document Actions',
+            event_label: document.title,
+            page_title: document.title
+          });
+        });
+      });
+
+      // 3. Track Page Jump Navigation
+      document.querySelectorAll('.page-jump-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          var targetPage = this.getAttribute('href');
+          gtag('event', 'page_jump', {
+            event_category: 'Reader Navigation',
+            event_label: targetPage,
+            target_page: targetPage
+          });
+        });
+      });
+
+      // 4. Track Issue Switcher Navigation
+      document.querySelectorAll('.issue-btn, .issues-nav-pill').forEach(function (link) {
+        if (link.tagName === 'A') {
+          link.addEventListener('click', function () {
+            var targetIssue = this.textContent.trim();
+            gtag('event', 'switch_issue', {
+              event_category: 'Newsletter Navigation',
+              event_label: targetIssue,
+              destination: this.href
+            });
+          });
+        }
+      });
+
+      // 5. Track Back to Website Clicks
+      document.querySelectorAll('a.toolbar-btn[href*="aiml"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          gtag('event', 'navigate_back', {
+            event_category: 'Reader Navigation',
+            event_label: 'Back to Website',
+            link_url: this.href
+          });
+        });
+      });
+
+      // 6. Track Outbound Citations & External Source Links
+      document.querySelectorAll('a.src-link, a.pdf-link, .agenda-hint a, .brief-link').forEach(function (link) {
+        if (link.hostname && link.hostname !== window.location.hostname) {
+          link.addEventListener('click', function () {
+            gtag('event', 'outbound_citation_click', {
+              event_category: 'Outbound Citations',
+              event_label: this.href,
+              destination_url: this.href
+            });
+          });
+        }
+      });
+
+      // 7. Reading Depth Tracking (IntersectionObserver for individual page sheets)
+      if ('IntersectionObserver' in window) {
+        var readPages = new Set();
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
+              var pageId = entry.target.id;
+              if (pageId && !readPages.has(pageId)) {
+                readPages.add(pageId);
+                gtag('event', 'page_sheet_view', {
+                  event_category: 'Reader Engagement',
+                  event_label: pageId,
+                  sheet_id: pageId,
+                  document_title: document.title
+                });
+              }
+            }
+          });
+        }, { threshold: 0.35 });
+
+        document.querySelectorAll('.page-sheet').forEach(function (sheet) {
+          observer.observe(sheet);
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>
