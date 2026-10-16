@@ -2813,7 +2813,7 @@ function render() {
   if (r.name === "home" && ["how", "controls", "try", "contact", "agents"].includes(S.ui.anchor)) { document.getElementById(S.ui.anchor)?.scrollIntoView(); S.ui.anchor = null; }
 }
 function ppBar() {
-  return `<div class="ppbar"><div class="in"><a class="ppbrand" href="#home" aria-label="${PP.name}, demo home"><span class="ppmark" aria-hidden="true">PP</span><b>${PP.name}</b></a><span class="sep"></span><span class="tag">${typeof AGX !== "undefined" ? "Invoice-to-Pay demo with AI agents" : "Invoice-to-Pay demo"}</span>
+  return `<div class="ppbar"><div class="in"><a class="ppbrand" href="../index.html" aria-label="${PP.name}, main website"><span class="ppmark" aria-hidden="true">PP</span><b>${PP.name}</b></a><span class="sep"></span><span class="tag">${typeof AGX !== "undefined" ? "Invoice-to-Pay demo with AI agents" : "Invoice-to-Pay demo"}</span>
     <div class="links"><a href="#home" class="hide-xs">Demo home</a><button data-act="contact">Talk to us</button></div></div></div>`;
 }
 function bindDrops() {
