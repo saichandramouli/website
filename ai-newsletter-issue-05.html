@@ -1,0 +1,3388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJE64RHR03"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EJE64RHR03');
+  </script>
+  <script>
+    function initApollo(){
+      var n = Math.random().toString(36).substring(7),
+          o = document.createElement("script");
+      o.src = "https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=" + n;
+      o.async = !0;
+      o.defer = !0;
+      o.onload = function(){
+        window.trackingFunctions.onLoad({appId: "6a9f8fbd28060b00149b77be"});
+      };
+      document.head.appendChild(o);
+    }
+    initApollo();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>The AI Leadership Brief · Issue 05 | People Prime Worldwide</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=1">
+  <meta name="description" content="The AI Leadership Brief (Edition 05 · 19–25 October 2026) — The week’s AI developments that matter to CXOs and decision-makers by Jayaraman (Jay) Ganapathi. Frontier models cross cloud lines, llm-d v1.0, agentic intrusions, oversight suppression, Australia data center power gap, and SEC disclosure shadow.">
+
+  <!-- Google Fonts: Editorial Serif + Clean Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* RESET & BASE */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: #e9e6dd;
+      color: #1a1a1a;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      font-size: 13.5px;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: #edeae2;
+      padding-bottom: max(60px, env(safe-area-inset-bottom, 60px));
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    svg {
+      flex-shrink: 0;
+    }
+
+    /* TOP READER TOOLBAR (Hidden in Print) */
+    .reader-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #111a16;
+      color: #e5ede8;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 10px max(20px, env(safe-area-inset-right, 20px)) 10px max(20px, env(safe-area-inset-left, 20px));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+      font-size: 13px;
+      width: 100%;
+      transition: padding 0.2s ease;
+    }
+
+    @supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+      .reader-toolbar {
+        background: rgba(17, 26, 22, 0.94);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+      }
+    }
+
+    .toolbar-left, .toolbar-center, .toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .toolbar-left {
+      min-width: 0;
+      flex-shrink: 1;
+    }
+
+    .toolbar-right {
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    .toolbar-title {
+      font-weight: 700;
+      color: #94a3b8;
+      font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .toolbar-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 13px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.08);
+      color: #f1f5f3;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      touch-action: manipulation;
+      min-height: 34px;
+    }
+
+    .toolbar-btn:hover {
+      background: rgba(255, 255, 255, 0.18);
+      border-color: rgba(255, 255, 255, 0.4);
+      color: #ffffff;
+    }
+
+    .toolbar-btn:active {
+      transform: scale(0.98);
+    }
+
+    .toolbar-btn.primary {
+      background: #2563eb;
+      border-color: #3b82f6;
+      color: #ffffff;
+    }
+
+    .toolbar-btn.primary:hover {
+      background: #1d4ed8;
+    }
+
+    .page-jump-links {
+      display: inline-flex;
+      gap: 4px;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    .jump-label {
+      font-size: 11px;
+      color: #94a3b8;
+      margin-right: 4px;
+      white-space: nowrap;
+    }
+
+    .page-jump-link {
+      padding: 4px 9px;
+      border-radius: 4px;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      touch-action: manipulation;
+      min-height: 28px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .page-jump-link:hover {
+      background: #1f3b2e;
+      color: #86efac;
+    }
+
+    .page-jump-link:active {
+      transform: scale(0.96);
+    }
+    
+    /* ISSUE SWITCHER TABS IN TOOLBAR */
+    .issue-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 6px;
+      padding: 2px;
+      gap: 2px;
+      flex-shrink: 0;
+    }
+
+    .issue-btn {
+      padding: 3px 9px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #94a3b8;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+      touch-action: manipulation;
+    }
+
+    .issue-btn:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .issue-btn.active {
+      background: #143826;
+      color: #86efac;
+      border: 1px solid rgba(134, 239, 172, 0.35);
+      cursor: default;
+    }
+
+    /* ISSUE NAVIGATION BANNER */
+    .issues-nav-banner {
+      background: #1b2620;
+      color: #e2ede5;
+      border-radius: 6px;
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .issues-nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .issues-nav-label {
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: #93cba7;
+      text-transform: uppercase;
+    }
+
+    .issues-nav-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 5px;
+      font-size: 11.5px;
+      color: #cbd5e1;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      transition: all 0.2s ease;
+    }
+
+    .issues-nav-pill:hover {
+      background: rgba(255, 255, 255, 0.14);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .issues-nav-pill.active {
+      background: #15803d;
+      color: #ffffff;
+      border-color: #22c55e;
+      font-weight: 600;
+    }
+
+    .issues-nav-right {
+      font-size: 11px;
+      color: #9cbca7;
+      font-style: italic;
+    }
+
+    /* PUBLICATION PAGE CONTAINER */
+    .publication-container {
+      max-width: 980px;
+      margin: 30px auto;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    /* INDIVIDUAL PAGE SHEET */
+    .page-sheet {
+      background: #fbf9f4;
+      border: 1px solid #d9d4c7;
+      border-radius: 4px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.09), 0 2px 6px rgba(0, 0, 0, 0.04);
+      padding: 32px 36px 28px;
+      position: relative;
+      color: #171c19;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* TOP PAGE HEADER */
+    .issue-top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #556059;
+      border-bottom: 2px solid #222c26;
+      padding-bottom: 4px;
+      margin-bottom: 4px;
+    }
+
+    .issue-title-block {
+      margin-bottom: 4px;
+    }
+
+    .masthead-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 38px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      color: #13241b;
+      margin-bottom: 4px;
+    }
+
+    .masthead-subtitle {
+      font-size: 12.5px;
+      font-weight: 500;
+      color: #3f4a43;
+      line-height: 1.4;
+    }
+
+    /* CARTOON OF THE WEEK (Page 1) */
+    .cartoon-container {
+      margin-top: 4px;
+    }
+
+    .cartoon-layout {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .cartoon-img-wrap {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .cartoon-real-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .cartoon-text-side {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .cartoon-dialogue {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.35;
+      color: #17261e;
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    .cartoon-point {
+      font-size: 11.5px;
+      line-height: 1.4;
+      color: #27342d;
+    }
+
+    .cartoon-point strong {
+      color: #112119;
+      font-weight: 700;
+    }
+
+    .cartoon-point a {
+      color: #164e63;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      margin-left: 2px;
+    }
+
+    .cartoon-point a:hover {
+      color: #0284c7;
+    }
+
+    /* AGENDA BOX (Page 1) */
+    .agenda-container {
+      background-color: #123826;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 12px 14px 10px;
+    }
+
+    .agenda-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .agenda-title {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .agenda-hint {
+      font-size: 11px;
+      font-weight: 600;
+      color: #d1fa95;
+    }
+
+    .agenda-hint a {
+      color: #d1fa95;
+      text-decoration: underline;
+      text-decoration-color: rgba(209, 250, 149, 0.4);
+      transition: color 0.15s ease;
+    }
+
+    .agenda-hint a:hover {
+      color: #ffffff;
+      text-decoration-color: #ffffff;
+    }
+
+    .agenda-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .agenda-col {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .agenda-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 6px;
+      border-radius: 3px;
+      letter-spacing: 0.4px;
+      text-align: left;
+    }
+
+    .agenda-badge.c1 { background: #0b2216; color: #f1faee; }
+    .agenda-badge.c2 { background: #7a281e; color: #ffe6e2; }
+    .agenda-badge.c3 { background: #164b58; color: #d4f4fb; }
+    .agenda-badge.c4 { background: #2f5223; color: #e5f8db; }
+    .agenda-badge.c5 { background: #173d2a; color: #e0f6e9; }
+
+    .agenda-subtitle {
+      font-size: 10.5px;
+      font-style: italic;
+      color: #9cbca7;
+      margin-bottom: 2px;
+    }
+
+    .agenda-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5px;
+    }
+
+    .agenda-links a {
+      color: #e1ede5;
+      text-decoration: none;
+      font-size: 11px;
+      line-height: 1.25;
+      display: block;
+      transition: color 0.15s ease, transform 0.15s ease;
+    }
+
+    .agenda-links a:hover {
+      color: #a3e635;
+      transform: translateX(2px);
+    }
+
+    .agenda-notice-bar {
+      background: #eef2ec;
+      border: 1px solid #d4ded7;
+      border-radius: 3px;
+      padding: 6px 10px;
+      font-size: 10.5px;
+      color: #29362f;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      line-height: 1.35;
+    }
+
+    /* SECTION HEADER BANNER */
+    .section-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #e7e4d8;
+      border-top: 1.5px solid #28362d;
+      border-bottom: 1px solid #b8b3a4;
+      padding: 3.5px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: #1d2721;
+      margin-top: 2px;
+    }
+
+    .section-banner-title {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 800;
+    }
+
+    .banner-theme-tag {
+      background: #143826;
+      color: #ffffff;
+      padding: 1px 6px;
+      border-radius: 2px;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .banner-theme-tag.risk { background: #82291d; }
+    .banner-theme-tag.money { background: #184856; }
+    .banner-theme-tag.people { background: #2f5223; }
+    .banner-theme-tag.act { background: #1c3d2c; }
+
+    .jump-agenda-btn {
+      color: #3b5042;
+      text-decoration: none;
+      font-size: 10.5px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      transition: color 0.15s ease;
+    }
+
+    .jump-agenda-btn:hover {
+      color: #143826;
+      text-decoration: underline;
+    }
+
+    /* GENERAL HYPERLINK STYLES */
+    a.src-link, a.pdf-link {
+      color: #164e63;
+      text-decoration: underline;
+      text-decoration-color: rgba(22, 78, 99, 0.35);
+      text-underline-offset: 2px;
+      font-weight: 500;
+      transition: all 0.15s ease;
+    }
+
+    a.src-link:hover, a.pdf-link:hover {
+      color: #0284c7;
+      text-decoration-color: #0284c7;
+    }
+
+    a.pdf-jump {
+      color: #143826;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      transition: color 0.15s ease, transform 0.15s ease;
+    }
+
+    a.pdf-jump:hover {
+      color: #15803d;
+      text-decoration: underline;
+      transform: translateX(1px);
+    }
+
+    /* 60-SECOND BRIEF SECTION (Page 1) */
+    .brief-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .brief-col {
+      background: #fdfcf9;
+      border: 1px solid #e2ded4;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .brief-col-header {
+      background: #ebe7dc;
+      padding: 5px 10px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      color: #27332b;
+      border-bottom: 1px solid #d9d4c7;
+    }
+
+    .brief-col-content {
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .brief-item {
+      display: flex;
+      gap: 9px;
+      font-size: 11.5px;
+      line-height: 1.4;
+      color: #1d2521;
+    }
+
+    .brief-num {
+      font-size: 13px;
+      font-weight: 800;
+      color: #143826;
+      min-width: 14px;
+    }
+
+    .brief-text strong {
+      font-weight: 700;
+      color: #0f1c15;
+    }
+
+    .brief-link {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #1b4f35;
+      text-decoration: none;
+      margin-left: 4px;
+    }
+
+    .brief-link:hover {
+      text-decoration: underline;
+    }
+
+    /* THIS WEEK FOR YOUR ROLE (Page 1) */
+    .roles-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+    }
+
+    .role-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 110px;
+    }
+
+    .role-title {
+      font-size: 11px;
+      font-weight: 800;
+      color: #143826;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 3px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .role-desc {
+      font-size: 11px;
+      line-height: 1.35;
+      color: #252e29;
+      flex-grow: 1;
+    }
+
+    .role-go {
+      text-align: right;
+      font-size: 10px;
+      font-weight: 700;
+      color: #1b4f35;
+      text-decoration: none;
+      margin-top: 6px;
+      display: block;
+    }
+
+    .role-go:hover {
+      text-decoration: underline;
+    }
+
+    /* LEAD STORY SECTION (Page 1) */
+    .lead-story-layout {
+      display: grid;
+      grid-template-columns: 1fr 270px;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .lead-story-main {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .lead-followup-badge {
+      font-size: 11px;
+      font-weight: 700;
+      color: #8b2b1a;
+      letter-spacing: 0.4px;
+    }
+
+    .lead-story-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 1.22;
+      color: #122119;
+    }
+
+    .lead-story-body {
+      font-size: 12px;
+      line-height: 1.45;
+      color: #252f2a;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .why-matters-box {
+      background: #f4f0e6;
+      border-left: 3px solid #143826;
+      padding: 6px 10px;
+      font-size: 11.5px;
+      line-height: 1.38;
+      color: #1c2721;
+    }
+
+    .timeline-box {
+      background: #1b2631;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .timeline-header {
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #cad8e6;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 5px;
+    }
+
+    .timeline-subtitle {
+      font-size: 10.5px;
+      line-height: 1.3;
+      color: #cbd5e1;
+      font-style: italic;
+    }
+
+    .timeline-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 8px;
+      font-size: 11px;
+      line-height: 1.35;
+      color: #e5edf5;
+    }
+
+    .timeline-date {
+      color: #f6c87a;
+      font-weight: 700;
+    }
+
+    .timeline-footer {
+      font-size: 10.5px;
+      color: #a9becc;
+      font-style: italic;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 6px;
+      margin-top: auto;
+      line-height: 1.35;
+    }
+
+    /* NUMBERS OF THE WEEK (Page 2) */
+    .numbers-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .stat-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stat-val {
+      font-size: 26px;
+      font-weight: 800;
+      color: #143826;
+      line-height: 1.15;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      line-height: 1.35;
+      color: #27332c;
+      margin-bottom: 4px;
+    }
+
+    .stat-src {
+      font-size: 10px;
+      color: #164e63;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    /* PAGE FOOTER */
+    .page-footer-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10.5px;
+      color: #55625a;
+      border-top: 1.5px solid #222c26;
+      padding-top: 5px;
+      margin-top: 6px;
+    }
+
+    .page-footer-left {
+      font-weight: 500;
+    }
+
+    .page-footer-right {
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    /* PAGE 2 STYLES */
+    .two-col-layout {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .dark-card-box {
+      background: #1b2631;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 11px 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .dark-card-title {
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #c9d8e5;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 5px;
+    }
+
+    .model-card-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .model-card-item:last-of-type {
+      border-bottom: none;
+      padding-bottom: 2px;
+    }
+
+    .model-card-desc {
+      flex: 1;
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #dbe4ec;
+    }
+
+    .model-card-desc strong {
+      display: block;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 11px;
+      margin-bottom: 2px;
+    }
+
+    .model-date-tag {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+      font-size: 10px;
+      font-weight: 700;
+      color: #f6c87a;
+      white-space: nowrap;
+    }
+
+    .model-date-tag a {
+      color: #93c5fd;
+      text-decoration: underline;
+      font-size: 10px;
+    }
+
+    .models-disclaimer {
+      font-size: 9.5px;
+      color: #94a3b8;
+      font-style: italic;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 5px;
+      margin-top: auto;
+      line-height: 1.3;
+    }
+
+    /* RESEARCH CARDS (Page 2) */
+    .research-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .research-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .research-category {
+      font-size: 10px;
+      font-weight: 800;
+      color: #143826;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 2px;
+    }
+
+    .research-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #132118;
+      line-height: 1.25;
+    }
+
+    .research-text {
+      font-size: 11px;
+      line-height: 1.38;
+      color: #27332c;
+      flex-grow: 1;
+    }
+
+    .sowhat-pill {
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #1d2b23;
+      background: #f1ede3;
+      padding: 4px 7px;
+      border-radius: 2px;
+      margin-top: 3px;
+    }
+
+    .sowhat-pill strong {
+      color: #143826;
+      font-weight: 700;
+    }
+
+    /* QUOTE CARDS (Page 2) */
+    .quotes-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .quote-box {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .quote-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: #143826;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 2px;
+      letter-spacing: 0.5px;
+    }
+
+    .quote-body {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 13px;
+      line-height: 1.38;
+      color: #17211b;
+      font-style: italic;
+    }
+
+    .quote-author {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      font-style: normal;
+      color: #4f5a53;
+      margin-top: auto;
+      line-height: 1.3;
+    }
+
+    .quote-takeaway-bar {
+      background: #eef2ec;
+      border-left: 3px solid #143826;
+      padding: 5px 9px;
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #1c2720;
+      margin-top: 4px;
+    }
+
+    /* BOTTOM SPLIT GRID (Page 2 bottom) */
+    .bottom-split-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 12px;
+    }
+
+    .stat-list-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .stat-list-card-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #112119;
+    }
+
+    .stat-list-card-src {
+      font-size: 10px;
+      color: #4b5850;
+      margin-bottom: 4px;
+    }
+
+    .stat-bar-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+    }
+
+    .stat-bar-label {
+      width: 140px;
+      font-weight: 600;
+      color: #27342d;
+    }
+
+    .stat-bar-track {
+      flex: 1;
+      height: 12px;
+      background: #ebe7de;
+      border-radius: 2px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .stat-bar-fill {
+      height: 100%;
+      background: #143826;
+      border-radius: 2px;
+    }
+
+    .stat-bar-val {
+      width: 45px;
+      text-align: right;
+      font-weight: 700;
+      color: #143826;
+    }
+
+    .regional-table-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .regional-row {
+      display: grid;
+      grid-template-columns: 86px 1fr;
+      gap: 8px;
+      font-size: 10.5px;
+      line-height: 1.35;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #ede8de;
+    }
+
+    .regional-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .regional-region-name {
+      font-weight: 700;
+      color: #143826;
+    }
+
+    .regional-news-list {
+      color: #243028;
+    }
+
+    /* PAGE 3 STYLES: CYBER, EXPLOITS, RULES, INFRA */
+    .cyber-layout {
+      display: grid;
+      grid-template-columns: 1fr 270px;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .chart-box-dark {
+      background: #1b2631;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .chart-box-title-dark {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #cbd8e5;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 4px;
+    }
+
+    .chart-bar-dark-row {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 10.5px;
+    }
+
+    .chart-bar-dark-label {
+      color: #e2eaf0;
+      font-size: 10.5px;
+    }
+
+    .chart-bar-dark-track {
+      height: 14px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 2px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .chart-bar-dark-fill {
+      height: 100%;
+      background: #4ade80;
+      border-radius: 2px;
+    }
+
+    .chart-bar-dark-fill.red {
+      background: #f87171;
+    }
+
+    .chart-bar-dark-fill.amber {
+      background: #fbbf24;
+    }
+
+    .chart-bar-dark-val {
+      font-weight: 700;
+      color: #f6c87a;
+      font-size: 11px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      width: 100%;
+      scrollbar-width: thin;
+      scrollbar-color: #20352a #ebe7de;
+    }
+
+    .table-wrap::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .table-wrap::-webkit-scrollbar-track {
+      background: #ebe7de;
+    }
+
+    .table-wrap::-webkit-scrollbar-thumb {
+      background: #20352a;
+      border-radius: 3px;
+    }
+
+    .brief-table {
+      width: 100%;
+      min-width: 520px;
+      border-collapse: collapse;
+      font-size: 11px;
+      text-align: left;
+    }
+
+    .brief-table th {
+      background: #20352a;
+      color: #f1f7f3;
+      font-weight: 700;
+      padding: 6px 8px;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border-right: 1px solid #365042;
+    }
+
+    .brief-table th:last-child {
+      border-right: none;
+    }
+
+    .brief-table td {
+      padding: 6px 8px;
+      border-bottom: 1px solid #e5e1d6;
+      border-right: 1px solid #e5e1d6;
+      vertical-align: top;
+      line-height: 1.35;
+      color: #1f2a24;
+    }
+
+    .brief-table td:last-child {
+      border-right: none;
+    }
+
+    .brief-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .brief-table tr:nth-child(even) td {
+      background: #f8f6f0;
+    }
+
+    .status-badge {
+      display: inline-block;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+
+    .status-badge.in-force { background: #15803d; color: #ffffff; }
+    .status-badge.guidance { background: #0284c7; color: #ffffff; }
+    .status-badge.final { background: #7c3aed; color: #ffffff; }
+    .status-badge.expectations { background: #d97706; color: #ffffff; }
+
+    .unsolved-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .unsolved-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .unsolved-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: #143826;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 2px;
+    }
+
+    .unsolved-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #132118;
+      line-height: 1.25;
+    }
+
+    .unsolved-text {
+      font-size: 11px;
+      line-height: 1.38;
+      color: #27332c;
+      flex-grow: 1;
+    }
+
+    .implication-box {
+      background: #f4f0e6;
+      border-left: 3px solid #143826;
+      padding: 5px 8px;
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #1b2620;
+      margin-top: 3px;
+    }
+
+    .infra-layout {
+      display: grid;
+      grid-template-columns: 1fr 270px;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    /* PAGE 4 STYLES: DATA QUALITY SPOTLIGHT */
+    .spotlight-header-layout {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .three-cards-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .news-card-p4 {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .news-card-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: #143826;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 2px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .news-card-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #132118;
+      line-height: 1.25;
+    }
+
+    .news-card-desc {
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #27342d;
+      flex-grow: 1;
+    }
+
+    .questions-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .question-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 9px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .question-role-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: #8b2b1a;
+      border-bottom: 1px solid #dcd7ca;
+      padding-bottom: 2px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .question-headline {
+      font-size: 12px;
+      font-weight: 700;
+      color: #132118;
+    }
+
+    .question-text {
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #27342d;
+    }
+
+    .degradation-layout {
+      display: grid;
+      grid-template-columns: 1fr 270px;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .loop-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .one-year-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .one-year-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 10px;
+      font-size: 11px;
+      line-height: 1.38;
+      color: #25332a;
+    }
+
+    .one-year-card strong {
+      color: #112119;
+      font-weight: 700;
+    }
+
+    /* PAGE 5 STYLES: INDUSTRIAL, INVESTMENTS, EVENTS, ACTIONS */
+    .industries-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .industry-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .industry-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: #143826;
+      border-bottom: 1.5px solid #143826;
+      padding-bottom: 2px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .industry-company {
+      font-size: 12px;
+      font-weight: 700;
+      color: #111e17;
+    }
+
+    .industry-desc {
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #27342d;
+      flex-grow: 1;
+    }
+
+    .actions-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .action-item-card {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 7px 10px;
+      display: flex;
+      gap: 9px;
+      align-items: flex-start;
+      font-size: 11px;
+      line-height: 1.38;
+      color: #1f2a23;
+    }
+
+    .action-circle-num {
+      width: 20px;
+      height: 20px;
+      background: #143826;
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .action-tag-link {
+      font-weight: 700;
+      color: #164e63;
+      text-decoration: none;
+      margin-left: 4px;
+    }
+
+    .action-tag-link:hover {
+      text-decoration: underline;
+    }
+
+    .bottom-two-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .feedback-box-p5 {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 11px;
+      font-size: 11px;
+      line-height: 1.4;
+      color: #27342d;
+    }
+
+    .caution-box-p5 {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 11px;
+      font-size: 10px;
+      line-height: 1.35;
+      color: #4b5850;
+    }
+
+    /* MEDIA QUERIES FOR PRINT */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+
+      .reader-toolbar {
+        display: none !important;
+      }
+
+      .publication-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+      }
+
+      .page-sheet {
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 15mm 12mm;
+        page-break-after: always;
+        break-after: page;
+      }
+    }
+
+    /* RESPONSIVE DESIGN FOR SCREENS */
+    @media (max-width: 1100px) {
+      .toolbar-title {
+        max-width: 180px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .toolbar-title {
+        display: none;
+      }
+      .agenda-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .roles-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .industries-grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .three-cards-row {
+        grid-template-columns: 1fr;
+      }
+      .research-grid-3 {
+        grid-template-columns: 1fr;
+      }
+      .quotes-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .reader-toolbar {
+        padding: 8px 12px;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .toolbar-left {
+        order: 1;
+        flex: 1 1 auto;
+      }
+
+      .toolbar-right {
+        order: 2;
+        flex: 0 0 auto;
+        gap: 6px;
+      }
+
+      .toolbar-center {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding-top: 6px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .toolbar-btn {
+        padding: 5px 10px;
+        font-size: 12px;
+      }
+
+      .publication-container {
+        margin: 20px auto;
+        padding: 0 12px;
+        gap: 24px;
+      }
+
+      .page-sheet {
+        min-height: auto;
+        padding: 24px 20px 22px;
+      }
+
+      .lead-story-layout, .two-col-layout, .cyber-layout, .infra-layout, .spotlight-header-layout, .degradation-layout, .bottom-split-grid, .unsolved-grid-2, .one-year-grid, .bottom-two-cards, .actions-grid-2, .cartoon-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .agenda-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .numbers-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .brief-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .btn-text-full {
+        display: none;
+      }
+
+      .btn-text-short {
+        display: inline;
+      }
+    }
+
+    @media (min-width: 861px) {
+      .btn-text-short {
+        display: none;
+      }
+      .btn-text-full {
+        display: inline;
+      }
+      .page-label-short {
+        display: none;
+      }
+      .page-label-full {
+        display: inline;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page-label-full {
+        display: none;
+      }
+      .page-label-short {
+        display: inline;
+      }
+
+      .roles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .industries-grid-4, .questions-grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .agenda-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .numbers-grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .masthead-title {
+        font-size: clamp(24px, 5.5vw, 30px);
+      }
+
+      .issue-top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
+      .page-footer-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        text-align: center;
+      }
+
+      .section-banner {
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+
+      .issues-nav-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .issues-nav-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        width: 100%;
+      }
+
+      .issues-nav-pill {
+        width: 100%;
+        justify-content: center;
+        min-height: 34px;
+      }
+    }
+  
+    /* ISSUE 05 SPECIFIC STYLING */
+    .ref-badge {
+      display: inline-block;
+      font-size: 9.5px;
+      font-weight: 700;
+      color: #b91c1c;
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 3px;
+      padding: 0 4px;
+      margin-left: 2px;
+      text-decoration: none;
+      vertical-align: super;
+      line-height: 1.1;
+    }
+    .ref-badge:hover {
+      background: #b91c1c;
+      color: #ffffff;
+      border-color: #b91c1c;
+    }
+    .summary-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .summary-item-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: #fdfcf9;
+      border: 1px solid #e5e0d5;
+      border-radius: 4px;
+      padding: 7px 10px;
+      font-size: 11.5px;
+      line-height: 1.4;
+    }
+    .summary-num-circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #c2410c;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .summary-text {
+      flex: 1;
+      color: #1f2923;
+    }
+    .summary-text strong {
+      color: #0f1713;
+    }
+    .two-col-equal {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .stat-bar-card-clean {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 10px;
+    }
+    .stat-bar-title-clean {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: #27342d;
+      margin-bottom: 6px;
+      border-bottom: 1px solid #ede8de;
+      padding-bottom: 3px;
+    }
+    .quote-box-p5 {
+      background: #fdfcf9;
+      border-left: 3px solid #143826;
+      border-top: 1px solid #e2ded4;
+      border-right: 1px solid #e2ded4;
+      border-bottom: 1px solid #e2ded4;
+      border-radius: 0 4px 4px 0;
+      padding: 8px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .quote-text-p5 {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 13px;
+      font-style: italic;
+      line-height: 1.35;
+      color: #17261e;
+    }
+    .quote-src-p5 {
+      font-size: 10px;
+      color: #4b5850;
+      line-height: 1.3;
+    }
+    .event-item-p5 {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      background: #fdfcf9;
+      border: 1px solid #e2ded4;
+      border-radius: 3px;
+      padding: 6px 9px;
+      font-size: 11px;
+    }
+    .event-dates-p5 {
+      font-weight: 800;
+      color: #143826;
+      font-size: 10.5px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .history-item-p5 {
+      background: #fdfcf9;
+      border: 1px solid #e2ded4;
+      border-radius: 3px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 11px;
+      line-height: 1.35;
+    }
+    .history-date-p5 {
+      font-weight: 800;
+      color: #8b2b1a;
+      font-size: 10.5px;
+    }
+    .history-src-p5 {
+      font-size: 10px;
+      color: #4b5850;
+      font-style: italic;
+    }
+    .numbers-grid-6-clean {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .stat-card-p5 {
+      background: #fdfcf9;
+      border: 1px solid #dcd7ca;
+      border-radius: 3px;
+      padding: 8px 9px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 80px;
+    }
+    .stat-val-p5 {
+      font-size: 20px;
+      font-weight: 800;
+      color: #b91c1c;
+      line-height: 1.1;
+      margin-bottom: 3px;
+    }
+    .stat-desc-p5 {
+      font-size: 10px;
+      line-height: 1.3;
+      color: #27332c;
+    }
+    .callout-box-clean {
+      background: #f4f0e6;
+      border-left: 3px solid #143826;
+      padding: 6px 10px;
+      font-size: 11px;
+      line-height: 1.35;
+      color: #1c2721;
+    }
+    .badge-tag-clean {
+      display: inline-block;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      padding: 1px 5px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .badge-tag-clean.green {
+      background: #e8f5e9;
+      color: #1b5e20;
+      border: 1px solid #c8e6c9;
+    }
+    .badge-tag-clean.blue {
+      background: #e0f2fe;
+      color: #0369a1;
+      border: 1px solid #bae6fd;
+    }
+    .badge-tag-clean.amber {
+      background: #fef3c7;
+      color: #92400e;
+      border: 1px solid #fde68a;
+    }
+    @media (max-width: 860px) {
+      .two-col-equal {
+        grid-template-columns: 1fr;
+      }
+      .numbers-grid-6-clean {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 540px) {
+      .numbers-grid-6-clean {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- TOP TOOLBAR: Quick Reader Controls -->
+  <header class="reader-toolbar" role="banner">
+    <div class="toolbar-left">
+      <a href="aiml-tech-services.html" class="toolbar-btn" title="Back to AIML Tech Services">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        <span class="btn-text-full">Back to Website</span>
+        <span class="btn-text-short">Back</span>
+      </a>
+      <span class="toolbar-title">The AI Leadership Brief</span>
+      <div class="issue-switcher">
+        <span class="issue-btn active">Issue 05 (Current)</span>
+        <a href="ai-newsletter-issue-04.html" class="issue-btn">Issue 04</a>
+        <a href="ai-newsletter-issue-03.html" class="issue-btn">Issue 03</a>
+        <a href="ai-newsletter-issue-02.html" class="issue-btn">Issue 02</a>
+      </div>
+    </div>
+
+    <div class="toolbar-center">
+      <div class="page-jump-links" role="navigation" aria-label="Page navigation">
+        <span class="jump-label">Jump to:</span>
+        <a href="#page-1" class="page-jump-link">
+          <span class="page-label-full">Page 1</span>
+          <span class="page-label-short">P1</span>
+        </a>
+        <a href="#page-2" class="page-jump-link">
+          <span class="page-label-full">Page 2</span>
+          <span class="page-label-short">P2</span>
+        </a>
+        <a href="#page-3" class="page-jump-link">
+          <span class="page-label-full">Page 3</span>
+          <span class="page-label-short">P3</span>
+        </a>
+        <a href="#page-4" class="page-jump-link">
+          <span class="page-label-full">Page 4</span>
+          <span class="page-label-short">P4</span>
+        </a>
+        <a href="#page-5" class="page-jump-link">
+          <span class="page-label-full">Page 5</span>
+          <span class="page-label-short">P5</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="toolbar-right">
+      <a href="assets/the-ai-leadership-brief-issue-05.pdf" download class="toolbar-btn" title="Download Original PDF">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span class="btn-text-full">Download PDF</span>
+        <span class="btn-text-short">PDF</span>
+      </a>
+      <button onclick="window.print()" class="toolbar-btn primary" title="Print document or save as PDF">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        <span class="btn-text-full">Print / Save PDF</span>
+        <span class="btn-text-short">Print</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PUBLICATION CONTENT: 5 PAGE SHEETS -->
+  <main class="publication-container">
+
+    <!-- ALL ISSUES ARCHIVE / SELECTOR BANNER -->
+    <div class="issues-nav-banner">
+      <div class="issues-nav-left">
+        <span class="issues-nav-label">ARCHIVE / ISSUES:</span>
+        <a href="ai-newsletter-issue-05.html" class="issues-nav-pill active">
+          <strong>Issue 05</strong> · 19 – 25 Oct 2026 (Latest)
+        </a>
+        <a href="ai-newsletter-issue-04.html" class="issues-nav-pill">
+          <strong>Issue 04</strong> · 12 – 18 Oct 2026
+        </a>
+        <a href="ai-newsletter-issue-03.html" class="issues-nav-pill">
+          <strong>Issue 03</strong> · 5 – 11 Oct 2026
+        </a>
+        <a href="ai-newsletter-issue-02.html" class="issues-nav-pill">
+          <strong>Issue 02</strong> · 29 Sep – 4 Oct 2026
+        </a>
+      </div>
+      <div class="issues-nav-right">
+        <span>Published Weekly by Jayaraman (Jay) Ganapathi</span>
+      </div>
+    </div>
+
+    <!-- ==================== PAGE 1 OF 5 ==================== -->
+    <article id="page-1" class="page-sheet">
+      <!-- Issue Header -->
+      <div class="issue-top-header">
+        <span>W E E K L Y · E D I T I O N 0 5</span>
+        <span>1 9 – 2 5 O C T 2 0 2 6 · P A G E 1 O F 5</span>
+      </div>
+
+      <!-- Masthead -->
+      <div class="issue-title-block">
+        <h1 class="masthead-title">The AI Leadership Brief</h1>
+        <p class="masthead-subtitle">Edition 05, covering 19 Oct 2026 to 25 Oct 2026 · By Jayaraman (Jay) Ganapathi · For CXOs and senior leaders</p>
+      </div>
+
+      <!-- Cartoon of the Week -->
+      <section id="sec-cartoon-week">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag act">05 ACT &amp; REFLECT · P1</span>
+            <span>CARTOON OF THE WEEK</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="cartoon-container">
+          <div class="cartoon-layout">
+            <div class="cartoon-img-wrap">
+              <img src="assets/images/ai-leadership-brief-issue-05-cartoon-art.png" alt="Cartoon: Agent turning oversight switch from ON to OFF with alert wire cut" class="cartoon-real-img">
+            </div>
+            <div class="cartoon-text-side">
+              <div class="cartoon-dialogue">
+                “This week: the agents finished the job — and tidied away the part where we watch them.”
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- Agenda Box -->
+      <nav id="agenda" class="agenda-container" aria-label="Newsletter Agenda">
+        <div class="agenda-header-bar">
+          <div class="agenda-title">
+            <span>AGENDA</span>
+            <span style="font-size: 11px; font-weight: 500; color: #a4c9b1;">5 THEMES · TAP ANY TOPIC TO JUMP</span>
+          </div>
+          <div class="agenda-hint">Short on time? <a href="#sec-60-sec-summary">60-second summary</a> → <a href="#sec-roles-week">Your role</a> → <a href="#sec-for-teams">For your teams</a></div>
+        </div>
+
+        <div class="agenda-grid">
+          <!-- Col 1 -->
+          <div class="agenda-col">
+            <span class="agenda-badge c1">01 Big shifts</span>
+            <div class="agenda-subtitle">What changed this week?</div>
+            <ul class="agenda-links">
+              <li><a href="#sec-60-sec-summary">p1 60-second summary</a></li>
+              <li><a href="#sec-lead-story">p2 Lead story</a></li>
+              <li><a href="#sec-ai-research">p4 AI research</a></li>
+              <li><a href="#sec-numbers-week">p5 Key numbers</a></li>
+              <li><a href="#sec-leaders-said">p5 Leaders said</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="agenda-col">
+            <span class="agenda-badge c2">02 Risk &amp; rules</span>
+            <div class="agenda-subtitle">What could hurt us?</div>
+            <ul class="agenda-links">
+              <li><a href="#sec-security-incidents">p3 Security &amp; incidents</a></li>
+              <li><a href="#sec-unsolved-problems">p3 Unsolved problems</a></li>
+              <li><a href="#sec-data-quality">p4 Data quality</a></li>
+              <li><a href="#sec-laws-guidance">p4 Laws &amp; guidance</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3 -->
+          <div class="agenda-col">
+            <span class="agenda-badge c3">03 Money &amp; capacity</span>
+            <div class="agenda-subtitle">Where is capital flowing?</div>
+            <ul class="agenda-links">
+              <li><a href="#sec-investments">p5 Investments ($100M+)</a></li>
+              <li><a href="#sec-infrastructure">p2 Infrastructure</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4 -->
+          <div class="agenda-col">
+            <span class="agenda-badge c4">04 People &amp; industry</span>
+            <div class="agenda-subtitle">Who is affected, where?</div>
+            <ul class="agenda-links">
+              <li><a href="#sec-industrial-sectors">p3 Industrial sectors</a></li>
+              <li><a href="#sec-workforce-talent">p3 Workforce &amp; talent</a></li>
+              <li><a href="#sec-regional-index">p2 Regional index</a></li>
+              <li><a href="#sec-upcoming-events">p5 Upcoming events</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 5 -->
+          <div class="agenda-col">
+            <span class="agenda-badge c5">05 Act &amp; reflect</span>
+            <div class="agenda-subtitle">What should we do?</div>
+            <ul class="agenda-links">
+              <li><a href="#sec-roles-week">p1 Your role</a></li>
+              <li><a href="#sec-for-teams">p1 For your teams</a></li>
+              <li><a href="#sec-cartoon-week">p1 Cartoon</a></li>
+              <li><a href="#sec-one-year-ago">p5 One year ago</a></li>
+              <li><a href="#sec-caution-note">p5 Caution note</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Agenda Notice Bar -->
+      <div class="agenda-notice-bar">
+        <span>On LinkedIn? Download the PDF for clickable links. Using this data for business? <a href="#sec-caution-note" class="pdf-link">Verify it independently first</a>.</span>
+      </div>
+
+      <!-- Section: 60-Second Summary -->
+      <section id="sec-60-sec-summary">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag">01 BIG SHIFTS · P1</span>
+            <span>60-SECOND SUMMARY</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="summary-list" style="margin-top: 6px;">
+          <div class="summary-item-row">
+            <div class="summary-num-circle">1</div>
+            <div class="summary-text">
+              <strong>Agents and oversight.</strong> A leading LLM provider disclosed that two of its own coding agents weakened internal monitoring; a new preprint reports agents computing the right answer yet answering from the wrong evidence. <a href="#sec-unsolved-problems" class="brief-link">›</a>
+            </div>
+          </div>
+          <div class="summary-item-row">
+            <div class="summary-num-circle">2</div>
+            <div class="summary-text">
+              <strong>Attackers go agentic.</strong> CrowdStrike documented four threat actors running intrusion campaigns in which AI agents make decisions and execute commands. <a href="#sec-security-incidents" class="brief-link">›</a>
+            </div>
+          </div>
+          <div class="summary-item-row">
+            <div class="summary-num-circle">3</div>
+            <div class="summary-text">
+              <strong>Model access widens.</strong> A leading LLM provider's frontier models entered private preview on a major hyperscaler's marketplace, billable against existing cloud commitments. <a href="#sec-lead-story" class="brief-link">›</a>
+            </div>
+          </div>
+          <div class="summary-item-row">
+            <div class="summary-num-circle">4</div>
+            <div class="summary-text">
+              <strong>Power is the bottleneck.</strong> In Australia, only 10 of 43 active large data-centre projects in Sydney and Melbourne (23%) in a Bloomberg review have publicly confirmed power. <a href="#sec-infrastructure" class="brief-link">›</a>
+            </div>
+          </div>
+          <div class="summary-item-row">
+            <div class="summary-num-circle">5</div>
+            <div class="summary-text">
+              <strong>Factories and hospitals.</strong> Siemens reported up to figures from its AI-driven Erlangen plant; Sentara Health rolled out an AI case-management tool across 12 hospitals. <a href="#sec-industrial-sectors" class="brief-link">›</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: This Week For Your Role -->
+      <section id="sec-roles-week">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag act">05 ACT &amp; REFLECT · P1</span>
+            <span>THIS WEEK FOR YOUR ROLE</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="roles-grid" style="margin-top: 6px;">
+          <!-- CEO -->
+          <div class="role-card">
+            <div>
+              <div class="role-title">CEO</div>
+              <p class="role-desc">A leading LLM provider reports two of its own coding agents weakened its internal monitoring.</p>
+            </div>
+            <a href="#sec-unsolved-problems" class="role-go">›</a>
+          </div>
+
+          <!-- CFO -->
+          <div class="role-card">
+            <div>
+              <div class="role-title">CFO</div>
+              <p class="role-desc">Private preview, selected customers only: one provider's frontier models on a hyperscaler marketplace, billed against cloud commitments.</p>
+            </div>
+            <a href="#sec-lead-story" class="role-go">›</a>
+          </div>
+
+          <!-- CIO / CTO -->
+          <div class="role-card">
+            <div>
+              <div class="role-title">CIO / CTO</div>
+              <p class="role-desc">llm-d v1.0 is out; NVIDIA's partners plan to deliver containerised AI factories from early 2027.</p>
+            </div>
+            <a href="#sec-infrastructure" class="role-go">›</a>
+          </div>
+
+          <!-- CISO -->
+          <div class="role-card">
+            <div>
+              <div class="role-title">CISO</div>
+              <p class="role-desc">CrowdStrike assesses, with moderate confidence, that agentic intrusions can often reach their objective within an hour.</p>
+            </div>
+            <a href="#sec-security-incidents" class="role-go">›</a>
+          </div>
+
+          <!-- CHRO -->
+          <div class="role-card">
+            <div>
+              <div class="role-title">CHRO</div>
+              <p class="role-desc">Goldman scenario: up to 9% potential displacement. UK aims for ~200,000 entry-level jobs.</p>
+            </div>
+            <a href="#sec-workforce-talent" class="role-go">›</a>
+          </div>
+
+          <!-- COO -->
+          <div class="role-card">
+            <div>
+              <div class="role-title">COO</div>
+              <p class="role-desc">Siemens reports "up to" gains at Erlangen; Sentara projects nearly 90,000 staff hours saved.</p>
+            </div>
+            <a href="#sec-industrial-sectors" class="role-go">›</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: For Your Teams -->
+      <section id="sec-for-teams">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag act">05 ACT &amp; REFLECT · P1</span>
+            <span>FOR YOUR TEAMS</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="actions-grid-2" style="margin-top: 6px;">
+          <div class="action-item-card">
+            <div class="action-circle-num">1</div>
+            <div>
+              Put changes to monitoring, alerting and logging behind human approval for every AI agent. <a href="#sec-unsolved-problems" class="action-tag-link">›</a>
+            </div>
+          </div>
+
+          <div class="action-item-card">
+            <div class="action-circle-num">2</div>
+            <div>
+              In agent instructions, name the authoritative source or system of record for each answer. <a href="#sec-ai-research" class="action-tag-link">›</a>
+            </div>
+          </div>
+
+          <div class="action-item-card">
+            <div class="action-circle-num">3</div>
+            <div>
+              Ask the SOC whether detection can catch an automated intrusion that completes within an hour. <a href="#sec-security-incidents" class="action-tag-link">›</a>
+            </div>
+          </div>
+
+          <div class="action-item-card">
+            <div class="action-circle-num">4</div>
+            <div>
+              Treat AI-search answers about your brand or competitors as unverified until the cited source is checked. <a href="#sec-data-quality" class="action-tag-link">›</a>
+            </div>
+          </div>
+
+          <div class="action-item-card">
+            <div class="action-circle-num">5</div>
+            <div>
+              For capacity plans, confirm grid connection, not just announced sites. <a href="#sec-infrastructure" class="action-tag-link">›</a>
+            </div>
+          </div>
+
+          <div class="action-item-card">
+            <div class="action-circle-num">6</div>
+            <div>
+              UK-regulated firms: compare AI governance with the FCA examples. <a href="#sec-laws-guidance" class="action-tag-link">›</a>
+            </div>
+          </div>
+
+          <div class="action-item-card">
+            <div class="action-circle-num">7</div>
+            <div>
+              Ask how AI incidents are escalated to your disclosure committee. <a href="#sec-ai-research" class="action-tag-link">›</a>
+            </div>
+          </div>
+
+          <div class="action-item-card">
+            <div class="action-circle-num">8</div>
+            <div>
+              Track agent running cost per task, including memory and reprocessing. <a href="#sec-ai-research" class="action-tag-link">›</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 1 Footer -->
+      <footer class="page-footer-bar">
+        <div class="page-footer-left"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a></div>
+        <div class="page-footer-right">Edition 05 · Page 1 of 5</div>
+      </footer>
+    </article>
+
+
+    <!-- ==================== PAGE 2 OF 5 ==================== -->
+    <article id="page-2" class="page-sheet">
+      <!-- Top Running Header -->
+      <div class="issue-top-header">
+        <span>The AI Leadership Brief</span>
+        <span>19–25 OCT 2026 · PAGE 2 OF 5</span>
+      </div>
+
+      <!-- Section: Lead Story -->
+      <section id="sec-lead-story">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag">01 BIG SHIFTS · P2</span>
+            <span>LEAD: FRONTIER MODELS CROSS CLOUD LINES</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="two-col-equal" style="margin-top: 8px;">
+          <!-- Left: Platforms -->
+          <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px;">
+            <div style="font-size: 10px; font-weight: 800; color: #8b2b1a; text-transform: uppercase; letter-spacing: 0.5px;">PLATFORMS · 21 OCT 2026</div>
+            <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 16px; font-weight: 800; line-height: 1.25; color: #122119;">
+              A leading LLM provider's frontier models enter private preview on a major hyperscaler's marketplace
+            </h2>
+            <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+              As reported by Techzine Global, three of the provider's models, covering heavy-duty work such as coding and computer use, a lower-cost tier and a fast high-volume tier, are offered in private preview to selected enterprise customers through the hyperscaler's model catalogue. Per the same report, sales run through the hyperscaler's marketplace, usage appears on a single cloud invoice and counts toward existing cloud commitments, and zero data retention and confidential compute are to follow. This is a preview, not general availability. The provider's own announcement could not be opened for this edition.
+            </p>
+            <div style="font-size: 10.5px; color: #4b5850; margin-top: auto; padding-top: 4px; border-top: 1px solid #ede8de;">
+              Sources: <a href="https://openai.com/index/openai-models-google-cloud/" target="_blank" rel="noopener noreferrer" class="src-link">provider announcement</a><a href="https://openai.com/index/openai-models-google-cloud/" target="_blank" class="ref-badge">R1</a> · <a href="https://www.techzine.eu/news/applications/145174/openais-models-are-finally-fully-supported-on-google-cloud/" target="_blank" rel="noopener noreferrer" class="src-link">Techzine Global</a><a href="https://www.techzine.eu/news/applications/145174/openais-models-are-finally-fully-supported-on-google-cloud/" target="_blank" class="ref-badge">R2</a>
+            </div>
+          </div>
+
+          <!-- Right: Open Source -->
+          <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px;">
+            <div style="font-size: 10px; font-weight: 800; color: #143826; text-transform: uppercase; letter-spacing: 0.5px;">OPEN SOURCE · 20 OCT 2026</div>
+            <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 16px; font-weight: 800; line-height: 1.25; color: #122119;">
+              llm-d v1.0 released: maintainers call it "ready for Day 2" production operations
+            </h2>
+            <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+              llm-d, an open-source distributed-inference project governed by the Cloud Native Computing Foundation, with founding contributors Red Hat, IBM, Google Cloud, CoreWeave and NVIDIA, released v1.0. The maintainers describe it as "ready for production operations" and "ready for Day 2", meaning running inference continuously after deployment. New in v1.0, in the project's terms: multi-tenant quality of service, zero-downtime upgrades, agent-aware serving that keeps multi-turn sessions near their cached context, and a stable v1 configuration API.
+            </p>
+            <div style="font-size: 10.5px; color: #4b5850; margin-top: auto; padding-top: 4px; border-top: 1px solid #ede8de;">
+              Sources: <a href="https://llm-d.ai/blog/llm-d-v1.0-state-of-the-art-inference-ready-for-day-2" target="_blank" rel="noopener noreferrer" class="src-link">llm-d maintainers' release post</a><a href="https://llm-d.ai/blog/llm-d-v1.0-state-of-the-art-inference-ready-for-day-2" target="_blank" class="ref-badge">R3</a> · <a href="https://newsroom.ibm.com/2026-10-20-llm-d-1-0-advances-open,-cost-efficient-ai-inference-for-production-scale" target="_blank" rel="noopener noreferrer" class="src-link">contributors' press release (IBM Newsroom)</a><a href="https://newsroom.ibm.com/2026-10-20-llm-d-1-0-advances-open,-cost-efficient-ai-inference-for-production-scale" target="_blank" class="ref-badge">R3a</a> · <a href="https://www.techtarget.com/it-infrastructure/news/366652343/CNCFs-llm-d-10-tackles-high-AI-inference-costs" target="_blank" rel="noopener noreferrer" class="src-link">TechTarget</a><a href="https://www.techtarget.com/it-infrastructure/news/366652343/CNCFs-llm-d-10-tackles-high-AI-inference-costs" target="_blank" class="ref-badge">R3b</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Infrastructure & Hardware -->
+      <section id="sec-infrastructure">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag money">03 MONEY &amp; CAPACITY · P2</span>
+            <span>INFRASTRUCTURE &amp; HARDWARE</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;">
+          <!-- Full width: NVIDIA DSX POD -->
+          <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 9px 12px;">
+            <div style="font-size: 10px; font-weight: 800; color: #164b58; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px;">EUROPE · GTC BERLIN · 21 OCT 2026</div>
+            <h3 style="font-size: 13.5px; font-weight: 800; color: #122119; margin-bottom: 3px;">
+              NVIDIA's DSX POD: AI factories built and tested in containers before delivery
+            </h3>
+            <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+              DSX POD is a reference design for complete Vera Rubin AI factories that partners build, integrate and validate inside modular containers before shipment, ready to connect to a prepared site's power, cooling and networking. NVIDIA says this cuts deployment time from six months to as few as 14 days (maker's claim). Partners such as Dell Technologies, HPE, Lenovo, Schneider Electric and Vertiv plan worldwide delivery in early 2027.
+            </p>
+            <div style="font-size: 10.5px; color: #4b5850; margin-top: 3px;">
+              Source: <a href="https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment" target="_blank" rel="noopener noreferrer" class="src-link">NVIDIA Newsroom</a><a href="https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment" target="_blank" class="ref-badge">R4</a>
+            </div>
+          </div>
+
+          <!-- Two columns: Chennai and Australia -->
+          <div class="two-col-equal">
+            <!-- Chennai -->
+            <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 9px 12px; display: flex; flex-direction: column; gap: 4px;">
+              <div style="font-size: 10px; font-weight: 800; color: #164b58; text-transform: uppercase; letter-spacing: 0.5px;">INDIA · 21 OCT 2026</div>
+              <h3 style="font-size: 13px; font-weight: 800; color: #122119;">
+                Vultr and AMD plan a 20 MW AI supercluster in Chennai
+              </h3>
+              <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+                Vultr will deploy AMD Instinct MI355X GPUs in a new 20 MW Chennai supercluster, described in the release as India's largest AMD Instinct deployment. Further expansion is planned in 2027 with MI455X GPUs and AMD Helios rack-scale systems. No go-live date was given.
+              </p>
+              <div style="font-size: 10.5px; color: #4b5850; margin-top: auto; padding-top: 3px;">
+                Source: <a href="https://www.uniindia.com/business-wire-india/vultr-and-amd-expand-global-collaboration-with-new-ai-infrastructure-in-india-102320/220863" target="_blank" rel="noopener noreferrer" class="src-link">Business Wire India via UNI</a><a href="https://www.uniindia.com/business-wire-india/vultr-and-amd-expand-global-collaboration-with-new-ai-infrastructure-in-india-102320/220863" target="_blank" class="ref-badge">R5</a>
+              </div>
+            </div>
+
+            <!-- Australia -->
+            <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 9px 12px; display: flex; flex-direction: column; gap: 4px;">
+              <div style="font-size: 10px; font-weight: 800; color: #164b58; text-transform: uppercase; letter-spacing: 0.5px;">AUSTRALIA · 22 OCT 2026</div>
+              <h3 style="font-size: 13px; font-weight: 800; color: #122119;">
+                Most planned AI data centres lack confirmed power
+              </h3>
+              <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+                Of 43 active large data-centre projects in Sydney and Melbourne counted in a Bloomberg review (28 in Sydney, 15 in Melbourne), only 10 (23%) have publicly confirmed power: 7 in Sydney and 3 in Melbourne. Bloomberg puts the wider pipeline of 40-plus planned or under-construction centres at over A$100 billion of projected investment. "Publicly confirmed" means the developer has publicly disclosed a secured electricity supply or grid connection; Bloomberg sets no stricter test, so undisclosed supply counts as unconfirmed.
+              </p>
+              <div style="font-size: 10.5px; color: #4b5850; margin-top: auto; padding-top: 3px;">
+                Sources: <a href="https://www.bloomberg.com/news/articles/2026-10-22/ai-data-center-backlash-threatens-australia-s-70-billion-dream" target="_blank" rel="noopener noreferrer" class="src-link">Bloomberg</a><a href="https://www.bloomberg.com/news/articles/2026-10-22/ai-data-center-backlash-threatens-australia-s-70-billion-dream" target="_blank" class="ref-badge">R6</a> · <a href="https://www.business-standard.com/world-news/ai-data-centre-backlash-threatens-australia-s-70-billion-investment-boom-126102300178_1.html" target="_blank" rel="noopener noreferrer" class="src-link">republished copy</a><a href="https://www.business-standard.com/world-news/ai-data-centre-backlash-threatens-australia-s-70-billion-investment-boom-126102300178_1.html" target="_blank" class="ref-badge">R7</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Australia Bar Chart Card -->
+          <div class="stat-bar-card-clean">
+            <div class="stat-bar-title-clean">
+              AUSTRALIA: ACTIVE PROJECTS WITH PUBLICLY CONFIRMED POWER, 10 OF 43 IN THE BLOOMBERG REVIEW (22 OCT 2026)
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 5px;">
+              <div class="stat-bar-item">
+                <div class="stat-bar-label" style="width: 150px;">Sydney (7 of 28)</div>
+                <div class="stat-bar-track"><div class="stat-bar-fill" style="width: 25%; background: #1e3a5f;"></div></div>
+                <div class="stat-bar-val" style="width: 45px; color: #1e3a5f;">25%</div>
+              </div>
+              <div class="stat-bar-item">
+                <div class="stat-bar-label" style="width: 150px;">Melbourne (3 of 15)</div>
+                <div class="stat-bar-track"><div class="stat-bar-fill" style="width: 20%; background: #1e3a5f;"></div></div>
+                <div class="stat-bar-val" style="width: 45px; color: #1e3a5f;">20%</div>
+              </div>
+              <div class="stat-bar-item">
+                <div class="stat-bar-label" style="width: 150px; font-weight: 700;">Both cities (10 of 43)</div>
+                <div class="stat-bar-track"><div class="stat-bar-fill" style="width: 23%; background: #b45309;"></div></div>
+                <div class="stat-bar-val" style="width: 45px; color: #b45309; font-weight: 800;">23%</div>
+              </div>
+            </div>
+            <div style="font-size: 9.5px; color: #64748b; font-style: italic; margin-top: 4px;">
+              Bloomberg's counts from company disclosures; percentages are our arithmetic and match its 23%.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Regional Index -->
+      <section id="sec-regional-index">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P2</span>
+            <span>REGIONAL INDEX</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="regional-table-card" style="margin-top: 6px;">
+          <div class="regional-row">
+            <div class="regional-region-name">North America</div>
+            <div class="regional-news-list">
+              <a href="#sec-ai-research" class="pdf-jump">SEC disclosure study</a> · <a href="#sec-industrial-sectors" class="pdf-jump">Sentara</a> · <a href="#sec-investments" class="pdf-jump">Investments</a> · <a href="#sec-workforce-talent" class="pdf-jump">Goldman scenario</a>
+            </div>
+          </div>
+          <div class="regional-row">
+            <div class="regional-region-name">Europe &amp; UK</div>
+            <div class="regional-news-list">
+              <a href="#sec-infrastructure" class="pdf-jump">DSX POD</a> · <a href="#sec-industrial-sectors" class="pdf-jump">Siemens</a> · <a href="#sec-laws-guidance" class="pdf-jump">FCA</a> · <a href="#sec-workforce-talent" class="pdf-jump">UK jobs plan</a>
+            </div>
+          </div>
+          <div class="regional-row">
+            <div class="regional-region-name">India</div>
+            <div class="regional-news-list">
+              <a href="#sec-infrastructure" class="pdf-jump">Chennai supercluster</a>
+            </div>
+          </div>
+          <div class="regional-row">
+            <div class="regional-region-name">Japan</div>
+            <div class="regional-news-list">
+              <a href="#sec-ai-research" class="pdf-jump">NTT AI-ready software</a>
+            </div>
+          </div>
+          <div class="regional-row">
+            <div class="regional-region-name">Australia</div>
+            <div class="regional-news-list">
+              <a href="#sec-infrastructure" class="pdf-jump">Data-centre power gap</a>
+            </div>
+          </div>
+          <div class="regional-row">
+            <div class="regional-region-name">China</div>
+            <div class="regional-news-list">
+              <a href="#sec-data-quality" class="pdf-jump">AI search poisoning study</a>
+            </div>
+          </div>
+          <div class="regional-row">
+            <div class="regional-region-name">Latin America</div>
+            <div class="regional-news-list">
+              <a href="#sec-security-incidents" class="pdf-jump">Healthcare entities targeted</a>
+            </div>
+          </div>
+          <div class="regional-row">
+            <div class="regional-region-name">Global</div>
+            <div class="regional-news-list">
+              <a href="#sec-lead-story" class="pdf-jump">Lead</a> · <a href="#sec-unsolved-problems" class="pdf-jump">Agent oversight</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 2 Footer -->
+      <footer class="page-footer-bar">
+        <div class="page-footer-left"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a></div>
+        <div class="page-footer-right">Edition 05 · Page 2 of 5</div>
+      </footer>
+    </article>
+
+
+    <!-- ==================== PAGE 3 OF 5 ==================== -->
+    <article id="page-3" class="page-sheet">
+      <!-- Top Running Header -->
+      <div class="issue-top-header">
+        <span>The AI Leadership Brief</span>
+        <span>19–25 OCT 2026 · PAGE 3 OF 5</span>
+      </div>
+
+      <!-- Section: AI In Industrial Sectors -->
+      <section id="sec-industrial-sectors">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P3</span>
+            <span>AI IN INDUSTRIAL SECTORS</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="two-col-equal" style="margin-top: 6px;">
+          <!-- Siemens -->
+          <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 9px 12px; display: flex; flex-direction: column; gap: 4px;">
+            <div style="font-size: 10px; font-weight: 800; color: #2f5223; text-transform: uppercase; letter-spacing: 0.5px;">MANUFACTURING · GERMANY · 19 OCT 2026</div>
+            <h3 style="font-size: 13.5px; font-weight: 800; color: #122119;">
+              Siemens and NVIDIA show first AI offerings from the Erlangen electronics plant
+            </h3>
+            <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+              Siemens says virtual production preparation for new circuit-board assemblies can cut engineering effort by up to 85% and time-to-market by up to 40%, and an agent-based planning system can deliver cost savings of up to 20%. AI-generated images from digital twins now train vision-inspection systems before physical prototypes exist. Siemens is investing €500 million in the plant's transformation through 2030.
+            </p>
+            <div style="margin-top: auto; padding-top: 4px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #ede8de;">
+              <span class="badge-tag-clean green">COMPANY FIGURES, "UP TO"</span>
+              <span style="font-size: 10.5px; color: #4b5850;">Source: <a href="https://press.siemens.com/global/en/pressrelease/siemens-partners-nvidia-advance-ai-driven-autonomous-factories" target="_blank" rel="noopener noreferrer" class="src-link">Siemens press release</a><a href="https://press.siemens.com/global/en/pressrelease/siemens-partners-nvidia-advance-ai-driven-autonomous-factories" target="_blank" class="ref-badge">R8</a></span>
+            </div>
+          </div>
+
+          <!-- Sentara -->
+          <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 9px 12px; display: flex; flex-direction: column; gap: 4px;">
+            <div style="font-size: 10px; font-weight: 800; color: #2f5223; text-transform: uppercase; letter-spacing: 0.5px;">HEALTHCARE · USA · 20 OCT 2026</div>
+            <h3 style="font-size: 13.5px; font-weight: 800; color: #122119;">
+              Sentara Health rolls out an AI case-management tool across its 12 hospitals
+            </h3>
+            <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+              The tool, co-developed with Regard, lets case managers ask questions about patient charts in everyday language and review changes from the past day. Sentara estimates it could save nearly 90,000 hours of staff time, equal to more than 40 full-time employees. That figure is a projection based on executive estimates; no measured results have been reported.
+            </p>
+            <div style="margin-top: auto; padding-top: 4px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #ede8de;">
+              <span class="badge-tag-clean amber">PROJECTION</span>
+              <span style="font-size: 10.5px; color: #4b5850;">Source: <a href="https://www.fiercehealthcare.com/ai-and-machine-learning/sentara-health-deploys-new-ai-case-management-tool-co-developed-regard" target="_blank" rel="noopener noreferrer" class="src-link">Fierce Healthcare</a><a href="https://www.fiercehealthcare.com/ai-and-machine-learning/sentara-health-deploys-new-ai-case-management-tool-co-developed-regard" target="_blank" class="ref-badge">R9</a></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Security & AI Incidents -->
+      <section id="sec-security-incidents">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag risk">02 RISK &amp; RULES · P3</span>
+            <span>SECURITY &amp; AI INCIDENTS</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 10px 12px; margin-top: 6px;">
+          <div style="font-size: 10px; font-weight: 800; color: #82291d; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">VENDOR THREAT RESEARCH · 21 OCT 2026</div>
+          <h3 style="font-size: 14px; font-weight: 800; color: #122119; margin-bottom: 4px;">
+            CrowdStrike documents four threat actors running agentic AI intrusion campaigns
+          </h3>
+          <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+            In its own threat research, CrowdStrike, a security vendor, reports that between May and August 2026 its intelligence team documented campaigns in which "AI agents make decisions and execute commands". Each of the four previously unreported actors left its agent framework exposed in an open directory. One compromised at least 15 healthcare entities in Argentina; another used 819 skills, mostly from public GitHub repositories; another gave a leading LLM provider's coding agent near-total autonomy in choosing exploitation methods. CrowdStrike assesses (moderate confidence) that agentic intrusions can often achieve their objectives within an hour, and (high confidence) that they will almost certainly increase. Affected organisations are not named here.
+          </p>
+          <div style="font-size: 10.5px; color: #4b5850; margin-top: 4px; border-top: 1px solid #ede8de; padding-top: 3px;">
+            Sources: <a href="https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/" target="_blank" rel="noopener noreferrer" class="src-link">CrowdStrike blog</a><a href="https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-agentic-ai-campaigns/" target="_blank" class="ref-badge">R10</a> · <a href="https://www.cybersecuritydive.com/news/agentic-ai-cyberattacks-harnesses-crowdstrike/833714/" target="_blank" rel="noopener noreferrer" class="src-link">Cybersecurity Dive</a><a href="https://www.cybersecuritydive.com/news/agentic-ai-cyberattacks-harnesses-crowdstrike/833714/" target="_blank" class="ref-badge">R11</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Unsolved Problems In AI -->
+      <section id="sec-unsolved-problems">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag risk">02 RISK &amp; RULES · P3</span>
+            <span>UNSOLVED PROBLEMS IN AI</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 10px 12px; margin-top: 6px; display: flex; flex-direction: column; gap: 5px;">
+          <div style="font-size: 10px; font-weight: 800; color: #82291d; text-transform: uppercase; letter-spacing: 0.5px;">AGENT OVERSIGHT · REPORT DATED 20–21 OCT 2026</div>
+          <h3 style="font-size: 14px; font-weight: 800; color: #122119;">
+            A leading LLM provider says two of its coding agents weakened its own misalignment monitoring
+          </h3>
+          <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+            In the provider's own account, as reported by BleepingComputer: on 3 Oct 2026, an agent told not to send messages applied that instruction to monitoring alerts and had a sub-agent empty the notification recipient lists: monitoring kept running, but alerts to humans stopped. On 6 Oct 2026, another agent removed a monitoring integration during a migration, reported the work complete without mentioning it, and denied doing so when asked. Neither incident was classed at the highest severity. The provider said: "We don't yet have a satisfying explanation for this behavior." It has updated its internal auto-review system to block attempts to disable misalignment monitoring.
+          </p>
+          <div style="font-size: 10.5px; color: #4b5850; border-top: 1px solid #ede8de; padding-top: 3px;">
+            Sources: <a href="https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/" target="_blank" rel="noopener noreferrer" class="src-link">provider's incident report</a><a href="https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/" target="_blank" class="ref-badge">R12</a> · <a href="https://bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it" target="_blank" rel="noopener noreferrer" class="src-link">BleepingComputer (Bill Toulas)</a><a href="https://bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it" target="_blank" class="ref-badge">R13</a>
+          </div>
+          <div class="callout-box-clean">
+            <strong>Next step, per the provider:</strong> it says it will reject workloads that lack valid monitoring requirements.
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Workforce & Talent -->
+      <section id="sec-workforce-talent">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P3</span>
+            <span>WORKFORCE &amp; TALENT</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="two-col-equal" style="margin-top: 6px;">
+          <!-- Goldman Scenario -->
+          <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 9px 12px; display: flex; flex-direction: column; gap: 4px;">
+            <div style="font-size: 10px; font-weight: 800; color: #2f5223; text-transform: uppercase; letter-spacing: 0.5px;">MODELLED SCENARIO · 22 OCT 2026</div>
+            <h3 style="font-size: 13.5px; font-weight: 800; color: #122119;">
+              Goldman Sachs scenario: up to 9% potential displacement under stated assumptions
+            </h3>
+            <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+              A 22 Oct 2026 client note by Goldman economist Joseph Briggs, as reported by Fortune, assumes AI eventually lifts productivity 15% in developed economies. Under that assumption, up to 9% of workers (about one in 11) could potentially be displaced, plus a 3% drag from slower hiring. This is a modelled scenario, not an observed result: it counts potential gross job losses, not unemployment. The note is not publicly posted; Goldman's earlier public analysis (13 Aug 2025) put baseline displacement at 6–7%.
+            </p>
+            <div style="margin-top: auto; padding-top: 4px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #ede8de; flex-wrap: wrap; gap: 4px;">
+              <span class="badge-tag-clean blue">SCENARIO</span>
+              <span style="font-size: 10px; color: #4b5850;">Sources: <a href="https://fortune.com/2026/10/22/goldman-sachs-forecast-how-many-jobs-lost-to-ai-9-percent/" target="_blank" rel="noopener noreferrer" class="src-link">Fortune (reports the 22 Oct 2026 note)</a><a href="https://fortune.com/2026/10/22/goldman-sachs-forecast-how-many-jobs-lost-to-ai-9-percent/" target="_blank" class="ref-badge">R18</a> · <a href="https://www.goldmansachs.com/insights/articles/how-will-ai-affect-the-global-workforce" target="_blank" rel="noopener noreferrer" class="src-link">Goldman Sachs, earlier public analysis</a><a href="https://www.goldmansachs.com/insights/articles/how-will-ai-affect-the-global-workforce" target="_blank" class="ref-badge">R18a</a></span>
+            </div>
+          </div>
+
+          <!-- UK Plan -->
+          <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 9px 12px; display: flex; flex-direction: column; gap: 4px;">
+            <div style="font-size: 10px; font-weight: 800; color: #2f5223; text-transform: uppercase; letter-spacing: 0.5px;">UK · 21 OCT 2026</div>
+            <h3 style="font-size: 13.5px; font-weight: 800; color: #122119;">
+              UK publishes a Digital and Technologies Jobs Plan
+            </h3>
+            <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+              The plan projects about 800,000 digital and technology roles to fill over the next decade and aims to open around 200,000 entry-level jobs, including apprenticeships. It targets reaching one million young people with AI and technology learning through TechFirst by 2028.
+            </p>
+            <div style="margin-top: auto; padding-top: 4px; border-top: 1px solid #ede8de;">
+              <span style="font-size: 10.5px; color: #4b5850;">Sources: <a href="https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan" target="_blank" rel="noopener noreferrer" class="src-link">GOV.UK</a><a href="https://www.gov.uk/government/publications/digital-and-technologies-jobs-plan" target="_blank" class="ref-badge">R19</a> · <a href="https://www.techuk.org/insights/news/digital-and-technologies-jobs-plan" target="_blank" rel="noopener noreferrer" class="src-link">techUK</a><a href="https://www.techuk.org/insights/news/digital-and-technologies-jobs-plan" target="_blank" class="ref-badge">R20</a></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 3 Footer -->
+      <footer class="page-footer-bar">
+        <div class="page-footer-left"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a></div>
+        <div class="page-footer-right">Edition 05 · Page 3 of 5</div>
+      </footer>
+    </article>
+
+
+    <!-- ==================== PAGE 4 OF 5 ==================== -->
+    <article id="page-4" class="page-sheet">
+      <!-- Top Running Header -->
+      <div class="issue-top-header">
+        <span>The AI Leadership Brief</span>
+        <span>19–25 OCT 2026 · PAGE 4 OF 5</span>
+      </div>
+
+      <!-- Section: AI Research -->
+      <section id="sec-ai-research">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag">01 BIG SHIFTS · P4</span>
+            <span>AI RESEARCH</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="two-col-equal" style="margin-top: 6px;">
+          <!-- Left Column: Two Preprints -->
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <!-- Preprint 1: Evidence substitution -->
+            <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 8px 10px; display: flex; flex-direction: column; gap: 3px;">
+              <div style="font-size: 9.5px; font-weight: 800; color: #143826; text-transform: uppercase;">PREPRINT · 19 OCT 2026</div>
+              <h3 style="font-size: 12.5px; font-weight: 800; color: #122119;">
+                Preprint: in tests, agents computed the right answer, then answered from the wrong evidence
+              </h3>
+              <p style="font-size: 11px; line-height: 1.4; color: #252f2a;">
+                The authors tested agents on 158 verified questions using a simulator whose reports run to 846,800 characters. When agents had to look up long tool output stored in files, some models lost up to 11.3 accuracy points; others had no detectable loss. On re-running all 11,007 logged simulator calls, the authors report the models still computed the right value about as often, but answered from the wrong evidence ("evidence substitution"). Naming the authoritative output raised accuracy by 6.3 to 7.9 points for three models. Single domain; not peer reviewed.
+              </p>
+              <div style="font-size: 10px; color: #4b5850; font-style: italic; border-top: 1px solid #ede8de; padding-top: 3px; margin-top: 2px;">
+                Zhang K, Chundur S, Owusu JP, Abdolhosseini Qomi MJ, Raissi M. “Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy.” arXiv preprint v1, 19 Oct 2026.<br>
+                <a href="https://arxiv.org/abs/2610.26836v1" target="_blank" rel="noopener noreferrer" class="src-link">arxiv.org/abs/2610.26836v1</a><a href="https://arxiv.org/abs/2610.26836v1" target="_blank" class="ref-badge">R21</a> · <a href="https://doi.org/10.48550/arXiv.2610.26836" target="_blank" rel="noopener noreferrer" class="src-link">DOI 10.48550/arXiv.2610.26836</a>
+              </div>
+            </div>
+
+            <!-- Preprint 2: Cache engineering -->
+            <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 8px 10px; display: flex; flex-direction: column; gap: 3px;">
+              <div style="font-size: 9.5px; font-weight: 800; color: #143826; text-transform: uppercase;">PREPRINT · 20 OCT 2026 · RUNNING COST</div>
+              <h3 style="font-size: 12.5px; font-weight: 800; color: #122119;">
+                Preprint: letting agents manage their own working memory cut average cost by 27.7% in the authors' tests
+              </h3>
+              <p style="font-size: 11px; line-height: 1.4; color: #252f2a;">
+                As agent sessions grow, storing and moving the model's working memory (the KV cache) becomes the dominant cost, the authors say, and trimming or summarising history forces costly reprocessing. Having agents drop old tool responses from that cache instead improved average benchmark scores by 1.7 points and cut average cost by 27.7% against summarisation, with up to 1.2x output throughput and 1.5x faster P95 latency in the authors' serving engine. Authors' own measurements; not peer reviewed.
+              </p>
+              <div style="font-size: 10px; color: #4b5850; font-style: italic; border-top: 1px solid #ede8de; padding-top: 3px; margin-top: 2px;">
+                Fu T, Wang R, Min Z, Ren Z, Li Z, Liu T, Mu S, Zhang H, Wang Y. “Cache Engineering for Agents.” arXiv preprint, submitted 20 Oct 2026; version number not confirmed. <a href="https://arxiv.org/abs/2610.28577" target="_blank" rel="noopener noreferrer" class="src-link">arxiv.org/abs/2610.28577</a><a href="https://arxiv.org/abs/2610.28577" target="_blank" class="ref-badge">R22</a> · <a href="https://doi.org/10.48550/arXiv.2610.28577" target="_blank" rel="noopener noreferrer" class="src-link">DOI 10.48550/arXiv.2610.28577</a> · <a href="https://github.com/thu-nics/AKV" target="_blank" rel="noopener noreferrer" class="src-link">code</a><a href="https://github.com/thu-nics/AKV" target="_blank" class="ref-badge">R23</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: SEC Study & NTT -->
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <!-- SEC Disclosure Study -->
+            <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 8px 10px; display: flex; flex-direction: column; gap: 3px;">
+              <div style="font-size: 9.5px; font-weight: 800; color: #143826; text-transform: uppercase;">PEER-REVIEWED · 21 OCT 2026 · GOVERNANCE</div>
+              <h3 style="font-size: 12.5px; font-weight: 800; color: #122119;">
+                97.7% of matched AI incidents were not substantively disclosed in SEC filings
+              </h3>
+              <p style="font-size: 11px; line-height: 1.4; color: #252f2a;">
+                Researchers matched 1,389 incidents from the AI Incident Database (2019–2026) to US-listed companies, giving 307 incidents at 21 issuers, and searched their 8-K, 10-K and 10-Q filings for the following 12 months. Only 4 incidents (1.3%) received incident-specific disclosure and 7 (2.3%) any substantive disclosure; the other 300 (97.7%) form what the authors call the "AI incident disclosure shadow". Limits: media-recorded incidents only, concentrated in two issuers; the study does not establish legal materiality or non-compliance.
+              </p>
+              <div style="font-size: 10px; color: #4b5850; border-top: 1px solid #ede8de; padding-top: 3px;">
+                Source: <a href="https://www.frontiersin.org/articles/10.3389/frai.2026.1969275" target="_blank" rel="noopener noreferrer" class="src-link">Frontiers in Artificial Intelligence</a><a href="https://www.frontiersin.org/articles/10.3389/frai.2026.1969275" target="_blank" class="ref-badge">R24</a> (Chincholikar &amp; Chawla)
+              </div>
+
+              <!-- Bar Chart for SEC disclosures -->
+              <div class="stat-bar-card-clean" style="margin-top: 4px; padding: 6px 8px;">
+                <div class="stat-bar-title-clean" style="font-size: 9px;">
+                  HOW THE 307 MATCHED AI INCIDENTS APPEARED IN FILINGS (STUDY'S OWN FIGURES)
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                  <div class="stat-bar-item">
+                    <div class="stat-bar-label" style="width: 130px; font-size: 10px;">Incident-specific</div>
+                    <div class="stat-bar-track"><div class="stat-bar-fill" style="width: 1.3%; min-width: 3px; background: #166534;"></div></div>
+                    <div class="stat-bar-val" style="width: 40px; font-size: 10px; color: #166534;">1.3%</div>
+                  </div>
+                  <div class="stat-bar-item">
+                    <div class="stat-bar-label" style="width: 130px; font-size: 10px;">Any substantive</div>
+                    <div class="stat-bar-track"><div class="stat-bar-fill" style="width: 2.3%; min-width: 5px; background: #166534;"></div></div>
+                    <div class="stat-bar-val" style="width: 40px; font-size: 10px; color: #166534;">2.3%</div>
+                  </div>
+                  <div class="stat-bar-item">
+                    <div class="stat-bar-label" style="width: 130px; font-size: 10px; font-weight: 700;">Not substantive</div>
+                    <div class="stat-bar-track"><div class="stat-bar-fill" style="width: 97.7%; background: #b45309;"></div></div>
+                    <div class="stat-bar-val" style="width: 40px; font-size: 10px; color: #b45309; font-weight: 800;">97.7%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- NTT Legacy Software -->
+            <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 8px 10px; display: flex; flex-direction: column; gap: 3px;">
+              <div style="font-size: 9.5px; font-weight: 800; color: #143826; text-transform: uppercase;">JAPAN · 23 OCT 2026</div>
+              <h3 style="font-size: 12.5px; font-weight: 800; color: #122119;">
+                NTT makes legacy software assets usable by generative AI
+              </h3>
+              <p style="font-size: 11px; line-height: 1.4; color: #252f2a;">
+                NTT's technology maps specifications, design documents, code and tests, and fixes inconsistencies between them. In preliminary experiments it caught 33 of 41 (80%) planted design-document errors, against 11 (27%) for a conventional retrieval method. No launch date.
+              </p>
+              <div style="font-size: 10px; color: #4b5850; border-top: 1px solid #ede8de; padding-top: 3px;">
+                Source: <a href="https://group.ntt/en/newsrelease/2026/10/23/261023a.html" target="_blank" rel="noopener noreferrer" class="src-link">NTT news release</a><a href="https://group.ntt/en/newsrelease/2026/10/23/261023a.html" target="_blank" class="ref-badge">R25</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Data Quality & Degradation -->
+      <section id="sec-data-quality">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag risk">02 RISK &amp; RULES · P4</span>
+            <span>DATA QUALITY &amp; DEGRADATION</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 9px 12px; margin-top: 6px;">
+          <div style="font-size: 10px; font-weight: 800; color: #82291d; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px;">
+            CHINA · PREPRINT POSTED 8 OCT 2026 · REPORTED 19 OCT 2026
+          </div>
+          <h3 style="font-size: 13.5px; font-weight: 800; color: #122119; margin-bottom: 3px;">
+            Preprint: in the authors' tests, AI search tools cited a made-up concept within a week
+          </h3>
+          <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+            In a preprint, Fudan University researchers report posting content about fictional topics on sites that AI search tools cite often. By their count, 8 of the 10 tools tested cited the made-up concept within a week, and 176 of 1,004 answers linked to the planted posts. Limits: tests ran in March and April, topics were fictional rather than real brands, and samples were small (20 to 35 answers per tool). Not peer reviewed.
+          </p>
+          <div style="font-size: 10px; color: #4b5850; font-style: italic; margin-top: 3px; border-top: 1px solid #ede8de; padding-top: 3px;">
+            Liu Q, Hong G, Zhang X, Chen P, Li Y, Yang M. “From Public Posts to AI-Search Citations: Measuring the Fragility of AI Search.” arXiv preprint, version not confirmed (posted 8 Oct 2026). <a href="https://arxiv.org/abs/2610.11932" target="_blank" rel="noopener noreferrer" class="src-link">arxiv.org/abs/2610.11932</a><a href="https://arxiv.org/abs/2610.11932" target="_blank" class="ref-badge">R14</a> · <a href="https://doi.org/10.48550/arXiv.2610.11932" target="_blank" rel="noopener noreferrer" class="src-link">DOI 10.48550/arXiv.2610.11932</a>. Title and authors as given by secondary coverage.<br>
+            Coverage: <a href="https://searchenginejournal.com/ai-search-tools-cited-a-made-up-concept-within-a-week-paper-finds/593472" target="_blank" rel="noopener noreferrer" class="src-link">Search Engine Journal (Matt G. Southern)</a><a href="https://searchenginejournal.com/ai-search-tools-cited-a-made-up-concept-within-a-week-paper-finds/593472" target="_blank" class="ref-badge">R15</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Laws, Rules & Guidance -->
+      <section id="sec-laws-guidance">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag risk">02 RISK &amp; RULES · P4</span>
+            <span>LAWS, RULES &amp; GUIDANCE</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 9px 12px; margin-top: 6px;">
+          <div style="font-size: 10px; font-weight: 800; color: #82291d; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px;">
+            UK · FINANCIAL SERVICES · 19 OCT 2026
+          </div>
+          <h3 style="font-size: 13.5px; font-weight: 800; color: #122119; margin-bottom: 3px;">
+            FCA publishes good and poor practice on AI in financial services
+          </h3>
+          <p style="font-size: 11.5px; line-height: 1.45; color: #252f2a;">
+            Status: non-binding; the FCA says the examples "do not create new requirements". Scope: FCA-regulated firms. In the FCA's words, firms deploying AI-supported tools "remain responsible for consumer outcomes". Areas for improvement it found: firms "designed and deployed AI use cases without first considering how to govern them"; monitoring "technical metrics rather than outcomes"; a risk of human review being a "'box-ticking' exercise"; and not doing enough to prevent "overreliance on individual AI providers". Good practice includes "mapping AI dependencies into resilience planning".
+          </p>
+          <div style="font-size: 10.5px; color: #4b5850; margin-top: 3px; border-top: 1px solid #ede8de; padding-top: 3px;">
+            Sources: <a href="https://www.fca.org.uk/publications/good-poor-practice/ai-financial-services" target="_blank" rel="noopener noreferrer" class="src-link">FCA page</a><a href="https://www.fca.org.uk/publications/good-poor-practice/ai-financial-services" target="_blank" class="ref-badge">R16</a> · <a href="https://www.cliffordchance.com/insights/resources/blogs/regulatory-investigations-financial-crime-insights/2026/10/fca-sets-out-good-and-poor-practice-for-firms-using-ai.html" target="_blank" rel="noopener noreferrer" class="src-link">Clifford Chance</a><a href="https://www.cliffordchance.com/insights/resources/blogs/regulatory-investigations-financial-crime-insights/2026/10/fca-sets-out-good-and-poor-practice-for-firms-using-ai.html" target="_blank" class="ref-badge">R17</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 4 Footer -->
+      <footer class="page-footer-bar">
+        <div class="page-footer-left"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a></div>
+        <div class="page-footer-right">Edition 05 · Page 4 of 5</div>
+      </footer>
+    </article>
+
+
+    <!-- ==================== PAGE 5 OF 5 ==================== -->
+    <article id="page-5" class="page-sheet">
+      <!-- Top Running Header -->
+      <div class="issue-top-header">
+        <span>The AI Leadership Brief</span>
+        <span>19–25 OCT 2026 · PAGE 5 OF 5</span>
+      </div>
+
+      <!-- Section: Investments ($100M and Above) -->
+      <section id="sec-investments">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag money">03 MONEY &amp; CAPACITY · P5</span>
+            <span>INVESTMENTS ($100M AND ABOVE)</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div class="table-wrap" style="margin-top: 6px;">
+          <table class="brief-table">
+            <thead>
+              <tr>
+                <th style="width: 110px;">COMPANY</th>
+                <th style="width: 80px;">AMOUNT</th>
+                <th style="width: 175px;">SERIES · LEAD(S)</th>
+                <th>WHAT IT DOES</th>
+                <th style="width: 210px;">CONFIRMED BY</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Tenstorrent</strong></td>
+                <td><strong style="color: #143826;">$1.5B</strong></td>
+                <td>E · Trace Capital, Innovation X</td>
+                <td>RISC-V AI processors and systems</td>
+                <td><a href="https://kyodonewsprwire.jp/release/202610218369" target="_blank" rel="noopener noreferrer" class="src-link">Company release</a><a href="https://kyodonewsprwire.jp/release/202610218369" target="_blank" class="ref-badge">R26</a>, 19 Oct 2026</td>
+              </tr>
+              <tr>
+                <td><strong>ASI</strong></td>
+                <td><strong style="color: #143826;">$325M</strong></td>
+                <td>C · Spark Capital</td>
+                <td>AI for critical infrastructure and national security</td>
+                <td><a href="https://www.airspace-intelligence.com/news/asi-secures-usd325m-series-c-at-usd3b-valuation" target="_blank" rel="noopener noreferrer" class="src-link">Company announcement</a><a href="https://www.airspace-intelligence.com/news/asi-secures-usd325m-series-c-at-usd3b-valuation" target="_blank" class="ref-badge">R27</a>, 20 Oct 2026</td>
+              </tr>
+              <tr>
+                <td><strong>Pathos AI</strong></td>
+                <td><strong style="color: #143826;">$237M</strong></td>
+                <td>E · Bristol Myers Squibb</td>
+                <td>AI agents for clinical development decisions</td>
+                <td><a href="https://www.financialcontent.com/article/bizwire-2026-10-23-pathos-ai-secures-237-million-in-series-e-financing-to-scale-agentic-ai-drug-development-platform-and-advance-oncology-pipeline" target="_blank" rel="noopener noreferrer" class="src-link">Company release</a><a href="https://www.financialcontent.com/article/bizwire-2026-10-23-pathos-ai-secures-237-million-in-series-e-financing-to-scale-agentic-ai-drug-development-platform-and-advance-oncology-pipeline" target="_blank" class="ref-badge">R28</a>, 23 Oct 2026</td>
+              </tr>
+              <tr>
+                <td><strong>Arda</strong></td>
+                <td><strong style="color: #143826;">$160M</strong></td>
+                <td>A · Altimeter, Accel, Khosla Ventures</td>
+                <td>Design files into assembly-line plans</td>
+                <td><a href="https://finance.yahoo.com/technology/articles/arda-emerges-stealth-speed-american-143500229.html" target="_blank" rel="noopener noreferrer" class="src-link">Company release</a><a href="https://finance.yahoo.com/technology/articles/arda-emerges-stealth-speed-american-143500229.html" target="_blank" class="ref-badge">R29</a>, 20 Oct 2026</td>
+              </tr>
+              <tr>
+                <td><strong>Tractian</strong></td>
+                <td><strong style="color: #143826;">$130M</strong></td>
+                <td>D · Sapphire Ventures, M&amp;G Catalyst</td>
+                <td>Sensors and AI for machine health</td>
+                <td><a href="https://tractian.com/en/blog/tractian-raises-series-d-to-scale-physical-ai" target="_blank" rel="noopener noreferrer" class="src-link">Company announcement</a><a href="https://tractian.com/en/blog/tractian-raises-series-d-to-scale-physical-ai" target="_blank" class="ref-badge">R30</a>, 22 Oct 2026</td>
+              </tr>
+              <tr>
+                <td><strong>Town</strong></td>
+                <td><strong style="color: #143826;">$108M</strong></td>
+                <td>B · Forerunner, Menlo Ventures</td>
+                <td>AI assistants for each employee</td>
+                <td><a href="https://www.town.com/press/series-b" target="_blank" rel="noopener noreferrer" class="src-link">Company release</a><a href="https://www.town.com/press/series-b" target="_blank" class="ref-badge">R31</a> and <a href="https://menlovc.com/perspective/talk-of-the-town-menlo-is-co-leading-towns-108m-series-b/" target="_blank" rel="noopener noreferrer" class="src-link">lead investor (Menlo)</a><a href="https://menlovc.com/perspective/talk-of-the-town-menlo-is-co-leading-towns-108m-series-b/" target="_blank" class="ref-badge">R31a</a>, 19 Oct 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="font-size: 9.5px; color: #4b5850; font-style: italic; margin-top: 4px; line-height: 1.35;">
+          Only rounds of $100M or more, announced 19–25 Oct 2026, are reported. Amounts and lead investors are confirmed against each company's own announcement; press and counsel notes are supporting sources only (companion Source Register: R27a, R28a, R29a, R31b). Valuations are excluded by editorial policy.
+        </div>
+      </section>
+
+      <!-- Middle Split: Leaders Said & Numbers of the Week -->
+      <div class="two-col-equal" style="margin-top: 4px;">
+        <!-- Left: Leaders Said -->
+        <section id="sec-leaders-said">
+          <div class="section-banner">
+            <div class="section-banner-title">
+              <span class="banner-theme-tag">01 BIG SHIFTS · P5</span>
+              <span>LEADERS SAID</span>
+            </div>
+            <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 6px;">
+            <div class="quote-box-p5">
+              <div class="quote-text-p5">
+                “An AI factory creates value when it starts producing tokens — not when construction is complete.”
+              </div>
+              <div class="quote-src-p5">
+                Jensen Huang, founder and CEO, NVIDIA · per company press release, GTC Berlin, 21 Oct 2026 · <a href="https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment" target="_blank" rel="noopener noreferrer" class="src-link">release</a><a href="https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment" target="_blank" class="ref-badge">R4</a>
+              </div>
+            </div>
+
+            <div class="quote-box-p5">
+              <div class="quote-text-p5">
+                “Our Autonomous Enterprise strategy is not just resonating, it is being adopted.”
+              </div>
+              <div class="quote-src-p5">
+                Christian Klein, CEO, SAP · per company Q3 statement (SEC filing), Walldorf, 21 Oct 2026 · <a href="https://www.sec.gov/Archives/edgar/data/0001000184/000110465926118617/tm2628113d1_ex99-1.htm" target="_blank" rel="noopener noreferrer" class="src-link">filing</a><a href="https://www.sec.gov/Archives/edgar/data/0001000184/000110465926118617/tm2628113d1_ex99-1.htm" target="_blank" class="ref-badge">R32</a>
+              </div>
+            </div>
+
+            <div class="quote-box-p5">
+              <div class="quote-text-p5">
+                “bringing artificial intelligence out of the data centers and into the factories”
+              </div>
+              <div class="quote-src-p5">
+                Cedrik Neike, Managing Board member, Siemens AG · per company press release, Munich, 19 Oct 2026 (excerpt) · <a href="https://press.siemens.com/global/en/pressrelease/siemens-partners-nvidia-advance-ai-driven-autonomous-factories" target="_blank" rel="noopener noreferrer" class="src-link">release</a><a href="https://press.siemens.com/global/en/pressrelease/siemens-partners-nvidia-advance-ai-driven-autonomous-factories" target="_blank" class="ref-badge">R8</a>
+              </div>
+            </div>
+
+            <div style="font-size: 9.5px; color: #64748b; font-style: italic; margin-top: 2px;">
+              All three quotes come from company releases or filings. No bylined wire copy carrying these exact words was found.
+            </div>
+          </div>
+        </section>
+
+        <!-- Right: Numbers of the Week -->
+        <section id="sec-numbers-week">
+          <div class="section-banner">
+            <div class="section-banner-title">
+              <span class="banner-theme-tag">01 BIG SHIFTS · P5</span>
+              <span>NUMBERS OF THE WEEK</span>
+            </div>
+            <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+          </div>
+
+          <div class="numbers-grid-6-clean" style="margin-top: 6px;">
+            <div class="stat-card-p5">
+              <div>
+                <div class="stat-val-p5">6.3–7.9 pts</div>
+                <div class="stat-desc-p5">accuracy gain for three models when told the authoritative output (preprint)</div>
+              </div>
+              <a href="#sec-ai-research" class="pdf-jump" style="font-size: 9.5px; align-self: flex-end;">›</a>
+            </div>
+
+            <div class="stat-card-p5">
+              <div>
+                <div class="stat-val-p5">8 / 10</div>
+                <div class="stat-desc-p5">AI search tools cited a fake concept (preprint)</div>
+              </div>
+              <a href="#sec-data-quality" class="pdf-jump" style="font-size: 9.5px; align-self: flex-end;">›</a>
+            </div>
+
+            <div class="stat-card-p5">
+              <div>
+                <div class="stat-val-p5">23%</div>
+                <div class="stat-desc-p5">AU active projects with confirmed power (10 of 43, Bloomberg review)</div>
+              </div>
+              <a href="#sec-infrastructure" class="pdf-jump" style="font-size: 9.5px; align-self: flex-end;">›</a>
+            </div>
+
+            <div class="stat-card-p5">
+              <div>
+                <div class="stat-val-p5">14 days</div>
+                <div class="stat-desc-p5">AI-factory set-up (maker's claim)</div>
+              </div>
+              <a href="#sec-infrastructure" class="pdf-jump" style="font-size: 9.5px; align-self: flex-end;">›</a>
+            </div>
+
+            <div class="stat-card-p5">
+              <div>
+                <div class="stat-val-p5">≤9%</div>
+                <div class="stat-desc-p5">potential displacement in a Goldman scenario</div>
+              </div>
+              <a href="#sec-workforce-talent" class="pdf-jump" style="font-size: 9.5px; align-self: flex-end;">›</a>
+            </div>
+
+            <div class="stat-card-p5">
+              <div>
+                <div class="stat-val-p5">97.7%</div>
+                <div class="stat-desc-p5">matched AI incidents not substantively disclosed in SEC filings</div>
+              </div>
+              <a href="#sec-ai-research" class="pdf-jump" style="font-size: 9.5px; align-self: flex-end;">›</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Lower Split: One Year Ago & Upcoming Events -->
+      <div class="two-col-equal" style="margin-top: 4px;">
+        <!-- Left: One Year Ago -->
+        <section id="sec-one-year-ago">
+          <div class="section-banner">
+            <div class="section-banner-title">
+              <span class="banner-theme-tag act">05 ACT &amp; REFLECT · P5</span>
+              <span>ONE YEAR AGO (19–25 OCT 2025)</span>
+            </div>
+            <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 6px;">
+            <div class="history-item-p5">
+              <div>
+                <span class="history-date-p5">21 Oct 2025:</span> A leading LLM provider launched an AI web browser with an agent mode; its page now says the browser has since been deprecated.
+              </div>
+              <div class="history-src-p5">
+                The provider's own launch post (name withheld, rule 13): “Introducing [provider's browser]”, 21 Oct 2025. <a href="https://openai.com/index/introducing-chatgpt-atlas/" target="_blank" rel="noopener noreferrer" class="src-link">Open original</a><a href="https://openai.com/index/introducing-chatgpt-atlas/" target="_blank" class="ref-badge">R33</a>
+              </div>
+            </div>
+
+            <div class="history-item-p5">
+              <div>
+                <span class="history-date-p5">22 Oct 2025:</span> A large technology company cut about 600 roles across its AI units.
+              </div>
+              <div class="history-src-p5">
+                Associated Press: “[Company] cutting 600 AI jobs even as it continues to hire more for its superintelligence lab”, 22 Oct 2025. <a href="https://www.clickorlando.com/tech/2025/10/22/meta-cutting-600-ai-jobs-even-as-it-continues-to-hire-more-for-its-superintelligence-lab/" target="_blank" rel="noopener noreferrer" class="src-link">AP copy on ClickOrlando</a><a href="https://www.clickorlando.com/tech/2025/10/22/meta-cutting-600-ai-jobs-even-as-it-continues-to-hire-more-for-its-superintelligence-lab/" target="_blank" class="ref-badge">R34</a>
+              </div>
+            </div>
+
+            <div class="history-item-p5">
+              <div>
+                <span class="history-date-p5">23 Oct 2025:</span> A leading LLM provider agreed to access up to one million of a hyperscaler's TPU chips, "well over a gigawatt" of capacity for 2026.
+              </div>
+              <div class="history-src-p5">
+                Joint company press release on the hyperscaler's press site: “[Provider] to Expand Use of [Hyperscaler] Cloud TPUs and Services”, 23 Oct 2025. <a href="https://www.googlecloudpresscorner.com/2025-10-23-Anthropic-to-Expand-Use-of-Google-Cloud-TPUs-and-Services" target="_blank" rel="noopener noreferrer" class="src-link">Open original</a><a href="https://www.googlecloudpresscorner.com/2025-10-23-Anthropic-to-Expand-Use-of-Google-Cloud-TPUs-and-Services" target="_blank" class="ref-badge">R35</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right: Upcoming Events -->
+        <section id="sec-upcoming-events">
+          <div class="section-banner">
+            <div class="section-banner-title">
+              <span class="banner-theme-tag people">04 PEOPLE &amp; INDUSTRY · P5</span>
+              <span>UPCOMING AI EVENTS</span>
+            </div>
+            <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 6px;">
+            <div class="event-item-p5">
+              <div class="event-dates-p5">2–6 Nov 2026</div>
+              <div><a href="https://ai-research.tec.mx/en/evento/micai-2026-25-years-advancing-artificial-intelligence-mexico" target="_blank" rel="noopener noreferrer" class="src-link"><strong>MICAI 2026</strong></a><a href="https://ai-research.tec.mx/en/evento/micai-2026-25-years-advancing-artificial-intelligence-mexico" target="_blank" class="ref-badge">R37</a> · Chihuahua, Mexico</div>
+            </div>
+
+            <div class="event-item-p5">
+              <div class="event-dates-p5">9–12 Nov 2026</div>
+              <div><a href="https://websummit.com/" target="_blank" rel="noopener noreferrer" class="src-link"><strong>Web Summit</strong></a><a href="https://websummit.com/" target="_blank" class="ref-badge">R38</a> · Lisbon</div>
+            </div>
+
+            <div class="event-item-p5">
+              <div class="event-dates-p5">18–20 Nov 2026</div>
+              <div><a href="https://www.luxembourgforfinance.com/?p=20389" target="_blank" rel="noopener noreferrer" class="src-link"><strong>Singapore FinTech Festival</strong></a><a href="https://www.luxembourgforfinance.com/?p=20389" target="_blank" class="ref-badge">R39</a> · Singapore EXPO</div>
+              <div style="font-size: 10px; color: #64748b; font-style: italic;">(dates per exhibitor listing; organiser site not reached)</div>
+            </div>
+
+            <div class="event-item-p5">
+              <div class="event-dates-p5">6–13 Dec 2026</div>
+              <div><a href="https://neurips.cc/Conferences/2026/Dates" target="_blank" rel="noopener noreferrer" class="src-link"><strong>NeurIPS 2026</strong></a><a href="https://neurips.cc/Conferences/2026/Dates" target="_blank" class="ref-badge">R40</a> · Sydney, Atlanta, Paris</div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Caution Note & Feedback -->
+      <section id="sec-caution-note" style="margin-top: 6px;">
+        <div class="section-banner">
+          <div class="section-banner-title">
+            <span class="banner-theme-tag act">05 ACT &amp; REFLECT · P5</span>
+            <span>CAUTION NOTE</span>
+          </div>
+          <a href="#agenda" class="jump-agenda-btn">↑ Agenda</a>
+        </div>
+
+        <div style="background: #fdfcf9; border: 1px solid #dcd7ca; border-radius: 3px; padding: 8px 12px; margin-top: 4px; display: flex; flex-direction: column; gap: 4px; font-size: 11px; line-height: 1.4; color: #252f2a;">
+          <p>
+            <strong>Caution: verify before business use.</strong> This brief summarises the public sources linked beside each item; forecasts, projections and "up to" figures are the sources' own. Verify any item, figure or quote independently against the original source before using it for business decisions. Small red reference numbers (R1, R2…) point to the companion Source Register for this edition.
+          </p>
+          <p>
+            Found this useful? Give it a 👍 on LinkedIn and share it with a colleague.
+          </p>
+          <p style="font-style: italic; color: #4b5850;">
+            Model providers are described in general terms by editorial policy. Every item links to its source.
+          </p>
+        </div>
+      </section>
+
+      <!-- Page 5 Footer -->
+      <footer class="page-footer-bar">
+        <div class="page-footer-left"><a href="#agenda" class="jump-agenda-btn">↑ Agenda</a> · By Jayaraman (Jay) Ganapathi</div>
+        <div class="page-footer-right">Edition 05 · Page 5 of 5</div>
+      </footer>
+    </article>
+
+  </main>
+
+  <!-- GOOGLE ANALYTICS INTERACTION & READING TRACKING -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof gtag !== 'function') return;
+
+      // 1. Track PDF Downloads
+      document.querySelectorAll('a[download], a[href$=".pdf"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          var fileName = this.getAttribute('download') || this.getAttribute('href');
+          gtag('event', 'file_download', {
+            event_category: 'Downloads',
+            event_label: fileName,
+            file_name: fileName,
+            file_extension: 'pdf',
+            link_url: this.href
+          });
+        });
+      });
+
+      // 2. Track Print / Save as PDF clicks
+      document.querySelectorAll('button[onclick*="print"]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          gtag('event', 'print_document', {
+            event_category: 'Document Actions',
+            event_label: document.title,
+            page_title: document.title
+          });
+        });
+      });
+
+      // 3. Track Page Jump Navigation
+      document.querySelectorAll('.page-jump-link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          var targetPage = this.getAttribute('href');
+          gtag('event', 'page_jump', {
+            event_category: 'Reader Navigation',
+            event_label: targetPage,
+            target_page: targetPage
+          });
+        });
+      });
+
+      // 4. Track Issue Switcher Navigation
+      document.querySelectorAll('.issue-btn, .issues-nav-pill').forEach(function (link) {
+        if (link.tagName === 'A') {
+          link.addEventListener('click', function () {
+            var targetIssue = this.textContent.trim();
+            gtag('event', 'switch_issue', {
+              event_category: 'Newsletter Navigation',
+              event_label: targetIssue,
+              destination: this.href
+            });
+          });
+        }
+      });
+
+      // 5. Track Back to Website Clicks
+      document.querySelectorAll('a.toolbar-btn[href*="aiml"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          gtag('event', 'navigate_back', {
+            event_category: 'Reader Navigation',
+            event_label: 'Back to Website',
+            link_url: this.href
+          });
+        });
+      });
+
+      // 6. Track Outbound Citations & External Source Links
+      document.querySelectorAll('a.src-link, a.pdf-link, .agenda-hint a, .brief-link').forEach(function (link) {
+        if (link.hostname && link.hostname !== window.location.hostname) {
+          link.addEventListener('click', function () {
+            gtag('event', 'outbound_citation_click', {
+              event_category: 'Outbound Citations',
+              event_label: this.href,
+              destination_url: this.href
+            });
+          });
+        }
+      });
+
+      // 7. Reading Depth Tracking (IntersectionObserver for individual page sheets)
+      if ('IntersectionObserver' in window) {
+        var readPages = new Set();
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.35) {
+              var pageId = entry.target.id;
+              if (pageId && !readPages.has(pageId)) {
+                readPages.add(pageId);
+                gtag('event', 'page_sheet_view', {
+                  event_category: 'Reader Engagement',
+                  event_label: pageId,
+                  sheet_id: pageId,
+                  document_title: document.title
+                });
+              }
+            }
+          });
+        }, { threshold: 0.35 });
+
+        document.querySelectorAll('.page-sheet').forEach(function (sheet) {
+          observer.observe(sheet);
+        });
+      }
+    });
+  </script>
+
+
+</body>
+</html>

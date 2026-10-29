@@ -18,11 +18,11 @@ for f in files:
         print(f + ' already contains AI Experience Center')
         continue
 
-    # 1. Desktop nav: exactly 12 spaces before <a href="ai-newsletter-issue-04.html">AI News Letter</a>
+    # 1. Desktop nav: exactly 12 spaces before <a href="ai-newsletter-issue-05.html">AI News Letter</a>
     desktop_pattern = r'(\n {12}<a href="ai-newsletter-issue-03\.html">AI News Letter</a>)'
     desktop_replacement = r'\n            <a href="invoice-to-pay/">AI Experience Center</a>\1'
 
-    # 2. Drawer nav: exactly 10 spaces before <a href="ai-newsletter-issue-04.html">AI News Letter</a>
+    # 2. Drawer nav: exactly 10 spaces before <a href="ai-newsletter-issue-05.html">AI News Letter</a>
     drawer_pattern = r'(\n {10}<a href="ai-newsletter-issue-03\.html">AI News Letter</a>)'
     drawer_replacement = r'\n          <a href="invoice-to-pay/">AI Experience Center</a>\1'
 
