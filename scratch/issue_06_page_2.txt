@@ -1,0 +1,136 @@
+The AI Leadership Brief
+2 6 O C T – 1 N O V 2 0 2 6 · P A G E 2 O F 6
+0 1 G R O W T H & R E V E N U E · P 2
+L E A D : D E M A N D S H O W S U P I N T H E R E S U L T S
+↑ Agenda
+COMPANY RESULTS · 28–30 OCT 2026 · SOUTH KOREA, NORTH AMERICA, EUROPE
+A memory maker, a processor maker and an IT-services firm report growth; SK hynix says
+supply is not keeping pace and Intel's CEO prioritises more supply
+COMPANY · DATE
+WHAT IT REPORTED
+DEMAND AND SUPPLY, IN THE COMPANY'S WORDS
+SOURCE
+SK hynix
+28 Oct · memory chips
+3Q26 revenue 104.6 trillion won, up 328% year on
+year; operating margin 80%. Preliminary and
+unaudited.
+Supply “is not keeping pace with the growth of the
+market”; expects “the structure in which demand exceeds
+supply to persist through 2030” (company outlook, not an
+independent forecast).
+R1
+Intel
+29 Oct · processors
+3Q26 revenue $16.5B, up 21%; Data Center and AI
+segment $7.3B, up 78%. Q4 guidance $15.0–16.0B
+(company forecast).
+Growth led by the Data Center and AI segment (our
+reading: the segment added about $3.2B, more than the
+group's total increase). CEO Lip-Bu Tan: “Our immediate
+priority is to unlock additional supply to meet extraordinary
+demand for our Xeon family.” (per company release). The
+release does not attribute the growth to AI.
+R24
+Capgemini
+30 Oct · IT services
+Q3 revenue €6,073M, up 11.7% at constant
+currency; bookings €5,401M, up 3.4%. 2026 growth
+outlook raised to +9.0% to +9.5% (constant
+currency; company forecast). Growth includes
+acquisitions (notably WNS and Cloud4C), which the
+company says had a “material contribution to
+growth” in North America, UK & Ireland and Asia-
+Pacific; it estimates about 5 points of 2026 growth
+is inorganic and gives no Q3 organic figure.
+CEO Aiman Ezzat: “Clients are now focused on deploying
+AI at enterprise scale” (per company release). The release
+cites clients “transforming their business operations with
+agentic AI”.
+R25
+YEAR-ON-YEAR GROWTH REPORTED THIS WEEK
+SK hynix (prelim.,
+unaudited)
++328%
+Intel Data Center & AI
++78%
+Intel total revenue
++21%
+Capgemini (incl.
+acquisitions)
++11.7%
+Company figures; measures differ (total vs segment; reported vs
+constant currency). Bars scaled to +328%.
+BUSINESS LENS · FROM THE SOURCES
+SK hynix says supply “is not keeping pace” and expects demand to
+exceed it through 2030; Intel's CEO says the priority is to “unlock
+additional supply”; and Capgemini's CEO says clients are now focused
+on deploying AI at enterprise scale.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+Have we secured the compute our AI plans assume, at a known
+price?
+Which of our AI use cases has a measured revenue or cost result we
+could report?
+Are we still in pilots while clients of our suppliers scale?
+0 2 C O S T & O U T P U T · P 2
+N E W L L M R E L E A S E S O R S E C U R I T Y P A T C H R E L E A S E S
+↑ Agenda
+DATE
+TYPE
+WHAT WAS RELEASED
+COST, ACCESS AND RISK (FROM THE SOURCE)
+SOURCES
+26 Oct
+MODEL
+OpenAI GPT-6.1 Terra, a medium-
+sized model for computer use and
+writing; for Plus, Pro, Enterprise and
+Edu users in ChatGPT Work and
+Codex, and via the API.
+$1 input / $5 output per million tokens (standard API price),
+which the maker says is 50% below its predecessor; it also
+says tasks finish “over three times faster” than GPT-6 Astra
+and GPT-6.1 Sol. Maker's claims, as reported by
+BleepingComputer; OpenAI's page not opened.
+AnnouncementR2
+· reportR2a
+28 Oct
+MODEL
+RESTRICTED
+Google Gemini 4 Carbon, Google's
+newest frontier model, for
+cybersecurity tasks and long-
+running engineering work.
+$2 / $10 per million tokens. Offered first to “a subset of
+cybersecurity defenders” through a dedicated access
+programme while safeguards are tested (as reported by
+Reuters). Google's page not opened.
+AnnouncementR3
+· ReutersR3a
+26 Oct
+SECURITY
+PATCH
+vLLM v0.32.0 and SGLang
+v0.5.22+, open-source engines for
+running AI models on your own
+servers.
+Our view: relevant mainly where your teams or vendors self-
+host models. vLLM 0.32.0 fixes five advisories published 26
+Oct (per CVE records and vulnerability databases; IDs in the
+Source Register); CISA's enrichment of one record lists no
+known exploitation (as of 5 Nov 2026). SGLang v0.5.22 or
+later is advised after the cache incident on p3.
+CVER4 · OSVR4a ·
+releaseR4b ·
+reportR5
+BUSINESS LENS · FROM THE SOURCES
+OpenAI prices GPT-6.1 Terra 50% below its predecessor (maker's claim).
+Google is offering Gemini 4 Carbon first to a subset of cybersecurity
+defenders.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+Which AI business cases did we reject on cost that should be re-run
+now?
+Do we know which AI serving software our vendors run, and who
+patches it?
+↑ Agenda
+Edition 06 · Page 2 of 6

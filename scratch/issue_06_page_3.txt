@@ -1,0 +1,81 @@
+The AI Leadership Brief
+2 6 O C T – 1 N O V 2 0 2 6 · P A G E 3 O F 6
+0 2 C O S T & O U T P U T · P 3
+A I R E S E A R C H : R E L I A B I L I T Y A N D Q U A L I T Y C H E C K S
+↑ Agenda
+PREPRINT · 28 OCT 2026 · AGENT RELIABILITY
+Preprint: a “decision gate” checks what an AI agent is about to do before it acts
+The authors' framework, JevAct, turns domain policies into checks that run before selected agent actions; a separate decision model
+scores the structured questions as probabilities, and flagged actions get targeted feedback for a bounded revision. No change to the
+agent's model or tools is needed. Tested with eleven LLM agents on τ²-bench Airline and Telecom tasks and a function-calling
+benchmark (BFCL), the authors report reliability gains, most consistent on telecom and BFCL; airline results were “more mixed”.
+Authors' own measurements; not peer reviewed.
+Shoham I, David Y, Akrabi O, Bilgory E, Levy I, Marreed S, Zeltyn S, Shlomov S. “Think Before You Act: Decision Gate for LLM Agents.” arXiv preprint v1,
+28 Oct 2026. arxiv.org/abs/2610.38620v1R10 · DOI 10.48550/arXiv.2610.38620 (arXiv-issued)
+BUSINESS LENS · FROM THE SOURCE
+The tests use τ²-bench Airline and Telecom tasks and BFCL. The
+authors report gains were not uniform: airline results were “more mixed”.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+Before our agents act on customers, money or data, what stops a
+wrong action?
+Who owns the policies an agent must follow?
+PREPRINT (MEDRXIV) · V2 POSTED 28 OCT 2026 · HEALTHCARE
+QUALITY ASSURANCE
+Preprint: AI models caught most planted errors in
+clinical-trial reports, and flagged issues in reports
+without them
+The authors inserted methodological errors into randomised clinical-trial
+reports and asked 15 LLMs (four open-weight) to review them. On 58 trials
+published in 2026, major-error detection ranged from 58% to 99%, with
+mean review times of 1.4 to 16.3 minutes. Models “still flagged 14% to 29%
+of the error types in control reports without inserted errors”.
+Limits: the human comparison (27% mean detection) comes from an earlier
+study of three reports; scoring used two blinded LLM judges; four authors
+are affiliated with ResearchHub Foundation, “whose open-science platform
+… is implementing AI-assisted review”. Not peer reviewed.
+Brian D, Pereira Hernández XI, Yin H, Koury J, Rust R. “Large language models detect
+methodological errors that human peer review misses in clinical trials.” medRxiv
+preprint v2, posted 28 Oct 2026; v1 date not confirmed.
+doi.org/10.64898/2026.10.25.26366455R11
+ERROR-DETECTION SCORES, 58 TRIALS (2026)
+All models
+58–99%
+Open-weight
+66–89%
+Control flags
+14–29%
+Ranges as reported (0–100%). Control flags: share of error
+types flagged in control reports without inserted errors. 15
+models reviewed 3 trials; 12 reviewed the other 55.
+BUSINESS LENS · FROM THE SOURCE
+Mean review times were 1.4 to 16.3 minutes; in control
+reports without inserted errors, models still flagged 14% to
+29% of error types.
+ASK YOUR TEAM · EDITOR'S QUESTION
+Where could AI pre-screening speed our quality or
+compliance reviews, and who reviews the flags it raises?
+No peer-reviewed paper published in the week met this brief's relevance and sourcing rules; both items above are preprints.
+0 3 R I S K & C O M P L I A N C E · P 3
+V E N D O R & S E C U R I T Y R I S K
+↑ Agenda
+CLOUD AI SERVICE · REPORT DATED 26 OCT 2026 · PROVIDER'S OWN ACCOUNT
+A large cloud provider says 155 responses from one hosted model contained other users'
+data
+In the provider's incident report, a hosted coding model returned 155 responses containing data from other users' sessions between
+27 Aug and 9 Sep 2026, all to very long prompts. The model was offered with a larger context window than its cache could hold; the
+provider says, “We were aware of this mismatch before launch.” A bug in the open-source SGLang engine then let those requests
+read leftover data from earlier requests. A researcher reported it on 8 Sep; the provider made the model private within about 40
+minutes of declaring an incident, found “no evidence of deliberate exploitation”, and says no other hosted model was affected. The
+provider is not named because the news is negative.
+Source: provider's incident reportR5
+BUSINESS LENS · FROM THE SOURCE
+Per the provider, the exposure ran from 27 Aug to 9 Sep, was reported
+by a security researcher through its HackerOne programme, and it knew
+of the size mismatch before launch.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+Do our AI contracts cover data separation, incident notice and audit
+rights?
+Which sensitive workloads should run on dedicated rather than
+shared capacity?
+↑ Agenda
+Edition 06 · Page 3 of 6

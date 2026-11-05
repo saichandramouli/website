@@ -1,0 +1,101 @@
+The AI Leadership Brief
+2 6 O C T – 1 N O V 2 0 2 6 · P A G E 6 O F 6
+01 · P6
+LEADERS SAID
+↑ Agenda
+“Capgemini delivered another solid quarter, with growth of
++11.7% at constant exchange rates”
+Aiman Ezzat, CEO, Capgemini · per company release, Paris, 30 Oct 2026 ·
+releaseR25
+“This Series D financing marks an important milestone for
+FuriosaAI and reflects the confidence of investors around
+the world in our technology and ability to execute.”
+June Paik, Co-Founder and CEO, FuriosaAI · per company release, 29 Oct 2026 ·
+releaseR13
+“Of the 2 million people we expect to train in AI skills
+before 2030, nearly 13% have already participated through
+certification, student education and community
+programmes.”
+Manish Prasad, President and Managing Director, SAP Indian Subcontinent · per
+company release, Mumbai, 28 Oct 2026 · releaseR9
+All quotes come from company announcements. Intel's CEO quote appears in the
+lead (p2).
+05 · P6
+ONE YEAR AGO
+↑ Agenda
+Same week in 2025: 26 Oct–1 Nov 2025.
+28 Oct 2025: A large online retailer said it would cut about 14,000
+corporate jobs as it ramped up AI spending (per AP).
+Associated Press: “[Company] cuts 14,000 corporate jobs as spending on
+artificial intelligence accelerates”, 28 Oct 2025. AP copy on News 12R21
+28 Oct 2025: NVIDIA agreed a $1.0B equity investment in Nokia
+alongside an AI-RAN partnership for mobile networks.
+Nokia stock exchange release: “Inside Information: NVIDIA to make USD 1.0
+billion equity investment in Nokia…”, 28 Oct 2025. Open originalR22
+30 Oct 2025: OpenAI put Aardvark, an “agentic security
+researcher”, into private beta; an archived copy of its page (Mar
+2026) says the tool has since been renamed.
+OpenAI launch post: “Introducing Aardvark”, 30 Oct 2025. Archived originalR23
+01 · P6
+KEY NUMBERS
+↑ Agenda
++78%
+Intel Data Center and AI
+revenue, 3Q26 year on
+year (company) ›
+2030
+SK hynix expects
+memory demand to
+exceed supply through
+2030 (company outlook)
+›
++9.0–9.5%
+Capgemini's raised
+2026 outlook, constant
+currency; about 5 points
+from acquisitions
+(company forecast) ›
+50%
+lower API price for
+OpenAI's GPT-6.1 Terra
+vs its predecessor
+(maker's claim) ›
+155
+responses with other
+users' data, one hosted
+model (provider's count)
+›
+$1.27B
+across four rounds of
+$100M+ (our sum of
+announced amounts) ›
+04 · P6
+UPCOMING EVENTS
+↑ Agenda
+15–20 Nov 2026
+SC26 (high-performance computing and AI
+infrastructure)R18 · McCormick Place, Chicago
+16–19 Nov 2026
+MEDICA (medical technology and digital health)R19 ·
+Messe Düsseldorf (dates per JETRO listingR19a)
+9–10 Dec 2026
+The AI Summit New YorkR20 · Javits Center, New York
+(organiser site not opened; dates per event listings)
+None of these events was listed in Edition 05.
+05 PEOPLE & ACTION · P6 · CAUTION NOTE
+Caution: verify before business use. This brief summarises the
+public sources linked beside each item. Forecasts, plans, preliminary
+results and maker's claims are the sources' own. Business lens lines
+restate the linked source unless marked “Our summary”; Ask your
+leadership team lines are the editor's questions, not facts or advice.
+Headlines, summaries, role tips and leadership actions are the
+editor's wording. Verify any item, figure or quote independently
+against the original source before using it for business decisions.
+Small red reference numbers (R1, R2…) point to the companion
+Source Register. ↑ Agenda
+Found this useful? Give it a 👍 on LinkedIn and share it with a
+colleague.
+AI model makers are named; the cloud provider in the incident item is not named
+because the news is negative. Every item links to its source.
+↑ Agenda · By Jayaraman (Jay) Ganapathi, People Prime Worldwide
+Edition 06 · Page 6 of 6

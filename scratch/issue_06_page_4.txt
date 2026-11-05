@@ -1,0 +1,58 @@
+The AI Leadership Brief
+2 6 O C T – 1 N O V 2 0 2 6 · P A G E 4 O F 6
+0 3 R I S K & C O M P L I A N C E · P 4
+U N S O L V E D P R O B L E M S I N A I
+↑ Agenda
+PREPRINT · 28 OCT 2026 · PROMPT INJECTION
+Preprint: where a hidden instruction sits can change whether AI agents obey it
+The authors built three agent testbeds (tool use, coding and daily workflows) and moved the same injected instruction between
+locations. They report that agents trust some parts of their environment more than others, which they call the “trust region effect”. In
+one result, an agent powered by OpenAI's GPT-5.4 followed an unsafe instruction placed in a repository documentation file (README
+or TODO) 2.6 times more often on average than the same instruction placed in a code or data file. Not peer reviewed.
+Guo C, Liu X, Yang W, Feng M, Song J, Ma Q, Buractaon C, White C, Li B, Gao J. “Where You Inject Matters: The Trust Region Effect in LLM Agents.” arXiv
+preprint v1, 28 Oct 2026. arxiv.org/abs/2610.38867R8 · DOI 10.48550/arXiv.2610.38867
+BUSINESS LENS · FROM THE SOURCE
+In one result, an agent powered by GPT-5.4 followed the same unsafe
+instruction 2.6 times more often on average in a documentation file than
+in a code or data file.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+Are our agents allowed to act on instructions they find in documents,
+emails or tickets?
+0 3 R I S K & C O M P L I A N C E · P 4
+L A W S , R U L E S & G U I D A N C E
+↑ Agenda
+INDIA · LAUNCHED IN BENGALURU, REPORTED 31 OCT 2026 · DRAFT FRAMEWORK
+MeitY releases a draft handbook for training AI on sensitive data without handing it over
+Status: marked “Draft for Discussion”; a framework, not a law. Scope: the handbook on the Data Empowerment and Protection
+Architecture (DEPA) for AI Training, prepared with the iSPIRT Foundation and steered by MeitY, proposes that training happens where
+the data sits: in its main design, raw data stays with the training-data provider inside secure data environments and is not exposed to
+those using it for training. It names roles including training-data providers and consumers and data-exchange platforms. It calls itself
+a “living resource”, invites “actionable recommendations” and gives no deadline. As reported by ETV Bharat, MeitY Secretary S
+Krishnan unveiled it at a roundtable.
+Sources: MeitY handbook (PDF)R12 · ETV BharatR12a
+BUSINESS LENS · FROM THE SOURCE
+In the draft's main design, raw data stays with its provider and is not
+exposed to those training on it. The draft invites recommendations.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+If we operate in India, would this model open data partnerships we
+cannot do today, and should we respond to the draft?
+0 4 C A P I T A L & M A R K E T S · P 4
+I N F R A S T R U C T U R E & C A P A C I T Y
+↑ Agenda
+EUROPE · ROMANIA · 30 OCT 2026 · COMPANY PLANS
+Runware plans an assembly line for factory-built AI data-centre pods
+As reported by TechCrunch, Runware's chief executive says the company plans to scale its Romania factory to 30 MW of data-centre
+capacity per day by 2028 (“nearly 1 gigawatt per month”), with a second factory due early next year and US expansion to follow. The
+liquid-cooled pods need power and internet but no water connection. Runware aims to have pods online within 48 hours of delivery
+(installation and setup, not manufacturing) and cites $1 billion of committed interest covering more than 20 MW. Company plans and
+claims, not measured output.
+Source: TechCrunch (Dominic-Madori Davis)R6
+BUSINESS LENS · FROM THE SOURCE
+Runware aims to bring pods online within 48 hours of delivery and to
+produce 30 MW of capacity per day by 2028 (company plans, not
+measured output).
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+Would modular, faster-to-deploy capacity change our build, rent or wait
+decision for AI compute?
+↑ Agenda
+Edition 06 · Page 4 of 6

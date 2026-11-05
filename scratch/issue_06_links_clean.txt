@@ -1,0 +1,139 @@
+=== page_1 ===
+  "↑ Agenda" -> Page 1
+  "60-second summary" -> Page 1
+  "Your role" -> Page 1
+  "Leadership actions" -> Page 1
+  "p1 60-second summary" -> Page 1
+  "p2 Lead: results & supply" -> Page 2
+  "p6 Key numbers" -> Page 6
+  "p6 Leaders said" -> Page 6
+  "p2 New LLM releases
+or security patch
+releases" -> Page 2
+  "p3 AI research" -> Page 3
+  "p3 Vendor & security risk" -> Page 3
+  "p4 Unsolved problems" -> Page 4
+  "p4 Laws & guidance" -> Page 4
+  "p5 Investments ($100M+)" -> Page 5
+  "p4 Infrastructure" -> Page 4
+  "p5 Regional index" -> Page 5
+  "p6 Upcoming events" -> Page 6
+  "p1 Your role" -> Page 1
+  "p1 Actions" -> Page 1
+  "p5 Operating models" -> Page 5
+  "p5 Workforce" -> Page 5
+  "p6 One year ago" -> Page 6
+  "p6 Caution note" -> Page 6
+  "Verify before business use." -> Page 6
+  "↑ Agenda" -> Page 1
+  "›" -> Page 2
+  "›" -> Page 2
+  "›" -> Page 2
+  "›" -> Page 3
+  "›" -> Page 5
+  "↑ Agenda" -> Page 1
+  "›" -> Page 2
+  "›" -> Page 2
+  "›" -> Page 2
+  "›" -> Page 3
+  "›" -> Page 5
+  "›" -> Page 5
+  "↑ Agenda" -> Page 1
+  "›" -> Page 2
+  "›" -> Page 2
+  "›" -> Page 2
+  "›" -> Page 3
+  "›" -> Page 3
+  "›" -> Page 2
+  "›" -> Page 5
+  "›" -> Page 4
+  "↑ Agenda" -> Page 1
+=== page_2 ===
+  "↑ Agenda" -> Page 1
+  "R1" -> https://www.placera.se/pressmeddelanden/sk-hynix-announces-3q26-financial-results-20261028
+  "R24" -> https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results
+  "R25" -> https://www.capgemini.com/news/press-releases/q3-2026-momentum-drives-upgrade-in-capgeminis-2026-outlook/
+  "↑ Agenda" -> Page 1
+  "tR2" -> https://openai.com/index/introducing-gpt-6-1-terra/
+  "tR2a" -> https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/
+  "tR3" -> https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+  "R3a" -> https://www.khaleejtimes.com/business/google-launches-gemini-4-carbon-ai-model-with-cybersecurity-focus-2
+  "R4" -> https://www.cve.org/CVERecord?id=CVE-2026-115915
+  "VR4a" -> https://osv.dev/vulnerability/PYSEC-2026-4349
+  "R4b" -> https://github.com/vllm-project/vllm/releases/tag/v0.32.0
+  "R5" -> https://blog.cloudflare.com/kv-cache-exposure-remediation/
+  "↑ Agenda" -> Page 1
+=== page_3 ===
+  "↑ Agenda" -> Page 1
+  "arxiv.org/abs/2610.38620v1" -> https://arxiv.org/abs/2610.38620v1
+  "R10" -> https://arxiv.org/abs/2610.38620v1
+  "doi.org/10.64898/2026.10.25.26366455" -> https://www.medrxiv.org/content/10.64898/2026.10.25.26366455v2
+  "R11" -> https://www.medrxiv.org/content/10.64898/2026.10.25.26366455v2
+  "↑ Agenda" -> Page 1
+  "R5" -> https://blog.cloudflare.com/kv-cache-exposure-remediation/
+  "↑ Agenda" -> Page 1
+=== page_4 ===
+  "↑ Agenda" -> Page 1
+  "arxiv.org/abs/2610.38867" -> https://arxiv.org/abs/2610.38867
+  "R8" -> https://arxiv.org/abs/2610.38867
+  "↑ Agenda" -> Page 1
+  "R12" -> https://www.meity.gov.in/static/uploads/2026/10/02d8224e4cd6c8c29be5a5198e795158.pdf
+  "R12a" -> https://www.etvbharat.com/en/bharat/govt-launches-handbook-on-depa-for-ai-training-enn26103101486
+  "↑ Agenda" -> Page 1
+  "R6" -> https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/
+  "↑ Agenda" -> Page 1
+=== page_5 ===
+  "↑ Agenda" -> Page 1
+  "R13" -> https://via.tt.se/pressmeddelande/4620607/furiosaai-secures-dollar620-million-series-d-to-meet-surging-enterprise-ai-inference-demand-and-accelerate-next-gen-silicon?lang=en
+  "R14" -> https://www.investing.com/news/company-news/upwind-closes-400-million-series-c-at-38-billion-valuation-as-revenue-quadruples-in-2026-4980378
+  "yR14a" -> https://wsau.com/?p=1030739
+  "R15" -> https://www.businesswire.com/news/home/20261029114967/en/Serval-Raises-%24150M-Series-C-at-%243B-Valuation-Led-by-Sequoia
+  "y
+R15a" -> https://fortune.com/2026/10/29/serval-servicenow-fight-series-c-3-billion-valuation-sequoia/
+  "R16" -> https://hex.tech/blog/hex-new-era/
+  "R16a" -> https://dealstreetasia.com/stories/peak-xv-co-anchors-hex-funding-499490
+  "↑ Agenda" -> Page 1
+  "R7" -> https://www.hitachids.com/blog/hitachi-launches-digital-services-company/
+  "↑ Agenda" -> Page 1
+  "rR9" -> https://news.sap.com/india/2026/10/sap-india-doubles-down-on-ai-skilling-to-prepare-two-million-people-for-the-future-of-work-by-2030/
+  "↑ Agenda" -> Page 1
+  "Intel results" -> Page 2
+  "Upwind · Serval · Hex" -> Page 5
+  "Cross-tenant cache incident" -> Page 3
+  "Capgemini results (France)" -> Page 2
+  "Runware pod factory (Romania)" -> Page 4
+  "MeitY DEPA draft" -> Page 4
+  "SAP India AI skilling" -> Page 5
+  "Hitachi Digital (physical AI)" -> Page 5
+  "SK hynix results and outlook" -> Page 2
+  "FuriosaAI $620M" -> Page 5
+  "New models and patches" -> Page 2
+  "Injection placement" -> Page 4
+  "Agent decision gate · AI review of trials" -> Page 3
+  "↑ Agenda" -> Page 1
+=== page_6 ===
+  "↑ Agenda" -> Page 1
+  "R25" -> https://www.capgemini.com/news/press-releases/q3-2026-momentum-drives-upgrade-in-capgeminis-2026-outlook/
+  "R13" -> https://via.tt.se/pressmeddelande/4620607/furiosaai-secures-dollar620-million-series-d-to-meet-surging-enterprise-ai-inference-demand-and-accelerate-next-gen-silicon?lang=en
+  "R9" -> https://news.sap.com/india/2026/10/sap-india-doubles-down-on-ai-skilling-to-prepare-two-million-people-for-the-future-of-work-by-2030/
+  "↑ Agenda" -> Page 1
+  "AP copy on News 12" -> https://connecticut.news12.com/amazon-cuts-14000-corporate-jobs-as-spending-on-artificial-intelligence-accelerates
+  "R21" -> https://connecticut.news12.com/amazon-cuts-14000-corporate-jobs-as-spending-on-artificial-intelligence-accelerates
+  "Open original" -> https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/
+  "R22" -> https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/
+  "Archived original" -> https://web.archive.org/web/20260329000702/https://openai.com/index/introducing-aardvark/
+  "R23" -> https://web.archive.org/web/20260329000702/https://openai.com/index/introducing-aardvark/
+  "↑ Agenda" -> Page 1
+  "›" -> Page 2
+  "›" -> Page 2
+  "›" -> Page 2
+  "›" -> Page 2
+  "›" -> Page 3
+  "›" -> Page 5
+  "↑ Agenda" -> Page 1
+  "R18" -> https://sc26.supercomputing.org/
+  "R19" -> https://www.medica.de/
+  "R19a" -> https://www.jetro.go.jp/en/database/j-messe/tradefair/detail/158547
+  "R20" -> https://newyork.theaisummit.com/
+  "↑ Agenda" -> Page 1
+  "↑ Agenda · By Jayaraman (Jay) Ganapathi, People Prime Worldwide" -> Page 1

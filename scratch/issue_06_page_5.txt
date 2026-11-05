@@ -1,0 +1,104 @@
+The AI Leadership Brief
+2 6 O C T – 1 N O V 2 0 2 6 · P A G E 5 O F 6
+0 4 C A P I T A L & M A R K E T S · P 5
+I N V E S T M E N T S ( $ 1 0 0 M A N D A B O V E )
+↑ Agenda
+COMPANY
+AMOUNT
+SERIES · LEAD(S)
+BUSINESS PROBLEM IT TARGETS
+CONFIRMED BY
+FuriosaAI
+$620M
+D · no lead named; largest investor
+Korea's National Growth Fund
+($280M)
+AI inference chips for data centres; plans
+20,000 units in 2026 and 40,000+ in 2027
+Company releaseR13, 29 Oct 2026
+Upwind
+$400M
+C · Bessemer Venture Partners
+Cloud and AI security
+Company releaseR14 (not opened;
+Reuters copyR14a), 28 Oct 2026
+Serval
+$150M
+C · Sequoia
+AI agents for enterprise service
+management
+Company releaseR15 (not opened;
+FortuneR15a), 29 Oct 2026
+Hex
+$100M
+Peak XV, 137 Ventures
+AI analytics for people and agents
+Company blogR16 (not opened;
+DealStreetAsiaR16a), 27 Oct 2026
+Only rounds of $100M or more, announced 26 Oct–1 Nov 2026. Amounts and leads come from each company's announcement; where we could not open it, a
+bylined report quoting it is linked. Total $1.27B is our sum of the four announced amounts; the “business problem” column is our short description. Counsel note
+supports only (R16b). No valuations.
+BUSINESS LENS · OUR SUMMARY
+Inference chips, cloud and AI security, service-management agents and
+AI analytics.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+In each category, are we buying, building or waiting, and are our current
+vendors keeping pace?
+0 5 P E O P L E & A C T I O N · P 5
+O P E R A T I N G M O D E L S : A I I N I N D U S T R I A L S E C T O R S
+↑ Agenda
+INDUSTRIAL · JAPAN · 28 OCT 2026 · ANNOUNCED PLAN
+Hitachi to launch a 35,000-person digital services company with physical AI as a named
+focus
+Hitachi plans to launch Hitachi Digital Inc. on 1 April 2027, uniting GlobalLogic and Hitachi Digital Services: about 35,000 professionals
+in 27 countries serving more than 880 active clients. Named focus areas are physical AI, data and intelligence, cloud and site
+reliability engineering, and enterprise applications. An announced plan; the company is not yet operating.
+Source: Hitachi announcementR7
+BUSINESS LENS · FROM THE SOURCE
+Hitachi is uniting two digital units into one company of about 35,000
+people serving more than 880 clients.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+Is our AI capability run as a business with clients and targets, or spread
+across cost centres?
+0 5 P E O P L E & A C T I O N · P 5
+W O R K F O R C E & T A L E N T
+↑ Agenda
+INDIA · MUMBAI · 28 OCT 2026 · COMPANY PROGRAMME
+SAP India adds programmes toward 2 million people
+with AI skills by 2030
+SAP announced more programmes toward equipping two million people in
+India with AI-ready skills by 2030, part of a global pledge to help 12 million.
+SAP India says nearly 13% of the two million have already taken part through
+certification, student education and community programmes. Target and
+progress figures are the company's own.
+Source: SAP India News CenterR9
+SAP INDIA AI-SKILLING GOAL
+Taken part
+~13%
+Goal by 2030
+2M
+Company-reported progress toward its own target; not
+independently verified.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S
+QUESTION
+What share of our workforce has AI training, and is it tied
+to changed roles?
+0 4 C A P I T A L & M A R K E T S · P 5
+R E G I O N A L I N D E X
+↑ Agenda
+North America
+Intel results · Upwind · Serval · Hex · Cross-tenant cache incident
+Europe & UK
+Capgemini results (France) · Runware pod factory (Romania)
+India
+MeitY DEPA draft · SAP India AI skilling
+Japan
+Hitachi Digital (physical AI)
+Australia
+No AI item met our sourcing and relevance rules this week.
+South Korea
+SK hynix results and outlook · FuriosaAI $620M
+Global
+New models and patches · Injection placement · Agent decision gate · AI review of trials
+↑ Agenda
+Edition 06 · Page 5 of 6

@@ -1,0 +1,1574 @@
+{
+  "page_1": [
+    {
+      "rect": [
+        516.8,
+        102.0,
+        564.0,
+        116.2
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        354.8,
+        244.5,
+        429.8,
+        253.5
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "60-second summary"
+    },
+    {
+      "rect": [
+        441.0,
+        244.5,
+        473.2,
+        253.5
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "Your role"
+    },
+    {
+      "rect": [
+        484.5,
+        244.5,
+        552.8,
+        253.5
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "Leadership actions"
+    },
+    {
+      "rect": [
+        42.8,
+        291.8,
+        141.8,
+        303.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "p1 60-second summary"
+    },
+    {
+      "rect": [
+        42.8,
+        303.0,
+        141.8,
+        313.5
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "p2 Lead: results & supply"
+    },
+    {
+      "rect": [
+        42.8,
+        313.5,
+        141.8,
+        324.8
+      ],
+      "uri": null,
+      "page": 5,
+      "kind": 4,
+      "text": "p6 Key numbers"
+    },
+    {
+      "rect": [
+        42.8,
+        324.8,
+        141.8,
+        335.2
+      ],
+      "uri": null,
+      "page": 5,
+      "kind": 4,
+      "text": "p6 Leaders said"
+    },
+    {
+      "rect": [
+        149.2,
+        291.8,
+        228.8,
+        324.8
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "p2 New LLM releases\nor security patch\nreleases"
+    },
+    {
+      "rect": [
+        149.2,
+        324.8,
+        228.8,
+        335.2
+      ],
+      "uri": null,
+      "page": 2,
+      "kind": 4,
+      "text": "p3 AI research"
+    },
+    {
+      "rect": [
+        235.5,
+        291.8,
+        335.2,
+        303.0
+      ],
+      "uri": null,
+      "page": 2,
+      "kind": 4,
+      "text": "p3 Vendor & security risk"
+    },
+    {
+      "rect": [
+        235.5,
+        303.0,
+        335.2,
+        313.5
+      ],
+      "uri": null,
+      "page": 3,
+      "kind": 4,
+      "text": "p4 Unsolved problems"
+    },
+    {
+      "rect": [
+        235.5,
+        313.5,
+        335.2,
+        324.8
+      ],
+      "uri": null,
+      "page": 3,
+      "kind": 4,
+      "text": "p4 Laws & guidance"
+    },
+    {
+      "rect": [
+        342.0,
+        291.8,
+        443.2,
+        303.0
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "p5 Investments ($100M+)"
+    },
+    {
+      "rect": [
+        342.0,
+        303.0,
+        443.2,
+        313.5
+      ],
+      "uri": null,
+      "page": 3,
+      "kind": 4,
+      "text": "p4 Infrastructure"
+    },
+    {
+      "rect": [
+        342.0,
+        313.5,
+        443.2,
+        324.8
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "p5 Regional index"
+    },
+    {
+      "rect": [
+        342.0,
+        324.8,
+        443.2,
+        335.2
+      ],
+      "uri": null,
+      "page": 5,
+      "kind": 4,
+      "text": "p6 Upcoming events"
+    },
+    {
+      "rect": [
+        450.0,
+        291.8,
+        535.5,
+        303.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "p1 Your role"
+    },
+    {
+      "rect": [
+        450.0,
+        303.0,
+        535.5,
+        313.5
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "p1 Actions"
+    },
+    {
+      "rect": [
+        450.0,
+        313.5,
+        535.5,
+        324.8
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "p5 Operating models"
+    },
+    {
+      "rect": [
+        450.0,
+        324.8,
+        535.5,
+        335.2
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "p5 Workforce"
+    },
+    {
+      "rect": [
+        450.0,
+        335.2,
+        535.5,
+        346.5
+      ],
+      "uri": null,
+      "page": 5,
+      "kind": 4,
+      "text": "p6 One year ago"
+    },
+    {
+      "rect": [
+        450.0,
+        346.5,
+        535.5,
+        357.8
+      ],
+      "uri": null,
+      "page": 5,
+      "kind": 4,
+      "text": "p6 Caution note"
+    },
+    {
+      "rect": [
+        278.2,
+        375.8,
+        367.5,
+        384.0
+      ],
+      "uri": null,
+      "page": 5,
+      "kind": 4,
+      "text": "Verify before business use."
+    },
+    {
+      "rect": [
+        516.8,
+        402.8,
+        564.0,
+        417.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        276.0,
+        438.8,
+        279.0,
+        449.2
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        178.5,
+        461.2,
+        181.5,
+        471.8
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        261.8,
+        483.0,
+        264.8,
+        493.5
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        546.0,
+        495.0,
+        549.8,
+        505.5
+      ],
+      "uri": null,
+      "page": 2,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        113.2,
+        520.5,
+        117.0,
+        531.0
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        516.8,
+        550.5,
+        564.0,
+        564.8
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        81.0,
+        622.5,
+        84.0,
+        631.5
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        182.2,
+        631.5,
+        185.2,
+        640.5
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        283.5,
+        622.5,
+        286.5,
+        631.5
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        367.5,
+        631.5,
+        370.5,
+        640.5
+      ],
+      "uri": null,
+      "page": 2,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        436.5,
+        622.5,
+        439.5,
+        631.5
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        506.2,
+        631.5,
+        509.2,
+        640.5
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        516.8,
+        657.0,
+        564.0,
+        671.2
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        213.0,
+        692.2,
+        216.8,
+        702.0
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        204.8,
+        714.0,
+        208.5,
+        723.8
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        254.2,
+        735.8,
+        258.0,
+        745.5
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        180.8,
+        757.5,
+        184.5,
+        767.2
+      ],
+      "uri": null,
+      "page": 2,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        444.0,
+        692.2,
+        447.0,
+        702.0
+      ],
+      "uri": null,
+      "page": 2,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        501.8,
+        714.0,
+        504.8,
+        723.8
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        426.0,
+        735.8,
+        429.8,
+        745.5
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        469.5,
+        757.5,
+        473.2,
+        767.2
+      ],
+      "uri": null,
+      "page": 3,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        31.5,
+        815.2,
+        66.8,
+        825.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    }
+  ],
+  "page_2": [
+    {
+      "rect": [
+        516.8,
+        62.2,
+        564.0,
+        75.8
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        525.0,
+        141.0,
+        531.0,
+        147.8
+      ],
+      "uri": "https://www.placera.se/pressmeddelanden/sk-hynix-announces-3q26-financial-results-20261028",
+      "page": null,
+      "kind": 2,
+      "text": "R1"
+    },
+    {
+      "rect": [
+        525.0,
+        186.8,
+        536.2,
+        193.5
+      ],
+      "uri": "https://www.intc.com/news-events/press-releases/detail/1786/intel-reports-third-quarter-2026-financial-results",
+      "page": null,
+      "kind": 2,
+      "text": "R24"
+    },
+    {
+      "rect": [
+        525.0,
+        252.0,
+        536.2,
+        258.8
+      ],
+      "uri": "https://www.capgemini.com/news/press-releases/q3-2026-momentum-drives-upgrade-in-capgeminis-2026-outlook/",
+      "page": null,
+      "kind": 2,
+      "text": "R25"
+    },
+    {
+      "rect": [
+        516.8,
+        484.5,
+        564.0,
+        498.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        546.8,
+        524.2,
+        554.2,
+        531.0
+      ],
+      "uri": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "page": null,
+      "kind": 2,
+      "text": "tR2"
+    },
+    {
+      "rect": [
+        519.0,
+        534.0,
+        529.5,
+        540.8
+      ],
+      "uri": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/",
+      "page": null,
+      "kind": 2,
+      "text": "tR2a"
+    },
+    {
+      "rect": [
+        546.8,
+        580.5,
+        554.2,
+        587.2
+      ],
+      "uri": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "page": null,
+      "kind": 2,
+      "text": "tR3"
+    },
+    {
+      "rect": [
+        525.0,
+        590.2,
+        535.5,
+        597.0
+      ],
+      "uri": "https://www.khaleejtimes.com/business/google-launches-gemini-4-carbon-ai-model-with-cybersecurity-focus-2",
+      "page": null,
+      "kind": 2,
+      "text": "R3a"
+    },
+    {
+      "rect": [
+        508.5,
+        627.0,
+        516.0,
+        633.8
+      ],
+      "uri": "https://www.cve.org/CVERecord?id=CVE-2026-115915",
+      "page": null,
+      "kind": 2,
+      "text": "R4"
+    },
+    {
+      "rect": [
+        537.8,
+        627.0,
+        549.0,
+        633.8
+      ],
+      "uri": "https://osv.dev/vulnerability/PYSEC-2026-4349",
+      "page": null,
+      "kind": 2,
+      "text": "VR4a"
+    },
+    {
+      "rect": [
+        519.8,
+        636.8,
+        530.2,
+        643.5
+      ],
+      "uri": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+      "page": null,
+      "kind": 2,
+      "text": "R4b"
+    },
+    {
+      "rect": [
+        515.2,
+        646.5,
+        522.8,
+        653.2
+      ],
+      "uri": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "page": null,
+      "kind": 2,
+      "text": "R5"
+    },
+    {
+      "rect": [
+        31.5,
+        815.2,
+        66.8,
+        825.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    }
+  ],
+  "page_3": [
+    {
+      "rect": [
+        516.8,
+        62.2,
+        564.0,
+        75.8
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        92.2,
+        183.8,
+        182.2,
+        192.0
+      ],
+      "uri": "https://arxiv.org/abs/2610.38620v1",
+      "page": null,
+      "kind": 2,
+      "text": "arxiv.org/abs/2610.38620v1"
+    },
+    {
+      "rect": [
+        182.2,
+        182.2,
+        192.0,
+        189.0
+      ],
+      "uri": "https://arxiv.org/abs/2610.38620v1",
+      "page": null,
+      "kind": 2,
+      "text": "R10"
+    },
+    {
+      "rect": [
+        47.2,
+        460.5,
+        177.0,
+        468.8
+      ],
+      "uri": "https://www.medrxiv.org/content/10.64898/2026.10.25.26366455v2",
+      "page": null,
+      "kind": 2,
+      "text": "doi.org/10.64898/2026.10.25.26366455"
+    },
+    {
+      "rect": [
+        177.0,
+        459.0,
+        186.0,
+        465.8
+      ],
+      "uri": "https://www.medrxiv.org/content/10.64898/2026.10.25.26366455v2",
+      "page": null,
+      "kind": 2,
+      "text": "R11"
+    },
+    {
+      "rect": [
+        516.8,
+        505.5,
+        564.0,
+        519.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        151.5,
+        636.0,
+        159.0,
+        642.8
+      ],
+      "uri": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "page": null,
+      "kind": 2,
+      "text": "R5"
+    },
+    {
+      "rect": [
+        31.5,
+        815.2,
+        66.8,
+        825.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    }
+  ],
+  "page_4": [
+    {
+      "rect": [
+        516.8,
+        62.2,
+        564.0,
+        75.8
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        130.5,
+        172.5,
+        213.8,
+        180.8
+      ],
+      "uri": "https://arxiv.org/abs/2610.38867",
+      "page": null,
+      "kind": 2,
+      "text": "arxiv.org/abs/2610.38867"
+    },
+    {
+      "rect": [
+        213.8,
+        171.0,
+        221.2,
+        177.8
+      ],
+      "uri": "https://arxiv.org/abs/2610.38867",
+      "page": null,
+      "kind": 2,
+      "text": "R8"
+    },
+    {
+      "rect": [
+        516.8,
+        252.8,
+        564.0,
+        266.2
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        146.2,
+        371.2,
+        156.0,
+        378.0
+      ],
+      "uri": "https://www.meity.gov.in/static/uploads/2026/10/02d8224e4cd6c8c29be5a5198e795158.pdf",
+      "page": null,
+      "kind": 2,
+      "text": "R12"
+    },
+    {
+      "rect": [
+        198.8,
+        371.2,
+        211.5,
+        378.0
+      ],
+      "uri": "https://www.etvbharat.com/en/bharat/govt-launches-handbook-on-depa-for-ai-training-enn26103101486",
+      "page": null,
+      "kind": 2,
+      "text": "R12a"
+    },
+    {
+      "rect": [
+        516.8,
+        441.0,
+        564.0,
+        455.2
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        189.0,
+        549.0,
+        195.8,
+        555.8
+      ],
+      "uri": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+      "page": null,
+      "kind": 2,
+      "text": "R6"
+    },
+    {
+      "rect": [
+        31.5,
+        815.2,
+        66.8,
+        825.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    }
+  ],
+  "page_5": [
+    {
+      "rect": [
+        516.8,
+        62.2,
+        564.0,
+        75.8
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        477.0,
+        101.2,
+        486.8,
+        108.0
+      ],
+      "uri": "https://via.tt.se/pressmeddelande/4620607/furiosaai-secures-dollar620-million-series-d-to-meet-surging-enterprise-ai-inference-demand-and-accelerate-next-gen-silicon?lang=en",
+      "page": null,
+      "kind": 2,
+      "text": "R13"
+    },
+    {
+      "rect": [
+        477.0,
+        138.0,
+        486.8,
+        144.8
+      ],
+      "uri": "https://www.investing.com/news/company-news/upwind-closes-400-million-series-c-at-38-billion-valuation-as-revenue-quadruples-in-2026-4980378",
+      "page": null,
+      "kind": 2,
+      "text": "R14"
+    },
+    {
+      "rect": [
+        461.2,
+        147.8,
+        474.8,
+        154.5
+      ],
+      "uri": "https://wsau.com/?p=1030739",
+      "page": null,
+      "kind": 2,
+      "text": "yR14a"
+    },
+    {
+      "rect": [
+        477.0,
+        165.0,
+        486.0,
+        171.8
+      ],
+      "uri": "https://www.businesswire.com/news/home/20261029114967/en/Serval-Raises-%24150M-Series-C-at-%243B-Valuation-Led-by-Sequoia",
+      "page": null,
+      "kind": 2,
+      "text": "R15"
+    },
+    {
+      "rect": [
+        442.5,
+        174.8,
+        455.2,
+        181.5
+      ],
+      "uri": "https://fortune.com/2026/10/29/serval-servicenow-fight-series-c-3-billion-valuation-sequoia/",
+      "page": null,
+      "kind": 2,
+      "text": "y\nR15a"
+    },
+    {
+      "rect": [
+        466.5,
+        192.0,
+        476.2,
+        198.8
+      ],
+      "uri": "https://hex.tech/blog/hex-new-era/",
+      "page": null,
+      "kind": 2,
+      "text": "R16"
+    },
+    {
+      "rect": [
+        467.2,
+        201.8,
+        480.0,
+        208.5
+      ],
+      "uri": "https://dealstreetasia.com/stories/peak-xv-co-anchors-hex-funding-499490",
+      "page": null,
+      "kind": 2,
+      "text": "R16a"
+    },
+    {
+      "rect": [
+        516.8,
+        303.0,
+        564.0,
+        317.2
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        142.5,
+        401.2,
+        149.2,
+        408.0
+      ],
+      "uri": "https://www.hitachids.com/blog/hitachi-launches-digital-services-company/",
+      "page": null,
+      "kind": 2,
+      "text": "R7"
+    },
+    {
+      "rect": [
+        516.8,
+        471.0,
+        564.0,
+        484.5
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        144.0,
+        591.0,
+        151.5,
+        597.8
+      ],
+      "uri": "https://news.sap.com/india/2026/10/sap-india-doubles-down-on-ai-skilling-to-prepare-two-million-people-for-the-future-of-work-by-2030/",
+      "page": null,
+      "kind": 2,
+      "text": "rR9"
+    },
+    {
+      "rect": [
+        516.8,
+        621.0,
+        564.0,
+        634.5
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        126.8,
+        644.2,
+        167.2,
+        653.2
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "Intel results"
+    },
+    {
+      "rect": [
+        173.2,
+        644.2,
+        248.2,
+        653.2
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "Upwind \u00b7 Serval \u00b7 Hex"
+    },
+    {
+      "rect": [
+        255.0,
+        644.2,
+        354.0,
+        653.2
+      ],
+      "uri": null,
+      "page": 2,
+      "kind": 4,
+      "text": "Cross-tenant cache incident"
+    },
+    {
+      "rect": [
+        126.8,
+        659.2,
+        221.2,
+        668.2
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "Capgemini results (France)"
+    },
+    {
+      "rect": [
+        227.2,
+        659.2,
+        338.2,
+        668.2
+      ],
+      "uri": null,
+      "page": 3,
+      "kind": 4,
+      "text": "Runware pod factory (Romania)"
+    },
+    {
+      "rect": [
+        126.8,
+        675.0,
+        186.8,
+        684.0
+      ],
+      "uri": null,
+      "page": 3,
+      "kind": 4,
+      "text": "MeitY DEPA draft"
+    },
+    {
+      "rect": [
+        192.8,
+        675.0,
+        261.8,
+        684.0
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "SAP India AI skilling"
+    },
+    {
+      "rect": [
+        126.8,
+        690.0,
+        220.5,
+        699.0
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "Hitachi Digital (physical AI)"
+    },
+    {
+      "rect": [
+        126.8,
+        720.8,
+        225.8,
+        729.8
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "SK hynix results and outlook"
+    },
+    {
+      "rect": [
+        232.5,
+        720.8,
+        292.5,
+        729.8
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "FuriosaAI $620M"
+    },
+    {
+      "rect": [
+        126.8,
+        736.5,
+        215.2,
+        745.5
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "New models and patches"
+    },
+    {
+      "rect": [
+        221.2,
+        736.5,
+        290.2,
+        745.5
+      ],
+      "uri": null,
+      "page": 3,
+      "kind": 4,
+      "text": "Injection placement"
+    },
+    {
+      "rect": [
+        296.2,
+        736.5,
+        432.8,
+        745.5
+      ],
+      "uri": null,
+      "page": 2,
+      "kind": 4,
+      "text": "Agent decision gate \u00b7 AI review of trials"
+    },
+    {
+      "rect": [
+        31.5,
+        815.2,
+        66.8,
+        825.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    }
+  ],
+  "page_6": [
+    {
+      "rect": [
+        244.5,
+        63.0,
+        291.8,
+        77.2
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        54.8,
+        113.2,
+        65.2,
+        120.0
+      ],
+      "uri": "https://www.capgemini.com/news/press-releases/q3-2026-momentum-drives-upgrade-in-capgeminis-2026-outlook/",
+      "page": null,
+      "kind": 2,
+      "text": "R25"
+    },
+    {
+      "rect": [
+        54.8,
+        173.2,
+        64.5,
+        180.0
+      ],
+      "uri": "https://via.tt.se/pressmeddelande/4620607/furiosaai-secures-dollar620-million-series-d-to-meet-surging-enterprise-ai-inference-demand-and-accelerate-next-gen-silicon?lang=en",
+      "page": null,
+      "kind": 2,
+      "text": "R13"
+    },
+    {
+      "rect": [
+        189.0,
+        243.8,
+        196.5,
+        250.5
+      ],
+      "uri": "https://news.sap.com/india/2026/10/sap-india-doubles-down-on-ai-skilling-to-prepare-two-million-people-for-the-future-of-work-by-2030/",
+      "page": null,
+      "kind": 2,
+      "text": "R9"
+    },
+    {
+      "rect": [
+        244.5,
+        289.5,
+        291.8,
+        303.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        189.8,
+        351.8,
+        255.8,
+        360.0
+      ],
+      "uri": "https://connecticut.news12.com/amazon-cuts-14000-corporate-jobs-as-spending-on-artificial-intelligence-accelerates",
+      "page": null,
+      "kind": 2,
+      "text": "AP copy on News 12"
+    },
+    {
+      "rect": [
+        255.8,
+        350.2,
+        264.8,
+        357.0
+      ],
+      "uri": "https://connecticut.news12.com/amazon-cuts-14000-corporate-jobs-as-spending-on-artificial-intelligence-accelerates",
+      "page": null,
+      "kind": 2,
+      "text": "R21"
+    },
+    {
+      "rect": [
+        198.0,
+        397.5,
+        240.8,
+        405.8
+      ],
+      "uri": "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/",
+      "page": null,
+      "kind": 2,
+      "text": "Open original"
+    },
+    {
+      "rect": [
+        240.8,
+        396.0,
+        251.2,
+        402.8
+      ],
+      "uri": "https://www.nokia.com/newsroom/inside-information-nvidia-to-make-usd-1-billion-equity-investment-in-nokia-in-addition-to-new-strategic-partnership-nokias-board-resolved-on-directed-share-issuance-to-nvidia/",
+      "page": null,
+      "kind": 2,
+      "text": "R22"
+    },
+    {
+      "rect": [
+        224.2,
+        445.5,
+        278.2,
+        453.8
+      ],
+      "uri": "https://web.archive.org/web/20260329000702/https://openai.com/index/introducing-aardvark/",
+      "page": null,
+      "kind": 2,
+      "text": "Archived original"
+    },
+    {
+      "rect": [
+        278.2,
+        444.0,
+        288.8,
+        450.8
+      ],
+      "uri": "https://web.archive.org/web/20260329000702/https://openai.com/index/introducing-aardvark/",
+      "page": null,
+      "kind": 2,
+      "text": "R23"
+    },
+    {
+      "rect": [
+        516.8,
+        63.0,
+        564.0,
+        77.2
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        356.2,
+        114.0,
+        359.2,
+        123.0
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        393.0,
+        132.0,
+        396.0,
+        141.0
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        548.2,
+        132.0,
+        551.2,
+        141.0
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        355.5,
+        189.0,
+        358.5,
+        198.0
+      ],
+      "uri": null,
+      "page": 1,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        393.0,
+        189.0,
+        396.0,
+        198.0
+      ],
+      "uri": null,
+      "page": 2,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        553.5,
+        180.0,
+        556.5,
+        189.0
+      ],
+      "uri": null,
+      "page": 4,
+      "kind": 4,
+      "text": "\u203a"
+    },
+    {
+      "rect": [
+        516.8,
+        209.2,
+        564.0,
+        223.5
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        426.0,
+        239.2,
+        435.8,
+        246.0
+      ],
+      "uri": "https://sc26.supercomputing.org/",
+      "page": null,
+      "kind": 2,
+      "text": "R18"
+    },
+    {
+      "rect": [
+        540.0,
+        255.0,
+        549.8,
+        261.8
+      ],
+      "uri": "https://www.medica.de/",
+      "page": null,
+      "kind": 2,
+      "text": "R19"
+    },
+    {
+      "rect": [
+        523.5,
+        264.8,
+        536.2,
+        271.5
+      ],
+      "uri": "https://www.jetro.go.jp/en/database/j-messe/tradefair/detail/158547",
+      "page": null,
+      "kind": 2,
+      "text": "R19a"
+    },
+    {
+      "rect": [
+        462.0,
+        281.2,
+        473.2,
+        288.0
+      ],
+      "uri": "https://newyork.theaisummit.com/",
+      "page": null,
+      "kind": 2,
+      "text": "R20"
+    },
+    {
+      "rect": [
+        372.0,
+        430.5,
+        407.2,
+        439.5
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda"
+    },
+    {
+      "rect": [
+        31.5,
+        815.2,
+        269.2,
+        825.0
+      ],
+      "uri": null,
+      "page": 0,
+      "kind": 4,
+      "text": "\u2191 Agenda \u00b7 By Jayaraman (Jay) Ganapathi, People Prime Worldwide"
+    }
+  ]
+}

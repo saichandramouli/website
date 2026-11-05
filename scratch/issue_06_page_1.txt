@@ -1,0 +1,135 @@
+W E E K L Y · E D I T I O N 0 6
+2 6 O C T – 1 N O V 2 0 2 6 · P A G E 1 O F 6
+The AI Leadership Brief
+Edition 06 · 26 Oct–1 Nov 2026 · By Jayaraman (Jay) Ganapathi, People Prime Worldwide · For CXOs and senior leaders
+0 5 P E O P L E & A C T I O N · P 1
+C A R T O O N O F T H E W E E K
+↑ Agenda
+AI MEMORY
+SOLD OUT
+QUEUE
+#4,512
+PLAN
+Our AI plan needs more memory.
+Any left?
+Join the queue.
+I'm number 4,512.
+“This week: SK hynix says memory
+supply is not keeping pace — and even
+the robots are queuing for AI memory.”
+AGENDA
+5 T H E M E S · T A P T O J U M P
+Short on time? 60-second summary → Your role → Leadership actions
+01 Growth & revenue
+Where is AI paying?
+p1 60-second summary
+p2 Lead: results & supply
+p6 Key numbers
+p6 Leaders said
+02 Cost & output
+What gets cheaper?
+p2 New LLM releases
+or security patch
+releases
+p3 AI research
+03 Risk & compliance
+What could hurt us?
+p3 Vendor & security risk
+p4 Unsolved problems
+p4 Laws & guidance
+04 Capital & markets
+Where is money going?
+p5 Investments ($100M+)
+p4 Infrastructure
+p5 Regional index
+p6 Upcoming events
+05 People & action
+What do we do?
+p1 Your role
+p1 Actions
+p5 Operating models
+p5 Workforce
+p6 One year ago
+p6 Caution note
+New section (p2). Every item now carries a Business lens (fact from the source unless marked “Our summary”) and Ask your leadership team (editor's
+questions, not claims). Data quality section skipped (no qualifying item). Verify before business use.
+0 1 G R O W T H & R E V E N U E · P 1
+6 0 - S E C O N D S U M M A R Y
+↑ Agenda
+1
+Demand is in the numbers. SK hynix revenue +328% (prelim.); Intel Data Center and AI +78% (not attributed to AI by Intel);
+Capgemini's 2026 forecast raised, partly via acquisitions. ›
+2
+Supply is on chipmakers' agenda. SK hynix expects memory demand to exceed supply through 2030; Intel's CEO says the priority
+is to “unlock additional supply”. ›
+3
+One maker cut a model price. OpenAI priced GPT-6.1 Terra 50% below its predecessor (maker's claim); Google is offering Gemini 4
+Carbon first to “a subset of cybersecurity defenders”. ›
+4
+Vendor risk is real. A cloud provider's hosted model returned 155 responses containing other users' data; provider says it is fixed. ›
+5
+Four large rounds. Four rounds of $100M+ totalling $1.27B (our sum of announced amounts): chips, cloud security, service agents
+and analytics. ›
+0 5 P E O P L E & A C T I O N · P 1
+T H I S W E E K F O R Y O U R R O L E
+↑ Agenda
+CEO
+Capgemini forecasts
+2026 growth of
++9.0–9.5%, about 5
+points from
+acquisitions. ›
+CFO
+GPT-6.1 Terra
+standard API: $1 / $5
+per million tokens,
+50% below its
+predecessor
+(maker's claim). ›
+CIO / CTO
+SK hynix expects
+memory demand to
+exceed supply
+through 2030
+(company outlook). ›
+CISO / CRO
+Provider's account: it
+knew of a cache-size
+mismatch before
+launch; 155
+responses exposed
+other users' data. ›
+CHRO
+SAP India: 2 million
+people with AI skills
+by 2030; nearly 13%
+have taken part
+(company). ›
+COO
+Hitachi plans a
+35,000-person
+digital company with
+physical AI as a
+focus from 1 Apr
+2027. ›
+0 5 P E O P L E & A C T I O N · P 1
+L E A D E R S H I P A C T I O N S T H I S W E E K
+↑ Agenda
+1. Measure value, not activity. Ask each unit for one AI use case
+with a revenue, cost or cycle-time baseline. ›
+2. Lock in capacity. Check that cloud and hardware contracts
+cover the AI capacity your plans assume. ›
+3. Re-run rejected cases. Re-price AI business cases turned down
+on cost at this week's lower token prices (per OpenAI). ›
+4. Tighten vendor terms. Add data separation, incident notice and
+audit rights to AI vendor contracts. ›
+5. Gate agent actions. Require a check before AI agents move
+money, data or customer records. ›
+6. Confirm patching. Ask IT whether self-hosted AI serving
+software (vLLM, SGLang) is on the fixed versions. ›
+7. Set a skills target. Publish an AI-skills goal with progress
+reporting, as SAP India does. ›
+8. India operations: review MeitY's DEPA draft on AI training with
+partner data; it invites recommendations. ›
+↑ Agenda
+Edition 06 · Page 1 of 6
