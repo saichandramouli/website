@@ -296,11 +296,12 @@ class ATSSubmitButton {
 
 // 6. Complete Application Form Component
 class ATSApplicationForm {
-  constructor(jobId, jobTitle, onCancel, onSubmitSuccess) {
+  constructor(jobId, jobTitle, onCancel, onSubmitSuccess, jobObject = null) {
     this.jobId = jobId;
     this.jobTitle = jobTitle;
     this.onCancel = onCancel;
     this.onSubmitSuccess = onSubmitSuccess;
+    this.jobObject = jobObject;
     this.termsModal = new ATSTermsModal();
     this.fileUpload = null;
 
@@ -463,7 +464,60 @@ class ATSApplicationForm {
     return isValid;
   }
 
+  // Display error notice within application form
+  showFormError(message, isClosed = false) {
+    let errorEl = this.form.querySelector("#formGlobalError");
+    if (!errorEl) {
+      errorEl = document.createElement("div");
+      errorEl.id = "formGlobalError";
+      errorEl.style.cssText = "margin: 16px 0; padding: 14px 18px; background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 8px; color: #fca5a5; font-size: 14px; text-align: center; line-height: 1.5;";
+      const actions = this.form.querySelector(".ats-form-actions");
+      if (actions) {
+        this.form.insertBefore(errorEl, actions);
+      } else {
+        this.form.appendChild(errorEl);
+      }
+    }
+    errorEl.textContent = message;
+    errorEl.classList.remove("hidden");
+
+    if (isClosed) {
+      this.submitBtn.disabled = true;
+      this.submitBtn.innerHTML = `Applications Closed`;
+      this.submitBtn.style.opacity = "0.6";
+      this.submitBtn.style.cursor = "not-allowed";
+      this.submitBtn.style.pointerEvents = "none";
+    } else {
+      this.submitBtn.disabled = false;
+      this.submitBtn.innerHTML = `Apply`;
+      this.submitBtn.style.opacity = "";
+      this.submitBtn.style.cursor = "";
+      this.submitBtn.style.pointerEvents = "";
+    }
+  }
+
+  // Clear error notice within application form
+  clearFormError() {
+    const errorEl = this.form ? this.form.querySelector("#formGlobalError") : null;
+    if (errorEl) {
+      errorEl.textContent = "";
+      errorEl.classList.add("hidden");
+    }
+  }
+
   async handleSubmit() {
+    // Enforcement guard: check if job is closed before attempting submission
+    if (this.jobObject && (this.jobObject.is_closed === true || this.jobObject.code === "JOB_CLOSED" || this.jobObject.status === "CLOSED")) {
+      const closedMsg = this.jobObject.message || "This job is closed and no longer accepting applications.";
+      this.showFormError(closedMsg, true);
+      if (typeof window.showClosedJobModal === "function") {
+        window.showClosedJobModal(closedMsg);
+      }
+      return;
+    }
+
+    this.clearFormError();
+
     // Run full validation
     let isFormValid = true;
 
@@ -545,25 +599,50 @@ class ATSApplicationForm {
         body: formData
       });
 
+      // Handle Closed Job (HTTP 410 Gone)
+      if (response.status === 410) {
+        let closedMsg = "This job is closed and no longer accepting applications.";
+        try {
+          const errData = await response.json();
+          if (errData && errData.message) {
+            closedMsg = errData.message;
+          }
+        } catch (_) {}
+
+        this.showFormError(closedMsg, true);
+        if (typeof window.showClosedJobModal === "function") {
+          window.showClosedJobModal(closedMsg);
+        }
+        return;
+      }
+
+      // Handle other non-2xx failures (e.g. 400 validation error, 500 server error)
       if (!response.ok) {
-        throw new Error(`API returned status ${response.status}`);
+        let errorMsg = `Application submission failed (HTTP ${response.status}). Please check your details and try again.`;
+        try {
+          const errData = await response.json();
+          if (errData && errData.message) {
+            errorMsg = errData.message;
+          } else if (errData && typeof errData === "object") {
+            const firstKey = Object.keys(errData)[0];
+            if (Array.isArray(errData[firstKey])) {
+              errorMsg = `${firstKey}: ${errData[firstKey].join(", ")}`;
+            } else if (typeof errData[firstKey] === "string") {
+              errorMsg = `${firstKey}: ${errData[firstKey]}`;
+            }
+          }
+        } catch (_) {}
+
+        this.showFormError(errorMsg, false);
+        return;
       }
 
       const result = await response.json();
       console.log("Application submitted successfully to backend:", result);
       this.onSubmitSuccess(formData);
     } catch (err) {
-      console.error("API submission failed, falling back to simulated success for demonstration:", err);
-
-      // Render a subtle warning banner for demonstration/local testing
-      const warningBanner = document.createElement("div");
-      warningBanner.style.cssText = "background: rgba(255, 180, 0, 0.1); border: 1px solid rgba(255, 180, 0, 0.3); color: #f5a623; padding: 12px; border-radius: 8px; font-size: 11px; margin-top: 16px; line-height: 1.4; text-align: center;";
-      warningBanner.innerHTML = `<strong>Notice:</strong> Application received locally! Backend API reported a connection warning: ${err.message}.`;
-      this.form.appendChild(warningBanner);
-
-      setTimeout(() => {
-        this.onSubmitSuccess(formData);
-      }, 2000);
+      console.error("API submission network error:", err);
+      this.showFormError("A network error occurred while submitting your application. Please check your connection and try again.", false);
     }
   }
 }

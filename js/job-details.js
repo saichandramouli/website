@@ -15,88 +15,151 @@ document.addEventListener("DOMContentLoaded", () => {
   async function fetchJobDetails() {
     showLoading();
     try {
-      const response = await fetch(`${BASE_API_URL}${jobId}/`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+      const response = await fetch(`${BASE_API_URL}${jobId}/`, { cache: "no-store" });
+
+      // Handle Closed Job (HTTP 410 Gone)
+      if (response.status === 410) {
+        let message = "This job is closed and no longer accepting applications.";
+        try {
+          const errData = await response.json();
+          if (errData && errData.message) {
+            message = errData.message;
+          }
+        } catch (_) {
+          // Keep default message if json parse fails
+        }
+        showClosedJobState(message);
+        showClosedJobModal(message);
+        return;
       }
+
+      // Handle Unavailable Job (HTTP 404 Not Found)
+      if (response.status === 404) {
+        showError("This job opening is unavailable or has been removed.");
+        return;
+      }
+
+      // Handle other non-2xx HTTP errors
+      if (!response.ok) {
+        showError("Unable to load job details at this time. Please try again later.");
+        return;
+      }
+
       const job = await response.json();
+
+      // Guard check in case an active 200 payload flags the job as closed
+      if (job && (job.is_closed === true || job.code === "JOB_CLOSED" || job.status === "CLOSED")) {
+        const message = job.message || "This job is closed and no longer accepting applications.";
+        showClosedJobState(message, job);
+        showClosedJobModal(message);
+        return;
+      }
+
       renderJobDetails(job);
     } catch (error) {
-      console.error("Error fetching job details, using mock fallback for testing:", error);
-
-      const mockResults = [
-        { 
-          id: 18669, 
-          job_code: "PPW - 18669", 
-          position: "Java Spring Boot Developer", 
-          technology: "Java", 
-          experience: "5 Years", 
-          location: "Bengaluru", 
-          job_type: "Contract", 
-          work_mode: "Hybrid",
-          description: "Design and implement Java-based backend applications using Spring Boot framework.\n\nRequired Skills:\n- Java, Spring Boot, microservices\n- REST APIs development\n- SQL Database"
-        },
-        { 
-          id: 18292, 
-          job_code: "PPW - 18292", 
-          position: "SAP SAC Consultant", 
-          technology: "Sap Sac", 
-          experience: "8 Years", 
-          location: "Hyderabad", 
-          job_type: "Contract", 
-          work_mode: "Hybrid",
-          description: "Strong experience in SAP HANA development with a preference for working in an SAP HANA XSA environment.\nProficient in designing and developing SAP Calculation Views using both Graphical and SQL Script modeling techniques.\nExtensive experience in developing and optimizing complex SQL Script procedures, functions, and queries.\n\nRequired Skills:\n- SAP Analytics Cloud\n- HANA database design\n- SQL Scripting"
-        },
-        { 
-          id: 18670, 
-          job_code: "PPW - 18670", 
-          position: "ServiceNow HAM Operation Analyst", 
-          technology: "ServiceNow", 
-          experience: "6 Years", 
-          location: "Bengaluru", 
-          job_type: "Contract", 
-          work_mode: "Hybrid",
-          description: "Responsible for hardware asset lifecycle management operations in ServiceNow.\n\nRequired Skills:\n- ServiceNow Hardware Asset Management (HAM)\n- Asset lifecycle workflows\n- General ServiceNow administration"
-        },
-        { 
-          id: 18559, 
-          job_code: "PPW - 18559", 
-          position: "Data Engineer with GCP (SQL)", 
-          technology: "SQL", 
-          experience: "8 Years", 
-          location: "Hyderabad", 
-          job_type: "Contract", 
-          work_mode: "Hybrid",
-          description: "Build data pipelines and integrate analytics platforms using Google Cloud Platform.\n\nRequired Skills:\n- GCP Dataflow and BigQuery\n- Structured Query Language (SQL)\n- Python scripting for ETL pipelines"
-        },
-        { 
-          id: 18586, 
-          job_code: "PPW - 18586", 
-          position: "QA Automation Engineer", 
-          technology: "Testing", 
-          experience: "5 Years", 
-          location: "Hyderabad", 
-          job_type: "Contract", 
-          work_mode: "Hybrid",
-          description: "Develop and execute automated test suites using Selenium/Java.\n\nRequired Skills:\n- Automation testing tools (Selenium, Playwright)\n- Core Java programming\n- CI/CD workflow integration"
-        },
-        { 
-          id: 18560, 
-          job_code: "PPW - 18560", 
-          position: "Cloud Infrastructure Engineer", 
-          technology: "Cloud", 
-          experience: "8 Years", 
-          location: "Bengaluru", 
-          job_type: "Contract", 
-          work_mode: "Hybrid",
-          description: "Provision and maintain scalable cloud architecture on AWS/Azure.\n\nRequired Skills:\n- Infrastructure as Code (Terraform)\n- AWS/Azure administration\n- CI/CD automation pipelines"
-        }
-      ];
-
-      // Lookup by ID, fallback to SAP if not found
-      const activeJob = mockResults.find(j => j.id == jobId) || mockResults[1];
-      renderJobDetails(activeJob);
+      console.error("Error fetching job details:", error);
+      showError("Unable to load job details at this time. Please try again later.");
     }
+  }
+
+  // Helper to display dedicated Closed Job Modal popup
+  function showClosedJobModal(message = "This job is closed and no longer accepting applications.") {
+    // Prevent duplicate popup instances
+    const existingModal = document.getElementById("atsClosedJobModal");
+    if (existingModal) {
+      existingModal.remove();
+    }
+
+    const modal = document.createElement("div");
+    modal.id = "atsClosedJobModal";
+    modal.className = "ats-modal-overlay";
+    modal.innerHTML = `
+      <div class="ats-modal-container" style="max-width: 520px;">
+        <div class="ats-modal-header">
+          <h2>Job Closed</h2>
+          <button type="button" id="closeClosedJobModal" class="ats-modal-close-btn" aria-label="Close">&times;</button>
+        </div>
+        <div class="ats-modal-body">
+          <p id="closedJobModalMessage" style="margin: 0; font-size: 15px; color: #cbd5e1; line-height: 1.6;"></p>
+        </div>
+        <div class="ats-modal-footer">
+          <button type="button" id="confirmClosedJobModal" class="apply-btn">Understood</button>
+        </div>
+      </div>
+    `;
+
+    // Safely assign text message using textContent to prevent HTML/DOM injection
+    const messageEl = modal.querySelector("#closedJobModalMessage");
+    if (messageEl) {
+      messageEl.textContent = message;
+    }
+
+    document.body.appendChild(modal);
+    document.body.style.overflow = "hidden"; // Lock background scroll
+
+    const closeModal = () => {
+      modal.remove();
+      document.body.style.overflow = ""; // Restore background scroll
+    };
+
+    modal.querySelector("#closeClosedJobModal").addEventListener("click", closeModal);
+    modal.querySelector("#confirmClosedJobModal").addEventListener("click", closeModal);
+
+    // Close on click outside modal container
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
+
+  // Attach modal helper to window for cross-module accessibility
+  window.showClosedJobModal = showClosedJobModal;
+
+  // Render Closed Job State inside container (keeps candidate on page with disabled apply)
+  function showClosedJobState(message, job = null) {
+    container.innerHTML = "";
+
+    const backLink = document.createElement("a");
+    backLink.href = "activejobs.html";
+    backLink.className = "back-to-jobs-btn";
+    backLink.innerHTML = `&larr; Back to Active Jobs`;
+    container.appendChild(backLink);
+
+    const card = document.createElement("div");
+    card.className = "job-detail-card";
+
+    const title = (job && job.position) ? job.position : "Job Opening";
+    const jobCode = (job && job.job_code) ? job.job_code : (jobId ? `PPW - ${jobId}` : "PPW-JOB");
+
+    card.innerHTML = `
+      <div class="job-detail-header">
+        <h1></h1>
+        <span class="job-code-badge"></span>
+      </div>
+      <div class="job-detail-body">
+        <div style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: 8px; padding: 24px; margin-bottom: 24px; text-align: center;">
+          <h2 style="color: #ffffff; font-size: 20px; margin-bottom: 10px; font-weight: 700;">Job Closed</h2>
+          <p id="closedJobStateMessage" style="color: #cbd5e1; font-size: 15px; margin: 0; line-height: 1.6;"></p>
+        </div>
+
+        <div class="apply-section">
+          <button class="apply-btn" disabled style="opacity: 0.6; cursor: not-allowed; background: #475569; pointer-events: none;">Applications Closed</button>
+        </div>
+      </div>
+    `;
+
+    // Safely assign text content to prevent DOM/XSS injection
+    const headerTitleEl = card.querySelector(".job-detail-header h1");
+    if (headerTitleEl) headerTitleEl.textContent = title;
+
+    const badgeEl = card.querySelector(".job-code-badge");
+    if (badgeEl) badgeEl.textContent = jobCode;
+
+    const stateMsgEl = card.querySelector("#closedJobStateMessage");
+    if (stateMsgEl) stateMsgEl.textContent = message;
+
+    container.appendChild(card);
   }
 
   // Render job detail structure
@@ -113,6 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
     card.className = "job-detail-card";
 
     // Prepare variables with defaults
+    const isClosed = Boolean(job && (job.is_closed === true || job.code === "JOB_CLOSED" || job.status === "CLOSED"));
     const title = job.position || "Job Opening";
     const jobCode = job.job_code || "PPW-JOB";
     const tech = job.technology || "General";
@@ -171,21 +235,36 @@ document.addEventListener("DOMContentLoaded", () => {
         ${skillsHTML}
         
         <div class="apply-section">
-          <button id="applyNowBtn" class="apply-btn">Apply Now</button>
-        </div>
-      </div>
-    `;
+          ${
+      isClosed
+        ? `<button class="apply-btn" disabled style="opacity: 0.6; cursor: not-allowed; background: #475569; pointer-events: none;">Applications Closed</button>`
+        : `<button id="applyNowBtn" class="apply-btn">Apply Now</button>`
+    }
+        </div >
+      </div >
+      `;
 
     container.appendChild(card);
 
-    // Event listener to open candidate application form
-    card.querySelector("#applyNowBtn").addEventListener("click", () => {
-      openApplicationForm(job.id, title, job);
-    });
+    // Event listener to open candidate application form (only if active)
+    if (!isClosed) {
+      const applyBtn = card.querySelector("#applyNowBtn");
+      if (applyBtn) {
+        applyBtn.addEventListener("click", () => {
+          openApplicationForm(job.id, title, job);
+        });
+      }
+    }
   }
 
-  // Open candidate application form
+  // Open candidate application form with closed-job safeguard
   function openApplicationForm(jobId, jobTitle, jobObject) {
+    // Enforcement guard: prevent application form from opening for closed jobs
+    if (jobObject && (jobObject.is_closed === true || jobObject.code === "JOB_CLOSED" || jobObject.status === "CLOSED")) {
+      showClosedJobModal("This job is closed and no longer accepting applications.");
+      return;
+    }
+
     const form = new ATSApplicationForm(
       jobId,
       jobTitle,
@@ -196,7 +275,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // Submit Success Callback
       (formData) => {
         renderSuccessState();
-      }
+      },
+      jobObject
     );
     form.render(container);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -205,7 +285,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Render Success Screen
   function renderSuccessState() {
     container.innerHTML = `
-      <div class="job-detail-card" style="padding: 60px 40px; text-align: center;">
+      < div class="job-detail-card" style = "padding: 60px 40px; text-align: center;" >
         <div style="font-size: 64px; color: var(--primary-hover); margin-bottom: 24px; animation: scaleUp 0.4s ease-out;">✓</div>
         <h1 style="color: #ffffff; font-size: 32px; font-weight: 800; margin-bottom: 16px;">Application Submitted Successfully</h1>
         <p style="color: var(--text-muted); font-size: 16px; line-height: 1.8; max-width: 600px; margin: 0 auto 32px auto;">
@@ -214,31 +294,31 @@ document.addEventListener("DOMContentLoaded", () => {
         <div style="display: flex; justify-content: center;">
           <a href="activejobs.html" class="apply-btn" style="text-decoration: none;">Back to Jobs</a>
         </div>
-      </div>
-    `;
+      </div >
+      `;
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   // State utility functions
   function showLoading() {
     container.innerHTML = `
-      <div class="loading-spinner-container">
+      < div class="loading-spinner-container" >
         <div class="spinner"></div>
         <p>Loading job details...</p>
-      </div>
-    `;
+      </div >
+      `;
   }
 
   function showError(msg) {
     container.innerHTML = `
-      <div style="max-width: 600px; margin: 40px auto;">
+      < div style = "max-width: 600px; margin: 40px auto;" >
         <a href="activejobs.html" class="back-to-jobs-btn">&larr; Back to Active Jobs</a>
         <div class="error-message">
           <h3>Could not load details</h3>
           <p>${msg}</p>
         </div>
-      </div>
-    `;
+      </div >
+      `;
   }
 
   // Initial load
