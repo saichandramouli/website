@@ -1,0 +1,129 @@
+WEEKLY · EDITION 07 2–8 NOV 2026 · PAGE 1 OF 6
+The AI Leadership Brief
+Edition 07 · 28 Nov 2026 · By Jayaraman (Jay) Ganapathi, People Prime Worldwide · For CXOs and senior leaders
+05 PEOPLE & ACTION · P1 CARTOON OF THE WEEK ↑ Agenda
+IN 24
+MONTHS
+ROI TODAY
+So where is the
+return on all this AI?
+It went up with the
+forecast, sir.
+“This week: of 400 CFOs surveyed, just
+10% call their AI returns signiﬁcant today.
+54% expect signiﬁcant returns within 24
+months.”
+AGENDA 5 THEMES · TAP TO JUMP Short on time? 60-second summary  Your role  Leadership actions
+01 Growth & revenue
+Where is AI paying?
+p160-second summary
+p2Lead: the ROI scoreboard
+p6Key numbers
+p6Leaders said
+02 Cost & output
+What gets cheaper?
+p2New LLM releases or
+security patch releases
+p3AI research
+03 Risk & compliance
+What could hurt us?
+p3Vendor & security risk
+p4Unsolved problems
+p4Laws & guidance
+04 Capital & markets
+Where is money going?
+p4Infrastructure
+p5Investments $100M
+p5Regional index
+p6Upcoming events
+05 People & action
+What do we do?
+p1Your role
+p1Actions
+p3Operating models
+p5Workforce
+p6One year ago
+p6Caution note
+This issue leads with business impact: what AI earned, what it cost and what it put at risk. Every item carries Ask your leadership team (editor's questions, not claims). A
+Business lens appears only where we add a reading the source does not state. Data quality section skipped (no qualifying item). Verify before business use.
+01 GROWTH & REVENUE · P1 60-SECOND SUMMARY ↑ Agenda
+05 PEOPLE & ACTION · P1 THIS WEEK FOR YOUR ROLE ↑ Agenda
+CEO
+49% of 400 surveyed
+CFOs say their
+transformation agenda
+exceeds their
+organisation's ability
+to execute. ›
+CFO
+Among surveyed
+CFOs whose agenda
+exceeds capacity,
+24% report positive AI
+returns, against 79%
+where capacity meets
+demand. Both self-
+reported. ›
+CIO / CTO
+Preprint: on
+benchmark tasks,
+coordinated agent
+designs run 2.65.8
+the latency of a single
+agent. ›
+CISO / CRO
+A command-injection
+flaw in an open-
+source agent
+framework was
+published with a
+public exploit. ›
+CHRO
+92% of 595 surveyed
+US HR professionals
+say staff could be
+reskilled for AI roles;
+the same survey says
+firms still hire outside
+more often. ›
+COO
+Of 1,100 surveyed
+financial services
+firms, 59% are piloting
+or deploying multi-
+agent AI; 10% have
+enterprise-wide
+orchestration. ›
+05 PEOPLE & ACTION · P1 LEADERSHIP ACTIONS THIS WEEK ↑ Agenda
+ Put a date on the return. For each AI programme, name the quarter a
+measured result lands and who signs for it.
+ Test capacity, not just the case. Rank AI initiatives against delivery
+capacity before approving the next one.
+ Price the architecture. Ask for tokens and latency per task, not just
+accuracy, before approving multi-agent designs.
+ Start simple. Require a single-agent baseline before any team builds a
+coordinated one.
+ Inventory agent frameworks. List the open-source agent software in your
+stack and in your vendors', with version and owner.
+ US national banks: align to the examiner. Map AI uses in credit,
+payments, fraud and operations onto your existing risk framework.
+ Fix measurement before scaling. If you cannot show a return on today's
+agents, do not add more.
+ Look inside first. Before hiring for an AI role, ask which current
+employees could be redeployed into it.
+↑ Agenda Edition 07 · Page 1 of 6
+The significant return is still a forecast. Of 400 CFOs surveyed, 52% report positive AI returns today but only 10% call them significant; 54%
+expect significant returns within 24 months. ›
+1
+Two technology suppliers reported fast growth. AMD Data Center 97% (total revenue 45%; CDW net sales 17.7% with Financial Services
+73.2%. Neither release says how much of this is AI. ›
+2
+More agents often cost more and deliver no more. On benchmark workflows, a preprint reports coordinated agent designs spend 1.44.7 the
+tokens of a single agent for gains “usually small and rarely significantˮ. ›
+3
+US national bank examiners now have an AI playbook. The OCC, which supervises national banks, issued a supervisory framework; it says
+banks are not expected to set separate risk parameters for AI. ›
+4
+This week's big rounds funded the layer that runs AI. Three rounds of $100M totalling $1.9B (our sum): inference, revenue agents and
+petabyte-scale analytics. ›
+5

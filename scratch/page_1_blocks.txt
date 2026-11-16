@@ -1,0 +1,84 @@
+1 BLOCKS ===
+  [34.0, 28.7, 560.0, 71.6] W E E K LY · E D I T I O N 0 7 2 – 8 N OV 2 0 2 6 · PAG E 1 O F 6 The AI Leadership Brief
+  [34.0, 74.3, 435.4, 82.6] Edition 07 · 2–8 Nov 2026 · By Jayaraman (Jay) Ganapathi, People Prime Worldwide · For CXOs and senior leaders
+  [38.5, 95.9, 556.3, 105.2] 0 5 P E O P L E & AC T I O N · P 1 CA R TO O N O F T H E W E E K ↑ Agenda
+  [245.7, 131.7, 274.5, 146.4] IN 24 MONTHS
+  [102.4, 196.5, 133.0, 202.7] ROI TODAY
+  [61.0, 125.7, 123.6, 141.7] So where is the return on all this AI?
+  [226.7, 196.2, 285.1, 203.7] It went up with the
+  [236.4, 204.7, 275.4, 212.2] forecast, sir.
+  [345.8, 142.6, 552.4, 195.0] “This week: of 400 CFOs surveyed, just 10% call their AI returns significant today. 54% expect significant returns within 24 months.”
+  [45.3, 239.8, 549.9, 255.1] AGENDA 5 T H E M E S · T A P T O J U M P Short on time? 60-second summary → Your role → Leadership actions
+  [45.3, 267.1, 118.5, 284.1] 01 Growth & revenue Where is AI paying?
+  [45.3, 289.6, 134.0, 305.9] p1 60-second summary p2 Lead: the ROI scoreboard
+  [45.3, 308.4, 96.1, 324.7] p6 Key numbers p6 Leaders said
+  [148.2, 267.1, 207.9, 284.1] 02 Cost & output What gets cheaper?
+  [148.2, 289.6, 223.4, 305.9] p2 New LLM releases or security patch releases
+  [148.2, 308.4, 193.7, 315.7] p3 AI research
+  [251.0, 267.1, 327.2, 284.1] 03 Risk & compliance What could hurt us?
+  [251.0, 289.6, 329.2, 305.9] p3 Vendor & security risk p4 Unsolved problems
+  [251.0, 308.4, 314.0, 315.7] p4 Laws & guidance
+  [353.9, 267.1, 428.0, 284.1] 04 Capital & markets Where is money going?
+  [353.9, 289.6, 433.2, 305.9] p4 Infrastructure p5 Investments ($100M+)
+  [353.9, 308.4, 418.0, 324.7] p5 Regional index p6 Upcoming events
+  [456.7, 267.1, 522.9, 284.1] 05 People & action What do we do?
+  [456.7, 289.6, 493.2, 305.9] p1 Your role p1 Actions
+  [456.7, 308.4, 521.8, 324.7] p3 Operating models p5 Workforce
+  [456.7, 327.1, 508.5, 343.4] p6 One year ago p6 Caution note
+  [45.3, 358.2, 532.4, 374.1] This issue leads with business impact: what AI earned, what it cost and what it put at risk. Every item carries Ask your leadership team (editor's questions, not claims). A Business lens appears only where we add a reading the source does not state. Data quality section skipped (no qualifying item). Verify before business use.
+  [38.5, 398.1, 556.3, 407.5] 0 1 G R OW T H & R E V E N U E · P 1 6 0 - S E C O N D S U M M A RY ↑ Agenda
+  [38.5, 564.6, 556.3, 574.0] 0 5 P E O P L E & AC T I O N · P 1 T H I S W E E K F O R YO U R R O L E ↑ Agenda
+  [41.0, 591.4, 56.6, 599.2] CEO
+  [41.0, 602.5, 106.9, 609.6] 49% of 400 surveyed
+  [41.0, 612.2, 109.4, 637.4] CFOs say their transformation agenda exceeds their
+  [41.0, 640.0, 103.2, 656.1] organisation's ability to execute. ›
+  [129.9, 591.4, 145.3, 599.2] CFO
+  [129.9, 602.5, 181.0, 609.6] Among surveyed
+  [129.9, 612.2, 197.4, 637.4] CFOs whose agenda exceeds capacity, 24% report positive AI
+  [129.9, 640.0, 196.5, 665.1] returns, against 79% where capacity meets demand. Both self-
+  [129.9, 667.7, 161.9, 674.9] reported. ›
+  [218.8, 591.4, 255.4, 599.2] CIO / CTO
+  [218.8, 602.5, 254.0, 609.6] Preprint: on
+  [218.8, 612.2, 282.3, 637.4] benchmark tasks, coordinated agent designs run 2.6–5.8×
+  [218.8, 640.0, 285.0, 656.1] the latency of a single agent. ›
+  [307.7, 591.4, 349.4, 599.2] CISO / CRO
+  [307.7, 602.5, 372.3, 609.6] A command-injection
+  [307.7, 612.2, 356.7, 637.4] flaw in an open- source agent framework was
+  [307.7, 640.0, 357.0, 656.1] published with a public exploit. ›
+  [396.6, 591.4, 418.2, 599.2] CHRO
+  [396.6, 602.5, 461.9, 609.6] 92% of 595 surveyed
+  [396.6, 612.2, 458.4, 637.4] US HR professionals say staff could be reskilled for AI roles;
+  [396.6, 640.0, 462.0, 665.1] the same survey says firms still hire outside more often. ›
+  [485.6, 591.4, 502.3, 599.2] COO
+  [485.6, 602.5, 538.8, 609.6] Of 1,100 surveyed
+  [485.6, 612.2, 554.1, 637.4] financial services firms, 59% are piloting or deploying multi-
+  [485.6, 640.0, 543.4, 665.1] agent AI; 10% have enterprise-wide orchestration. ›
+  [38.5, 695.1, 556.3, 704.5] 0 5 P E O P L E & AC T I O N · P 1 L E A D E R S H I P AC T I O N S T H I S W E E K ↑ Agenda
+  [38.3, 716.7, 271.3, 734.2] 1. Put a date on the return. For each AI programme, name the quarter a measured result lands and who signs for it.
+  [38.3, 740.7, 265.6, 748.5] 2. Test capacity, not just the case. Rank AI initiatives against delivery
+  [46.5, 751.2, 176.5, 759.0] capacity before approving the next one.
+  [38.3, 765.5, 265.8, 773.2] 3. Price the architecture. Ask for tokens and latency per task, not just
+  [46.5, 776.0, 204.6, 783.7] accuracy, before approving multi-agent designs.
+  [38.3, 790.2, 276.0, 798.0] 4. Start simple. Require a single-agent baseline before any team builds a
+  [46.5, 800.7, 101.6, 808.5] coordinated one.
+  [310.4, 716.7, 560.6, 734.2] 5. Inventory agent frameworks. List the open-source agent software in your stack and in your vendors', with version and owner.
+  [310.4, 740.7, 527.3, 748.5] 6. US national banks: align to the examiner. Map AI uses in credit,
+  [318.6, 751.2, 535.1, 759.0] payments, fraud and operations onto your existing risk framework.
+  [310.4, 765.5, 555.8, 773.2] 7. Fix measurement before scaling. If you cannot show a return on today's
+  [318.6, 776.0, 400.1, 783.7] agents, do not add more.
+  [310.4, 790.2, 524.2, 798.0] 8. Look inside first. Before hiring for an AI role, ask which current
+  [318.6, 800.7, 444.5, 808.5] employees could be redeployed into it.
+  [34.0, 820.0, 561.3, 827.1] ↑ Agenda Edition 07 · Page 1 of 6
+  [51.0, 419.3, 545.3, 427.6] The significant return is still a forecast. Of 400 CFOs surveyed, 52% report positive AI returns today but only 10% call them significant; 54%
+  [51.0, 430.5, 209.2, 438.8] expect significant returns within 24 months. ›
+  [38.5, 420.2, 40.9, 426.4] 1
+  [51.0, 446.3, 549.5, 465.1] Two technology suppliers reported fast growth. AMD Data Center +97% (total revenue +45%); CDW net sales +17.7% with Financial Services +73.2%. Neither release says how much of this is AI. ›
+  [37.9, 447.2, 41.4, 453.4] 2
+  [51.0, 472.5, 550.2, 480.8] More agents often cost more and deliver no more. On benchmark workflows, a preprint reports coordinated agent designs spend 1.4–4.7× the
+  [51.0, 483.8, 302.1, 492.1] tokens of a single agent for gains “usually small and rarely significant”. ›
+  [37.9, 474.2, 41.5, 480.4] 3
+  [51.0, 499.5, 540.0, 507.8] US national bank examiners now have an AI playbook. The OCC, which supervises national banks, issued a supervisory framework; it says
+  [51.0, 510.8, 272.0, 519.1] banks are not expected to set separate risk parameters for AI. ›
+  [37.8, 500.4, 41.6, 506.6] 4
+  [51.0, 526.5, 527.4, 545.3] This week's big rounds funded the layer that runs AI. Three rounds of $100M+ totalling $1.9B (our sum): inference, revenue agents and petabyte-scale analytics. ›
+  [37.9, 527.4, 41.5, 533.6] 5

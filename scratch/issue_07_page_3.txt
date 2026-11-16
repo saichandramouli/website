@@ -1,0 +1,63 @@
+The AI Leadership Brief 2–8 NOV 2026 · PAGE 3 OF 6
+02 COST & OUTPUT · P3 AI RESEARCH: WHAT AGENT ARCHITECTURE COSTS ↑ Agenda
+PREPRINT · 7 NOV 2026 · AGENT COST AND ACCURACY
+Preprint: adding agents to an enterprise-style workﬂow multiplied the cost and
+rarely improved the result
+The authors held the model, tasks and tools fixed and varied only the architecture, comparing four designs in eight arms across 13 enterprise-style
+standard operating procedures — a benchmark built to resemble the long, branching, tool-heavy workflows companies run. They report that every
+coordinated arm (multi-agent or skill-augmented) spends 1.44.7 the tokens and 2.65.8 the latency of a single function-calling agent “for gains that
+are usually small and rarely significantˮ, making the single agent, in their words, the efficient default. Quality of implementation mattered more than the
+design choice: a plausible multi-agent build underperformed the single agent, while a targeted redesign was the only arm to beat the baseline
+significantly, at 75.6% task success against 67.4%  though the authors also report that no architecture is statistically separable in aggregate, and that
+added structure only “plausiblyˮ pays off on the most complex procedures, which they call a directional and not yet significant trend. Their stated
+conclusions are that no architecture is universally best — the right choice depends on the procedure — and that added architectural cost has to be
+earned by a gain in task success. Authors' own measurements; not peer reviewed. The paper does not name the model held fixed across the arms, so
+the multiples describe that one setup rather than a general rule.
+Nandi S, Arora H, Bai Y, Patel U, Shah C, Kwon H, Zhang W, Chen W, Li CR, Sconfienza A, Goyal A, Lee Y, Xiong M, Ramachandra P. “Agent Architecture Cost-Success Trade-offs: A
+Controlled Evaluation across Enterprise-Style SOPs.ˮ arXiv preprint v1, 7 Nov 2026. arxiv.org/abs/2611.12953 · DOI 10.48550/arXiv.2611.12953 (arXiv-issued)
+COORDINATED AGENT ARMS vs A SINGLE AGENT (RANGE
+REPORTED)
+Token cost 1.44.7
+Latency 2.65.8
+Task success, baseline 67.4%
+Task success, best arm 75.6%
+Figures as reported by the authors across 13 enterprise SOPs. Cost and latency bars are
+scaled to the top of each reported range; success bars are scaled to 75.6%. Cost and
+success are different measures and are not comparable to each other.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+03 RISK & COMPLIANCE · P3 VENDOR & SECURITY RISK ↑ Agenda
+OPEN-SOURCE AGENT FRAMEWORK · CVE RECORD PUBLISHED 5 NOV 2026 · GLOBAL
+A command-injection ﬂaw in an open-source agent framework was published with a working
+exploit already public
+The national vulnerability record for CVE2026123022, published 5 November 2026, describes a flaw in AgentScope up to version 2.0.11. The affected
+element is the subprocess.Popen function in the framework's MCP Workspace API manipulating the command argument results in OS command
+injection, and the record states that the attack may be launched remotely, adding that “The exploit is now public and may be used.ˮ The record carries a
+CVSS v3.1 score of 7.3, assigned as a secondary metric by a third-party numbering authority rather than the project. The record says nothing about how
+widely the package is deployed, and we found no reliable figure for it. Our view: the point for a board is the category, not this package — agent
+frameworks and their connectors are ordinary supply-chain software, installed by teams and by vendors.
+Source: NVD record for CVE2026123022, published 5 Nov 2026  open the record.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+05 PEOPLE & ACTION · P3 OPERATING MODELS: AI IN INDUSTRIAL SECTORS ↑ Agenda
+INSURANCE · UNITED STATES · REPORTED 6 NOV 2026 · EARNINGS CALL REMARKS
+An insurer says it plans to do business with its customers' AI agents, not only with its customers
+As reported by CIO Dive, Allstate chief executive Tom Wilson told investors on the company's third-quarter earnings call that personal AI assistants give
+the insurer an opportunity to serve customers who prefer machines to handle transactions, and that Allstate's goal is to work with those outside agents
+rather than against them, showing customers branded products as they interact. He said the rollout of the company's own agentic platform, introduced
+earlier this year to handle agent-to-agent processing, is accelerating. Executives' statements on an earnings call, as reported; not measured results.
+Source: CIO Dive, 6 Nov 2026, reporting the Q3 2026 earnings call. Company statements of intent.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+↑ Agenda Edition 07 · Page 3 of 6
+Do we know the cost per completed task of our agents, or only their
+accuracy?
+▸
+Did anyone compare our multi-agent build against a single-agent
+baseline before we funded it?
+▸
+Which open-source agent frameworks and connectors run inside our estate,
+and who patches them?
+▸ Do our AI vendors tell us when a component they embed has a published
+exploit?
+▸
+If a customer's AI agent came to buy from us tomorrow, could our systems
+and terms transact with it?
+▸

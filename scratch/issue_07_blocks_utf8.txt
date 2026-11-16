@@ -1,0 +1,274 @@
+=== PAGE 1 BLOCKS ===
+  [34.0, 28.7, 560.0, 71.6] W E E K LY · E D I T I O N 0 7 2 – 8 N OV 2 0 2 6 · PAG E 1 O F 6 The AI Leadership Brief
+  [34.0, 74.3, 435.4, 82.6] Edition 07 · 2–8 Nov 2026 · By Jayaraman (Jay) Ganapathi, People Prime Worldwide · For CXOs and senior leaders
+  [38.5, 95.9, 556.3, 105.2] 0 5 P E O P L E & AC T I O N · P 1 CA R TO O N O F T H E W E E K ↑ Agenda
+  [245.7, 131.7, 274.5, 146.4] IN 24 MONTHS
+  [102.4, 196.5, 133.0, 202.7] ROI TODAY
+  [61.0, 125.7, 123.6, 141.7] So where is the return on all this AI?
+  [226.7, 196.2, 285.1, 203.7] It went up with the
+  [236.4, 204.7, 275.4, 212.2] forecast, sir.
+  [345.8, 142.6, 552.4, 195.0] “This week: of 400 CFOs surveyed, just 10% call their AI returns significant today. 54% expect significant returns within 24 months.”
+  [45.3, 239.8, 549.9, 255.1] AGENDA 5 T H E M E S · T A P T O J U M P Short on time? 60-second summary → Your role → Leadership actions
+  [45.3, 267.1, 118.5, 284.1] 01 Growth & revenue Where is AI paying?
+  [45.3, 289.6, 134.0, 305.9] p1 60-second summary p2 Lead: the ROI scoreboard
+  [45.3, 308.4, 96.1, 324.7] p6 Key numbers p6 Leaders said
+  [148.2, 267.1, 207.9, 284.1] 02 Cost & output What gets cheaper?
+  [148.2, 289.6, 223.4, 305.9] p2 New LLM releases or security patch releases
+  [148.2, 308.4, 193.7, 315.7] p3 AI research
+  [251.0, 267.1, 327.2, 284.1] 03 Risk & compliance What could hurt us?
+  [251.0, 289.6, 329.2, 305.9] p3 Vendor & security risk p4 Unsolved problems
+  [251.0, 308.4, 314.0, 315.7] p4 Laws & guidance
+  [353.9, 267.1, 428.0, 284.1] 04 Capital & markets Where is money going?
+  [353.9, 289.6, 433.2, 305.9] p4 Infrastructure p5 Investments ($100M+)
+  [353.9, 308.4, 418.0, 324.7] p5 Regional index p6 Upcoming events
+  [456.7, 267.1, 522.9, 284.1] 05 People & action What do we do?
+  [456.7, 289.6, 493.2, 305.9] p1 Your role p1 Actions
+  [456.7, 308.4, 521.8, 324.7] p3 Operating models p5 Workforce
+  [456.7, 327.1, 508.5, 343.4] p6 One year ago p6 Caution note
+  [45.3, 358.2, 532.4, 374.1] This issue leads with business impact: what AI earned, what it cost and what it put at risk. Every item carries Ask your leadership team (editor's questions, not claims). A Business lens appears only where we add a reading the source does not state. Data quality section skipped (no qualifying item). Verify before business use.
+  [38.5, 398.1, 556.3, 407.5] 0 1 G R OW T H & R E V E N U E · P 1 6 0 - S E C O N D S U M M A RY ↑ Agenda
+  [38.5, 564.6, 556.3, 574.0] 0 5 P E O P L E & AC T I O N · P 1 T H I S W E E K F O R YO U R R O L E ↑ Agenda
+  [41.0, 591.4, 56.6, 599.2] CEO
+  [41.0, 602.5, 106.9, 609.6] 49% of 400 surveyed
+  [41.0, 612.2, 109.4, 637.4] CFOs say their transformation agenda exceeds their
+  [41.0, 640.0, 103.2, 656.1] organisation's ability to execute. ›
+  [129.9, 591.4, 145.3, 599.2] CFO
+  [129.9, 602.5, 181.0, 609.6] Among surveyed
+  [129.9, 612.2, 197.4, 637.4] CFOs whose agenda exceeds capacity, 24% report positive AI
+  [129.9, 640.0, 196.5, 665.1] returns, against 79% where capacity meets demand. Both self-
+  [129.9, 667.7, 161.9, 674.9] reported. ›
+  [218.8, 591.4, 255.4, 599.2] CIO / CTO
+  [218.8, 602.5, 254.0, 609.6] Preprint: on
+  [218.8, 612.2, 282.3, 637.4] benchmark tasks, coordinated agent designs run 2.6–5.8×
+  [218.8, 640.0, 285.0, 656.1] the latency of a single agent. ›
+  [307.7, 591.4, 349.4, 599.2] CISO / CRO
+  [307.7, 602.5, 372.3, 609.6] A command-injection
+  [307.7, 612.2, 356.7, 637.4] flaw in an open- source agent framework was
+  [307.7, 640.0, 357.0, 656.1] published with a public exploit. ›
+  [396.6, 591.4, 418.2, 599.2] CHRO
+  [396.6, 602.5, 461.9, 609.6] 92% of 595 surveyed
+  [396.6, 612.2, 458.4, 637.4] US HR professionals say staff could be reskilled for AI roles;
+  [396.6, 640.0, 462.0, 665.1] the same survey says firms still hire outside more often. ›
+  [485.6, 591.4, 502.3, 599.2] COO
+  [485.6, 602.5, 538.8, 609.6] Of 1,100 surveyed
+  [485.6, 612.2, 554.1, 637.4] financial services firms, 59% are piloting or deploying multi-
+  [485.6, 640.0, 543.4, 665.1] agent AI; 10% have enterprise-wide orchestration. ›
+  [38.5, 695.1, 556.3, 704.5] 0 5 P E O P L E & AC T I O N · P 1 L E A D E R S H I P AC T I O N S T H I S W E E K ↑ Agenda
+  [38.3, 716.7, 271.3, 734.2] 1. Put a date on the return. For each AI programme, name the quarter a measured result lands and who signs for it.
+  [38.3, 740.7, 265.6, 748.5] 2. Test capacity, not just the case. Rank AI initiatives against delivery
+  [46.5, 751.2, 176.5, 759.0] capacity before approving the next one.
+  [38.3, 765.5, 265.8, 773.2] 3. Price the architecture. Ask for tokens and latency per task, not just
+  [46.5, 776.0, 204.6, 783.7] accuracy, before approving multi-agent designs.
+  [38.3, 790.2, 276.0, 798.0] 4. Start simple. Require a single-agent baseline before any team builds a
+  [46.5, 800.7, 101.6, 808.5] coordinated one.
+  [310.4, 716.7, 560.6, 734.2] 5. Inventory agent frameworks. List the open-source agent software in your stack and in your vendors', with version and owner.
+  [310.4, 740.7, 527.3, 748.5] 6. US national banks: align to the examiner. Map AI uses in credit,
+  [318.6, 751.2, 535.1, 759.0] payments, fraud and operations onto your existing risk framework.
+  [310.4, 765.5, 555.8, 773.2] 7. Fix measurement before scaling. If you cannot show a return on today's
+  [318.6, 776.0, 400.1, 783.7] agents, do not add more.
+  [310.4, 790.2, 524.2, 798.0] 8. Look inside first. Before hiring for an AI role, ask which current
+  [318.6, 800.7, 444.5, 808.5] employees could be redeployed into it.
+  [34.0, 820.0, 561.3, 827.1] ↑ Agenda Edition 07 · Page 1 of 6
+  [51.0, 419.3, 545.3, 427.6] The significant return is still a forecast. Of 400 CFOs surveyed, 52% report positive AI returns today but only 10% call them significant; 54%
+  [51.0, 430.5, 209.2, 438.8] expect significant returns within 24 months. ›
+  [38.5, 420.2, 40.9, 426.4] 1
+  [51.0, 446.3, 549.5, 465.1] Two technology suppliers reported fast growth. AMD Data Center +97% (total revenue +45%); CDW net sales +17.7% with Financial Services +73.2%. Neither release says how much of this is AI. ›
+  [37.9, 447.2, 41.4, 453.4] 2
+  [51.0, 472.5, 550.2, 480.8] More agents often cost more and deliver no more. On benchmark workflows, a preprint reports coordinated agent designs spend 1.4–4.7× the
+  [51.0, 483.8, 302.1, 492.1] tokens of a single agent for gains “usually small and rarely significant”. ›
+  [37.9, 474.2, 41.5, 480.4] 3
+  [51.0, 499.5, 540.0, 507.8] US national bank examiners now have an AI playbook. The OCC, which supervises national banks, issued a supervisory framework; it says
+  [51.0, 510.8, 272.0, 519.1] banks are not expected to set separate risk parameters for AI. ›
+  [37.8, 500.4, 41.6, 506.6] 4
+  [51.0, 526.5, 527.4, 545.3] This week's big rounds funded the layer that runs AI. Three rounds of $100M+ totalling $1.9B (our sum): inference, revenue agents and petabyte-scale analytics. ›
+  [37.9, 527.4, 41.5, 533.6] 5
+=== PAGE 2 BLOCKS ===
+  [34.0, 27.4, 560.0, 43.8] The AI Leadership Brief 2 – 8 N OV 2 0 2 6 · PAG E 2 O F 6
+  [38.5, 62.1, 556.3, 71.5] 0 1 G R OW T H & R E V E N U E · P 2 L E A D : T H E R O I S C O R E B OA R D ↑ Agenda
+  [34.0, 82.0, 533.6, 118.8] CFO SURVEY AND COMPANY RESULTS · 2–4 NOV 2026 · NORTH AMERICA, GLOBAL Buyers of AI are still waiting for the return; two technology suppliers posted fast growth in the same week — and the survey points at execution capacity
+  [34.0, 124.6, 555.8, 143.3] RGP surveyed 400 CFOs and equivalent finance leaders at organisations with annual revenue of $250M or more. 52% report positive AI returns today, but just 10% describe them as significant; 54% expect significant positive returns within 24 months. 89% are positive about their organisation's
+  [34.0, 146.4, 551.6, 186.1] financial outlook for the next 12 months, while 49% say their transformation agenda exceeds their organisation's ability to execute. The split is worth a board discussion: among CFOs whose agenda exceeds capacity, 24% report positive AI returns, against 79% among those whose capacity meets or exceeds demand. Both halves of that comparison are the same respondent's own assessment, so it shows an association, not a cause, and the survey did not ask about technology. Survey conducted September 2026; respondents in North America, Europe and Asia Pacific, per CFO.com. RGP sells transformation and
+  [34.0, 189.4, 419.4, 196.3] execution services — the capability its survey finds respondents lack. Open: CFO.com report · RGP survey release, syndicated copy
+  [34.0, 208.2, 553.5, 215.0] COMPANY · DATE WHAT IT REPORTED WHAT THE RELEASE ITSELF SAYS ABOUT AI SOURCE
+  [34.0, 224.8, 50.3, 232.4] AMD
+  [34.0, 236.0, 71.7, 242.8] 3 Nov · chips
+  [104.9, 224.8, 275.7, 252.0] Q3 revenue $13.4B, up 45%. Data Center segment $8.5B, up 97%. Q4 outlook about $17B, plus or minus 3% (company forecast).
+  [290.1, 224.8, 512.4, 261.0] The release attributes Data Center growth to demand for its EPYC processors and the launch of its Instinct MI450 Series GPUs. The cautionary statement lists memory supply among its risks. (CFO Jean Hu on the Q4 outlook is quoted on p6.)
+  [524.4, 224.8, 547.8, 232.5] release
+  [34.0, 272.8, 50.8, 280.4] CDW
+  [34.0, 272.8, 278.4, 309.0] 4 Nov · IT reseller Q3 net sales $6,754.5M, up 17.7%. Commercial $3,979.4M, up 20.8%, within which Financial Services $571.5M, up 73.2%. Government +9.9%, Education +7.5%, Healthcare +9.3%.
+  [290.1, 272.8, 517.1, 309.0] CEO Christine A. Leahy cites “strong momentum in enterprise AI adoption” (per company release). The release's risk factors cite supply disruptions, including capacity limits and cost increases, tied to heightened AI-related demand.
+  [524.4, 272.8, 547.8, 280.5] release
+  [42.7, 331.2, 220.1, 338.0] YEAR-ON-YEAR GROWTH REPORTED THIS WEEK
+  [42.7, 344.5, 296.4, 351.6] AMD Data Center segment +97%
+  [42.7, 358.0, 296.4, 365.1] CDW Financial Services +73.2%
+  [42.7, 370.9, 296.4, 378.5] AMD total revenue +45%
+  [42.7, 384.2, 296.4, 391.3] CDW total net sales +17.7%
+  [42.7, 397.5, 280.2, 412.3] Company figures; measures differ (total vs segment, group vs customer channel). Bars scaled to +97%. Neither release quantifies how much of the growth is AI.
+  [319.2, 334.2, 516.8, 341.0] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+  [38.5, 434.1, 556.3, 443.5] 0 2 C O S T & O U T P U T · P 2 N E W L L M R E L E A S E S O R S E C U R I T Y PATC H R E L E A S E S ↑ Agenda
+  [34.0, 458.0, 540.7, 464.7] DATE TYPE WHAT WAS RELEASED COST, ACCESS AND RISK (FROM THE SOURCE) SOURCES
+  [34.0, 474.6, 244.6, 530.2] 4 Nov M O D E L Tencent Hy4, the full version of a model Tencent had previously released in preview, adding visual understanding and computer-use capability, available across Tencent products and third-party platforms.
+  [259.3, 474.6, 498.8, 520.5] Standard API price unchanged from the Hy4 preview at $0.834 per million input tokens and $2.501 per million output tokens, with a 50% discount on Tencent Cloud TokenHub to 31 December (as reported by TechNode). Tencent says it plans to release model weights and system cards “in the coming days”, with a focus on cybersecurity and biological safety.
+  [506.8, 474.6, 555.6, 492.0] Announcement · TechNode
+  [34.0, 541.3, 102.3, 549.3] 5 Nov M O D E L
+  [70.9, 551.9, 119.6, 559.0] R E S T R I C T E D
+  [130.8, 541.3, 249.6, 597.7] OpenAI GPT-6 Cyber, a variant of GPT-6 Astra trained for authorised vulnerability research, reached a select group of approved customers in the “Daybreak Red” tier via the API and Codex.
+  [259.3, 541.3, 495.3, 616.5] No public price; access is gated and OpenAI says it will extend to all Daybreak Red customers in the coming weeks. OpenAI rated the model “Critical” for cybersecurity under its Preparedness Framework, up from “High” for its predecessor, and says it scored 48.5% on its ExploitGym evaluation against 32.1% for GPT-5.6 Cyber. OpenAI also announced a $1bn grant programme to subsidise access for resource-constrained defenders. All figures are OpenAI's own, as reported by the three sources listed.
+  [506.8, 541.3, 548.3, 568.5] TNW · Cyber Magazine · Fortune
+  [34.0, 626.6, 549.8, 642.6] No other model or patch release in the window met this brief's rule that a first-party announcement or official record be identifiable; tracker sites and model catalogues were not used.
+  [34.0, 656.0, 155.4, 662.7] BUSINESS LENS · OUR SUMMARY
+  [34.0, 667.4, 276.2, 684.7] Tencent held Hy4's API price at the preview level while adding vision and computer use. OpenAI gated its new security model to vetted customers and
+  [34.0, 687.7, 165.1, 695.2] raised its own cyber risk rating to Critical.
+  [303.3, 656.0, 500.9, 662.7] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+  [34.0, 814.8, 561.3, 821.9] ↑ Agenda Edition 07 · Page 2 of 6
+  [319.2, 345.5, 528.9, 362.9] If our board asked today, which AI programme could we show a measured revenue or cost result for? ▸
+  [319.2, 367.3, 561.2, 384.7] Is our AI agenda larger than our ability to deliver it, and which items would we cut to fix that? ▸
+  [319.2, 389.0, 560.8, 406.4] Our suppliers are reporting AI-led growth. Are we the customer funding it, and what are we getting back? ▸
+  [303.3, 666.5, 555.4, 683.9] If capability rises without a price rise, which of our rejected AI cases become viable? ▸
+  [303.3, 688.3, 555.9, 705.7] Who in our organisation would be approved to use a gated offensive-security model, and under whose authority? ▸
+=== PAGE 3 BLOCKS ===
+  [34.0, 27.4, 560.0, 43.8] The AI Leadership Brief 2 – 8 N OV 2 0 2 6 · PAG E 3 O F 6
+  [38.5, 62.1, 556.3, 71.5] 0 2 C O S T & O U T P U T · P 3 A I R E S E A R C H : W H AT AG E N T A R C H I T E C T U R E C O S T S ↑ Agenda
+  [34.0, 82.0, 523.0, 118.8] PREPRINT · 7 NOV 2026 · AGENT COST AND ACCURACY Preprint: adding agents to an enterprise-style workflow multiplied the cost and rarely improved the result
+  [34.0, 124.6, 539.1, 143.3] The authors held the model, tasks and tools fixed and varied only the architecture, comparing four designs in eight arms across 13 enterprise-style standard operating procedures — a benchmark built to resemble the long, branching, tool-heavy workflows companies run. They report that every
+  [34.0, 146.4, 558.6, 228.1] coordinated arm (multi-agent or skill-augmented) spends 1.4–4.7× the tokens and 2.6–5.8× the latency of a single function-calling agent “for gains that are usually small and rarely significant”, making the single agent, in their words, the efficient default. Quality of implementation mattered more than the design choice: a plausible multi-agent build underperformed the single agent, while a targeted redesign was the only arm to beat the baseline significantly, at 75.6% task success against 67.4% — though the authors also report that no architecture is statistically separable in aggregate, and that added structure only “plausibly” pays off on the most complex procedures, which they call a directional and not yet significant trend. Their stated conclusions are that no architecture is universally best — the right choice depends on the procedure — and that added architectural cost has to be earned by a gain in task success. Authors' own measurements; not peer reviewed. The paper does not name the model held fixed across the arms, so the multiples describe that one setup rather than a general rule.
+  [34.0, 233.6, 559.0, 249.6] Nandi S, Arora H, Bai Y, Patel U, Shah C, Kwon H, Zhang W, Chen W, Li CR, Sconfienza A, Goyal A, Lee Y, Xiong M, Ramachandra P. “Agent Architecture Cost-Success Trade-offs: A Controlled Evaluation across Enterprise-Style SOPs.” arXiv preprint v1, 7 Nov 2026. arxiv.org/abs/2611.12953 · DOI 10.48550/arXiv.2611.12953 (arXiv-issued)
+  [42.7, 266.7, 253.9, 281.0] COORDINATED AGENT ARMS vs A SINGLE AGENT ( RANGE REPORTED)
+  [42.7, 287.5, 296.4, 294.6] Token cost 1.4–4.7×
+  [42.7, 301.0, 296.4, 308.1] Latency 2.6–5.8×
+  [42.7, 313.9, 296.4, 321.5] Task success, baseline 67.4%
+  [42.7, 327.4, 296.4, 335.0] Task success, best arm 75.6%
+  [42.7, 340.5, 283.7, 347.0] Figures as reported by the authors across 13 enterprise SOPs. Cost and latency bars are
+  [42.7, 349.5, 276.6, 364.3] scaled to the top of each reported range; success bars are scaled to 75.6%. Cost and success are different measures and are not comparable to each other.
+  [319.2, 270.5, 516.8, 277.2] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+  [38.5, 386.1, 556.3, 395.5] 0 3 R I S K & C O M P L I A N C E · P 3 V E N D O R & S E C U R I T Y R I S K ↑ Agenda
+  [34.0, 406.0, 531.3, 439.5] OPEN-SOURCE AGENT FRAMEWORK · CVE RECORD PUBLISHED 5 NOV 2026 · GLOBAL A command-injection flaw in an open-source agent framework was published with a working exploit already public
+  [34.0, 445.6, 556.6, 506.3] The national vulnerability record for CVE-2026-123022, published 5 November 2026, describes a flaw in AgentScope up to version 2.0.11. The affected element is the subprocess.Popen function in the framework's MCP Workspace API: manipulating the command argument results in OS command injection, and the record states that the attack may be launched remotely, adding that “The exploit is now public and may be used.” The record carries a CVSS v3.1 score of 7.3, assigned as a secondary metric by a third-party numbering authority rather than the project. The record says nothing about how widely the package is deployed, and we found no reliable figure for it. Our view: the point for a board is the category, not this package — agent frameworks and their connectors are ordinary supply-chain software, installed by teams and by vendors.
+  [34.0, 511.9, 285.1, 518.8] Source: NVD record for CVE-2026-123022, published 5 Nov 2026 — open the record.
+  [34.0, 530.7, 231.6, 537.5] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+  [38.5, 575.9, 556.3, 585.2] 0 5 P E O P L E & AC T I O N · P 3 O P E R AT I N G M O D E L S : A I I N I N D U S T R I A L S E C TO R S ↑ Agenda
+  [34.0, 595.8, 554.3, 617.3] INSURANCE · UNITED STATES · REPORTED 6 NOV 2026 · EARNINGS CALL REMARKS An insurer says it plans to do business with its customers' AI agents, not only with its customers
+  [34.0, 623.4, 556.2, 663.1] As reported by CIO Dive, Allstate chief executive Tom Wilson told investors on the company's third-quarter earnings call that personal AI assistants give the insurer an opportunity to serve customers who prefer machines to handle transactions, and that Allstate's goal is to work with those outside agents rather than against them, showing customers branded products as they interact. He said the rollout of the company's own agentic platform, introduced earlier this year to handle agent-to-agent processing, is accelerating. Executives' statements on an earnings call, as reported; not measured results.
+  [34.0, 668.6, 322.2, 675.6] Source: CIO Dive, 6 Nov 2026, reporting the Q3 2026 earnings call. Company statements of intent.
+  [34.0, 687.5, 226.8, 694.2] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+  [34.0, 814.8, 561.3, 821.9] ↑ Agenda Edition 07 · Page 3 of 6
+  [319.2, 281.0, 542.4, 298.4] Do we know the cost per completed task of our agents, or only their accuracy? ▸
+  [319.2, 302.8, 533.0, 320.2] Did anyone compare our multi-agent build against a single-agent baseline before we funded it? ▸
+  [34.0, 541.3, 546.9, 558.7] Which open-source agent frameworks and connectors run inside our estate, and who patches them? ▸ Do our AI vendors tell us when a component they embed has a published exploit? ▸
+  [34.0, 698.0, 278.3, 715.4] If a customer's AI agent came to buy from us tomorrow, could our systems and terms transact with it? ▸
+=== PAGE 4 BLOCKS ===
+  [34.0, 27.4, 560.0, 43.8] The AI Leadership Brief 2 – 8 N OV 2 0 2 6 · PAG E 4 O F 6
+  [38.5, 62.1, 556.3, 71.5] 0 3 R I S K & C O M P L I A N C E · P 4 L AW S , R U L E S & G U I DA N C E ↑ Agenda
+  [34.0, 82.0, 557.4, 115.5] UNITED STATES · 4 NOV 2026 · SUPERVISORY FRAMEWORK, NOT A RULE US bank regulator issues its first AI framework for examiners — and declines to treat AI as a risk apart
+  [34.0, 121.6, 560.7, 213.8] The Office of the Comptroller of the Currency, which supervises national banks and federal savings associations, issued Bulletin 2026-54 and a supervisory framework for examiners evaluating banks' use of AI. Note the terminology before searching for it: the document calls the technology “super intelligence”, or SI. Examiners will apply it to SI in normal-course activities including credit decisioning, payments, fraud detection, customer service, operations, risk management and market activities, with particular attention to generative and agentic systems; it sets out 16 supervisory components across six pillars and is described as a living document. Two points matter for a board. Examiners are told not to treat SI as a separate and distinct risk category, and banks need not define a separate SI risk appetite — SI risk belongs inside existing operational, compliance and credit frameworks. And scrutiny follows what a system is permitted to do and the consequences if it fails, not how sophisticated the model is. Status: the framework sets no new supervisory expectations or enforceable standards; Reuters notes it is not legally binding in the way a rule is, though banks typically comply closely with such guidance.
+  [34.0, 219.4, 463.6, 226.3] Sources: OCC Bulletin 2026-54 and news release NR 2026-97, 4 Nov 2026 · ABA Banking Journal · Reuters (Pete Schroeder) · Reed Smith analysis
+  [34.0, 238.2, 226.8, 245.0] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+  [38.5, 281.1, 556.3, 290.5] 0 3 R I S K & C O M P L I A N C E · P 4 U N S O LV E D P R O B L E M S I N A I ↑ Agenda
+  [34.0, 301.0, 356.6, 324.3] INDUSTRY RESEARCH · 5 NOV 2026 · PARIS · FINANCIAL SERVICES Still unsolved: proving that agentic AI paid for itself
+  [34.0, 330.1, 561.1, 359.3] The Capgemini Research Institute's World Cloud Report for Financial Services 2027, published 5 November, draws on a survey of 1,100 financial services leaders across 14 markets, fielded June to July 2026, in seven sectors from retail banking to health insurance. It reports that 59% of firms are piloting or deploying multi-agent AI systems, yet only 10% have achieved enterprise-wide orchestration and only 5% have institutionalised the capabilities to run
+  [34.0, 362.4, 561.1, 423.1] agentic AI at enterprise scale. Roughly half of firms cannot consistently demonstrate a return on agentic AI initiatives. On cost, 90% are using or planning to implement intelligent model routing to optimise performance and manage token costs, and 52% are turning to hyperscalers as their preferred cloud partner to govern multi-agent deployments. The release ties the gap to measurement rather than ambition: firms lack clear frameworks for judging whether initiatives deliver enough value to justify continued investment. It reports eight in ten executives prioritising reduction of technical debt, calls a modernised tech stack a prerequisite for the agentic era, and projects that executives making outcomes their primary AI-funding criterion will rise 141% by 2028 while those focused on efficiency fall 42%. (Ravi Khokhar, Capgemini's Global Head of Cloud for Financial Services, is quoted on p6.)
+  [34.0, 428.6, 545.1, 444.6] Source: Capgemini press release and World Cloud Report for Financial Services 2027, 5 Nov 2026. Survey figures are the publisher's own; projections to 2028 are the report's forecast. Capgemini sells cloud and AI services of the kind the report finds firms need.
+  [34.0, 456.5, 231.6, 463.2] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+  [38.5, 501.6, 556.3, 511.0] 0 4 CA P I TA L & M A R K E T S · P 4 I N F R A S T R U C T U R E & CA PAC I T Y ↑ Agenda
+  [34.0, 521.5, 515.2, 555.0] UNITED STATES · WYOMING · 5 NOV 2026 · COMPANY ANNOUNCEMENT Google puts $17 billion behind a first data centre in Wyoming, with the power contracted alongside it
+  [34.0, 561.1, 553.8, 621.8] In a post by Steve Walter, vice president of global infrastructure and energy, Google said it is building its first data centre in Wyoming, sited in Laramie County and “making a long-term, $17 billion investment in the Cowboy State”. The design is air-cooled, which the company ties to limiting demands on local water. The power is contracted rather than self-built: the project is contracted with AEP for a commercial-scale 702-megawatt fuel-cell development, with the cells made by Bloom Energy, while gas generators run by Tallgrass Energy and Black Hills Energy also supply power. Carbon capture sits with that gas generation, not the fuel cells — Tallgrass is developing a nearby sequestration hub. The announcement gives no construction schedule, and the 702 MW figure is a power figure, not the data centre's capacity. For buyers of compute, the detail to note is the structure rather than
+  [34.0, 624.9, 395.3, 633.1] the headline number: this announcement pairs the capacity with the power arrangements meant to run it.
+  [34.0, 637.9, 453.6, 644.8] Source: Google blog post, 5 Nov 2026. Company plans; not measured output. Our summary: here, capacity and power are announced together.
+  [34.0, 656.7, 226.8, 663.5] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+  [34.0, 814.8, 561.3, 821.9] ↑ Agenda Edition 07 · Page 4 of 6
+  [34.0, 248.8, 284.7, 266.2] If an examiner asked tomorrow, could we show where each AI use sits inside our existing risk framework — not beside it? ▸
+  [34.0, 467.0, 557.6, 484.4] Do we have one agreed way of measuring what an agent delivered, or does every unit use its own? ▸ Are we routing work to the cheapest model that is accurate enough, and can we show the saving? ▸
+  [34.0, 667.3, 284.6, 684.7] Do our cloud and AI contracts give us a price and a capacity commitment, or only access? ▸
+=== PAGE 5 BLOCKS ===
+  [34.0, 27.4, 560.0, 43.8] The AI Leadership Brief 2 – 8 N OV 2 0 2 6 · PAG E 5 O F 6
+  [38.5, 62.1, 556.3, 71.5] 0 4 CA P I TA L & M A R K E T S · P 5 I N V E S T M E N T S ( $ 1 0 0 M A N D A B OV E ) ↑ Agenda
+  [34.0, 86.0, 520.0, 92.7] COMPANY AMOUNT STRUCTURE · LEAD(S) BUSINESS PROBLEM IT TARGETS CONFIRMED BY
+  [34.0, 101.8, 245.0, 176.9] fal $1.3B Series F · Bessemer Venture Partners, with Nvidia, Sound Ventures, HOF Capital and T. Rowe Price. Announced alongside a previously closed $350M Series E led by Sequoia Capital; the two rounds total $1.65B.
+  [257.9, 101.8, 452.6, 129.0] Running generative image, video and audio models for developers and businesses — the inference layer rather than the model itself
+  [464.9, 101.8, 550.5, 119.2] Bessemer announcement · Tech.eu, 3 Nov 2026
+  [34.0, 188.1, 249.6, 244.5] Nooks $500M Growth capital commitment from General Catalyst's Customer Value Fund. Not an equity round: the fund takes a share of the returns the money generates rather than a stake.
+  [257.9, 188.1, 448.5, 205.5] AI agents for sales teams; announced with a sales assistant product
+  [464.9, 188.1, 544.0, 205.4] Company release, 4 Nov 2026
+  [34.0, 255.6, 251.8, 292.5] Ocient $100M Series C · co-led by BOKA Capital and OCA Ventures. The company says the round takes its total raised to $260M.
+  [257.9, 255.6, 449.8, 282.7] Analytics on petabyte-scale data for AI agents and human analysts; the company says it expects revenue to more than triple in 2026
+  [464.9, 255.6, 550.7, 263.2] Blocks & Files, 5 Nov 2026
+  [34.0, 302.6, 552.4, 327.6] Only rounds of $100M or more announced 2–8 Nov 2026. Amounts and leads come from each company's announcement or its lead investor's; where a company's own post was unavailable, a bylined report quoting it is linked instead. Total $1.9B is our sum of the three announced amounts, and the “business problem” column is our short description. The Nooks figure is a financing commitment, not an equity raise, and is not comparable to the other two. No valuations.
+  [34.0, 339.5, 155.4, 346.2] BUSINESS LENS · OUR SUMMARY
+  [34.0, 350.9, 291.7, 368.2] All three fund the layer between the model and the business outcome: running models, acting on customers, and querying the data. None of the three is a model
+  [34.0, 371.2, 55.1, 378.7] maker.
+  [303.3, 339.5, 500.9, 346.2] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+  [38.5, 406.4, 556.3, 415.7] 0 5 P E O P L E & AC T I O N · P 5 WO R K F O R C E & TA L E N T ↑ Agenda
+  [34.0, 426.3, 299.0, 459.8] UNITED STATES · 4 NOV 2026 · PUBLISHED RESEARCH Employers believe their own staff could do the AI jobs — and hire outside anyway
+  [34.0, 465.9, 303.7, 516.1] New research published by Careerminds reports that 92% of US HR professionals and 88% of US people managers believe employees within their organisations could be reskilled for AI-related roles, yet organisations are more likely to hire externally than redeploy workers already on the payroll. The white paper is titled The AI Redeployment Gap: What Companies Lose by
+  [34.0, 519.1, 299.4, 548.3] Hiring over Reskilling. Survey of 595 US HR professionals and 547 US people managers, aged 25–65, at organisations with 500 to 10,000 or more employees, conducted 15–26 May 2026 with Censuswide.
+  [34.0, 553.1, 291.4, 569.1] Source: Careerminds announcement, 4 Nov 2026. Publisher's own survey; Careerminds sells reskilling and outplacement services — the course the survey recommends.
+  [327.9, 434.0, 547.1, 448.2] BELIEF THAT EXISTING STAFF COULD BE RESKILLED FOR AI ROLES
+  [327.9, 454.9, 552.6, 462.5] HR professionals 92%
+  [327.9, 468.4, 552.6, 476.0] People managers 88%
+  [327.9, 481.5, 538.1, 488.0] Self-reported belief, not a measure of redeployment actually carried out. The
+  [327.9, 490.5, 521.2, 497.0] same research reports that external hiring still outpaces redeployment.
+  [327.9, 509.7, 472.2, 516.5] ASK YOUR TEAM · EDITOR'S QUESTION
+  [38.5, 584.1, 556.3, 593.5] 0 4 CA P I TA L & M A R K E T S · P 5 R E G I O N A L I N D E X ↑ Agenda
+  [34.0, 608.4, 545.3, 615.7] North America AMD and CDW results · OCC supervisory framework for examiners · Google's Wyoming data centre · fal, Nooks and Ocient rounds · Allstate on
+  [107.7, 618.1, 172.5, 625.4] customers' AI agents
+  [34.0, 635.4, 372.5, 642.7] Europe & UK Capgemini Research Institute's World Cloud Report for Financial Services 2027 (Paris)
+  [34.0, 653.4, 322.5, 660.7] China Tencent Hy4, with vision and computer use, at the preview's API price
+  [34.0, 671.4, 393.8, 678.7] India No qualifying item this week — the Global row below carries items that apply in every market.
+  [34.0, 688.6, 393.8, 695.9] Japan No qualifying item this week — the Global row below carries items that apply in every market.
+  [34.0, 706.6, 393.8, 713.9] Australia No qualifying item this week — the Global row below carries items that apply in every market.
+  [34.0, 724.6, 497.1, 731.9] Global OpenAI's gated security model · agent architecture cost preprint · agent-framework vulnerability record · US reskilling research
+  [34.0, 814.8, 561.3, 821.9] ↑ Agenda Edition 07 · Page 5 of 6
+  [303.3, 350.0, 557.6, 367.4] In inference, agents and analytics, are we buying, building or waiting — and is that choice written down? ▸
+  [303.3, 371.8, 539.3, 389.2] Would we accept growth capital priced on a share of returns rather than equity? ▸
+  [327.9, 520.3, 533.6, 537.7] For the last three AI roles we filled from outside, which internal candidates were considered? ▸
+=== PAGE 6 BLOCKS ===
+  [34.0, 27.4, 560.0, 43.8] The AI Leadership Brief 2 – 8 N OV 2 0 2 6 · PAG E 6 O F 6
+  [38.5, 63.6, 285.6, 73.0] 0 1 · P 6 L E A D E R S S A I D ↑ Agenda
+  [34.0, 84.2, 287.3, 104.6] “…accelerating revenue and earnings growth, driven by strong demand across our Data Center portfolio.”
+  [34.0, 108.5, 277.5, 115.3] Jean Hu, EVP, CFO and Treasurer, AMD · per company release, 3 Nov 2026 · release
+  [34.0, 126.2, 204.8, 135.4] “Yet adoption alone does not create value”
+  [34.0, 140.0, 277.6, 155.1] Ravi Khokhar, Global Head of Cloud for Financial Services, Capgemini · per company release, Paris, 5 Nov 2026 · release
+  [34.0, 165.9, 236.7, 175.1] “The 24-month AI promise is now on the record…”
+  [34.0, 179.7, 243.8, 186.6] RGP, in its CFO Perspectives report · as quoted by CFO.com, 3 Nov 2026
+  [34.0, 196.1, 288.7, 212.1] Quotes come from company announcements and, where marked, from a bylined report quoting the source. CDW's CEO is quoted in the lead (p2).
+  [38.5, 227.1, 285.6, 236.5] 0 5 · P 6 O N E Y E A R AG O ↑ Agenda
+  [34.0, 247.6, 156.4, 255.8] Same week in 2025: 2–8 Nov 2025.
+  [34.0, 263.4, 272.3, 303.1] 3 Nov 2025: AWS and OpenAI announced a multi-year strategic partnership; OpenAI's post described a $38 billion agreement with continued growth over seven years, giving it access to AWS compute comprising hundreds of thousands of NVIDIA GPUs.
+  [34.0, 308.6, 277.7, 324.6] OpenAI: “AWS and OpenAI announce multi-year strategic partnership”, 3 Nov 2025. Open original
+  [34.0, 333.1, 288.1, 372.8] 6 Nov 2025: Microsoft AI announced the MAI Superintelligence Team, led by Mustafa Suleyman, to pursue what his post called “humanist superintelligence”; the post named medical superintelligence as an area already showing progress.
+  [34.0, 378.4, 281.4, 394.3] Mustafa Suleyman, Microsoft AI: “Towards Humanist Superintelligence”, 6 Nov 2025. Open original
+  [34.0, 401.6, 269.1, 417.6] A third item considered for this slot was dropped: its only available sources were republished copies.
+  [309.2, 63.6, 556.3, 73.0] 0 1 · P 6 K E Y N U M B E R S ↑ Agenda
+  [304.7, 82.1, 338.0, 99.5] 10%
+  [304.7, 101.6, 376.5, 126.6] of 400 CFOs call their AI returns significant today (survey) ›
+  [394.0, 82.1, 427.3, 99.5] 54%
+  [394.0, 101.6, 466.9, 126.6] expect significant AI returns within 24 months (survey) ›
+  [483.3, 82.1, 543.5, 99.5] +73.2%
+  [483.3, 101.6, 559.8, 126.6] CDW Financial Services net sales, Q3 year on year (company) ›
+  [304.7, 135.3, 350.6, 152.8] +97%
+  [304.7, 154.9, 382.1, 179.8] AMD Data Center segment revenue, Q3 year on year (company) ›
+  [394.0, 135.3, 430.4, 152.8] 4.7×
+  [394.0, 154.9, 457.4, 188.8] top of the token-cost range for coordinated agents vs one agent (preprint) ›
+  [483.3, 135.3, 527.7, 152.8] $1.9B
+  [483.3, 154.9, 549.4, 179.8] across three rounds of $100M+ (our sum of announced amounts) ›
+  [309.2, 203.1, 556.3, 212.5] 0 4 · P 6 U P C O M I N G E V E N T S ↑ Agenda
+  [304.7, 227.4, 554.2, 234.7] 8–10 Dec 2026 Expand North Star 2026 (startup and investor event) ·
+  [389.7, 237.1, 424.3, 244.4] Dubai, UAE
+  [304.7, 254.4, 543.3, 270.7] 6–9 Jan 2027 CES 2027 (consumer and enterprise technology) · Las Vegas, United States
+  [304.7, 281.4, 506.8, 288.7] 31 Jan–3 Feb 2027 Web Summit Qatar 2027 · Doha, Qatar
+  [304.7, 298.1, 553.0, 323.1] Dates come from one public conference listing; so treat the dates as indicative and confirm with the organiser before booking. None of these events was listed in Edition 06, and all begin after publication.
+  [309.2, 338.1, 556.3, 347.5] 0 5 P E O P L E & AC T I O N · P 6 CAU T I O N N OT E ↑ Agenda
+  [314.0, 366.2, 431.7, 373.3] VERIFY BEFORE BUSINESS USE
+  [314.0, 377.5, 542.2, 384.6] This brief summarises the public sources linked beside each item. Forecasts,
+  [314.0, 387.3, 545.9, 403.4] plans, preliminary results, survey findings and makers' claims are the sources' own. Business lens blocks appear only where we add a reading the source
+  [314.0, 406.0, 550.6, 413.1] does not state, and are marked “Our summary”; Ask your leadership team lines
+  [314.0, 415.8, 544.8, 431.9] are the editor's questions, not facts or advice. Headlines, summaries, role tips and leadership actions are the editor's wording. Survey percentages are the
+  [314.0, 434.5, 533.9, 450.6] publishers' own and are not independently verified; several publishers sell services in the areas they surveyed. Verify any item, figure or quote
+  [314.0, 453.3, 550.8, 460.4] independently against the original source before using it for business decisions.
+  [314.0, 463.0, 530.0, 470.1] Every source is linked: tap a source name to open the original. ↑ Agenda
+  [313.9, 487.0, 552.0, 495.2] Found this useful? Give it a 👍 on LinkedIn and share it with a colleague.
+  [306.8, 500.6, 559.1, 507.6] AI model makers are named. No company in this issue is anonymised; the vulnerability
+  [314.1, 509.6, 551.9, 516.6] item names a software package, as the official record does. Every item links to its
+  [422.1, 518.6, 443.9, 525.6] source.
+  [34.0, 814.8, 561.3, 821.9] ↑ Agenda · By Jayaraman (Jay) Ganapathi, People Prime Worldwide Edition 07 · Page 6 of 6

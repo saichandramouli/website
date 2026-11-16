@@ -1,0 +1,82 @@
+The AI Leadership Brief 2–8 NOV 2026 · PAGE 5 OF 6
+04 CAPITAL & MARKETS · P5 INVESTMENTS ($100M AND ABOVE) ↑ Agenda
+COMPANY AMOUNT STRUCTURE · LEAD(S) BUSINESS PROBLEM IT TARGETS CONFIRMED BY
+fal $1.3B Series F · Bessemer Venture
+Partners, with Nvidia, Sound
+Ventures, HOF Capital and T.
+Rowe Price. Announced
+alongside a previously closed
+$350M Series E led by Sequoia
+Capital; the two rounds total
+$1.65B.
+Running generative image, video and audio models for
+developers and businesses — the inference layer rather than
+the model itself
+Bessemer announcement ·
+Tech.eu, 3 Nov 2026
+Nooks $500M Growth capital commitment from
+General Catalyst's Customer
+Value Fund. Not an equity round:
+the fund takes a share of the
+returns the money generates
+rather than a stake.
+AI agents for sales teams; announced with a sales assistant
+product
+Company release, 4 Nov
+2026
+Ocient $100M Series C · co-led by BOKA
+Capital and OCA Ventures. The
+company says the round takes its
+total raised to $260M.
+Analytics on petabyte-scale data for AI agents and human
+analysts; the company says it expects revenue to more than
+triple in 2026
+Blocks & Files, 5 Nov 2026
+Only rounds of $100M or more announced 28 Nov 2026. Amounts and leads come from each company's announcement or its lead investor's; where a company's own post was
+unavailable, a bylined report quoting it is linked instead. Total $1.9B is our sum of the three announced amounts, and the “business problemˮ column is our short description. The
+Nooks figure is a financing commitment, not an equity raise, and is not comparable to the other two. No valuations.
+BUSINESS LENS · OUR SUMMARY
+All three fund the layer between the model and the business outcome: running
+models, acting on customers, and querying the data. None of the three is a model
+maker.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+05 PEOPLE & ACTION · P5 WORKFORCE & TALENT ↑ Agenda
+UNITED STATES · 4 NOV 2026 · PUBLISHED RESEARCH
+Employers believe their own staﬀ could do the AI
+jobs — and hire outside anyway
+New research published by Careerminds reports that 92% of US HR
+professionals and 88% of US people managers believe employees within their
+organisations could be reskilled for AI-related roles, yet organisations are
+more likely to hire externally than redeploy workers already on the payroll. The
+white paper is titled The AI Redeployment Gap: What Companies Lose by
+Hiring over Reskilling. Survey of 595 US HR professionals and 547 US people
+managers, aged 2565, at organisations with 500 to 10,000 or more
+employees, conducted 1526 May 2026 with Censuswide.
+Source: Careerminds announcement, 4 Nov 2026. Publisher's own survey; Careerminds
+sells reskilling and outplacement services — the course the survey recommends.
+BELIEF THAT EXISTING STAFF COULD BE RESKILLED FOR AI
+ROLES
+HR professionals 92%
+People managers 88%
+Self-reported belief, not a measure of redeployment actually carried out. The
+same research reports that external hiring still outpaces redeployment.
+ASK YOUR TEAM · EDITOR'S QUESTION
+04 CAPITAL & MARKETS · P5 REGIONAL INDEX ↑ Agenda
+North America AMD and CDW results · OCC supervisory framework for examiners · Google's Wyoming data centre · fal, Nooks and Ocient rounds · Allstate on
+customers' AI agents
+Europe & UK Capgemini Research Institute's World Cloud Report for Financial Services 2027 Paris)
+China Tencent Hy4, with vision and computer use, at the preview's API price
+India No qualifying item this week — the Global row below carries items that apply in every market.
+Japan No qualifying item this week — the Global row below carries items that apply in every market.
+Australia No qualifying item this week — the Global row below carries items that apply in every market.
+Global OpenAI's gated security model · agent architecture cost preprint · agent-framework vulnerability record · US reskilling research
+↑ Agenda Edition 07 · Page 5 of 6
+In inference, agents and analytics, are we buying, building or waiting — and is
+that choice written down?
+▸
+Would we accept growth capital priced on a share of returns rather than
+equity?
+▸
+For the last three AI roles we filled from outside, which internal
+candidates were considered?
+▸

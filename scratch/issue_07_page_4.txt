@@ -1,0 +1,56 @@
+The AI Leadership Brief 2–8 NOV 2026 · PAGE 4 OF 6
+03 RISK & COMPLIANCE · P4 LAWS, RULES & GUIDANCE ↑ Agenda
+UNITED STATES · 4 NOV 2026 · SUPERVISORY FRAMEWORK, NOT A RULE
+US bank regulator issues its ﬁrst AI framework for examiners — and declines to treat AI as a risk
+apart
+The Office of the Comptroller of the Currency, which supervises national banks and federal savings associations, issued Bulletin 202654 and a
+supervisory framework for examiners evaluating banks' use of AI. Note the terminology before searching for it: the document calls the technology “super
+intelligenceˮ, or SI. Examiners will apply it to SI in normal-course activities including credit decisioning, payments, fraud detection, customer service,
+operations, risk management and market activities, with particular attention to generative and agentic systems; it sets out 16 supervisory components
+across six pillars and is described as a living document. Two points matter for a board. Examiners are told not to treat SI as a separate and distinct risk
+category, and banks need not define a separate SI risk appetite  SI risk belongs inside existing operational, compliance and credit frameworks. And
+scrutiny follows what a system is permitted to do and the consequences if it fails, not how sophisticated the model is. Status: the framework sets no new
+supervisory expectations or enforceable standards; Reuters notes it is not legally binding in the way a rule is, though banks typically comply closely with
+such guidance.
+Sources: OCC Bulletin 202654 and news release NR 202697, 4 Nov 2026 · ABA Banking Journal · Reuters Pete Schroeder) · Reed Smith analysis
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+03 RISK & COMPLIANCE · P4 UNSOLVED PROBLEMS IN AI ↑ Agenda
+INDUSTRY RESEARCH · 5 NOV 2026 · PARIS · FINANCIAL SERVICES
+Still unsolved: proving that agentic AI paid for itself
+The Capgemini Research Institute's World Cloud Report for Financial Services 2027, published 5 November, draws on a survey of 1,100 financial services
+leaders across 14 markets, fielded June to July 2026, in seven sectors from retail banking to health insurance. It reports that 59% of firms are piloting or
+deploying multi-agent AI systems, yet only 10% have achieved enterprise-wide orchestration and only 5% have institutionalised the capabilities to run
+agentic AI at enterprise scale. Roughly half of firms cannot consistently demonstrate a return on agentic AI initiatives. On cost, 90% are using or planning
+to implement intelligent model routing to optimise performance and manage token costs, and 52% are turning to hyperscalers as their preferred cloud
+partner to govern multi-agent deployments. The release ties the gap to measurement rather than ambition: firms lack clear frameworks for judging
+whether initiatives deliver enough value to justify continued investment. It reports eight in ten executives prioritising reduction of technical debt, calls a
+modernised tech stack a prerequisite for the agentic era, and projects that executives making outcomes their primary AI-funding criterion will rise 141%
+by 2028 while those focused on efficiency fall 42%. Ravi Khokhar, Capgemini's Global Head of Cloud for Financial Services, is quoted on p6.)
+Source: Capgemini press release and World Cloud Report for Financial Services 2027, 5 Nov 2026. Survey figures are the publisher's own; projections to 2028 are the report's
+forecast. Capgemini sells cloud and AI services of the kind the report finds firms need.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+04 CAPITAL & MARKETS · P4 INFRASTRUCTURE & CAPACITY ↑ Agenda
+UNITED STATES · WYOMING · 5 NOV 2026 · COMPANY ANNOUNCEMENT
+Google puts $17 billion behind a ﬁrst data centre in Wyoming, with the power contracted
+alongside it
+In a post by Steve Walter, vice president of global infrastructure and energy, Google said it is building its first data centre in Wyoming, sited in Laramie
+County and “making a long-term, $17 billion investment in the Cowboy Stateˮ. The design is air-cooled, which the company ties to limiting demands on
+local water. The power is contracted rather than self-built: the project is contracted with AEP for a commercial-scale 702-megawatt fuel-cell
+development, with the cells made by Bloom Energy, while gas generators run by Tallgrass Energy and Black Hills Energy also supply power. Carbon
+capture sits with that gas generation, not the fuel cells  Tallgrass is developing a nearby sequestration hub. The announcement gives no construction
+schedule, and the 702 MW figure is a power figure, not the data centre's capacity. For buyers of compute, the detail to note is the structure rather than
+the headline number: this announcement pairs the capacity with the power arrangements meant to run it.
+Source: Google blog post, 5 Nov 2026. Company plans; not measured output. Our summary: here, capacity and power are announced together.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+↑ Agenda Edition 07 · Page 4 of 6
+If an examiner asked tomorrow, could we show where each AI use sits inside
+our existing risk framework — not beside it?
+▸
+Do we have one agreed way of measuring what an agent delivered, or does
+every unit use its own?
+▸ Are we routing work to the cheapest model that is accurate enough, and can
+we show the saving?
+▸
+Do our cloud and AI contracts give us a price and a capacity commitment, or
+only access?
+▸

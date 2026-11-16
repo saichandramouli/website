@@ -1,0 +1,50 @@
+6 BLOCKS ===
+  [34.0, 27.4, 560.0, 43.8] The AI Leadership Brief 2 – 8 N OV 2 0 2 6 · PAG E 6 O F 6
+  [38.5, 63.6, 285.6, 73.0] 0 1 · P 6 L E A D E R S S A I D ↑ Agenda
+  [34.0, 84.2, 287.3, 104.6] “…accelerating revenue and earnings growth, driven by strong demand across our Data Center portfolio.”
+  [34.0, 108.5, 277.5, 115.3] Jean Hu, EVP, CFO and Treasurer, AMD · per company release, 3 Nov 2026 · release
+  [34.0, 126.2, 204.8, 135.4] “Yet adoption alone does not create value”
+  [34.0, 140.0, 277.6, 155.1] Ravi Khokhar, Global Head of Cloud for Financial Services, Capgemini · per company release, Paris, 5 Nov 2026 · release
+  [34.0, 165.9, 236.7, 175.1] “The 24-month AI promise is now on the record…”
+  [34.0, 179.7, 243.8, 186.6] RGP, in its CFO Perspectives report · as quoted by CFO.com, 3 Nov 2026
+  [34.0, 196.1, 288.7, 212.1] Quotes come from company announcements and, where marked, from a bylined report quoting the source. CDW's CEO is quoted in the lead (p2).
+  [38.5, 227.1, 285.6, 236.5] 0 5 · P 6 O N E Y E A R AG O ↑ Agenda
+  [34.0, 247.6, 156.4, 255.8] Same week in 2025: 2–8 Nov 2025.
+  [34.0, 263.4, 272.3, 303.1] 3 Nov 2025: AWS and OpenAI announced a multi-year strategic partnership; OpenAI's post described a $38 billion agreement with continued growth over seven years, giving it access to AWS compute comprising hundreds of thousands of NVIDIA GPUs.
+  [34.0, 308.6, 277.7, 324.6] OpenAI: “AWS and OpenAI announce multi-year strategic partnership”, 3 Nov 2025. Open original
+  [34.0, 333.1, 288.1, 372.8] 6 Nov 2025: Microsoft AI announced the MAI Superintelligence Team, led by Mustafa Suleyman, to pursue what his post called “humanist superintelligence”; the post named medical superintelligence as an area already showing progress.
+  [34.0, 378.4, 281.4, 394.3] Mustafa Suleyman, Microsoft AI: “Towards Humanist Superintelligence”, 6 Nov 2025. Open original
+  [34.0, 401.6, 269.1, 417.6] A third item considered for this slot was dropped: its only available sources were republished copies.
+  [309.2, 63.6, 556.3, 73.0] 0 1 · P 6 K E Y N U M B E R S ↑ Agenda
+  [304.7, 82.1, 338.0, 99.5] 10%
+  [304.7, 101.6, 376.5, 126.6] of 400 CFOs call their AI returns significant today (survey) ›
+  [394.0, 82.1, 427.3, 99.5] 54%
+  [394.0, 101.6, 466.9, 126.6] expect significant AI returns within 24 months (survey) ›
+  [483.3, 82.1, 543.5, 99.5] +73.2%
+  [483.3, 101.6, 559.8, 126.6] CDW Financial Services net sales, Q3 year on year (company) ›
+  [304.7, 135.3, 350.6, 152.8] +97%
+  [304.7, 154.9, 382.1, 179.8] AMD Data Center segment revenue, Q3 year on year (company) ›
+  [394.0, 135.3, 430.4, 152.8] 4.7×
+  [394.0, 154.9, 457.4, 188.8] top of the token-cost range for coordinated agents vs one agent (preprint) ›
+  [483.3, 135.3, 527.7, 152.8] $1.9B
+  [483.3, 154.9, 549.4, 179.8] across three rounds of $100M+ (our sum of announced amounts) ›
+  [309.2, 203.1, 556.3, 212.5] 0 4 · P 6 U P C O M I N G E V E N T S ↑ Agenda
+  [304.7, 227.4, 554.2, 234.7] 8–10 Dec 2026 Expand North Star 2026 (startup and investor event) ·
+  [389.7, 237.1, 424.3, 244.4] Dubai, UAE
+  [304.7, 254.4, 543.3, 270.7] 6–9 Jan 2027 CES 2027 (consumer and enterprise technology) · Las Vegas, United States
+  [304.7, 281.4, 506.8, 288.7] 31 Jan–3 Feb 2027 Web Summit Qatar 2027 · Doha, Qatar
+  [304.7, 298.1, 553.0, 323.1] Dates come from one public conference listing; so treat the dates as indicative and confirm with the organiser before booking. None of these events was listed in Edition 06, and all begin after publication.
+  [309.2, 338.1, 556.3, 347.5] 0 5 P E O P L E & AC T I O N · P 6 CAU T I O N N OT E ↑ Agenda
+  [314.0, 366.2, 431.7, 373.3] VERIFY BEFORE BUSINESS USE
+  [314.0, 377.5, 542.2, 384.6] This brief summarises the public sources linked beside each item. Forecasts,
+  [314.0, 387.3, 545.9, 403.4] plans, preliminary results, survey findings and makers' claims are the sources' own. Business lens blocks appear only where we add a reading the source
+  [314.0, 406.0, 550.6, 413.1] does not state, and are marked “Our summary”; Ask your leadership team lines
+  [314.0, 415.8, 544.8, 431.9] are the editor's questions, not facts or advice. Headlines, summaries, role tips and leadership actions are the editor's wording. Survey percentages are the
+  [314.0, 434.5, 533.9, 450.6] publishers' own and are not independently verified; several publishers sell services in the areas they surveyed. Verify any item, figure or quote
+  [314.0, 453.3, 550.8, 460.4] independently against the original source before using it for business decisions.
+  [314.0, 463.0, 530.0, 470.1] Every source is linked: tap a source name to open the original. ↑ Agenda
+  [313.9, 487.0, 552.0, 495.2] Found this useful? Give it a 👍 on LinkedIn and share it with a colleague.
+  [306.8, 500.6, 559.1, 507.6] AI model makers are named. No company in this issue is anonymised; the vulnerability
+  [314.1, 509.6, 551.9, 516.6] item names a software package, as the official record does. Every item links to its
+  [422.1, 518.6, 443.9, 525.6] source.
+  [34.0, 814.8, 561.3, 821.9] ↑ Agenda · By Jayaraman (Jay) Ganapathi, People Prime Worldwide Edition 07 · Page 6 of 6

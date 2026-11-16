@@ -1,0 +1,45 @@
+2 BLOCKS ===
+  [34.0, 27.4, 560.0, 43.8] The AI Leadership Brief 2 – 8 N OV 2 0 2 6 · PAG E 2 O F 6
+  [38.5, 62.1, 556.3, 71.5] 0 1 G R OW T H & R E V E N U E · P 2 L E A D : T H E R O I S C O R E B OA R D ↑ Agenda
+  [34.0, 82.0, 533.6, 118.8] CFO SURVEY AND COMPANY RESULTS · 2–4 NOV 2026 · NORTH AMERICA, GLOBAL Buyers of AI are still waiting for the return; two technology suppliers posted fast growth in the same week — and the survey points at execution capacity
+  [34.0, 124.6, 555.8, 143.3] RGP surveyed 400 CFOs and equivalent finance leaders at organisations with annual revenue of $250M or more. 52% report positive AI returns today, but just 10% describe them as significant; 54% expect significant positive returns within 24 months. 89% are positive about their organisation's
+  [34.0, 146.4, 551.6, 186.1] financial outlook for the next 12 months, while 49% say their transformation agenda exceeds their organisation's ability to execute. The split is worth a board discussion: among CFOs whose agenda exceeds capacity, 24% report positive AI returns, against 79% among those whose capacity meets or exceeds demand. Both halves of that comparison are the same respondent's own assessment, so it shows an association, not a cause, and the survey did not ask about technology. Survey conducted September 2026; respondents in North America, Europe and Asia Pacific, per CFO.com. RGP sells transformation and
+  [34.0, 189.4, 419.4, 196.3] execution services — the capability its survey finds respondents lack. Open: CFO.com report · RGP survey release, syndicated copy
+  [34.0, 208.2, 553.5, 215.0] COMPANY · DATE WHAT IT REPORTED WHAT THE RELEASE ITSELF SAYS ABOUT AI SOURCE
+  [34.0, 224.8, 50.3, 232.4] AMD
+  [34.0, 236.0, 71.7, 242.8] 3 Nov · chips
+  [104.9, 224.8, 275.7, 252.0] Q3 revenue $13.4B, up 45%. Data Center segment $8.5B, up 97%. Q4 outlook about $17B, plus or minus 3% (company forecast).
+  [290.1, 224.8, 512.4, 261.0] The release attributes Data Center growth to demand for its EPYC processors and the launch of its Instinct MI450 Series GPUs. The cautionary statement lists memory supply among its risks. (CFO Jean Hu on the Q4 outlook is quoted on p6.)
+  [524.4, 224.8, 547.8, 232.5] release
+  [34.0, 272.8, 50.8, 280.4] CDW
+  [34.0, 272.8, 278.4, 309.0] 4 Nov · IT reseller Q3 net sales $6,754.5M, up 17.7%. Commercial $3,979.4M, up 20.8%, within which Financial Services $571.5M, up 73.2%. Government +9.9%, Education +7.5%, Healthcare +9.3%.
+  [290.1, 272.8, 517.1, 309.0] CEO Christine A. Leahy cites “strong momentum in enterprise AI adoption” (per company release). The release's risk factors cite supply disruptions, including capacity limits and cost increases, tied to heightened AI-related demand.
+  [524.4, 272.8, 547.8, 280.5] release
+  [42.7, 331.2, 220.1, 338.0] YEAR-ON-YEAR GROWTH REPORTED THIS WEEK
+  [42.7, 344.5, 296.4, 351.6] AMD Data Center segment +97%
+  [42.7, 358.0, 296.4, 365.1] CDW Financial Services +73.2%
+  [42.7, 370.9, 296.4, 378.5] AMD total revenue +45%
+  [42.7, 384.2, 296.4, 391.3] CDW total net sales +17.7%
+  [42.7, 397.5, 280.2, 412.3] Company figures; measures differ (total vs segment, group vs customer channel). Bars scaled to +97%. Neither release quantifies how much of the growth is AI.
+  [319.2, 334.2, 516.8, 341.0] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+  [38.5, 434.1, 556.3, 443.5] 0 2 C O S T & O U T P U T · P 2 N E W L L M R E L E A S E S O R S E C U R I T Y PATC H R E L E A S E S ↑ Agenda
+  [34.0, 458.0, 540.7, 464.7] DATE TYPE WHAT WAS RELEASED COST, ACCESS AND RISK (FROM THE SOURCE) SOURCES
+  [34.0, 474.6, 244.6, 530.2] 4 Nov M O D E L Tencent Hy4, the full version of a model Tencent had previously released in preview, adding visual understanding and computer-use capability, available across Tencent products and third-party platforms.
+  [259.3, 474.6, 498.8, 520.5] Standard API price unchanged from the Hy4 preview at $0.834 per million input tokens and $2.501 per million output tokens, with a 50% discount on Tencent Cloud TokenHub to 31 December (as reported by TechNode). Tencent says it plans to release model weights and system cards “in the coming days”, with a focus on cybersecurity and biological safety.
+  [506.8, 474.6, 555.6, 492.0] Announcement · TechNode
+  [34.0, 541.3, 102.3, 549.3] 5 Nov M O D E L
+  [70.9, 551.9, 119.6, 559.0] R E S T R I C T E D
+  [130.8, 541.3, 249.6, 597.7] OpenAI GPT-6 Cyber, a variant of GPT-6 Astra trained for authorised vulnerability research, reached a select group of approved customers in the “Daybreak Red” tier via the API and Codex.
+  [259.3, 541.3, 495.3, 616.5] No public price; access is gated and OpenAI says it will extend to all Daybreak Red customers in the coming weeks. OpenAI rated the model “Critical” for cybersecurity under its Preparedness Framework, up from “High” for its predecessor, and says it scored 48.5% on its ExploitGym evaluation against 32.1% for GPT-5.6 Cyber. OpenAI also announced a $1bn grant programme to subsidise access for resource-constrained defenders. All figures are OpenAI's own, as reported by the three sources listed.
+  [506.8, 541.3, 548.3, 568.5] TNW · Cyber Magazine · Fortune
+  [34.0, 626.6, 549.8, 642.6] No other model or patch release in the window met this brief's rule that a first-party announcement or official record be identifiable; tracker sites and model catalogues were not used.
+  [34.0, 656.0, 155.4, 662.7] BUSINESS LENS · OUR SUMMARY
+  [34.0, 667.4, 276.2, 684.7] Tencent held Hy4's API price at the preview level while adding vision and computer use. OpenAI gated its new security model to vetted customers and
+  [34.0, 687.7, 165.1, 695.2] raised its own cyber risk rating to Critical.
+  [303.3, 656.0, 500.9, 662.7] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+  [34.0, 814.8, 561.3, 821.9] ↑ Agenda Edition 07 · Page 2 of 6
+  [319.2, 345.5, 528.9, 362.9] If our board asked today, which AI programme could we show a measured revenue or cost result for? ▸
+  [319.2, 367.3, 561.2, 384.7] Is our AI agenda larger than our ability to deliver it, and which items would we cut to fix that? ▸
+  [319.2, 389.0, 560.8, 406.4] Our suppliers are reporting AI-led growth. Are we the customer funding it, and what are we getting back? ▸
+  [303.3, 666.5, 555.4, 683.9] If capability rises without a price rise, which of our rejected AI cases become viable? ▸
+  [303.3, 688.3, 555.9, 705.7] Who in our organisation would be approved to use a gated offensive-security model, and under whose authority? ▸

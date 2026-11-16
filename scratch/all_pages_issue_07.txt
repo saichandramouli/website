@@ -1,0 +1,520 @@
+=== PAGE 1 ===
+WEEKLY · EDITION 07 2–8 NOV 2026 · PAGE 1 OF 6
+The AI Leadership Brief
+Edition 07 · 28 Nov 2026 · By Jayaraman (Jay) Ganapathi, People Prime Worldwide · For CXOs and senior leaders
+05 PEOPLE & ACTION · P1 CARTOON OF THE WEEK ↑ Agenda
+IN 24
+MONTHS
+ROI TODAY
+So where is the
+return on all this AI?
+It went up with the
+forecast, sir.
+“This week: of 400 CFOs surveyed, just
+10% call their AI returns signiﬁcant today.
+54% expect signiﬁcant returns within 24
+months.”
+AGENDA 5 THEMES · TAP TO JUMP Short on time? 60-second summary  Your role  Leadership actions
+01 Growth & revenue
+Where is AI paying?
+p160-second summary
+p2Lead: the ROI scoreboard
+p6Key numbers
+p6Leaders said
+02 Cost & output
+What gets cheaper?
+p2New LLM releases or
+security patch releases
+p3AI research
+03 Risk & compliance
+What could hurt us?
+p3Vendor & security risk
+p4Unsolved problems
+p4Laws & guidance
+04 Capital & markets
+Where is money going?
+p4Infrastructure
+p5Investments $100M
+p5Regional index
+p6Upcoming events
+05 People & action
+What do we do?
+p1Your role
+p1Actions
+p3Operating models
+p5Workforce
+p6One year ago
+p6Caution note
+This issue leads with business impact: what AI earned, what it cost and what it put at risk. Every item carries Ask your leadership team (editor's questions, not claims). A
+Business lens appears only where we add a reading the source does not state. Data quality section skipped (no qualifying item). Verify before business use.
+01 GROWTH & REVENUE · P1 60-SECOND SUMMARY ↑ Agenda
+05 PEOPLE & ACTION · P1 THIS WEEK FOR YOUR ROLE ↑ Agenda
+CEO
+49% of 400 surveyed
+CFOs say their
+transformation agenda
+exceeds their
+organisation's ability
+to execute. ›
+CFO
+Among surveyed
+CFOs whose agenda
+exceeds capacity,
+24% report positive AI
+returns, against 79%
+where capacity meets
+demand. Both self-
+reported. ›
+CIO / CTO
+Preprint: on
+benchmark tasks,
+coordinated agent
+designs run 2.65.8
+the latency of a single
+agent. ›
+CISO / CRO
+A command-injection
+flaw in an open-
+source agent
+framework was
+published with a
+public exploit. ›
+CHRO
+92% of 595 surveyed
+US HR professionals
+say staff could be
+reskilled for AI roles;
+the same survey says
+firms still hire outside
+more often. ›
+COO
+Of 1,100 surveyed
+financial services
+firms, 59% are piloting
+or deploying multi-
+agent AI; 10% have
+enterprise-wide
+orchestration. ›
+05 PEOPLE & ACTION · P1 LEADERSHIP ACTIONS THIS WEEK ↑ Agenda
+ Put a date on the return. For each AI programme, name the quarter a
+measured result lands and who signs for it.
+ Test capacity, not just the case. Rank AI initiatives against delivery
+capacity before approving the next one.
+ Price the architecture. Ask for tokens and latency per task, not just
+accuracy, before approving multi-agent designs.
+ Start simple. Require a single-agent baseline before any team builds a
+coordinated one.
+ Inventory agent frameworks. List the open-source agent software in your
+stack and in your vendors', with version and owner.
+ US national banks: align to the examiner. Map AI uses in credit,
+payments, fraud and operations onto your existing risk framework.
+ Fix measurement before scaling. If you cannot show a return on today's
+agents, do not add more.
+ Look inside first. Before hiring for an AI role, ask which current
+employees could be redeployed into it.
+↑ Agenda Edition 07 · Page 1 of 6
+The significant return is still a forecast. Of 400 CFOs surveyed, 52% report positive AI returns today but only 10% call them significant; 54%
+expect significant returns within 24 months. ›
+1
+Two technology suppliers reported fast growth. AMD Data Center 97% (total revenue 45%; CDW net sales 17.7% with Financial Services
+73.2%. Neither release says how much of this is AI. ›
+2
+More agents often cost more and deliver no more. On benchmark workflows, a preprint reports coordinated agent designs spend 1.44.7 the
+tokens of a single agent for gains “usually small and rarely significantˮ. ›
+3
+US national bank examiners now have an AI playbook. The OCC, which supervises national banks, issued a supervisory framework; it says
+banks are not expected to set separate risk parameters for AI. ›
+4
+This week's big rounds funded the layer that runs AI. Three rounds of $100M totalling $1.9B (our sum): inference, revenue agents and
+petabyte-scale analytics. ›
+5
+
+=== PAGE 2 ===
+The AI Leadership Brief 2–8 NOV 2026 · PAGE 2 OF 6
+01 GROWTH & REVENUE · P2 LEAD: THE ROI SCOREBOARD ↑ Agenda
+CFO SURVEY AND COMPANY RESULTS · 2–4 NOV 2026 · NORTH AMERICA, GLOBAL
+Buyers of AI are still waiting for the return; two technology suppliers posted fast
+growth in the same week — and the survey points at execution capacity
+RGP surveyed 400 CFOs and equivalent finance leaders at organisations with annual revenue of $250M or more. 52% report positive AI returns today,
+but just 10% describe them as significant; 54% expect significant positive returns within 24 months. 89% are positive about their organisation's
+financial outlook for the next 12 months, while 49% say their transformation agenda exceeds their organisation's ability to execute. The split is worth a
+board discussion: among CFOs whose agenda exceeds capacity, 24% report positive AI returns, against 79% among those whose capacity meets or
+exceeds demand. Both halves of that comparison are the same respondent's own assessment, so it shows an association, not a cause, and the survey
+did not ask about technology. Survey conducted September 2026; respondents in North America, Europe and Asia Pacific, per CFO.com. RGP sells transformation and
+execution services — the capability its survey finds respondents lack. Open: CFO.com report · RGP survey release, syndicated copy
+COMPANY · DATE WHAT IT REPORTED WHAT THE RELEASE ITSELF SAYS ABOUT AI SOURCE
+AMD
+3 Nov · chips
+Q3 revenue $13.4B, up 45%. Data Center segment
+$8.5B, up 97%. Q4 outlook about $17B, plus or minus
+3% (company forecast).
+The release attributes Data Center growth to demand for its EPYC
+processors and the launch of its Instinct MI450 Series GPUs. The
+cautionary statement lists memory supply among its risks. CFO Jean
+Hu on the Q4 outlook is quoted on p6.)
+release
+CDW
+4 Nov · IT reseller
+Q3 net sales $6,754.5M, up 17.7%. Commercial
+$3,979.4M, up 20.8%, within which Financial Services
+$571.5M, up 73.2%. Government 9.9%, Education
+7.5%, Healthcare 9.3%.
+CEO Christine A. Leahy cites “strong momentum in enterprise AI
+adoptionˮ (per company release). The release's risk factors cite supply
+disruptions, including capacity limits and cost increases, tied to
+heightened AI-related demand.
+release
+YEAR-ON-YEAR GROWTH REPORTED THIS WEEK
+AMD Data Center segment 97%
+CDW Financial Services 73.2%
+AMD total revenue 45%
+CDW total net sales 17.7%
+Company figures; measures differ (total vs segment, group vs customer channel). Bars
+scaled to 97%. Neither release quantifies how much of the growth is AI.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+02 COST & OUTPUT · P2 NEW LLM RELEASES OR SECURITY PATCH RELEASES ↑ Agenda
+DATE TYPE WHAT WAS RELEASED COST, ACCESS AND RISK (FROM THE SOURCE) SOURCES
+4 Nov MODEL Tencent Hy4, the full version of a
+model Tencent had previously
+released in preview, adding visual
+understanding and computer-use
+capability, available across Tencent
+products and third-party platforms.
+Standard API price unchanged from the Hy4 preview at $0.834 per million
+input tokens and $2.501 per million output tokens, with a 50% discount
+on Tencent Cloud TokenHub to 31 December (as reported by TechNode).
+Tencent says it plans to release model weights and system cards “in the
+coming daysˮ, with a focus on cybersecurity and biological safety.
+Announcement
+· TechNode
+5 Nov MODEL
+RESTRICTED
+OpenAI GPT6 Cyber, a variant of
+GPT6 Astra trained for authorised
+vulnerability research, reached a
+select group of approved customers
+in the “Daybreak Redˮ tier via the API
+and Codex.
+No public price; access is gated and OpenAI says it will extend to all
+Daybreak Red customers in the coming weeks. OpenAI rated the model
+“Criticalˮ for cybersecurity under its Preparedness Framework, up from
+“Highˮ for its predecessor, and says it scored 48.5% on its ExploitGym
+evaluation against 32.1% for GPT5.6 Cyber. OpenAI also announced a
+$1bn grant programme to subsidise access for resource-constrained
+defenders. All figures are OpenAI's own, as reported by the three sources
+listed.
+TNW · Cyber
+Magazine ·
+Fortune
+No other model or patch release in the window met this brief's rule that a first-party announcement or official record be identifiable; tracker sites and model catalogues were not
+used.
+BUSINESS LENS · OUR SUMMARY
+Tencent held Hy4's API price at the preview level while adding vision and
+computer use. OpenAI gated its new security model to vetted customers and
+raised its own cyber risk rating to Critical.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+↑ Agenda Edition 07 · Page 2 of 6
+If our board asked today, which AI programme could we show a
+measured revenue or cost result for?
+▸
+Is our AI agenda larger than our ability to deliver it, and which items would
+we cut to fix that?
+▸
+Our suppliers are reporting AI-led growth. Are we the customer funding it,
+and what are we getting back?
+▸
+If capability rises without a price rise, which of our rejected AI cases become
+viable?
+▸
+Who in our organisation would be approved to use a gated offensive-security
+model, and under whose authority?
+▸
+
+=== PAGE 3 ===
+The AI Leadership Brief 2–8 NOV 2026 · PAGE 3 OF 6
+02 COST & OUTPUT · P3 AI RESEARCH: WHAT AGENT ARCHITECTURE COSTS ↑ Agenda
+PREPRINT · 7 NOV 2026 · AGENT COST AND ACCURACY
+Preprint: adding agents to an enterprise-style workﬂow multiplied the cost and
+rarely improved the result
+The authors held the model, tasks and tools fixed and varied only the architecture, comparing four designs in eight arms across 13 enterprise-style
+standard operating procedures — a benchmark built to resemble the long, branching, tool-heavy workflows companies run. They report that every
+coordinated arm (multi-agent or skill-augmented) spends 1.44.7 the tokens and 2.65.8 the latency of a single function-calling agent “for gains that
+are usually small and rarely significantˮ, making the single agent, in their words, the efficient default. Quality of implementation mattered more than the
+design choice: a plausible multi-agent build underperformed the single agent, while a targeted redesign was the only arm to beat the baseline
+significantly, at 75.6% task success against 67.4%  though the authors also report that no architecture is statistically separable in aggregate, and that
+added structure only “plausiblyˮ pays off on the most complex procedures, which they call a directional and not yet significant trend. Their stated
+conclusions are that no architecture is universally best — the right choice depends on the procedure — and that added architectural cost has to be
+earned by a gain in task success. Authors' own measurements; not peer reviewed. The paper does not name the model held fixed across the arms, so
+the multiples describe that one setup rather than a general rule.
+Nandi S, Arora H, Bai Y, Patel U, Shah C, Kwon H, Zhang W, Chen W, Li CR, Sconfienza A, Goyal A, Lee Y, Xiong M, Ramachandra P. “Agent Architecture Cost-Success Trade-offs: A
+Controlled Evaluation across Enterprise-Style SOPs.ˮ arXiv preprint v1, 7 Nov 2026. arxiv.org/abs/2611.12953 · DOI 10.48550/arXiv.2611.12953 (arXiv-issued)
+COORDINATED AGENT ARMS vs A SINGLE AGENT (RANGE
+REPORTED)
+Token cost 1.44.7
+Latency 2.65.8
+Task success, baseline 67.4%
+Task success, best arm 75.6%
+Figures as reported by the authors across 13 enterprise SOPs. Cost and latency bars are
+scaled to the top of each reported range; success bars are scaled to 75.6%. Cost and
+success are different measures and are not comparable to each other.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+03 RISK & COMPLIANCE · P3 VENDOR & SECURITY RISK ↑ Agenda
+OPEN-SOURCE AGENT FRAMEWORK · CVE RECORD PUBLISHED 5 NOV 2026 · GLOBAL
+A command-injection ﬂaw in an open-source agent framework was published with a working
+exploit already public
+The national vulnerability record for CVE2026123022, published 5 November 2026, describes a flaw in AgentScope up to version 2.0.11. The affected
+element is the subprocess.Popen function in the framework's MCP Workspace API manipulating the command argument results in OS command
+injection, and the record states that the attack may be launched remotely, adding that “The exploit is now public and may be used.ˮ The record carries a
+CVSS v3.1 score of 7.3, assigned as a secondary metric by a third-party numbering authority rather than the project. The record says nothing about how
+widely the package is deployed, and we found no reliable figure for it. Our view: the point for a board is the category, not this package — agent
+frameworks and their connectors are ordinary supply-chain software, installed by teams and by vendors.
+Source: NVD record for CVE2026123022, published 5 Nov 2026  open the record.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+05 PEOPLE & ACTION · P3 OPERATING MODELS: AI IN INDUSTRIAL SECTORS ↑ Agenda
+INSURANCE · UNITED STATES · REPORTED 6 NOV 2026 · EARNINGS CALL REMARKS
+An insurer says it plans to do business with its customers' AI agents, not only with its customers
+As reported by CIO Dive, Allstate chief executive Tom Wilson told investors on the company's third-quarter earnings call that personal AI assistants give
+the insurer an opportunity to serve customers who prefer machines to handle transactions, and that Allstate's goal is to work with those outside agents
+rather than against them, showing customers branded products as they interact. He said the rollout of the company's own agentic platform, introduced
+earlier this year to handle agent-to-agent processing, is accelerating. Executives' statements on an earnings call, as reported; not measured results.
+Source: CIO Dive, 6 Nov 2026, reporting the Q3 2026 earnings call. Company statements of intent.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+↑ Agenda Edition 07 · Page 3 of 6
+Do we know the cost per completed task of our agents, or only their
+accuracy?
+▸
+Did anyone compare our multi-agent build against a single-agent
+baseline before we funded it?
+▸
+Which open-source agent frameworks and connectors run inside our estate,
+and who patches them?
+▸ Do our AI vendors tell us when a component they embed has a published
+exploit?
+▸
+If a customer's AI agent came to buy from us tomorrow, could our systems
+and terms transact with it?
+▸
+
+=== PAGE 4 ===
+The AI Leadership Brief 2–8 NOV 2026 · PAGE 4 OF 6
+03 RISK & COMPLIANCE · P4 LAWS, RULES & GUIDANCE ↑ Agenda
+UNITED STATES · 4 NOV 2026 · SUPERVISORY FRAMEWORK, NOT A RULE
+US bank regulator issues its ﬁrst AI framework for examiners — and declines to treat AI as a risk
+apart
+The Office of the Comptroller of the Currency, which supervises national banks and federal savings associations, issued Bulletin 202654 and a
+supervisory framework for examiners evaluating banks' use of AI. Note the terminology before searching for it: the document calls the technology “super
+intelligenceˮ, or SI. Examiners will apply it to SI in normal-course activities including credit decisioning, payments, fraud detection, customer service,
+operations, risk management and market activities, with particular attention to generative and agentic systems; it sets out 16 supervisory components
+across six pillars and is described as a living document. Two points matter for a board. Examiners are told not to treat SI as a separate and distinct risk
+category, and banks need not define a separate SI risk appetite  SI risk belongs inside existing operational, compliance and credit frameworks. And
+scrutiny follows what a system is permitted to do and the consequences if it fails, not how sophisticated the model is. Status: the framework sets no new
+supervisory expectations or enforceable standards; Reuters notes it is not legally binding in the way a rule is, though banks typically comply closely with
+such guidance.
+Sources: OCC Bulletin 202654 and news release NR 202697, 4 Nov 2026 · ABA Banking Journal · Reuters Pete Schroeder) · Reed Smith analysis
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+03 RISK & COMPLIANCE · P4 UNSOLVED PROBLEMS IN AI ↑ Agenda
+INDUSTRY RESEARCH · 5 NOV 2026 · PARIS · FINANCIAL SERVICES
+Still unsolved: proving that agentic AI paid for itself
+The Capgemini Research Institute's World Cloud Report for Financial Services 2027, published 5 November, draws on a survey of 1,100 financial services
+leaders across 14 markets, fielded June to July 2026, in seven sectors from retail banking to health insurance. It reports that 59% of firms are piloting or
+deploying multi-agent AI systems, yet only 10% have achieved enterprise-wide orchestration and only 5% have institutionalised the capabilities to run
+agentic AI at enterprise scale. Roughly half of firms cannot consistently demonstrate a return on agentic AI initiatives. On cost, 90% are using or planning
+to implement intelligent model routing to optimise performance and manage token costs, and 52% are turning to hyperscalers as their preferred cloud
+partner to govern multi-agent deployments. The release ties the gap to measurement rather than ambition: firms lack clear frameworks for judging
+whether initiatives deliver enough value to justify continued investment. It reports eight in ten executives prioritising reduction of technical debt, calls a
+modernised tech stack a prerequisite for the agentic era, and projects that executives making outcomes their primary AI-funding criterion will rise 141%
+by 2028 while those focused on efficiency fall 42%. Ravi Khokhar, Capgemini's Global Head of Cloud for Financial Services, is quoted on p6.)
+Source: Capgemini press release and World Cloud Report for Financial Services 2027, 5 Nov 2026. Survey figures are the publisher's own; projections to 2028 are the report's
+forecast. Capgemini sells cloud and AI services of the kind the report finds firms need.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+04 CAPITAL & MARKETS · P4 INFRASTRUCTURE & CAPACITY ↑ Agenda
+UNITED STATES · WYOMING · 5 NOV 2026 · COMPANY ANNOUNCEMENT
+Google puts $17 billion behind a ﬁrst data centre in Wyoming, with the power contracted
+alongside it
+In a post by Steve Walter, vice president of global infrastructure and energy, Google said it is building its first data centre in Wyoming, sited in Laramie
+County and “making a long-term, $17 billion investment in the Cowboy Stateˮ. The design is air-cooled, which the company ties to limiting demands on
+local water. The power is contracted rather than self-built: the project is contracted with AEP for a commercial-scale 702-megawatt fuel-cell
+development, with the cells made by Bloom Energy, while gas generators run by Tallgrass Energy and Black Hills Energy also supply power. Carbon
+capture sits with that gas generation, not the fuel cells  Tallgrass is developing a nearby sequestration hub. The announcement gives no construction
+schedule, and the 702 MW figure is a power figure, not the data centre's capacity. For buyers of compute, the detail to note is the structure rather than
+the headline number: this announcement pairs the capacity with the power arrangements meant to run it.
+Source: Google blog post, 5 Nov 2026. Company plans; not measured output. Our summary: here, capacity and power are announced together.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+↑ Agenda Edition 07 · Page 4 of 6
+If an examiner asked tomorrow, could we show where each AI use sits inside
+our existing risk framework — not beside it?
+▸
+Do we have one agreed way of measuring what an agent delivered, or does
+every unit use its own?
+▸ Are we routing work to the cheapest model that is accurate enough, and can
+we show the saving?
+▸
+Do our cloud and AI contracts give us a price and a capacity commitment, or
+only access?
+▸
+
+=== PAGE 5 ===
+The AI Leadership Brief 2–8 NOV 2026 · PAGE 5 OF 6
+04 CAPITAL & MARKETS · P5 INVESTMENTS ($100M AND ABOVE) ↑ Agenda
+COMPANY AMOUNT STRUCTURE · LEAD(S) BUSINESS PROBLEM IT TARGETS CONFIRMED BY
+fal $1.3B Series F · Bessemer Venture
+Partners, with Nvidia, Sound
+Ventures, HOF Capital and T.
+Rowe Price. Announced
+alongside a previously closed
+$350M Series E led by Sequoia
+Capital; the two rounds total
+$1.65B.
+Running generative image, video and audio models for
+developers and businesses — the inference layer rather than
+the model itself
+Bessemer announcement ·
+Tech.eu, 3 Nov 2026
+Nooks $500M Growth capital commitment from
+General Catalyst's Customer
+Value Fund. Not an equity round:
+the fund takes a share of the
+returns the money generates
+rather than a stake.
+AI agents for sales teams; announced with a sales assistant
+product
+Company release, 4 Nov
+2026
+Ocient $100M Series C · co-led by BOKA
+Capital and OCA Ventures. The
+company says the round takes its
+total raised to $260M.
+Analytics on petabyte-scale data for AI agents and human
+analysts; the company says it expects revenue to more than
+triple in 2026
+Blocks & Files, 5 Nov 2026
+Only rounds of $100M or more announced 28 Nov 2026. Amounts and leads come from each company's announcement or its lead investor's; where a company's own post was
+unavailable, a bylined report quoting it is linked instead. Total $1.9B is our sum of the three announced amounts, and the “business problemˮ column is our short description. The
+Nooks figure is a financing commitment, not an equity raise, and is not comparable to the other two. No valuations.
+BUSINESS LENS · OUR SUMMARY
+All three fund the layer between the model and the business outcome: running
+models, acting on customers, and querying the data. None of the three is a model
+maker.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+05 PEOPLE & ACTION · P5 WORKFORCE & TALENT ↑ Agenda
+UNITED STATES · 4 NOV 2026 · PUBLISHED RESEARCH
+Employers believe their own staﬀ could do the AI
+jobs — and hire outside anyway
+New research published by Careerminds reports that 92% of US HR
+professionals and 88% of US people managers believe employees within their
+organisations could be reskilled for AI-related roles, yet organisations are
+more likely to hire externally than redeploy workers already on the payroll. The
+white paper is titled The AI Redeployment Gap: What Companies Lose by
+Hiring over Reskilling. Survey of 595 US HR professionals and 547 US people
+managers, aged 2565, at organisations with 500 to 10,000 or more
+employees, conducted 1526 May 2026 with Censuswide.
+Source: Careerminds announcement, 4 Nov 2026. Publisher's own survey; Careerminds
+sells reskilling and outplacement services — the course the survey recommends.
+BELIEF THAT EXISTING STAFF COULD BE RESKILLED FOR AI
+ROLES
+HR professionals 92%
+People managers 88%
+Self-reported belief, not a measure of redeployment actually carried out. The
+same research reports that external hiring still outpaces redeployment.
+ASK YOUR TEAM · EDITOR'S QUESTION
+04 CAPITAL & MARKETS · P5 REGIONAL INDEX ↑ Agenda
+North America AMD and CDW results · OCC supervisory framework for examiners · Google's Wyoming data centre · fal, Nooks and Ocient rounds · Allstate on
+customers' AI agents
+Europe & UK Capgemini Research Institute's World Cloud Report for Financial Services 2027 Paris)
+China Tencent Hy4, with vision and computer use, at the preview's API price
+India No qualifying item this week — the Global row below carries items that apply in every market.
+Japan No qualifying item this week — the Global row below carries items that apply in every market.
+Australia No qualifying item this week — the Global row below carries items that apply in every market.
+Global OpenAI's gated security model · agent architecture cost preprint · agent-framework vulnerability record · US reskilling research
+↑ Agenda Edition 07 · Page 5 of 6
+In inference, agents and analytics, are we buying, building or waiting — and is
+that choice written down?
+▸
+Would we accept growth capital priced on a share of returns rather than
+equity?
+▸
+For the last three AI roles we filled from outside, which internal
+candidates were considered?
+▸
+
+=== PAGE 6 ===
+The AI Leadership Brief 2–8 NOV 2026 · PAGE 6 OF 6
+01 · P6 LEADERS SAID ↑ Agenda
+“…accelerating revenue and earnings growth, driven by strong
+demand across our Data Center portfolio.”
+Jean Hu, EVP, CFO and Treasurer, AMD · per company release, 3 Nov 2026 · release
+“Yet adoption alone does not create value”
+Ravi Khokhar, Global Head of Cloud for Financial Services, Capgemini · per company
+release, Paris, 5 Nov 2026 · release
+“The 24-month AI promise is now on the record…”
+RGP, in its CFO Perspectives report · as quoted by CFO.com, 3 Nov 2026
+Quotes come from company announcements and, where marked, from a bylined report
+quoting the source. CDW's CEO is quoted in the lead (p2).
+05 · P6 ONE YEAR AGO ↑ Agenda
+Same week in 2025 28 Nov 2025.
+3 Nov 2025 AWS and OpenAI announced a multi-year strategic
+partnership; OpenAI's post described a $38 billion agreement with
+continued growth over seven years, giving it access to AWS compute
+comprising hundreds of thousands of NVIDIA GPUs.
+OpenAI “AWS and OpenAI announce multi-year strategic partnershipˮ, 3 Nov 2025.
+Open original
+6 Nov 2025 Microsoft AI announced the MAI Superintelligence Team, led
+by Mustafa Suleyman, to pursue what his post called “humanist
+superintelligenceˮ; the post named medical superintelligence as an area
+already showing progress.
+Mustafa Suleyman, Microsoft AI “Towards Humanist Superintelligenceˮ, 6 Nov 2025.
+Open original
+A third item considered for this slot was dropped: its only available sources were
+republished copies.
+01 · P6 KEY NUMBERS ↑ Agenda
+10%
+of 400 CFOs call their AI
+returns significant today
+(survey) ›
+54%
+expect significant AI
+returns within 24 months
+(survey) ›
++73.2%
+CDW Financial Services
+net sales, Q3 year on year
+(company) ›
++97%
+AMD Data Center
+segment revenue, Q3 year
+on year (company) ›
+4.7×
+top of the token-cost
+range for coordinated
+agents vs one agent
+(preprint) ›
+$1.9B
+across three rounds of
+$100M (our sum of
+announced amounts) ›
+04 · P6 UPCOMING EVENTS ↑ Agenda
+810 Dec 2026 Expand North Star 2026 (startup and investor event) ·
+Dubai, UAE
+69 Jan 2027 CES 2027 (consumer and enterprise technology) ·
+Las Vegas, United States
+31 Jan–3 Feb 2027 Web Summit Qatar 2027 · Doha, Qatar
+Dates come from one public conference listing; so treat the dates as indicative and
+confirm with the organiser before booking. None of these events was listed in Edition
+06, and all begin after publication.
+05 PEOPLE & ACTION · P6 CAUTION NOTE ↑ Agenda
+VERIFY BEFORE BUSINESS USE
+This brief summarises the public sources linked beside each item. Forecasts,
+plans, preliminary results, survey findings and makers' claims are the sources'
+own. Business lens blocks appear only where we add a reading the source
+does not state, and are marked “Our summaryˮ; Ask your leadership team lines
+are the editor's questions, not facts or advice. Headlines, summaries, role tips
+and leadership actions are the editor's wording. Survey percentages are the
+publishers' own and are not independently verified; several publishers sell
+services in the areas they surveyed. Verify any item, figure or quote
+independently against the original source before using it for business decisions.
+Every source is linked: tap a source name to open the original. ↑ Agenda
+Found this useful? Give it a 👍  on LinkedIn and share it with a colleague.
+AI model makers are named. No company in this issue is anonymised; the vulnerability
+item names a software package, as the official record does. Every item links to its
+source.
+↑ Agenda · By Jayaraman (Jay) Ganapathi, People Prime Worldwide Edition 07 · Page 6 of 6

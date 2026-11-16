@@ -1,0 +1,99 @@
+The AI Leadership Brief 2–8 NOV 2026 · PAGE 2 OF 6
+01 GROWTH & REVENUE · P2 LEAD: THE ROI SCOREBOARD ↑ Agenda
+CFO SURVEY AND COMPANY RESULTS · 2–4 NOV 2026 · NORTH AMERICA, GLOBAL
+Buyers of AI are still waiting for the return; two technology suppliers posted fast
+growth in the same week — and the survey points at execution capacity
+RGP surveyed 400 CFOs and equivalent finance leaders at organisations with annual revenue of $250M or more. 52% report positive AI returns today,
+but just 10% describe them as significant; 54% expect significant positive returns within 24 months. 89% are positive about their organisation's
+financial outlook for the next 12 months, while 49% say their transformation agenda exceeds their organisation's ability to execute. The split is worth a
+board discussion: among CFOs whose agenda exceeds capacity, 24% report positive AI returns, against 79% among those whose capacity meets or
+exceeds demand. Both halves of that comparison are the same respondent's own assessment, so it shows an association, not a cause, and the survey
+did not ask about technology. Survey conducted September 2026; respondents in North America, Europe and Asia Pacific, per CFO.com. RGP sells transformation and
+execution services — the capability its survey finds respondents lack. Open: CFO.com report · RGP survey release, syndicated copy
+COMPANY · DATE WHAT IT REPORTED WHAT THE RELEASE ITSELF SAYS ABOUT AI SOURCE
+AMD
+3 Nov · chips
+Q3 revenue $13.4B, up 45%. Data Center segment
+$8.5B, up 97%. Q4 outlook about $17B, plus or minus
+3% (company forecast).
+The release attributes Data Center growth to demand for its EPYC
+processors and the launch of its Instinct MI450 Series GPUs. The
+cautionary statement lists memory supply among its risks. CFO Jean
+Hu on the Q4 outlook is quoted on p6.)
+release
+CDW
+4 Nov · IT reseller
+Q3 net sales $6,754.5M, up 17.7%. Commercial
+$3,979.4M, up 20.8%, within which Financial Services
+$571.5M, up 73.2%. Government 9.9%, Education
+7.5%, Healthcare 9.3%.
+CEO Christine A. Leahy cites “strong momentum in enterprise AI
+adoptionˮ (per company release). The release's risk factors cite supply
+disruptions, including capacity limits and cost increases, tied to
+heightened AI-related demand.
+release
+YEAR-ON-YEAR GROWTH REPORTED THIS WEEK
+AMD Data Center segment 97%
+CDW Financial Services 73.2%
+AMD total revenue 45%
+CDW total net sales 17.7%
+Company figures; measures differ (total vs segment, group vs customer channel). Bars
+scaled to 97%. Neither release quantifies how much of the growth is AI.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+02 COST & OUTPUT · P2 NEW LLM RELEASES OR SECURITY PATCH RELEASES ↑ Agenda
+DATE TYPE WHAT WAS RELEASED COST, ACCESS AND RISK (FROM THE SOURCE) SOURCES
+4 Nov MODEL Tencent Hy4, the full version of a
+model Tencent had previously
+released in preview, adding visual
+understanding and computer-use
+capability, available across Tencent
+products and third-party platforms.
+Standard API price unchanged from the Hy4 preview at $0.834 per million
+input tokens and $2.501 per million output tokens, with a 50% discount
+on Tencent Cloud TokenHub to 31 December (as reported by TechNode).
+Tencent says it plans to release model weights and system cards “in the
+coming daysˮ, with a focus on cybersecurity and biological safety.
+Announcement
+· TechNode
+5 Nov MODEL
+RESTRICTED
+OpenAI GPT6 Cyber, a variant of
+GPT6 Astra trained for authorised
+vulnerability research, reached a
+select group of approved customers
+in the “Daybreak Redˮ tier via the API
+and Codex.
+No public price; access is gated and OpenAI says it will extend to all
+Daybreak Red customers in the coming weeks. OpenAI rated the model
+“Criticalˮ for cybersecurity under its Preparedness Framework, up from
+“Highˮ for its predecessor, and says it scored 48.5% on its ExploitGym
+evaluation against 32.1% for GPT5.6 Cyber. OpenAI also announced a
+$1bn grant programme to subsidise access for resource-constrained
+defenders. All figures are OpenAI's own, as reported by the three sources
+listed.
+TNW · Cyber
+Magazine ·
+Fortune
+No other model or patch release in the window met this brief's rule that a first-party announcement or official record be identifiable; tracker sites and model catalogues were not
+used.
+BUSINESS LENS · OUR SUMMARY
+Tencent held Hy4's API price at the preview level while adding vision and
+computer use. OpenAI gated its new security model to vetted customers and
+raised its own cyber risk rating to Critical.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+↑ Agenda Edition 07 · Page 2 of 6
+If our board asked today, which AI programme could we show a
+measured revenue or cost result for?
+▸
+Is our AI agenda larger than our ability to deliver it, and which items would
+we cut to fix that?
+▸
+Our suppliers are reporting AI-led growth. Are we the customer funding it,
+and what are we getting back?
+▸
+If capability rises without a price rise, which of our rejected AI cases become
+viable?
+▸
+Who in our organisation would be approved to use a gated offensive-security
+model, and under whose authority?
+▸

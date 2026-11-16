@@ -1,0 +1,80 @@
+The AI Leadership Brief 2–8 NOV 2026 · PAGE 6 OF 6
+01 · P6 LEADERS SAID ↑ Agenda
+“…accelerating revenue and earnings growth, driven by strong
+demand across our Data Center portfolio.”
+Jean Hu, EVP, CFO and Treasurer, AMD · per company release, 3 Nov 2026 · release
+“Yet adoption alone does not create value”
+Ravi Khokhar, Global Head of Cloud for Financial Services, Capgemini · per company
+release, Paris, 5 Nov 2026 · release
+“The 24-month AI promise is now on the record…”
+RGP, in its CFO Perspectives report · as quoted by CFO.com, 3 Nov 2026
+Quotes come from company announcements and, where marked, from a bylined report
+quoting the source. CDW's CEO is quoted in the lead (p2).
+05 · P6 ONE YEAR AGO ↑ Agenda
+Same week in 2025 28 Nov 2025.
+3 Nov 2025 AWS and OpenAI announced a multi-year strategic
+partnership; OpenAI's post described a $38 billion agreement with
+continued growth over seven years, giving it access to AWS compute
+comprising hundreds of thousands of NVIDIA GPUs.
+OpenAI “AWS and OpenAI announce multi-year strategic partnershipˮ, 3 Nov 2025.
+Open original
+6 Nov 2025 Microsoft AI announced the MAI Superintelligence Team, led
+by Mustafa Suleyman, to pursue what his post called “humanist
+superintelligenceˮ; the post named medical superintelligence as an area
+already showing progress.
+Mustafa Suleyman, Microsoft AI “Towards Humanist Superintelligenceˮ, 6 Nov 2025.
+Open original
+A third item considered for this slot was dropped: its only available sources were
+republished copies.
+01 · P6 KEY NUMBERS ↑ Agenda
+10%
+of 400 CFOs call their AI
+returns significant today
+(survey) ›
+54%
+expect significant AI
+returns within 24 months
+(survey) ›
++73.2%
+CDW Financial Services
+net sales, Q3 year on year
+(company) ›
++97%
+AMD Data Center
+segment revenue, Q3 year
+on year (company) ›
+4.7×
+top of the token-cost
+range for coordinated
+agents vs one agent
+(preprint) ›
+$1.9B
+across three rounds of
+$100M (our sum of
+announced amounts) ›
+04 · P6 UPCOMING EVENTS ↑ Agenda
+810 Dec 2026 Expand North Star 2026 (startup and investor event) ·
+Dubai, UAE
+69 Jan 2027 CES 2027 (consumer and enterprise technology) ·
+Las Vegas, United States
+31 Jan–3 Feb 2027 Web Summit Qatar 2027 · Doha, Qatar
+Dates come from one public conference listing; so treat the dates as indicative and
+confirm with the organiser before booking. None of these events was listed in Edition
+06, and all begin after publication.
+05 PEOPLE & ACTION · P6 CAUTION NOTE ↑ Agenda
+VERIFY BEFORE BUSINESS USE
+This brief summarises the public sources linked beside each item. Forecasts,
+plans, preliminary results, survey findings and makers' claims are the sources'
+own. Business lens blocks appear only where we add a reading the source
+does not state, and are marked “Our summaryˮ; Ask your leadership team lines
+are the editor's questions, not facts or advice. Headlines, summaries, role tips
+and leadership actions are the editor's wording. Survey percentages are the
+publishers' own and are not independently verified; several publishers sell
+services in the areas they surveyed. Verify any item, figure or quote
+independently against the original source before using it for business decisions.
+Every source is linked: tap a source name to open the original. ↑ Agenda
+Found this useful? Give it a 👍  on LinkedIn and share it with a colleague.
+AI model makers are named. No company in this issue is anonymised; the vulnerability
+item names a software package, as the official record does. Every item links to its
+source.
+↑ Agenda · By Jayaraman (Jay) Ganapathi, People Prime Worldwide Edition 07 · Page 6 of 6

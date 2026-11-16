@@ -1,0 +1,30 @@
+3 BLOCKS ===
+  [34.0, 27.4, 560.0, 43.8] The AI Leadership Brief 2 – 8 N OV 2 0 2 6 · PAG E 3 O F 6
+  [38.5, 62.1, 556.3, 71.5] 0 2 C O S T & O U T P U T · P 3 A I R E S E A R C H : W H AT AG E N T A R C H I T E C T U R E C O S T S ↑ Agenda
+  [34.0, 82.0, 523.0, 118.8] PREPRINT · 7 NOV 2026 · AGENT COST AND ACCURACY Preprint: adding agents to an enterprise-style workflow multiplied the cost and rarely improved the result
+  [34.0, 124.6, 539.1, 143.3] The authors held the model, tasks and tools fixed and varied only the architecture, comparing four designs in eight arms across 13 enterprise-style standard operating procedures — a benchmark built to resemble the long, branching, tool-heavy workflows companies run. They report that every
+  [34.0, 146.4, 558.6, 228.1] coordinated arm (multi-agent or skill-augmented) spends 1.4–4.7× the tokens and 2.6–5.8× the latency of a single function-calling agent “for gains that are usually small and rarely significant”, making the single agent, in their words, the efficient default. Quality of implementation mattered more than the design choice: a plausible multi-agent build underperformed the single agent, while a targeted redesign was the only arm to beat the baseline significantly, at 75.6% task success against 67.4% — though the authors also report that no architecture is statistically separable in aggregate, and that added structure only “plausibly” pays off on the most complex procedures, which they call a directional and not yet significant trend. Their stated conclusions are that no architecture is universally best — the right choice depends on the procedure — and that added architectural cost has to be earned by a gain in task success. Authors' own measurements; not peer reviewed. The paper does not name the model held fixed across the arms, so the multiples describe that one setup rather than a general rule.
+  [34.0, 233.6, 559.0, 249.6] Nandi S, Arora H, Bai Y, Patel U, Shah C, Kwon H, Zhang W, Chen W, Li CR, Sconfienza A, Goyal A, Lee Y, Xiong M, Ramachandra P. “Agent Architecture Cost-Success Trade-offs: A Controlled Evaluation across Enterprise-Style SOPs.” arXiv preprint v1, 7 Nov 2026. arxiv.org/abs/2611.12953 · DOI 10.48550/arXiv.2611.12953 (arXiv-issued)
+  [42.7, 266.7, 253.9, 281.0] COORDINATED AGENT ARMS vs A SINGLE AGENT ( RANGE REPORTED)
+  [42.7, 287.5, 296.4, 294.6] Token cost 1.4–4.7×
+  [42.7, 301.0, 296.4, 308.1] Latency 2.6–5.8×
+  [42.7, 313.9, 296.4, 321.5] Task success, baseline 67.4%
+  [42.7, 327.4, 296.4, 335.0] Task success, best arm 75.6%
+  [42.7, 340.5, 283.7, 347.0] Figures as reported by the authors across 13 enterprise SOPs. Cost and latency bars are
+  [42.7, 349.5, 276.6, 364.3] scaled to the top of each reported range; success bars are scaled to 75.6%. Cost and success are different measures and are not comparable to each other.
+  [319.2, 270.5, 516.8, 277.2] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+  [38.5, 386.1, 556.3, 395.5] 0 3 R I S K & C O M P L I A N C E · P 3 V E N D O R & S E C U R I T Y R I S K ↑ Agenda
+  [34.0, 406.0, 531.3, 439.5] OPEN-SOURCE AGENT FRAMEWORK · CVE RECORD PUBLISHED 5 NOV 2026 · GLOBAL A command-injection flaw in an open-source agent framework was published with a working exploit already public
+  [34.0, 445.6, 556.6, 506.3] The national vulnerability record for CVE-2026-123022, published 5 November 2026, describes a flaw in AgentScope up to version 2.0.11. The affected element is the subprocess.Popen function in the framework's MCP Workspace API: manipulating the command argument results in OS command injection, and the record states that the attack may be launched remotely, adding that “The exploit is now public and may be used.” The record carries a CVSS v3.1 score of 7.3, assigned as a secondary metric by a third-party numbering authority rather than the project. The record says nothing about how widely the package is deployed, and we found no reliable figure for it. Our view: the point for a board is the category, not this package — agent frameworks and their connectors are ordinary supply-chain software, installed by teams and by vendors.
+  [34.0, 511.9, 285.1, 518.8] Source: NVD record for CVE-2026-123022, published 5 Nov 2026 — open the record.
+  [34.0, 530.7, 231.6, 537.5] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+  [38.5, 575.9, 556.3, 585.2] 0 5 P E O P L E & AC T I O N · P 3 O P E R AT I N G M O D E L S : A I I N I N D U S T R I A L S E C TO R S ↑ Agenda
+  [34.0, 595.8, 554.3, 617.3] INSURANCE · UNITED STATES · REPORTED 6 NOV 2026 · EARNINGS CALL REMARKS An insurer says it plans to do business with its customers' AI agents, not only with its customers
+  [34.0, 623.4, 556.2, 663.1] As reported by CIO Dive, Allstate chief executive Tom Wilson told investors on the company's third-quarter earnings call that personal AI assistants give the insurer an opportunity to serve customers who prefer machines to handle transactions, and that Allstate's goal is to work with those outside agents rather than against them, showing customers branded products as they interact. He said the rollout of the company's own agentic platform, introduced earlier this year to handle agent-to-agent processing, is accelerating. Executives' statements on an earnings call, as reported; not measured results.
+  [34.0, 668.6, 322.2, 675.6] Source: CIO Dive, 6 Nov 2026, reporting the Q3 2026 earnings call. Company statements of intent.
+  [34.0, 687.5, 226.8, 694.2] ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTION
+  [34.0, 814.8, 561.3, 821.9] ↑ Agenda Edition 07 · Page 3 of 6
+  [319.2, 281.0, 542.4, 298.4] Do we know the cost per completed task of our agents, or only their accuracy? ▸
+  [319.2, 302.8, 533.0, 320.2] Did anyone compare our multi-agent build against a single-agent baseline before we funded it? ▸
+  [34.0, 541.3, 546.9, 558.7] Which open-source agent frameworks and connectors run inside our estate, and who patches them? ▸ Do our AI vendors tell us when a component they embed has a published exploit? ▸
+  [34.0, 698.0, 278.3, 715.4] If a customer's AI agent came to buy from us tomorrow, could our systems and terms transact with it? ▸
