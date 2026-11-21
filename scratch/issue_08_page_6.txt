@@ -1,0 +1,111 @@
+W E E K LY · E D I T I O N 0 8
+9 – 1 5 N OV 2 0 2 6 · PAG E 6 O F 7
+The AI Leadership Brief
+03 RISK
+0 3 R I S K · P 6
+L AW S , R U L E S & G U I DA N C E
+↑ Agenda
+Four regulators acted inside one week, in four different postures: the EU set operating rules, Abu Dhabi issued a supervisory notice, the United States
+imposed licensing, and Ontario’s securities regulator published what an inspection had already found.
+JURISDICTION ·
+DATE
+WHAT WAS ISSUED, AND WHAT IT REQUIRES
+SOURCE
+European Union
+10–11 Nov
+Commission Implementing Regulation (EU) 2026/2487, adopted 10 November and published in the Official Journal on 11
+November, lays down common rules for the establishment, operation and supervision of the AI regulatory sandboxes
+required by the AI Act. The Official Journal entry gives a date of effect of 1 December 2026 and records entry into force
+as pending notification. The 2 August 2027 deadline for member states to run a national sandbox comes from the AI Act
+timeline as amended, not from this instrument.
+EUR-Lex, OJ L
+2026/2487
+UAE · ADGM
+10 Nov
+The Financial Services Regulatory Authority issued FCCP Notice No. 222 of 2026 on Artificial Intelligence and Cyber
+Risk Management, pairing AI governance and cyber risk in a single supervisory instrument for firms in the financial free
+zone. Our view: the structural choice is the notable part — the two are supervised together rather than separately.
+FinReg-E
+summary
+Canada · Ontario
+12 Nov
+The Ontario Securities Commission published Staff Notice 33-763, setting out what its examination of registered firms
+found about AI use and governance. It reports most firms early in adoption, with weaknesses in governance and training
+and instances of possible “AI washing” — marketing claims about AI that firms could not substantiate. The OSC is a
+provincial regulator; Canada has no single national securities regulator. Our view: findings from a completed
+examination are a different thing from guidance — they show what a regulator actually found when it looked.
+OSC release, 12
+Nov
+United States · BIS
+15 Nov
+The Commerce Department's Bureau of Industry and Security issued an interim final rule extending export licensing
+requirements to remote access to advanced AI chips in data centres outside the United States that supply large
+amounts of compute to companies headquartered in certain jurisdictions, and formally rescinding the earlier AI Diffusion
+Rule. Our view: the practical question for any business is whether compute it rents abroad now falls inside a licensing
+requirement.
+Law firm analysis
+Qualification: the EU regulation is taken from the Official Journal text itself and the Ontario notice from the commission's own release. The ADGM notice is reported from a
+regulatory summary rather than the regulator's own page, which we were unable to open for this issue; its date and instrument number are as that source gives them, so confirm
+with the issuing regulator before acting. The US measure is an interim final rule, which takes effect while comment is still open, and is reported here only for its compliance effect.
+0 3 R I S K · P 6
+V E N D O R & S E C U R I T Y R I S K
+↑ Agenda
+FBI FLASH-20261113-001 · 13 NOV 2026 · TEN SECTORS
+The FBI named ten sectors already targeted by an open-source AI intrusion framework, and
+pointed at the systems companies watch least
+On 13 November the FBI issued FLASH-20261113-001, “Threat Overview of
+ARTEX Autonomous Penetration Testing Framework”. ARTEX is an open-
+source, model-driven penetration-testing framework published on GitHub in
+July 2026. The bureau says a variety of malicious actors have used it since at
+least August 2026 to “automate multiple phases of cyber intrusions at
+machine speed”, from reconnaissance through to data exfiltration.
+The alert names ten targeted sectors: financial services, government,
+technology, defence, semiconductors, energy, healthcare, manufacturing,
+telecommunications and legal. It reports that some intrusions reached
+privileged access in under three hours, and singles out partner and supplier
+portals, mobile backends, sales-support systems, legacy services and third-
+party integrations as the entry points it names. Incidents described in the
+accounts linked below include attacks on financial institutions in South Korea
+involving personal information of roughly 67,000 individuals, and a supply-
+chain compromise affecting customers of a cloud backup product.
+Open: Infosecurity Magazine (Kevin Poireault) · SecureWorld · SafeBreach. The FLASH itself
+is distributed to recipients rather than published at a public URL; these are bylined accounts
+of it. SafeBreach sells breach-simulation software and has a commercial interest in this
+subject.
+WHAT MAKES THIS A BOARD ITEM
+The entry points the FBI names are not the systems most security
+budgets defend. Partner portals, supplier integrations and sales-
+support tools are typically owned by a business function, built by
+someone else, and inventoried nowhere.
+Our view: the three-hour figure changes the planning assumption
+more than the framework does. A response process that assumes a
+day or two of dwell time before privileged access is a process built
+for a different attacker.
+A separate count by Censys put publicly exposed ARTEX consoles
+above 1,600 in early November. That is a count of exposed consoles,
+not of breaches, and it is Censys's figure rather than the bureau's.
+0 3 R I S K · P 6
+K E Y N U M B E R S
+↑ Agenda
+10
+sectors named as targeted in the FBI's 13 Nov alert FBI
+alert
+<3 hrs
+from targeting to privileged access in some intrusions,
+per that alert FBI alert
+1,600+
+publicly exposed consoles counted by Censys in early
+Nov — its figure, and a count of consoles, not breaches
+FBI alert
+$720M
+raised by one UK inference-chip maker, ahead of a 2027
+product SiliconANGLE
+52.7%
+of 182 surveyed healthcare operators report a live
+agentic workflow, in research by a firm selling into that
+market Black Book
+2×
+the list price of one model from 1 Dec, when its
+introductory rate ends, per Google Google
+The AI Leadership Brief · Edition 08
+9–15 Nov 2026 · Page 6 of 7

@@ -1,0 +1,84 @@
+W E E K LY · E D I T I O N 0 8
+9 – 1 5 N OV 2 0 2 6 · PAG E 5 O F 7
+The AI Leadership Brief
+04 CAPITAL · 02 COST
+0 4 CA P I TA L · P 5
+S U P P L I E R & G OV E R N A N C E R I S K
+↑ Agenda
+CEO TRANSITION · 12 NOV 2026 · UNITED STATES
+Nvidia's chief executive resigned and the CFO took the role on an interim basis —
+the board's filing addresses the part buyers care about
+In a filing dated 12 November, Nvidia said Jensen Huang had resigned as President, Chief Executive Officer and a board member, effective immediately.
+Colette Kress, Executive Vice President and Chief Financial Officer, will serve as Interim Chief Executive Officer and continue as CFO until a permanent
+successor is named. The board is searching for one and will consider internal and external candidates. Harvey C. Jones was appointed the company's
+first-ever Chair of the Board. Kress has been CFO since September 2013, after nearly 25 years in finance roles at technology companies including Cisco
+and Microsoft.
+The filing gives no reason. It followed widely reported allegations about the former chief executive's personal conduct, which the filing does not address
+and this brief does not report on. What the filing does address is continuity: the chair's statement speaks to operations, customer commitments and the
+product roadmap, quoted below.
+Open: NVIDIA Form 8-K, 12 Nov 2026 · CNN
+OUR SUMMARY · WHAT A BUYER SHOULD TAKE FROM IT
+A board that names continuity of customer commitments in its first statement is
+telling you where it expects the questions to come from. For buyers the exposure
+is not the person; it is concentration. If your AI roadmap assumes one supplier's
+parts, prices and cadence, a leadership change there is a change to your plan.
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+0 2 C O S T · P 5
+N E W L L M R E L E A S E S O R S E C U R I T Y PATC H R E L E A S E S
+↑ Agenda
+Five models from three makers changed status between 9 and 12 November: four were released, one became generally available. Reported here as a
+cost and access question rather than a capability one. Figures are list prices per million tokens, as reported by the sources linked, and we did not verify
+each maker’s own price list.
+DATE · MAKER
+WHAT CHANGED
+PRICE AND ACCESS
+SOURCE
+Anthropic
+9 Nov
+Released Claude Fable 5.2 and Claude Mythos 5.2 on the
+same day.
+Fable 5.2 reported at $8 input / $40 output per million tokens,
+which the reports linked put at 20% below its predecessor.
+Anthropic
+Meta
+9 Nov
+Released Muse Ember, described as the smallest and
+cheapest model in its Muse family, distilled from a larger
+model and aimed at repetitive agentic work such as tool
+calls and extraction.
+Reported at $0.10 input / $0.50 output per million tokens, with
+availability via the Meta Model API and several cloud
+gateways.
+Meta
+Google
+10 Nov
+Gemini 4 Carbon became generally available to paying
+developers and enterprises, having previously been in
+preview for cybersecurity defenders.
+Introductory $2 uncached input / $10 output until 30
+November, then $4 / $20, per Google's own footnote, which
+limits the change to the publicly available Carbon model.
+Cached input is discounted 95%.
+Google
+Google
+12 Nov
+Gemini 4 Hydrogen released, reported as Google’s
+everyday model for agentic workflows. We did not retrieve
+Google’s own page for this model.
+Reported at $1.50 / $7.50 per million tokens. Sources differ on
+the release date, giving 12 or 13 November.
+Vals AI index
+Prices as reported by the sources linked; we did not verify each maker's own price list. Our view: the access change matters as much as the prices — a model once restricted to
+security defenders is now generally available, which is a question for whoever maintains your approved-model list. Anthropic, which appears in this table, also makes the AI
+assistant used to research and draft this brief; see the caution note.
+The AI Leadership Brief · Edition 08
+9–15 Nov 2026 · Page 5 of 7
+Which parts of our AI roadmap assume one supplier, and what would a twelve-
+month delay there cost us?
+▸
+Do our contracts say anything about continuity of roadmap or supply, or only
+about price?
+▸
+Who here is responsible for watching supplier governance, not just supplier
+pricing?
+▸

@@ -1,0 +1,102 @@
+W E E K LY · E D I T I O N 0 8
+9 – 1 5 N OV 2 0 2 6 · PAG E 7 O F 7
+The AI Leadership Brief
+04 CAPITAL · 05 PEOPLE · 02 COST
+0 4 CA P I TA L · P 7
+I N V E S T M E N T S · $ 1 0 0 M A N D A B OV E
+↑ Agenda
+Only rounds of $100 million or more are reported. Valuations are excluded as a standing rule, because they can be contested by the parties.
+COMPANY · DATE
+AMOUNT AND BACKERS
+WHAT IT FUNDS
+SOURCE
+Fractile
+11 Nov · UK
+$720M Series C. The UK government confirmed the round on 11
+November, with its Sovereign AI Venture Fund and the British Business
+Bank among backers in a round it put at more than £500 million.
+Reported lead-investor lists differ between accounts and we could not
+reconcile them.
+Inference chips that integrate DRAM memory
+with logic to reduce data movement. First
+commercial chip planned for 2027. Our view:
+the money is ahead of the product.
+SiliconANGLE ·
+Silicon UK
+Agile Robots
+12 Nov · Germany
+$500M Series F led by SoftBank Group. The company’s announcement
+names NVIDIA, Hitachi, Hitachi Ventures and T.Capital among
+participants and does not disclose how the amount splits between
+them. It puts total capital raised to date at $2bn.
+Physical-AI robots for industrial work, US
+expansion and production capacity. The
+company says its German plant can build up to
+10,000 legged and wheeled humanoid robots a
+year.
+Agile Robots
+announcement
+Why two rounds are listed. At least three further rounds of $100 million or more were reported in this window. The only sources we could find for them were funding trackers and
+aggregated round lists, which our sourcing rules exclude, so they are not reported here. Fractile is listed because two bylined outlets and a government confirmation carry it, and
+Agile Robots because its own announcement does. Even there, we could not locate the company's own announcement, amounts agree across accounts but investor lists do not,
+and the disagreement is stated above rather than resolved by picking one. Separately, Anthropic began an IPO roadshow on 11 November; reported offering sizes vary widely, so no
+figure is given, and Anthropic makes the AI assistant used to produce this brief.
+0 5 P E O P L E · P 7
+WO R K F O R C E & TA L E N T · R E S E A R C H
+↑ Agenda
+A labour-market preprint finds the early effects of
+AI in who is working, not how many are working
+A revised preprint posted to arXiv on 10 November examines how labour
+outcomes have changed across occupations as AI capability advanced from
+chatbots to reasoning models and agents. The authors build an occupational
+AI exposure score from task-level assessments against O*NET task data and
+link it to US Current Population Survey records. In the revised version, part-
+time work declined, weekly hours rose slightly, and the workforce in exposed
+occupations became older and more educated — effects appearing in the
+composition of the workforce rather than in the number of jobs.
+The authors' own caveats do most of the work here. They state that they
+“refrain from interpreting the estimated coefficients as causal effects”. They
+warn that standard errors are likely understated, because the public-use
+survey lacks the identifiers needed for design-based corrections, and advise
+weighting magnitude and direction over statistical significance. The exposure
+score measures potential capability, not actual adoption or substitution. They
+name post-pandemic recovery, interest rates and trade policy as possible
+confounders.
+Open: arXiv:2507.08244 — Jacob Dominski and Yong Suk Lee, University of Notre Dame,
+econ.GN. Preprint, not peer reviewed. Version note: arXiv's own rendered copies carry a v3
+stamp dated 10 Nov 2026 and the findings above, while the listing page we retrieved shows
+only v1 from July 2025, whose reported results differ — an earlier version associated higher
+exposure with reduced employment. We report the revised version and flag the discrepancy
+rather than resolving it.
+OUR SUMMARY · WHY A CHRO SHOULD CARE
+Most workforce planning for AI is expressed as a headcount number.
+If the early effects really do land in composition — hours, age mix,
+education mix, full-time share — then a headcount forecast can look
+stable while the shape of the workforce underneath it changes
+considerably.
+That is a measurement question you can answer in your own data
+this quarter, without waiting for the literature to settle: it is the one
+claim here you do not have to take on trust.
+Given the caveats above, treat this as a hypothesis worth testing
+internally, not a finding to plan on.
+0 2 C O S T · P 7
+I N F R A S T R U C T U R E & CA PAC I T Y
+↑ Agenda
+Siemens Energy reported record quarterly revenue this week, with its chief executive saying he has “no doubt” more data centres will be built in the
+United States, while noting that gas remains the main driver of generation. Our view: for most businesses this is a cost and siting line rather than a
+sustainability one — power availability is becoming a constraint on where compute can be bought, and therefore on what it costs. A US federal electricity
+forecast attributing record consumption partly to AI data centres was also reported this week. Its figures are held back until they can be cited to the
+agency's own publication.
+Open: CNBC on Siemens Energy, 11 Nov.
+CAUTION NOTE · PLEASE READ BEFORE USING ANYTHING HERE
+Data and news in this brief must be independently verified before being used for business purposes. Headlines, summaries, role tips, leadership actions and anything
+marked “Our view” or “Our summary” are the editor's wording, not the sources'. Every source name in this issue is a link: tap it to open the original and check it yourself.
+Where accounts disagree — on investor lists, a release date, or a preprint's version — we have said so in the item rather than choosing one. Several items this week are
+reported from secondary accounts because the issuing body's own page could not be retrieved; each says so where it applies. Research in this issue is a preprint and is
+not peer reviewed. One survey cited is published by a research firm selling into the market it surveyed, and one security vendor cited sells products in the area it comments
+on; both are flagged at the point of use. Disclosure: this brief is researched and drafted with the assistance of Claude, an AI assistant made by Anthropic; Anthropic
+appears in this issue in the model-release table, among the sources for the 60-second summary, and in the investments note, and is reported there on the same basis as
+any other company.
+Found this useful? A thumbs up on LinkedIn helps other leaders find it. · Back to the agenda ↑
+The AI Leadership Brief · Edition 08
+9–15 Nov 2026 · Page 7 of 7

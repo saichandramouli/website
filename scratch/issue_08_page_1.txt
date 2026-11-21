@@ -1,0 +1,137 @@
+W E E K LY · E D I T I O N 0 8
+9 – 1 5 N OV 2 0 2 6 · PAG E 1 O F 7
+The AI Leadership Brief
+Edition 08 · 9–15 Nov 2026 · By Jayaraman (Jay) Ganapathi, People Prime Worldwide · For CXOs and senior leaders
+0 1 G R OW T H · P 1
+CA R TO O N & TO P N E W S
+↑ Agenda
+Customer, or bot?
+Yes.
+Behind the cartoon: on 11 November an airline barred unauthorised third-party AI
+agents from completing a purchase on its channels; on 13 November a leading AI
+developer published what merchants must change before an agent can pay. An
+agent is a customer and an automated visitor at the same time, and most checkout
+defences were built to tell those two apart. Lead story, page 3 › · Skift ·
+Developer’s announcement
+TO P N E W S T H I S W E E K · 6 0 - S E C O N D S U M M A RY
+AGENDA
+5 T H E M E S · T A P T O J U M P
+Short on time? 60-second summary → Your role → Leadership actions
+01 GROWTH
+Where is new revenue coming
+from?
+P2 Sector index · 22
+industries
+P4 Lead · The checkout
+decision
+02 COST
+What does it cost to run?
+P5 Model releases and prices
+P7 Infrastructure & capacity
+03 RISK
+What could go wrong?
+P6 Laws, rules & guidance
+P6 Vendor & security risk
+04 CAPITAL
+Where is money going?
+P5 Supplier & governance risk
+P7 Investments · $100M+
+05 PEOPLE
+Who does the work?
+P7 Workforce & talent
+P3 Leaders said · One year
+ago on P3
+Also in this issue: Key numbers · Regional index · Caution note. Not in this issue: upcoming events — no date could be confirmed against two independent listings or an
+organiser's own page. Every source name is a link to the original.
+0 5 P E O P L E · P 1
+T H I S W E E K F O R YO U R R O L E
+↑ Agenda
+CEO
+Agent traffic at your
+checkout is a
+commercial policy
+question, not an IT
+one — and it is being
+decided by default.
+CFO
+One model's
+introductory price
+ends on 30 November,
+doubling from 1
+December. Check
+whether any budget
+you approved
+assumes the
+introductory rate.
+CIO / CTO
+Five models changed
+status in four days;
+one moved from
+restricted to general
+availability. Re-check
+your approved-model
+list.
+CISO
+The FBI points at
+partner portals and
+third-party
+integrations — the
+estate you watch
+least. Some intrusions
+reached privileged
+access in under three
+hours.
+CHRO
+A preprint finds the
+early labour effects in
+composition — hours,
+age, education — not
+headcount.
+COO / Sales
+If an agent cannot buy
+on your site, you may
+be losing orders you
+never see. If it can,
+decide who you
+refund.
+0 5 P E O P L E · P 1
+L E A D E R S H I P AC T I O N S T H I S W E E K
+↑ Agenda
+1. Decide your agent policy explicitly. Name the executive who owns
+whether AI agents may browse, buy and manage accounts on your
+channels.
+2. Find out what your site does today. Your firewall and bot rules already
+answer this question, with no policy behind them.
+3. Write down who you refund when an agent buys on a customer's behalf
+and the order is disputed.
+4. Inventory your partner and supplier portals against the FBI's list of entry
+points, not just your main estate.
+5. Check every AI line item against current list prices, including any that are
+introductory and expire this month.
+6. Ask whether your AI roadmap depends on one supplier's leadership,
+and what your contract says about continuity.
+7. If you operate in the EU, name who would own an AI Act sandbox
+application ahead of the regulation's 1 December date of effect.
+8. Ask HR for hours, age and education trends in your most exposed roles,
+not just headcount.
+The AI Leadership Brief · Edition 08
+9–15 Nov 2026 · Page 1 of 7
+Nvidia's chief executive resigned and the CFO took over on an
+interim basis. Its filing speaks directly to customer commitments and
+the product roadmap. NVIDIA 8-K
+1
+Five models changed status in four days. One introductory price
+ends on 30 November, doubling from 1 December. Anthropic · Meta ·
+Google
+2
+The FBI named ten sectors already targeted by an open-source AI
+intrusion framework, and named partner portals among the entry
+points. FBI alert
+3
+Regulators in four jurisdictions moved on AI in one week, two of
+them financial. EUR-Lex · Regulatory summary
+4
+A labour-market preprint puts the early effects of AI in who is
+employed, not how many. Its authors decline to call it cause and
+effect. arXiv preprint
+5

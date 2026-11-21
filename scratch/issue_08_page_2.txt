@@ -1,0 +1,163 @@
+W E E K LY · E D I T I O N 0 8
+9 – 1 5 N OV 2 0 2 6 · PAG E 2 O F 7
+The AI Leadership Brief
+01 GROWTH · REGIONAL INDEX
+0 1 G R OW T H · P 2
+S E C TO R I N D E X · TO P 2 2 I N D U S T R I E S
+↑ Agenda
+Twenty-two sectors are swept each week against eight item types; all twenty-two carry an item this week, 9 of them tagged. A row tagged
+UNQUALIFIED rests on trade or secondary reporting we could not trace to a first-party release or filing: it is published so the sector is covered, and
+should be weighed as weaker than the rest of the issue.
+SECTOR
+THIS WEEK
+SOURCE
+01
+Banking
+Financial services, which covers banking, is named among the ten sectors targeted by the ARTEX framework in the
+FBI's 13 Nov alert. Abu Dhabi Global Market's regulator issued a notice pairing AI governance with cyber risk.
+FBI alert · ADGM
+notice
+02
+Mortgage & lending
+UNQUALIFIED
+Dark Matter Technologies acquired the AI agent platform and intellectual property of House Numbers,
+whose agents work loan conditions and contact borrowers, and named its co-founder chief AI officer. Terms were not
+disclosed, and sources date the announcement variously to 30 Oct and the week of 13 Nov.
+HousingWire · Natl
+Mortgage Prof
+03
+Insurance
+IBM and Microsoft announced Imagine Enterprise on 10 Nov, an agentic platform for building, running and governing
+AI agents, launching with industry frameworks for financial services, insurance and retail. IBM Consulting contributes
+more than 6,000 pre-built agents; Microsoft provides the AI, cloud and security technology.
+IBM Newsroom
+04
+Capital markets & asset mgmt
+The Ontario Securities Commission published findings from its examination of how registered firms use and govern AI,
+including weaknesses in governance and training and instances of possible “AI washing”.
+OSC release
+05
+Healthcare providers
+Google Cloud launched Gemini for healthcare on 10 Nov in US preview, connecting electronic health records, billing
+platforms, clinical guidelines and CMS datasets, with launch customers including HCA Healthcare, Northwell Health
+and Optum. Separately, research among 182 operators reports 52.7% already running a live agentic workflow; it is
+published by a firm that sells into the market it surveyed.
+Google Cloud ·
+Black Book
+06
+Pharma & life sciences
+UNQUALIFIED
+Pierre Fabre engaged XtalPi’s AI and robotics platform on 10 Nov to design small molecules for
+undisclosed oncology targets, with Pierre Fabre taking any resulting candidates into the clinic.
+World Pharma AI
+07
+Manufacturing & industrials
+Agile Robots, a Munich physical-AI company whose robots automate industrial work, raised a $500M Series F on 12
+Nov led by SoftBank, with NVIDIA, Hitachi and T.Capital named as participants. The company says its German plant
+can build up to 10,000 legged and wheeled humanoid robots a year.
+Agile Robots
+announcement
+08
+Automotive & mobility
+UNQUALIFIED
+Executives at Nexperia and STMicroelectronics said on 10 Nov that chip capacity moving to AI data
+centres and robotics is tightening supply of the mature-node components used in vehicles and industrial equipment,
+pointing manufacturers towards longer procurement horizons. This is an AI-driven supply constraint, not an adoption
+item.
+Mfg briefing
+09
+Retail & e-commerce
+OpenAI's wallet asks retailers not to block agents and to make risk systems recognise them, while one major travel
+merchant went the other way. The IBM–Microsoft platform also covers retail.
+OpenAI · IBM
+10
+Consumer goods
+UNQUALIFIED
+The president of Lowes Foods told a grocery conference, reported 10 Nov, that AI use among
+shoppers is already widespread, citing a projection that 80% of shoppers will interact with AI by 2030 and putting the
+2026 figure at 74%. Both are projections he cited, not his company’s data. Coty was separately reported piloting AI
+discovery across six brands.
+Consumer Goods
+11
+Energy & utilities
+At the BNEF Houston Summit on 11 Nov a consultant advising the Utilize Coalition argued AI tools let grid planners see
+capacity they could not see before. One adviser’s view, not a deployment; she also advises an AI data-centre
+flexibility startup. Energy is named in the FBI’s targeted list.
+Utility Dive · FBI
+alert
+12
+Oil, gas & chemicals
+UNQUALIFIED
+Dated just before this window: on 3 Nov at ADIPEC, ADNOC agreed with G42 and OpenAI to become
+the first energy company to deploy OpenAI Frontier, a platform for coordinating AI agents across operations.
+WAM
+13
+Telecommunications
+Telecommunications is named among the ten sectors the FBI says have been targeted by the ARTEX framework since
+at least August 2026.
+FBI alert
+14
+Media & entertainment
+UNQUALIFIED
+Disney and Adobe announced a multi-year partnership on 9 Nov to build generative AI models tailored
+to Disney’s properties via Adobe’s Firefly Foundry, trained on character attributes, environments and visual styles to
+produce what the companies call commercially safe output.
+TheWrap
+15
+Technology & software
+Nvidia reported a chief-executive transition in an 8-K filing. Technology is one of the ten sectors on the FBI's targeted
+list.
+NVIDIA 8-K · FBI
+alert
+16
+Semiconductors & hardware
+Fractile raised $720 million for inference chips integrating memory with logic, with UK state funds participating.
+Semiconductors are also named in the FBI's targeted sector list.
+SiliconANGLE · FBI
+alert
+17
+Professional & legal services
+Addleshaw Goddard said on 9 Nov it will distribute chatbot software from Harvey, a legal AI company, firmwide to
+more than 3,400 lawyers and business services staff. Legal is also among the ten sectors in the FBI’s 13 Nov alert.
+Law360 · FBI alert
+18
+Logistics & supply chain
+UNQUALIFIED
+DHL Supply Chain announced on 9 Nov the next phase of its digitalisation strategy, adding AI
+orchestration to live warehouse operations to coordinate equipment, staff and workflows; it reports more than 9,000
+robots across its network. GXO expanded a robotics partnership with Apptronik on 12 Nov.
+Global Trade ·
+Logistics
+Viewpoints
+19
+Construction & real estate
+UNQUALIFIED
+A Federation of Master Builders and CIOB survey reported on 10 Nov found 57% of construction
+businesses had increased AI use over 12 months, mostly for administration, with 33% using it in site operations, health
+and safety or quality management. The FMB’s chief executive said technology alone would not solve the industry’s
+wider challenges.
+Sustainable
+Construction
+20
+Agriculture & livestock
+GEA showed DairyNet Intelligence at EuroTier on 11 Nov, an AI layer over its DairyNet herd management system
+summarising a cow’s health from milk yield, activity, somatic cell count and conductivity. GEA says it is in testing, does
+not yet recommend actions, and reaches selected farms in late 2026 or early 2027.
+GEA trade press
+release
+21
+Food & beverages
+UNQUALIFIED
+IFF launched CONCEPT MUSE, an AI platform that generates food and beverage concepts from
+consumer insights, flavour expertise and market intelligence, producing product ideas and visual mock-ups. Its claim
+to shorten early-stage development is the company’s own.
+New Food
+Magazine
+22
+Public sector, defence &
+education
+Government and defence are both named in the FBI alert. The EU set common rules for AI Act regulatory sandboxes;
+the requirement on each member state to run one comes from the AI Act timeline, not this instrument.
+FBI alert · EUR-Lex
+The AI Leadership Brief · Edition 08
+9–15 Nov 2026 · Page 2 of 7

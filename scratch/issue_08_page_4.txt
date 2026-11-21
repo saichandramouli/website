@@ -1,0 +1,90 @@
+W E E K LY · E D I T I O N 0 8
+9 – 1 5 N OV 2 0 2 6 · PAG E 4 O F 7
+The AI Leadership Brief
+01 GROWTH · THE LEAD
+0 1 G R OW T H · P 4
+L E A D : T H E C H E C KO U T D E C I S I O N
+↑ Agenda
+AGENTIC COMMERCE · 11–13 NOV 2026 · UNITED STATES, GLOBAL
+Within 48 hours, one airline locked unauthorised third-party AI agents out of its
+checkout and OpenAI set out what merchants must change to accept agent payments
+— a decision and a requirement, landing two days apart
+On 11 November United Airlines said it would restrict “unauthorized, third-
+party personal AI agents or assistants” from its website and app, and
+indirectly through travel agencies and aggregators. The settled part is the
+transaction: reports of its revised contract say an agent may not book, change
+or service a ticket, or buy seats, upgrades or extras — and that this holds
+even where the passenger supervises and approves every step. United has
+said that a consumer granting an agent access does not by itself mean the
+agent can transact. Accounts differ on whether searching and displaying fares
+are also restricted: some report that search remains open, others that the
+terms reach it, and we have not resolved it. Separately, its website terms
+prohibit using its pricing, schedules and availability data to train or evaluate
+machine learning models. United gave account security, unintended
+transactions and regulatory concerns as its reasons.
+On 13 November OpenAI launched ChatGPT Wallet, which lets agents
+complete purchases with user approval, using tokenised cards. It was built
+with American Express, Mastercard and Visa, and is limited at launch to
+ChatGPT Pro subscribers in the United States aged 18 or over with eligible US-
+issued cards. OpenAI says it does not hold customer funds. OpenAI also
+published a playbook for merchants. It says that to accept payment from the
+wallet, websites need to ensure agents are “not inadvertently blocked”, and
+that payment and risk systems need to recognise legitimate purchases made
+by agents. It points merchants at their CDN and firewall settings and at Web
+Bot Auth, which lets an agent sign its requests.
+Open: Skift on United, 11 Nov · CIO · PhocusWire, for United’s Digital Trust Center wording ·
+OpenAI, 13 Nov · Digital Commerce 360 · Bloomberg
+OUR SUMMARY · WHY THIS IS THE WEEK'S LEAD
+Both point at one question: is an AI agent at the checkout a
+customer or an intruder? Only the airline has answered it. OpenAI
+has not — it has set out what a merchant must change in order to
+answer yes, which is a condition of doing this business, not a
+decision of its own.
+Where a business has not taken this decision explicitly, it is being
+settled anyway — by bot-detection rules, CDN settings and fraud
+scoring configured before agents could buy anything. That is a
+commercial policy set by default, by systems nobody briefed.
+The unglamorous question underneath it is liability: when an agent
+buys on a customer's behalf and the charge is disputed, who is
+refunded, and on whose authority.
+PARTY · DATE
+POSITION ON AGENTS AT THE CHECKOUT
+SOURCE
+United Airlines
+11 Nov · airline
+Restricts unauthorised third-party personal AI agents across its own platforms and indirectly through agencies and
+aggregators. An agent may not book, change or service a ticket, or buy extras, even where the passenger approves each
+step. Accounts differ on whether display and search are also restricted. Terms bar use of its pricing and schedule data to
+train or evaluate models.
+Skift
+OpenAI
+13 Nov · model maker
+Launched ChatGPT Wallet so agents can complete purchases with user approval, using tokenised cards and a security
+check on every purchase. OpenAI says existing card protections are preserved and that it does not hold customer funds.
+Its merchant playbook sets conditions for accepting these payments: sites must not inadvertently block agents, and risk
+systems must recognise agent purchases.
+OpenAI
+Positions as described by each organisation or by the reports linked. Others in the same sector could not be placed: Southwest has made its flight inventory viewable to ChatGPT
+users, and Expedia and Booking are reported to be working with OpenAI, but neither source says whether either lets an agent complete a purchase — the step that matters here.
+Travel carries the clearest examples this week; the same question faces any business that sells through a website.
+ONE MEASURED FINDING, WITH ITS CONFLICT STATED
+In research reported by PhocusWire, two named agent products navigated 176 scripted booking requests as far as the payment step, with no captchas or
+login walls stopping them. The requests included airline bookings but were not limited to them. The research is Propellic's, a travel marketing agency selling
+services in the market it tested; the figure is its own and has not been independently replicated. Treat it as an indication that existing defences do not reliably
+tell agents apart, not a measure of your own estate.
+Open: PhocusWire
+ASK YOUR LEADERSHIP TEAM · EDITOR'S QUESTIONS
+ 
+The AI Leadership Brief · Edition 08
+9–15 Nov 2026 · Page 4 of 7
+If an AI agent tried to buy from us today, what would happen — and does
+anyone here actually know?
+▸
+Who owns the decision: commercial, security, or whoever last configured the
+bot rules?
+▸
+When an agent buys and the customer disputes the charge, who do we
+refund, and what evidence do we have of authority?
+▸
+Are we losing orders right now from agents our defences silently turned away?
+▸

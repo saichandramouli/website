@@ -1,0 +1,62 @@
+W E E K LY · E D I T I O N 0 8
+9 – 1 5 N OV 2 0 2 6 · PAG E 3 O F 7
+The AI Leadership Brief
+01 GROWTH · REGIONAL INDEX
+Every sector shows its own source. Where a sector has no item it is marked and shows no source, because there is no source for an absence; no sector is blank this week. The
+cross-sector items in this issue still bear on every sector.
+0 1 G R OW T H · P 3
+R E G I O N A L I N D E X
+↑ Agenda
+Global
+Four frontier model releases in four days; the agent-at-checkout question Google · OpenAI
+United States
+Airline agent restrictions; a chipmaker's CEO transition; agent payments; an export rule on remote access to AI chips Skift · 8-K · OpenAI
+Adoption: UNQUALIFIED
+Disney and Adobe agreed on 9 Nov to build generative AI models trained on Disney’s own characters and
+environments. TheWrap
+Europe
+Common EU rules for AI Act regulatory sandboxes. Adoption: UNQUALIFIED
+France’s Pierre Fabre engaged XtalPi’s AI platform on 10 Nov for
+oncology drug design (World Pharma AI); Germany’s GEA showed AI herd-management functions at EuroTier on 11 Nov (GEA) EUR-Lex
+United Kingdom
+A $720M inference-chip round with state funds participating. Adoption: UNQUALIFIED
+Addleshaw Goddard said on 9 Nov it will put Harvey’s
+legal AI before more than 3,400 staff firmwide. Law360 SiliconANGLE
+Middle East
+ADGM notice pairing AI governance with cyber risk. Adoption: UNQUALIFIED
+Gulf banks’ AI adoption was ranked on 11 Nov by a London
+market-intelligence firm; among GCC banks listed, First Abu Dhabi Bank placed third, Al Rajhi ninth and Mashreq tenth. The ranking is the
+firm’s own and it sells into the market it measures. Fortune Regulatory summary
+Canada
+Ontario's securities regulator publishes what its AI governance examination found OSC release
+India
+No item located in this window, including in secondary sources.
+Japan
+UNQUALIFIED
+KDDI, which reports almost 73 million mobile customers, began a multi-year programme with Ciena’s Blue Planet and
+Accenture to automate network operations — starting with fixed networks, extending to mobile in 2028 — after lab trials of AI-driven alarm
+handling and fault remediation. No contract value was disclosed. SDxCentral · TelecomTV
+Australia
+Reserve Bank of Australia Assistant Governor (Economic) Sarah Hunter told the UBS Australasia Conference in Sydney on 9 Nov there is
+limited evidence AI has materially lifted productivity, while data-centre investment has risen tenfold in three years from a low base and
+could cause sharp repricing in equities and corporate debt if returns disappoint. RBA staff estimate more than 5% of Australian households’
+financial wealth sits in AI-related shares, mainly through superannuation. RBA speech
+0 4 CA P I TA L · P 3
+O N E Y E A R AG O
+↑ Agenda
+In the same week of 2025, S&P Global Market Intelligence published a digest whose subject was a cluster of major AI agent releases; we cite it for its title
+and date, not having read the full note. A year on, the question is no longer whether agents ship but whether merchants will let them pay.
+Open: S&P Global Market Intelligence, “Generative AI Digest: Major AI agent releases”, 13 Nov 2025, by Melissa Incera and Alex Johnston. Only one item from that week met our
+sourcing rules; the others we found were carried only in round-ups.
+0 5 P E O P L E · P 3
+L E A D E R S S A I D
+↑ Agenda
+“The Board has full confidence in Colette and the leadership team.”
+Harvey C. Jones, newly appointed Chair of the Board, Nvidia, in the company's filing of 12 Nov 2026, which adds that it expects “operations, customer commitments and product
+roadmap to continue without interruption”. NVIDIA Form 8-K, 12 Nov 2026
+“No doubt” more data centres will be built in the United States.
+Christian Bruch, Chief Executive, Siemens Energy, speaking to CNBC on 11 Nov 2026 as the company reported record quarterly revenue. CNBC, 11 Nov 2026
+Two statements met our rule that a quotation be verbatim, attributed to a named person with title and date, and taken from a primary filing or a bylined report read at source. A third,
+from a cloud executive on a healthcare launch, was dropped because it reached us only through a republished copy of the original report.
+The AI Leadership Brief · Edition 08
+9–15 Nov 2026 · Page 3 of 7
